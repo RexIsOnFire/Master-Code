@@ -122,6 +122,18 @@ authentication. It exposes the filesystem operations the IDE needs, so do not
 bind it to a public interface. Setting `MASTERCODE_HOST` is enough rope; the
 default is not.
 
+**The browser demo never runs user code on the site's origin.** Programs run in
+workers with an opaque origin and previews in a sandboxed frame, so neither can
+read the projects stored for the site; a run can change files only inside its own
+directory. [docs/demo.md](demo.md#isolation) lists each guarantee and what it
+does not cover.
+
+**In the browser demo, declared dependencies are fetched when a program runs.**
+This is the one exception to "never fetched implicitly": a browser has no install
+step to confirm, so the packages in `requirements.txt` (micropip, from PyPI and
+Pyodide's index) and the npm packages a module imports (jsDelivr) are downloaded
+into that run's sandboxed interpreter. Nothing is installed on your machine.
+
 ## Reporting
 
 This is a prototype, and the boundaries above are the intended ones. If you find

@@ -1,0 +1,66 @@
+# Publishes the site: the README as the home page (Jekyll, as before) and the
+# browser demo under /demo/. Nothing is deployed unless the demo's tests and the
+# end-to-end browser check pass against the exact build being published.
+#
+# Repository setting this needs, once: Settings -> Pages -> Source: GitHub Actions.
+
+name: Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Test the demo's platform layer
+        run: node --test tests/demo.test.ts
+
+      - name: Check the demo in a real browser
+        # Builds into build/pages, serves it under /Master-Code/demo/ and drives
+        # headless Chrome through every scenario. Needs the network for Pyodide and PyPI.
+        run: node packages/demo/check.ts
+
+      - name: Build the demo for publishing
+        # The check's own build is removed first, or Jekyll would publish it as a second copy.
+        run: |
+          rm -rf build
+          node packages/demo/build.ts demo
+
+      - uses: actions/configure-pages@v5
+
+      - name: Build the site with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+
+      - uses: actions/upload-pages-artifact@v3
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

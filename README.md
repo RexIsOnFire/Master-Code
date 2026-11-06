@@ -25,6 +25,17 @@ the user cannot. The generality lives in the IR and the backends.
 
 ---
 
+## Try it in your browser
+
+**[rexisonfire.github.io/Master-Code/demo](https://rexisonfire.github.io/Master-Code/demo/)** runs
+Master Code entirely in the browser: no install, nothing uploaded. Create a
+Python, JavaScript or HTML project, draw it, make it modular, generate, run and
+test it, then download it as a zip that opens in the desktop app. Projects are
+kept in the browser. [docs/demo.md](docs/demo.md) says what runs there and what
+needs the desktop app.
+
+---
+
 ## Getting started
 
 Requires **Node 22.6 or newer** and nothing else — no install step, no
@@ -273,11 +284,12 @@ packages/core/src/
 packages/cli/         the mcode command line
 packages/server/      the IDE server
 packages/ide/public/  the browser IDE, including the welcome screen
+packages/demo/        the in-browser demo: its host, workers, build and browser check
 launcher/             the Windows launcher (C#); build with launcher/build.ps1
 plugins/              an example plugin
 examples/             five real projects
-docs/                 architecture, project format, plugin API, security
-tests/                159 tests
+docs/                 architecture, project format, plugin API, security, the demo
+tests/                218 tests
 ```
 
 ---
@@ -291,15 +303,18 @@ tests/                159 tests
 - [docs/plugins.md](docs/plugins.md) — the plugin API
 - [docs/security.md](docs/security.md) — what the sandbox does and does not enforce
 - [docs/install.md](docs/install.md) — installation and toolchains
+- [docs/demo.md](docs/demo.md) — the in-browser demo: how it works, its limits, its isolation
 
 ---
 
 ## Development
 
 ```sh
-node --test "tests/*.test.ts"     # 159 tests, no install required
+node --test "tests/*.test.ts"     # 218 tests, no install required
 npx tsc -p tsconfig.json --noEmit # type-check (needs TypeScript)
 node packages/cli/src/main.ts doctor
+node packages/demo/build.ts       # the browser demo, into build/pages/demo
+node packages/demo/check.ts       # build it, then drive it in headless Edge/Chrome
 ```
 
 The whole repository runs from source on Node's native type stripping. Two

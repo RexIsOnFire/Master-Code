@@ -2,6 +2,9 @@
 build/
 node_modules/
 
+# The browser demo as the Pages workflow builds it (node packages/demo/build.ts demo).
+/demo/
+
 # ...except the build pipeline's own source, which shares the name.
 !packages/core/src/build/
 
