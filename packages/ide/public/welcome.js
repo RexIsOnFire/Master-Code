@@ -58,7 +58,7 @@ export class Welcome {
       $('welcomeToolchains').innerHTML = '<div class="welcome-note">Checking this machine…</div>';
       this.data = await this.call('workspace.welcome');
     }
-    $('welcomeNode').textContent = `Node ${this.data.node}`;
+    $('welcomeNode').textContent = this.data.runtime ?? `Node ${this.data.node}`;
     this.#renderToolchains();
     this.#renderRecent();
   }

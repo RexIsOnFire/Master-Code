@@ -109,7 +109,31 @@ const DEFAULT_ALLOWLIST = [
   'KOTLIN_HOME',
 ];
 
+/**
+ * Runs commands somewhere other than this machine's processes.
+ *
+ * The browser demo has no processes: it sends `python` to Pyodide and `node` to
+ * a worker. Because everything already goes through `runCommand` and `which`,
+ * one host set here moves the build, the run, the tracer, the test runner and
+ * the toolchain probe together - none of them can be left spawning by mistake.
+ */
+export interface ProcessHost {
+  run(options: RunOptions): Promise<RunResult>;
+  /** Where the command would be found, or undefined when it is not available. */
+  which(command: string): string | undefined;
+}
+
+let processHost: ProcessHost | undefined;
+
+/** Replace process spawning for the life of this module; undefined restores it. */
+export function setProcessHost(host: ProcessHost | undefined): void {
+  processHost = host;
+  // A probe answered by the previous host says nothing about this one.
+  versionCache.clear();
+}
+
 export async function runCommand(options: RunOptions): Promise<RunResult> {
+  if (processHost) return processHost.run(options);
   const started = Date.now();
   const maxBytes = options.maxOutputBytes ?? 2_000_000;
   const env = buildEnv(options.envAllowlist ?? DEFAULT_ALLOWLIST, options.env);
@@ -353,6 +377,7 @@ function versionLine(text: string): string | undefined {
 
 /** Resolve an executable on PATH, honouring PATHEXT on Windows. */
 export function which(command: string): string | undefined {
+  if (processHost) return processHost.which(command);
   if (isAbsolute(command) && existsSync(command)) return command;
   const pathValue = process.env.PATH ?? process.env.Path ?? '';
   const exts =
