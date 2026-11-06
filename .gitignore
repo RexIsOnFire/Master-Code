@@ -21,3 +21,8 @@ MasterCode.exe
 
 # Deployment secrets; only .env.example is committed
 .env
+
+# Projects made with Master Code belong in their own repos
+projects/
+tools/draken/
+tools/soar/

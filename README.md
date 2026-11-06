@@ -317,4 +317,3 @@ source. What is stubbed or unenforced is labelled as such in the code and in
 these docs, not glossed over.
 
 MIT licensed.
-"# Master-Code" 
