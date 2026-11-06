@@ -21,6 +21,20 @@ import { createHash, createHmac } from 'node:crypto';
 import { format as nodeFormat, inspect as nodeInspect } from 'node:util';
 
 import { probeTool } from '#core/runtime/exec.ts';
+import { registryHeaders } from '#core/libraries/registry.ts';
+
+describe('demo registry search', () => {
+  it('sends no User-Agent from a browser, so PyPI and npm need no CORS preflight', () => {
+    assert.equal(registryHeaders()['user-agent'], 'mastercode-library-browser', 'Node identifies itself');
+    const global = globalThis as { document?: unknown };
+    global.document = {};
+    try {
+      assert.deepEqual(registryHeaders(), { accept: 'application/json' });
+    } finally {
+      delete global.document;
+    }
+  });
+});
 
 type Loose = any; // eslint-disable-line @typescript-eslint/no-explicit-any
 const load = (path: string): Promise<Loose> => import(new URL(`../packages/demo/public/${path}`, import.meta.url).href);

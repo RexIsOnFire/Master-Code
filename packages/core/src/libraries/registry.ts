@@ -233,11 +233,20 @@ async function getJson(url: string, signal: AbortSignal): Promise<Record<string,
   return JSON.parse(text) as Record<string, unknown>;
 }
 
+/**
+ * Registries ask callers to identify themselves, so the CLI and the server send
+ * a User-Agent. A browser must not set one: Firefox sends it (Chrome drops it),
+ * which turns the request into a CORS preflight that PyPI answers without
+ * allowing the header - so the demo's registry search failed in Firefox.
+ */
+export function registryHeaders(): Record<string, string> {
+  return typeof document === 'undefined'
+    ? { accept: 'application/json', 'user-agent': 'mastercode-library-browser' }
+    : { accept: 'application/json' };
+}
+
 async function getText(url: string, signal: AbortSignal): Promise<string> {
-  const response = await fetch(url, {
-    signal,
-    headers: { accept: 'application/json', 'user-agent': 'mastercode-library-browser' },
-  });
+  const response = await fetch(url, { signal, headers: registryHeaders() });
   if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
   return response.text();
 }
