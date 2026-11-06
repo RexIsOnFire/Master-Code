@@ -2,6 +2,9 @@
 build/
 node_modules/
 
+# ...except the build pipeline's own source, which shares the name.
+!packages/core/src/build/
+
 # Preserved regions that lost their home during a regenerate. Review, then delete.
 *.orphaned
 
