@@ -831,6 +831,45 @@ textarea:focus {
   letter-spacing: 0.6px;
 }
 
+/* A library's functions, browsed from "In this project". */
+.lib-fn-head {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 6px 12px;
+}
+
+.lib-fn-head .search {
+  margin: 0;
+  flex: 1;
+}
+
+.lib-class .name {
+  cursor: pointer;
+}
+
+.lib-methods {
+  padding-left: 18px;
+  border-left: 1px solid var(--line);
+  margin-left: 12px;
+}
+
+.lib-methods[hidden] {
+  display: none;
+}
+
+.lib-params {
+  padding: 4px 12px 10px 24px;
+  background: var(--surface);
+}
+
+.lib-param-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  margin: 4px 0 8px;
+}
+
 /* ── architecture ─────────────────────────────────────────────────────── */
 
 .architecture {

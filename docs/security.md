@@ -105,6 +105,15 @@ library and writing the manifest are offline operations. `mcode install` shows
 the exact command and requires `--yes`. Nothing else in the platform invokes a
 package manager.
 
+**Reading a library's functions runs the library.** To offer a Python
+library's functions as nodes, Master Code imports it under the project's Python
+and reads its signatures and documentation - the only way to see what it really
+exports. Importing a package runs its code, so this is the same decision as
+running a program that uses it, made through `runCommand` with the same limits.
+Nothing is installed by it: on the desktop the library must already be installed;
+in the browser demo it is installed into the sandboxed interpreter, which cannot
+reach stored projects.
+
 **Registry search is opt-in.** `mcode libs` is offline unless you pass `--online`,
 which queries the language's own index directly — no intermediary, no account, no
 telemetry. There is no other outbound network traffic.

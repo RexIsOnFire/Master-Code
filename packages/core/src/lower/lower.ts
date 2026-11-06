@@ -636,9 +636,11 @@ function exprSize(e: IrExpr): number {
       break;
     case 'call':
       n += exprSize(e.callee) + e.args.reduce((s, a) => s + exprSize(a), 0);
+      n += (e.kwargs ?? []).reduce((s, a) => s + exprSize(a.value), 0);
       break;
     case 'method':
       n += exprSize(e.target) + e.args.reduce((s, a) => s + exprSize(a), 0);
+      n += (e.kwargs ?? []).reduce((s, a) => s + exprSize(a.value), 0);
       break;
     case 'builtin':
     case 'new':

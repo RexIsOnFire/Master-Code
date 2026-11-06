@@ -50,11 +50,11 @@ const state = {
  * Set by the browser demo, which answers the same commands inside the page
  * instead of over HTTP. Everything below is otherwise identical in both.
  */
-const host = globalThis.masterCodeHost;
+const demoHost = globalThis.masterCodeHost;
 
 async function call(command, args = {}) {
-  const body = host
-    ? await host.call(command, args)
+  const body = demoHost
+    ? await demoHost.call(command, args)
     : await (
         await fetch('/api/command', {
           method: 'POST',
@@ -68,7 +68,7 @@ async function call(command, args = {}) {
 
 function connectEvents() {
   // The demo host delivers the same named events, with the same JSON payloads.
-  const source = host ? host.events : new EventSource('/api/events');
+  const source = demoHost ? demoHost.events : new EventSource('/api/events');
   source.addEventListener('output', (e) => {
     const { stream, chunk } = JSON.parse(e.data);
     appendOutput(chunk, stream === 'stderr');
@@ -87,7 +87,7 @@ function connectEvents() {
     const step = JSON.parse(e.data);
     appendOutput(`▸ ${step.label} (${step.durationMs} ms)\n`);
   });
-  if (!host) source.onerror = () => setStatus('disconnected — is the server still running?');
+  if (!demoHost) source.onerror = () => setStatus('disconnected — is the server still running?');
 }
 
 // ---------------------------------------------------------------------------
@@ -159,7 +159,7 @@ const archView = new ArchitectureView($('archCanvas'), {
 const welcome = new Welcome({
   call,
   toast: (text, kind) => toast(text, kind),
-  importZip: host ? () => host.importZip() : undefined,
+  importZip: demoHost ? () => demoHost.importZip() : undefined,
   async onProjectReady(result) {
     applyProjectState(result);
     const entry =
@@ -313,12 +313,12 @@ async function refreshGraph() {
   renderVariables();
 }
 
-async function addNode(type, x, y) {
+async function addNode(type, x, y, props, title) {
   if (!state.activeGraphId) {
     toast('Open a file with a logic graph first.', 'error');
     return null;
   }
-  const result = await call('graph.addNode', { graphId: state.activeGraphId, type, x, y });
+  const result = await call('graph.addNode', { graphId: state.activeGraphId, type, x, y, props, title });
   applyDiagnostics(result.diagnostics);
   await refreshGraph();
   state.selection = [result.node.id];
@@ -1288,7 +1288,7 @@ async function downloadProjectZip() {
   try {
     const result = await generate({ quiet: true });
     const failed = result.diagnostics.some((d) => d.severity === 'error');
-    const { files } = await host.downloadProject();
+    const { files } = await demoHost.downloadProject();
     toast(
       failed
         ? `Downloaded ${files} files. The project has errors, so its source is from the last generation that succeeded.`
@@ -1303,7 +1303,7 @@ async function downloadProjectZip() {
 /** Demo only: unpacks a downloaded project into the browser and opens it. */
 async function openProjectZip() {
   try {
-    const result = await host.importZip();
+    const result = await demoHost.importZip();
     if (!result) return;
     welcome.close();
     await welcome.onProjectReady(result);
@@ -1501,6 +1501,7 @@ async function searchLibraries() {
     : { local: (await call('libs.list', { language })).entries, remote: [], source: 'offline' };
 
   host.innerHTML = '';
+  renderProjectLibraries(host, language);
   const section = (title, entries) => {
     if (!entries?.length) return;
     host.insertAdjacentHTML('beforeend', `<div class="lib-group">${title}</div>`);
@@ -1517,7 +1518,13 @@ async function searchLibraries() {
       add.onclick = async () => {
         const res = await call('libs.add', { language, name: entry.name, version: entry.version });
         applyProjectState(res.state);
-        toast(`${entry.name} added to the manifest. Nothing downloaded — install it with your package manager.`, 'ok');
+        toast(
+          demoHost
+            ? `${entry.name} added. It is installed in the browser when the program runs.`
+            : `${entry.name} added to the manifest. Nothing downloaded — install it with your package manager.`,
+          'ok',
+        );
+        void searchLibraries();
       };
       row.append(add);
       host.append(row);
@@ -1529,6 +1536,202 @@ async function searchLibraries() {
   if (!result.local?.length && !result.remote?.length) {
     host.insertAdjacentHTML('beforeend', '<div class="lib-note">Nothing matched. Tick "search the registry" to look beyond the offline catalogue.</div>');
   }
+}
+
+/** The project's own libraries, each with a way into its functions. */
+function renderProjectLibraries(host, language) {
+  const deps = (state.project?.dependencies ?? []).filter((d) => d.language === language);
+  if (!deps.length) return;
+  host.insertAdjacentHTML('beforeend', '<div class="lib-group">In this project</div>');
+  for (const dep of deps) {
+    const row = document.createElement('div');
+    row.className = 'lib-row';
+    row.innerHTML = `<span class="name">${escapeHtml(dep.name)}</span>
+      <span class="version">${escapeHtml(dep.version)}</span>
+      <span class="summary">${language === 'python' ? 'Use its functions and classes as nodes.' : 'Recorded in the manifest.'}</span>`;
+    if (language === 'python') {
+      const open = document.createElement('button');
+      open.className = 'btn tiny';
+      open.textContent = 'Functions';
+      open.title = 'Read what this library offers and add it to the graph as nodes';
+      open.onclick = () => void showLibraryFunctions(dep);
+      row.append(open);
+    }
+    host.append(row);
+  }
+}
+
+/** Short signature: required parameters by name, the optional ones counted. */
+function signatureText(callable) {
+  if (!callable.params) return `${callable.name}(…)`;
+  const required = callable.params.filter((p) => p.required).map((p) => (p.kind === 'varargs' ? `*${p.name}` : p.name));
+  const optional = callable.params.filter((p) => !p.required).length;
+  return `${callable.name}(${[...required, optional ? `+${optional} optional` : ''].filter(Boolean).join(', ')})`;
+}
+
+/**
+ * Browses a library's functions and classes and adds them to the open graph.
+ * The first look at a library runs it to read its signatures - in the browser
+ * demo that includes downloading it - so it can take a moment.
+ */
+async function showLibraryFunctions(dep, { refresh = false } = {}) {
+  const host = $('libraries');
+  host.innerHTML = `<div class="lib-note">Reading ${escapeHtml(dep.name)}… the first time, this runs the library to see what it offers.</div>`;
+  let result;
+  try {
+    result = await call('libs.inspect', { language: dep.language, name: dep.name, refresh });
+  } catch (err) {
+    host.innerHTML = '';
+    host.insertAdjacentHTML('beforeend', `<div class="lib-note">${escapeHtml(String(err.message ?? err))}</div>`);
+    return;
+  }
+  const surface = result.surface;
+  host.innerHTML = '';
+
+  const head = document.createElement('div');
+  head.className = 'lib-fn-head';
+  const back = document.createElement('button');
+  back.className = 'btn tiny';
+  back.textContent = '← Libraries';
+  back.onclick = () => void searchLibraries();
+  const title = document.createElement('strong');
+  title.textContent = surface ? `${surface.package} ${surface.version}` : dep.name;
+  const filter = document.createElement('input');
+  filter.className = 'search';
+  filter.type = 'search';
+  filter.placeholder = 'Filter functions, classes and methods…';
+  const again = document.createElement('button');
+  again.className = 'btn tiny';
+  again.textContent = 'Read again';
+  again.title = 'Read the library again instead of using the saved listing';
+  again.onclick = () => void showLibraryFunctions(dep, { refresh: true });
+  head.append(back, title, filter, again);
+  host.append(head);
+
+  for (const d of result.diagnostics ?? []) {
+    host.insertAdjacentHTML('beforeend', `<div class="lib-note">${escapeHtml(d.message)}${d.hint ? ` — ${escapeHtml(d.hint)}` : ''}</div>`);
+  }
+  if (!surface) return;
+
+  const list = document.createElement('div');
+  host.append(list);
+  const base = { package: surface.package, version: surface.version };
+  const LIMIT = 300;
+
+  const render = () => {
+    const q = filter.value.trim().toLowerCase();
+    const hit = (...names) => !q || names.some((n) => n.toLowerCase().includes(q));
+    list.innerHTML = '';
+    let shown = 0;
+    let total = 0;
+    for (const module of surface.modules) {
+      const functions = module.functions.filter((f) => hit(f.name, `${module.name}.${f.name}`));
+      const classes = module.classes.filter((c) => hit(c.name) || c.methods.some((m) => hit(`${c.name}.${m.name}`, m.name)));
+      if (!functions.length && !classes.length) continue;
+      list.insertAdjacentHTML('beforeend', `<div class="lib-group">${escapeHtml(module.name)}</div>`);
+      for (const fn of functions) {
+        total++;
+        if (shown++ < LIMIT) list.append(callableRow(fn, () => ({ type: 'library/function', title: fn.name, props: { ...base, module: module.name, callable: fn } })));
+      }
+      for (const cls of classes) {
+        total++;
+        if (shown++ >= LIMIT) continue;
+        const methods = cls.methods.filter((m) => !q || hit(`${cls.name}.${m.name}`, m.name, cls.name));
+        list.append(classRow(cls, module.name, methods, base, !!q));
+      }
+    }
+    if (total > LIMIT) list.insertAdjacentHTML('beforeend', `<div class="lib-note">Showing ${LIMIT} of ${total}. Type to filter.</div>`);
+    if (!total) list.insertAdjacentHTML('beforeend', '<div class="lib-note">Nothing matched.</div>');
+  };
+  filter.oninput = debounce(render, 150);
+  render();
+  if (result.cached) toast(`${dep.name}: listing from the saved copy. "Read again" refreshes it.`, 'ok');
+}
+
+function classRow(cls, moduleName, methods, base, open) {
+  const box = document.createElement('div');
+  box.className = 'lib-class';
+  const row = callableRow({ ...cls.init, name: cls.name, doc: cls.doc ?? cls.init.doc }, () => ({
+    type: 'library/new',
+    title: cls.name,
+    props: { ...base, module: moduleName, className: cls.name, callable: cls.init },
+  }), { label: 'Create', expandable: methods.length });
+  box.append(row);
+  const children = document.createElement('div');
+  children.className = 'lib-methods';
+  children.hidden = !open;
+  const fill = () => {
+    if (children.childElementCount) return;
+    for (const m of methods) {
+      children.append(callableRow(m, () => ({
+        type: 'library/method',
+        title: `${cls.name}.${m.name}`,
+        props: { ...base, module: moduleName, className: cls.name, callable: m },
+      })));
+    }
+  };
+  if (open) fill();
+  row.querySelector('.name').onclick = () => {
+    fill();
+    children.hidden = !children.hidden;
+  };
+  box.append(children);
+  return box;
+}
+
+function callableRow(callable, nodeSpec, { label = 'Add', expandable = 0 } = {}) {
+  const row = document.createElement('div');
+  row.className = 'lib-row lib-fn';
+  row.innerHTML = `<span class="name" title="${escapeHtml(callable.name)}">${expandable ? '▸ ' : ''}${escapeHtml(callable.name)}</span>
+    <span class="version">${expandable ? `${expandable} methods` : callable.async ? 'async' : ''}</span>
+    <span class="summary" title="${escapeHtml(callable.doc ?? '')}">${escapeHtml(signatureText(callable))}${callable.doc ? ` — ${escapeHtml(callable.doc)}` : ''}</span>`;
+  const add = document.createElement('button');
+  add.className = 'btn tiny';
+  add.textContent = label;
+  add.onclick = () => pickParameters(row, callable, nodeSpec);
+  row.append(add);
+  return row;
+}
+
+/** Lets the user choose which optional parameters become ports, then adds the node. */
+function pickParameters(row, callable, nodeSpec) {
+  const open = row.nextElementSibling;
+  if (open?.classList.contains('lib-params')) open.remove();
+  const optional = (callable.params ?? []).filter((p) => !p.required);
+  if (!optional.length) return void addLibraryNode(nodeSpec(), '');
+  const panel = document.createElement('div');
+  panel.className = 'lib-params';
+  panel.innerHTML = '<div class="lib-note">Optional parameters to show as ports - the rest keep the library\'s defaults:</div>';
+  const boxes = document.createElement('div');
+  boxes.className = 'lib-param-list';
+  for (const p of optional) {
+    const label = document.createElement('label');
+    label.className = 'check';
+    label.title = [p.type, p.default !== undefined ? `default ${p.default}` : '', p.doc].filter(Boolean).join(' - ');
+    label.innerHTML = `<input type="checkbox" value="${escapeHtml(p.name)}" /> ${escapeHtml(p.kind === 'varargs' ? `*${p.name}` : p.name)}`;
+    boxes.append(label);
+  }
+  const confirm = document.createElement('button');
+  confirm.className = 'btn tiny primary';
+  confirm.textContent = 'Add to graph';
+  confirm.onclick = () => {
+    const use = [...boxes.querySelectorAll('input:checked')].map((i) => i.value).join(', ');
+    panel.remove();
+    void addLibraryNode(nodeSpec(), use);
+  };
+  panel.append(boxes, confirm);
+  row.after(panel);
+}
+
+async function addLibraryNode(spec, use) {
+  if (!state.activeGraphId) {
+    toast('Open a file with a logic graph first.', 'error');
+    return;
+  }
+  const rect = $('canvas').getBoundingClientRect();
+  const at = editor.toWorld(rect.left + rect.width / 2, rect.top + rect.height / 2);
+  const node = await addNode(spec.type, Math.round(at.x), Math.round(at.y), { ...spec.props, use }, spec.title);
+  if (node) toast(`Added ${spec.title}. Wire its exec input into the flow.`, 'ok');
 }
 
 // ---------------------------------------------------------------------------
@@ -1546,7 +1749,7 @@ const MENUS = [
       { label: () => (state.project?.architecture === 'modular' ? 'Flatten into one layout…' : 'Group into modules…'), action: convertArchitecture },
       { label: 'Save project', shortcut: 'Ctrl+S', action: () => call('project.save').then(() => toast('Saved.', 'ok')) },
       // The browser demo keeps projects in the browser; these move them in and out of it.
-      ...(host
+      ...(demoHost
         ? [
             { label: 'Download project (.zip)', action: downloadProjectZip, enabled: () => !!state.project },
             { label: 'Open project from .zip…', action: openProjectZip },

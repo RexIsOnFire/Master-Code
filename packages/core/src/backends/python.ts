@@ -31,6 +31,7 @@ import type {
   BinaryOp,
   IrClass,
   IrDecl,
+  IrKwarg,
   IrEnum,
   IrExpr,
   IrFunction,
@@ -752,6 +753,8 @@ class PythonEmitter {
       case 'self':
         return 'self';
       case 'symbol': {
+        // A library's own spelling is the only one that exists.
+        if (e.exact) return e.name;
         const resolved = this.ctx.resolveSymbol(e.name, e.from);
         return resolved?.reference ?? this.symbolName(e.name);
       }
@@ -768,9 +771,9 @@ class PythonEmitter {
         return `${op}${this.expr(e.operand, 11)}`;
       }
       case 'call':
-        return `${this.expr(e.callee, CALL_PREC)}(${e.args.map((a) => this.expr(a)).join(', ')})`;
+        return `${this.expr(e.callee, CALL_PREC)}(${this.arguments(e.args, e.kwargs)})`;
       case 'method':
-        return `${this.expr(e.target, CALL_PREC)}.${this.name(e.name)}(${e.args.map((a) => this.expr(a)).join(', ')})`;
+        return `${this.expr(e.target, CALL_PREC)}.${e.exact ? e.name : this.name(e.name)}(${this.arguments(e.args, e.kwargs)})`;
       case 'member':
         return `${this.expr(e.target, CALL_PREC)}.${this.memberName(e)}`;
       case 'index':
@@ -804,6 +807,11 @@ class PythonEmitter {
         }
         return e.code.trim();
     }
+  }
+
+  /** Positional arguments, then keyword arguments as the callee spells them. */
+  private arguments(args: IrExpr[], kwargs: IrKwarg[] | undefined): string {
+    return [...args.map((a) => this.expr(a)), ...(kwargs ?? []).map((k) => `${k.name}=${this.expr(k.value)}`)].join(', ');
   }
 
   private memberName(e: IrExpr & { k: 'member' }): string {

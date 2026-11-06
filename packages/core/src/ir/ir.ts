@@ -71,18 +71,33 @@ export type BinaryOp =
 
 export type UnaryOp = '-' | '!' | '~';
 
+/**
+ * A keyword argument (`sep=";"`). Only a library call produces these, and the
+ * nodes that do are limited to languages with keyword arguments; a backend
+ * without them never sees one.
+ */
+export interface IrKwarg {
+  name: string;
+  value: IrExpr;
+}
+
 export type IrExpr = IrBase &
   (
     | { k: 'lit'; value: IrLiteralValue; type: TypeRef }
     /** Reference to a local, parameter, field (via `self`), or module-level symbol. */
     | { k: 'ref'; name: string; type: TypeRef }
-    /** Reference to a symbol imported from another file. `from` is a file id. */
-    | { k: 'symbol'; name: string; from?: string; type: TypeRef }
+    /**
+     * Reference to a symbol imported from another file. `from` is a file id.
+     * `exact` marks a name spelled by an external library (`APIHarnessV2`,
+     * `read_csv`): backends emit it as is instead of re-casing it to their own
+     * conventions, which would name something that does not exist.
+     */
+    | { k: 'symbol'; name: string; from?: string; type: TypeRef; exact?: boolean }
     | { k: 'self'; type: TypeRef }
     | { k: 'binary'; op: BinaryOp; left: IrExpr; right: IrExpr; type: TypeRef }
     | { k: 'unary'; op: UnaryOp; operand: IrExpr; type: TypeRef }
-    | { k: 'call'; callee: IrExpr; args: IrExpr[]; type: TypeRef; caps?: Capability[] }
-    | { k: 'method'; target: IrExpr; name: string; args: IrExpr[]; type: TypeRef; caps?: Capability[] }
+    | { k: 'call'; callee: IrExpr; args: IrExpr[]; kwargs?: IrKwarg[]; type: TypeRef; caps?: Capability[] }
+    | { k: 'method'; target: IrExpr; name: string; args: IrExpr[]; kwargs?: IrKwarg[]; exact?: boolean; type: TypeRef; caps?: Capability[] }
     | { k: 'member'; target: IrExpr; name: string; type: TypeRef }
     | { k: 'index'; target: IrExpr; index: IrExpr; type: TypeRef }
     | { k: 'new'; className: string; args: IrExpr[]; type: TypeRef }
@@ -362,10 +377,12 @@ export function walkExpr(e: IrExpr | undefined, v: IrVisitor): void {
     case 'call':
       walkExpr(e.callee, v);
       e.args.forEach((a) => walkExpr(a, v));
+      e.kwargs?.forEach((a) => walkExpr(a.value, v));
       break;
     case 'method':
       walkExpr(e.target, v);
       e.args.forEach((a) => walkExpr(a, v));
+      e.kwargs?.forEach((a) => walkExpr(a.value, v));
       break;
     case 'member':
       walkExpr(e.target, v);

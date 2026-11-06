@@ -281,7 +281,10 @@ async function preparePackages(py, job, files) {
   // Packages Pyodide ships pre-built (numpy, pandas, ...) are found from the imports.
   await py.loadPackagesFromImports(code, { messageCallback: () => {}, errorCallback: (m) => note(m) });
 
-  const wanted = requirementsIn(files, absolute(job.cwd, 'requirements.txt')).filter((r) => !installed.has(r));
+  // MASTERCODE_INSTALL names packages a run needs beyond the manifest: reading a
+  // library's functions sets it, so the library is there to be read.
+  const extra = String(job.env?.MASTERCODE_INSTALL ?? '').split(/[\s,]+/).filter(Boolean);
+  const wanted = [...new Set([...requirementsIn(files, absolute(job.cwd, 'requirements.txt')), ...extra])].filter((r) => !installed.has(r));
   if (wanted.length) {
     note(`Installing ${wanted.join(', ')} with micropip (pure-Python wheels and Pyodide's own builds only).`);
     await py.loadPackage('micropip');

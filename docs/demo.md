@@ -55,6 +55,7 @@ ten.
 | Receiving HTTP (`http.server`, `node:http`), threads, subprocesses, `node:sqlite` | do not run - a browser tab cannot listen on a port or start processes. The project still generates and downloads; run it locally |
 | `input()` / stdin | reads whatever stdin the run was given (none from the Run button, as on the desktop) |
 | npm packages | declared ones load from jsDelivr's ES module build instead of `node_modules` |
+| A Python library's functions as nodes (Libraries → In this project → Functions) | read inside the sandbox, which installs the library first; the listing is saved in the project, so later looks are instant |
 | ES modules that import each other in a cycle | refused with the cycle named; blob and data URLs cannot express a cycle |
 | JavaScript line tracing | not available - it uses Node's inspector |
 | `node --check` | skipped; syntax errors appear when the program runs |

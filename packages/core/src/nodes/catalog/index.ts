@@ -20,6 +20,7 @@ import { serveNodes } from './serve.ts';
 import { textNodes } from './text.ts';
 import { webNodes } from './web.ts';
 import { customNodes } from './custom.ts';
+import { libraryNodes } from './library.ts';
 
 export const builtinNodes: NodeDefinition[] = [
   ...controlNodes,
@@ -34,6 +35,7 @@ export const builtinNodes: NodeDefinition[] = [
   ...textNodes,
   ...webNodes,
   ...customNodes,
+  ...libraryNodes,
 ];
 
 /** A registry preloaded with the built-in catalogue. Plugins add to it. */

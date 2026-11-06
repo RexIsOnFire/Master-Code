@@ -194,10 +194,12 @@ class Marker {
       case 'call':
         e.callee = this.expr(e.callee, scope)!;
         e.args = e.args.map((a) => this.expr(a, scope)!);
+        if (e.kwargs) e.kwargs = e.kwargs.map((a) => ({ ...a, value: this.expr(a.value, scope)! }));
         break;
       case 'method':
         e.target = this.expr(e.target, scope)!;
         e.args = e.args.map((a) => this.expr(a, scope)!);
+        if (e.kwargs) e.kwargs = e.kwargs.map((a) => ({ ...a, value: this.expr(a.value, scope)! }));
         break;
       case 'member':
         e.target = this.expr(e.target, scope)!;

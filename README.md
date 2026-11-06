@@ -93,6 +93,7 @@ mcode doctor           # what this machine can build
 | **Nine paradigms** | Procedural, object-oriented, functional, event-driven, data-flow, state machine, pipeline, component, service — each with its own vocabulary in the palette. |
 | **Round-trip safety** | Hand-written code inside marked regions survives regeneration; anything that loses its home is preserved to a `.orphaned` file rather than deleted. |
 | **Library catalogue** | ~150 curated libraries across eight package managers, browsable offline, plus live registry search. Adding one writes the manifest; **nothing is ever downloaded** without an explicit, confirmed command. |
+| **Library functions as nodes** | A Python library in the project can be read for what it offers - pandas, FalconPy, anything installed - and its functions, classes and methods dropped onto the graph with their real parameters as ports, keyword arguments included. Keywords a library only documents (`**kwargs` APIs like FalconPy's) are read from its docstrings. |
 | **Capability sandbox** | Every node declares what it needs. A program whose graph requires a capability the project has not granted is refused before it is compiled. |
 | **Plugins** | Languages, nodes, templates, exporters, importers and themes, through the same registries the built-ins use. |
 | **CLI and IDE** | Everything the IDE does is a CLI command, because the IDE is a client of the same core. |
@@ -289,7 +290,7 @@ launcher/             the Windows launcher (C#); build with launcher/build.ps1
 plugins/              an example plugin
 examples/             five real projects
 docs/                 architecture, project format, plugin API, security, the demo
-tests/                218 tests
+tests/                228 tests
 ```
 
 ---
@@ -310,7 +311,7 @@ tests/                218 tests
 ## Development
 
 ```sh
-node --test "tests/*.test.ts"     # 218 tests, no install required
+node --test "tests/*.test.ts"     # 228 tests, no install required
 npx tsc -p tsconfig.json --noEmit # type-check (needs TypeScript)
 node packages/cli/src/main.ts doctor
 node packages/demo/build.ts       # the browser demo, into build/pages/demo

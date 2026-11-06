@@ -26,6 +26,7 @@ import { GraphBuilder, addFile, addModule } from '#core/project/builder.ts';
 import { catalogFor, catalogSummary, searchCatalog } from '#core/libraries/catalog.ts';
 import { searchRegistry } from '#core/libraries/registry.ts';
 import { addToProject, planInstall, removeFromProject } from '#core/libraries/install.ts';
+import { inspectPythonLibrary } from '#core/libraries/surface.ts';
 import { checkCapabilities, describeLimits, runDiagnostics, runInSandbox } from '#core/runtime/sandbox.ts';
 import { runTests } from '#core/testing/runner.ts';
 import { probeTool } from '#core/runtime/exec.ts';
@@ -514,6 +515,8 @@ export function createCommands(host: CommandHost): Record<string, CommandHandler
         x: Number(args.x ?? 0),
         y: Number(args.y ?? 0),
       });
+      // A library node is titled after what it calls (`read_csv`), not its type.
+      if (typeof args.title === 'string' && args.title.trim()) node.title = args.title.trim();
       autosave(session);
       return { node, diagnostics: validateAll(session).toJSON() };
     },
@@ -995,6 +998,30 @@ export function createCommands(host: CommandHost): Record<string, CommandHandler
     'libs.installPlan'(session) {
       const { project } = requireProject(session);
       return { plans: planInstall(project, session.workspace.backends) };
+    },
+
+    /**
+     * What a library in this project offers - modules, classes, functions and
+     * their parameters - so the palette can offer them as nodes. It reads the
+     * installed library under the project's Python; libraries/surface.ts says
+     * what that needs and what it trusts.
+     */
+    async 'libs.inspect'(session, args) {
+      const { project, root, out } = requireProject(session);
+      const language = String(args.language ?? 'python');
+      if (language !== 'python') throw new Error('Reading functions out of a library is available for Python libraries.');
+      const name = String(args.name ?? '');
+      const dependency = project.dependencies.find((d) => d.language === language && d.name === name);
+      if (!dependency) throw new Error(`${name} is not in this project; add it under Libraries first.`);
+      const result = await inspectPythonLibrary({
+        name,
+        version: dependency.version,
+        out,
+        root,
+        refresh: args.refresh === true,
+        onOutput: log,
+      });
+      return { surface: result.surface ?? null, cached: result.cached, diagnostics: result.diagnostics.toJSON() };
     },
 
     // -- environment -----------------------------------------------------------

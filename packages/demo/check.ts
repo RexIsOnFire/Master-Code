@@ -482,6 +482,56 @@ async function main(): Promise<void> {
     )) as Json;
     check('learn: a Python challenge is built, run and checked', learn.stage === 'check', `${String(learn.count)} challenges; "${String(learn.title)}" -> stage ${String(learn.stage)}, ${String(learn.reason)}`);
 
+    // Library functions as nodes: read FalconPy and pandas in the sandbox, then call pandas from a graph.
+    const libraries = (await evaluate(
+      inPage(`
+      await call('project.create', { template: 'python/empty', name: 'Library Nodes' });
+      await call('libs.add', { language: 'python', name: 'crowdstrike-falconpy', version: '1.6.6' });
+      const falcon = await call('libs.inspect', { language: 'python', name: 'crowdstrike-falconpy' });
+      const hosts = falcon.surface?.modules.flatMap((m) => m.classes).find((c) => c.name === 'Hosts');
+      const query = hosts?.methods.find((m) => m.name === 'query_devices_by_filter');
+
+      await call('libs.add', { language: 'python', name: 'pandas', version: '3.0.2' });
+      const pandas = await call('libs.inspect', { language: 'python', name: 'pandas' });
+      const toNumeric = pandas.surface?.modules.flatMap((m) => m.functions).find((f) => f.name === 'to_numeric');
+      const readCsv = pandas.surface?.modules.flatMap((m) => m.functions).find((f) => f.name === 'read_csv');
+
+      const state = await call('project.state');
+      const graph = state.project.graphs[0];
+      const entry = graph.nodes.find((n) => n.type === 'entry/main');
+      const execOut = (node) => node.outputs.find((p) => p.type.kind === 'exec').id;
+      const lib = (await call('graph.addNode', { graphId: graph.id, type: 'library/function', x: 300, y: 0, title: 'to_numeric',
+        props: { package: 'pandas', version: '3.0.2', module: 'pandas', use: '', callable: toNumeric } })).node;
+      await call('graph.setPortDefault', { graphId: graph.id, nodeId: lib.id, portId: 'arg_arg', value: '42' });
+      const print = (await call('graph.addNode', { graphId: graph.id, type: 'io/print', x: 600, y: 0 })).node;
+      await call('graph.connect', { graphId: graph.id, from: { node: entry.id, port: execOut(entry) }, to: { node: lib.id, port: 'in' } });
+      await call('graph.connect', { graphId: graph.id, from: { node: lib.id, port: 'out' }, to: { node: print.id, port: 'in' } });
+      await call('graph.connect', { graphId: graph.id, from: { node: lib.id, port: 'result' }, to: { node: print.id, port: 'v' } });
+      const generated = await call('code.generate');
+      const out = [];
+      const listener = (e) => out.push(JSON.parse(e.data).chunk);
+      window.masterCodeHost.events.addEventListener('output', listener);
+      const run = await call('code.run', {});
+      window.masterCodeHost.events.removeEventListener('output', listener);
+      return {
+        falcon: { ok: !!falcon.surface, classes: falcon.surface?.modules.flatMap((m) => m.classes).length, diagnostics: falcon.diagnostics.map((d) => d.message),
+          query: query?.params?.map((p) => p.name + (p.fromDoc ? '*' : '')), hostsInit: hosts?.init.params?.map((p) => p.name) },
+        pandas: { functions: pandas.surface?.modules.flatMap((m) => m.functions).length, readCsv: readCsv?.params?.length, toNumeric: toNumeric?.params?.map((p) => p.name) },
+        code: generated.files.find((f) => f.path === 'src/main.py')?.content.split('\\n').filter((l) => /pandas|to_numeric/.test(l)),
+        run: { ok: run.ok, exit: run.exitCode, diagnostics: (run.diagnostics ?? []).map((d) => d.message) },
+        output: out.join('').split('\\n').filter((l) => l && !l.startsWith('[browser]') && !/^Load(ing|ed) /.test(l)),
+      };`),
+      420_000,
+    )) as Json;
+    const falcon = libraries.falcon as Json;
+    const queryParams = (falcon.query as string[] | undefined) ?? [];
+    check('libraries: FalconPy is read in the sandbox, every service class', falcon.ok === true && Number(falcon.classes) > 100, `${String(falcon.classes)} classes ${JSON.stringify(falcon.diagnostics)}`);
+    check('libraries: Hosts.query_devices_by_filter offers its documented keywords', ['filter*', 'limit*', 'sort*', 'offset*'].every((p) => queryParams.includes(p)), queryParams.join(', '));
+    const pandasInfo = libraries.pandas as Json;
+    check('libraries: pandas is read, with read_csv\'s full signature', Number(pandasInfo.functions) > 50 && Number(pandasInfo.readCsv) > 30, JSON.stringify(pandasInfo));
+    check('libraries: a Library Function node generates the real call', JSON.stringify(libraries.code).includes("to_numeric('42')"), JSON.stringify(libraries.code));
+    check('libraries: the graph runs pandas in the browser', (libraries.run as Json).ok === true && (libraries.output as string[]).includes('42'), JSON.stringify({ run: libraries.run, output: libraries.output }));
+
     // Persistence: reload the tab; the project that was open reopens from IndexedDB.
     const before = String(await evaluate(inPage("return (await call('project.state')).project.name;")));
     await cdp.send('Page.reload', {}, session);

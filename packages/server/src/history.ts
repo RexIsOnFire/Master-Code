@@ -80,6 +80,7 @@ const NON_MUTATING = new Set([
   'code.test',
   'libs.search',
   'libs.installPlan',
+  'libs.inspect',
   'doctor',
   'edit.undo',
   'edit.redo',
