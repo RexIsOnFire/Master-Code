@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Preview — Master Code</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #f2f4f8;
+        --bar: #ffffff;
+        --line: #d9dee8;
+        --ink: #1b2130;
+        --dim: #5b6478;
+        --warn: #b42318;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0f1115;
+          --bar: #161920;
+          --line: #262b36;
+          --ink: #e4e7ee;
+          --dim: #98a0b3;
+          --warn: #f97066;
+        }
+      }
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        background: var(--bg);
+        color: var(--ink);
+        font: 13px/1.4 system-ui, sans-serif;
+      }
+      header {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px 14px;
+        align-items: center;
+        padding: 8px 16px;
+        background: var(--bar);
+        border-bottom: 1px solid var(--line);
+      }
+      #where {
+        font: 12px ui-monospace, monospace;
+        overflow-wrap: anywhere;
+      }
+      .note {
+        color: var(--dim);
+        flex: 1 1 260px;
+      }
+      button {
+        font: inherit;
+        padding: 4px 10px;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        background: var(--bg);
+        color: var(--ink);
+        cursor: pointer;
+      }
+      #problem {
+        margin: 0;
+        padding: 10px 16px;
+        color: var(--warn);
+      }
+      iframe {
+        flex: 1;
+        width: 100%;
+        border: 0;
+        background: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <strong>Preview</strong>
+      <span id="where"></span>
+      <span class="note">Runs sandboxed: the page cannot see your projects or anything this site stores.</span>
+      <button id="reload" title="Read the generated files again">Reload</button>
+    </header>
+    <p id="problem" hidden></p>
+    <iframe id="frame" title="Generated page" sandbox="allow-scripts allow-forms allow-modals allow-popups"></iframe>
+    <script type="module" src="preview.js"></script>
+  </body>
+</html>

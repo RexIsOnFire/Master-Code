@@ -1208,6 +1208,10 @@ textarea:focus {
   font: inherit;
 }
 
+.big-action[hidden] {
+  display: none;
+}
+
 .big-action:hover {
   border-color: var(--accent);
   background: var(--surface);

@@ -28,11 +28,13 @@ export class Welcome {
    * @param {(command: string, args?: object) => Promise<any>} api.call
    * @param {(result: object) => Promise<void>} api.onProjectReady  hands over once a project is open
    * @param {(text: string, kind?: string) => void} api.toast
+   * @param {() => Promise<object | null>} [api.importZip]  the browser demo's zip import; absent locally
    */
   constructor(api) {
     this.call = api.call;
     this.onProjectReady = api.onProjectReady;
     this.toast = api.toast ?? (() => {});
+    this.importZip = api.importZip;
 
     this.data = null;
     this.language = null;
@@ -245,6 +247,18 @@ export class Welcome {
     }
   }
 
+  async #openZip() {
+    try {
+      const result = await this.importZip();
+      if (!result) return; // the file picker was dismissed
+      this.data = null;
+      this.close();
+      await this.onProjectReady(result);
+    } catch (err) {
+      this.toast(String(err.message ?? err), 'error');
+    }
+  }
+
   /**
    * The challenge list.
    *
@@ -357,6 +371,10 @@ export class Welcome {
     };
     $('welcomeLearn').onclick = () => void this.#openLearn();
     $('welcomeOpen').onclick = () => void this.#browse('open', this.data?.suggestedRoot);
+    if (this.importZip) {
+      $('welcomeImportZip').hidden = false;
+      $('welcomeImportZip').onclick = () => void this.#openZip();
+    }
     $('welcomeClose').onclick = () => this.close();
 
     for (const button of document.querySelectorAll('[data-welcome-back]')) {

@@ -21,7 +21,9 @@
     "ide": "node ./packages/server/src/main.ts",
     "test": "node --test --experimental-test-module-mocks tests/",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "doctor": "node ./packages/cli/src/main.ts doctor"
+    "doctor": "node ./packages/cli/src/main.ts doctor",
+    "demo:build": "node ./packages/demo/build.ts",
+    "demo:check": "node ./packages/demo/check.ts"
   },
   "dependencies": {},
   "devDependencies": {}

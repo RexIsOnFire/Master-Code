@@ -46,19 +46,29 @@ const state = {
 // Server
 // ---------------------------------------------------------------------------
 
+/**
+ * Set by the browser demo, which answers the same commands inside the page
+ * instead of over HTTP. Everything below is otherwise identical in both.
+ */
+const host = globalThis.masterCodeHost;
+
 async function call(command, args = {}) {
-  const response = await fetch('/api/command', {
-    method: 'POST',
-    headers: { 'content-type': 'application/json' },
-    body: JSON.stringify({ command, args }),
-  });
-  const body = await response.json();
+  const body = host
+    ? await host.call(command, args)
+    : await (
+        await fetch('/api/command', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({ command, args }),
+        })
+      ).json();
   if (!body.ok) throw new Error(body.error ?? 'command failed');
   return body.result;
 }
 
 function connectEvents() {
-  const source = new EventSource('/api/events');
+  // The demo host delivers the same named events, with the same JSON payloads.
+  const source = host ? host.events : new EventSource('/api/events');
   source.addEventListener('output', (e) => {
     const { stream, chunk } = JSON.parse(e.data);
     appendOutput(chunk, stream === 'stderr');
@@ -77,7 +87,7 @@ function connectEvents() {
     const step = JSON.parse(e.data);
     appendOutput(`▸ ${step.label} (${step.durationMs} ms)\n`);
   });
-  source.onerror = () => setStatus('disconnected — is the server still running?');
+  if (!host) source.onerror = () => setStatus('disconnected — is the server still running?');
 }
 
 // ---------------------------------------------------------------------------
@@ -149,6 +159,7 @@ const archView = new ArchitectureView($('archCanvas'), {
 const welcome = new Welcome({
   call,
   toast: (text, kind) => toast(text, kind),
+  importZip: host ? () => host.importZip() : undefined,
   async onProjectReady(result) {
     applyProjectState(result);
     const entry =
@@ -1272,6 +1283,36 @@ async function generate({ write = true, quiet = false } = {}) {
   return result;
 }
 
+/** Demo only: the project folder as a zip, generated first so the source in it is current. */
+async function downloadProjectZip() {
+  try {
+    const result = await generate({ quiet: true });
+    const failed = result.diagnostics.some((d) => d.severity === 'error');
+    const { files } = await host.downloadProject();
+    toast(
+      failed
+        ? `Downloaded ${files} files. The project has errors, so its source is from the last generation that succeeded.`
+        : `Downloaded ${files} files.`,
+      failed ? 'error' : 'ok',
+    );
+  } catch (err) {
+    toast(String(err.message ?? err), 'error');
+  }
+}
+
+/** Demo only: unpacks a downloaded project into the browser and opens it. */
+async function openProjectZip() {
+  try {
+    const result = await host.importZip();
+    if (!result) return;
+    welcome.close();
+    await welcome.onProjectReady(result);
+    toast(`Opened ${result.project.name}.`, 'ok');
+  } catch (err) {
+    toast(String(err.message ?? err), 'error');
+  }
+}
+
 async function runProject() {
   switchPanel('dock', 'output');
   clearOutput();
@@ -1504,6 +1545,13 @@ const MENUS = [
       { label: 'New module…', action: newModule },
       { label: () => (state.project?.architecture === 'modular' ? 'Flatten into one layout…' : 'Group into modules…'), action: convertArchitecture },
       { label: 'Save project', shortcut: 'Ctrl+S', action: () => call('project.save').then(() => toast('Saved.', 'ok')) },
+      // The browser demo keeps projects in the browser; these move them in and out of it.
+      ...(host
+        ? [
+            { label: 'Download project (.zip)', action: downloadProjectZip, enabled: () => !!state.project },
+            { label: 'Open project from .zip…', action: openProjectZip },
+          ]
+        : []),
     ],
   },
   {

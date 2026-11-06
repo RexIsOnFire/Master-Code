@@ -1,0 +1,55 @@
+/* Only what the browser demo adds to the IDE; everything else is styles.css. */
+
+.demo-notice {
+  position: fixed;
+  left: 50%;
+  bottom: 16px;
+  transform: translateX(-50%);
+  max-width: min(640px, calc(100vw - 32px));
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: var(--bg-raised);
+  color: var(--ink);
+  font-size: 13px;
+  line-height: 1.45;
+  box-shadow: 0 6px 24px rgb(0 0 0 / 0.25);
+  z-index: 1000;
+}
+
+.demo-notice button {
+  flex: none;
+  border: none;
+  background: none;
+  color: var(--ink-dim);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.demo-fatal {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  gap: 8px;
+  padding: 16px;
+  background: var(--bg);
+  color: var(--ink);
+  text-align: center;
+  z-index: 1001;
+}
+
+.demo-fatal h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.demo-fatal p {
+  margin: 0;
+  max-width: 560px;
+  color: var(--ink-dim);
+}
