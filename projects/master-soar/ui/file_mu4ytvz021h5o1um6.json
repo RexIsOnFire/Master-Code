@@ -1,0 +1,811 @@
+{
+  "breakpoints": [
+    {
+      "maxWidth": 640,
+      "name": "mobile"
+    },
+    {
+      "maxWidth": 1024,
+      "minWidth": 641,
+      "name": "tablet"
+    },
+    {
+      "minWidth": 1025,
+      "name": "desktop"
+    }
+  ],
+  "lang": "en",
+  "meta": {
+    "viewport": "width=device-width, initial-scale=1"
+  },
+  "root": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "classes": [
+                "brand-mark"
+              ],
+              "id": "brand-mark",
+              "kind": "label",
+              "text": "//"
+            },
+            {
+              "classes": [
+                "brand-name"
+              ],
+              "id": "brand-name",
+              "kind": "label",
+              "text": "MASTER SOAR"
+            }
+          ],
+          "classes": [
+            "brand"
+          ],
+          "id": "brand",
+          "kind": "panel"
+        },
+        {
+          "children": [
+            {
+              "attrs": {
+                "data-key": "g l",
+                "data-permission": "clients.read",
+                "data-view": "clients",
+                "hidden": "hidden",
+                "href": "#clients"
+              },
+              "classes": [
+                "nav-item",
+                "is-active"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-clients",
+              "kind": "link",
+              "text": "Clients"
+            },
+            {
+              "attrs": {
+                "data-key": "g d",
+                "data-permission": "incidents.read",
+                "data-view": "dashboard",
+                "hidden": "hidden",
+                "href": "#dashboard"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-dashboard",
+              "kind": "link",
+              "text": "Dashboard"
+            },
+            {
+              "attrs": {
+                "data-key": "g i",
+                "data-permission": "incidents.read",
+                "data-view": "incidents",
+                "hidden": "hidden",
+                "href": "#incidents"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-incidents",
+              "kind": "link",
+              "text": "Incidents"
+            },
+            {
+              "attrs": {
+                "data-key": "g a",
+                "data-permission": "alerts.read",
+                "data-view": "alerts",
+                "hidden": "hidden",
+                "href": "#alerts"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-alerts",
+              "kind": "link",
+              "text": "Alerts"
+            },
+            {
+              "attrs": {
+                "data-key": "g c",
+                "data-permission": "cases.read",
+                "data-view": "cases",
+                "hidden": "hidden",
+                "href": "#cases"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-cases",
+              "kind": "link",
+              "text": "Cases"
+            },
+            {
+              "attrs": {
+                "data-key": "g p",
+                "data-permission": "playbooks.read",
+                "data-view": "playbooks",
+                "hidden": "hidden",
+                "href": "#playbooks"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-playbooks",
+              "kind": "link",
+              "text": "Playbooks"
+            },
+            {
+              "attrs": {
+                "data-key": "g m",
+                "data-permission": "commands.read",
+                "data-view": "commands",
+                "hidden": "hidden",
+                "href": "#commands"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-commands",
+              "kind": "link",
+              "text": "Commands"
+            },
+            {
+              "attrs": {
+                "data-key": "g n",
+                "data-permission": "integrations.read",
+                "data-view": "integrations",
+                "hidden": "hidden",
+                "href": "#integrations"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-integrations",
+              "kind": "link",
+              "text": "Integrations"
+            },
+            {
+              "attrs": {
+                "data-key": "g t",
+                "data-permission": "intel.read",
+                "data-view": "intel",
+                "hidden": "hidden",
+                "href": "#intel"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-intel",
+              "kind": "link",
+              "text": "Threat Intel"
+            },
+            {
+              "attrs": {
+                "data-key": "g h",
+                "data-permission": "hunts.read",
+                "data-view": "hunts",
+                "hidden": "hidden",
+                "href": "#hunts"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-hunts",
+              "kind": "link",
+              "text": "Threat Hunting"
+            },
+            {
+              "attrs": {
+                "data-key": "g u",
+                "data-permission": "hunts.review",
+                "data-view": "findings",
+                "hidden": "hidden",
+                "href": "#findings"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-findings",
+              "kind": "link",
+              "text": "Hunt Findings"
+            },
+            {
+              "attrs": {
+                "data-key": "g s",
+                "data-permission": "incidents.read",
+                "data-view": "assets",
+                "hidden": "hidden",
+                "href": "#assets"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-assets",
+              "kind": "link",
+              "text": "Assets"
+            },
+            {
+              "attrs": {
+                "data-key": "g e",
+                "data-permission": "executions.read",
+                "data-view": "executions",
+                "hidden": "hidden",
+                "href": "#executions"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-executions",
+              "kind": "link",
+              "text": "Executions"
+            },
+            {
+              "attrs": {
+                "data-key": "g v",
+                "data-permission": "approvals.read",
+                "data-view": "approvals",
+                "hidden": "hidden",
+                "href": "#approvals"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-approvals",
+              "kind": "link",
+              "text": "Approvals"
+            },
+            {
+              "attrs": {
+                "data-key": "g r",
+                "data-permission": "reports.read",
+                "data-view": "reports",
+                "hidden": "hidden",
+                "href": "#reports"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-reports",
+              "kind": "link",
+              "text": "Reports"
+            },
+            {
+              "attrs": {
+                "data-key": "g y",
+                "data-permission": "admin.users",
+                "data-view": "admin",
+                "hidden": "hidden",
+                "href": "#admin"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-admin",
+              "kind": "link",
+              "text": "Administration"
+            }
+          ],
+          "classes": [
+            "nav"
+          ],
+          "id": "nav",
+          "kind": "menu"
+        },
+        {
+          "children": [
+            {
+              "attrs": {
+                "title": "Toggle theme (t)",
+                "type": "button"
+              },
+              "classes": [
+                "ghost",
+                "wide"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onToggleTheme"
+                }
+              ],
+              "id": "theme-toggle",
+              "kind": "button",
+              "name": "themeToggle",
+              "text": "Light / Dark"
+            },
+            {
+              "classes": [
+                "muted",
+                "tiny"
+              ],
+              "id": "build-id",
+              "kind": "label",
+              "text": "v0.1.0 · local"
+            }
+          ],
+          "classes": [
+            "rail-foot"
+          ],
+          "id": "rail-foot",
+          "kind": "panel"
+        }
+      ],
+      "classes": [
+        "rail"
+      ],
+      "id": "rail",
+      "kind": "panel"
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "attrs": {
+                "autocomplete": "off",
+                "placeholder": "Search incidents, indicators, hosts, executions…   (/ to focus, ⌘K for actions)",
+                "type": "search"
+              },
+              "classes": [
+                "omnibox"
+              ],
+              "events": [
+                {
+                  "event": "keydown",
+                  "handler": "onOmniboxKey"
+                }
+              ],
+              "id": "omnibox",
+              "kind": "textbox",
+              "name": "omnibox"
+            },
+            {
+              "children": [
+                {
+                  "classes": [
+                    "chip",
+                    "chip-client"
+                  ],
+                  "id": "active-client",
+                  "kind": "label",
+                  "name": "activeClient",
+                  "text": "—"
+                },
+                {
+                  "classes": [
+                    "chip"
+                  ],
+                  "id": "queue-depth",
+                  "kind": "label",
+                  "name": "queueDepth",
+                  "text": "queue —"
+                },
+                {
+                  "classes": [
+                    "chip"
+                  ],
+                  "id": "worker-state",
+                  "kind": "label",
+                  "name": "workerState",
+                  "text": "workers —"
+                },
+                {
+                  "classes": [
+                    "chip",
+                    "chip-attn"
+                  ],
+                  "id": "pending-approvals",
+                  "kind": "label",
+                  "name": "pendingApprovals",
+                  "text": "approvals —"
+                }
+              ],
+              "classes": [
+                "bar-status"
+              ],
+              "id": "bar-status",
+              "kind": "panel"
+            }
+          ],
+          "classes": [
+            "commandbar"
+          ],
+          "id": "commandbar",
+          "kind": "panel"
+        },
+        {
+          "children": [
+            {
+              "attrs": {
+                "level": "1"
+              },
+              "classes": [
+                "page-title"
+              ],
+              "id": "nc-title",
+              "kind": "heading",
+              "text": "New client"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "id": "nc-name-l",
+                      "kind": "label",
+                      "text": "Client name"
+                    },
+                    {
+                      "attrs": {
+                        "autocomplete": "off",
+                        "placeholder": "Northwind Traders",
+                        "type": "text"
+                      },
+                      "id": "nc-name",
+                      "kind": "textbox",
+                      "name": "newClientName"
+                    }
+                  ],
+                  "classes": [
+                    "form-row"
+                  ],
+                  "id": "nc-name-row",
+                  "kind": "panel"
+                },
+                {
+                  "children": [
+                    {
+                      "id": "nc-email-l",
+                      "kind": "label",
+                      "text": "Contact emails"
+                    },
+                    {
+                      "children": [],
+                      "classes": [],
+                      "id": "nc-emails",
+                      "kind": "panel",
+                      "name": "newClientEmails"
+                    },
+                    {
+                      "attrs": {
+                        "type": "button"
+                      },
+                      "classes": [
+                        "ghost"
+                      ],
+                      "events": [
+                        {
+                          "event": "click",
+                          "handler": "onAddEmailField"
+                        }
+                      ],
+                      "id": "nc-add-email",
+                      "kind": "button",
+                      "name": "addEmail",
+                      "text": "+ Add another address"
+                    }
+                  ],
+                  "classes": [
+                    "form-row"
+                  ],
+                  "id": "nc-email-row",
+                  "kind": "panel"
+                },
+                {
+                  "children": [
+                    {
+                      "id": "nc-tools-l",
+                      "kind": "label",
+                      "text": "Which tools does this client run?"
+                    },
+                    {
+                      "classes": [
+                        "form-note"
+                      ],
+                      "id": "nc-tools-note",
+                      "kind": "label",
+                      "text": "Tick what they have. Each becomes a pending connector: recorded now, connected under Integrations once you have their API key or webhook. Nothing here needs a credential yet."
+                    },
+                    {
+                      "children": [],
+                      "classes": [],
+                      "id": "nc-tools",
+                      "kind": "panel",
+                      "name": "newClientTools"
+                    }
+                  ],
+                  "classes": [
+                    "form-row"
+                  ],
+                  "id": "nc-tools-row",
+                  "kind": "panel"
+                },
+                {
+                  "children": [
+                    {
+                      "attrs": {
+                        "type": "button"
+                      },
+                      "classes": [
+                        "accent"
+                      ],
+                      "events": [
+                        {
+                          "event": "click",
+                          "handler": "onSubmitNewClient"
+                        }
+                      ],
+                      "id": "nc-create",
+                      "kind": "button",
+                      "name": "createClientButton",
+                      "text": "Create client"
+                    },
+                    {
+                      "classes": [
+                        "login-error"
+                      ],
+                      "id": "nc-error",
+                      "kind": "label",
+                      "name": "newClientError",
+                      "text": ""
+                    }
+                  ],
+                  "classes": [
+                    "form-row"
+                  ],
+                  "id": "nc-actions",
+                  "kind": "panel"
+                }
+              ],
+              "classes": [
+                "form-card"
+              ],
+              "id": "nc-card",
+              "kind": "panel"
+            }
+          ],
+          "classes": [
+            "view"
+          ],
+          "id": "view",
+          "kind": "panel"
+        },
+        {
+          "children": [
+            {
+              "classes": [
+                "status-message"
+              ],
+              "id": "status-message",
+              "kind": "label",
+              "name": "statusMessage",
+              "text": "ready"
+            },
+            {
+              "classes": [
+                "status-clock"
+              ],
+              "id": "status-clock",
+              "kind": "label",
+              "name": "statusClock",
+              "text": ""
+            }
+          ],
+          "classes": [
+            "statusstrip"
+          ],
+          "id": "statusstrip",
+          "kind": "panel"
+        }
+      ],
+      "classes": [
+        "main"
+      ],
+      "id": "main",
+      "kind": "panel"
+    }
+  ],
+  "rules": [
+    {
+      "declarations": {
+        "background": "var(--surface)",
+        "border": "1px solid var(--line)",
+        "max-width": "760px",
+        "padding": "18px 20px"
+      },
+      "selector": ".form-card"
+    },
+    {
+      "declarations": {
+        "margin-bottom": "16px"
+      },
+      "selector": ".form-row"
+    },
+    {
+      "declarations": {
+        "color": "var(--muted)",
+        "display": "block",
+        "font-size": "11.5px",
+        "letter-spacing": "0.06em",
+        "margin-bottom": "6px",
+        "text-transform": "uppercase"
+      },
+      "selector": ".form-row > label"
+    },
+    {
+      "declarations": {
+        "background": "var(--sunken)",
+        "border": "1px solid var(--line)",
+        "color": "var(--ink)",
+        "font-family": "var(--mono)",
+        "font-size": "12.5px",
+        "max-width": "420px",
+        "padding": "7px 9px",
+        "width": "100%"
+      },
+      "selector": ".form-row input, .form-row select"
+    },
+    {
+      "declarations": {
+        "align-items": "center",
+        "display": "flex",
+        "gap": "8px",
+        "margin-bottom": "6px"
+      },
+      "selector": ".email-row"
+    },
+    {
+      "declarations": {
+        "display": "grid",
+        "gap": "4px 14px",
+        "grid-template-columns": "repeat(auto-fill, minmax(230px, 1fr))"
+      },
+      "selector": ".tool-grid"
+    },
+    {
+      "declarations": {
+        "align-items": "center",
+        "display": "flex",
+        "font-size": "12.5px",
+        "gap": "7px",
+        "padding": "3px 0"
+      },
+      "selector": ".tool-pick"
+    },
+    {
+      "declarations": {
+        "accent-color": "var(--accent)",
+        "width": "auto"
+      },
+      "selector": ".tool-pick input"
+    },
+    {
+      "declarations": {
+        "color": "var(--accent)",
+        "font-family": "var(--mono)",
+        "font-size": "11px",
+        "letter-spacing": "0.08em",
+        "margin": "14px 0 4px"
+      },
+      "selector": ".cat-head"
+    },
+    {
+      "declarations": {
+        "color": "var(--muted)",
+        "font-size": "11.5px",
+        "line-height": "1.5",
+        "margin-bottom": "14px"
+      },
+      "selector": ".form-note"
+    }
+  ],
+  "scripts": [
+    "file_mu4ytvyz21chr7736",
+    "file_mu4ytvyz21eptt7la"
+  ],
+  "stylesheets": [
+    "file_mu4ytvyz21bnia7p5"
+  ],
+  "title": "Master SOAR — New client"
+}

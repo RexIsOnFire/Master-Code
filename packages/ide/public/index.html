@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Master Code</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232563eb'/%3E%3Cpath d='M8 22V10h3l5 7 5-7h3v12h-3v-7l-5 7-5-7v7z' fill='white'/%3E%3C/svg%3E"
+    />
+  </head>
+  <body>
+    <div id="app" class="app">
+      <!-- ── menu bar ────────────────────────────────────────────────── -->
+      <header class="menubar">
+        <span class="brand">Master&nbsp;Code</span>
+        <nav class="menus" id="menus"></nav>
+        <span class="spacer"></span>
+        <span class="project-name" id="projectName">no project</span>
+        <button class="btn" id="btnGenerate" title="Generate source (Ctrl+G)">Generate</button>
+        <button class="btn primary" id="btnRun" title="Build and run (F5)">Run</button>
+        <button class="btn" id="btnTest" title="Run tests (Ctrl+T)">Test</button>
+        <button class="btn ghost" id="btnTheme" title="Toggle theme">◐</button>
+      </header>
+
+      <!-- ── main ────────────────────────────────────────────────────── -->
+      <main class="body">
+        <!-- left: explorer + palette -->
+        <aside class="pane left" id="leftPane">
+          <div class="pane-tabs" data-group="left">
+            <button class="pane-tab active" data-panel="explorer">Project</button>
+            <button class="pane-tab" data-panel="palette">Nodes</button>
+            <button class="pane-tab" data-panel="symbols">Symbols</button>
+            <button class="pane-tab" data-panel="architecture">Modules</button>
+          </div>
+          <div class="pane-body">
+            <section class="panel active" id="panel-explorer">
+              <div class="panel-actions">
+                <button class="btn tiny" id="btnNewFile">New file</button>
+                <button class="btn tiny" id="btnNewModule">New module</button>
+              </div>
+              <div id="explorer" class="tree"></div>
+            </section>
+            <section class="panel" id="panel-palette">
+              <input
+                class="search"
+                id="paletteSearch"
+                type="search"
+                placeholder="Search 176 nodes…"
+                autocomplete="off"
+              />
+              <div id="palette" class="palette"></div>
+            </section>
+            <section class="panel" id="panel-symbols">
+              <input
+                class="search"
+                id="symbolSearch"
+                type="search"
+                placeholder="Search functions and variables…"
+                autocomplete="off"
+              />
+              <div class="scope-switch" id="symbolScope">
+                <button data-scope="file" class="on">This file</button>
+                <button data-scope="project">Whole project</button>
+              </div>
+              <div class="symbol-filters" id="symbolFilters"></div>
+              <div id="symbols" class="symbols"></div>
+            </section>
+            <section class="panel" id="panel-architecture">
+              <div id="architecture" class="architecture"></div>
+            </section>
+          </div>
+        </aside>
+
+        <!-- centre: workspace -->
+        <section class="pane centre">
+          <div class="pane-tabs" data-group="view">
+            <button class="pane-tab active" data-view="graph">Visual</button>
+            <button class="pane-tab" data-view="logic">Logic</button>
+            <button class="pane-tab" data-view="arch">Architecture</button>
+            <button class="pane-tab" data-view="source">Source</button>
+            <button class="pane-tab" data-view="ui">UI</button>
+            <button class="pane-tab" data-view="runtime">Runtime</button>
+            <span class="tab-spacer"></span>
+            <label class="style-pick" title="The paradigm this graph is written in. Affects which nodes the palette suggests, not what is generated.">
+              <span>style</span>
+              <select id="graphStyle"></select>
+            </label>
+            <span class="hint" id="viewHint"></span>
+          </div>
+          <div class="pane-body workspace">
+            <div class="view active" id="view-graph">
+              <canvas id="canvas"></canvas>
+              <canvas id="minimap" class="minimap"></canvas>
+              <div class="canvas-help" id="canvasHelp"></div>
+            </div>
+            <div class="view" id="view-logic"><pre id="logicView" class="code"></pre></div>
+            <div class="view" id="view-arch">
+              <div class="arch-head">
+                <label><input type="checkbox" id="archModules" checked> group by module</label>
+                <label><input type="checkbox" id="archExternal"> show external files</label>
+                <span class="arch-legend">
+                  <span class="key" data-kind="generated">generated</span>
+                  <span class="key" data-kind="hybrid">hybrid</span>
+                  <span class="key" data-kind="user">user</span>
+                  <span class="key" data-kind="external">external</span>
+                  <span class="key arrow">→ provides to</span>
+                </span>
+                <span class="tab-spacer"></span>
+                <span class="hint" id="archHint"></span>
+              </div>
+              <canvas id="archCanvas"></canvas>
+            </div>
+            <div class="view" id="view-source">
+              <div class="source-head">
+                <select id="sourceFile"></select>
+                <span class="hint" id="sourceHint"></span>
+              </div>
+              <pre id="sourceView" class="code"></pre>
+            </div>
+            <div class="view" id="view-ui">
+              <div class="ui-designer">
+                <div class="ui-panel">
+                  <div class="ui-toolbar">
+                    <select id="uiAddKind" title="Widget to add"></select>
+                    <button class="btn tiny" id="uiAdd" title="Add inside the selection">Add</button>
+                    <button class="btn tiny ghost" id="uiUp" title="Move up">↑</button>
+                    <button class="btn tiny ghost" id="uiDown" title="Move down">↓</button>
+                    <button class="btn tiny ghost" id="uiDelete" title="Delete">✕</button>
+                  </div>
+                  <div class="ui-tree" id="uiTree"></div>
+                </div>
+                <div class="ui-preview-wrap">
+                  <div class="ui-toolbar">
+                    <span class="hint">preview</span>
+                    <span class="tab-spacer"></span>
+                    <select id="uiWidth" title="Viewport width">
+                      <option value="">full width</option>
+                      <option value="380">380 — phone</option>
+                      <option value="768">768 — tablet</option>
+                      <option value="1024">1024 — laptop</option>
+                    </select>
+                  </div>
+                  <iframe class="ui-preview" id="uiPreview" title="Page preview"></iframe>
+                </div>
+                <div class="ui-inspector" id="uiInspector"></div>
+              </div>
+            </div>
+            <div class="view" id="view-runtime"><div id="runtimeView" class="runtime"></div></div>
+          </div>
+        </section>
+
+        <!-- right: properties -->
+        <aside class="pane right">
+          <div class="pane-tabs" data-group="right">
+            <button class="pane-tab active" data-panel="properties">Properties</button>
+            <button class="pane-tab" data-panel="variables">Variables</button>
+            <button class="pane-tab" data-panel="settings">Project</button>
+          </div>
+          <div class="pane-body">
+            <section class="panel active" id="panel-properties">
+              <div id="properties" class="properties"></div>
+            </section>
+            <section class="panel" id="panel-variables">
+              <div id="variables" class="properties"></div>
+            </section>
+            <section class="panel" id="panel-settings">
+              <div id="settings" class="properties"></div>
+            </section>
+          </div>
+        </aside>
+      </main>
+
+      <!-- ── bottom dock ─────────────────────────────────────────────── -->
+      <section class="dock" id="dock">
+        <div class="pane-tabs" data-group="dock">
+          <button class="pane-tab active" data-panel="problems">
+            Problems <span class="badge" id="problemCount">0</span>
+          </button>
+          <button class="pane-tab" data-panel="output">Output</button>
+          <button class="pane-tab" data-panel="tests">Tests</button>
+          <button class="pane-tab" data-panel="libraries">Libraries</button>
+          <button class="pane-tab" data-panel="nodecode">Node code</button>
+          <button class="pane-tab" data-panel="challenge" id="tabChallenge" hidden>Challenge</button>
+          <span class="tab-spacer"></span>
+          <button class="btn tiny ghost" id="btnClearOutput">Clear</button>
+          <button class="btn tiny ghost" id="btnToggleDock">▾</button>
+        </div>
+        <div class="pane-body">
+          <section class="panel active" id="panel-problems"><div id="problems" class="problems"></div></section>
+          <section class="panel" id="panel-output"><pre id="output" class="console"></pre></section>
+          <section class="panel" id="panel-tests"><div id="tests" class="tests"></div></section>
+          <section class="panel" id="panel-challenge">
+            <div id="challenge" class="challenge"></div>
+          </section>
+          <section class="panel" id="panel-nodecode">
+            <div class="nodecode-head">
+              <span class="hint" id="nodeCodeWhat">Select a node to see the code it produces.</span>
+              <span class="tab-spacer"></span>
+              <label class="check"><input type="checkbox" id="nodeCodeContext" /> show surrounding lines</label>
+            </div>
+            <pre id="nodeCode" class="code"></pre>
+          </section>
+          <section class="panel" id="panel-libraries">
+            <div class="lib-head">
+              <select id="libLanguage"></select>
+              <input class="search" id="libSearch" type="search" placeholder="Search libraries…" />
+              <label class="check"><input type="checkbox" id="libOnline" /> search the registry</label>
+            </div>
+            <div id="libraries" class="libraries"></div>
+          </section>
+        </div>
+      </section>
+
+      <footer class="statusbar">
+        <span id="statusLeft">ready</span>
+        <span class="spacer"></span>
+        <span id="statusRight"></span>
+      </footer>
+    </div>
+
+    <!-- welcome / new project. Covers the whole window: with no project open
+         there is nothing behind it worth seeing, and it is the first thing a
+         new user meets. -->
+    <div class="welcome" id="welcome" hidden>
+      <div class="welcome-inner">
+        <header class="welcome-head">
+          <div>
+            <h1>Master Code</h1>
+            <p class="welcome-sub">Build software visually, in ten languages.</p>
+          </div>
+          <div class="welcome-env">
+            <span id="welcomeNode"></span>
+            <button class="ghost" id="welcomeClose" hidden>Close</button>
+          </div>
+        </header>
+
+        <!-- step 1: start -->
+        <section class="welcome-step active" id="welcomeStart">
+          <div class="welcome-cols">
+            <div>
+              <h2>Start</h2>
+              <button class="big-action" id="welcomeNew">
+                <strong>New project</strong>
+                <span>Pick a language and a starting point.</span>
+              </button>
+              <button class="big-action" id="welcomeLearn">
+                <strong>Learn by doing</strong>
+                <span>Guided tutorial, then challenges from easy to hard.</span>
+              </button>
+              <button class="big-action" id="welcomeOpen">
+                <strong>Open a project</strong>
+                <span>Browse for a folder containing project.json.</span>
+              </button>
+
+              <h2>Recent</h2>
+              <div id="welcomeRecent" class="recent-list"></div>
+            </div>
+
+            <div>
+              <h2>This machine</h2>
+              <p class="welcome-note">
+                Every language generates source. The ones marked <em>ready</em> can also
+                be compiled and run here.
+              </p>
+              <div id="welcomeToolchains" class="toolchain-grid"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- step 2: language -->
+        <section class="welcome-step" id="welcomeLanguage">
+          <h2>Choose a language</h2>
+          <div id="languageCards" class="language-grid"></div>
+          <div class="welcome-actions">
+            <button class="ghost" data-welcome-back="welcomeStart">Back</button>
+          </div>
+        </section>
+
+        <!-- step 3: template -->
+        <section class="welcome-step" id="welcomeTemplate">
+          <h2>Choose a starting point <span class="hint" id="templateForLanguage"></span></h2>
+          <div id="templateCards" class="template-grid"></div>
+          <div class="welcome-actions">
+            <button class="ghost" data-welcome-back="welcomeLanguage">Back</button>
+          </div>
+        </section>
+
+        <!-- step 4: name and location -->
+        <section class="welcome-step" id="welcomeDetails">
+          <h2>Name it <span class="hint" id="detailsSummary"></span></h2>
+          <label class="field">
+            <span>Project name</span>
+            <input type="text" id="newProjectName" placeholder="MyApp" autocomplete="off" />
+          </label>
+          <label class="field">
+            <span>Location</span>
+            <div class="path-row">
+              <input type="text" id="newProjectLocation" autocomplete="off" />
+              <button class="ghost" id="browseLocation">Browse…</button>
+            </div>
+          </label>
+          <p class="welcome-note" id="createPreview"></p>
+          <div class="welcome-actions">
+            <button class="ghost" data-welcome-back="welcomeTemplate">Back</button>
+            <button class="primary" id="createProject">Create project</button>
+          </div>
+        </section>
+
+        <!-- challenges -->
+        <section class="welcome-step" id="welcomeChallenges">
+          <h2>Choose a challenge <span class="hint" id="challengeLanguage"></span></h2>
+          <p class="welcome-note">
+            Every challenge works in any language — the graph you draw is not
+            language-specific. Start with the tutorial if this is your first time.
+          </p>
+          <div id="challengeCards" class="template-grid"></div>
+          <div class="welcome-actions">
+            <button class="ghost" data-welcome-back="welcomeStart">Back</button>
+          </div>
+        </section>
+
+        <!-- folder picker, used by both Open and Browse -->
+        <section class="welcome-step" id="welcomeBrowse">
+          <h2>Choose a folder</h2>
+          <div class="places" id="browsePlaces"></div>
+          <div class="path-row">
+            <input type="text" id="browsePath" autocomplete="off" />
+            <button class="ghost" id="browseUp">Up</button>
+          </div>
+          <div id="browseList" class="browse-list"></div>
+          <div class="welcome-actions">
+            <button class="ghost" id="browseCancel">Cancel</button>
+            <button class="primary" id="browseChoose">Use this folder</button>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- command palette -->
+    <div class="overlay" id="overlay" hidden>
+      <div class="command-palette">
+        <input id="commandInput" type="text" placeholder="Type a command or a node to add…" autocomplete="off" />
+        <div id="commandResults" class="command-results"></div>
+      </div>
+    </div>
+
+    <div id="toasts" class="toasts"></div>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

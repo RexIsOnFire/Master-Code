@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2023",
+    "lib": ["ES2023", "DOM"],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "allowImportingTsExtensions": true,
+    "rewriteRelativeImportExtensions": false,
+    "verbatimModuleSyntax": true,
+    "erasableSyntaxOnly": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "strict": true,
+    "exactOptionalPropertyTypes": false,
+    "noUncheckedIndexedAccess": false,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "types": ["node"],
+    "paths": {
+      "#core/*": ["./packages/core/src/*"],
+      "#cli/*": ["./packages/cli/src/*"],
+      "#server/*": ["./packages/server/src/*"]
+    }
+  },
+  "include": ["packages/**/*.ts", "tests/**/*.ts", "plugins/**/*.ts"],
+  "exclude": ["node_modules", "packages/ide/public", "**/generated/**", "examples/**/build/**"]
+}

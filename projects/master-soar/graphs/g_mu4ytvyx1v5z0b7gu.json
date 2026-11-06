@@ -1,0 +1,805 @@
+{
+  "edges": [
+    {
+      "from": {
+        "node": "n_mu4ytvyx1v7d71m9r",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyx1v9zxps69",
+      "to": {
+        "node": "n_mu4ytvyx1v86g0fac",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1v6t37r12",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyx1vac5qq5w",
+      "to": {
+        "node": "n_mu4ytvyx1v7d71m9r",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1v7d71m9r",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyx1vb5ndvsn",
+      "to": {
+        "node": "n_mu4ytvyx1v86g0fac",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1vc70ay9g",
+        "port": "p:db"
+      },
+      "id": "e_mu4ytvyx1ve0cusyu",
+      "to": {
+        "node": "n_mu4ytvyx1vdtmenr8",
+        "port": "p:db"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1vc70ay9g",
+        "port": "p:principal"
+      },
+      "id": "e_mu4ytvyx1vf7oqi3c",
+      "to": {
+        "node": "n_mu4ytvyx1vdtmenr8",
+        "port": "p:principal"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1vc70ay9g",
+        "port": "p:kind"
+      },
+      "id": "e_mu4ytvyx1vgfu58uo",
+      "to": {
+        "node": "n_mu4ytvyx1vdtmenr8",
+        "port": "p:kind"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1vc70ay9g",
+        "port": "p:filters"
+      },
+      "id": "e_mu4ytvyx1vhmzmsr5",
+      "to": {
+        "node": "n_mu4ytvyx1vdtmenr8",
+        "port": "p:filters"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1vdtmenr8",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyx1vjaqbgwk",
+      "to": {
+        "node": "n_mu4ytvyx1viviava5",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1vc70ay9g",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyx1vkm5a0n5",
+      "to": {
+        "node": "n_mu4ytvyx1vdtmenr8",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1vdtmenr8",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyx1vlvj1t5p",
+      "to": {
+        "node": "n_mu4ytvyx1viviava5",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1vmkkan79",
+        "port": "p:db"
+      },
+      "id": "e_mu4ytvyx1votp1lys",
+      "to": {
+        "node": "n_mu4ytvyx1vntihqsy",
+        "port": "p:db"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1vmkkan79",
+        "port": "p:principal"
+      },
+      "id": "e_mu4ytvyx1vp2pztut",
+      "to": {
+        "node": "n_mu4ytvyx1vntihqsy",
+        "port": "p:principal"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1vmkkan79",
+        "port": "p:kind"
+      },
+      "id": "e_mu4ytvyx1vq40jl21",
+      "to": {
+        "node": "n_mu4ytvyx1vntihqsy",
+        "port": "p:kind"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1vmkkan79",
+        "port": "p:format"
+      },
+      "id": "e_mu4ytvyx1vrqdbe6m",
+      "to": {
+        "node": "n_mu4ytvyx1vntihqsy",
+        "port": "p:format"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1vmkkan79",
+        "port": "p:filters"
+      },
+      "id": "e_mu4ytvyx1vsnu3nit",
+      "to": {
+        "node": "n_mu4ytvyx1vntihqsy",
+        "port": "p:filters"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1vntihqsy",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyx1vuxucp18",
+      "to": {
+        "node": "n_mu4ytvyx1vty16jgh",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1vmkkan79",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyx1vvwh1j78",
+      "to": {
+        "node": "n_mu4ytvyx1vntihqsy",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1vntihqsy",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyx1vwqk4t52",
+      "to": {
+        "node": "n_mu4ytvyx1vty16jgh",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1vx02rris",
+        "port": "p:report"
+      },
+      "id": "e_mu4ytvyx1vzkyesr9",
+      "to": {
+        "node": "n_mu4ytvyx1vyioutks",
+        "port": "p:report"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1vyioutks",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyx1w14yxcgo",
+      "to": {
+        "node": "n_mu4ytvyx1w05yji1q",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1vx02rris",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyx1w2mmgfg2",
+      "to": {
+        "node": "n_mu4ytvyx1vyioutks",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1vyioutks",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyx1w3wfnp2t",
+      "to": {
+        "node": "n_mu4ytvyx1w05yji1q",
+        "port": "in"
+      }
+    }
+  ],
+  "fileId": "file_mu4ytvyx1v4cvog31",
+  "id": "g_mu4ytvyx1v5z0b7gu",
+  "name": "report rendering",
+  "nodes": [
+    {
+      "id": "n_mu4ytvyx1v6t37r12",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "doc": "The reports the platform ships, each declaring its columns and the permission it needs. The UI builds its report list from this rather than hard-coding one.",
+        "isAsync": false,
+        "name": "report_catalogue",
+        "params": [],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyx1v7d71m9r",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "return {\n    \"incident\": {\n        \"title\": \"Incident report\",\n        \"permission\": \"incidents.read\",\n        \"parameters\": [\"incident_id\"],\n        \"sections\": [\"summary\", \"timeline\", \"entities\", \"indicators\",\n                     \"executions\", \"approvals\", \"ai\"],\n    },\n    \"response_actions\": {\n        \"title\": \"Response actions taken\",\n        \"permission\": \"audit.read\",\n        \"parameters\": [\"days\"],\n        \"columns\": [\"at\", \"action\", \"target\", \"actor\", \"approver\", \"result\"],\n    },\n    \"automation_metrics\": {\n        \"title\": \"Automation metrics\",\n        \"permission\": \"reports.read\",\n        \"parameters\": [\"days\"],\n        \"columns\": [\"playbook\", \"runs\", \"succeeded\", \"failed\", \"median_ms\"],\n    },\n    \"analyst_activity\": {\n        \"title\": \"Analyst activity\",\n        \"permission\": \"reports.read\",\n        \"parameters\": [\"days\"],\n        \"columns\": [\"analyst\", \"incidents_touched\", \"approvals\", \"notes\"],\n    },\n    \"mitre_coverage\": {\n        \"title\": \"MITRE ATT&CK coverage\",\n        \"permission\": \"intel.read\",\n        \"parameters\": [\"days\"],\n        \"columns\": [\"tactic\", \"technique\", \"name\", \"incidents\", \"playbooks\"],\n    },\n    \"integration_health\": {\n        \"title\": \"Integration health\",\n        \"permission\": \"integrations.read\",\n        \"parameters\": [],\n        \"columns\": [\"name\", \"connector\", \"health\", \"last_check_at\", \"last_error\"],\n    },\n    \"detection_metrics\": {\n        \"title\": \"Detection metrics\",\n        \"permission\": \"reports.read\",\n        \"parameters\": [\"days\"],\n        \"columns\": [\"source\", \"alerts\", \"incidents\", \"true_positive\",\n                    \"false_positive\"],\n    },\n}",
+        "doc": "The reports the platform ships, each declaring its columns and the permission it needs. The UI builds its report list from this rather than hard-coding one.",
+        "form": "statements",
+        "language": "python",
+        "name": "available_reports",
+        "packages": [],
+        "params": [],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyx1v86g0fac",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyx1vc70ay9g",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:principal",
+          "name": "principal",
+          "type": "Map<string, Any>"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:kind",
+          "name": "kind",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:filters",
+          "name": "filters",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "doc": "Run one report and return rows plus the metadata an export needs.\n\nEach report checks its own declared permission before it runs, so adding one\nto the catalogue cannot accidentally widen who can read the data underneath.\nEvery query is parameterised and org-scoped like any other.",
+        "isAsync": false,
+        "name": "build_report",
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "principal",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "kind",
+            "type": "string"
+          },
+          {
+            "name": "filters",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyx1vdtmenr8",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:principal",
+          "name": "principal",
+          "type": "Map<string, Any>"
+        },
+        {
+          "direction": "in",
+          "id": "p:kind",
+          "name": "kind",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:filters",
+          "name": "filters",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "from soar.identity.rbac import require_permission\nfrom soar.incidents.timeline import read as timeline_read\nfrom soar.intel.mitre import coverage\nfrom soar.platform.ids import now_iso\n\ncatalogue = report_catalogue()\nspec = catalogue.get(kind)\nif spec is None:\n    raise KeyError(\"no report named %r\" % kind)\nrequire_permission(principal, spec[\"permission\"])\n\norg_id = principal[\"org_id\"]\ntry:\n    days = max(1, min(int(filters.get(\"days\", 30)), 400))\nexcept (TypeError, ValueError):\n    days = 30\nwindow = str(days)\n\nif kind == \"incident\":\n    incident_id = filters.get(\"incident_id\")\n    if not incident_id:\n        raise ValueError(\"the incident report needs an incident_id\")\n    rows = db.query(\"SELECT * FROM incident WHERE id = %s AND org_id = %s\",\n                    [incident_id, org_id], org_id)\n    if not rows:\n        raise KeyError(\"no such incident\")\n    data = {\n        \"summary\": rows[0],\n        \"timeline\": timeline_read(db, org_id, incident_id),\n        \"entities\": db.query(\n            \"SELECT entity_kind, entity_id, role FROM incident_entity \"\n            \"WHERE incident_id = %s\", [incident_id], org_id),\n        \"indicators\": db.query(\n            \"SELECT i.type, i.value, i.verdict, i.score FROM incident_indicator ii \"\n            \"JOIN indicator i ON i.id = ii.indicator_id WHERE ii.incident_id = %s\",\n            [incident_id], org_id),\n        \"executions\": db.query(\n            \"SELECT label, status, started_at, duration_ms FROM execution \"\n            \"WHERE incident_id = %s\", [incident_id], org_id),\n        \"approvals\": db.query(\n            \"SELECT a.action_key, a.risk_level, a.status, a.decided_at, \"\n            \"string_agg(d.decider_id, ', ') AS deciders FROM approval a \"\n            \"LEFT JOIN approval_decision d ON d.approval_id = a.id \"\n            \"WHERE a.incident_id = %s GROUP BY a.id\", [incident_id], org_id),\n        \"ai\": db.query(\n            \"SELECT kind, structured, confidence, accepted_by, created_at \"\n            \"FROM ai_analysis WHERE incident_id = %s\", [incident_id], org_id),\n    }\n    return {\"kind\": kind, \"title\": spec[\"title\"], \"sections\": data,\n            \"generated_at\": now_iso()}\n\nQUERIES = {\n    \"response_actions\": (\n        \"SELECT at, action, coalesce(target_label, target_id) AS target, \"\n        \"coalesce(actor_label, actor_id) AS actor, on_behalf_of_id AS approver, \"\n        \"result FROM audit_event WHERE org_id = %s \"\n        \"AND action LIKE 'response.%%' \"\n        \"AND at > now() - (%s || ' days')::interval ORDER BY at DESC\"),\n    \"automation_metrics\": (\n        \"SELECT p.name AS playbook, count(*) AS runs, \"\n        \"count(*) FILTER (WHERE e.status = 'succeeded') AS succeeded, \"\n        \"count(*) FILTER (WHERE e.status = 'failed') AS failed, \"\n        \"percentile_disc(0.5) WITHIN GROUP (ORDER BY e.duration_ms) AS median_ms \"\n        \"FROM execution e JOIN playbook p ON p.id = e.playbook_id \"\n        \"WHERE e.org_id = %s AND e.started_at > now() - (%s || ' days')::interval \"\n        \"GROUP BY p.name ORDER BY runs DESC\"),\n    \"analyst_activity\": (\n        \"SELECT coalesce(actor_label, actor_id) AS analyst, \"\n        \"count(DISTINCT target_id) FILTER (WHERE target_kind = 'incident') \"\n        \"  AS incidents_touched, \"\n        \"count(*) FILTER (WHERE action = 'approval.decided') AS approvals, \"\n        \"count(*) FILTER (WHERE action = 'incident.note') AS notes \"\n        \"FROM audit_event WHERE org_id = %s AND actor_kind = 'user' \"\n        \"AND at > now() - (%s || ' days')::interval \"\n        \"GROUP BY analyst ORDER BY incidents_touched DESC\"),\n    \"detection_metrics\": (\n        \"SELECT a.source, count(*) AS alerts, \"\n        \"count(DISTINCT a.incident_id) AS incidents, \"\n        \"count(*) FILTER (WHERE i.resolution = 'true_positive') AS true_positive, \"\n        \"count(*) FILTER (WHERE i.resolution = 'false_positive') AS false_positive \"\n        \"FROM alert a LEFT JOIN incident i ON i.id = a.incident_id \"\n        \"WHERE a.org_id = %s AND a.observed_at > now() - (%s || ' days')::interval \"\n        \"GROUP BY a.source ORDER BY alerts DESC\"),\n}\n\nif kind == \"integration_health\":\n    rows = db.query(\n        \"SELECT name, connector_id AS connector, health, last_check_at, last_error \"\n        \"FROM integration WHERE org_id = %s ORDER BY health, name\", [org_id], org_id)\nelif kind == \"mitre_coverage\":\n    rows = coverage(db, org_id, days)\nelse:\n    rows = db.query(QUERIES[kind], [org_id, window], org_id)\n\nreturn {\"kind\": kind, \"title\": spec[\"title\"],\n        \"columns\": spec.get(\"columns\", []), \"rows\": rows,\n        \"window_days\": days, \"generated_at\": now_iso(),\n        \"generated_for\": principal.get(\"id\")}",
+        "doc": "Run one report and return rows plus the metadata an export needs.\n\nEach report checks its own declared permission before it runs, so adding one\nto the catalogue cannot accidentally widen who can read the data underneath.\nEvery query is parameterised and org-scoped like any other.",
+        "form": "statements",
+        "language": "python",
+        "name": "run_report",
+        "packages": [],
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "principal",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "kind",
+            "type": "string"
+          },
+          {
+            "name": "filters",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyx1viviava5",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyx1vmkkan79",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:principal",
+          "name": "principal",
+          "type": "Map<string, Any>"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:kind",
+          "name": "kind",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:format",
+          "name": "format",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:filters",
+          "name": "filters",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "doc": "Render a report and store it in the object store, returning its key.\n\nThe bytes go to the object store rather than down the response, so a large\nexport cannot be a memory spike on the API node and the artefact is the same\none an auditor can fetch later by key. The export is audited: who exported\nwhat, when.\n\nJSON and CSV are implemented. PDF is deliberately a print-ready HTML document\nrather than a bundled renderer - a headless browser is a second attack surface\nand a large dependency, and the SOCs that need signed PDFs generally have a\ndocument service already.",
+        "isAsync": false,
+        "name": "export_report",
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "principal",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "kind",
+            "type": "string"
+          },
+          {
+            "name": "format",
+            "type": "string"
+          },
+          {
+            "name": "filters",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvyx1vntihqsy",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:principal",
+          "name": "principal",
+          "type": "Map<string, Any>"
+        },
+        {
+          "direction": "in",
+          "id": "p:kind",
+          "name": "kind",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:format",
+          "name": "format",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:filters",
+          "name": "filters",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "from soar.audit.log import record as audit_record\nfrom soar.identity.rbac import require_permission\nfrom soar.platform.runtime import services\nfrom soar.storage.objects import object_key\n\nimport csv\nimport hashlib\nimport io\nimport json\n\nrequire_permission(principal, \"reports.export\")\nreport = build_report(db, principal, kind, filters)\norg_id = principal[\"org_id\"]\n\nif format == \"json\":\n    body = json.dumps(report, indent=2, default=str)\n    content_type = \"application/json\"\nelif format == \"csv\":\n    rows = report.get(\"rows\") or []\n    columns = report.get(\"columns\") or (list(rows[0].keys()) if rows else [])\n    buffer = io.StringIO()\n    writer = csv.DictWriter(buffer, fieldnames=columns, extrasaction=\"ignore\")\n    writer.writeheader()\n    for row in rows:\n        writer.writerow({c: row.get(c) for c in columns})\n    body = buffer.getvalue()\n    content_type = \"text/csv\"\nelif format in (\"pdf\", \"html\"):\n    body = report_html(report)\n    content_type = \"text/html\"\nelse:\n    raise ValueError(\"unsupported export format %r\" % format)\n\npayload = body.encode(\"utf-8\")\ndigest = hashlib.sha256(payload).hexdigest()\nkey = object_key(org_id, \"report\", digest)\nservices()[\"objects\"].put(key, body)\n\naudit_record(db, {\n    \"org_id\": org_id, \"actor_kind\": principal.get(\"kind\", \"user\"),\n    \"actor_id\": principal.get(\"id\"), \"action\": \"report.export\",\n    \"target_kind\": \"report\", \"target_id\": kind,\n    \"after\": {\"format\": format, \"sha256\": digest, \"bytes\": len(payload)},\n    \"result\": \"success\",\n})\n\nreturn {\"object_key\": key, \"sha256\": digest, \"bytes\": len(payload),\n        \"content_type\": content_type,\n        \"note\": (\"print this page to PDF; the platform does not bundle a \"\n                 \"renderer\") if format == \"pdf\" else None}",
+        "doc": "Render a report and store it in the object store, returning its key.\n\nThe bytes go to the object store rather than down the response, so a large\nexport cannot be a memory spike on the API node and the artefact is the same\none an auditor can fetch later by key. The export is audited: who exported\nwhat, when.\n\nJSON and CSV are implemented. PDF is deliberately a print-ready HTML document\nrather than a bundled renderer - a headless browser is a second attack surface\nand a large dependency, and the SOCs that need signed PDFs generally have a\ndocument service already.",
+        "form": "statements",
+        "language": "python",
+        "name": "render_and_store_report",
+        "packages": [],
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "principal",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "kind",
+            "type": "string"
+          },
+          {
+            "name": "format",
+            "type": "string"
+          },
+          {
+            "name": "filters",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvyx1vty16jgh",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvyx1vx02rris",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:report",
+          "name": "report",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "doc": "A print-ready HTML document.\n\nEvery value is HTML-escaped on the way in. A report is the one artefact that\nleaves the platform and gets opened somewhere else, so incident content - which\nis attacker-influenceable - must not be able to carry markup into it.",
+        "isAsync": false,
+        "name": "report_html",
+        "params": [
+          {
+            "name": "report",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "string",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvyx1vyioutks",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:report",
+          "name": "report",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "import html\n\ndef cell(value):\n    return html.escape(\"\" if value is None else str(value))\n\nparts = [\n    \"<!doctype html><html><head><meta charset=\\\"utf-8\\\">\",\n    \"<title>%s</title>\" % cell(report.get(\"title\")),\n    \"<style>\",\n    \"body{font:12px/1.5 system-ui,sans-serif;color:#111;margin:32px}\",\n    \"h1{font-size:18px;margin:0 0 4px}\",\n    \".meta{color:#666;font-size:11px;margin-bottom:18px}\",\n    \"table{border-collapse:collapse;width:100%;font-size:11px}\",\n    \"th{text-align:left;border-bottom:2px solid #333;padding:5px 6px}\",\n    \"td{border-bottom:1px solid #ddd;padding:5px 6px;vertical-align:top}\",\n    \"h2{font-size:13px;margin:20px 0 6px;border-bottom:1px solid #ccc}\",\n    \"@media print{body{margin:0}}\",\n    \"</style></head><body>\",\n    \"<h1>%s</h1>\" % cell(report.get(\"title\")),\n    \"<div class=\\\"meta\\\">Generated %s\"\n    % cell(report.get(\"generated_at\")),\n]\nif report.get(\"window_days\"):\n    parts.append(\" &middot; last %s days\" % cell(report[\"window_days\"]))\nparts.append(\"</div>\")\n\nfor name, section in (report.get(\"sections\") or {}).items():\n    parts.append(\"<h2>%s</h2>\" % cell(name.replace(\"_\", \" \").title()))\n    rows = section if isinstance(section, list) else [section]\n    if not rows:\n        parts.append(\"<p>None.</p>\")\n        continue\n    columns = list(rows[0].keys())\n    parts.append(\"<table><thead><tr>\")\n    parts.extend(\"<th>%s</th>\" % cell(c) for c in columns)\n    parts.append(\"</tr></thead><tbody>\")\n    for row in rows:\n        parts.append(\"<tr>\")\n        parts.extend(\"<td>%s</td>\" % cell(row.get(c)) for c in columns)\n        parts.append(\"</tr>\")\n    parts.append(\"</tbody></table>\")\n\nrows = report.get(\"rows\")\nif rows is not None:\n    columns = report.get(\"columns\") or (list(rows[0].keys()) if rows else [])\n    parts.append(\"<table><thead><tr>\")\n    parts.extend(\"<th>%s</th>\" % cell(c) for c in columns)\n    parts.append(\"</tr></thead><tbody>\")\n    for row in rows:\n        parts.append(\"<tr>\")\n        parts.extend(\"<td>%s</td>\" % cell(row.get(c)) for c in columns)\n        parts.append(\"</tr>\")\n    parts.append(\"</tbody></table>\")\n    if not rows:\n        parts.append(\"<p>No rows in this window.</p>\")\n\nparts.append(\"</body></html>\")\nreturn \"\".join(parts)",
+        "doc": "A print-ready HTML document.\n\nEvery value is HTML-escaped on the way in. A report is the one artefact that\nleaves the platform and gets opened somewhere else, so incident content - which\nis attacker-influenceable - must not be able to carry markup into it.",
+        "form": "statements",
+        "language": "python",
+        "name": "render_report_html",
+        "packages": [],
+        "params": [
+          {
+            "name": "report",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "string"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvyx1w05yji1q",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 390
+    }
+  ],
+  "style": "data-flow",
+  "variables": []
+}

@@ -1,0 +1,1148 @@
+{
+  "edges": [
+    {
+      "from": {
+        "node": "n_mu4ytvz52ws3pcezy",
+        "port": "result"
+      },
+      "id": "e_mu4ytvz52wvgqq34m",
+      "to": {
+        "node": "n_mu4ytvz52wug3dbv2",
+        "port": "args"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz52wtk7h9x1",
+        "port": "map"
+      },
+      "id": "e_mu4ytvz52wwiy9le3",
+      "to": {
+        "node": "n_mu4ytvz52wug3dbv2",
+        "port": "args#1"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz52wug3dbv2",
+        "port": "result"
+      },
+      "id": "e_mu4ytvz52wyw4vx5i",
+      "to": {
+        "node": "n_mu4ytvz52wxz17nd7",
+        "port": "a0"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz52wxz17nd7",
+        "port": "value"
+      },
+      "id": "e_mu4ytvz52x1bm0j91",
+      "to": {
+        "node": "n_mu4ytvz52x0on897d",
+        "port": "actual"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz52wzvdhe5e",
+        "port": "value"
+      },
+      "id": "e_mu4ytvz52x2krpzup",
+      "to": {
+        "node": "n_mu4ytvz52x0on897d",
+        "port": "expected"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz52wr5h1mmr",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz52x3g7bddz",
+      "to": {
+        "node": "n_mu4ytvz52ws3pcezy",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz52ws3pcezy",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz52x4vhcxig",
+      "to": {
+        "node": "n_mu4ytvz52wug3dbv2",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz52wug3dbv2",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz52x56kw8kt",
+      "to": {
+        "node": "n_mu4ytvz52x0on897d",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz52x7cns9fu",
+        "port": "list"
+      },
+      "id": "e_mu4ytvz52xal43np1",
+      "to": {
+        "node": "n_mu4ytvz52x9bqj7er",
+        "port": "args"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz52x8xiyp7k",
+        "port": "list"
+      },
+      "id": "e_mu4ytvz52xbd2ifha",
+      "to": {
+        "node": "n_mu4ytvz52x9bqj7er",
+        "port": "args#1"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz52x9bqj7er",
+        "port": "result"
+      },
+      "id": "e_mu4ytvz52xd8bfg45",
+      "to": {
+        "node": "n_mu4ytvz52xcb8kl2t",
+        "port": "a0"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz52xcb8kl2t",
+        "port": "found"
+      },
+      "id": "e_mu4ytvz62xfqc1z3h",
+      "to": {
+        "node": "n_mu4ytvz52xezp5q9d",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz52xezp5q9d",
+        "port": "ref"
+      },
+      "id": "e_mu4ytvz62xi879rnk",
+      "to": {
+        "node": "n_mu4ytvz62xh8flzjk",
+        "port": "actual"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz62xg8gz2oo",
+        "port": "value"
+      },
+      "id": "e_mu4ytvz62xjntaenl",
+      "to": {
+        "node": "n_mu4ytvz62xh8flzjk",
+        "port": "expected"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz52x6hit46j",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz62xk8ae6wj",
+      "to": {
+        "node": "n_mu4ytvz52x9bqj7er",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz52x9bqj7er",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz62xlkm7uis",
+      "to": {
+        "node": "n_mu4ytvz52xezp5q9d",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz52xezp5q9d",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz62xmz3c6x6",
+      "to": {
+        "node": "n_mu4ytvz62xh8flzjk",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz62xohru97f",
+        "port": "value"
+      },
+      "id": "e_mu4ytvz62xrj19t8b",
+      "to": {
+        "node": "n_mu4ytvz62xqbn5scr",
+        "port": "args"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz62xpf4sse5",
+        "port": "value"
+      },
+      "id": "e_mu4ytvz62xsnuwmdu",
+      "to": {
+        "node": "n_mu4ytvz62xqbn5scr",
+        "port": "args#1"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz62xqbn5scr",
+        "port": "result"
+      },
+      "id": "e_mu4ytvz62xvshfsk3",
+      "to": {
+        "node": "n_mu4ytvz62xu1b3wxh",
+        "port": "actual"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz62xtz3eo4k",
+        "port": "value"
+      },
+      "id": "e_mu4ytvz62xw78aa96",
+      "to": {
+        "node": "n_mu4ytvz62xu1b3wxh",
+        "port": "expected"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz62xn6d9ldo",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz62xxav8z8p",
+      "to": {
+        "node": "n_mu4ytvz62xqbn5scr",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz62xqbn5scr",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz62xy2zxz2g",
+      "to": {
+        "node": "n_mu4ytvz62xu1b3wxh",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz62y0a2bu2s",
+        "port": "list"
+      },
+      "id": "e_mu4ytvz62y3svxv5v",
+      "to": {
+        "node": "n_mu4ytvz62y2ururxv",
+        "port": "args"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz62y1bwc9in",
+        "port": "value"
+      },
+      "id": "e_mu4ytvz62y4y6gsdw",
+      "to": {
+        "node": "n_mu4ytvz62y2ururxv",
+        "port": "args#1"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz62y2ururxv",
+        "port": "result"
+      },
+      "id": "e_mu4ytvz62y71hv5ge",
+      "to": {
+        "node": "n_mu4ytvz62y6ojzzue",
+        "port": "actual"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz62y58h0z2g",
+        "port": "value"
+      },
+      "id": "e_mu4ytvz62y81rgzb5",
+      "to": {
+        "node": "n_mu4ytvz62y6ojzzue",
+        "port": "expected"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz62xz2t4uov",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz62y9dga25k",
+      "to": {
+        "node": "n_mu4ytvz62y2ururxv",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz62y2ururxv",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz62yakb6kcc",
+      "to": {
+        "node": "n_mu4ytvz62y6ojzzue",
+        "port": "in"
+      }
+    }
+  ],
+  "fileId": "file_mu4ytvz52wpg0cqqb",
+  "id": "g_mu4ytvz52wqb94d44",
+  "name": "governance invariants",
+  "nodes": [
+    {
+      "id": "n_mu4ytvz52wr5h1mmr",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "doc": "Invariant 7: no policy can allow a HIGH-risk action without a human. Even a policy that says \"allow\" is overridden.",
+        "kind": "unit",
+        "name": "test_high_risk_cannot_be_auto_approved"
+      },
+      "type": "test/case",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvz52ws3pcezy",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "args",
+          "name": "arg",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "await": false,
+        "returns": "List<Map<string, Any>>",
+        "target": "default_policies"
+      },
+      "type": "control/call",
+      "x": 250,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvz52wtk7h9x1",
+      "inputs": [
+        {
+          "defaultValue": "risk_level",
+          "direction": "in",
+          "id": "k",
+          "name": "key",
+          "type": "string"
+        },
+        {
+          "defaultValue": "high",
+          "direction": "in",
+          "id": "v",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "map",
+          "name": "map",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "keyType": "string",
+        "valueType": "Any"
+      },
+      "type": "map/literal",
+      "x": 0,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvz52wug3dbv2",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "args",
+          "name": "arg",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "dynamic": true,
+          "id": "args#1",
+          "name": "arg",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "await": false,
+        "returns": "Map<string, Any>",
+        "target": "evaluate"
+      },
+      "type": "control/call",
+      "x": 500,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvz52wxz17nd7",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "a0",
+          "name": "map",
+          "type": "Map<K, V>"
+        },
+        {
+          "defaultValue": "effect",
+          "direction": "in",
+          "id": "a1",
+          "name": "key",
+          "type": "K"
+        },
+        {
+          "defaultValue": "allow",
+          "direction": "in",
+          "id": "a2",
+          "name": "fallback",
+          "type": "V"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "value",
+          "name": "value",
+          "type": "V"
+        }
+      ],
+      "props": {},
+      "type": "map/get-or",
+      "x": 750,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvz52wzvdhe5e",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "value",
+          "name": "value",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "type": "string",
+        "value": "require_approval"
+      },
+      "type": "data/literal",
+      "x": 0,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvz52x0on897d",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "actual",
+          "name": "actual",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "expected",
+          "name": "expected",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "message": "a high-risk action must always require approval"
+      },
+      "type": "test/assert-equal",
+      "x": 1000,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvz52x6hit46j",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "doc": "Invariant 6: the AI principal is a subset of the invoking analyst, never a union.",
+        "kind": "unit",
+        "name": "test_ai_permissions_are_an_intersection"
+      },
+      "type": "test/case",
+      "x": 0,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvz52x7cns9fu",
+      "inputs": [
+        {
+          "defaultValue": "incidents.read",
+          "direction": "in",
+          "id": "e",
+          "name": "element",
+          "type": "string"
+        },
+        {
+          "defaultValue": "intel.read",
+          "direction": "in",
+          "dynamic": true,
+          "id": "e#1",
+          "name": "element",
+          "type": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "list",
+          "name": "list",
+          "type": "List<string>"
+        }
+      ],
+      "props": {
+        "itemType": "string"
+      },
+      "type": "list/literal",
+      "x": 0,
+      "y": 520
+    },
+    {
+      "id": "n_mu4ytvz52x8xiyp7k",
+      "inputs": [
+        {
+          "defaultValue": "intel.read",
+          "direction": "in",
+          "id": "e",
+          "name": "element",
+          "type": "string"
+        },
+        {
+          "defaultValue": "response.isolate",
+          "direction": "in",
+          "dynamic": true,
+          "id": "e#1",
+          "name": "element",
+          "type": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "list",
+          "name": "list",
+          "type": "List<string>"
+        }
+      ],
+      "props": {
+        "itemType": "string"
+      },
+      "type": "list/literal",
+      "x": 0,
+      "y": 650
+    },
+    {
+      "id": "n_mu4ytvz52x9bqj7er",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "args",
+          "name": "arg",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "dynamic": true,
+          "id": "args#1",
+          "name": "arg",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "await": false,
+        "returns": "List<string>",
+        "target": "intersect_for_ai"
+      },
+      "type": "control/call",
+      "x": 250,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvz52xcb8kl2t",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "a0",
+          "name": "list",
+          "type": "List<T>"
+        },
+        {
+          "defaultValue": "response.isolate",
+          "direction": "in",
+          "id": "a1",
+          "name": "value",
+          "type": "T"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "found",
+          "name": "found",
+          "type": "bool"
+        }
+      ],
+      "props": {},
+      "type": "list/contains",
+      "x": 500,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvz52xezp5q9d",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "ref",
+          "name": "ref",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "constant": true,
+        "name": "granted",
+        "type": "bool"
+      },
+      "type": "data/local",
+      "x": 750,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvz62xg8gz2oo",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "value",
+          "name": "value",
+          "type": "bool"
+        }
+      ],
+      "props": {
+        "type": "bool",
+        "value": "false"
+      },
+      "type": "data/literal",
+      "x": 0,
+      "y": 780
+    },
+    {
+      "id": "n_mu4ytvz62xh8flzjk",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "actual",
+          "name": "actual",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "expected",
+          "name": "expected",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "message": "a tool set cannot grant the AI a permission the analyst does not hold"
+      },
+      "type": "test/assert-equal",
+      "x": 1000,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvz62xn6d9ldo",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "doc": "Invariant 8: a published playbook version is immutable; editing produces a new draft.",
+        "kind": "unit",
+        "name": "test_published_version_cannot_be_republished"
+      },
+      "type": "test/case",
+      "x": 0,
+      "y": 910
+    },
+    {
+      "id": "n_mu4ytvz62xohru97f",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "value",
+          "name": "value",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "type": "string",
+        "value": "published"
+      },
+      "type": "data/literal",
+      "x": 0,
+      "y": 1040
+    },
+    {
+      "id": "n_mu4ytvz62xpf4sse5",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "value",
+          "name": "value",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "type": "string",
+        "value": "published"
+      },
+      "type": "data/literal",
+      "x": 0,
+      "y": 1170
+    },
+    {
+      "id": "n_mu4ytvz62xqbn5scr",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "args",
+          "name": "arg",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "dynamic": true,
+          "id": "args#1",
+          "name": "arg",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "await": false,
+        "returns": "bool",
+        "target": "can_transition"
+      },
+      "type": "control/call",
+      "x": 250,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvz62xtz3eo4k",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "value",
+          "name": "value",
+          "type": "bool"
+        }
+      ],
+      "props": {
+        "type": "bool",
+        "value": "false"
+      },
+      "type": "data/literal",
+      "x": 0,
+      "y": 1300
+    },
+    {
+      "id": "n_mu4ytvz62xu1b3wxh",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "actual",
+          "name": "actual",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "expected",
+          "name": "expected",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "message": "published -> published is not a legal transition"
+      },
+      "type": "test/assert-equal",
+      "x": 500,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvz62xz2t4uov",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "doc": "Invariant 3: permission checks are exact, or an explicit trailing wildcard. \"response.*\" must not grant \"responsible.thing\".",
+        "kind": "unit",
+        "name": "test_wildcard_grants_do_not_over_match"
+      },
+      "type": "test/case",
+      "x": 0,
+      "y": 1430
+    },
+    {
+      "id": "n_mu4ytvz62y0a2bu2s",
+      "inputs": [
+        {
+          "defaultValue": "response.*",
+          "direction": "in",
+          "id": "e",
+          "name": "element",
+          "type": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "list",
+          "name": "list",
+          "type": "List<string>"
+        }
+      ],
+      "props": {
+        "itemType": "string"
+      },
+      "type": "list/literal",
+      "x": 0,
+      "y": 1560
+    },
+    {
+      "id": "n_mu4ytvz62y1bwc9in",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "value",
+          "name": "value",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "type": "string",
+        "value": "responsex.isolate"
+      },
+      "type": "data/literal",
+      "x": 0,
+      "y": 1690
+    },
+    {
+      "id": "n_mu4ytvz62y2ururxv",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "args",
+          "name": "arg",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "dynamic": true,
+          "id": "args#1",
+          "name": "arg",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "await": false,
+        "returns": "bool",
+        "target": "has_permission"
+      },
+      "type": "control/call",
+      "x": 250,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvz62y58h0z2g",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "value",
+          "name": "value",
+          "type": "bool"
+        }
+      ],
+      "props": {
+        "type": "bool",
+        "value": "false"
+      },
+      "type": "data/literal",
+      "x": 0,
+      "y": 1820
+    },
+    {
+      "id": "n_mu4ytvz62y6ojzzue",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "actual",
+          "name": "actual",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "expected",
+          "name": "expected",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "message": "the wildcard prefix includes the dot, so a neighbouring namespace does not match"
+      },
+      "type": "test/assert-equal",
+      "x": 500,
+      "y": 390
+    }
+  ],
+  "style": "procedural",
+  "variables": []
+}

@@ -1,0 +1,34 @@
+{
+  "files": [
+    {
+      "exports": [],
+      "graphId": "g_mstz33qi3xy5rjt",
+      "id": "file_mstz33qi26pfldo",
+      "imports": [],
+      "kind": "generated",
+      "language": "python",
+      "path": "src/greeting.py",
+      "role": "source"
+    },
+    {
+      "exports": [],
+      "graphId": "g_mstz33qjbkwla97",
+      "id": "file_mstz33qjaquod44",
+      "imports": [],
+      "kind": "hybrid",
+      "language": "python",
+      "path": "src/main.py",
+      "role": "entry"
+    },
+    {
+      "exports": [],
+      "graphId": "g_mstz33qj158g4rff",
+      "id": "file_mstz33qj14g24pdz",
+      "imports": [],
+      "kind": "generated",
+      "language": "python",
+      "path": "tests/test_greeting.py",
+      "role": "test"
+    }
+  ]
+}

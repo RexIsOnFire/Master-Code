@@ -1,0 +1,937 @@
+{
+  "edges": [
+    {
+      "from": {
+        "node": "n_mu4ytvyv1bzjzkltr",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyv1c1k93zie",
+      "to": {
+        "node": "n_mu4ytvyv1c07k8x4u",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1bybnp4f3",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyv1c2u7lr7a",
+      "to": {
+        "node": "n_mu4ytvyv1bzjzkltr",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1bzjzkltr",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyv1c3exlnv2",
+      "to": {
+        "node": "n_mu4ytvyv1c07k8x4u",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1c41cy3ot",
+        "port": "p:db"
+      },
+      "id": "e_mu4ytvyv1c64kcad1",
+      "to": {
+        "node": "n_mu4ytvyv1c5lqqxcx",
+        "port": "p:db"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1c41cy3ot",
+        "port": "p:org_id"
+      },
+      "id": "e_mu4ytvyv1c7kh26m6",
+      "to": {
+        "node": "n_mu4ytvyv1c5lqqxcx",
+        "port": "p:org_id"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1c41cy3ot",
+        "port": "p:role"
+      },
+      "id": "e_mu4ytvyv1c8voucny",
+      "to": {
+        "node": "n_mu4ytvyv1c5lqqxcx",
+        "port": "p:role"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1c41cy3ot",
+        "port": "p:contains_incident_data"
+      },
+      "id": "e_mu4ytvyv1c9tlphwi",
+      "to": {
+        "node": "n_mu4ytvyv1c5lqqxcx",
+        "port": "p:contains_incident_data"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1c5lqqxcx",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyv1cb71qoqk",
+      "to": {
+        "node": "n_mu4ytvyv1cat4bhr7",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1c41cy3ot",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyv1ccmi5vie",
+      "to": {
+        "node": "n_mu4ytvyv1c5lqqxcx",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1c5lqqxcx",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyv1cdffi8ed",
+      "to": {
+        "node": "n_mu4ytvyv1cat4bhr7",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1cg0x2ynt",
+        "port": "self"
+      },
+      "id": "e_mu4ytvyv1ci1frjd6",
+      "to": {
+        "node": "n_mu4ytvyv1chg89f4k",
+        "port": "p:self"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1cg0x2ynt",
+        "port": "p:messages"
+      },
+      "id": "e_mu4ytvyv1cjwmomze",
+      "to": {
+        "node": "n_mu4ytvyv1chg89f4k",
+        "port": "p:messages"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1cg0x2ynt",
+        "port": "p:tools"
+      },
+      "id": "e_mu4ytvyv1ckft30rd",
+      "to": {
+        "node": "n_mu4ytvyv1chg89f4k",
+        "port": "p:tools"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1cg0x2ynt",
+        "port": "p:options"
+      },
+      "id": "e_mu4ytvyv1clyce6cu",
+      "to": {
+        "node": "n_mu4ytvyv1chg89f4k",
+        "port": "p:options"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1chg89f4k",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyv1cnnq22lh",
+      "to": {
+        "node": "n_mu4ytvyv1cmnj0v59",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1cg0x2ynt",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyv1coixl8em",
+      "to": {
+        "node": "n_mu4ytvyv1chg89f4k",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1chg89f4k",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyv1cplrervh",
+      "to": {
+        "node": "n_mu4ytvyv1cmnj0v59",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1cq427kiq",
+        "port": "p:route"
+      },
+      "id": "e_mu4ytvyv1csse5z3c",
+      "to": {
+        "node": "n_mu4ytvyv1cr0mib03",
+        "port": "p:route"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1cq427kiq",
+        "port": "p:credential"
+      },
+      "id": "e_mu4ytvyv1ctm7ah7j",
+      "to": {
+        "node": "n_mu4ytvyv1cr0mib03",
+        "port": "p:credential"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1cr0mib03",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyv1cvgzz9vm",
+      "to": {
+        "node": "n_mu4ytvyv1cu9fycc6",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1cq427kiq",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyv1cwzzk33u",
+      "to": {
+        "node": "n_mu4ytvyv1cr0mib03",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1cr0mib03",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyv1cxh0k6zx",
+      "to": {
+        "node": "n_mu4ytvyv1cu9fycc6",
+        "port": "in"
+      }
+    }
+  ],
+  "fileId": "file_mu4ytvyv1bv73hn53",
+  "id": "g_mu4ytvyv1bw64e9ln",
+  "name": "provider gateway",
+  "nodes": [
+    {
+      "id": "n_mu4ytvyv1bxu2wuvt",
+      "inputs": [],
+      "outputs": [],
+      "props": {
+        "doc": "One interface, several vendors. Playbooks name a ROLE (fast, investigation,\nreasoning, embedding) and never a model, so changing which model serves a\nrole is configuration rather than a playbook edit.",
+        "extends": "",
+        "methods": [
+          {
+            "name": "complete",
+            "params": [
+              {
+                "name": "messages",
+                "type": "List<Map<string, Any>>"
+              },
+              {
+                "name": "tools",
+                "type": "List<Map<string, Any>>"
+              },
+              {
+                "name": "options",
+                "type": "Map<string, Any>"
+              }
+            ],
+            "returns": "Map<string, Any>"
+          },
+          {
+            "name": "embed",
+            "params": [
+              {
+                "name": "text",
+                "type": "string"
+              }
+            ],
+            "returns": "List<f64>"
+          },
+          {
+            "name": "health",
+            "params": [],
+            "returns": "bool"
+          }
+        ],
+        "name": "AiProvider"
+      },
+      "type": "oop/interface",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyv1bybnp4f3",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "doc": "The roles a deployment configures, with local-first defaults.\n\nWith only Ollama present the platform is fully functional and no SOC data\nleaves the machine. That is why local is the default rather than the\nfallback.",
+        "isAsync": false,
+        "name": "role_catalogue",
+        "params": [],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyv1bzjzkltr",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "return {\n    \"fast\": {\"provider\": \"ollama\", \"model\": \"llama3.1:8b\",\n             \"use\": \"extraction, classification, summarisation\",\n             \"max_tokens\": 2048, \"temperature\": 0.1},\n    \"investigation\": {\"provider\": \"ollama\", \"model\": \"llama3.1:70b\",\n                      \"use\": \"multi-step tool-using investigation\",\n                      \"max_tokens\": 8192, \"temperature\": 0.2},\n    \"reasoning\": {\"provider\": \"ollama\", \"model\": \"llama3.1:70b\",\n                  \"use\": \"analysis, recommendations, playbook drafting\",\n                  \"max_tokens\": 8192, \"temperature\": 0.3},\n    \"embedding\": {\"provider\": \"ollama\", \"model\": \"nomic-embed-text\",\n                  \"use\": \"similarity search over incidents and intel\",\n                  \"max_tokens\": 512, \"temperature\": 0.0},\n}",
+        "doc": "The roles a deployment configures, with local-first defaults.\n\nWith only Ollama present the platform is fully functional and no SOC data\nleaves the machine. That is why local is the default rather than the\nfallback.",
+        "form": "statements",
+        "language": "python",
+        "name": "ai_role_defaults",
+        "packages": [],
+        "params": [],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyv1c07k8x4u",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyv1c41cy3ot",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:org_id",
+          "name": "org_id",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:role",
+          "name": "role",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:contains_incident_data",
+          "name": "contains_incident_data",
+          "type": "bool"
+        }
+      ],
+      "props": {
+        "doc": "Choose the provider for a role, and refuse rather than downgrade.\n\nData residency is a first-class setting: if an organisation marks a role\nlocal-only, a request carrying incident content to an external provider is\nrefused with a clear reason. Silently routing it somewhere else would be\nthe worst possible behaviour for a SOC tool.",
+        "isAsync": false,
+        "name": "resolve_route",
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "org_id",
+            "type": "string"
+          },
+          {
+            "name": "role",
+            "type": "string"
+          },
+          {
+            "name": "contains_incident_data",
+            "type": "bool"
+          }
+        ],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvyv1c5lqqxcx",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:org_id",
+          "name": "org_id",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:role",
+          "name": "role",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:contains_incident_data",
+          "name": "contains_incident_data",
+          "type": "bool"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "rows = db.query(\n    \"SELECT r.model, r.params, p.id, p.kind, p.base_url, p.credential_id, \"\n    \"p.enabled, p.health \"\n    \"FROM ai_model_role r JOIN ai_provider p ON p.id = r.provider_id \"\n    \"WHERE r.org_id = %s AND r.role = %s\", [org_id, role], org_id,\n)\nif not rows:\n    raise KeyError(\n        \"no provider is configured for the %r role; \"\n        \"set one in Administration > AI, or start the ai-local profile\" % role\n    )\nroute = rows[0]\nif not route[\"enabled\"]:\n    raise RuntimeError(\"the provider for role %r is disabled\" % role)\n\nlocal_kinds = (\"ollama\", \"openai_compatible\")\nsettings = db.query(\n    \"SELECT settings FROM organisation WHERE id = %s\", [org_id], org_id\n)\nlocal_only = bool((settings[0][\"settings\"] if settings else {}).get(\"ai_local_only\"))\n\nif contains_incident_data and local_only and route[\"kind\"] not in local_kinds:\n    raise PermissionError(\n        \"this organisation is configured local-only for AI; the %r role is \"\n        \"bound to %s, which is external. Change the binding or the policy - \"\n        \"the request will not be silently downgraded.\" % (role, route[\"kind\"])\n    )\nreturn route",
+        "doc": "Choose the provider for a role, and refuse rather than downgrade.\n\nData residency is a first-class setting: if an organisation marks a role\nlocal-only, a request carrying incident content to an external provider is\nrefused with a clear reason. Silently routing it somewhere else would be\nthe worst possible behaviour for a SOC tool.",
+        "form": "statements",
+        "language": "python",
+        "name": "select_provider_for_role",
+        "packages": [],
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "org_id",
+            "type": "string"
+          },
+          {
+            "name": "role",
+            "type": "string"
+          },
+          {
+            "name": "contains_incident_data",
+            "type": "bool"
+          }
+        ],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyv1cat4bhr7",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyv1cek61uji",
+      "inputs": [],
+      "outputs": [],
+      "props": {
+        "doc": "The local default. Present on a workstation deployment with the ai-local profile; no SOC data leaves the host.",
+        "extends": "",
+        "fields": [
+          {
+            "name": "base_url",
+            "type": "string",
+            "visibility": "public"
+          },
+          {
+            "name": "model",
+            "type": "string",
+            "visibility": "public"
+          }
+        ],
+        "generics": "",
+        "implements": "AiProvider",
+        "isAbstract": false,
+        "name": "OllamaProvider",
+        "shape": "class"
+      },
+      "type": "oop/class",
+      "x": 0,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvyv1cf1qjx0s",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "self",
+          "name": "self",
+          "type": "OllamaProvider"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:base_url",
+          "name": "base_url",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:model",
+          "name": "model",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "assignFields": true,
+        "className": "OllamaProvider",
+        "params": [
+          {
+            "name": "base_url",
+            "type": "string"
+          },
+          {
+            "name": "model",
+            "type": "string"
+          }
+        ]
+      },
+      "type": "oop/constructor",
+      "x": 0,
+      "y": 520
+    },
+    {
+      "id": "n_mu4ytvyv1cg0x2ynt",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "self",
+          "name": "self",
+          "type": "OllamaProvider"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:messages",
+          "name": "messages",
+          "type": "List<Map<string, Any>>"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:tools",
+          "name": "tools",
+          "type": "List<Map<string, Any>>"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:options",
+          "name": "options",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "className": "OllamaProvider",
+        "doc": "One turn against a local model, normalised into the platform response shape.",
+        "isAsync": false,
+        "isStatic": false,
+        "name": "complete",
+        "params": [
+          {
+            "name": "messages",
+            "type": "List<Map<string, Any>>"
+          },
+          {
+            "name": "tools",
+            "type": "List<Map<string, Any>>"
+          },
+          {
+            "name": "options",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "oop/method",
+      "x": 0,
+      "y": 650
+    },
+    {
+      "id": "n_mu4ytvyv1chg89f4k",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:self",
+          "name": "self",
+          "type": "OllamaProvider"
+        },
+        {
+          "direction": "in",
+          "id": "p:messages",
+          "name": "messages",
+          "type": "List<Map<string, Any>>"
+        },
+        {
+          "direction": "in",
+          "id": "p:tools",
+          "name": "tools",
+          "type": "List<Map<string, Any>>"
+        },
+        {
+          "direction": "in",
+          "id": "p:options",
+          "name": "options",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [
+          "net"
+        ],
+        "code": "import httpx\n\nbody = {\n    \"model\": self.model,\n    \"messages\": messages,\n    \"stream\": False,\n    \"options\": {\"temperature\": options.get(\"temperature\", 0.1),\n                \"num_predict\": options.get(\"max_tokens\", 2048)},\n}\nif tools:\n    body[\"tools\"] = tools\n\nwith httpx.Client(timeout=options.get(\"timeout_s\", 120)) as client:\n    response = client.post(self.base_url.rstrip(\"/\") + \"/api/chat\", json=body)\n    response.raise_for_status()\n    payload = response.json()\n\nmessage = payload.get(\"message\", {})\nreturn {\n    \"text\": message.get(\"content\", \"\"),\n    \"tool_calls\": message.get(\"tool_calls\", []),\n    \"tokens_in\": payload.get(\"prompt_eval_count\", 0),\n    \"tokens_out\": payload.get(\"eval_count\", 0),\n    \"finish_reason\": \"stop\" if payload.get(\"done\") else \"length\",\n    \"model\": self.model,\n}",
+        "doc": "One turn against a local model, normalised into the platform response shape.",
+        "form": "statements",
+        "language": "python",
+        "name": "ollama_complete",
+        "packages": [
+          {
+            "name": "httpx",
+            "version": "0.27.*"
+          }
+        ],
+        "params": [
+          {
+            "name": "self",
+            "type": "OllamaProvider"
+          },
+          {
+            "name": "messages",
+            "type": "List<Map<string, Any>>"
+          },
+          {
+            "name": "tools",
+            "type": "List<Map<string, Any>>"
+          },
+          {
+            "name": "options",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvyv1cmnj0v59",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvyv1cq427kiq",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:route",
+          "name": "route",
+          "type": "Map<string, Any>"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:credential",
+          "name": "credential",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "doc": "The whole vendor abstraction, in one place.\n\nAdding a provider is a class and a line here. Nothing in the tool registry,\nthe AI actions or the playbook engine knows a vendor name.",
+        "isAsync": false,
+        "name": "make_provider",
+        "params": [
+          {
+            "name": "route",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "credential",
+            "type": "Any"
+          }
+        ],
+        "returns": "Any",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 780
+    },
+    {
+      "id": "n_mu4ytvyv1cr0mib03",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:route",
+          "name": "route",
+          "type": "Map<string, Any>"
+        },
+        {
+          "direction": "in",
+          "id": "p:credential",
+          "name": "credential",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "from soar.ai.provider_anthropic import AnthropicProvider\nfrom soar.ai.provider_openai import OpenAICompatibleProvider\n\nkind = route[\"kind\"]\nif kind == \"ollama\":\n    return OllamaProvider(route[\"base_url\"] or \"http://ollama:11434\", route[\"model\"])\nif kind in (\"openai\", \"openai_compatible\", \"azure_openai\"):\n    return OpenAICompatibleProvider(route[\"base_url\"], route[\"model\"], credential, kind)\nif kind == \"anthropic\":\n    return AnthropicProvider(route[\"base_url\"] or \"https://api.anthropic.com\",\n                             route[\"model\"], credential)\nraise ValueError(\"unknown AI provider kind %r\" % kind)",
+        "doc": "The whole vendor abstraction, in one place.\n\nAdding a provider is a class and a line here. Nothing in the tool registry,\nthe AI actions or the playbook engine knows a vendor name.",
+        "form": "statements",
+        "language": "python",
+        "name": "construct_provider",
+        "packages": [],
+        "params": [
+          {
+            "name": "route",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "credential",
+            "type": "Any"
+          }
+        ],
+        "returns": "Any"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvyv1cu9fycc6",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 390
+    }
+  ],
+  "style": "object-oriented",
+  "variables": []
+}

@@ -1,0 +1,228 @@
+{
+  "edges": [
+    {
+      "from": {
+        "node": "n_mu4ytvyu16vovfzm2",
+        "port": "p:source"
+      },
+      "id": "e_mu4ytvyu16xkpnywn",
+      "to": {
+        "node": "n_mu4ytvyu16wlhz9qu",
+        "port": "p:source"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu16vovfzm2",
+        "port": "p:inputs"
+      },
+      "id": "e_mu4ytvyu16yw2ngko",
+      "to": {
+        "node": "n_mu4ytvyu16wlhz9qu",
+        "port": "p:inputs"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu16vovfzm2",
+        "port": "p:limits"
+      },
+      "id": "e_mu4ytvyu16zg28ffb",
+      "to": {
+        "node": "n_mu4ytvyu16wlhz9qu",
+        "port": "p:limits"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu16wlhz9qu",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyu171568k7f",
+      "to": {
+        "node": "n_mu4ytvyu170pdgeg8",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu16vovfzm2",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyu172hn93jw",
+      "to": {
+        "node": "n_mu4ytvyu16wlhz9qu",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu16wlhz9qu",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyu1738d1y4w",
+      "to": {
+        "node": "n_mu4ytvyu170pdgeg8",
+        "port": "in"
+      }
+    }
+  ],
+  "fileId": "file_mu4ytvyu16txs0rfc",
+  "id": "g_mu4ytvyu16utycso8",
+  "name": "isolated execution",
+  "nodes": [
+    {
+      "id": "n_mu4ytvyu16vovfzm2",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:source",
+          "name": "source",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:inputs",
+          "name": "inputs",
+          "type": "Map<string, Any>"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:limits",
+          "name": "limits",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "doc": "Run analyst-authored Python in a child process under real limits.\n\nThis is the inner half of the isolation boundary; the outer half is the\ncontainer the sandbox pool runs in, which has no route to Postgres and no\ndefault route off its network. Neither half is sufficient alone, and the\nresult records exactly which limits were applied - a platform that cannot\nenforce a CPU quota on a given host should say so on the step rather than\nimply a guarantee it did not deliver.",
+        "isAsync": false,
+        "name": "run_isolated",
+        "params": [
+          {
+            "name": "source",
+            "type": "string"
+          },
+          {
+            "name": "inputs",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "limits",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyu16wlhz9qu",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:source",
+          "name": "source",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:inputs",
+          "name": "inputs",
+          "type": "Map<string, Any>"
+        },
+        {
+          "direction": "in",
+          "id": "p:limits",
+          "name": "limits",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [
+          "process"
+        ],
+        "code": "import json\nimport os\nimport subprocess\nimport sys\nimport tempfile\nimport time\n\napplied = {\"wall_clock\": True, \"output_cap\": True, \"argv_launch\": True,\n           \"scrubbed_env\": True, \"cpu\": False, \"address_space\": False,\n           \"processes\": False, \"file_size\": False}\n\npreamble = [\n    \"import json, sys\",\n    \"try:\",\n    \"    import resource\",\n    \"    resource.setrlimit(resource.RLIMIT_CPU, (%d, %d))\"\n    % (limits[\"cpu_seconds\"], limits[\"cpu_seconds\"]),\n    \"    resource.setrlimit(resource.RLIMIT_AS, (%d, %d))\"\n    % (limits[\"address_space_mb\"] * 1048576, limits[\"address_space_mb\"] * 1048576),\n    \"    resource.setrlimit(resource.RLIMIT_NPROC, (%d, %d))\"\n    % (limits[\"max_processes\"], limits[\"max_processes\"]),\n    \"    resource.setrlimit(resource.RLIMIT_FSIZE, (%d, %d))\"\n    % (limits[\"max_file_size_mb\"] * 1048576, limits[\"max_file_size_mb\"] * 1048576),\n    \"except ImportError:\",\n    \"    pass\",\n    \"inputs = json.loads(sys.stdin.read())\",\n    \"\",\n]\nepilogue = [\"\", \"sys.stdout.write(json.dumps({'__result__': run(inputs)}))\"]\n\nprogram = \"\\n\".join(preamble) + source + \"\\n\".join(epilogue)\n\n# Argv launch, shell=False, always. The platform never builds a shell string,\n# anywhere, which is what makes command injection a structural non-issue.\nenvironment = {\"PATH\": \"/usr/bin:/bin\", \"HOME\": \"/tmp\", \"LANG\": \"C.UTF-8\",\n               \"PYTHONDONTWRITEBYTECODE\": \"1\", \"PYTHONHASHSEED\": \"0\"}\n\nstarted = time.time()\nwith tempfile.TemporaryDirectory() as workdir:\n    try:\n        completed = subprocess.run(\n            [sys.executable, \"-I\", \"-S\", \"-c\", program],\n            input=json.dumps(inputs),\n            capture_output=True, text=True, shell=False,\n            cwd=workdir, env=environment,\n            timeout=limits[\"wall_clock_ms\"] / 1000.0,\n            start_new_session=True,\n        )\n    except subprocess.TimeoutExpired:\n        return {\"ok\": False, \"limits_applied\": applied,\n                \"error\": {\"error_class\": \"TRANSIENT\",\n                          \"message\": \"exceeded the wall-clock limit and was killed\"}}\n\nif os.name == \"posix\":\n    applied.update({\"cpu\": True, \"address_space\": True,\n                    \"processes\": True, \"file_size\": True})\n\ncap = limits[\"max_output_bytes\"]\nstdout = completed.stdout[:cap]\ntruncated = len(completed.stdout) > cap\n\nif completed.returncode != 0:\n    return {\"ok\": False, \"limits_applied\": applied,\n            \"logs\": completed.stderr[:cap].splitlines()[-50:],\n            \"error\": {\"error_class\": \"PERMANENT\",\n                      \"message\": \"exited with code %d\" % completed.returncode}}\n\ntry:\n    parsed = json.loads(stdout)[\"__result__\"]\nexcept (ValueError, KeyError):\n    return {\"ok\": False, \"limits_applied\": applied,\n            \"error\": {\"error_class\": \"VALIDATION\",\n                      \"message\": \"the command did not return a JSON object from run()\"}}\n\nreturn {\"ok\": True, \"output\": parsed, \"limits_applied\": applied,\n        \"truncated\": truncated,\n        \"duration_ms\": int((time.time() - started) * 1000),\n        \"logs\": completed.stderr[:cap].splitlines()[-50:]}",
+        "doc": "Run analyst-authored Python in a child process under real limits.\n\nThis is the inner half of the isolation boundary; the outer half is the\ncontainer the sandbox pool runs in, which has no route to Postgres and no\ndefault route off its network. Neither half is sufficient alone, and the\nresult records exactly which limits were applied - a platform that cannot\nenforce a CPU quota on a given host should say so on the step rather than\nimply a guarantee it did not deliver.",
+        "form": "statements",
+        "language": "python",
+        "name": "execute_in_child_process",
+        "packages": [],
+        "params": [
+          {
+            "name": "source",
+            "type": "string"
+          },
+          {
+            "name": "inputs",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "limits",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyu170pdgeg8",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 0
+    }
+  ],
+  "style": "procedural",
+  "variables": []
+}

@@ -1,0 +1,987 @@
+{
+  "edges": [
+    {
+      "from": {
+        "node": "n_mu4ytvz121q6cd4g5",
+        "port": "p:name"
+      },
+      "id": "e_mu4ytvz121sf6e4cs",
+      "to": {
+        "node": "n_mu4ytvz121r4usstf",
+        "port": "p:name"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz121r4usstf",
+        "port": "result"
+      },
+      "id": "e_mu4ytvz121ub8vaqf",
+      "to": {
+        "node": "n_mu4ytvz121tikqgvb",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz121q6cd4g5",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz121vnpxri3",
+      "to": {
+        "node": "n_mu4ytvz121r4usstf",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz121r4usstf",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz121wo0c1ol",
+      "to": {
+        "node": "n_mu4ytvz121tikqgvb",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz121xzkviah",
+        "port": "p:method"
+      },
+      "id": "e_mu4ytvz121z2o920d",
+      "to": {
+        "node": "n_mu4ytvz121yhbbu67",
+        "port": "p:method"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz121xzkviah",
+        "port": "p:path"
+      },
+      "id": "e_mu4ytvz1220eiifzd",
+      "to": {
+        "node": "n_mu4ytvz121yhbbu67",
+        "port": "p:path"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz121xzkviah",
+        "port": "p:body"
+      },
+      "id": "e_mu4ytvz1221tlblqp",
+      "to": {
+        "node": "n_mu4ytvz121yhbbu67",
+        "port": "p:body"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz121yhbbu67",
+        "port": "result"
+      },
+      "id": "e_mu4ytvz1223i3e6rl",
+      "to": {
+        "node": "n_mu4ytvz1222bv9r4o",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz121xzkviah",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz1224r14fuw",
+      "to": {
+        "node": "n_mu4ytvz121yhbbu67",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz121yhbbu67",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz12257i7xhb",
+      "to": {
+        "node": "n_mu4ytvz1222bv9r4o",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz1226niw56w",
+        "port": "p:name"
+      },
+      "id": "e_mu4ytvz1228sb1swt",
+      "to": {
+        "node": "n_mu4ytvz1227r8kweo",
+        "port": "p:name"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz1226niw56w",
+        "port": "p:value"
+      },
+      "id": "e_mu4ytvz1229abtiy8",
+      "to": {
+        "node": "n_mu4ytvz1227r8kweo",
+        "port": "p:value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz1226niw56w",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz122a0fymfm",
+      "to": {
+        "node": "n_mu4ytvz1227r8kweo",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz122bgb8dti",
+        "port": "p:name"
+      },
+      "id": "e_mu4ytvz122dv6r2pw",
+      "to": {
+        "node": "n_mu4ytvz122cdjmnsm",
+        "port": "p:name"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz122bgb8dti",
+        "port": "p:rows"
+      },
+      "id": "e_mu4ytvz122exvbz6y",
+      "to": {
+        "node": "n_mu4ytvz122cdjmnsm",
+        "port": "p:rows"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz122bgb8dti",
+        "port": "p:columns"
+      },
+      "id": "e_mu4ytvz122f4fzmwg",
+      "to": {
+        "node": "n_mu4ytvz122cdjmnsm",
+        "port": "p:columns"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz122bgb8dti",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz122gzlfxj9",
+      "to": {
+        "node": "n_mu4ytvz122cdjmnsm",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz122hewh6oy",
+        "port": "p:seconds"
+      },
+      "id": "e_mu4ytvz122j66ov5n",
+      "to": {
+        "node": "n_mu4ytvz122igkikpx",
+        "port": "p:seconds"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz122igkikpx",
+        "port": "result"
+      },
+      "id": "e_mu4ytvz122lx5skj7",
+      "to": {
+        "node": "n_mu4ytvz122kepwlf4",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz122hewh6oy",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz122m3cmmfx",
+      "to": {
+        "node": "n_mu4ytvz122igkikpx",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz122igkikpx",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz122nvc2okd",
+      "to": {
+        "node": "n_mu4ytvz122kepwlf4",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz122o4m73pu",
+        "port": "p:handlers"
+      },
+      "id": "e_mu4ytvz122qr7qotl",
+      "to": {
+        "node": "n_mu4ytvz122peziarh",
+        "port": "p:handlers"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz122o4m73pu",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz122rzum571",
+      "to": {
+        "node": "n_mu4ytvz122peziarh",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz122t6b2tpr",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz122uaduo4i",
+      "to": {
+        "node": "n_mu4ytvz122s50dup2",
+        "port": "in"
+      }
+    }
+  ],
+  "fileId": "file_mu4ytvyz21chr7736",
+  "id": "g_mu4ytvyz21dipzto4",
+  "name": "api client",
+  "nodes": [
+    {
+      "id": "n_mu4ytvz121q6cd4g5",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:name",
+          "name": "name",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "doc": "Find a widget by the name it was given in the UI designer.\n\nThe HTML backend turns a widget name into a kebab-case element id, so the\nworkspace looks elements up through this one function rather than hard-coding\nids that the designer owns. Rename a widget and the lookup follows.",
+        "isAsync": false,
+        "name": "byName",
+        "params": [
+          {
+            "name": "name",
+            "type": "string"
+          }
+        ],
+        "returns": "Any",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvz121r4usstf",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:name",
+          "name": "name",
+          "type": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "const id = name.replace(/([a-z0-9])([A-Z])/g, \"$1-$2\").toLowerCase();\nreturn document.getElementById(id) || document.querySelector(`[data-name=\"${name}\"]`);",
+        "doc": "Find a widget by the name it was given in the UI designer.\n\nThe HTML backend turns a widget name into a kebab-case element id, so the\nworkspace looks elements up through this one function rather than hard-coding\nids that the designer owns. Rename a widget and the lookup follows.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "find_named_widget",
+        "packages": [],
+        "params": [
+          {
+            "name": "name",
+            "type": "string"
+          }
+        ],
+        "returns": "Any"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvz121tikqgvb",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvz121xzkviah",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:method",
+          "name": "method",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:path",
+          "name": "path",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:body",
+          "name": "body",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "doc": "The single fetch path for the whole workspace.\n\nCredentials are the session cookie; the CSRF token is read from the\nmeta tag and sent as a header. Nothing here ever holds an API key, because\na browser is not a place to put one.",
+        "isAsync": true,
+        "name": "request",
+        "params": [
+          {
+            "name": "method",
+            "type": "string"
+          },
+          {
+            "name": "path",
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "type": "Any"
+          }
+        ],
+        "returns": "Any",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvz121yhbbu67",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:method",
+          "name": "method",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:path",
+          "name": "path",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:body",
+          "name": "body",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "return (async () => {\n// Handed out by /api/auth/mfa and kept for the life of the tab. The meta\n// tag is the fallback for a server-rendered page; these pages are static,\n// so on its own it is always empty and every write would fail CSRF.\nlet csrf = \"\";\ntry { csrf = sessionStorage.getItem(\"soar.csrf\") || \"\"; } catch { csrf = \"\"; }\nif (!csrf) {\n  csrf = document.querySelector('meta[name=\"csrf-token\"]')?.content || \"\";\n}\nconst response = await fetch(path, {\n  method,\n  credentials: \"same-origin\",\n  headers: {\n    \"content-type\": \"application/json\",\n    ...(method === \"GET\" ? {} : { \"x-csrf-token\": csrf }),\n  },\n  body: body === undefined || method === \"GET\" ? undefined : JSON.stringify(body),\n});\n\nif (response.status === 401) {\n  window.location.href = \"/login.html\";\n  return null;\n}\nconst payload = await response.json().catch(() => ({}));\nif (!response.ok) {\n  // Surfaced, never swallowed. An analyst has to know the action did not happen.\n  throw new Error(payload.error || `${response.status} ${response.statusText}`);\n}\nreturn payload;\n})();",
+        "doc": "The single fetch path for the whole workspace.\n\nCredentials are the session cookie; the CSRF token is read from the\nmeta tag and sent as a header. Nothing here ever holds an API key, because\na browser is not a place to put one.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "call_api",
+        "packages": [],
+        "params": [
+          {
+            "name": "method",
+            "type": "string"
+          },
+          {
+            "name": "path",
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "type": "Any"
+          }
+        ],
+        "returns": "Any"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvz1222bv9r4o",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvz1226niw56w",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:name",
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:value",
+          "name": "value",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "doc": "Write into a named element by textContent. There is no innerHTML path in the workspace, which is what makes the XSS mitigation structural rather than a review habit.",
+        "isAsync": false,
+        "name": "setText",
+        "params": [
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "value",
+            "type": "string"
+          }
+        ],
+        "returns": "Void",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvz1227r8kweo",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:name",
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:value",
+          "name": "value",
+          "type": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "const element = byName(name);\nif (element) element.textContent = value === null || value === undefined ? \"—\" : String(value);",
+        "doc": "Write into a named element by textContent. There is no innerHTML path in the workspace, which is what makes the XSS mitigation structural rather than a review habit.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "set_named_text",
+        "packages": [],
+        "params": [
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "value",
+            "type": "string"
+          }
+        ],
+        "returns": "Void"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvz122bgb8dti",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:name",
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:rows",
+          "name": "rows",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:columns",
+          "name": "columns",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "doc": "Build a table from data, cell by cell, with textContent. Typed construction rather than string concatenation - the same reason, in the place it matters most.",
+        "isAsync": false,
+        "name": "renderRows",
+        "params": [
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "rows",
+            "type": "Any"
+          },
+          {
+            "name": "columns",
+            "type": "Any"
+          }
+        ],
+        "returns": "Void",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvz122cdjmnsm",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:name",
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:rows",
+          "name": "rows",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:columns",
+          "name": "columns",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "const table = byName(name);\nif (!table) return;\nconst body = table.tBodies[0] || table.createTBody();\nbody.replaceChildren();\nfor (const row of rows || []) {\n  const tr = body.insertRow();\n  for (const column of columns) {\n    const cell = tr.insertCell();\n    const value = row[column.field];\n    if (column.className) cell.className = typeof column.className === \"function\"\n      ? column.className(row) : column.className;\n    cell.textContent = value === null || value === undefined ? \"—\" : String(value);\n  }\n}",
+        "doc": "Build a table from data, cell by cell, with textContent. Typed construction rather than string concatenation - the same reason, in the place it matters most.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "render_table_rows",
+        "packages": [],
+        "params": [
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "rows",
+            "type": "Any"
+          },
+          {
+            "name": "columns",
+            "type": "Any"
+          }
+        ],
+        "returns": "Void"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvz122hewh6oy",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:seconds",
+          "name": "seconds",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "doc": "MTTA and MTTR read as durations, not as integers. An analyst should not have to divide by sixty.",
+        "isAsync": false,
+        "name": "formatDuration",
+        "params": [
+          {
+            "name": "seconds",
+            "type": "Any"
+          }
+        ],
+        "returns": "string",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 520
+    },
+    {
+      "id": "n_mu4ytvz122igkikpx",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:seconds",
+          "name": "seconds",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "const value = Number(seconds);\nif (!Number.isFinite(value) || value <= 0) return \"—\";\nif (value < 60) return `${Math.round(value)}s`;\nif (value < 3600) return `${Math.round(value / 60)}m`;\nif (value < 86400) return `${(value / 3600).toFixed(1)}h`;\nreturn `${(value / 86400).toFixed(1)}d`;",
+        "doc": "MTTA and MTTR read as durations, not as integers. An analyst should not have to divide by sixty.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "format_seconds",
+        "packages": [],
+        "params": [
+          {
+            "name": "seconds",
+            "type": "Any"
+          }
+        ],
+        "returns": "string"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 520
+    },
+    {
+      "id": "n_mu4ytvz122kepwlf4",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvz122o4m73pu",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:handlers",
+          "name": "handlers",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "doc": "Attach every handler the markup declares.\n\nThe HTML backend stamps `data-mcode-events=\"click:onNavigate\"` onto the\nelement and expects something to honour it. Nothing did, so every screen\nrendered correctly and nothing on it responded - a whole workspace of live\nfunctions that no event ever reached.\n\nElements are marked once bound. A page that re-renders part of itself and\ncalls this again would otherwise stack a second listener on everything\nthat survived, and the second click would fire the handler twice.",
+        "isAsync": false,
+        "name": "bindDeclaredHandlers",
+        "params": [
+          {
+            "name": "handlers",
+            "type": "Any"
+          }
+        ],
+        "returns": "Void",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 650
+    },
+    {
+      "id": "n_mu4ytvz122peziarh",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:handlers",
+          "name": "handlers",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "let bound = 0;\nlet missing = [];\n\nfor (const element of document.querySelectorAll(\"[data-mcode-events]\")) {\n  for (const pair of element.getAttribute(\"data-mcode-events\").split(\",\")) {\n    const [event, name] = pair.split(\":\").map((part) => part.trim());\n    if (!event || !name) continue;\n\n    const handler = handlers[name];\n    if (typeof handler !== \"function\") {\n      // Another module on this page may own it. Only the last module to\n      // bind can tell that nobody does, so this is counted, not thrown.\n      if (!missing.includes(name)) missing.push(name);\n      continue;\n    }\n\n    const marker = \"mcodeBound\" + event + name;\n    if (element.dataset[marker]) continue;\n    element.dataset[marker] = \"1\";\n    element.addEventListener(event, handler);\n    bound += 1;\n  }\n}\n\nif (missing.length && globalThis.SOAR_DEBUG) {\n  console.warn(\"no handler bound for:\", missing.join(\", \"));\n}\nreturn bound;",
+        "doc": "Attach every handler the markup declares.\n\nThe HTML backend stamps `data-mcode-events=\"click:onNavigate\"` onto the\nelement and expects something to honour it. Nothing did, so every screen\nrendered correctly and nothing on it responded - a whole workspace of live\nfunctions that no event ever reached.\n\nElements are marked once bound. A page that re-renders part of itself and\ncalls this again would otherwise stack a second listener on everything\nthat survived, and the second click would fire the handler twice.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "attach_declared_handlers",
+        "packages": [],
+        "params": [
+          {
+            "name": "handlers",
+            "type": "Any"
+          }
+        ],
+        "returns": "Void"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 650
+    },
+    {
+      "id": "n_mu4ytvz122s50dup2",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "globalThis.SOAR = globalThis.SOAR || {};\nObject.assign(globalThis.SOAR, {\n  byName,\n  request,\n  setText,\n  renderRows,\n  formatDuration,\n  bindDeclaredHandlers,\n});",
+        "doc": "Register this module in globalThis.SOAR so Custom Code bodies in sibling modules can reach it.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "publish_module_exports",
+        "packages": [],
+        "params": [],
+        "returns": "Void"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 780
+    },
+    {
+      "id": "n_mu4ytvz122t6b2tpr",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {},
+      "type": "dom/on-ready",
+      "x": 0,
+      "y": 780
+    }
+  ],
+  "style": "functional",
+  "variables": []
+}

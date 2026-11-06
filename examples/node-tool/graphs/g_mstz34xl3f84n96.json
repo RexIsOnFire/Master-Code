@@ -1,0 +1,177 @@
+{
+  "edges": [
+    {
+      "from": {
+        "node": "n_mstz34xm56d52gy",
+        "port": "args"
+      },
+      "id": "e_mstz34xm9ft7zj3",
+      "to": {
+        "node": "n_mstz34xm6zg5o1d",
+        "port": "a0"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz34xm6zg5o1d",
+        "port": "length"
+      },
+      "id": "e_mstz34xmazx00eg",
+      "to": {
+        "node": "n_mstz34xm7gxnvak",
+        "port": "v"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz34xm7gxnvak",
+        "port": "text"
+      },
+      "id": "e_mstz34xmbtetdz4",
+      "to": {
+        "node": "n_mstz34xm8doztsy",
+        "port": "v"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz34xm4wicouh",
+        "port": "out"
+      },
+      "id": "e_mstz34xmcnozny1",
+      "to": {
+        "node": "n_mstz34xm8doztsy",
+        "port": "in"
+      }
+    }
+  ],
+  "fileId": "file_mstz34xl204fm7m",
+  "id": "g_mstz34xl3f84n96",
+  "name": "main",
+  "nodes": [
+    {
+      "id": "n_mstz34xm4wicouh",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "args",
+          "name": "args",
+          "type": "List<string>"
+        }
+      ],
+      "props": {
+        "guard": true
+      },
+      "type": "entry/main",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "n_mstz34xm56d52gy",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "args",
+          "name": "args",
+          "type": "List<string>"
+        }
+      ],
+      "props": {},
+      "type": "env/args",
+      "x": 0,
+      "y": 130
+    },
+    {
+      "id": "n_mstz34xm6zg5o1d",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "a0",
+          "name": "list",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "length",
+          "name": "length",
+          "type": "i64"
+        }
+      ],
+      "props": {},
+      "type": "list/length",
+      "x": 250,
+      "y": 0
+    },
+    {
+      "id": "n_mstz34xm7gxnvak",
+      "inputs": [
+        {
+          "defaultValue": "Received {} argument(s).",
+          "direction": "in",
+          "id": "a0",
+          "name": "template",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "v",
+          "name": "arg",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "text",
+          "name": "text",
+          "type": "string"
+        }
+      ],
+      "props": {},
+      "type": "string/format",
+      "x": 500,
+      "y": 0
+    },
+    {
+      "id": "n_mstz34xm8doztsy",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "v",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {},
+      "type": "io/print",
+      "x": 750,
+      "y": 0
+    }
+  ],
+  "style": "procedural",
+  "variables": []
+}

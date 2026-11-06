@@ -1,0 +1,128 @@
+{
+  "edges": [
+    {
+      "from": {
+        "node": "n_mu4ytvytxlhmxmzd",
+        "port": "result"
+      },
+      "id": "e_mu4ytvytxn8aim1o",
+      "to": {
+        "node": "n_mu4ytvytxm8m4tgz",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvytxkyc405h",
+        "port": "out"
+      },
+      "id": "e_mu4ytvytxoa5u8tk",
+      "to": {
+        "node": "n_mu4ytvytxlhmxmzd",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvytxlhmxmzd",
+        "port": "out"
+      },
+      "id": "e_mu4ytvytxp5776av",
+      "to": {
+        "node": "n_mu4ytvytxm8m4tgz",
+        "port": "in"
+      }
+    }
+  ],
+  "fileId": "file_mu4ytvytxifdfpck",
+  "id": "g_mu4ytvytxjxh8t0w",
+  "name": "email connector pack",
+  "nodes": [
+    {
+      "id": "n_mu4ytvytxkyc405h",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "doc": "Email: notification on one side, phishing response on the other.\n\nSend Email is deliberately its own connector rather than a hidden platform\ncapability, because it is a command like any other - it has a credential, a\nschema, a risk level, an egress allowlist and an audit record. A platform\nthat can mail anyone from anywhere without appearing in the command\ncatalogue is a platform with an unlogged exfiltration path.",
+        "isAsync": false,
+        "name": "email_connectors",
+        "params": [],
+        "returns": "List<Map<string, Any>>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvytxlhmxmzd",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "List<Map<string, Any>>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "def param(kind, **extra):\n    \"\"\"One input property, in JSON Schema terms.\"\"\"\n    spec = {\"type\": kind} if kind not in (\"ipv4\", \"hostname\") else {\"type\": \"string\"}\n    spec.update(extra)\n    return spec\n\n\ndef cmd(key, name, method, url, inputs, outputs, extract=None, risk=\"low\",\n        effect=\"read\", doc=\"\", techniques=None, undo=None, timeout_ms=30000,\n        required=None, category=\"integration\", body=None, success=None):\n    \"\"\"\n    One command definition.\n\n    Structured JSON in, structured JSON out. The output_schema is what the\n    playbook validator type-checks the next step against, so a command whose\n    schema lies fails at publish rather than at 03:00.\n    \"\"\"\n    definition = {\n        \"key\": key,\n        \"name\": name,\n        \"category\": category,\n        \"kind\": \"http\",\n        \"input_schema\": {\n            \"type\": \"object\",\n            \"required\": list(inputs.keys()) if required is None else required,\n            \"properties\": inputs,\n            \"additionalProperties\": False,\n        },\n        \"output_schema\": {\"type\": \"object\", \"properties\": outputs},\n        \"implementation\": {\n            \"method\": method,\n            \"url\": url,\n            \"extract\": extract or {},\n            \"success_codes\": success or [200, 201, 202, 204],\n        },\n        \"required_permissions\": [\"commands.execute\"],\n        \"required_capabilities\": [\"net\"],\n        \"timeout_ms\": timeout_ms,\n        \"risk_level\": risk,\n        \"effect\": effect,\n        \"trust_level\": \"trusted\",\n        \"technique_ids\": techniques or [],\n        \"doc\": doc,\n    }\n    if body is not None:\n        definition[\"implementation\"][\"body\"] = body\n    if effect == \"mutating\":\n        # A mutating command with no dry-run example would make dry run a lie,\n        # and the registry validator refuses it.\n        definition[\"dry_run_example\"] = {\"dry_run\": True, \"would_call\": key}\n    if undo:\n        # Named, not inferred. The platform never invents a rollback.\n        definition[\"undo_command\"] = undo\n    if risk == \"high\":\n        definition[\"required_permissions\"] = [\"commands.execute\", _permission_for(key)]\n    return definition\n\n\ndef _permission_for(key):\n    \"\"\"High-risk commands need the response permission that matches them.\"\"\"\n    action = key.split(\".\", 1)[1]\n    if \"isolate\" in action or \"contain\" in action or \"quarantine_host\" in action:\n        return \"response.isolate\"\n    if \"block\" in action:\n        return \"response.block\"\n    if \"disable\" in action or \"suspend\" in action:\n        return \"response.disable_account\"\n    if \"revoke\" in action or \"signout\" in action:\n        return \"response.revoke_sessions\"\n    if \"delete\" in action or \"purge\" in action or \"remove_mail\" in action:\n        return \"response.delete_mail\"\n    if \"firewall\" in action or \"policy\" in action:\n        return \"response.firewall\"\n    return \"response.isolate\"\n\n\ndef field(name, label, kind=\"text\", required=True, default=None,\n          options=None, help=\"\", placeholder=\"\"):\n    # One thing an operator must be told before this tool can be reached.\n    return {\n        \"name\": name, \"label\": label, \"kind\": kind, \"required\": required,\n        \"default\": default, \"options\": options or [], \"help\": help,\n        \"placeholder\": placeholder,\n    }\n\n\ndef connector(cid, name, vendor, category, auth, base_url, allowlist, commands,\n              min_permissions=None, rate_limit=None, health=None,\n              version=\"1.0.0\", setup=None, derive=None, ingest=None,\n              hunt=None):\n    # A connector manifest. Installing one publishes its commands; no engine\n    # change.\n    #\n    # setup is what THIS vendor needs before it can be reached, and no two\n    # agree: CrowdStrike wants a cloud region, Sentinel a tenant and a\n    # workspace, Splunk a host and a port. Asking every connector for a\n    # client id and a secret asked the two questions they happen to share\n    # and none of the ones that make a connection work.\n    fields = list(setup or [])\n\n    # Which setting the commands of this connector actually read. Most say\n    # base_url; a few front a protocol that is not HTTP and say gateway_url\n    # instead, and asking those for a base_url nothing reads is how a form\n    # grows a field that does nothing.\n    setting = \"base_url\"\n    if \"{{\" in base_url:\n        inner = base_url.split(\"{{\", 1)[1].split(\"}}\", 1)[0].strip()\n        setting = inner.rsplit(\".\", 1)[-1] if inner else \"base_url\"\n\n    if not any(f[\"name\"] == setting for f in fields):\n        # Every connector can at least be pointed elsewhere: a regional\n        # cloud, a tenant-specific host, an on-premise appliance.\n        # A connector whose base_url is itself a template has no host until\n        # someone supplies one, so there is nothing to prefill and the field\n        # is the only way the connection can exist at all.\n        templated = \"{{\" in base_url\n        fields.insert(0, field(\n            setting, \"API base URL\", kind=\"url\",\n            default=None if templated else base_url,\n            help=\"Change for a regional cloud or an on-premise appliance.\"\n                 if not templated else \"The hostname this tenant answers on.\"))\n\n    return {\n        \"setup\": fields,\n        # Settings a vendor addresses by a composite of the ones a person\n        # can actually be asked for. Nobody knows their workspace ARM id;\n        # everybody knows their subscription, resource group and workspace\n        # name, and the id is those three in a fixed shape.\n        \"derive\": derive or {},\n        # How this product is polled for alerts: which command lists them,\n        # which turns ids into objects, and where the timestamp lives that\n        # the watermark advances to. A connector without it can still\n        # receive a webhook; it just cannot be asked.\n        \"ingest\": ingest or {},\n        # Which command runs an arbitrary hunt query, what the query\n        # parameter is called, and what language an engineer is writing.\n        # A tool without this cannot be hunted in - which is most of them,\n        # because a firewall is not a place you go looking.\n        \"hunt\": hunt or {},\n        \"id\": cid, \"name\": name, \"vendor\": vendor, \"category\": category,\n        \"version\": version, \"auth\": auth, \"base_url\": base_url,\n        \"egress_allowlist\": allowlist,\n        \"min_vendor_permissions\": min_permissions or [],\n        \"rate_limit\": rate_limit or {},\n        \"health_check\": health or {},\n        \"commands\": commands,\n        \"publisher\": \"master-soar\",\n        \"signature\": \"\",\n    }\n\n\nsmtp = connector(\n    \"smtp.generic\", \"Send Email (SMTP)\", \"generic\", \"email\",\n    {\"kind\": \"basic\", \"roles\": [\"username\", \"password\"]},\n    \"{{ integration.config.gateway_url }}\",\n    [\"{{ integration.config.smtp_host }}\"],\n    health={\"path\": \"/health\"},\n    setup=[\n        field(\"gateway_url\", \"Mail gateway URL\", kind=\"url\",\n              placeholder=\"https://mail-gateway.client.example\"),\n        field(\"smtp_host\", \"SMTP host\", placeholder=\"smtp.client.example\"),\n        field(\"from_address\", \"From address\",\n              placeholder=\"soc@client.example\",\n              help=\"What the recipient sees. Use an address the SPF record of the sending domain allows.\"),\n    ],\n    commands=[\n        cmd(\"email.send\", \"Send Email\", \"POST\",\n            \"{{ integration.config.gateway_url }}/send\",\n            {\"to\": {\"type\": \"array\", \"items\": {\"type\": \"string\", \"format\": \"email\"},\n                    \"minItems\": 1, \"maxItems\": 50},\n             \"cc\": {\"type\": \"array\", \"items\": {\"type\": \"string\", \"format\": \"email\"},\n                    \"maxItems\": 50},\n             \"subject\": param(\"string\", maxLength=200),\n             \"body\": param(\"string\", maxLength=100000),\n             \"body_type\": param(\"string\", enum=[\"text\", \"html\"]),\n             \"attachments\": {\"type\": \"array\", \"items\": {\"type\": \"object\"},\n                             \"maxItems\": 10},\n             \"importance\": param(\"string\", enum=[\"low\", \"normal\", \"high\"])},\n            {\"message_id\": {\"type\": \"string\"}, \"accepted\": {\"type\": \"array\"}},\n            {\"message_id\": \"$.message_id\", \"accepted\": \"$.accepted\"},\n            risk=\"medium\", effect=\"mutating\",\n            required=[\"to\", \"subject\", \"body\"],\n            category=\"notification\",\n            body={\"to\": \"{{ inputs.to | json }}\", \"cc\": \"{{ inputs.cc | json }}\",\n                  \"subject\": \"{{ inputs.subject }}\",\n                  \"body\": \"{{ inputs.body }}\",\n                  \"body_type\": \"{{ inputs.body_type | default('html') }}\",\n                  \"importance\": \"{{ inputs.importance | default('normal') }}\"},\n            doc=\"Notify an analyst, an asset owner, or an affected user. HTML bodies \"\n                \"are rendered through the html filter, so incident content cannot \"\n                \"inject markup into a message the SOC sends on its own letterhead. \"\n                \"The recipient list is capped: a mistake in a loop should not become \"\n                \"a mail-out to the whole estate.\"),\n\n        cmd(\"email.send_templated\", \"Send Email from Template\", \"POST\",\n            \"{{ integration.config.gateway_url }}/send-template\",\n            {\"to\": {\"type\": \"array\", \"items\": {\"type\": \"string\", \"format\": \"email\"},\n                    \"minItems\": 1, \"maxItems\": 500},\n             \"template\": param(\"string\", pattern=\"^[a-z0-9_]{3,64}$\"),\n             \"variables\": {\"type\": \"object\"}},\n            {\"message_ids\": {\"type\": \"array\", \"items\": {\"type\": \"string\"}}},\n            risk=\"medium\", effect=\"mutating\", category=\"notification\",\n            required=[\"to\", \"template\"],\n            body={\"to\": \"{{ inputs.to | json }}\",\n                  \"template\": \"{{ inputs.template }}\",\n                  \"variables\": \"{{ inputs.variables | json }}\"},\n            doc=\"Bulk user notification - the 'a phishing message was removed from \"\n                \"your mailbox' case. The template is a name, so the body cannot be \"\n                \"built from attacker-supplied content at all.\"),\n    ],\n)\n\ngraph_mail = connector(\n    \"microsoft.exchange_online\", \"Microsoft 365 Mail\", \"Microsoft\", \"email\",\n    {\"kind\": \"oauth2_client\", \"roles\": [\"client_id\", \"client_secret\"],\n     \"token_url\": \"https://login.microsoftonline.com/{{ integration.config.tenant_id }}/oauth2/v2.0/token\",\n     \"scope\": \"https://graph.microsoft.com/.default\"},\n    \"https://graph.microsoft.com\",\n    [\"graph.microsoft.com\", \"login.microsoftonline.com\",\n     \"security.microsoft.com\"],\n    min_permissions=[\"Mail.ReadWrite\", \"Mail.Send\",\n                     \"SecurityEvents.ReadWrite.All\", \"ThreatHunting.Read.All\"],\n    health={\"path\": \"/v1.0/organization\"},\n    setup=[\n        field(\"tenant_id\", \"Entra tenant id\",\n              placeholder=\"00000000-0000-0000-0000-000000000000\",\n              help=\"The directory the tenant lives in. It is part of the token endpoint, so a wrong one fails at sign-in.\"),\n        field(\"shared_mailbox\", \"Shared mailbox\", required=False,\n              placeholder=\"soc@client.example\",\n              help=\"Where a purge or a send runs from when the playbook does not name one.\"),\n    ],\n    commands=[\n        cmd(\"m365mail.search_messages\", \"M365: Search Mailbox\", \"GET\",\n            \"https://graph.microsoft.com/v1.0/users/{{ inputs.mailbox | urlencode }}/messages?$search=%22{{ inputs.query | urlencode }}%22&$top={{ inputs.limit | default(25) }}\",\n            {\"mailbox\": param(\"string\", format=\"email\"),\n             \"query\": param(\"string\", maxLength=1000),\n             \"limit\": param(\"integer\", maximum=100)},\n            {\"messages\": {\"type\": \"array\", \"items\": {\"type\": \"object\"}},\n             \"count\": {\"type\": \"integer\"}},\n            {\"messages\": \"$.value\"}, required=[\"mailbox\", \"query\"]),\n\n        cmd(\"m365mail.find_recipients\", \"M365: Find Message Recipients\", \"POST\",\n            \"https://graph.microsoft.com/v1.0/security/runHuntingQuery\",\n            {\"sender\": param(\"string\", format=\"email\"),\n             \"subject\": param(\"string\"),\n             \"days\": param(\"integer\", minimum=1, maximum=30)},\n            {\"recipients\": {\"type\": \"array\", \"items\": {\"type\": \"object\"}},\n             \"delivered_count\": {\"type\": \"integer\"}},\n            {\"recipients\": \"$.results\"}, required=[\"sender\"], timeout_ms=120000,\n            body={\"Query\": \"EmailEvents | where SenderFromAddress =~ \\\"{{ inputs.sender }}\\\" | where Timestamp > ago({{ inputs.days | default(7) }}d) | project RecipientEmailAddress, DeliveryAction, Subject, NetworkMessageId\"},\n            doc=\"Who else got it. The question that turns one reported phish into \"\n                \"the real scope of the incident.\"),\n\n        cmd(\"m365mail.get_message\", \"M365: Get Message\", \"GET\",\n            \"https://graph.microsoft.com/v1.0/users/{{ inputs.mailbox | urlencode }}/messages/{{ inputs.message_id | urlencode }}\",\n            {\"mailbox\": param(\"string\"), \"message_id\": param(\"string\")},\n            {\"subject\": {\"type\": \"string\"}, \"sender\": {\"type\": \"string\"},\n             \"received\": {\"type\": \"string\"}, \"body\": {\"type\": \"string\"},\n             \"headers\": {\"type\": \"array\"}},\n            {\"subject\": \"$.subject\", \"sender\": \"$.sender.emailAddress.address\",\n             \"received\": \"$.receivedDateTime\", \"body\": \"$.body.content\",\n             \"headers\": \"$.internetMessageHeaders\"},\n            doc=\"Full message including headers. Headers are what the phishing \"\n                \"analysis actually needs - SPF, DKIM, the real return path.\"),\n\n        cmd(\"m365mail.move_to_junk\", \"M365: Move Message to Junk\", \"POST\",\n            \"https://graph.microsoft.com/v1.0/users/{{ inputs.mailbox | urlencode }}/messages/{{ inputs.message_id | urlencode }}/move\",\n            {\"mailbox\": param(\"string\"), \"message_id\": param(\"string\")},\n            {\"moved_id\": {\"type\": \"string\"}}, {\"moved_id\": \"$.id\"},\n            risk=\"medium\", effect=\"mutating\",\n            body={\"destinationId\": \"junkemail\"},\n            doc=\"The reversible option. Prefer it to deletion when the verdict is \"\n                \"suspicious rather than confirmed.\"),\n\n        cmd(\"m365mail.soft_delete_message\", \"M365: Soft Delete Message\", \"DELETE\",\n            \"https://graph.microsoft.com/v1.0/users/{{ inputs.mailbox | urlencode }}/messages/{{ inputs.message_id | urlencode }}\",\n            {\"mailbox\": param(\"string\"), \"message_id\": param(\"string\")},\n            {\"deleted\": {\"type\": \"boolean\"}},\n            risk=\"high\", effect=\"mutating\", success=[204],\n            doc=\"Recoverable from Deleted Items. This is the containment command \"\n                \"a phishing playbook should reach for; hard purge is a separate, \"\n                \"deliberately harder-to-reach command.\"),\n\n        cmd(\"m365mail.purge_from_all_mailboxes\", \"M365: Purge From All Mailboxes\",\n            \"POST\",\n            \"https://graph.microsoft.com/v1.0/security/collaboration/analyzedEmails/remediate\",\n            {\"network_message_ids\": {\"type\": \"array\",\n                                     \"items\": {\"type\": \"string\"},\n                                     \"minItems\": 1, \"maxItems\": 1000},\n             \"action\": param(\"string\", enum=[\"softDelete\", \"hardDelete\",\n                                             \"moveToJunk\", \"moveToInbox\"]),\n             \"reason\": param(\"string\", maxLength=1000)},\n            {\"remediation_id\": {\"type\": \"string\"}, \"affected\": {\"type\": \"integer\"}},\n            risk=\"high\", effect=\"mutating\", timeout_ms=180000,\n            required=[\"network_message_ids\", \"action\", \"reason\"],\n            body={\"networkMessageIds\": \"{{ inputs.network_message_ids | json }}\",\n                  \"action\": \"{{ inputs.action }}\",\n                  \"reason\": \"{{ inputs.reason }}\"},\n            doc=\"Tenant-wide removal. HIGH risk and capped at 1000 messages: a \"\n                \"wrong purge is unrecoverable for the recipients and indistinguishable \"\n                \"from an attacker covering their tracks. The reason is mandatory and \"\n                \"goes into the audit record.\"),\n\n        cmd(\"m365mail.block_sender\", \"M365: Block Sender Tenant-Wide\", \"POST\",\n            \"https://graph.microsoft.com/beta/security/tiIndicators\",\n            {\"sender\": param(\"string\", format=\"email\"),\n             \"expires_days\": param(\"integer\", minimum=1, maximum=365),\n             \"description\": param(\"string\")},\n            {\"indicator_id\": {\"type\": \"string\"}}, {\"indicator_id\": \"$.id\"},\n            risk=\"high\", effect=\"mutating\", undo=\"m365mail.unblock_sender\",\n            required=[\"sender\", \"description\"],\n            body={\"action\": \"block\", \"emailSenderAddress\": \"{{ inputs.sender }}\",\n                  \"targetProduct\": \"Microsoft Defender for Office 365\",\n                  \"description\": \"{{ inputs.description }}\",\n                  \"expirationDateTime\": \"{{ inputs.expires_days | default(90) }}\"},\n            doc=\"Blocks carry an expiry on purpose. A tenant block list that only \"\n                \"grows becomes an outage nobody can explain two years later.\"),\n\n        cmd(\"m365mail.unblock_sender\", \"M365: Unblock Sender\", \"DELETE\",\n            \"https://graph.microsoft.com/beta/security/tiIndicators/{{ inputs.indicator_id | urlencode }}\",\n            {\"indicator_id\": param(\"string\")},\n            {\"removed\": {\"type\": \"boolean\"}},\n            risk=\"medium\", effect=\"mutating\", success=[204]),\n\n        cmd(\"m365mail.get_message_trace\", \"M365: Message Trace\", \"POST\",\n            \"https://graph.microsoft.com/v1.0/security/runHuntingQuery\",\n            {\"message_id\": param(\"string\"), \"days\": param(\"integer\", maximum=30)},\n            {\"events\": {\"type\": \"array\", \"items\": {\"type\": \"object\"}}},\n            {\"events\": \"$.results\"}, required=[\"message_id\"],\n            body={\"Query\": \"EmailEvents | where NetworkMessageId == \\\"{{ inputs.message_id }}\\\" | join kind=leftouter EmailPostDeliveryEvents on NetworkMessageId\"},\n            doc=\"Delivery outcome and anything that happened after delivery - \"\n                \"including whether the user clicked.\"),\n\n        cmd(\"m365mail.get_mailbox_rules\", \"M365: Get Mailbox Rules\", \"GET\",\n            \"https://graph.microsoft.com/v1.0/users/{{ inputs.mailbox | urlencode }}/mailFolders/inbox/messageRules\",\n            {\"mailbox\": param(\"string\")},\n            {\"rules\": {\"type\": \"array\", \"items\": {\"type\": \"object\"}}},\n            {\"rules\": \"$.value\"},\n            doc=\"Attacker-created forwarding rules are the classic persistence in a \"\n                \"business email compromise, and they outlive a password reset.\"),\n\n        cmd(\"m365mail.delete_mailbox_rule\", \"M365: Delete Mailbox Rule\", \"DELETE\",\n            \"https://graph.microsoft.com/v1.0/users/{{ inputs.mailbox | urlencode }}/mailFolders/inbox/messageRules/{{ inputs.rule_id | urlencode }}\",\n            {\"mailbox\": param(\"string\"), \"rule_id\": param(\"string\")},\n            {\"deleted\": {\"type\": \"boolean\"}},\n            risk=\"high\", effect=\"mutating\", success=[204]),\n    ],\n)\n\nreturn [smtp, graph_mail]",
+        "doc": "Email: notification on one side, phishing response on the other.\n\nSend Email is deliberately its own connector rather than a hidden platform\ncapability, because it is a command like any other - it has a credential, a\nschema, a risk level, an egress allowlist and an audit record. A platform\nthat can mail anyone from anywhere without appearing in the command\ncatalogue is a platform with an unlogged exfiltration path.",
+        "form": "statements",
+        "language": "python",
+        "name": "email_connector_pack",
+        "packages": [],
+        "params": [],
+        "returns": "List<Map<string, Any>>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvytxm8m4tgz",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 0
+    }
+  ],
+  "style": "data-flow",
+  "variables": []
+}

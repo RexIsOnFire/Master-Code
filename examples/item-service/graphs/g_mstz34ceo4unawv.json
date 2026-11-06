@@ -1,0 +1,365 @@
+{
+  "edges": [
+    {
+      "from": {
+        "node": "n_mstz34ceru5wthm",
+        "port": "map"
+      },
+      "id": "e_mstz34ce10r0rkvu",
+      "to": {
+        "node": "n_mstz34ceukjyf7w",
+        "port": "a"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz34ceq3mq6pk",
+        "port": "instance"
+      },
+      "id": "e_mstz34ce11btjpdw",
+      "to": {
+        "node": "n_mstz34cevi36cz6",
+        "port": "args"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz34cevi36cz6",
+        "port": "result"
+      },
+      "id": "e_mstz34ce12fekitq",
+      "to": {
+        "node": "n_mstz34cewh15lcm",
+        "port": "v"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz34cep5i4gwn",
+        "port": "out"
+      },
+      "id": "e_mstz34ce13f48ezh",
+      "to": {
+        "node": "n_mstz34ceq3mq6pk",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz34ceq3mq6pk",
+        "port": "out"
+      },
+      "id": "e_mstz34ce14x5088j",
+      "to": {
+        "node": "n_mstz34ceukjyf7w",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz34ceukjyf7w",
+        "port": "out"
+      },
+      "id": "e_mstz34ce153xb5a0",
+      "to": {
+        "node": "n_mstz34cevi36cz6",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz34cevi36cz6",
+        "port": "out"
+      },
+      "id": "e_mstz34ce16h696mn",
+      "to": {
+        "node": "n_mstz34cewh15lcm",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz34ces6g4mhh",
+        "port": "value"
+      },
+      "id": "e_mstz34cexo0ly38",
+      "to": {
+        "node": "n_mstz34ceru5wthm",
+        "port": "k"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz34cetq4ktis",
+        "port": "value"
+      },
+      "id": "e_mstz34cey9z634g",
+      "to": {
+        "node": "n_mstz34ceru5wthm",
+        "port": "v"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz34ceq3mq6pk",
+        "port": "instance"
+      },
+      "id": "e_mstz34cezc2l975",
+      "to": {
+        "node": "n_mstz34ceukjyf7w",
+        "port": "target"
+      }
+    }
+  ],
+  "fileId": "file_mstz34ceni595ct",
+  "id": "g_mstz34ceo4unawv",
+  "name": "main",
+  "nodes": [
+    {
+      "id": "n_mstz34cep5i4gwn",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "args",
+          "name": "args",
+          "type": "List<string>"
+        }
+      ],
+      "props": {
+        "guard": true
+      },
+      "type": "entry/main",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "n_mstz34ceq3mq6pk",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "a",
+          "name": "arg",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "instance",
+          "name": "instance",
+          "type": "Repository"
+        }
+      ],
+      "props": {
+        "className": "Repository"
+      },
+      "type": "oop/new",
+      "x": 250,
+      "y": 0
+    },
+    {
+      "id": "n_mstz34ceru5wthm",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "k",
+          "name": "key",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "v",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "map",
+          "name": "map",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "keyType": "string",
+        "valueType": "Any"
+      },
+      "type": "map/literal",
+      "x": 250,
+      "y": 130
+    },
+    {
+      "id": "n_mstz34ces6g4mhh",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "value",
+          "name": "value",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "type": "string",
+        "value": "name"
+      },
+      "type": "data/literal",
+      "x": 0,
+      "y": 130
+    },
+    {
+      "id": "n_mstz34cetq4ktis",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "value",
+          "name": "value",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "type": "string",
+        "value": "first item"
+      },
+      "type": "data/literal",
+      "x": 0,
+      "y": 260
+    },
+    {
+      "id": "n_mstz34ceukjyf7w",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "target",
+          "name": "target",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "a",
+          "name": "arg",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Void"
+        }
+      ],
+      "props": {
+        "await": false,
+        "method": "add",
+        "returns": "Void"
+      },
+      "type": "oop/call-method",
+      "x": 500,
+      "y": 0
+    },
+    {
+      "id": "n_mstz34cevi36cz6",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "args",
+          "name": "arg",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "await": false,
+        "returns": "List<Map<string, Any>>",
+        "target": "list_items"
+      },
+      "type": "control/call",
+      "x": 750,
+      "y": 0
+    },
+    {
+      "id": "n_mstz34cewh15lcm",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "v",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {},
+      "type": "io/print",
+      "x": 1000,
+      "y": 0
+    }
+  ],
+  "style": "procedural",
+  "variables": []
+}

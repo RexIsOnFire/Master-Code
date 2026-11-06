@@ -1,0 +1,941 @@
+{
+  "edges": [
+    {
+      "from": {
+        "node": "n_mu4ytvz6311wcdryt",
+        "port": "result"
+      },
+      "id": "e_mu4ytvz6313oyk0xc",
+      "to": {
+        "node": "n_mu4ytvz63126r3haj",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz63102v41z0",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz6314zipktq",
+      "to": {
+        "node": "n_mu4ytvz6311wcdryt",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz6311wcdryt",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz6315xyaiem",
+      "to": {
+        "node": "n_mu4ytvz63126r3haj",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz6317w5b3tg",
+        "port": "result"
+      },
+      "id": "e_mu4ytvz6319m1gk7c",
+      "to": {
+        "node": "n_mu4ytvz6318mfhphx",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz6316ns7co0",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz631alssoh8",
+      "to": {
+        "node": "n_mu4ytvz6317w5b3tg",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz6317w5b3tg",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz631b584fet",
+      "to": {
+        "node": "n_mu4ytvz6318mfhphx",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz631da542tm",
+        "port": "result"
+      },
+      "id": "e_mu4ytvz631fbvhhvr",
+      "to": {
+        "node": "n_mu4ytvz631e1whc0c",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz631ct4k5eb",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz631gd4npav",
+      "to": {
+        "node": "n_mu4ytvz631da542tm",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz631da542tm",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz631h2xxsod",
+      "to": {
+        "node": "n_mu4ytvz631e1whc0c",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz631joildt5",
+        "port": "result"
+      },
+      "id": "e_mu4ytvz631lvd71vk",
+      "to": {
+        "node": "n_mu4ytvz631k27zglh",
+        "port": "a0"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz631k27zglh",
+        "port": "length"
+      },
+      "id": "e_mu4ytvz631oxse40c",
+      "to": {
+        "node": "n_mu4ytvz631nswn9wk",
+        "port": "actual"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz631mv783gk",
+        "port": "value"
+      },
+      "id": "e_mu4ytvz631pqlfs0j",
+      "to": {
+        "node": "n_mu4ytvz631nswn9wk",
+        "port": "expected"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz631irxabd8",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz631ql6kjfx",
+      "to": {
+        "node": "n_mu4ytvz631joildt5",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz631joildt5",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz631rbpmneg",
+      "to": {
+        "node": "n_mu4ytvz631nswn9wk",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz631t7cu1az",
+        "port": "result"
+      },
+      "id": "e_mu4ytvz631vhu2t6i",
+      "to": {
+        "node": "n_mu4ytvz631ue7hkly",
+        "port": "a0"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz631ue7hkly",
+        "port": "length"
+      },
+      "id": "e_mu4ytvz631yfa219r",
+      "to": {
+        "node": "n_mu4ytvz631x9ilht7",
+        "port": "actual"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz631w4g9s9z",
+        "port": "value"
+      },
+      "id": "e_mu4ytvz631zpay22t",
+      "to": {
+        "node": "n_mu4ytvz631x9ilht7",
+        "port": "expected"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz631sl09f41",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz63201n8srk",
+      "to": {
+        "node": "n_mu4ytvz631t7cu1az",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz631t7cu1az",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz6321nw766w",
+      "to": {
+        "node": "n_mu4ytvz631x9ilht7",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz6323c4lo6c",
+        "port": "result"
+      },
+      "id": "e_mu4ytvz632509jvod",
+      "to": {
+        "node": "n_mu4ytvz6324rssplj",
+        "port": "a0"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz6324rssplj",
+        "port": "length"
+      },
+      "id": "e_mu4ytvz63288kyrgg",
+      "to": {
+        "node": "n_mu4ytvz6327cfu7u4",
+        "port": "actual"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz6326b6jvj4",
+        "port": "value"
+      },
+      "id": "e_mu4ytvz63291vhths",
+      "to": {
+        "node": "n_mu4ytvz6327cfu7u4",
+        "port": "expected"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz632233pw1k",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz632a8bqbfn",
+      "to": {
+        "node": "n_mu4ytvz6323c4lo6c",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz6323c4lo6c",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz632bbkpyt7",
+      "to": {
+        "node": "n_mu4ytvz6327cfu7u4",
+        "port": "in"
+      }
+    }
+  ],
+  "fileId": "file_mu4ytvz630y47xj3e",
+  "id": "g_mu4ytvz630z7j8wcm",
+  "name": "EDR response invariants",
+  "nodes": [
+    {
+      "id": "n_mu4ytvz63102v41z0",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "doc": "One playbook, five EDRs: the resolution has to pick the one with an agent on\nthis host, refuse loudly where the vendor cannot do it, and never contain\nnothing while reporting success.",
+        "isAsync": false,
+        "name": "check_containment_resolution",
+        "params": [],
+        "returns": "List<string>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvz6311wcdryt",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "List<string>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "from soar.integrations.catalog_edr import resolve_containment\n\nclass _Stub:\n    \"\"\"A database stand-in: this test is about the resolution logic, not SQL.\"\"\"\n\n    def __init__(self, agents, integrations):\n        self.agents = agents\n        self.integrations = integrations\n\n    def query(self, sql, params, org_id):\n        if \"FROM host\" in sql:\n            return [{\"agent_ids\": self.agents, \"hostname\": \"WS-4417\"}]\n        if \"FROM integration\" in sql:\n            return self.integrations\n        return []\n\n\nBOTH = [\n    {\"name\": \"cs_prod\", \"connector_id\": \"crowdstrike.falcon\", \"health\": \"healthy\"},\n    {\"name\": \"s1_prod\", \"connector_id\": \"sentinelone.v2\", \"health\": \"healthy\"},\n]\n\nfailures = []\n\n# 1. The EDR that has an agent on THIS host wins, not the first one configured.\nchosen = resolve_containment(\n    _Stub({\"sentinelone\": \"s1-123\"}, BOTH), \"org_X\", \"isolate_host\", \"host_X\")\nif chosen[\"command\"] != \"sentinelone.disconnect_agent\":\n    failures.append(\"picked %s for a SentinelOne-only host\" % chosen[\"command\"])\n\n# 2. The vendor semantics travel with the command, so the timeline can say what\n#    this particular EDR means by \"isolate\" rather than a word meaning five things.\nif \"network\" not in chosen[\"semantics\"].lower():\n    failures.append(\"no vendor semantics returned with the command\")\n\n# 3. An action this EDR cannot perform fails LOUDLY and names the reason. This is\n#    the case that matters: silently skipping it would report the host contained.\ntry:\n    resolve_containment(\n        _Stub({\"sentinelone\": \"s1-123\"}, BOTH), \"org_X\", \"block_hash\", \"host_X\")\n    failures.append(\"block_hash was accepted on an EDR that cannot do it\")\nexcept RuntimeError as error:\n    if \"policy object\" not in str(error):\n        failures.append(\"refusal did not explain why: %s\" % error)\n\n# 4. Never fall back to an EDR with no agent here. That call would succeed\n#    against the vendor API and contain nothing at all.\ntry:\n    resolve_containment(_Stub({}, BOTH), \"org_X\", \"isolate_host\", \"host_X\")\n    failures.append(\"contained a host that has no agent on any configured EDR\")\nexcept RuntimeError:\n    pass\n\n# 5. A failing integration is skipped in favour of a healthy one.\ndegraded = [\n    {\"name\": \"cs_prod\", \"connector_id\": \"crowdstrike.falcon\", \"health\": \"failing\"},\n    {\"name\": \"s1_prod\", \"connector_id\": \"sentinelone.v2\", \"health\": \"healthy\"},\n]\nchosen = resolve_containment(\n    _Stub({\"crowdstrike\": \"aid-1\", \"sentinelone\": \"s1-1\"}, degraded),\n    \"org_X\", \"isolate_host\", \"host_X\")\nif chosen[\"integration\"] != \"s1_prod\":\n    failures.append(\"used a failing integration when a healthy one was available\")\n\nreturn failures",
+        "doc": "One playbook, five EDRs: the resolution has to pick the one with an agent on\nthis host, refuse loudly where the vendor cannot do it, and never contain\nnothing while reporting success.",
+        "form": "statements",
+        "language": "python",
+        "name": "exercise_containment_resolution",
+        "packages": [],
+        "params": [],
+        "returns": "List<string>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvz63126r3haj",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvz6316ns7co0",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "doc": "The capability matrix has to stay honest: every supported action names a real\ncommand, every unsupported one carries a reason, and anything that isolates\ndeclares how to release.",
+        "isAsync": false,
+        "name": "check_capability_matrix",
+        "params": [],
+        "returns": "List<string>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvz6317w5b3tg",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "List<string>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "from soar.integrations.catalog_edr import edr_capability_matrix\nfrom soar.integrations.catalog import all_commands\n\nfailures = []\nmatrix = edr_capability_matrix()\n\nfor connector_id, capability in matrix.items():\n    if \"agent_key\" not in capability:\n        failures.append(\"%s has no agent_key\" % connector_id)\n\n    # Every EDR must declare release for anything it can isolate. An isolate\n    # with no documented way back is a containment nobody will authorise twice.\n    if \"isolate_host\" in capability[\"supported\"]:\n        if \"release_host\" not in capability[\"supported\"]:\n            failures.append(\"%s isolates but declares no release\" % connector_id)\n\n    for action, detail in capability[\"supported\"].items():\n        if \"command\" not in detail:\n            failures.append(\"%s.%s names no command\" % (connector_id, action))\n        if \"reversible\" not in detail:\n            failures.append(\"%s.%s does not say whether it is reversible\"\n                            % (connector_id, action))\n\n    # An unsupported action must carry a REASON, not just be absent. \"Absent\"\n    # reads as an oversight; a reason reads as a fact about the vendor.\n    for action, reason in capability[\"unsupported\"].items():\n        if len(reason) < 20:\n            failures.append(\"%s.%s: unsupported without an explanation\"\n                            % (connector_id, action))\n\n# Every command the matrix names must actually exist in the catalogue.\nknown = {c[\"key\"] for c in all_commands()}\nfor connector_id, capability in matrix.items():\n    for action, detail in capability[\"supported\"].items():\n        if detail[\"command\"] not in known:\n            failures.append(\"%s.%s names %s, which is not a real command\"\n                            % (connector_id, action, detail[\"command\"]))\n\nreturn failures",
+        "doc": "The capability matrix has to stay honest: every supported action names a real\ncommand, every unsupported one carries a reason, and anything that isolates\ndeclares how to release.",
+        "form": "statements",
+        "language": "python",
+        "name": "exercise_capability_matrix",
+        "packages": [],
+        "params": [],
+        "returns": "List<string>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvz6318mfhphx",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvz631ct4k5eb",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "doc": "The shipped catalogue must satisfy the rules the registry validator enforces:\nundo commands exist, mutating commands have a dry-run example, and HIGH-risk\ncommands need a response permission.",
+        "isAsync": false,
+        "name": "check_catalogue_rules",
+        "params": [],
+        "returns": "List<string>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvz631da542tm",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "List<string>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "from soar.integrations.catalog import all_commands\n\nfailures = []\n\ncommands = {c[\"key\"]: c for c in all_commands()}\nfor command in commands.values():\n    undo = command.get(\"undo_command\")\n    if undo and undo not in commands:\n        failures.append(\"%s names undo %s, which does not exist\"\n                        % (command[\"key\"], undo))\n\n# A mutating command with no dry-run example makes dry run a lie. The registry\n# validator refuses one; this checks the shipped catalogue actually complies.\nfor command in commands.values():\n    if command[\"effect\"] == \"mutating\" and not command.get(\"dry_run_example\"):\n        failures.append(\"%s is mutating with no dry_run_example\" % command[\"key\"])\n\n# Every HIGH-risk command needs a response.* permission beyond commands.execute,\n# or RBAC cannot distinguish \"may run automation\" from \"may isolate a host\".\nfor command in commands.values():\n    if command[\"risk_level\"] != \"high\":\n        continue\n    if not any(p.startswith(\"response.\") for p in command[\"required_permissions\"]):\n        failures.append(\"%s is high risk but needs no response permission\"\n                        % command[\"key\"])\n\nreturn failures",
+        "doc": "The shipped catalogue must satisfy the rules the registry validator enforces:\nundo commands exist, mutating commands have a dry-run example, and HIGH-risk\ncommands need a response permission.",
+        "form": "statements",
+        "language": "python",
+        "name": "exercise_catalogue_rules",
+        "packages": [],
+        "params": [],
+        "returns": "List<string>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvz631e1whc0c",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvz631irxabd8",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "doc": "An abstract containment action resolves against the EDR that has an agent on this host, and refuses loudly where it cannot.",
+        "kind": "unit",
+        "name": "test_containment_resolves_per_host_edr"
+      },
+      "type": "test/case",
+      "x": 0,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvz631joildt5",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "args",
+          "name": "arg",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "await": false,
+        "returns": "List<string>",
+        "target": "check_containment_resolution"
+      },
+      "type": "control/call",
+      "x": 250,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvz631k27zglh",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "a0",
+          "name": "list",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "length",
+          "name": "length",
+          "type": "i64"
+        }
+      ],
+      "props": {},
+      "type": "list/length",
+      "x": 500,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvz631mv783gk",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "value",
+          "name": "value",
+          "type": "i64"
+        }
+      ],
+      "props": {
+        "type": "i64",
+        "value": "0"
+      },
+      "type": "data/literal",
+      "x": 0,
+      "y": 520
+    },
+    {
+      "id": "n_mu4ytvz631nswn9wk",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "actual",
+          "name": "actual",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "expected",
+          "name": "expected",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "message": "every failure the check collected is printed in the list it returned"
+      },
+      "type": "test/assert-equal",
+      "x": 750,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvz631sl09f41",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "doc": "Every supported action names a real command; every unsupported one carries a reason.",
+        "kind": "unit",
+        "name": "test_capability_matrix_is_honest"
+      },
+      "type": "test/case",
+      "x": 0,
+      "y": 650
+    },
+    {
+      "id": "n_mu4ytvz631t7cu1az",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "args",
+          "name": "arg",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "await": false,
+        "returns": "List<string>",
+        "target": "check_capability_matrix"
+      },
+      "type": "control/call",
+      "x": 250,
+      "y": 520
+    },
+    {
+      "id": "n_mu4ytvz631ue7hkly",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "a0",
+          "name": "list",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "length",
+          "name": "length",
+          "type": "i64"
+        }
+      ],
+      "props": {},
+      "type": "list/length",
+      "x": 500,
+      "y": 520
+    },
+    {
+      "id": "n_mu4ytvz631w4g9s9z",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "value",
+          "name": "value",
+          "type": "i64"
+        }
+      ],
+      "props": {
+        "type": "i64",
+        "value": "0"
+      },
+      "type": "data/literal",
+      "x": 0,
+      "y": 780
+    },
+    {
+      "id": "n_mu4ytvz631x9ilht7",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "actual",
+          "name": "actual",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "expected",
+          "name": "expected",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "message": "every failure the check collected is printed in the list it returned"
+      },
+      "type": "test/assert-equal",
+      "x": 750,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvz632233pw1k",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "doc": "Undo commands exist, mutating commands have a dry-run example, HIGH-risk commands need a response permission.",
+        "kind": "unit",
+        "name": "test_shipped_catalogue_obeys_the_registry_rules"
+      },
+      "type": "test/case",
+      "x": 0,
+      "y": 910
+    },
+    {
+      "id": "n_mu4ytvz6323c4lo6c",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "args",
+          "name": "arg",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "await": false,
+        "returns": "List<string>",
+        "target": "check_catalogue_rules"
+      },
+      "type": "control/call",
+      "x": 250,
+      "y": 650
+    },
+    {
+      "id": "n_mu4ytvz6324rssplj",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "a0",
+          "name": "list",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "length",
+          "name": "length",
+          "type": "i64"
+        }
+      ],
+      "props": {},
+      "type": "list/length",
+      "x": 500,
+      "y": 650
+    },
+    {
+      "id": "n_mu4ytvz6326b6jvj4",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "value",
+          "name": "value",
+          "type": "i64"
+        }
+      ],
+      "props": {
+        "type": "i64",
+        "value": "0"
+      },
+      "type": "data/literal",
+      "x": 0,
+      "y": 1040
+    },
+    {
+      "id": "n_mu4ytvz6327cfu7u4",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "actual",
+          "name": "actual",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "expected",
+          "name": "expected",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "message": "every failure the check collected is printed in the list it returned"
+      },
+      "type": "test/assert-equal",
+      "x": 750,
+      "y": 260
+    }
+  ],
+  "style": "procedural",
+  "variables": []
+}

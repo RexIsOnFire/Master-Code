@@ -1,0 +1,2724 @@
+{
+  "edges": [
+    {
+      "from": {
+        "node": "n_mu4ytvypifsqmwly",
+        "port": "p:payload"
+      },
+      "id": "e_mu4ytvypih47rris",
+      "to": {
+        "node": "n_mu4ytvypigjr2sc2",
+        "port": "p:payload"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypigjr2sc2",
+        "port": "result"
+      },
+      "id": "e_mu4ytvypijqcpe6s",
+      "to": {
+        "node": "n_mu4ytvypiikxn60y",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypifsqmwly",
+        "port": "out"
+      },
+      "id": "e_mu4ytvypikgzsr5g",
+      "to": {
+        "node": "n_mu4ytvypigjr2sc2",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypigjr2sc2",
+        "port": "out"
+      },
+      "id": "e_mu4ytvypillp69qg",
+      "to": {
+        "node": "n_mu4ytvypiikxn60y",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypimgp5dms",
+        "port": "p:value"
+      },
+      "id": "e_mu4ytvypiotphcym",
+      "to": {
+        "node": "n_mu4ytvypinzn6eo6",
+        "port": "p:value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypinzn6eo6",
+        "port": "result"
+      },
+      "id": "e_mu4ytvypiq2zr1vb",
+      "to": {
+        "node": "n_mu4ytvypip2pvdwr",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypimgp5dms",
+        "port": "out"
+      },
+      "id": "e_mu4ytvypirhs4rsl",
+      "to": {
+        "node": "n_mu4ytvypinzn6eo6",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypinzn6eo6",
+        "port": "out"
+      },
+      "id": "e_mu4ytvypis7yntab",
+      "to": {
+        "node": "n_mu4ytvypip2pvdwr",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypitz6zpqu",
+        "port": "p:kind"
+      },
+      "id": "e_mu4ytvypivrlvn6k",
+      "to": {
+        "node": "n_mu4ytvypiu8zwe1u",
+        "port": "p:kind"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypitz6zpqu",
+        "port": "p:value"
+      },
+      "id": "e_mu4ytvypiwyynx87",
+      "to": {
+        "node": "n_mu4ytvypiu8zwe1u",
+        "port": "p:value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypitz6zpqu",
+        "port": "p:defaults"
+      },
+      "id": "e_mu4ytvypix0g8ckr",
+      "to": {
+        "node": "n_mu4ytvypiu8zwe1u",
+        "port": "p:defaults"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypitz6zpqu",
+        "port": "p:extra"
+      },
+      "id": "e_mu4ytvypiyc75b1s",
+      "to": {
+        "node": "n_mu4ytvypiu8zwe1u",
+        "port": "p:extra"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypiu8zwe1u",
+        "port": "result"
+      },
+      "id": "e_mu4ytvypj0b3evhk",
+      "to": {
+        "node": "n_mu4ytvypizd6nsmq",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypitz6zpqu",
+        "port": "out"
+      },
+      "id": "e_mu4ytvypj1xc5wb8",
+      "to": {
+        "node": "n_mu4ytvypiu8zwe1u",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypiu8zwe1u",
+        "port": "out"
+      },
+      "id": "e_mu4ytvypj2auw7d9",
+      "to": {
+        "node": "n_mu4ytvypizd6nsmq",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypj36fhovz",
+        "port": "p:holder"
+      },
+      "id": "e_mu4ytvypj5tdnv8b",
+      "to": {
+        "node": "n_mu4ytvypj4xld69x",
+        "port": "p:holder"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypj4xld69x",
+        "port": "result"
+      },
+      "id": "e_mu4ytvypj7ohoo62",
+      "to": {
+        "node": "n_mu4ytvypj6l04tlg",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypj36fhovz",
+        "port": "out"
+      },
+      "id": "e_mu4ytvypj8mn0zgx",
+      "to": {
+        "node": "n_mu4ytvypj4xld69x",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypj4xld69x",
+        "port": "out"
+      },
+      "id": "e_mu4ytvypj9451yw5",
+      "to": {
+        "node": "n_mu4ytvypj6l04tlg",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypjapo8jlc",
+        "port": "p:tags"
+      },
+      "id": "e_mu4ytvypjc49swym",
+      "to": {
+        "node": "n_mu4ytvypjb4h75ki",
+        "port": "p:tags"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypjb4h75ki",
+        "port": "result"
+      },
+      "id": "e_mu4ytvypjetuftbr",
+      "to": {
+        "node": "n_mu4ytvypjd889zbm",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypjapo8jlc",
+        "port": "out"
+      },
+      "id": "e_mu4ytvypjf9ozhnl",
+      "to": {
+        "node": "n_mu4ytvypjb4h75ki",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypjb4h75ki",
+        "port": "out"
+      },
+      "id": "e_mu4ytvypjgdok1z1",
+      "to": {
+        "node": "n_mu4ytvypjd889zbm",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypjhtfb10b",
+        "port": "p:misp_type"
+      },
+      "id": "e_mu4ytvypjjjk5pdj",
+      "to": {
+        "node": "n_mu4ytvypji5xpyq0",
+        "port": "p:misp_type"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypjhtfb10b",
+        "port": "p:raw"
+      },
+      "id": "e_mu4ytvypjkm11tvf",
+      "to": {
+        "node": "n_mu4ytvypji5xpyq0",
+        "port": "p:raw"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypji5xpyq0",
+        "port": "result"
+      },
+      "id": "e_mu4ytvypjmpv1dg4",
+      "to": {
+        "node": "n_mu4ytvypjla3hj9i",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypjhtfb10b",
+        "port": "out"
+      },
+      "id": "e_mu4ytvypjn19o85m",
+      "to": {
+        "node": "n_mu4ytvypji5xpyq0",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypji5xpyq0",
+        "port": "out"
+      },
+      "id": "e_mu4ytvypjo8svxi3",
+      "to": {
+        "node": "n_mu4ytvypjla3hj9i",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypjpqznazo",
+        "port": "p:payload"
+      },
+      "id": "e_mu4ytvypjrw21hhr",
+      "to": {
+        "node": "n_mu4ytvypjqmr3ibn",
+        "port": "p:payload"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypjpqznazo",
+        "port": "p:defaults"
+      },
+      "id": "e_mu4ytvypjserhobu",
+      "to": {
+        "node": "n_mu4ytvypjqmr3ibn",
+        "port": "p:defaults"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypjqmr3ibn",
+        "port": "result"
+      },
+      "id": "e_mu4ytvypju06fnoo",
+      "to": {
+        "node": "n_mu4ytvypjt1py7gk",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypjpqznazo",
+        "port": "out"
+      },
+      "id": "e_mu4ytvypjvi3ad47",
+      "to": {
+        "node": "n_mu4ytvypjqmr3ibn",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypjqmr3ibn",
+        "port": "out"
+      },
+      "id": "e_mu4ytvypjwv6yqca",
+      "to": {
+        "node": "n_mu4ytvypjt1py7gk",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypjx91hp7b",
+        "port": "p:path"
+      },
+      "id": "e_mu4ytvypjzlw0ki3",
+      "to": {
+        "node": "n_mu4ytvypjyx64rl8",
+        "port": "p:path"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypjyx64rl8",
+        "port": "result"
+      },
+      "id": "e_mu4ytvypk1pkfos1",
+      "to": {
+        "node": "n_mu4ytvypk0x8qp16",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypjx91hp7b",
+        "port": "out"
+      },
+      "id": "e_mu4ytvypk2d2db5n",
+      "to": {
+        "node": "n_mu4ytvypjyx64rl8",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypjyx64rl8",
+        "port": "out"
+      },
+      "id": "e_mu4ytvypk3o171c0",
+      "to": {
+        "node": "n_mu4ytvypk0x8qp16",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypk47uar71",
+        "port": "p:pattern"
+      },
+      "id": "e_mu4ytvypk6d1g0i9",
+      "to": {
+        "node": "n_mu4ytvypk5w21xet",
+        "port": "p:pattern"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypk5w21xet",
+        "port": "result"
+      },
+      "id": "e_mu4ytvypk8rskjmp",
+      "to": {
+        "node": "n_mu4ytvypk7syyom8",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypk47uar71",
+        "port": "out"
+      },
+      "id": "e_mu4ytvypk90epib2",
+      "to": {
+        "node": "n_mu4ytvypk5w21xet",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypk5w21xet",
+        "port": "out"
+      },
+      "id": "e_mu4ytvypkaq2huq3",
+      "to": {
+        "node": "n_mu4ytvypk7syyom8",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypkb6ecvfq",
+        "port": "p:objects"
+      },
+      "id": "e_mu4ytvypkdxfx616",
+      "to": {
+        "node": "n_mu4ytvypkcvsis2m",
+        "port": "p:objects"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypkb6ecvfq",
+        "port": "p:defaults"
+      },
+      "id": "e_mu4ytvypkepixf63",
+      "to": {
+        "node": "n_mu4ytvypkcvsis2m",
+        "port": "p:defaults"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypkcvsis2m",
+        "port": "result"
+      },
+      "id": "e_mu4ytvypkgd9kv6h",
+      "to": {
+        "node": "n_mu4ytvypkflsb803",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypkb6ecvfq",
+        "port": "out"
+      },
+      "id": "e_mu4ytvypkhcybrrg",
+      "to": {
+        "node": "n_mu4ytvypkcvsis2m",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypkcvsis2m",
+        "port": "out"
+      },
+      "id": "e_mu4ytvypkicee46a",
+      "to": {
+        "node": "n_mu4ytvypkflsb803",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypkjcznhg6",
+        "port": "p:payload"
+      },
+      "id": "e_mu4ytvypklezcw79",
+      "to": {
+        "node": "n_mu4ytvypkk8u5734",
+        "port": "p:payload"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypkjcznhg6",
+        "port": "p:defaults"
+      },
+      "id": "e_mu4ytvypkmvfgazh",
+      "to": {
+        "node": "n_mu4ytvypkk8u5734",
+        "port": "p:defaults"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypkk8u5734",
+        "port": "result"
+      },
+      "id": "e_mu4ytvypko4ap92b",
+      "to": {
+        "node": "n_mu4ytvypknf4fr6z",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypkjcznhg6",
+        "port": "out"
+      },
+      "id": "e_mu4ytvypkpslgd4q",
+      "to": {
+        "node": "n_mu4ytvypkk8u5734",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypkk8u5734",
+        "port": "out"
+      },
+      "id": "e_mu4ytvypkqg91t44",
+      "to": {
+        "node": "n_mu4ytvypknf4fr6z",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypkrywqj24",
+        "port": "p:header"
+      },
+      "id": "e_mu4ytvypktpod8em",
+      "to": {
+        "node": "n_mu4ytvypksegkz4w",
+        "port": "p:header"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypkrywqj24",
+        "port": "p:rows"
+      },
+      "id": "e_mu4ytvypkubaehy7",
+      "to": {
+        "node": "n_mu4ytvypksegkz4w",
+        "port": "p:rows"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypksegkz4w",
+        "port": "result"
+      },
+      "id": "e_mu4ytvypkwnn4iir",
+      "to": {
+        "node": "n_mu4ytvypkvxvspmo",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypkrywqj24",
+        "port": "out"
+      },
+      "id": "e_mu4ytvypkxyr4sjy",
+      "to": {
+        "node": "n_mu4ytvypksegkz4w",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypksegkz4w",
+        "port": "out"
+      },
+      "id": "e_mu4ytvypkye5p230",
+      "to": {
+        "node": "n_mu4ytvypkvxvspmo",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypkzzn0h3q",
+        "port": "p:payload"
+      },
+      "id": "e_mu4ytvypl1291lb4",
+      "to": {
+        "node": "n_mu4ytvypl0u36jrz",
+        "port": "p:payload"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypkzzn0h3q",
+        "port": "p:defaults"
+      },
+      "id": "e_mu4ytvypl2pdnp0b",
+      "to": {
+        "node": "n_mu4ytvypl0u36jrz",
+        "port": "p:defaults"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypl0u36jrz",
+        "port": "result"
+      },
+      "id": "e_mu4ytvypl49pe5ta",
+      "to": {
+        "node": "n_mu4ytvypl3jl9q5e",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypkzzn0h3q",
+        "port": "out"
+      },
+      "id": "e_mu4ytvypl5u4qlm1",
+      "to": {
+        "node": "n_mu4ytvypl0u36jrz",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypl0u36jrz",
+        "port": "out"
+      },
+      "id": "e_mu4ytvypl6ml679z",
+      "to": {
+        "node": "n_mu4ytvypl3jl9q5e",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypl7oi753q",
+        "port": "p:payload"
+      },
+      "id": "e_mu4ytvypl9ep0fd9",
+      "to": {
+        "node": "n_mu4ytvypl8qmflpj",
+        "port": "p:payload"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypl7oi753q",
+        "port": "p:feed_format"
+      },
+      "id": "e_mu4ytvyplaqv7zaq",
+      "to": {
+        "node": "n_mu4ytvypl8qmflpj",
+        "port": "p:feed_format"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypl7oi753q",
+        "port": "p:defaults"
+      },
+      "id": "e_mu4ytvyplbhyw4wv",
+      "to": {
+        "node": "n_mu4ytvypl8qmflpj",
+        "port": "p:defaults"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypl8qmflpj",
+        "port": "result"
+      },
+      "id": "e_mu4ytvypldm7wvqd",
+      "to": {
+        "node": "n_mu4ytvyplcip1fnk",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypl7oi753q",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyple9y7rwr",
+      "to": {
+        "node": "n_mu4ytvypl8qmflpj",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypl8qmflpj",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyplfn840nz",
+      "to": {
+        "node": "n_mu4ytvyplcip1fnk",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyplgp42uzd",
+        "port": "p:db"
+      },
+      "id": "e_mu4ytvypligdojxr",
+      "to": {
+        "node": "n_mu4ytvyplh6bn1le",
+        "port": "p:db"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyplgp42uzd",
+        "port": "p:org_id"
+      },
+      "id": "e_mu4ytvypljrkjyyu",
+      "to": {
+        "node": "n_mu4ytvyplh6bn1le",
+        "port": "p:org_id"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyplgp42uzd",
+        "port": "p:records"
+      },
+      "id": "e_mu4ytvyplkyukoi4",
+      "to": {
+        "node": "n_mu4ytvyplh6bn1le",
+        "port": "p:records"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyplgp42uzd",
+        "port": "p:defaults"
+      },
+      "id": "e_mu4ytvypllxknspg",
+      "to": {
+        "node": "n_mu4ytvyplh6bn1le",
+        "port": "p:defaults"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyplh6bn1le",
+        "port": "result"
+      },
+      "id": "e_mu4ytvypln57ucjb",
+      "to": {
+        "node": "n_mu4ytvyplm0u2tzm",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyplgp42uzd",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyplot6ghgy",
+      "to": {
+        "node": "n_mu4ytvyplh6bn1le",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyplh6bn1le",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyplpzzf7rt",
+      "to": {
+        "node": "n_mu4ytvyplm0u2tzm",
+        "port": "in"
+      }
+    }
+  ],
+  "fileId": "file_mu4ytvypideadugd",
+  "id": "g_mu4ytvypiewxpmj1",
+  "name": "threat-intel feed parsers",
+  "nodes": [
+    {
+      "id": "n_mu4ytvypifsqmwly",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:payload",
+          "name": "payload",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "doc": "Work out what this document is when the feed record does not say.\n\nFeeds are configured once and then change shape without telling anyone - a\nMISP instance upgraded, a vendor switching from CSV to STIX. Sniffing costs\none parse and turns that into a successful fetch rather than a support call.",
+        "isAsync": false,
+        "name": "sniff_feed_format",
+        "params": [
+          {
+            "name": "payload",
+            "type": "string"
+          }
+        ],
+        "returns": "string",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvypigjr2sc2",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:payload",
+          "name": "payload",
+          "type": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "import json\n\nhead = (payload or \"\").lstrip()\nif not head:\n    return \"empty\"\nif head[0] not in \"[{\":\n    return \"csv\"\n\ntry:\n    document = json.loads(payload)\nexcept ValueError:\n    # JSON-looking but not JSON. CSV is the honest fallback: the row reader\n    # reports the rows it could not read rather than failing the whole file.\n    return \"csv\"\n\nif isinstance(document, list):\n    first = document[0] if document else None\n    if isinstance(first, dict) and (\"Event\" in first or \"Attribute\" in first):\n        return \"misp\"\n    return \"stix\"\n\nif isinstance(document, dict):\n    if document.get(\"type\") == \"bundle\" or \"spec_version\" in document:\n        return \"stix\"\n    if document.get(\"type\") == \"indicator\":\n        return \"stix\"\n    if \"Event\" in document or \"response\" in document or \"Attribute\" in document:\n        return \"misp\"\n    # A MISP feed manifest is a bare object keyed by event uuid.\n    for value in document.values():\n        if isinstance(value, dict) and \"info\" in value:\n            return \"misp\"\n\nreturn \"unknown\"",
+        "doc": "Work out what this document is when the feed record does not say.\n\nFeeds are configured once and then change shape without telling anyone - a\nMISP instance upgraded, a vendor switching from CSV to STIX. Sniffing costs\none parse and turns that into a successful fetch rather than a support call.",
+        "form": "statements",
+        "language": "python",
+        "name": "guess_feed_format",
+        "packages": [],
+        "params": [
+          {
+            "name": "payload",
+            "type": "string"
+          }
+        ],
+        "returns": "string"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvypiikxn60y",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvypimgp5dms",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "doc": "A date Postgres will accept, or nothing.\n\nAn expiry field in a feed is free text as far as we are concerned. Passing it\nstraight into a timestamptz cast means one malformed row aborts the whole\nbatch, so anything that is not plainly a date is dropped instead.",
+        "isAsync": false,
+        "name": "as_timestamp",
+        "params": [
+          {
+            "name": "value",
+            "type": "Any"
+          }
+        ],
+        "returns": "Any",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvypinzn6eo6",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "import re\n\nif not value:\n    return None\ntext = str(value).strip()\nif not re.match(r\"^\\d{4}-\\d{2}-\\d{2}([T ]\\d{2}:\\d{2}(:\\d{2}(\\.\\d+)?)?)?\", text):\n    return None\nreturn text[:64]",
+        "doc": "A date Postgres will accept, or nothing.\n\nAn expiry field in a feed is free text as far as we are concerned. Passing it\nstraight into a timestamptz cast means one malformed row aborts the whole\nbatch, so anything that is not plainly a date is dropped instead.",
+        "form": "statements",
+        "language": "python",
+        "name": "coerce_timestamp",
+        "packages": [],
+        "params": [
+          {
+            "name": "value",
+            "type": "Any"
+          }
+        ],
+        "returns": "Any"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvypip2pvdwr",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvypitz6zpqu",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:kind",
+          "name": "kind",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:value",
+          "name": "value",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:defaults",
+          "name": "defaults",
+          "type": "Map<string, Any>"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:extra",
+          "name": "extra",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "doc": "One parsed indicator, in the single shape the ingest path accepts. Every parser builds its records through here so that a field added to one format cannot quietly diverge from the others.",
+        "isAsync": false,
+        "name": "feed_indicator",
+        "params": [
+          {
+            "name": "kind",
+            "type": "string"
+          },
+          {
+            "name": "value",
+            "type": "string"
+          },
+          {
+            "name": "defaults",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "extra",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvypiu8zwe1u",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:kind",
+          "name": "kind",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:value",
+          "name": "value",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:defaults",
+          "name": "defaults",
+          "type": "Map<string, Any>"
+        },
+        {
+          "direction": "in",
+          "id": "p:extra",
+          "name": "extra",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "from soar.intel.indicators import normalise_value\n\nfields = extra or {}\ntags = list(defaults.get(\"tags\") or []) + list(fields.get(\"tags\") or [])\n\nconfidence = fields.get(\"confidence\")\nif confidence is None:\n    confidence = defaults.get(\"confidence\")\ntry:\n    confidence = max(0, min(100, int(confidence))) if confidence is not None else None\nexcept (TypeError, ValueError):\n    confidence = None\n\ntlp = (fields.get(\"tlp\") or defaults.get(\"tlp\") or \"\") or None\nif tlp:\n    tlp = str(tlp).lower().replace(\"tlp:\", \"\").strip() or None\n\nreturn {\n    \"type\": kind,\n    \"value\": str(value).strip()[:2048],\n    \"normalised\": normalise_value(kind, value)[:2048],\n    \"verdict\": fields.get(\"verdict\") or defaults.get(\"verdict\") or \"suspicious\",\n    \"confidence\": confidence,\n    \"tlp\": tlp,\n    \"tags\": sorted({str(tag).strip()[:64] for tag in tags if str(tag).strip()}),\n    \"expires_at\": as_timestamp(fields.get(\"expires_at\")),\n    \"source_ref\": (fields.get(\"source_ref\") or None),\n    \"comment\": (str(fields[\"comment\"])[:1000] if fields.get(\"comment\") else None),\n}",
+        "doc": "One parsed indicator, in the single shape the ingest path accepts. Every parser builds its records through here so that a field added to one format cannot quietly diverge from the others.",
+        "form": "statements",
+        "language": "python",
+        "name": "build_feed_record",
+        "packages": [],
+        "params": [
+          {
+            "name": "kind",
+            "type": "string"
+          },
+          {
+            "name": "value",
+            "type": "string"
+          },
+          {
+            "name": "defaults",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "extra",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvypizd6nsmq",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvypj36fhovz",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:holder",
+          "name": "holder",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "doc": "MISP tags off an event or an attribute. Both carry them and both matter: the event tag is usually the TLP, the attribute tag is usually the malware family.",
+        "isAsync": false,
+        "name": "misp_document_tags",
+        "params": [
+          {
+            "name": "holder",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "List<string>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvypj4xld69x",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:holder",
+          "name": "holder",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "List<string>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "out = []\nfor tag in (holder or {}).get(\"Tag\") or []:\n    if isinstance(tag, dict) and tag.get(\"name\"):\n        out.append(str(tag[\"name\"]))\n    elif isinstance(tag, str) and tag:\n        out.append(tag)\nreturn out",
+        "doc": "MISP tags off an event or an attribute. Both carry them and both matter: the event tag is usually the TLP, the attribute tag is usually the malware family.",
+        "form": "statements",
+        "language": "python",
+        "name": "read_misp_tags",
+        "packages": [],
+        "params": [
+          {
+            "name": "holder",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "List<string>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvypj6l04tlg",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvypjapo8jlc",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:tags",
+          "name": "tags",
+          "type": "List<string>"
+        }
+      ],
+      "props": {
+        "doc": "The TLP out of a MISP tag list. Sharing restrictions travel with the indicator or they are not restrictions at all.",
+        "isAsync": false,
+        "name": "misp_tlp_tag",
+        "params": [
+          {
+            "name": "tags",
+            "type": "List<string>"
+          }
+        ],
+        "returns": "Any",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 520
+    },
+    {
+      "id": "n_mu4ytvypjb4h75ki",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:tags",
+          "name": "tags",
+          "type": "List<string>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "for tag in tags or []:\n    lowered = str(tag).lower().strip()\n    if lowered.startswith(\"tlp:\"):\n        return lowered.split(\":\", 1)[1].strip() or None\nreturn None",
+        "doc": "The TLP out of a MISP tag list. Sharing restrictions travel with the indicator or they are not restrictions at all.",
+        "form": "statements",
+        "language": "python",
+        "name": "read_misp_tlp",
+        "packages": [],
+        "params": [
+          {
+            "name": "tags",
+            "type": "List<string>"
+          }
+        ],
+        "returns": "Any"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 520
+    },
+    {
+      "id": "n_mu4ytvypjd889zbm",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 520
+    },
+    {
+      "id": "n_mu4ytvypjhtfb10b",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:misp_type",
+          "name": "misp_type",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:raw",
+          "name": "raw",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "doc": "One MISP attribute to zero, one or two observables.\n\nTwo, because a MISP composite type carries a pair in a single value:\n`filename|sha256` is a name AND a hash separated by a pipe. Storing the raw\nstring as a hash produces something no EDR will ever match, which is the\nquiet way a feed ends up looking ingested and being useless.",
+        "isAsync": false,
+        "name": "misp_attribute_values",
+        "params": [
+          {
+            "name": "misp_type",
+            "type": "string"
+          },
+          {
+            "name": "raw",
+            "type": "string"
+          }
+        ],
+        "returns": "List<Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 650
+    },
+    {
+      "id": "n_mu4ytvypji5xpyq0",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:misp_type",
+          "name": "misp_type",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:raw",
+          "name": "raw",
+          "type": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "List<Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "from soar.intel.indicators import detect_type\n\nkind = (misp_type or \"\").strip().lower()\ntext = (raw or \"\").strip()\nif not kind or not text:\n    return []\n\nif \"|\" in kind:\n    left_type, _, right_type = kind.partition(\"|\")\n    left_value, _, right_value = text.partition(\"|\")\n    return (misp_attribute_values(left_type, left_value)\n            + misp_attribute_values(right_type, right_value))\n\nif kind in (\"ip-src\", \"ip-dst\", \"ip\", \"ip-host\", \"dst-ip\", \"src-ip\"):\n    detected = detect_type(text)\n    return [(detected, text)] if detected in (\"ipv4\", \"ipv6\") else []\nif kind in (\"domain\", \"hostname\", \"domain-name\"):\n    return [(\"domain\", text)]\nif kind in (\"url\", \"uri\", \"link\"):\n    return [(\"url\", text)]\nif kind in (\"md5\", \"sha1\", \"sha256\"):\n    return [(kind, text)]\nif kind in (\"email\", \"email-src\", \"email-dst\", \"email-reply-to\",\n            \"target-email\", \"whois-registrant-email\"):\n    return [(\"email\", text)]\nif kind == \"vulnerability\":\n    return [(\"cve\", text)]\n\n# Context, not detection: a filename or a comment is worth reading on the\n# event and worth nothing as a standalone indicator.\nif kind in (\"filename\", \"text\", \"comment\", \"other\", \"datetime\", \"port\",\n            \"size-in-bytes\", \"attachment\", \"malware-sample\", \"counter\",\n            \"first-seen\", \"last-seen\", \"threat-actor\", \"campaign-name\"):\n    return []\n\n# Anything else: let the classifier decide, and drop what it cannot place.\ndetected = detect_type(text)\nreturn [(detected, text)] if detected != \"unknown\" else []",
+        "doc": "One MISP attribute to zero, one or two observables.\n\nTwo, because a MISP composite type carries a pair in a single value:\n`filename|sha256` is a name AND a hash separated by a pipe. Storing the raw\nstring as a hash produces something no EDR will ever match, which is the\nquiet way a feed ends up looking ingested and being useless.",
+        "form": "statements",
+        "language": "python",
+        "name": "split_misp_attribute",
+        "packages": [],
+        "params": [
+          {
+            "name": "misp_type",
+            "type": "string"
+          },
+          {
+            "name": "raw",
+            "type": "string"
+          }
+        ],
+        "returns": "List<Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 650
+    },
+    {
+      "id": "n_mu4ytvypjla3hj9i",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 650
+    },
+    {
+      "id": "n_mu4ytvypjpqznazo",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:payload",
+          "name": "payload",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:defaults",
+          "name": "defaults",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "doc": "Read a MISP document: an event, a search response, or a feed manifest.\n\nThe manifest case is the one that surprises people. A MISP feed URL usually\npoints at `manifest.json`, which LISTS events rather than carrying them, so\nthe parser returns the filenames to follow instead of pretending it found\nnothing. The fetcher resolves them in one extra round.",
+        "isAsync": false,
+        "name": "parse_misp_feed",
+        "params": [
+          {
+            "name": "payload",
+            "type": "string"
+          },
+          {
+            "name": "defaults",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 780
+    },
+    {
+      "id": "n_mu4ytvypjqmr3ibn",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:payload",
+          "name": "payload",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:defaults",
+          "name": "defaults",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "import json\n\ntry:\n    document = json.loads(payload)\nexcept ValueError as error:\n    return {\"indicators\": [], \"follow\": [], \"rejected\": 0,\n            \"errors\": [\"not valid JSON: %s\" % error]}\n\nevents = []\nfollow = []\nerrors = []\n\nif isinstance(document, list):\n    events = [entry.get(\"Event\", entry) for entry in document\n              if isinstance(entry, dict)]\nelif isinstance(document, dict) and \"Event\" in document:\n    events = [document[\"Event\"]]\nelif isinstance(document, dict) and isinstance(document.get(\"response\"), list):\n    events = [entry.get(\"Event\", entry) for entry in document[\"response\"]\n              if isinstance(entry, dict)]\nelif isinstance(document, dict) and isinstance(document.get(\"response\"), dict):\n    # /attributes/restSearch answers with attributes and no event around them.\n    events = [{\"Attribute\": document[\"response\"].get(\"Attribute\") or []}]\nelif isinstance(document, dict) and isinstance(document.get(\"Attribute\"), list):\n    events = [{\"Attribute\": document[\"Attribute\"]}]\nelif isinstance(document, dict):\n    for uuid, summary in document.items():\n        if isinstance(summary, dict) and \"info\" in summary:\n            follow.append(\"%s.json\" % uuid)\n    if not follow:\n        errors.append(\"JSON with no MISP event, attribute list or manifest in it\")\n    return {\"indicators\": [], \"follow\": follow, \"rejected\": 0, \"errors\": errors}\n\n# to_ids is MISP's own statement that an attribute is fit for detection.\n# Ingesting the rest turns a feed into a false-positive generator, so taking\n# everything is opt-in rather than the default.\nstrict = defaults.get(\"trusted_only\", True)\n\nindicators = []\nrejected = 0\nseen = set()\n\nfor event in events:\n    if not isinstance(event, dict):\n        continue\n    event_tags = misp_document_tags(event)\n    attributes = list(event.get(\"Attribute\") or [])\n    for grouped in event.get(\"Object\") or []:\n        if isinstance(grouped, dict):\n            attributes.extend(grouped.get(\"Attribute\") or [])\n\n    for attribute in attributes:\n        if not isinstance(attribute, dict):\n            continue\n        if strict and not attribute.get(\"to_ids\"):\n            rejected += 1\n            continue\n        pairs = misp_attribute_values(attribute.get(\"type\", \"\"),\n                                      attribute.get(\"value\", \"\"))\n        if not pairs:\n            rejected += 1\n            continue\n\n        tags = event_tags + misp_document_tags(attribute)\n        for kind, value in pairs:\n            record = feed_indicator(kind, value, defaults, {\n                \"tags\": tags,\n                \"tlp\": misp_tlp_tag(tags),\n                \"comment\": attribute.get(\"comment\") or event.get(\"info\"),\n                \"source_ref\": attribute.get(\"uuid\") or event.get(\"uuid\"),\n            })\n            key = (record[\"type\"], record[\"normalised\"])\n            if key in seen:\n                continue\n            seen.add(key)\n            indicators.append(record)\n\nreturn {\"indicators\": indicators, \"follow\": follow, \"rejected\": rejected,\n        \"errors\": errors}",
+        "doc": "Read a MISP document: an event, a search response, or a feed manifest.\n\nThe manifest case is the one that surprises people. A MISP feed URL usually\npoints at `manifest.json`, which LISTS events rather than carrying them, so\nthe parser returns the filenames to follow instead of pretending it found\nnothing. The fetcher resolves them in one extra round.",
+        "form": "statements",
+        "language": "python",
+        "name": "read_misp_document",
+        "packages": [],
+        "params": [
+          {
+            "name": "payload",
+            "type": "string"
+          },
+          {
+            "name": "defaults",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 780
+    },
+    {
+      "id": "n_mu4ytvypjt1py7gk",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 780
+    },
+    {
+      "id": "n_mu4ytvypjx91hp7b",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:path",
+          "name": "path",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "doc": "A STIX object path to one of our observable types, or nothing. Hash algorithms are spelled four different ways in the wild, so the comparison is on the letters and digits only.",
+        "isAsync": false,
+        "name": "stix_path_type",
+        "params": [
+          {
+            "name": "path",
+            "type": "string"
+          }
+        ],
+        "returns": "Any",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 910
+    },
+    {
+      "id": "n_mu4ytvypjyx64rl8",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:path",
+          "name": "path",
+          "type": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "lowered = (path or \"\").lower().replace(\"'\", \"\").replace('\"', \"\")\n\nif lowered.startswith(\"ipv4-addr:\"):\n    return \"ipv4\"\nif lowered.startswith(\"ipv6-addr:\"):\n    return \"ipv6\"\nif lowered.startswith(\"domain-name:\"):\n    return \"domain\"\nif lowered.startswith(\"url:\"):\n    return \"url\"\nif lowered.startswith(\"email-addr:\"):\n    return \"email\"\nif lowered.startswith(\"vulnerability:\"):\n    return \"cve\"\nif lowered.startswith(\"file:hashes.\"):\n    algorithm = lowered.split(\"file:hashes.\", 1)[1]\n    algorithm = \"\".join(c for c in algorithm if c.isalnum())\n    return {\"sha256\": \"sha256\", \"sha1\": \"sha1\", \"md5\": \"md5\"}.get(algorithm)\nreturn None",
+        "doc": "A STIX object path to one of our observable types, or nothing. Hash algorithms are spelled four different ways in the wild, so the comparison is on the letters and digits only.",
+        "form": "statements",
+        "language": "python",
+        "name": "map_stix_path",
+        "packages": [],
+        "params": [
+          {
+            "name": "path",
+            "type": "string"
+          }
+        ],
+        "returns": "Any"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 910
+    },
+    {
+      "id": "n_mu4ytvypk0x8qp16",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 910
+    },
+    {
+      "id": "n_mu4ytvypk47uar71",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:pattern",
+          "name": "pattern",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "doc": "The observables inside a STIX pattern.\n\nOnly the comparison expressions are read. A pattern can carry boolean\noperators and qualifiers (REPEATS, WITHIN, START/STOP) and none of them\nchange WHAT the observable is - so the values come out and the logic is\ndeliberately ignored. Storing the pattern text itself, which is the other\ncommon shortcut, produces a row no lookup will ever match.",
+        "isAsync": false,
+        "name": "stix_pattern_values",
+        "params": [
+          {
+            "name": "pattern",
+            "type": "string"
+          }
+        ],
+        "returns": "List<Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 1040
+    },
+    {
+      "id": "n_mu4ytvypk5w21xet",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:pattern",
+          "name": "pattern",
+          "type": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "List<Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "import re\n\nout = []\nseen = set()\nexpression = r\"([A-Za-z0-9_-]+:[A-Za-z0-9_.\\'\\\"\\[\\]-]+)\\s*(?:=|LIKE|MATCHES)\\s*'([^']*)'\"\nfor path, value in re.findall(expression, pattern or \"\"):\n    kind = stix_path_type(path)\n    if not kind or not value:\n        continue\n    if (kind, value) in seen:\n        continue\n    seen.add((kind, value))\n    out.append((kind, value))\nreturn out",
+        "doc": "The observables inside a STIX pattern.\n\nOnly the comparison expressions are read. A pattern can carry boolean\noperators and qualifiers (REPEATS, WITHIN, START/STOP) and none of them\nchange WHAT the observable is - so the values come out and the logic is\ndeliberately ignored. Storing the pattern text itself, which is the other\ncommon shortcut, produces a row no lookup will ever match.",
+        "form": "statements",
+        "language": "python",
+        "name": "read_stix_pattern",
+        "packages": [],
+        "params": [
+          {
+            "name": "pattern",
+            "type": "string"
+          }
+        ],
+        "returns": "List<Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 1040
+    },
+    {
+      "id": "n_mu4ytvypk7syyom8",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 1040
+    },
+    {
+      "id": "n_mu4ytvypkb6ecvfq",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:objects",
+          "name": "objects",
+          "type": "List<Any>"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:defaults",
+          "name": "defaults",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "doc": "Read a list of STIX objects into indicators.\n\nSeparate from parse_stix_feed because TAXII hands over objects that are\nalready parsed - one page at a time, out of an envelope. Going back through\nJSON so the bundle reader could re-read them would cost a serialise and a\nparse per page, and would leave two code paths that could drift.\n\nTLP arrives as a reference to a marking-definition in the same batch, so the\nmarkings are indexed before any indicator is read. Read in one pass and\nevery sharing restriction is lost.",
+        "isAsync": false,
+        "name": "parse_stix_objects",
+        "params": [
+          {
+            "name": "objects",
+            "type": "List<Any>"
+          },
+          {
+            "name": "defaults",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 1170
+    },
+    {
+      "id": "n_mu4ytvypkcvsis2m",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:objects",
+          "name": "objects",
+          "type": "List<Any>"
+        },
+        {
+          "direction": "in",
+          "id": "p:defaults",
+          "name": "defaults",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "markings = {}\nfor entry in objects or []:\n    if not isinstance(entry, dict) or entry.get(\"type\") != \"marking-definition\":\n        continue\n    definition = entry.get(\"definition\") or {}\n    label = definition.get(\"tlp\") or entry.get(\"name\")\n    if label:\n        markings[entry.get(\"id\")] = str(label).lower().replace(\"tlp:\", \"\").strip()\n\nindicators = []\nerrors = []\nrejected = 0\nseen = set()\n\nfor entry in objects or []:\n    if not isinstance(entry, dict) or entry.get(\"type\") != \"indicator\":\n        continue\n    if entry.get(\"revoked\"):\n        rejected += 1\n        continue\n\n    pattern_type = str(entry.get(\"pattern_type\") or \"stix\").lower()\n    if pattern_type != \"stix\":\n        # A YARA or Snort rule is a detection, not an observable. There is no\n        # honest way to store one in an indicator table.\n        rejected += 1\n        if len(errors) < 20:\n            errors.append(\"%s: %s patterns are rules, not observables\"\n                          % (entry.get(\"id\"), pattern_type))\n        continue\n\n    pairs = stix_pattern_values(entry.get(\"pattern\", \"\"))\n    if not pairs:\n        rejected += 1\n        continue\n\n    tlp = None\n    for reference in entry.get(\"object_marking_refs\") or []:\n        tlp = markings.get(reference) or tlp\n\n    confidence = entry.get(\"confidence\")\n    for kind, value in pairs:\n        record = feed_indicator(kind, value, defaults, {\n            \"tags\": [str(label) for label in (entry.get(\"labels\") or [])],\n            \"tlp\": tlp,\n            \"confidence\": confidence,\n            \"expires_at\": entry.get(\"valid_until\"),\n            \"source_ref\": entry.get(\"id\"),\n            \"comment\": entry.get(\"name\") or entry.get(\"description\"),\n        })\n        key = (record[\"type\"], record[\"normalised\"])\n        if key in seen:\n            continue\n        seen.add(key)\n        indicators.append(record)\n\nreturn {\"indicators\": indicators, \"follow\": [], \"rejected\": rejected,\n        \"errors\": errors}",
+        "doc": "Read a list of STIX objects into indicators.\n\nSeparate from parse_stix_feed because TAXII hands over objects that are\nalready parsed - one page at a time, out of an envelope. Going back through\nJSON so the bundle reader could re-read them would cost a serialise and a\nparse per page, and would leave two code paths that could drift.\n\nTLP arrives as a reference to a marking-definition in the same batch, so the\nmarkings are indexed before any indicator is read. Read in one pass and\nevery sharing restriction is lost.",
+        "form": "statements",
+        "language": "python",
+        "name": "read_stix_object_list",
+        "packages": [],
+        "params": [
+          {
+            "name": "objects",
+            "type": "List<Any>"
+          },
+          {
+            "name": "defaults",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 1170
+    },
+    {
+      "id": "n_mu4ytvypkflsb803",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 1170
+    },
+    {
+      "id": "n_mu4ytvypkjcznhg6",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:payload",
+          "name": "payload",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:defaults",
+          "name": "defaults",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "doc": "Read a STIX 2.x bundle document. Finds the object list, whatever it is wrapped in, and hands it to parse_stix_objects.",
+        "isAsync": false,
+        "name": "parse_stix_feed",
+        "params": [
+          {
+            "name": "payload",
+            "type": "string"
+          },
+          {
+            "name": "defaults",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 1300
+    },
+    {
+      "id": "n_mu4ytvypkk8u5734",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:payload",
+          "name": "payload",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:defaults",
+          "name": "defaults",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "import json\n\ntry:\n    document = json.loads(payload)\nexcept ValueError as error:\n    return {\"indicators\": [], \"follow\": [], \"rejected\": 0,\n            \"errors\": [\"not valid JSON: %s\" % error]}\n\nif isinstance(document, dict) and isinstance(document.get(\"objects\"), list):\n    objects = document[\"objects\"]\nelif isinstance(document, list):\n    objects = document\nelif isinstance(document, dict) and document.get(\"type\") == \"indicator\":\n    objects = [document]\nelse:\n    return {\"indicators\": [], \"follow\": [], \"rejected\": 0,\n            \"errors\": [\"no STIX objects in the document\"]}\n\nreturn parse_stix_objects(objects, defaults)",
+        "doc": "Read a STIX 2.x bundle document. Finds the object list, whatever it is wrapped in, and hands it to parse_stix_objects.",
+        "form": "statements",
+        "language": "python",
+        "name": "read_stix_bundle",
+        "packages": [],
+        "params": [
+          {
+            "name": "payload",
+            "type": "string"
+          },
+          {
+            "name": "defaults",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 1300
+    },
+    {
+      "id": "n_mu4ytvypknf4fr6z",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 1300
+    },
+    {
+      "id": "n_mu4ytvypkrywqj24",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:header",
+          "name": "header",
+          "type": "List<string>"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:rows",
+          "name": "rows",
+          "type": "List<Any>"
+        }
+      ],
+      "props": {
+        "doc": "Which column holds the indicator, and what type it implies.\n\nPublic feeds do not agree on a name for it. abuse.ch Feodo calls it dst_ip,\nURLhaus calls it url, MalwareBazaar calls it sha256_hash, and a block list\nhas no header at all. Rather than grow a list of names forever, an unknown\nheader falls through to classifying the cells: the column where most values\nare recognisably observables IS the indicator column, whatever it is called.",
+        "isAsync": false,
+        "name": "csv_value_column",
+        "params": [
+          {
+            "name": "header",
+            "type": "List<string>"
+          },
+          {
+            "name": "rows",
+            "type": "List<Any>"
+          }
+        ],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 1430
+    },
+    {
+      "id": "n_mu4ytvypksegkz4w",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:header",
+          "name": "header",
+          "type": "List<string>"
+        },
+        {
+          "direction": "in",
+          "id": "p:rows",
+          "name": "rows",
+          "type": "List<Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "from soar.intel.indicators import detect_type, refang\n\ngeneric = (\"value\", \"indicator\", \"ioc\", \"observable\", \"artifact\")\n\n# Name to the type it implies; \"\" means let the classifier decide, which is\n# what \"ip\" and \"hash\" need since they do not say v4/v6 or which digest.\ntyped = [(\"url\", \"url\"), (\"uri\", \"url\"), (\"domain\", \"domain\"),\n         (\"hostname\", \"domain\"), (\"host\", \"domain\"),\n         (\"ip\", \"\"), (\"ip_address\", \"\"), (\"dst_ip\", \"\"), (\"src_ip\", \"\"),\n         (\"ipv4\", \"ipv4\"), (\"ipv6\", \"ipv6\"),\n         (\"sha256\", \"sha256\"), (\"sha256_hash\", \"sha256\"),\n         (\"sha1\", \"sha1\"), (\"sha1_hash\", \"sha1\"),\n         (\"md5\", \"md5\"), (\"md5_hash\", \"md5\"), (\"hash\", \"\"),\n         (\"email\", \"email\"), (\"cve\", \"cve\")]\n\nfor name in generic:\n    if name in header:\n        return {\"index\": header.index(name), \"hint\": \"\"}\nfor name, hint in typed:\n    if name in header:\n        return {\"index\": header.index(name), \"hint\": hint}\n\nsample = rows[:50]\nif not sample:\n    return {\"index\": -1, \"hint\": \"\"}\nwidth = max(len(row) for row in sample)\nsupported = (\"ipv4\", \"ipv6\", \"domain\", \"url\", \"email\", \"md5\", \"sha1\",\n             \"sha256\", \"cve\")\n\nbest_index = -1\nbest_hits = 0\nfor index in range(width):\n    hits = 0\n    for row in sample:\n        if index >= len(row):\n            continue\n        if detect_type(refang(row[index].strip().strip(chr(34)).strip())) in supported:\n            hits += 1\n    if hits > best_hits:\n        best_index = index\n        best_hits = hits\n\n# Half the sampled rows, so a column that merely happens to contain one\n# address somewhere is not mistaken for the indicator column.\nif best_hits * 2 >= len(sample):\n    return {\"index\": best_index, \"hint\": \"\"}\nreturn {\"index\": -1, \"hint\": \"\"}",
+        "doc": "Which column holds the indicator, and what type it implies.\n\nPublic feeds do not agree on a name for it. abuse.ch Feodo calls it dst_ip,\nURLhaus calls it url, MalwareBazaar calls it sha256_hash, and a block list\nhas no header at all. Rather than grow a list of names forever, an unknown\nheader falls through to classifying the cells: the column where most values\nare recognisably observables IS the indicator column, whatever it is called.",
+        "form": "statements",
+        "language": "python",
+        "name": "locate_value_column",
+        "packages": [],
+        "params": [
+          {
+            "name": "header",
+            "type": "List<string>"
+          },
+          {
+            "name": "rows",
+            "type": "List<Any>"
+          }
+        ],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 1430
+    },
+    {
+      "id": "n_mu4ytvypkvxvspmo",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 1430
+    },
+    {
+      "id": "n_mu4ytvypkzzn0h3q",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:payload",
+          "name": "payload",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:defaults",
+          "name": "defaults",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "doc": "Read a CSV feed, or a plain one-value-per-line block list.\n\nThe block list is the commonest feed shape there is and it is not really CSV\nat all - a header of `#` comments and then a bare address per line. Treating\nthe whole line as the value is the correct reading of that file, not a\nfallback for a failed parse.\n\nThe other thing real feeds do is put the column header INSIDE a comment.\nURLhaus ships `# id,dateadded,url,...` and then quoted data rows; strip every\ncomment and the header goes with them, after which the id column looks like\nthe indicator column and every row is silently wrong.",
+        "isAsync": false,
+        "name": "parse_csv_feed",
+        "params": [
+          {
+            "name": "payload",
+            "type": "string"
+          },
+          {
+            "name": "defaults",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 1560
+    },
+    {
+      "id": "n_mu4ytvypl0u36jrz",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:payload",
+          "name": "payload",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:defaults",
+          "name": "defaults",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "from soar.intel.indicators import detect_type, refang\n\nimport csv\n\nsupported = (\"ipv4\", \"ipv6\", \"domain\", \"url\", \"email\", \"md5\", \"sha1\",\n             \"sha256\", \"cve\")\nmeta = (\"type\", \"indicator_type\", \"confidence\", \"tlp\", \"tags\",\n        \"description\", \"comment\", \"expiration\", \"expires_at\", \"valid_until\")\n\ncomments = []\nlines = []\nfor line in (payload or \"\").splitlines():\n    stripped = line.strip()\n    if not stripped:\n        continue\n    if stripped.startswith((\"#\", \";\", \"//\")):\n        comments.append(stripped.lstrip(\"#;/ \").strip())\n        continue\n    lines.append(line)\n\nif not lines:\n    return {\"indicators\": [], \"follow\": [], \"rejected\": 0,\n            \"errors\": [\"the document has no data rows, only comments\"]}\n\ntry:\n    delimiter = csv.Sniffer().sniff(\"\\n\".join(lines[:20]),\n                                    delimiters=\",;\\t|\").delimiter\nexcept csv.Error:\n    delimiter = \",\"\n\nrows = [row for row in csv.reader(lines, delimiter=delimiter) if row]\nif not rows:\n    return {\"indicators\": [], \"follow\": [], \"rejected\": 0, \"errors\": []}\n\ndef looks_like_header(cells):\n    for cell in cells:\n        if cell in meta:\n            return True\n        if csv_value_column([cell], [])[\"index\"] == 0:\n            return True\n    return False\n\nheader = []\nfirst = [cell.strip().strip('\"').lower() for cell in rows[0]]\nif looks_like_header(first):\n    header = first\n    rows = rows[1:]\nelse:\n    # The commented-header convention, recovered from the last comment line\n    # whose shape matches the data.\n    for candidate in reversed(comments):\n        cells = [cell.strip().strip('\"').lower()\n                 for cell in candidate.split(delimiter)]\n        if len(cells) == len(rows[0]) and looks_like_header(cells):\n            header = cells\n            break\n\nlocated = csv_value_column(header, rows)\nvalue_index = located[\"index\"]\nhint = located[\"hint\"]\nif value_index < 0:\n    return {\"indicators\": [], \"follow\": [], \"rejected\": len(rows),\n            \"errors\": [\"no column in this document looks like an indicator; \"\n                       \"columns seen: %s\" % (\", \".join(header) or \"none named\")]}\n\ndef cell(text):\n    return text.strip().strip(chr(34)).strip()\n\ndef column(row, *names):\n    for name in names:\n        if name in header:\n            index = header.index(name)\n            if index < len(row):\n                return cell(row[index])\n    return \"\"\n\nindicators = []\nrejected = 0\nseen = set()\n\nfor row in rows:\n    if value_index >= len(row):\n        rejected += 1\n        continue\n    raw = cell(row[value_index])\n    if not raw:\n        rejected += 1\n        continue\n\n    kind = column(row, \"type\", \"indicator_type\").lower() or hint\n    if kind not in supported:\n        kind = detect_type(refang(raw))\n    if kind not in supported:\n        rejected += 1\n        continue\n\n    confidence = column(row, \"confidence\")\n    tags = [tag.strip()\n            for tag in column(row, \"tags\").replace(\";\", \",\").split(\",\")\n            if tag.strip()]\n    record = feed_indicator(kind, raw, defaults, {\n        \"tags\": tags,\n        \"tlp\": column(row, \"tlp\") or None,\n        \"confidence\": int(confidence) if confidence.isdigit() else None,\n        \"expires_at\": column(row, \"expiration\", \"expires_at\", \"valid_until\"),\n        \"comment\": column(row, \"description\", \"comment\") or None,\n    })\n    key = (record[\"type\"], record[\"normalised\"])\n    if key in seen:\n        continue\n    seen.add(key)\n    indicators.append(record)\n\nreturn {\"indicators\": indicators, \"follow\": [], \"rejected\": rejected,\n        \"errors\": []}",
+        "doc": "Read a CSV feed, or a plain one-value-per-line block list.\n\nThe block list is the commonest feed shape there is and it is not really CSV\nat all - a header of `#` comments and then a bare address per line. Treating\nthe whole line as the value is the correct reading of that file, not a\nfallback for a failed parse.\n\nThe other thing real feeds do is put the column header INSIDE a comment.\nURLhaus ships `# id,dateadded,url,...` and then quoted data rows; strip every\ncomment and the header goes with them, after which the id column looks like\nthe indicator column and every row is silently wrong.",
+        "form": "statements",
+        "language": "python",
+        "name": "read_csv_feed",
+        "packages": [],
+        "params": [
+          {
+            "name": "payload",
+            "type": "string"
+          },
+          {
+            "name": "defaults",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 1560
+    },
+    {
+      "id": "n_mu4ytvypl3jl9q5e",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 1560
+    },
+    {
+      "id": "n_mu4ytvypl7oi753q",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:payload",
+          "name": "payload",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:feed_format",
+          "name": "feed_format",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:defaults",
+          "name": "defaults",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "doc": "Parse one feed document into indicator records.\n\nPure: a string in, records out, no network and no database. That is what\nlets the parsers be tested against a real MISP event and a real ATT&CK\nbundle without standing anything up, and it is why the fetching lives in the\nexecution module where the egress policy already is.",
+        "isAsync": false,
+        "name": "parse_feed",
+        "params": [
+          {
+            "name": "payload",
+            "type": "string"
+          },
+          {
+            "name": "feed_format",
+            "type": "string"
+          },
+          {
+            "name": "defaults",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 1690
+    },
+    {
+      "id": "n_mu4ytvypl8qmflpj",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:payload",
+          "name": "payload",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:feed_format",
+          "name": "feed_format",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:defaults",
+          "name": "defaults",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "chosen = (feed_format or \"auto\").strip().lower()\nif chosen in (\"\", \"auto\", \"detect\"):\n    chosen = sniff_feed_format(payload)\n\nif chosen in (\"misp\", \"misp-json\", \"misp_json\"):\n    parsed = parse_misp_feed(payload, defaults or {})\nelif chosen in (\"stix\", \"stix2\", \"stix2.1\", \"taxii\", \"bundle\"):\n    parsed = parse_stix_feed(payload, defaults or {})\nelif chosen in (\"csv\", \"txt\", \"text\", \"plain\", \"list\", \"blocklist\"):\n    parsed = parse_csv_feed(payload, defaults or {})\nelif chosen == \"empty\":\n    parsed = {\"indicators\": [], \"follow\": [], \"rejected\": 0,\n              \"errors\": [\"the feed returned an empty document\"]}\nelse:\n    parsed = {\"indicators\": [], \"follow\": [], \"rejected\": 0,\n              \"errors\": [\"unsupported feed format %r\" % chosen]}\n\nparsed[\"format\"] = chosen\nreturn parsed",
+        "doc": "Parse one feed document into indicator records.\n\nPure: a string in, records out, no network and no database. That is what\nlets the parsers be tested against a real MISP event and a real ATT&CK\nbundle without standing anything up, and it is why the fetching lives in the\nexecution module where the egress policy already is.",
+        "form": "statements",
+        "language": "python",
+        "name": "dispatch_feed_parser",
+        "packages": [],
+        "params": [
+          {
+            "name": "payload",
+            "type": "string"
+          },
+          {
+            "name": "feed_format",
+            "type": "string"
+          },
+          {
+            "name": "defaults",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 1690
+    },
+    {
+      "id": "n_mu4ytvyplcip1fnk",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 1690
+    },
+    {
+      "id": "n_mu4ytvyplgp42uzd",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:org_id",
+          "name": "org_id",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:records",
+          "name": "records",
+          "type": "List<Map<string, Any>>"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:defaults",
+          "name": "defaults",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "doc": "Write parsed indicators to the intel table.\n\nThree things this deliberately does NOT do, each of which is a bug in some\nproduct shipping today:\n\n  * It does not touch sighting_count or last_seen. A feed listing an\n    indicator is not an observation of it in your estate, and inflating\n    prevalence with feed volume makes the number analysts triage by a lie.\n  * It does not re-verdict a whitelisted indicator. A feed that lists your\n    own mail relay must not be able to mark it malicious.\n  * It does not store a private or reserved address. Public block lists do\n    occasionally ship one, and the platform would then be holding an\n    indicator that matches the organisation's own network.",
+        "isAsync": false,
+        "name": "ingest_feed_batch",
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "org_id",
+            "type": "string"
+          },
+          {
+            "name": "records",
+            "type": "List<Map<string, Any>>"
+          },
+          {
+            "name": "defaults",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 1820
+    },
+    {
+      "id": "n_mu4ytvyplh6bn1le",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:org_id",
+          "name": "org_id",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:records",
+          "name": "records",
+          "type": "List<Map<string, Any>>"
+        },
+        {
+          "direction": "in",
+          "id": "p:defaults",
+          "name": "defaults",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "from soar.platform.ids import new_id\n\nimport ipaddress\n\nsupported = (\"ipv4\", \"ipv6\", \"domain\", \"url\", \"email\", \"md5\", \"sha1\",\n             \"sha256\", \"cve\")\nexpire_days = defaults.get(\"expire_days\")\nexpire_days = str(int(expire_days)) if expire_days else \"\"\n\nrows = []\ndropped = 0\nfor record in records or []:\n    kind = record.get(\"type\")\n    canonical = record.get(\"normalised\")\n    if kind not in supported or not canonical:\n        dropped += 1\n        continue\n\n    if kind in (\"ipv4\", \"ipv6\"):\n        try:\n            address = ipaddress.ip_address(canonical)\n        except ValueError:\n            dropped += 1\n            continue\n        if (address.is_private or address.is_loopback or address.is_link_local\n                or address.is_reserved or address.is_multicast\n                or address.is_unspecified):\n            dropped += 1\n            continue\n\n    rows.append([\n        new_id(\"ind\"), org_id, kind, record[\"value\"], canonical,\n        record.get(\"verdict\") or \"suspicious\",\n        record.get(\"confidence\"), record.get(\"tlp\"),\n        record.get(\"tags\") or [],\n        record.get(\"expires_at\"), expire_days, expire_days,\n    ])\n\nif not rows:\n    return {\"stored\": 0, \"dropped\": dropped}\n\ndb.execute_many(\n    \"INSERT INTO indicator (id, org_id, type, value, value_normalised, \"\n    \"verdict, confidence, tlp, tags, expires_at) \"\n    \"VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s, COALESCE(%s::timestamptz, \"\n    \"CASE WHEN %s <> '' THEN now() + (%s || ' days')::interval END)) \"\n    \"ON CONFLICT (org_id, type, value_normalised) DO UPDATE SET \"\n    \"  verdict = CASE WHEN indicator.is_whitelisted THEN indicator.verdict \"\n    \"                 ELSE EXCLUDED.verdict END, \"\n    \"  confidence = GREATEST(indicator.confidence, EXCLUDED.confidence), \"\n    \"  tlp = COALESCE(EXCLUDED.tlp, indicator.tlp), \"\n    \"  tags = ARRAY(SELECT DISTINCT unnest(indicator.tags || EXCLUDED.tags)), \"\n    \"  expires_at = GREATEST(indicator.expires_at, EXCLUDED.expires_at)\",\n    rows, org_id,\n)\nreturn {\"stored\": len(rows), \"dropped\": dropped}",
+        "doc": "Write parsed indicators to the intel table.\n\nThree things this deliberately does NOT do, each of which is a bug in some\nproduct shipping today:\n\n  * It does not touch sighting_count or last_seen. A feed listing an\n    indicator is not an observation of it in your estate, and inflating\n    prevalence with feed volume makes the number analysts triage by a lie.\n  * It does not re-verdict a whitelisted indicator. A feed that lists your\n    own mail relay must not be able to mark it malicious.\n  * It does not store a private or reserved address. Public block lists do\n    occasionally ship one, and the platform would then be holding an\n    indicator that matches the organisation's own network.",
+        "form": "statements",
+        "language": "python",
+        "name": "store_feed_indicators",
+        "packages": [],
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "org_id",
+            "type": "string"
+          },
+          {
+            "name": "records",
+            "type": "List<Map<string, Any>>"
+          },
+          {
+            "name": "defaults",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 1820
+    },
+    {
+      "id": "n_mu4ytvyplm0u2tzm",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 1820
+    }
+  ],
+  "style": "data-flow",
+  "variables": []
+}

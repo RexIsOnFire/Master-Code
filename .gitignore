@@ -1,0 +1,23 @@
+# Build output. Every generated tree is reproducible from the graphs.
+build/
+node_modules/
+
+# Preserved regions that lost their home during a regenerate. Review, then delete.
+*.orphaned
+
+# Language toolchain leavings inside example projects.
+__pycache__/
+*.pyc
+target/
+bin/
+obj/
+sources.txt
+
+# Launcher build output. Rebuild with launcher\build.ps1
+dist/
+launcher/bin/
+launcher/obj/
+MasterCode.exe
+
+# Deployment secrets; only .env.example is committed
+.env

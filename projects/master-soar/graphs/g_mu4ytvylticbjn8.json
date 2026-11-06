@@ -1,0 +1,620 @@
+{
+  "edges": [
+    {
+      "from": {
+        "node": "n_mu4ytvymvv61fct",
+        "port": "out"
+      },
+      "id": "e_mu4ytvym10yaksta",
+      "to": {
+        "node": "n_mu4ytvymx1lypy6",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvym119s4bfp",
+        "port": "p:year"
+      },
+      "id": "e_mu4ytvym1384iwb6",
+      "to": {
+        "node": "n_mu4ytvym12x4vuch",
+        "port": "p:year"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvym119s4bfp",
+        "port": "p:sequence"
+      },
+      "id": "e_mu4ytvym14rg1o2h",
+      "to": {
+        "node": "n_mu4ytvym12x4vuch",
+        "port": "p:sequence"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvym12x4vuch",
+        "port": "result"
+      },
+      "id": "e_mu4ytvym16p0vait",
+      "to": {
+        "node": "n_mu4ytvym151bbhra",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvym119s4bfp",
+        "port": "out"
+      },
+      "id": "e_mu4ytvym17x1bjxf",
+      "to": {
+        "node": "n_mu4ytvym12x4vuch",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvym12x4vuch",
+        "port": "out"
+      },
+      "id": "e_mu4ytvym18vs6mmp",
+      "to": {
+        "node": "n_mu4ytvym151bbhra",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvym1apz6dcg",
+        "port": "result"
+      },
+      "id": "e_mu4ytvym1c2qk0p0",
+      "to": {
+        "node": "n_mu4ytvym1bian7i7",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvym19ia2un1",
+        "port": "out"
+      },
+      "id": "e_mu4ytvym1diknrez",
+      "to": {
+        "node": "n_mu4ytvym1apz6dcg",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvym1apz6dcg",
+        "port": "out"
+      },
+      "id": "e_mu4ytvym1epn4edo",
+      "to": {
+        "node": "n_mu4ytvym1bian7i7",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvym1f96tr2g",
+        "port": "p:hours"
+      },
+      "id": "e_mu4ytvym1h31fuon",
+      "to": {
+        "node": "n_mu4ytvym1grkg7by",
+        "port": "p:hours"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvym1grkg7by",
+        "port": "result"
+      },
+      "id": "e_mu4ytvym1jkentoq",
+      "to": {
+        "node": "n_mu4ytvym1ijhmo9h",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvym1f96tr2g",
+        "port": "out"
+      },
+      "id": "e_mu4ytvym1ki1zmmo",
+      "to": {
+        "node": "n_mu4ytvym1grkg7by",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvym1grkg7by",
+        "port": "out"
+      },
+      "id": "e_mu4ytvym1lvoa9dh",
+      "to": {
+        "node": "n_mu4ytvym1ijhmo9h",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvymufjaww2",
+        "port": "p:prefix"
+      },
+      "id": "e_mu4ytvymwsr1417",
+      "to": {
+        "node": "n_mu4ytvymvv61fct",
+        "port": "p:prefix"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvymvv61fct",
+        "port": "result"
+      },
+      "id": "e_mu4ytvymy3ank7b",
+      "to": {
+        "node": "n_mu4ytvymx1lypy6",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvymufjaww2",
+        "port": "out"
+      },
+      "id": "e_mu4ytvymz4fpu2e",
+      "to": {
+        "node": "n_mu4ytvymvv61fct",
+        "port": "in"
+      }
+    }
+  ],
+  "fileId": "file_mu4ytvylsckcd5g",
+  "id": "g_mu4ytvylticbjn8",
+  "name": "identifiers",
+  "nodes": [
+    {
+      "id": "n_mu4ytvym119s4bfp",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:year",
+          "name": "year",
+          "type": "i64"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:sequence",
+          "name": "sequence",
+          "type": "i64"
+        }
+      ],
+      "props": {
+        "doc": "The human-facing execution label: EXEC-2026-000123.",
+        "isAsync": false,
+        "name": "execution_label",
+        "params": [
+          {
+            "name": "year",
+            "type": "i64"
+          },
+          {
+            "name": "sequence",
+            "type": "i64"
+          }
+        ],
+        "returns": "string",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvym12x4vuch",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:year",
+          "name": "year",
+          "type": "i64"
+        },
+        {
+          "direction": "in",
+          "id": "p:sequence",
+          "name": "sequence",
+          "type": "i64"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "return \"EXEC-%04d-%06d\" % (int(year), int(sequence))",
+        "doc": "The human-facing execution label: EXEC-2026-000123.",
+        "form": "statements",
+        "language": "python",
+        "name": "format_execution_label",
+        "packages": [],
+        "params": [
+          {
+            "name": "year",
+            "type": "i64"
+          },
+          {
+            "name": "sequence",
+            "type": "i64"
+          }
+        ],
+        "returns": "string"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvym151bbhra",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvym19ia2un1",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "doc": "UTC, ISO 8601, microseconds. One clock, called from one place.",
+        "isAsync": false,
+        "name": "now_iso",
+        "params": [],
+        "returns": "string",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvym1apz6dcg",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "capabilities": [
+          "time"
+        ],
+        "code": "import datetime\n\nreturn datetime.datetime.now(datetime.timezone.utc).isoformat()",
+        "doc": "UTC, ISO 8601, microseconds. One clock, called from one place.",
+        "form": "statements",
+        "language": "python",
+        "name": "utc_now_iso",
+        "packages": [],
+        "params": [],
+        "returns": "string"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvym1bian7i7",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvym1f96tr2g",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:hours",
+          "name": "hours",
+          "type": "i64"
+        }
+      ],
+      "props": {
+        "doc": "A point in the past, in the same format every watermark is written in. Used to give a source that has never polled a starting point that is not the beginning of time.",
+        "isAsync": false,
+        "name": "iso_hours_ago",
+        "params": [
+          {
+            "name": "hours",
+            "type": "i64"
+          }
+        ],
+        "returns": "string",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvym1grkg7by",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:hours",
+          "name": "hours",
+          "type": "i64"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "capabilities": [
+          "time"
+        ],
+        "code": "import datetime\n\nmoment = (datetime.datetime.now(datetime.timezone.utc)\n          - datetime.timedelta(hours=hours))\nreturn moment.isoformat()",
+        "doc": "A point in the past, in the same format every watermark is written in. Used to give a source that has never polled a starting point that is not the beginning of time.",
+        "form": "statements",
+        "language": "python",
+        "name": "utc_hours_ago_iso",
+        "packages": [],
+        "params": [
+          {
+            "name": "hours",
+            "type": "i64"
+          }
+        ],
+        "returns": "string"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvym1ijhmo9h",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvymufjaww2",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:prefix",
+          "name": "prefix",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "doc": "A sortable, type-revealing identifier: inc_01J9XК..., exec_01J9...",
+        "isAsync": false,
+        "name": "new_id",
+        "params": [
+          {
+            "name": "prefix",
+            "type": "string"
+          }
+        ],
+        "returns": "string",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvymvv61fct",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:prefix",
+          "name": "prefix",
+          "type": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "capabilities": [
+          "random",
+          "time"
+        ],
+        "code": "import os\nimport time\n\nALPHABET = \"0123456789ABCDEFGHJKMNPQRSTVWXYZ\"\n\n# Crockford base32 over 48 bits of millisecond time and 80 bits of entropy.\n# Sortable by creation, safe in a URL, and the prefix says what it is when\n# it turns up alone in a log line a year later.\nvalue = (int(time.time() * 1000) << 80) | int.from_bytes(os.urandom(10), \"big\")\nout = []\nfor _ in range(26):\n    out.append(ALPHABET[value & 0x1F])\n    value >>= 5\nreturn prefix + \"_\" + \"\".join(reversed(out))",
+        "doc": "A sortable, type-revealing identifier: inc_01J9XК..., exec_01J9...",
+        "form": "statements",
+        "language": "python",
+        "name": "make_ulid",
+        "packages": [],
+        "params": [
+          {
+            "name": "prefix",
+            "type": "string"
+          }
+        ],
+        "returns": "string"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvymx1lypy6",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 390
+    }
+  ],
+  "style": "functional",
+  "variables": []
+}

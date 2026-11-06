@@ -1,0 +1,857 @@
+{
+  "breakpoints": [
+    {
+      "maxWidth": 640,
+      "name": "mobile"
+    },
+    {
+      "maxWidth": 1024,
+      "minWidth": 641,
+      "name": "tablet"
+    },
+    {
+      "minWidth": 1025,
+      "name": "desktop"
+    }
+  ],
+  "lang": "en",
+  "meta": {
+    "viewport": "width=device-width, initial-scale=1"
+  },
+  "root": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "classes": [
+                "brand-mark"
+              ],
+              "id": "brand-mark",
+              "kind": "label",
+              "text": "//"
+            },
+            {
+              "classes": [
+                "brand-name"
+              ],
+              "id": "brand-name",
+              "kind": "label",
+              "text": "MASTER SOAR"
+            }
+          ],
+          "classes": [
+            "brand"
+          ],
+          "id": "brand",
+          "kind": "panel"
+        },
+        {
+          "children": [
+            {
+              "attrs": {
+                "data-key": "g l",
+                "data-permission": "clients.read",
+                "data-view": "clients",
+                "hidden": "hidden",
+                "href": "#clients"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-clients",
+              "kind": "link",
+              "text": "Clients"
+            },
+            {
+              "attrs": {
+                "data-key": "g d",
+                "data-permission": "incidents.read",
+                "data-view": "dashboard",
+                "hidden": "hidden",
+                "href": "#dashboard"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-dashboard",
+              "kind": "link",
+              "text": "Dashboard"
+            },
+            {
+              "attrs": {
+                "data-key": "g i",
+                "data-permission": "incidents.read",
+                "data-view": "incidents",
+                "hidden": "hidden",
+                "href": "#incidents"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-incidents",
+              "kind": "link",
+              "text": "Incidents"
+            },
+            {
+              "attrs": {
+                "data-key": "g a",
+                "data-permission": "alerts.read",
+                "data-view": "alerts",
+                "hidden": "hidden",
+                "href": "#alerts"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-alerts",
+              "kind": "link",
+              "text": "Alerts"
+            },
+            {
+              "attrs": {
+                "data-key": "g c",
+                "data-permission": "cases.read",
+                "data-view": "cases",
+                "hidden": "hidden",
+                "href": "#cases"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-cases",
+              "kind": "link",
+              "text": "Cases"
+            },
+            {
+              "attrs": {
+                "data-key": "g p",
+                "data-permission": "playbooks.read",
+                "data-view": "playbooks",
+                "hidden": "hidden",
+                "href": "#playbooks"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-playbooks",
+              "kind": "link",
+              "text": "Playbooks"
+            },
+            {
+              "attrs": {
+                "data-key": "g m",
+                "data-permission": "commands.read",
+                "data-view": "commands",
+                "hidden": "hidden",
+                "href": "#commands"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-commands",
+              "kind": "link",
+              "text": "Commands"
+            },
+            {
+              "attrs": {
+                "data-key": "g n",
+                "data-permission": "integrations.read",
+                "data-view": "integrations",
+                "hidden": "hidden",
+                "href": "#integrations"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-integrations",
+              "kind": "link",
+              "text": "Integrations"
+            },
+            {
+              "attrs": {
+                "data-key": "g t",
+                "data-permission": "intel.read",
+                "data-view": "intel",
+                "hidden": "hidden",
+                "href": "#intel"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-intel",
+              "kind": "link",
+              "text": "Threat Intel"
+            },
+            {
+              "attrs": {
+                "data-key": "g h",
+                "data-permission": "hunts.read",
+                "data-view": "hunts",
+                "hidden": "hidden",
+                "href": "#hunts"
+              },
+              "classes": [
+                "nav-item",
+                "is-active"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-hunts",
+              "kind": "link",
+              "text": "Threat Hunting"
+            },
+            {
+              "attrs": {
+                "data-key": "g u",
+                "data-permission": "hunts.review",
+                "data-view": "findings",
+                "hidden": "hidden",
+                "href": "#findings"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-findings",
+              "kind": "link",
+              "text": "Hunt Findings"
+            },
+            {
+              "attrs": {
+                "data-key": "g s",
+                "data-permission": "incidents.read",
+                "data-view": "assets",
+                "hidden": "hidden",
+                "href": "#assets"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-assets",
+              "kind": "link",
+              "text": "Assets"
+            },
+            {
+              "attrs": {
+                "data-key": "g e",
+                "data-permission": "executions.read",
+                "data-view": "executions",
+                "hidden": "hidden",
+                "href": "#executions"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-executions",
+              "kind": "link",
+              "text": "Executions"
+            },
+            {
+              "attrs": {
+                "data-key": "g v",
+                "data-permission": "approvals.read",
+                "data-view": "approvals",
+                "hidden": "hidden",
+                "href": "#approvals"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-approvals",
+              "kind": "link",
+              "text": "Approvals"
+            },
+            {
+              "attrs": {
+                "data-key": "g r",
+                "data-permission": "reports.read",
+                "data-view": "reports",
+                "hidden": "hidden",
+                "href": "#reports"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-reports",
+              "kind": "link",
+              "text": "Reports"
+            },
+            {
+              "attrs": {
+                "data-key": "g y",
+                "data-permission": "admin.users",
+                "data-view": "admin",
+                "hidden": "hidden",
+                "href": "#admin"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-admin",
+              "kind": "link",
+              "text": "Administration"
+            }
+          ],
+          "classes": [
+            "nav"
+          ],
+          "id": "nav",
+          "kind": "menu"
+        },
+        {
+          "children": [
+            {
+              "attrs": {
+                "title": "Toggle theme (t)",
+                "type": "button"
+              },
+              "classes": [
+                "ghost",
+                "wide"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onToggleTheme"
+                }
+              ],
+              "id": "theme-toggle",
+              "kind": "button",
+              "name": "themeToggle",
+              "text": "Light / Dark"
+            },
+            {
+              "classes": [
+                "muted",
+                "tiny"
+              ],
+              "id": "build-id",
+              "kind": "label",
+              "text": "v0.1.0 · local"
+            }
+          ],
+          "classes": [
+            "rail-foot"
+          ],
+          "id": "rail-foot",
+          "kind": "panel"
+        }
+      ],
+      "classes": [
+        "rail"
+      ],
+      "id": "rail",
+      "kind": "panel"
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "attrs": {
+                "autocomplete": "off",
+                "placeholder": "Search incidents, indicators, hosts, executions…   (/ to focus, ⌘K for actions)",
+                "type": "search"
+              },
+              "classes": [
+                "omnibox"
+              ],
+              "events": [
+                {
+                  "event": "keydown",
+                  "handler": "onOmniboxKey"
+                }
+              ],
+              "id": "omnibox",
+              "kind": "textbox",
+              "name": "omnibox"
+            },
+            {
+              "children": [
+                {
+                  "classes": [
+                    "chip",
+                    "chip-client"
+                  ],
+                  "id": "active-client",
+                  "kind": "label",
+                  "name": "activeClient",
+                  "text": "—"
+                },
+                {
+                  "classes": [
+                    "chip"
+                  ],
+                  "id": "queue-depth",
+                  "kind": "label",
+                  "name": "queueDepth",
+                  "text": "queue —"
+                },
+                {
+                  "classes": [
+                    "chip"
+                  ],
+                  "id": "worker-state",
+                  "kind": "label",
+                  "name": "workerState",
+                  "text": "workers —"
+                },
+                {
+                  "classes": [
+                    "chip",
+                    "chip-attn"
+                  ],
+                  "id": "pending-approvals",
+                  "kind": "label",
+                  "name": "pendingApprovals",
+                  "text": "approvals —"
+                }
+              ],
+              "classes": [
+                "bar-status"
+              ],
+              "id": "bar-status",
+              "kind": "panel"
+            }
+          ],
+          "classes": [
+            "commandbar"
+          ],
+          "id": "commandbar",
+          "kind": "panel"
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "attrs": {
+                    "level": "1"
+                  },
+                  "classes": [
+                    "page-title"
+                  ],
+                  "id": "hunt-title",
+                  "kind": "heading",
+                  "text": "Threat Hunting"
+                },
+                {
+                  "children": [],
+                  "classes": [
+                    "grow"
+                  ],
+                  "id": "hunt-grow2",
+                  "kind": "panel"
+                },
+                {
+                  "classes": [
+                    "chip"
+                  ],
+                  "id": "hunt-total",
+                  "kind": "label",
+                  "name": "huntCount",
+                  "text": ""
+                },
+                {
+                  "attrs": {
+                    "type": "button"
+                  },
+                  "classes": [
+                    "accent"
+                  ],
+                  "events": [
+                    {
+                      "event": "click",
+                      "handler": "onNewHunt"
+                    }
+                  ],
+                  "id": "hunt-new",
+                  "kind": "button",
+                  "name": "newHunt",
+                  "text": "New hunt"
+                }
+              ],
+              "classes": [
+                "page-toolbar"
+              ],
+              "id": "hunt-head",
+              "kind": "panel"
+            },
+            {
+              "classes": [
+                "form-note"
+              ],
+              "id": "hunt-note",
+              "kind": "label",
+              "text": "A hunt is a query you wrote, held against one client and one of their tools, and run on a schedule. It is not a detection rule: what it finds goes to Hunt Findings for a person to read, and only a true positive becomes an alert."
+            },
+            {
+              "children": [],
+              "classes": [
+                "hunt-filters"
+              ],
+              "id": "hunt-filters",
+              "kind": "panel",
+              "name": "huntFilters"
+            },
+            {
+              "children": [],
+              "classes": [
+                "cover"
+              ],
+              "id": "hunt-coverage",
+              "kind": "panel",
+              "name": "huntCoverage"
+            },
+            {
+              "children": [],
+              "classes": [],
+              "id": "hunt-editor",
+              "kind": "panel",
+              "name": "huntEditor"
+            },
+            {
+              "children": [],
+              "classes": [],
+              "id": "hunt-list",
+              "kind": "panel",
+              "name": "huntList"
+            }
+          ],
+          "classes": [
+            "view"
+          ],
+          "id": "view",
+          "kind": "panel"
+        },
+        {
+          "children": [
+            {
+              "classes": [
+                "status-message"
+              ],
+              "id": "status-message",
+              "kind": "label",
+              "name": "statusMessage",
+              "text": "ready"
+            },
+            {
+              "classes": [
+                "status-clock"
+              ],
+              "id": "status-clock",
+              "kind": "label",
+              "name": "statusClock",
+              "text": ""
+            }
+          ],
+          "classes": [
+            "statusstrip"
+          ],
+          "id": "statusstrip",
+          "kind": "panel"
+        }
+      ],
+      "classes": [
+        "main"
+      ],
+      "id": "main",
+      "kind": "panel"
+    }
+  ],
+  "rules": [
+    {
+      "declarations": {
+        "align-items": "center",
+        "display": "flex",
+        "flex-wrap": "wrap",
+        "gap": "10px",
+        "margin-bottom": "14px"
+      },
+      "selector": ".hunt-filters"
+    },
+    {
+      "declarations": {
+        "background": "var(--sunken)",
+        "border": "1px solid var(--line)",
+        "color": "var(--ink)",
+        "font-family": "var(--mono)",
+        "font-size": "12px",
+        "min-width": "170px",
+        "padding": "5px 8px"
+      },
+      "selector": ".hunt-filters select"
+    },
+    {
+      "declarations": {
+        "display": "flex",
+        "flex-wrap": "wrap",
+        "gap": "3px",
+        "margin-bottom": "18px"
+      },
+      "selector": ".cover"
+    },
+    {
+      "declarations": {
+        "background": "var(--surface)",
+        "border": "1px solid var(--line)",
+        "min-width": "94px",
+        "padding": "6px 9px"
+      },
+      "selector": ".cover-cell"
+    },
+    {
+      "declarations": {
+        "border-style": "dashed",
+        "opacity": "0.55"
+      },
+      "selector": ".cover-cell.is-empty"
+    },
+    {
+      "declarations": {
+        "color": "var(--muted)",
+        "font-size": "10.5px",
+        "line-height": "1.3"
+      },
+      "selector": ".cover-tactic"
+    },
+    {
+      "declarations": {
+        "font-family": "var(--mono)",
+        "font-size": "16px",
+        "font-weight": "600"
+      },
+      "selector": ".cover-n"
+    },
+    {
+      "declarations": {
+        "background": "var(--surface)",
+        "border": "1px solid var(--line)",
+        "margin-bottom": "6px",
+        "padding": "10px 14px"
+      },
+      "selector": ".hunt"
+    },
+    {
+      "declarations": {
+        "align-items": "center",
+        "display": "flex",
+        "flex-wrap": "wrap",
+        "gap": "12px"
+      },
+      "selector": ".hunt-line"
+    },
+    {
+      "declarations": {
+        "font-weight": "600",
+        "min-width": "260px"
+      },
+      "selector": ".hunt-name"
+    },
+    {
+      "declarations": {
+        "color": "var(--muted)",
+        "font-family": "var(--mono)",
+        "font-size": "11px"
+      },
+      "selector": ".hunt-tag"
+    },
+    {
+      "declarations": {
+        "flex": "1"
+      },
+      "selector": ".hunt-grow"
+    },
+    {
+      "declarations": {
+        "border-top": "1px solid var(--line)",
+        "margin-top": "10px",
+        "padding-top": "10px"
+      },
+      "selector": ".hunt-form"
+    },
+    {
+      "declarations": {
+        "align-items": "flex-start",
+        "display": "flex",
+        "flex-wrap": "wrap",
+        "gap": "10px",
+        "margin-bottom": "8px"
+      },
+      "selector": ".hunt-field"
+    },
+    {
+      "declarations": {
+        "color": "var(--muted)",
+        "font-size": "11.5px",
+        "min-width": "150px",
+        "padding-top": "5px"
+      },
+      "selector": ".hunt-field label"
+    },
+    {
+      "declarations": {
+        "background": "var(--sunken)",
+        "border": "1px solid var(--line)",
+        "color": "var(--ink)",
+        "font-family": "var(--mono)",
+        "font-size": "12px",
+        "min-width": "320px",
+        "padding": "5px 8px"
+      },
+      "selector": ".hunt-field input, .hunt-field select, .hunt-field textarea"
+    },
+    {
+      "declarations": {
+        "line-height": "1.5",
+        "min-height": "190px",
+        "min-width": "560px"
+      },
+      "selector": ".hunt-field textarea"
+    },
+    {
+      "declarations": {
+        "color": "var(--muted)",
+        "font-size": "11px",
+        "line-height": "1.5",
+        "margin": "2px 0 10px 160px"
+      },
+      "selector": ".hunt-hint"
+    },
+    {
+      "declarations": {
+        "margin-bottom": "20px"
+      },
+      "selector": ".client-block"
+    },
+    {
+      "declarations": {
+        "align-items": "baseline",
+        "border-bottom": "1px solid var(--accent)",
+        "display": "flex",
+        "gap": "10px",
+        "margin-bottom": "8px",
+        "padding-bottom": "5px"
+      },
+      "selector": ".client-bar"
+    },
+    {
+      "declarations": {
+        "color": "var(--accent)",
+        "font-size": "13.5px",
+        "font-weight": "600"
+      },
+      "selector": ".client-bar .who"
+    },
+    {
+      "declarations": {
+        "color": "var(--muted)",
+        "font-family": "var(--mono)",
+        "font-size": "11px"
+      },
+      "selector": ".client-bar .tally"
+    }
+  ],
+  "scripts": [
+    "file_mu4ytvyz21chr7736",
+    "file_mu4ytvyz21eptt7la"
+  ],
+  "stylesheets": [
+    "file_mu4ytvyz21bnia7p5"
+  ],
+  "title": "Master SOAR — Threat Hunting"
+}

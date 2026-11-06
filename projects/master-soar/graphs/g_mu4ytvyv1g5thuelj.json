@@ -1,0 +1,624 @@
+{
+  "edges": [
+    {
+      "from": {
+        "node": "n_mu4ytvyv1g6u4bt3b",
+        "port": "p:db"
+      },
+      "id": "e_mu4ytvyv1g8oya0xm",
+      "to": {
+        "node": "n_mu4ytvyv1g74afdr0",
+        "port": "p:db"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1g6u4bt3b",
+        "port": "p:principal"
+      },
+      "id": "e_mu4ytvyv1g9kchxk9",
+      "to": {
+        "node": "n_mu4ytvyv1g74afdr0",
+        "port": "p:principal"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1g6u4bt3b",
+        "port": "p:incident_id"
+      },
+      "id": "e_mu4ytvyv1gaxd2ieb",
+      "to": {
+        "node": "n_mu4ytvyv1g74afdr0",
+        "port": "p:incident_id"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1g6u4bt3b",
+        "port": "p:purpose"
+      },
+      "id": "e_mu4ytvyv1gbwfkzlz",
+      "to": {
+        "node": "n_mu4ytvyv1g74afdr0",
+        "port": "p:purpose"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1g74afdr0",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyv1gd70t353",
+      "to": {
+        "node": "n_mu4ytvyv1gctfgjta",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1g6u4bt3b",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyv1gef20ksf",
+      "to": {
+        "node": "n_mu4ytvyv1g74afdr0",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1g74afdr0",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyv1gfo5tkmp",
+      "to": {
+        "node": "n_mu4ytvyv1gctfgjta",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1ggfsr7i5",
+        "port": "p:db"
+      },
+      "id": "e_mu4ytvyv1gibcpi4x",
+      "to": {
+        "node": "n_mu4ytvyv1ghpdv1wl",
+        "port": "p:db"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1ggfsr7i5",
+        "port": "p:session"
+      },
+      "id": "e_mu4ytvyv1gjdoe893",
+      "to": {
+        "node": "n_mu4ytvyv1ghpdv1wl",
+        "port": "p:session"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1ghpdv1wl",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyv1gl7ctee7",
+      "to": {
+        "node": "n_mu4ytvyv1gktcmpol",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1ggfsr7i5",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyv1gm8tn1vh",
+      "to": {
+        "node": "n_mu4ytvyv1ghpdv1wl",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1ghpdv1wl",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyv1gnjh0bl2",
+      "to": {
+        "node": "n_mu4ytvyv1gktcmpol",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1gogqt9p9",
+        "port": "p:db"
+      },
+      "id": "e_mu4ytvyv1gqb0jkux",
+      "to": {
+        "node": "n_mu4ytvyv1gp4j04u8",
+        "port": "p:db"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1gogqt9p9",
+        "port": "p:session"
+      },
+      "id": "e_mu4ytvyv1greniv3n",
+      "to": {
+        "node": "n_mu4ytvyv1gp4j04u8",
+        "port": "p:session"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1gp4j04u8",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyv1gtlw4bk4",
+      "to": {
+        "node": "n_mu4ytvyv1gs9xs8ux",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1gogqt9p9",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyv1gu93oap0",
+      "to": {
+        "node": "n_mu4ytvyv1gp4j04u8",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1gp4j04u8",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyv1gvfmga3c",
+      "to": {
+        "node": "n_mu4ytvyv1gs9xs8ux",
+        "port": "in"
+      }
+    }
+  ],
+  "fileId": "file_mu4ytvyv1g4gyh6by",
+  "id": "g_mu4ytvyv1g5thuelj",
+  "name": "AI session",
+  "nodes": [
+    {
+      "id": "n_mu4ytvyv1g6u4bt3b",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:principal",
+          "name": "principal",
+          "type": "Map<string, Any>"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:incident_id",
+          "name": "incident_id",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:purpose",
+          "name": "purpose",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "doc": "Open an AI session and freeze its capability.\n\nThe tool set and the effective permissions are computed here, before any\nincident content is read, and both are recorded on the session row - so the\naudit shows not only what the AI did but what it COULD have done.",
+        "isAsync": false,
+        "name": "open_ai_session",
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "principal",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "incident_id",
+            "type": "string"
+          },
+          {
+            "name": "purpose",
+            "type": "string"
+          }
+        ],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyv1g74afdr0",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:principal",
+          "name": "principal",
+          "type": "Map<string, Any>"
+        },
+        {
+          "direction": "in",
+          "id": "p:incident_id",
+          "name": "incident_id",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:purpose",
+          "name": "purpose",
+          "type": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "from soar.ai.tools import build_tool_set\nfrom soar.audit.log import record as audit_record\nfrom soar.identity.rbac import intersect_for_ai, require_permission\nfrom soar.platform.ids import new_id\n\nrequire_permission(principal, \"ai.use\")\norg_id = principal[\"org_id\"]\n\ntool_set = build_tool_set(db, principal, purpose)\neffective = intersect_for_ai(\n    principal.get(\"permissions\") or [],\n    [t[\"required_permission\"] for t in tool_set],\n)\n\nsession_id = new_id(\"ais\")\ndb.execute(\n    \"INSERT INTO ai_session (id, org_id, user_id, incident_id, purpose, \"\n    \"principal_permissions, started_at) VALUES (%s,%s,%s,%s,%s,%s, now())\",\n    [session_id, org_id, principal[\"id\"], incident_id or None, purpose, effective],\n    org_id,\n)\naudit_record(db, {\n    \"org_id\": org_id, \"actor_kind\": \"user\", \"actor_id\": principal[\"id\"],\n    \"action\": \"ai.session.opened\", \"target_kind\": \"ai_session\",\n    \"target_id\": session_id, \"ai_session_id\": session_id,\n    \"after\": {\"purpose\": purpose, \"tools\": [t[\"name\"] for t in tool_set],\n              \"permissions\": effective},\n    \"result\": \"success\",\n})\nreturn {\"id\": session_id, \"org_id\": org_id, \"user_id\": principal[\"id\"],\n        \"incident_id\": incident_id, \"purpose\": purpose,\n        \"permissions\": effective, \"tools\": tool_set}",
+        "doc": "Open an AI session and freeze its capability.\n\nThe tool set and the effective permissions are computed here, before any\nincident content is read, and both are recorded on the session row - so the\naudit shows not only what the AI did but what it COULD have done.",
+        "form": "statements",
+        "language": "python",
+        "name": "start_ai_session",
+        "packages": [],
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "principal",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "incident_id",
+            "type": "string"
+          },
+          {
+            "name": "purpose",
+            "type": "string"
+          }
+        ],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyv1gctfgjta",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyv1ggfsr7i5",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:session",
+          "name": "session",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "doc": "What the assistant knows, assembled from the platform.\n\nThis is why \"What can I do with this incident?\" has a truthful answer: the\ncatalogue of real commands and real integrations is supplied as data, so the\nmodel is not asked to remember a product surface it would otherwise invent.",
+        "isAsync": false,
+        "name": "context_for_incident",
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "session",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyv1ghpdv1wl",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:session",
+          "name": "session",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "org_id = session[\"org_id\"]\nincident_id = session.get(\"incident_id\")\nif not incident_id:\n    return {\"incident\": None, \"capabilities\": ai_capabilities(db, session)}\n\nreturn {\n    \"incident\": db.query(\n        \"SELECT id, number, title, severity, status, technique_ids, created_at \"\n        \"FROM incident WHERE id = %s\", [incident_id], org_id)[0],\n    \"alerts\": db.query(\n        \"SELECT id, source, title, severity, observed_at FROM alert \"\n        \"WHERE incident_id = %s ORDER BY observed_at\", [incident_id], org_id),\n    \"entities\": db.query(\n        \"SELECT entity_kind, entity_id, role FROM incident_entity \"\n        \"WHERE incident_id = %s\", [incident_id], org_id),\n    \"indicators\": db.query(\n        \"SELECT i.id, i.type, i.value, i.verdict, i.score FROM incident_indicator ii \"\n        \"JOIN indicator i ON i.id = ii.indicator_id WHERE ii.incident_id = %s\",\n        [incident_id], org_id),\n    \"timeline\": db.query(\n        \"SELECT at, kind, actor_kind, summary FROM timeline_entry \"\n        \"WHERE incident_id = %s ORDER BY seq DESC LIMIT 50\", [incident_id], org_id),\n    \"capabilities\": ai_capabilities(db, session),\n}",
+        "doc": "What the assistant knows, assembled from the platform.\n\nThis is why \"What can I do with this incident?\" has a truthful answer: the\ncatalogue of real commands and real integrations is supplied as data, so the\nmodel is not asked to remember a product surface it would otherwise invent.",
+        "form": "statements",
+        "language": "python",
+        "name": "assemble_ai_context",
+        "packages": [],
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "session",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyv1gktcmpol",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyv1gogqt9p9",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:session",
+          "name": "session",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "doc": "The real tools, commands, playbooks and integrations available to THIS principal right now. Nothing here is hypothetical, which is what stops a recommendation naming something that does not exist.",
+        "isAsync": false,
+        "name": "ai_capabilities",
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "session",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvyv1gp4j04u8",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:session",
+          "name": "session",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "org_id = session[\"org_id\"]\nreturn {\n    \"tools\": [{\"name\": t[\"name\"], \"description\": t[\"description\"],\n               \"risk_level\": t[\"risk_level\"],\n               \"requires_approval\": t[\"requires_approval\"]}\n              for t in session.get(\"tools\", [])],\n    \"playbooks\": db.query(\n        \"SELECT p.key, p.name, p.description FROM playbook p \"\n        \"JOIN playbook_version pv ON pv.id = p.current_version_id \"\n        \"WHERE p.org_id = %s AND pv.state = 'published'\", [org_id], org_id),\n    \"integrations\": db.query(\n        \"SELECT name, connector_id, health FROM integration \"\n        \"WHERE org_id = %s AND enabled\", [org_id], org_id),\n}",
+        "doc": "The real tools, commands, playbooks and integrations available to THIS principal right now. Nothing here is hypothetical, which is what stops a recommendation naming something that does not exist.",
+        "form": "statements",
+        "language": "python",
+        "name": "available_capabilities",
+        "packages": [],
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "session",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvyv1gs9xs8ux",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 260
+    }
+  ],
+  "style": "service",
+  "variables": []
+}

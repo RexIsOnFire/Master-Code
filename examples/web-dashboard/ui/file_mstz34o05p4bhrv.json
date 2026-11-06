@@ -1,0 +1,199 @@
+{
+  "breakpoints": [
+    {
+      "maxWidth": 640,
+      "name": "mobile"
+    },
+    {
+      "maxWidth": 1024,
+      "minWidth": 641,
+      "name": "tablet"
+    },
+    {
+      "minWidth": 1025,
+      "name": "desktop"
+    }
+  ],
+  "lang": "en",
+  "meta": {
+    "viewport": "width=device-width, initial-scale=1"
+  },
+  "root": [
+    {
+      "children": [
+        {
+          "attrs": {
+            "level": "1"
+          },
+          "id": "title",
+          "kind": "heading",
+          "text": "Dashboard"
+        }
+      ],
+      "classes": [
+        "header"
+      ],
+      "id": "header",
+      "kind": "panel"
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "id": "counter-label",
+              "kind": "label",
+              "name": "counterLabel",
+              "text": "0"
+            },
+            {
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onIncrement"
+                }
+              ],
+              "id": "increment",
+              "kind": "button",
+              "name": "increment",
+              "text": "Add one"
+            }
+          ],
+          "id": "counter-card",
+          "kind": "card"
+        },
+        {
+          "children": [
+            {
+              "attrs": {
+                "placeholder": "Type something"
+              },
+              "id": "echo-input",
+              "kind": "textbox",
+              "name": "echoInput"
+            },
+            {
+              "id": "echo-output",
+              "kind": "paragraph",
+              "name": "echoOutput",
+              "text": ""
+            },
+            {
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onEcho"
+                }
+              ],
+              "id": "echo-button",
+              "kind": "button",
+              "name": "echoButton",
+              "text": "Echo"
+            }
+          ],
+          "id": "echo-card",
+          "kind": "card"
+        }
+      ],
+      "classes": [
+        "cards"
+      ],
+      "id": "main",
+      "kind": "grid"
+    },
+    {
+      "children": [
+        {
+          "id": "note",
+          "kind": "label",
+          "text": "Built with Master Code."
+        }
+      ],
+      "classes": [
+        "footer"
+      ],
+      "id": "footer",
+      "kind": "panel"
+    }
+  ],
+  "rules": [
+    {
+      "declarations": {
+        "--accent": "#2563eb",
+        "--ink": "#1a1a1a",
+        "--line": "#e2e8f0",
+        "--surface": "#ffffff"
+      },
+      "selector": ":root"
+    },
+    {
+      "declarations": {
+        "background": "#f8fafc",
+        "color": "var(--ink)",
+        "font-family": "system-ui, sans-serif",
+        "margin": "0"
+      },
+      "selector": "body"
+    },
+    {
+      "declarations": {
+        "background": "var(--surface)",
+        "border-bottom": "1px solid var(--line)",
+        "padding": "24px"
+      },
+      "selector": ".header"
+    },
+    {
+      "declarations": {
+        "display": "grid",
+        "gap": "16px",
+        "grid-template-columns": "repeat(auto-fit, minmax(260px, 1fr))",
+        "padding": "24px"
+      },
+      "selector": ".cards"
+    },
+    {
+      "declarations": {
+        "background": "var(--surface)",
+        "border": "1px solid var(--line)",
+        "border-radius": "10px",
+        "padding": "16px"
+      },
+      "selector": "article"
+    },
+    {
+      "declarations": {
+        "background": "var(--accent)",
+        "border": "0",
+        "border-radius": "6px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "padding": "8px 14px"
+      },
+      "selector": "button"
+    },
+    {
+      "declarations": {
+        "color": "#64748b",
+        "font-size": "14px",
+        "padding": "16px 24px"
+      },
+      "selector": ".footer"
+    },
+    {
+      "declarations": {
+        "grid-template-columns": "1fr",
+        "padding": "12px"
+      },
+      "media": "(max-width: 640px)",
+      "selector": ".cards"
+    }
+  ],
+  "scripts": [
+    "file_mstz34o03vfuosh"
+  ],
+  "stylesheets": [
+    "file_mstz34o0225ic5w"
+  ],
+  "title": "Dashboard"
+}

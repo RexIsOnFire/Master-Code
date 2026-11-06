@@ -1,0 +1,127 @@
+{
+  "edges": [
+    {
+      "from": {
+        "node": "n_mstz34cehvro3j3",
+        "port": "p:store"
+      },
+      "id": "e_mstz34cekpqjm08",
+      "to": {
+        "node": "n_mstz34cei1xi982",
+        "port": "target"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz34cei1xi982",
+        "port": "value"
+      },
+      "id": "e_mstz34celdv4212",
+      "to": {
+        "node": "n_mstz34cejiu1al4",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz34cehvro3j3",
+        "port": "out"
+      },
+      "id": "e_mstz34cemicxd5v",
+      "to": {
+        "node": "n_mstz34cejiu1al4",
+        "port": "in"
+      }
+    }
+  ],
+  "fileId": "file_mstz34cdfx3onfu",
+  "id": "g_mstz34cegxz705s",
+  "name": "routes",
+  "nodes": [
+    {
+      "id": "n_mstz34cehvro3j3",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:store",
+          "name": "store",
+          "type": "Repository"
+        }
+      ],
+      "props": {
+        "doc": "GET /items - every stored item.",
+        "isAsync": false,
+        "name": "list_items",
+        "params": [
+          {
+            "name": "store",
+            "type": "Repository"
+          }
+        ],
+        "returns": "List<Map<string, Any>>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "n_mstz34cei1xi982",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "target",
+          "name": "target",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "value",
+          "name": "value",
+          "type": "List<Map<string, Any>>"
+        }
+      ],
+      "props": {
+        "field": "items",
+        "type": "List<Map<string, Any>>"
+      },
+      "type": "oop/get-field",
+      "x": 0,
+      "y": 130
+    },
+    {
+      "id": "n_mstz34cejiu1al4",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 250,
+      "y": 0
+    }
+  ],
+  "style": "event-driven",
+  "variables": []
+}

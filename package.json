@@ -1,0 +1,28 @@
+{
+  "name": "mastercode",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Master Code - a visual compiler, IDE and multi-language application builder",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.6.0"
+  },
+  "bin": {
+    "mcode": "./packages/cli/src/main.ts"
+  },
+  "imports": {
+    "#core/*": "./packages/core/src/*",
+    "#cli/*": "./packages/cli/src/*",
+    "#server/*": "./packages/server/src/*"
+  },
+  "scripts": {
+    "mcode": "node ./packages/cli/src/main.ts",
+    "ide": "node ./packages/server/src/main.ts",
+    "test": "node --test --experimental-test-module-mocks tests/",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "doctor": "node ./packages/cli/src/main.ts doctor"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

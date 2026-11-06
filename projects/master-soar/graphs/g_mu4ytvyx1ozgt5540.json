@@ -1,0 +1,563 @@
+{
+  "edges": [
+    {
+      "from": {
+        "node": "n_mu4ytvyx1p1org4t9",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyx1p3bnm1u7",
+      "to": {
+        "node": "n_mu4ytvyx1p2j17bfb",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1p01z17cu",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyx1p4lhv9g1",
+      "to": {
+        "node": "n_mu4ytvyx1p1org4t9",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1p1org4t9",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyx1p55cncs8",
+      "to": {
+        "node": "n_mu4ytvyx1p2j17bfb",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1p6jquux4",
+        "port": "p:db"
+      },
+      "id": "e_mu4ytvyx1p8sscv6p",
+      "to": {
+        "node": "n_mu4ytvyx1p7tb9gsw",
+        "port": "p:db"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1p6jquux4",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyx1p928klsf",
+      "to": {
+        "node": "n_mu4ytvyx1p7tb9gsw",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1paugu53l",
+        "port": "p:db"
+      },
+      "id": "e_mu4ytvyx1pcwluyir",
+      "to": {
+        "node": "n_mu4ytvyx1pbgu6meh",
+        "port": "p:db"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1pbgu6meh",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyx1penbfuwg",
+      "to": {
+        "node": "n_mu4ytvyx1pd2x31b3",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1paugu53l",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyx1pfaoehac",
+      "to": {
+        "node": "n_mu4ytvyx1pbgu6meh",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1pbgu6meh",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyx1pgrqxblb",
+      "to": {
+        "node": "n_mu4ytvyx1pd2x31b3",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1ph08l2ns",
+        "port": "p:db"
+      },
+      "id": "e_mu4ytvyx1pj2kpnw3",
+      "to": {
+        "node": "n_mu4ytvyx1piscks7t",
+        "port": "p:db"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1ph08l2ns",
+        "port": "p:name"
+      },
+      "id": "e_mu4ytvyx1pkagjmbj",
+      "to": {
+        "node": "n_mu4ytvyx1piscks7t",
+        "port": "p:name"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1piscks7t",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyx1pmjk0r9o",
+      "to": {
+        "node": "n_mu4ytvyx1pl5t2xib",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1ph08l2ns",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyx1pnc2ygdr",
+      "to": {
+        "node": "n_mu4ytvyx1piscks7t",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1piscks7t",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyx1pofl424r",
+      "to": {
+        "node": "n_mu4ytvyx1pl5t2xib",
+        "port": "in"
+      }
+    }
+  ],
+  "fileId": "file_mu4ytvyx1oywehjy1",
+  "id": "g_mu4ytvyx1ozgt5540",
+  "name": "operational schema",
+  "nodes": [
+    {
+      "id": "n_mu4ytvyx1p01z17cu",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "doc": "Migrations 6 to 19: cases, tasks, API tokens, workers, platform alerts, the\nAI tables, the columns intel feeds and ATT&CK reference data need, the\nTAXII watermark and collection cache, the MFA secret column, and the\nruntime role privileges, and the client tenancy this is a managed service for.\n\nSeparate from migrations() only because they were written later. The ordering\nis what matters and it is preserved - a migration list is append-only for the\nsame reason an audit log is.",
+        "isAsync": false,
+        "name": "extra_migrations",
+        "params": [],
+        "returns": "List<Map<string, Any>>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyx1p1org4t9",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "List<Map<string, Any>>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "return [\n    {\n        \"version\": 6,\n        \"name\": \"cases-tasks-and-operations\",\n        \"sql\": [\n            \"\"\"CREATE TABLE app_case (\n                 id text PRIMARY KEY, org_id text NOT NULL,\n                 number bigint NOT NULL, title text NOT NULL, summary text,\n                 status text NOT NULL DEFAULT 'open',\n                 owner_id text, team_id text, severity text,\n                 template_id text, tags text[] NOT NULL DEFAULT '{}',\n                 opened_at timestamptz NOT NULL DEFAULT now(),\n                 closed_at timestamptz,\n                 UNIQUE (org_id, number))\"\"\",\n            \"\"\"CREATE TABLE case_incident (\n                 case_id text NOT NULL REFERENCES app_case(id) ON DELETE CASCADE,\n                 incident_id text NOT NULL REFERENCES incident(id) ON DELETE CASCADE,\n                 PRIMARY KEY (case_id, incident_id))\"\"\",\n            \"\"\"CREATE TABLE task (\n                 id text PRIMARY KEY, org_id text NOT NULL,\n                 case_id text REFERENCES app_case(id) ON DELETE CASCADE,\n                 incident_id text REFERENCES incident(id) ON DELETE CASCADE,\n                 title text NOT NULL, description text,\n                 status text NOT NULL DEFAULT 'open',\n                 assignee_id text, assignee_role text,\n                 due_at timestamptz, completed_at timestamptz,\n                 order_index int NOT NULL DEFAULT 0,\n                 playbook_step_id text,\n                 created_at timestamptz NOT NULL DEFAULT now(),\n                 CHECK (case_id IS NOT NULL OR incident_id IS NOT NULL))\"\"\",\n            \"\"\"CREATE TABLE note (\n                 id text PRIMARY KEY, org_id text NOT NULL,\n                 parent_kind text NOT NULL, parent_id text NOT NULL,\n                 author_id text NOT NULL, body text NOT NULL,\n                 created_at timestamptz NOT NULL DEFAULT now(),\n                 edited_at timestamptz,\n                 body_history jsonb NOT NULL DEFAULT '[]')\"\"\",\n            \"\"\"CREATE TABLE evidence (\n                 id text PRIMARY KEY, org_id text NOT NULL,\n                 incident_id text REFERENCES incident(id) ON DELETE CASCADE,\n                 case_id text REFERENCES app_case(id) ON DELETE CASCADE,\n                 kind text NOT NULL, object_key text NOT NULL,\n                 sha256 bytea NOT NULL, size_bytes bigint NOT NULL,\n                 content_type text, original_filename text,\n                 collected_at timestamptz NOT NULL DEFAULT now(),\n                 collected_by text,\n                 chain_of_custody jsonb NOT NULL DEFAULT '[]',\n                 malicious boolean)\"\"\",\n            \"\"\"CREATE TABLE api_token (\n                 id text PRIMARY KEY, org_id text NOT NULL,\n                 name text NOT NULL, token_hash text NOT NULL UNIQUE,\n                 scopes text[] NOT NULL DEFAULT '{}',\n                 created_by text,\n                 created_at timestamptz NOT NULL DEFAULT now(),\n                 expires_at timestamptz, last_used_at timestamptz,\n                 revoked_at timestamptz)\"\"\",\n            \"\"\"CREATE TABLE worker (\n                 id text PRIMARY KEY, org_id text,\n                 pool text NOT NULL, hostname text, pid int, version text,\n                 started_at timestamptz NOT NULL DEFAULT now(),\n                 last_heartbeat_at timestamptz NOT NULL DEFAULT now(),\n                 jobs_completed bigint NOT NULL DEFAULT 0,\n                 jobs_failed bigint NOT NULL DEFAULT 0,\n                 status text NOT NULL DEFAULT 'up')\"\"\",\n            \"\"\"CREATE TABLE platform_alert (\n                 id text PRIMARY KEY, org_id text NOT NULL,\n                 kind text NOT NULL, severity text NOT NULL,\n                 detail jsonb NOT NULL DEFAULT '{}',\n                 raised_at timestamptz NOT NULL DEFAULT now(),\n                 cleared_at timestamptz)\"\"\",\n            \"\"\"CREATE TABLE schedule (\n                 id text PRIMARY KEY, org_id text NOT NULL,\n                 kind text NOT NULL, cron text NOT NULL,\n                 timezone text NOT NULL DEFAULT 'UTC',\n                 target jsonb NOT NULL DEFAULT '{}',\n                 enabled boolean NOT NULL DEFAULT true,\n                 last_run_at timestamptz, next_run_at timestamptz,\n                 last_status text)\"\"\",\n            \"\"\"CREATE TABLE feed (\n                 id text PRIMARY KEY, org_id text NOT NULL,\n                 name text NOT NULL, url text NOT NULL,\n                 format text NOT NULL, credential_id text,\n                 schedule text, enabled boolean NOT NULL DEFAULT true,\n                 last_fetch_at timestamptz, last_status text,\n                 indicator_count bigint NOT NULL DEFAULT 0,\n                 default_confidence smallint, default_tlp text,\n                 auto_expire_days int)\"\"\",\n            \"\"\"CREATE TABLE ingest_source (\n                 id text PRIMARY KEY, org_id text NOT NULL,\n                 name text NOT NULL, connector_id text NOT NULL,\n                 secret bytea NOT NULL, mapping jsonb,\n                 enabled boolean NOT NULL DEFAULT true,\n                 last_seen_at timestamptz,\n                 UNIQUE (org_id, name))\"\"\",\n            \"\"\"CREATE TABLE approval_policy (\n                 id text PRIMARY KEY, org_id text NOT NULL,\n                 name text NOT NULL, priority int NOT NULL DEFAULT 500,\n                 enabled boolean NOT NULL DEFAULT true,\n                 match jsonb NOT NULL DEFAULT '{}',\n                 effect text NOT NULL,\n                 required_approvals smallint NOT NULL DEFAULT 1,\n                 required_permission text,\n                 separation_of_duty boolean NOT NULL DEFAULT true,\n                 timeout_s int NOT NULL DEFAULT 1800,\n                 on_timeout text NOT NULL DEFAULT 'reject')\"\"\",\n            \"CREATE INDEX task_open ON task (org_id, status, due_at)\",\n            \"CREATE INDEX worker_alive ON worker (pool, last_heartbeat_at DESC)\",\n            \"CREATE INDEX alert_open ON platform_alert (org_id, cleared_at, raised_at DESC)\",\n        ],\n    },\n    {\n        \"version\": 7,\n        \"name\": \"ai\",\n        \"sql\": [\n            \"\"\"CREATE TABLE ai_provider (\n                 id text PRIMARY KEY, org_id text NOT NULL,\n                 kind text NOT NULL, name text NOT NULL,\n                 base_url text, credential_id text REFERENCES credential(id),\n                 enabled boolean NOT NULL DEFAULT true,\n                 health text NOT NULL DEFAULT 'unknown',\n                 models jsonb NOT NULL DEFAULT '[]',\n                 UNIQUE (org_id, name))\"\"\",\n            \"\"\"CREATE TABLE ai_model_role (\n                 org_id text NOT NULL, role text NOT NULL,\n                 provider_id text NOT NULL REFERENCES ai_provider(id) ON DELETE CASCADE,\n                 model text NOT NULL,\n                 params jsonb NOT NULL DEFAULT '{}',\n                 PRIMARY KEY (org_id, role))\"\"\",\n            \"\"\"CREATE TABLE ai_tool (\n                 id text PRIMARY KEY, org_id text,\n                 name text NOT NULL, description text NOT NULL,\n                 input_schema jsonb NOT NULL, output_schema jsonb NOT NULL,\n                 implementation text NOT NULL,\n                 risk_level text NOT NULL,\n                 required_permission text NOT NULL,\n                 requires_approval boolean NOT NULL DEFAULT false,\n                 timeout_ms int NOT NULL DEFAULT 30000,\n                 max_calls_per_turn smallint NOT NULL DEFAULT 10,\n                 scope text NOT NULL DEFAULT 'incident',\n                 enabled boolean NOT NULL DEFAULT true,\n                 UNIQUE (org_id, name))\"\"\",\n            \"\"\"CREATE TABLE ai_tool_set (\n                 org_id text NOT NULL, purpose text NOT NULL,\n                 tool_name text NOT NULL,\n                 PRIMARY KEY (org_id, purpose, tool_name))\"\"\",\n            \"\"\"CREATE TABLE ai_session (\n                 id text PRIMARY KEY, org_id text NOT NULL,\n                 user_id text NOT NULL, incident_id text, case_id text,\n                 purpose text NOT NULL,\n                 principal_permissions text[] NOT NULL DEFAULT '{}',\n                 started_at timestamptz NOT NULL DEFAULT now(),\n                 ended_at timestamptz,\n                 token_in bigint NOT NULL DEFAULT 0,\n                 token_out bigint NOT NULL DEFAULT 0,\n                 cost_estimate numeric(12,4))\"\"\",\n            \"\"\"CREATE TABLE ai_turn (\n                 id text PRIMARY KEY,\n                 session_id text NOT NULL REFERENCES ai_session(id) ON DELETE CASCADE,\n                 sequence int NOT NULL, role text NOT NULL,\n                 model text, provider_id text,\n                 prompt_sha256 bytea, content_ref text,\n                 tokens_in int NOT NULL DEFAULT 0,\n                 tokens_out int NOT NULL DEFAULT 0,\n                 latency_ms int, finish_reason text,\n                 injection_flags jsonb NOT NULL DEFAULT '[]',\n                 at timestamptz NOT NULL DEFAULT now(),\n                 UNIQUE (session_id, sequence))\"\"\",\n            \"\"\"CREATE TABLE ai_tool_call (\n                 id text PRIMARY KEY,\n                 turn_id text NOT NULL REFERENCES ai_turn(id) ON DELETE CASCADE,\n                 tool_id text, tool_name text NOT NULL,\n                 arguments jsonb NOT NULL DEFAULT '{}',\n                 status text NOT NULL, approval_id text, execution_id text,\n                 result_ref text, duration_ms int, error text)\"\"\",\n            \"\"\"CREATE TABLE ai_analysis (\n                 id text PRIMARY KEY, org_id text NOT NULL,\n                 incident_id text REFERENCES incident(id) ON DELETE CASCADE,\n                 kind text NOT NULL, session_id text, model text,\n                 structured jsonb NOT NULL,\n                 confidence numeric(4,3),\n                 created_at timestamptz NOT NULL DEFAULT now(),\n                 accepted_by text, accepted_at timestamptz,\n                 superseded_by text)\"\"\",\n            \"CREATE INDEX ai_analysis_incident ON ai_analysis (incident_id, created_at DESC)\",\n            \"CREATE INDEX ai_turn_session ON ai_turn (session_id, sequence)\",\n        ],\n    },\n    {\n        \"version\": 8,\n        \"name\": \"intel-feeds-and-attack\",\n        \"sql\": [\n            # What a feed asserts about the indicators it carries. Held on the\n            # feed rather than baked in at parse time, so promoting a feed from\n            # suspicious to malicious does not mean re-ingesting it.\n            \"\"\"ALTER TABLE feed\n                 ADD COLUMN default_verdict text NOT NULL DEFAULT 'suspicious',\n                 ADD COLUMN tags text[] NOT NULL DEFAULT '{}',\n                 ADD COLUMN trusted_only boolean NOT NULL DEFAULT true,\n                 ADD COLUMN last_error text,\n                 ADD COLUMN last_parsed_count int NOT NULL DEFAULT 0,\n                 ADD COLUMN last_rejected_count int NOT NULL DEFAULT 0\"\"\",\n            # A technique belongs to several tactics far more often than not, so\n            # tactics[] is the truth and tactic is the one it sorts under.\n            \"\"\"ALTER TABLE mitre_technique\n                 ADD COLUMN tactics text[] NOT NULL DEFAULT '{}',\n                 ADD COLUMN data_sources text[] NOT NULL DEFAULT '{}',\n                 ADD COLUMN detection text,\n                 ADD COLUMN is_subtechnique boolean NOT NULL DEFAULT false,\n                 ADD COLUMN parent_id text,\n                 ADD COLUMN url text,\n                 ADD COLUMN last_modified timestamptz,\n                 ADD COLUMN loaded_at timestamptz\"\"\",\n            # Which bundle produced the matrix that is in the database now. An\n            # empty ATT&CK view and a two-year-old one look identical on a chart.\n            \"\"\"CREATE TABLE attack_bundle (\n                 id text PRIMARY KEY, source text NOT NULL,\n                 spec_version text, technique_count int NOT NULL,\n                 error_count int NOT NULL DEFAULT 0,\n                 loaded_at timestamptz NOT NULL DEFAULT now())\"\"\",\n            \"CREATE INDEX mitre_by_tactic ON mitre_technique (tactic, id)\",\n            \"\"\"CREATE INDEX indicator_expiring ON indicator (org_id, expires_at)\n                 WHERE expires_at IS NOT NULL\"\"\",\n        ],\n    },\n    {\n        \"version\": 9,\n        \"name\": \"taxii-collections\",\n        \"sql\": [\n            # The watermark is what makes polling incremental. Without it every\n            # poll re-reads the whole collection, which on a large one is slow,\n            # rate-limited, and indistinguishable from a feed that is stuck.\n            \"\"\"ALTER TABLE feed\n                 ADD COLUMN watermark text,\n                 ADD COLUMN api_root text,\n                 ADD COLUMN collection_id text,\n                 ADD COLUMN taxii_version text NOT NULL DEFAULT '2.1',\n                 ADD COLUMN auth_kind text NOT NULL DEFAULT 'none',\n                 ADD COLUMN page_limit int NOT NULL DEFAULT 500\"\"\",\n            # Discovery is a separate step from polling, and its result is\n            # cached: a TAXII server lists collections by uuid, and nobody can\n            # configure a feed against a uuid they have not been shown.\n            \"\"\"CREATE TABLE taxii_collection (\n                 id text PRIMARY KEY, org_id text NOT NULL,\n                 feed_id text NOT NULL REFERENCES feed(id) ON DELETE CASCADE,\n                 api_root text NOT NULL, collection_id text NOT NULL,\n                 title text, description text,\n                 can_read boolean NOT NULL DEFAULT true,\n                 can_write boolean NOT NULL DEFAULT false,\n                 media_types text[] NOT NULL DEFAULT '{}',\n                 discovered_at timestamptz NOT NULL DEFAULT now(),\n                 UNIQUE (feed_id, api_root, collection_id))\"\"\",\n            \"CREATE INDEX feed_enabled_by_format ON feed (org_id, format, enabled)\",\n        ],\n    },\n    {\n        \"version\": 10,\n        \"name\": \"mfa-enrolment\",\n        \"sql\": [\n            # mfa_secret was declared bytea, but every reader hands it to\n            # unseal(), which wants the sealed record: ciphertext, nonce and\n            # wrapped key. A bytea cannot hold that, so MFA could never have\n            # completed - and since nothing ever wrote the column, there is\n            # nothing to convert and no reason to keep the old type.\n            \"ALTER TABLE app_user DROP COLUMN mfa_secret\",\n            \"ALTER TABLE app_user ADD COLUMN mfa_secret jsonb\",\n        ],\n    },\n    {\n        \"version\": 11,\n        \"name\": \"runtime-role-privileges\",\n        \"sql\": [\n            # Named tables, not default privileges. The insert-only audit\n            # rule and the credential rule are properties of two tables; as\n            # a default privilege they applied to all of them, which left\n            # the app role unable to UPDATE anything at all.\n            #\n            # Guarded on role existence so a database without the deployment\n            # roles - a test instance, a developer laptop - still migrates.\n            \"\"\"DO $$\n               BEGIN\n                 IF EXISTS (SELECT 1 FROM pg_roles WHERE rolname = 'soar_app') THEN\n                   GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES\n                     IN SCHEMA public TO soar_app;\n                   GRANT USAGE, SELECT ON ALL SEQUENCES\n                     IN SCHEMA public TO soar_app;\n                   REVOKE UPDATE, DELETE, TRUNCATE ON audit_event FROM soar_app;\n                 END IF;\n                 IF EXISTS (SELECT 1 FROM pg_roles WHERE rolname = 'soar_worker') THEN\n                   GRANT SELECT, INSERT, UPDATE ON ALL TABLES\n                     IN SCHEMA public TO soar_worker;\n                   GRANT USAGE, SELECT ON ALL SEQUENCES\n                     IN SCHEMA public TO soar_worker;\n                   REVOKE UPDATE, DELETE, TRUNCATE ON audit_event FROM soar_worker;\n                   REVOKE ALL ON credential FROM soar_worker;\n                 END IF;\n               END $$;\"\"\",\n        ],\n    },\n    {\n        \"version\": 12,\n        \"name\": \"clients-and-access\",\n        \"sql\": [\n            # status already exists from migration 1, so it is not added here.\n            # IF NOT EXISTS on the rest, because a database that had any of\n            # this applied by hand should migrate rather than abort.\n            # The provider is an organisation too, and holds the staff. Its\n            # clients are the tenants the work is done on. One table, because\n            # every org_id-scoped row in the database already means \"this\n            # tenant\" and a second concept would have to be threaded through\n            # all 52 of them.\n            \"\"\"ALTER TABLE organisation\n                 ADD COLUMN IF NOT EXISTS kind text NOT NULL DEFAULT 'client',\n                 ADD COLUMN IF NOT EXISTS reference text,\n                 ADD COLUMN IF NOT EXISTS contact_name text,\n                 ADD COLUMN IF NOT EXISTS contact_email text,\n                 ADD COLUMN IF NOT EXISTS timezone text NOT NULL DEFAULT 'UTC',\n                 ADD COLUMN IF NOT EXISTS tier text NOT NULL DEFAULT 'standard',\n                 ADD COLUMN IF NOT EXISTS onboarded_at timestamptz NOT NULL DEFAULT now(),\n                 ADD COLUMN IF NOT EXISTS offboarded_at timestamptz\"\"\",\n            # Which staff may work on which client, and as what. A grant is\n            # per client AND per role: the same analyst can be read-only on\n            # one account and hold containment on another, which is how a\n            # managed service is actually contracted.\n            \"\"\"CREATE TABLE client_access (\n                 user_id text NOT NULL REFERENCES app_user(id) ON DELETE CASCADE,\n                 org_id text NOT NULL REFERENCES organisation(id) ON DELETE CASCADE,\n                 role_id text NOT NULL REFERENCES role(id) ON DELETE CASCADE,\n                 granted_by text,\n                 granted_at timestamptz NOT NULL DEFAULT now(),\n                 PRIMARY KEY (user_id, org_id, role_id))\"\"\",\n            \"CREATE INDEX client_access_by_user ON client_access (user_id, org_id)\",\n            \"CREATE INDEX organisation_by_kind ON organisation (kind, status)\",\n            # The first organisation is the provider - it was created before\n            # the distinction existed, and it holds the staff accounts.\n            \"\"\"UPDATE organisation SET kind = 'provider'\n                 WHERE id = (SELECT id FROM organisation\n                             ORDER BY created_at LIMIT 1)\"\"\",\n        ],\n    },\n    {\n        \"version\": 13,\n        \"name\": \"soc-staff-only\",\n        \"sql\": [\n            # A client is a tenant, not a login. Nobody on the client side\n            # has an account, so there is nobody to grant a client-scoped\n            # role to - and a per-client role table is a second permission\n            # model to keep correct for no one.\n            \"DROP TABLE IF EXISTS client_access\",\n            \"\"\"DELETE FROM role_permission WHERE role_id IN\n                 (SELECT r.id FROM role r JOIN organisation o ON o.id = r.org_id\n                  WHERE o.kind = 'client')\"\"\",\n            \"\"\"DELETE FROM role WHERE org_id IN\n                 (SELECT id FROM organisation WHERE kind = 'client')\"\"\",\n        ],\n    },\n    {\n        \"version\": 14,\n        \"name\": \"two-roles\",\n        \"sql\": [\n            # Six shipped roles became two. Anyone who held the old\n            # Administrator becomes an Admin; everyone else becomes an\n            # Analyst. Nobody is left holding a role that no longer exists,\n            # and nobody silently loses their account.\n            \"\"\"INSERT INTO user_role (user_id, role_id, granted_by)\n                 SELECT DISTINCT ur.user_id, target.id, 'migration-14'\n                 FROM user_role ur\n                 JOIN role old ON old.id = ur.role_id\n                 JOIN role target ON target.org_id = old.org_id\n                                 AND target.name = 'Admin'\n                 WHERE old.name = 'Administrator'\n                 ON CONFLICT DO NOTHING\"\"\",\n            \"\"\"INSERT INTO user_role (user_id, role_id, granted_by)\n                 SELECT DISTINCT ur.user_id, target.id, 'migration-14'\n                 FROM user_role ur\n                 JOIN role old ON old.id = ur.role_id\n                 JOIN role target ON target.org_id = old.org_id\n                                 AND target.name = 'Analyst'\n                 WHERE old.name IN ('SOC Analyst', 'Senior Analyst',\n                                    'SOC Engineer', 'Auditor',\n                                    'AI Operator')\n                 ON CONFLICT DO NOTHING\"\"\",\n            \"\"\"DELETE FROM role_permission WHERE role_id IN\n                 (SELECT id FROM role WHERE builtin AND name NOT IN\n                  ('Admin', 'Analyst'))\"\"\",\n            \"\"\"DELETE FROM user_role WHERE role_id IN\n                 (SELECT id FROM role WHERE builtin AND name NOT IN\n                  ('Admin', 'Analyst'))\"\"\",\n            \"\"\"DELETE FROM role WHERE builtin\n                 AND name NOT IN ('Admin', 'Analyst')\"\"\",\n        ],\n    },\n    {\n        \"version\": 15,\n        \"name\": \"client-intake\",\n        \"sql\": [\n            # How one client's alerts are handled. Per client, because two\n            # customers of the same SOC do not agree on what \"high\" means,\n            # what may auto-close, or who gets woken up - and a managed\n            # service that applies one policy to all of them is selling one\n            # customer's risk appetite to another.\n            \"\"\"CREATE TABLE intake_policy (\n                 id text PRIMARY KEY, org_id text NOT NULL\n                   REFERENCES organisation(id) ON DELETE CASCADE,\n                 source text NOT NULL,\n                 enabled boolean NOT NULL DEFAULT true,\n                 -- vendor severity -> ours, as the vendor spells it\n                 severity_map jsonb NOT NULL DEFAULT '{}',\n                 default_severity text NOT NULL DEFAULT 'medium',\n                 -- rules that close an alert without a human ever seeing it\n                 auto_close jsonb NOT NULL DEFAULT '[]',\n                 -- run on arrival, before anyone is paged\n                 enrichment_playbook_id text,\n                 response_playbook_id text,\n                 auto_create_incident boolean NOT NULL DEFAULT true,\n                 incident_threshold text NOT NULL DEFAULT 'medium',\n                 assign_to text,\n                 sla_minutes int,\n                 notify jsonb NOT NULL DEFAULT '{}',\n                 updated_at timestamptz NOT NULL DEFAULT now(),\n                 UNIQUE (org_id, source))\"\"\",\n            \"CREATE INDEX intake_by_org ON intake_policy (org_id, enabled)\",\n        ],\n    },\n    {\n        \"version\": 16,\n        \"name\": \"mfa-enrolment-confirmed\",\n        \"sql\": [\n            # mfa_enrolled_at means a secret was generated FOR the account.\n            # That is not the same as the account holder having it: until\n            # someone scans the code and returns a number from it, nobody\n            # knows the factor works, and an account that cannot produce a\n            # code is an account nobody can sign in to.\n            \"ALTER TABLE app_user ADD COLUMN IF NOT EXISTS mfa_confirmed_at timestamptz\",\n        ],\n    },\n    {\n        \"version\": 17,\n        \"name\": \"client-contacts-and-pending-connectors\",\n        \"sql\": [\n            # One contact address is never enough for a managed service:\n            # there is the person who signs the contract, the mailbox the\n            # SOC actually writes to, and whoever is on call.\n            \"\"\"ALTER TABLE organisation\n                 ADD COLUMN IF NOT EXISTS contact_emails text[]\n                   NOT NULL DEFAULT '{}'\"\"\",\n            \"\"\"UPDATE organisation SET contact_emails = ARRAY[contact_email]\n                 WHERE contact_email IS NOT NULL\n                   AND cardinality(contact_emails) = 0\"\"\",\n            # A connector is chosen during onboarding and connected later,\n            # once someone has the customer's API key. Those are two states\n            # of one thing, not two tables: \"which tools does this client\n            # run\" must be answerable before any of them work.\n            \"\"\"ALTER TABLE integration\n                 ADD COLUMN IF NOT EXISTS status text NOT NULL\n                   DEFAULT 'live',\n                 ADD COLUMN IF NOT EXISTS ingest_kind text,\n                 ADD COLUMN IF NOT EXISTS webhook_path text,\n                 ADD COLUMN IF NOT EXISTS selected_at timestamptz\n                   NOT NULL DEFAULT now(),\n                 ADD COLUMN IF NOT EXISTS connected_at timestamptz\"\"\",\n            \"\"\"UPDATE integration SET connected_at = now()\n                 WHERE credential_id IS NOT NULL AND connected_at IS NULL\"\"\",\n            \"CREATE INDEX integration_by_status ON integration (org_id, status)\",\n        ],\n    },\n    {\n        \"version\": 18,\n        \"name\": \"alert-transport-and-field-mapping\",\n        \"sql\": [\n            # Two separate questions that were both missing. HOW the JSON\n            # gets here - pushed to a webhook, or fetched on an interval -\n            # and WHAT ITS FIELDS MEAN, because every vendor spells the same\n            # alert differently and a playbook must never read vendor JSON.\n            \"\"\"ALTER TABLE intake_policy\n                 ADD COLUMN IF NOT EXISTS transport text NOT NULL\n                   DEFAULT 'webhook',\n                 ADD COLUMN IF NOT EXISTS poll_interval_s int NOT NULL\n                   DEFAULT 300,\n                 ADD COLUMN IF NOT EXISTS poll_query text,\n                 ADD COLUMN IF NOT EXISTS poll_watermark text,\n                 ADD COLUMN IF NOT EXISTS webhook_path text,\n                 ADD COLUMN IF NOT EXISTS webhook_secret_id text,\n                 ADD COLUMN IF NOT EXISTS field_map jsonb NOT NULL\n                   DEFAULT '{}',\n                 ADD COLUMN IF NOT EXISTS sample_payload jsonb\"\"\",\n        ],\n    },\n    {\n        \"version\": 19,\n        \"name\": \"command-scope-and-playbook-lineage\",\n        \"sql\": [\n            # A command is written for one client, or shared with several.\n            # Shared means ONE definition visible in many places - not a copy\n            # per client, because a copy is a fix that lands in one customer\n            # and not the others.\n            \"\"\"ALTER TABLE command\n                 ADD COLUMN IF NOT EXISTS scope text NOT NULL\n                   DEFAULT 'client'\"\"\",\n            \"\"\"CREATE TABLE command_visibility (\n                 command_id text NOT NULL REFERENCES command(id)\n                   ON DELETE CASCADE,\n                 org_id text NOT NULL REFERENCES organisation(id)\n                   ON DELETE CASCADE,\n                 granted_by text,\n                 granted_at timestamptz NOT NULL DEFAULT now(),\n                 PRIMARY KEY (command_id, org_id))\"\"\",\n            \"CREATE INDEX command_visible_to ON command_visibility (org_id)\",\n            # A playbook belongs to exactly one client. Duplicating it to\n            # another records where it came from and then forgets it: the\n            # copy is independent, and editing one must never reach the\n            # other. Lineage is for the engineer, not for the engine.\n            \"\"\"ALTER TABLE playbook\n                 ADD COLUMN IF NOT EXISTS copied_from_playbook_id text,\n                 ADD COLUMN IF NOT EXISTS copied_from_org_id text,\n                 ADD COLUMN IF NOT EXISTS copied_at timestamptz\"\"\",\n        ],\n    },\n    {\n        \"version\": 20,\n        \"name\": \"alert-poll-state\",\n        \"sql\": [\n            # A poll that cannot say when it last ran, or why it stopped\n            # returning anything, is a silent ingest failure - and a SOC\n            # that has stopped receiving the alerts of a client finds out\n            # from the client.\n            \"\"\"ALTER TABLE intake_policy\n                 ADD COLUMN IF NOT EXISTS last_poll_at timestamptz,\n                 ADD COLUMN IF NOT EXISTS last_poll_status text,\n                 ADD COLUMN IF NOT EXISTS last_poll_error text,\n                 ADD COLUMN IF NOT EXISTS integration_id text\"\"\",\n            # The poller asks for due sources by this every ten seconds.\n            \"\"\"CREATE INDEX IF NOT EXISTS intake_poll_due\n                 ON intake_policy (transport, enabled, last_poll_at)\"\"\",\n        ],\n    },\n    {\n        \"version\": 21,\n        \"name\": \"threat-hunting\",\n        \"sql\": [\n            # A hunt is one query, for one client, on one tool. It cannot be\n            # portable: the query language belongs to the tool, so KQL does\n            # not run on Falcon and there is no shared library to drift.\n            #\n            # The ATT&CK columns are NOT NULL on purpose. A hunt library\n            # without a mapping cannot answer what the SOC is and is not\n            # looking for, which is the only question anyone asks of it.\n            \"\"\"CREATE TABLE hunt_query (\n                 id text PRIMARY KEY,\n                 org_id text NOT NULL REFERENCES organisation(id)\n                   ON DELETE CASCADE,\n                 connector_id text NOT NULL,\n                 integration_id text REFERENCES integration(id)\n                   ON DELETE SET NULL,\n                 name text NOT NULL,\n                 description text NOT NULL DEFAULT '',\n                 query text NOT NULL,\n                 mitre_tactic text NOT NULL,\n                 mitre_technique_id text NOT NULL,\n                 mitre_technique_name text NOT NULL DEFAULT '',\n                 lookback_hours int NOT NULL DEFAULT 720,\n                 severity text NOT NULL DEFAULT 'medium',\n                 -- review sends a hit to a person; alert raises one\n                 -- straight away, for a query the engineer trusts.\n                 on_hit text NOT NULL DEFAULT 'review',\n                 enabled boolean NOT NULL DEFAULT true,\n                 automatic boolean NOT NULL DEFAULT false,\n                 schedule_interval text,\n                 schedule_time text NOT NULL DEFAULT '03:00',\n                 schedule_day text,\n                 schedule_day_of_month int,\n                 last_run_at timestamptz,\n                 last_status text,\n                 last_row_count int,\n                 created_by text,\n                 created_at timestamptz NOT NULL DEFAULT now(),\n                 updated_at timestamptz NOT NULL DEFAULT now(),\n                 copied_from_hunt_id text,\n                 UNIQUE (org_id, connector_id, name))\"\"\",\n            \"CREATE INDEX hunt_by_client ON hunt_query (org_id, enabled)\",\n            \"\"\"CREATE INDEX hunt_due ON hunt_query\n                 (automatic, enabled, schedule_time)\"\"\",\n            \"CREATE INDEX hunt_by_technique ON hunt_query (mitre_technique_id)\",\n\n            # One execution. Kept even when it returned nothing, because\n            # \"this hunt has run every week for a year and never hit\" is\n            # itself a finding about the query.\n            \"\"\"CREATE TABLE hunt_run (\n                 id text PRIMARY KEY,\n                 org_id text NOT NULL REFERENCES organisation(id)\n                   ON DELETE CASCADE,\n                 hunt_id text NOT NULL REFERENCES hunt_query(id)\n                   ON DELETE CASCADE,\n                 started_at timestamptz NOT NULL DEFAULT now(),\n                 finished_at timestamptz,\n                 status text NOT NULL DEFAULT 'running',\n                 row_count int NOT NULL DEFAULT 0,\n                 result jsonb NOT NULL DEFAULT '{}',\n                 error text,\n                 trigger_kind text NOT NULL DEFAULT 'schedule',\n                 triggered_by text)\"\"\",\n            \"CREATE INDEX hunt_run_by_hunt ON hunt_run (hunt_id, started_at DESC)\",\n\n            # What a person still has to look at. A run that returned rows\n            # produces exactly one of these; the verdict on it is what does\n            # or does not become an alert.\n            \"\"\"CREATE TABLE hunt_finding (\n                 id text PRIMARY KEY,\n                 org_id text NOT NULL REFERENCES organisation(id)\n                   ON DELETE CASCADE,\n                 hunt_id text NOT NULL REFERENCES hunt_query(id)\n                   ON DELETE CASCADE,\n                 run_id text NOT NULL REFERENCES hunt_run(id)\n                   ON DELETE CASCADE,\n                 row_count int NOT NULL DEFAULT 0,\n                 verdict text NOT NULL DEFAULT 'pending',\n                 note text NOT NULL DEFAULT '',\n                 alert_id text REFERENCES alert(id) ON DELETE SET NULL,\n                 reviewed_by text,\n                 reviewed_at timestamptz,\n                 created_at timestamptz NOT NULL DEFAULT now())\"\"\",\n            \"\"\"CREATE INDEX hunt_finding_open ON hunt_finding\n                 (org_id, verdict, created_at DESC)\"\"\",\n        ],\n    },\n    {\n        \"version\": 22,\n        \"name\": \"alert-detail-panels\",\n        \"sql\": [\n            # Fields a playbook added to an alert, because the model has no\n            # column for what this client's tool happens to know. Keyed by\n            # (alert, key) so a playbook that reruns replaces its own panel\n            # instead of stacking a second copy under the first.\n            \"\"\"CREATE TABLE alert_panel (\n                 id text PRIMARY KEY,\n                 org_id text NOT NULL REFERENCES organisation(id)\n                   ON DELETE CASCADE,\n                 alert_id text NOT NULL REFERENCES alert(id)\n                   ON DELETE CASCADE,\n                 panel_key text NOT NULL,\n                 title text NOT NULL,\n                 fields jsonb NOT NULL DEFAULT '[]',\n                 body text NOT NULL DEFAULT '',\n                 placement text NOT NULL DEFAULT 'side',\n                 sort_order int NOT NULL DEFAULT 100,\n                 written_by text,\n                 created_at timestamptz NOT NULL DEFAULT now(),\n                 UNIQUE (alert_id, panel_key))\"\"\",\n            \"\"\"CREATE INDEX alert_panel_for ON alert_panel\n                 (alert_id, sort_order)\"\"\",\n        ],\n    },\n    {\n        \"version\": 23,\n        \"name\": \"alert-custom-fields\",\n        \"sql\": [\n            # Whatever the intake mapping pulled out under a name the SOC\n            # chose. The model stays fixed - every screen reads the same\n            # seven fields - and what a vendor additionally sends stops\n            # being discarded at the door.\n            \"\"\"ALTER TABLE alert\n                 ADD COLUMN IF NOT EXISTS custom jsonb NOT NULL\n                   DEFAULT '{}'\"\"\",\n        ],\n    },\n]",
+        "doc": "Migrations 6 to 19: cases, tasks, API tokens, workers, platform alerts, the\nAI tables, the columns intel feeds and ATT&CK reference data need, the\nTAXII watermark and collection cache, the MFA secret column, and the\nruntime role privileges, and the client tenancy this is a managed service for.\n\nSeparate from migrations() only because they were written later. The ordering\nis what matters and it is preserved - a migration list is append-only for the\nsame reason an audit log is.",
+        "form": "statements",
+        "language": "python",
+        "name": "operational_migrations",
+        "packages": [],
+        "params": [],
+        "returns": "List<Map<string, Any>>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyx1p2j17bfb",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyx1p6jquux4",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "doc": "Re-apply the runtime roles' table privileges.\n\nAfter every migration, not once in migration 11. A table created by a later\nmigration is not covered by a grant that already ran, so intake_policy\narrived readable by nobody and the API answered 500 on a table it had just\ncreated. Running this after each pass means a new table is granted the\nmoment it exists.\n\nThe two exceptions stay named: audit is insert-only for every runtime role,\nand the worker never reads a credential row.",
+        "isAsync": false,
+        "name": "grant_runtime_privileges",
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          }
+        ],
+        "returns": "Void",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyx1p7tb9gsw",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "db.execute(\n    \"\"\"DO $$\n       BEGIN\n         IF EXISTS (SELECT 1 FROM pg_roles WHERE rolname = 'soar_app') THEN\n           GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES\n             IN SCHEMA public TO soar_app;\n           GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO soar_app;\n           REVOKE UPDATE, DELETE, TRUNCATE ON audit_event FROM soar_app;\n         END IF;\n         IF EXISTS (SELECT 1 FROM pg_roles WHERE rolname = 'soar_worker') THEN\n           GRANT SELECT, INSERT, UPDATE ON ALL TABLES\n             IN SCHEMA public TO soar_worker;\n           GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO soar_worker;\n           REVOKE UPDATE, DELETE, TRUNCATE ON audit_event FROM soar_worker;\n           REVOKE ALL ON credential FROM soar_worker;\n         END IF;\n       END $$;\"\"\",\n    [], \"\",\n)",
+        "doc": "Re-apply the runtime roles' table privileges.\n\nAfter every migration, not once in migration 11. A table created by a later\nmigration is not covered by a grant that already ran, so intake_policy\narrived readable by nobody and the API answered 500 on a table it had just\ncreated. Running this after each pass means a new table is granted the\nmoment it exists.\n\nThe two exceptions stay named: audit is insert-only for every runtime role,\nand the worker never reads a credential row.",
+        "form": "statements",
+        "language": "python",
+        "name": "reapply_runtime_privileges",
+        "packages": [],
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          }
+        ],
+        "returns": "Void"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyx1paugu53l",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "doc": "Bring every organisation's built-in roles back in line with their definition.\n\nRuns on every migration. A built-in role is platform-defined: what it may do\nis a property of this version of the product, not of whenever the database\nhappened to be created. Without this, a permission added to a role reaches\nonly installations built after it, and an upgrade silently withholds the\ncapability it just shipped.\n\nRoles an operator created themselves are never touched - only builtin ones.",
+        "isAsync": false,
+        "name": "sync_builtin_roles",
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          }
+        ],
+        "returns": "i64",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvyx1pbgu6meh",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "i64"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "from soar.identity.rbac import builtin_roles\nfrom soar.platform.ids import new_id\n\ndefinitions = builtin_roles()\nchanged = 0\n\n# The provider only. Clients hold no accounts, so they hold no roles.\nfor org in db.query(\n        \"SELECT id FROM organisation WHERE kind = 'provider'\", [], \"\"):\n    org_id = org[\"id\"]\n    for role_name, permissions in definitions.items():\n        rows = db.query(\n            \"SELECT id FROM role WHERE org_id = %s AND name = %s AND builtin\",\n            [org_id, role_name], org_id)\n        if rows:\n            role_id = rows[0][\"id\"]\n        else:\n            role_id = new_id(\"role\")\n            db.execute(\n                \"INSERT INTO role (id, org_id, name, builtin) \"\n                \"VALUES (%s, %s, %s, true)\",\n                [role_id, org_id, role_name], org_id)\n            changed += 1\n\n        held = {r[\"permission\"] for r in db.query(\n            \"SELECT permission FROM role_permission WHERE role_id = %s\",\n            [role_id], org_id)}\n        wanted = set(permissions)\n\n        for permission in sorted(wanted - held):\n            db.execute(\n                \"INSERT INTO role_permission (role_id, permission) \"\n                \"VALUES (%s, %s) ON CONFLICT DO NOTHING\",\n                [role_id, permission], org_id)\n            changed += 1\n        for permission in sorted(held - wanted):\n            db.execute(\n                \"DELETE FROM role_permission WHERE role_id = %s \"\n                \"AND permission = %s\", [role_id, permission], org_id)\n            changed += 1\n\nreturn changed",
+        "doc": "Bring every organisation's built-in roles back in line with their definition.\n\nRuns on every migration. A built-in role is platform-defined: what it may do\nis a property of this version of the product, not of whenever the database\nhappened to be created. Without this, a permission added to a role reaches\nonly installations built after it, and an upgrade silently withholds the\ncapability it just shipped.\n\nRoles an operator created themselves are never touched - only builtin ones.",
+        "form": "statements",
+        "language": "python",
+        "name": "resync_builtin_role_permissions",
+        "packages": [],
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          }
+        ],
+        "returns": "i64"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvyx1pd2x31b3",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyx1ph08l2ns",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:name",
+          "name": "name",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "doc": "First boot: one organisation, the built-in roles and their permissions, and\nthe default approval policies.\n\nNot the command catalogue: commands arrive when a connector is installed,\nwhich is a deliberate act with a credential attached. An installation that\nseeded 118 vendor commands nobody had configured would be listing actions\nthat cannot run.\n\nDeliberately creates no user. An installation that ships with an account is\nan installation with a known account; the first administrator is created by\n`soar create-admin`, interactively, with MFA enrolment in the same step.",
+        "isAsync": false,
+        "name": "seed_organisation",
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "name",
+            "type": "string"
+          }
+        ],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvyx1piscks7t",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:name",
+          "name": "name",
+          "type": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "from soar.ai.tools import builtin_tools\nfrom soar.approvals.policy import default_policies\nfrom soar.identity.rbac import builtin_roles\nfrom soar.platform.ids import new_id\n\nimport json\n\nexisting = db.query(\"SELECT id FROM organisation LIMIT 1\", [], \"\")\nif existing:\n    return {\"created\": False, \"org_id\": existing[0][\"id\"]}\n\norg_id = new_id(\"org\")\ndb.execute(\n    \"INSERT INTO organisation (id, name, slug) VALUES (%s, %s, %s)\",\n    [org_id, name, name.lower().replace(\" \", \"-\")], org_id,\n)\n\nfor role_name, permissions in builtin_roles().items():\n    role_id = new_id(\"role\")\n    db.execute(\n        \"INSERT INTO role (id, org_id, name, builtin) VALUES (%s, %s, %s, true)\",\n        [role_id, org_id, role_name], org_id,\n    )\n    for permission in permissions:\n        db.execute(\n            \"INSERT INTO role_permission (role_id, permission) VALUES (%s, %s)\",\n            [role_id, permission], org_id,\n        )\n\nfor policy in default_policies():\n    db.execute(\n        \"INSERT INTO approval_policy (id, org_id, name, priority, enabled, match, \"\n        \"effect, required_approvals, required_permission, separation_of_duty, \"\n        \"timeout_s, on_timeout) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)\",\n        [new_id(\"pol\"), org_id, policy[\"name\"], policy[\"priority\"],\n         policy[\"enabled\"], json.dumps(policy[\"match\"]), policy[\"effect\"],\n         policy.get(\"required_approvals\", 1), policy.get(\"required_permission\"),\n         policy.get(\"separation_of_duty\", True), policy.get(\"timeout_s\", 1800),\n         policy.get(\"on_timeout\", \"reject\")],\n        org_id,\n    )\n\nfor tool in builtin_tools():\n    db.execute(\n        \"INSERT INTO ai_tool (id, org_id, name, description, input_schema, \"\n        \"output_schema, implementation, risk_level, required_permission, \"\n        \"requires_approval, timeout_ms, max_calls_per_turn, scope) \"\n        \"VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)\",\n        [new_id(\"tool\"), org_id, tool[\"name\"], tool[\"description\"],\n         json.dumps(tool[\"input_schema\"]), json.dumps(tool[\"output_schema\"]),\n         tool[\"implementation\"], tool[\"risk_level\"],\n         tool[\"required_permission\"], tool[\"requires_approval\"],\n         tool[\"timeout_ms\"], tool[\"max_calls_per_turn\"], tool[\"scope\"]],\n        org_id,\n    )\n\nreturn {\"created\": True, \"org_id\": org_id,\n        \"roles\": len(builtin_roles()),\n        \"policies\": len(default_policies()),\n        \"ai_tools\": len(builtin_tools())}",
+        "doc": "First boot: one organisation, the built-in roles and their permissions, and\nthe default approval policies.\n\nNot the command catalogue: commands arrive when a connector is installed,\nwhich is a deliberate act with a credential attached. An installation that\nseeded 118 vendor commands nobody had configured would be listing actions\nthat cannot run.\n\nDeliberately creates no user. An installation that ships with an account is\nan installation with a known account; the first administrator is created by\n`soar create-admin`, interactively, with MFA enrolment in the same step.",
+        "form": "statements",
+        "language": "python",
+        "name": "seed_first_organisation",
+        "packages": [],
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "name",
+            "type": "string"
+          }
+        ],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvyx1pl5t2xib",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 260
+    }
+  ],
+  "style": "procedural",
+  "variables": []
+}

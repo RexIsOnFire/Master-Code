@@ -1,0 +1,900 @@
+{
+  "edges": [
+    {
+      "from": {
+        "node": "n_mu4ytvyv1d15x6n9n",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyv1d3p0trbn",
+      "to": {
+        "node": "n_mu4ytvyv1d2c94lic",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1d0zm5n0c",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyv1d4gtsnf7",
+      "to": {
+        "node": "n_mu4ytvyv1d15x6n9n",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1d15x6n9n",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyv1d59atgx0",
+      "to": {
+        "node": "n_mu4ytvyv1d2c94lic",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1d6pwpvox",
+        "port": "p:tool"
+      },
+      "id": "e_mu4ytvyv1d8w8l5ua",
+      "to": {
+        "node": "n_mu4ytvyv1d7qxp2vy",
+        "port": "p:tool"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1d7qxp2vy",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyv1da7nejl9",
+      "to": {
+        "node": "n_mu4ytvyv1d9sqa15h",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1d6pwpvox",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyv1dbi3jp2w",
+      "to": {
+        "node": "n_mu4ytvyv1d7qxp2vy",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1d7qxp2vy",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyv1dcyrmq72",
+      "to": {
+        "node": "n_mu4ytvyv1d9sqa15h",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1dd6zyykg",
+        "port": "p:db"
+      },
+      "id": "e_mu4ytvyv1dfmexv6g",
+      "to": {
+        "node": "n_mu4ytvyv1dexqvo98",
+        "port": "p:db"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1dd6zyykg",
+        "port": "p:principal"
+      },
+      "id": "e_mu4ytvyv1dgx0y8fz",
+      "to": {
+        "node": "n_mu4ytvyv1dexqvo98",
+        "port": "p:principal"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1dd6zyykg",
+        "port": "p:purpose"
+      },
+      "id": "e_mu4ytvyv1dhvcz0zg",
+      "to": {
+        "node": "n_mu4ytvyv1dexqvo98",
+        "port": "p:purpose"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1dexqvo98",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyv1djyy5u5b",
+      "to": {
+        "node": "n_mu4ytvyv1difp2i8y",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1dd6zyykg",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyv1dkywv0vl",
+      "to": {
+        "node": "n_mu4ytvyv1dexqvo98",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1dexqvo98",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyv1dlrm7704",
+      "to": {
+        "node": "n_mu4ytvyv1difp2i8y",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1dmt70dok",
+        "port": "p:db"
+      },
+      "id": "e_mu4ytvyv1doelv8zh",
+      "to": {
+        "node": "n_mu4ytvyv1dn5292fu",
+        "port": "p:db"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1dmt70dok",
+        "port": "p:session"
+      },
+      "id": "e_mu4ytvyv1dp7ec1lo",
+      "to": {
+        "node": "n_mu4ytvyv1dn5292fu",
+        "port": "p:session"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1dmt70dok",
+        "port": "p:tool"
+      },
+      "id": "e_mu4ytvyv1dql2zfl0",
+      "to": {
+        "node": "n_mu4ytvyv1dn5292fu",
+        "port": "p:tool"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1dmt70dok",
+        "port": "p:arguments"
+      },
+      "id": "e_mu4ytvyv1drxqzng3",
+      "to": {
+        "node": "n_mu4ytvyv1dn5292fu",
+        "port": "p:arguments"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1dmt70dok",
+        "port": "p:calls_so_far"
+      },
+      "id": "e_mu4ytvyv1dsc9ciys",
+      "to": {
+        "node": "n_mu4ytvyv1dn5292fu",
+        "port": "p:calls_so_far"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1dn5292fu",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyv1dup3labk",
+      "to": {
+        "node": "n_mu4ytvyv1dttk7hyw",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1dmt70dok",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyv1dvdok56t",
+      "to": {
+        "node": "n_mu4ytvyv1dn5292fu",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1dn5292fu",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyv1dwub0t6k",
+      "to": {
+        "node": "n_mu4ytvyv1dttk7hyw",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1dyfh4ltr",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyv1e093u9bz",
+      "to": {
+        "node": "n_mu4ytvyv1dzppw7mz",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1dxxub7am",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyv1e1p1f5op",
+      "to": {
+        "node": "n_mu4ytvyv1dyfh4ltr",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1dyfh4ltr",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyv1e2z040jr",
+      "to": {
+        "node": "n_mu4ytvyv1dzppw7mz",
+        "port": "in"
+      }
+    }
+  ],
+  "fileId": "file_mu4ytvyv1cyboxz9r",
+  "id": "g_mu4ytvyv1czl96cfe",
+  "name": "governed tool registry",
+  "nodes": [
+    {
+      "id": "n_mu4ytvyv1d0zm5n0c",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "doc": "What a tool must declare. A tool missing any field is not loadable - there is no partially-governed tool.",
+        "isAsync": false,
+        "name": "tool_schema",
+        "params": [],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyv1d15x6n9n",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "return {\n    \"type\": \"object\",\n    \"required\": [\"name\", \"description\", \"input_schema\", \"output_schema\",\n                 \"implementation\", \"risk_level\", \"required_permission\",\n                 \"requires_approval\", \"timeout_ms\", \"max_calls_per_turn\"],\n    \"additionalProperties\": False,\n    \"properties\": {\n        \"name\": {\"type\": \"string\", \"pattern\": \"^[a-z][a-z0-9_]{2,63}$\"},\n        \"description\": {\"type\": \"string\", \"minLength\": 20},\n        \"input_schema\": {\"type\": \"object\"},\n        \"output_schema\": {\"type\": \"object\"},\n        \"implementation\": {\"type\": \"string\",\n                           \"pattern\": \"^(command|playbook|query):[a-z0-9_.]+$\"},\n        \"risk_level\": {\"enum\": [\"low\", \"medium\", \"high\"]},\n        \"required_permission\": {\"type\": \"string\"},\n        \"requires_approval\": {\"type\": \"boolean\"},\n        \"timeout_ms\": {\"type\": \"integer\", \"minimum\": 1000, \"maximum\": 300000},\n        \"max_calls_per_turn\": {\"type\": \"integer\", \"minimum\": 1, \"maximum\": 50},\n        \"scope\": {\"enum\": [\"incident\", \"case\", \"global\"]},\n    },\n}",
+        "doc": "What a tool must declare. A tool missing any field is not loadable - there is no partially-governed tool.",
+        "form": "statements",
+        "language": "python",
+        "name": "ai_tool_schema",
+        "packages": [],
+        "params": [],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyv1d2c94lic",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyv1d6pwpvox",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:tool",
+          "name": "tool",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "doc": "Refuse a tool that cannot be governed.\n\nThe two that matter: a HIGH tool always requires approval, and no tool may\naccept a raw URL, a raw query or code. The second is why there is no generic\nfetch tool - exfiltration through a tool argument needs somewhere to go.",
+        "isAsync": false,
+        "name": "validate_tool",
+        "params": [
+          {
+            "name": "tool",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "List<string>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyv1d7qxp2vy",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:tool",
+          "name": "tool",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "List<string>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "import jsonschema\n\nproblems = []\ntry:\n    jsonschema.validate(tool, tool_schema())\nexcept jsonschema.ValidationError as error:\n    return [\"tool: \" + error.message]\n\nif tool[\"risk_level\"] == \"high\" and not tool[\"requires_approval\"]:\n    problems.append(\n        \"a high-risk tool always requires approval; this is not configurable\"\n    )\n\nFORBIDDEN = {\"url\", \"uri\", \"endpoint\", \"code\", \"script\", \"sql\", \"command\",\n             \"shell\", \"path\", \"filename\"}\nfor name in (tool[\"input_schema\"].get(\"properties\") or {}):\n    if name.lower() in FORBIDDEN:\n        problems.append(\n            \"no tool may take %r as an argument; enrichment tools take an \"\n            \"indicator and the connector decides the endpoint\" % name\n        )\n\nif tool[\"input_schema\"].get(\"additionalProperties\") is not False:\n    problems.append(\n        \"input_schema must set additionalProperties: false, or the argument \"\n        \"surface is unbounded\"\n    )\nreturn problems",
+        "doc": "Refuse a tool that cannot be governed.\n\nThe two that matter: a HIGH tool always requires approval, and no tool may\naccept a raw URL, a raw query or code. The second is why there is no generic\nfetch tool - exfiltration through a tool argument needs somewhere to go.",
+        "form": "statements",
+        "language": "python",
+        "name": "check_tool_definition",
+        "packages": [
+          {
+            "name": "jsonschema",
+            "version": "4.*"
+          }
+        ],
+        "params": [
+          {
+            "name": "tool",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "List<string>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyv1d9sqa15h",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyv1dd6zyykg",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:principal",
+          "name": "principal",
+          "type": "Map<string, Any>"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:purpose",
+          "name": "purpose",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "doc": "THE governing function of the AI module.\n\nCalled at session start, before any incident text, alert body, email or\nvendor response enters the context. The tool set is the intersection of the\nregistry, the permissions the invoking analyst actually holds, and the tool\nset configured for this purpose - never a union, and never influenced by\nanything the model reads.\n\nThat ordering is the structural defence against prompt injection: an\ninjected instruction cannot add a tool, because the model was never asked\nwhich tools it wanted.",
+        "isAsync": false,
+        "name": "build_tool_set",
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "principal",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "purpose",
+            "type": "string"
+          }
+        ],
+        "returns": "List<Map<string, Any>>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvyv1dexqvo98",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:principal",
+          "name": "principal",
+          "type": "Map<string, Any>"
+        },
+        {
+          "direction": "in",
+          "id": "p:purpose",
+          "name": "purpose",
+          "type": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "List<Map<string, Any>>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "from soar.identity.rbac import has_permission\n\nrows = db.query(\n    \"SELECT name, description, input_schema, output_schema, implementation, \"\n    \"risk_level, required_permission, requires_approval, timeout_ms, \"\n    \"max_calls_per_turn, scope \"\n    \"FROM ai_tool WHERE enabled AND (org_id = %s OR org_id IS NULL) \"\n    \"ORDER BY name\", [principal[\"org_id\"]], principal[\"org_id\"],\n)\n\nheld = principal.get(\"permissions\") or []\nallowed = [t for t in rows if has_permission(held, t[\"required_permission\"])]\n\nif purpose and purpose != \"general\":\n    configured = db.query(\n        \"SELECT tool_name FROM ai_tool_set WHERE org_id = %s AND purpose = %s\",\n        [principal[\"org_id\"], purpose], principal[\"org_id\"],\n    )\n    names = {row[\"tool_name\"] for row in configured}\n    if names:\n        allowed = [t for t in allowed if t[\"name\"] in names]\n\nreturn allowed",
+        "doc": "THE governing function of the AI module.\n\nCalled at session start, before any incident text, alert body, email or\nvendor response enters the context. The tool set is the intersection of the\nregistry, the permissions the invoking analyst actually holds, and the tool\nset configured for this purpose - never a union, and never influenced by\nanything the model reads.\n\nThat ordering is the structural defence against prompt injection: an\ninjected instruction cannot add a tool, because the model was never asked\nwhich tools it wanted.",
+        "form": "statements",
+        "language": "python",
+        "name": "compute_session_tools",
+        "packages": [],
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "principal",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "purpose",
+            "type": "string"
+          }
+        ],
+        "returns": "List<Map<string, Any>>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvyv1difp2i8y",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvyv1dmt70dok",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:session",
+          "name": "session",
+          "type": "Map<string, Any>"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:tool",
+          "name": "tool",
+          "type": "Map<string, Any>"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:arguments",
+          "name": "arguments",
+          "type": "Map<string, Any>"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:calls_so_far",
+          "name": "calls_so_far",
+          "type": "i64"
+        }
+      ],
+      "props": {
+        "doc": "Five gates between a model asking for a tool and the tool running.\n\nSchema, budget, scope, permission, approval. The scope gate is the one that\nmakes \"isolate every host\" inexpressible: the argument must name an entity\nalready attached to this incident, so constraining the SHAPE of an action\ndoes the work that constraining its intent could never do reliably.",
+        "isAsync": false,
+        "name": "authorise_call",
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "session",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "tool",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "arguments",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "calls_so_far",
+            "type": "i64"
+          }
+        ],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvyv1dn5292fu",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:session",
+          "name": "session",
+          "type": "Map<string, Any>"
+        },
+        {
+          "direction": "in",
+          "id": "p:tool",
+          "name": "tool",
+          "type": "Map<string, Any>"
+        },
+        {
+          "direction": "in",
+          "id": "p:arguments",
+          "name": "arguments",
+          "type": "Map<string, Any>"
+        },
+        {
+          "direction": "in",
+          "id": "p:calls_so_far",
+          "name": "calls_so_far",
+          "type": "i64"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "from soar.identity.rbac import has_permission\n\nimport jsonschema\n\n# 1. Schema. Arguments are data with a declared shape, not free text.\ntry:\n    jsonschema.validate(arguments, tool[\"input_schema\"])\nexcept jsonschema.ValidationError as error:\n    return {\"allowed\": False, \"reason\": \"arguments: \" + error.message}\n\n# 2. Budget. An injected instruction that starts an enrichment loop stops.\nif calls_so_far >= tool[\"max_calls_per_turn\"]:\n    return {\"allowed\": False,\n            \"reason\": \"per-turn call budget for %s reached\" % tool[\"name\"]}\n\n# 3. Scope. The entity must already be on this incident.\nif tool.get(\"scope\") == \"incident\":\n    incident_id = session.get(\"incident_id\")\n    if not incident_id:\n        return {\"allowed\": False,\n                \"reason\": \"%s is incident-scoped and this session has no incident\"\n                          % tool[\"name\"]}\n    for key, value in arguments.items():\n        if not (key.endswith(\"_id\") and isinstance(value, str)):\n            continue\n        known = db.query(\n            \"SELECT 1 FROM incident_entity WHERE incident_id = %s AND entity_id = %s \"\n            \"UNION ALL SELECT 1 FROM incident_indicator \"\n            \"WHERE incident_id = %s AND indicator_id = %s\",\n            [incident_id, value, incident_id, value], session[\"org_id\"],\n        )\n        if not known:\n            return {\"allowed\": False,\n                    \"reason\": \"%s=%s is not an entity on this incident\"\n                              % (key, value)}\n\n# 4. Permission, re-checked at the point of effect rather than trusted from\n#    session start - the analyst may have been de-privileged since.\nif not has_permission(session.get(\"permissions\") or [], tool[\"required_permission\"]):\n    return {\"allowed\": False,\n            \"reason\": \"the AI principal does not hold %s\"\n                      % tool[\"required_permission\"]}\n\n# 5. Approval. A HIGH tool always requires a human, whoever asked and\n#    however it was justified.\nif tool[\"requires_approval\"] or tool[\"risk_level\"] == \"high\":\n    return {\"allowed\": True, \"needs_approval\": True,\n            \"risk_level\": tool[\"risk_level\"]}\n\nreturn {\"allowed\": True, \"needs_approval\": False,\n        \"risk_level\": tool[\"risk_level\"]}",
+        "doc": "Five gates between a model asking for a tool and the tool running.\n\nSchema, budget, scope, permission, approval. The scope gate is the one that\nmakes \"isolate every host\" inexpressible: the argument must name an entity\nalready attached to this incident, so constraining the SHAPE of an action\ndoes the work that constraining its intent could never do reliably.",
+        "form": "statements",
+        "language": "python",
+        "name": "gate_tool_call",
+        "packages": [
+          {
+            "name": "jsonschema",
+            "version": "4.*"
+          }
+        ],
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "session",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "tool",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "arguments",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "calls_so_far",
+            "type": "i64"
+          }
+        ],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvyv1dttk7hyw",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvyv1dxxub7am",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "doc": "The tools a fresh installation registers. Every one names a real command; none takes a URL, a query string or code.",
+        "isAsync": false,
+        "name": "builtin_tools",
+        "params": [],
+        "returns": "List<Map<string, Any>>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 520
+    },
+    {
+      "id": "n_mu4ytvyv1dyfh4ltr",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "List<Map<string, Any>>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "def tool(name, description, implementation, inputs, risk, permission,\n         scope=\"incident\", approval=False, calls=10):\n    return {\n        \"name\": name, \"description\": description,\n        \"input_schema\": {\"type\": \"object\", \"required\": list(inputs.keys()),\n                         \"properties\": inputs, \"additionalProperties\": False},\n        \"output_schema\": {\"type\": \"object\"},\n        \"implementation\": implementation,\n        \"risk_level\": risk, \"required_permission\": permission,\n        \"requires_approval\": approval or risk == \"high\",\n        \"timeout_ms\": 30000, \"max_calls_per_turn\": calls, \"scope\": scope,\n    }\n\nindicator = {\"indicator_id\": {\"type\": \"string\", \"pattern\": \"^ind_[0-9A-Z]{26}$\"}}\nhost = {\"host_id\": {\"type\": \"string\", \"pattern\": \"^host_[0-9A-Z]{26}$\"}}\n\nreturn [\n    tool(\"lookup_indicator_reputation\",\n         \"Look up the stored reputation and cached enrichment for one indicator \"\n         \"already attached to this incident.\",\n         \"command:intel.score\", indicator, \"low\", \"intel.read\"),\n    tool(\"enrich_indicator\",\n         \"Run the IOC investigation playbook against one indicator on this \"\n         \"incident and return the normalised verdict.\",\n         \"playbook:ioc.investigation\", indicator, \"low\", \"playbooks.run\"),\n    tool(\"get_host_detail\",\n         \"Retrieve endpoint detail from the EDR for a host already linked to \"\n         \"this incident.\",\n         \"command:crowdstrike.get_host\", host, \"low\",\n         \"integrations.read\"),\n    tool(\"search_related_incidents\",\n         \"Find other incidents in the last 30 days that share an entity or an \"\n         \"indicator with this one.\",\n         \"query:related_incidents\", {}, \"low\", \"incidents.read\", scope=\"incident\"),\n    tool(\"search_siem\",\n         \"Run a saved, parameterised SIEM query by name with a bounded time \"\n         \"window. The query text comes from the saved query, not from this call.\",\n         \"query:saved_siem\",\n         {\"saved_query\": {\"type\": \"string\", \"pattern\": \"^[a-z0-9_]{3,64}$\"},\n          \"hours\": {\"type\": \"integer\", \"minimum\": 1, \"maximum\": 168}},\n         \"low\", \"commands.execute\", scope=\"global\", calls=5),\n    tool(\"add_incident_note\",\n         \"Append an analyst-readable note to the incident timeline, attributed \"\n         \"to the assistant.\",\n         \"command:incident.note\",\n         {\"text\": {\"type\": \"string\", \"maxLength\": 4000}},\n         \"medium\", \"incidents.write\"),\n    tool(\"set_incident_severity\",\n         \"Change the incident severity, with a stated rationale.\",\n         \"command:incident.severity\",\n         {\"severity\": {\"enum\": [\"info\", \"low\", \"medium\", \"high\", \"critical\"]},\n          \"rationale\": {\"type\": \"string\", \"maxLength\": 1000}},\n         \"medium\", \"incidents.write\"),\n    tool(\"create_investigation_task\",\n         \"Create a task on this incident for a human to carry out.\",\n         \"command:incident.task\",\n         {\"title\": {\"type\": \"string\", \"maxLength\": 200},\n          \"detail\": {\"type\": \"string\", \"maxLength\": 2000}},\n         \"medium\", \"incidents.write\"),\n    tool(\"isolate_host\",\n         \"Network-contain a host that is already an entity on this incident. \"\n         \"Requires human approval, always.\",\n         \"command:crowdstrike.isolate_host\", host, \"high\",\n         \"response.isolate\", approval=True, calls=3),\n    tool(\"disable_account\",\n         \"Disable an identity that is already an entity on this incident. \"\n         \"Requires human approval, always.\",\n         \"command:identity.disable\",\n         {\"identity_id\": {\"type\": \"string\", \"pattern\": \"^idn_[0-9A-Z]{26}$\"}},\n         \"high\", \"response.disable_account\", approval=True, calls=3),\n]",
+        "doc": "The tools a fresh installation registers. Every one names a real command; none takes a URL, a query string or code.",
+        "form": "statements",
+        "language": "python",
+        "name": "shipped_ai_tools",
+        "packages": [],
+        "params": [],
+        "returns": "List<Map<string, Any>>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 520
+    },
+    {
+      "id": "n_mu4ytvyv1dzppw7mz",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 520
+    }
+  ],
+  "style": "service",
+  "variables": []
+}

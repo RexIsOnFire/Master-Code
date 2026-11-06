@@ -1,0 +1,128 @@
+{
+  "edges": [
+    {
+      "from": {
+        "node": "n_mu4ytvytxddpatt4",
+        "port": "result"
+      },
+      "id": "e_mu4ytvytxfgde1wt",
+      "to": {
+        "node": "n_mu4ytvytxezx6p7y",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvytxc7i1uv5",
+        "port": "out"
+      },
+      "id": "e_mu4ytvytxgdt3be9",
+      "to": {
+        "node": "n_mu4ytvytxddpatt4",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvytxddpatt4",
+        "port": "out"
+      },
+      "id": "e_mu4ytvytxhxm4697",
+      "to": {
+        "node": "n_mu4ytvytxezx6p7y",
+        "port": "in"
+      }
+    }
+  ],
+  "fileId": "file_mu4ytvytxaboaeor",
+  "id": "g_mu4ytvytxbzfaxjc",
+  "name": "identity connector pack",
+  "nodes": [
+    {
+      "id": "n_mu4ytvytxc7i1uv5",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "doc": "Identity providers: where account response lives.\n\nDisabling an account and revoking its sessions are separate commands on\npurpose. Disabling alone leaves existing tokens valid for up to an hour on\nmost platforms, which is the gap an attacker keeps working in - a\ncontainment playbook has to do both, and making them two steps is how a\nreviewer notices when it only does one.",
+        "isAsync": false,
+        "name": "identity_connectors",
+        "params": [],
+        "returns": "List<Map<string, Any>>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvytxddpatt4",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "List<Map<string, Any>>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "def param(kind, **extra):\n    \"\"\"One input property, in JSON Schema terms.\"\"\"\n    spec = {\"type\": kind} if kind not in (\"ipv4\", \"hostname\") else {\"type\": \"string\"}\n    spec.update(extra)\n    return spec\n\n\ndef cmd(key, name, method, url, inputs, outputs, extract=None, risk=\"low\",\n        effect=\"read\", doc=\"\", techniques=None, undo=None, timeout_ms=30000,\n        required=None, category=\"integration\", body=None, success=None):\n    \"\"\"\n    One command definition.\n\n    Structured JSON in, structured JSON out. The output_schema is what the\n    playbook validator type-checks the next step against, so a command whose\n    schema lies fails at publish rather than at 03:00.\n    \"\"\"\n    definition = {\n        \"key\": key,\n        \"name\": name,\n        \"category\": category,\n        \"kind\": \"http\",\n        \"input_schema\": {\n            \"type\": \"object\",\n            \"required\": list(inputs.keys()) if required is None else required,\n            \"properties\": inputs,\n            \"additionalProperties\": False,\n        },\n        \"output_schema\": {\"type\": \"object\", \"properties\": outputs},\n        \"implementation\": {\n            \"method\": method,\n            \"url\": url,\n            \"extract\": extract or {},\n            \"success_codes\": success or [200, 201, 202, 204],\n        },\n        \"required_permissions\": [\"commands.execute\"],\n        \"required_capabilities\": [\"net\"],\n        \"timeout_ms\": timeout_ms,\n        \"risk_level\": risk,\n        \"effect\": effect,\n        \"trust_level\": \"trusted\",\n        \"technique_ids\": techniques or [],\n        \"doc\": doc,\n    }\n    if body is not None:\n        definition[\"implementation\"][\"body\"] = body\n    if effect == \"mutating\":\n        # A mutating command with no dry-run example would make dry run a lie,\n        # and the registry validator refuses it.\n        definition[\"dry_run_example\"] = {\"dry_run\": True, \"would_call\": key}\n    if undo:\n        # Named, not inferred. The platform never invents a rollback.\n        definition[\"undo_command\"] = undo\n    if risk == \"high\":\n        definition[\"required_permissions\"] = [\"commands.execute\", _permission_for(key)]\n    return definition\n\n\ndef _permission_for(key):\n    \"\"\"High-risk commands need the response permission that matches them.\"\"\"\n    action = key.split(\".\", 1)[1]\n    if \"isolate\" in action or \"contain\" in action or \"quarantine_host\" in action:\n        return \"response.isolate\"\n    if \"block\" in action:\n        return \"response.block\"\n    if \"disable\" in action or \"suspend\" in action:\n        return \"response.disable_account\"\n    if \"revoke\" in action or \"signout\" in action:\n        return \"response.revoke_sessions\"\n    if \"delete\" in action or \"purge\" in action or \"remove_mail\" in action:\n        return \"response.delete_mail\"\n    if \"firewall\" in action or \"policy\" in action:\n        return \"response.firewall\"\n    return \"response.isolate\"\n\n\ndef field(name, label, kind=\"text\", required=True, default=None,\n          options=None, help=\"\", placeholder=\"\"):\n    # One thing an operator must be told before this tool can be reached.\n    return {\n        \"name\": name, \"label\": label, \"kind\": kind, \"required\": required,\n        \"default\": default, \"options\": options or [], \"help\": help,\n        \"placeholder\": placeholder,\n    }\n\n\ndef connector(cid, name, vendor, category, auth, base_url, allowlist, commands,\n              min_permissions=None, rate_limit=None, health=None,\n              version=\"1.0.0\", setup=None, derive=None, ingest=None,\n              hunt=None):\n    # A connector manifest. Installing one publishes its commands; no engine\n    # change.\n    #\n    # setup is what THIS vendor needs before it can be reached, and no two\n    # agree: CrowdStrike wants a cloud region, Sentinel a tenant and a\n    # workspace, Splunk a host and a port. Asking every connector for a\n    # client id and a secret asked the two questions they happen to share\n    # and none of the ones that make a connection work.\n    fields = list(setup or [])\n\n    # Which setting the commands of this connector actually read. Most say\n    # base_url; a few front a protocol that is not HTTP and say gateway_url\n    # instead, and asking those for a base_url nothing reads is how a form\n    # grows a field that does nothing.\n    setting = \"base_url\"\n    if \"{{\" in base_url:\n        inner = base_url.split(\"{{\", 1)[1].split(\"}}\", 1)[0].strip()\n        setting = inner.rsplit(\".\", 1)[-1] if inner else \"base_url\"\n\n    if not any(f[\"name\"] == setting for f in fields):\n        # Every connector can at least be pointed elsewhere: a regional\n        # cloud, a tenant-specific host, an on-premise appliance.\n        # A connector whose base_url is itself a template has no host until\n        # someone supplies one, so there is nothing to prefill and the field\n        # is the only way the connection can exist at all.\n        templated = \"{{\" in base_url\n        fields.insert(0, field(\n            setting, \"API base URL\", kind=\"url\",\n            default=None if templated else base_url,\n            help=\"Change for a regional cloud or an on-premise appliance.\"\n                 if not templated else \"The hostname this tenant answers on.\"))\n\n    return {\n        \"setup\": fields,\n        # Settings a vendor addresses by a composite of the ones a person\n        # can actually be asked for. Nobody knows their workspace ARM id;\n        # everybody knows their subscription, resource group and workspace\n        # name, and the id is those three in a fixed shape.\n        \"derive\": derive or {},\n        # How this product is polled for alerts: which command lists them,\n        # which turns ids into objects, and where the timestamp lives that\n        # the watermark advances to. A connector without it can still\n        # receive a webhook; it just cannot be asked.\n        \"ingest\": ingest or {},\n        # Which command runs an arbitrary hunt query, what the query\n        # parameter is called, and what language an engineer is writing.\n        # A tool without this cannot be hunted in - which is most of them,\n        # because a firewall is not a place you go looking.\n        \"hunt\": hunt or {},\n        \"id\": cid, \"name\": name, \"vendor\": vendor, \"category\": category,\n        \"version\": version, \"auth\": auth, \"base_url\": base_url,\n        \"egress_allowlist\": allowlist,\n        \"min_vendor_permissions\": min_permissions or [],\n        \"rate_limit\": rate_limit or {},\n        \"health_check\": health or {},\n        \"commands\": commands,\n        \"publisher\": \"master-soar\",\n        \"signature\": \"\",\n    }\n\n\nuser_out = {\"id\": {\"type\": \"string\"}, \"upn\": {\"type\": \"string\"},\n            \"display_name\": {\"type\": \"string\"}, \"enabled\": {\"type\": \"boolean\"},\n            \"department\": {\"type\": \"string\"}, \"manager\": {\"type\": \"string\"}}\nuser_in = {\"user_id\": param(\"string\", minLength=1)}\n\nentra = connector(\n    \"microsoft.entra_id\", \"Microsoft Entra ID\", \"Microsoft\", \"identity\",\n    {\"kind\": \"oauth2_client\", \"roles\": [\"client_id\", \"client_secret\"],\n     \"token_url\": \"https://login.microsoftonline.com/{{ integration.config.tenant_id }}/oauth2/v2.0/token\",\n     \"scope\": \"https://graph.microsoft.com/.default\"},\n    \"https://graph.microsoft.com\",\n    [\"graph.microsoft.com\", \"login.microsoftonline.com\"],\n    min_permissions=[\"User.ReadWrite.All\", \"AuditLog.Read.All\",\n                     \"IdentityRiskyUser.ReadWrite.All\", \"Directory.Read.All\"],\n    health={\"path\": \"/v1.0/organization\"},\n    setup=[\n        field(\"tenant_id\", \"Entra tenant id\",\n              placeholder=\"00000000-0000-0000-0000-000000000000\",\n              help=\"The directory the tenant lives in. It is part of the token endpoint, so a wrong one fails at sign-in.\"),\n    ],\n    commands=[\n        cmd(\"entra.get_user\", \"Entra ID: Get User\", \"GET\",\n            \"https://graph.microsoft.com/v1.0/users/{{ inputs.user_id | urlencode }}?$select=id,userPrincipalName,displayName,accountEnabled,department,jobTitle\",\n            user_in, user_out,\n            {\"id\": \"$.id\", \"upn\": \"$.userPrincipalName\",\n             \"display_name\": \"$.displayName\", \"enabled\": \"$.accountEnabled\",\n             \"department\": \"$.department\"}),\n\n        cmd(\"entra.disable_user\", \"Entra ID: Disable User\", \"PATCH\",\n            \"https://graph.microsoft.com/v1.0/users/{{ inputs.user_id | urlencode }}\",\n            user_in, {\"disabled\": {\"type\": \"boolean\"}},\n            risk=\"high\", effect=\"mutating\", undo=\"entra.enable_user\",\n            success=[204],\n            body={\"accountEnabled\": False},\n            techniques=[\"M1018\"],\n            doc=\"Disable sign-in. On its own this does NOT end existing sessions - \"\n                \"pair it with revoke_sessions or the attacker keeps their token.\"),\n\n        cmd(\"entra.enable_user\", \"Entra ID: Enable User\", \"PATCH\",\n            \"https://graph.microsoft.com/v1.0/users/{{ inputs.user_id | urlencode }}\",\n            user_in, {\"enabled\": {\"type\": \"boolean\"}},\n            risk=\"high\", effect=\"mutating\", success=[204],\n            body={\"accountEnabled\": True},\n            doc=\"The declared compensation for disable_user. Still HIGH risk: re-enabling an account is as consequential as disabling one.\"),\n\n        cmd(\"entra.revoke_sessions\", \"Entra ID: Revoke Sign-In Sessions\", \"POST\",\n            \"https://graph.microsoft.com/v1.0/users/{{ inputs.user_id | urlencode }}/revokeSignInSessions\",\n            user_in, {\"revoked\": {\"type\": \"boolean\"}}, {\"revoked\": \"$.value\"},\n            risk=\"high\", effect=\"mutating\",\n            doc=\"Invalidate every refresh token. This is the half of account containment that actually stops the session in progress.\"),\n\n        cmd(\"entra.reset_password\", \"Entra ID: Force Password Reset\", \"PATCH\",\n            \"https://graph.microsoft.com/v1.0/users/{{ inputs.user_id | urlencode }}\",\n            {\"user_id\": param(\"string\"),\n             \"temporary_password\": param(\"string\", minLength=12)},\n            {\"reset\": {\"type\": \"boolean\"}},\n            risk=\"high\", effect=\"mutating\", success=[204],\n            body={\"passwordProfile\": {\n                \"forceChangePasswordNextSignIn\": True,\n                \"password\": \"{{ inputs.temporary_password }}\"}},\n            doc=\"The temporary password is a SecretValue in the rendering layer, so \"\n                \"it reaches the request body and never the execution record.\"),\n\n        cmd(\"entra.get_signin_logs\", \"Entra ID: Get Sign-In Logs\", \"GET\",\n            \"https://graph.microsoft.com/v1.0/auditLogs/signIns?$filter=userPrincipalName+eq+%27{{ inputs.upn | urlencode }}%27&$top={{ inputs.limit | default(50) }}\",\n            {\"upn\": param(\"string\"), \"limit\": param(\"integer\", maximum=1000)},\n            {\"signins\": {\"type\": \"array\", \"items\": {\"type\": \"object\"}}},\n            {\"signins\": \"$.value\"}, required=[\"upn\"],\n            doc=\"Where did this account sign in from, and did any of it succeed. \"\n                \"The first question of every account-compromise investigation.\"),\n\n        cmd(\"entra.get_risky_user\", \"Entra ID: Get Risky User\", \"GET\",\n            \"https://graph.microsoft.com/v1.0/identityProtection/riskyUsers/{{ inputs.user_id | urlencode }}\",\n            user_in,\n            {\"risk_level\": {\"type\": \"string\"}, \"risk_state\": {\"type\": \"string\"},\n             \"risk_detail\": {\"type\": \"string\"}},\n            {\"risk_level\": \"$.riskLevel\", \"risk_state\": \"$.riskState\",\n             \"risk_detail\": \"$.riskDetail\"}),\n\n        cmd(\"entra.confirm_compromised\", \"Entra ID: Confirm User Compromised\",\n            \"POST\",\n            \"https://graph.microsoft.com/v1.0/identityProtection/riskyUsers/confirmCompromised\",\n            user_in, {\"confirmed\": {\"type\": \"boolean\"}},\n            risk=\"medium\", effect=\"mutating\", success=[204],\n            body={\"userIds\": [\"{{ inputs.user_id }}\"]},\n            doc=\"Feeds the analyst verdict back into Identity Protection, which is \"\n                \"how the risk engine learns from the SOC rather than the other way \"\n                \"round only.\"),\n\n        cmd(\"entra.get_user_groups\", \"Entra ID: Get User Groups\", \"GET\",\n            \"https://graph.microsoft.com/v1.0/users/{{ inputs.user_id | urlencode }}/memberOf\",\n            user_in,\n            {\"groups\": {\"type\": \"array\", \"items\": {\"type\": \"object\"}}},\n            {\"groups\": \"$.value\"},\n            doc=\"Privileged group membership is what turns one compromised account \"\n                \"into an estate-wide incident.\"),\n\n        cmd(\"entra.remove_from_group\", \"Entra ID: Remove From Group\", \"DELETE\",\n            \"https://graph.microsoft.com/v1.0/groups/{{ inputs.group_id | urlencode }}/members/{{ inputs.user_id | urlencode }}/$ref\",\n            {\"group_id\": param(\"string\"), \"user_id\": param(\"string\")},\n            {\"removed\": {\"type\": \"boolean\"}},\n            risk=\"high\", effect=\"mutating\", success=[204],\n            doc=\"Emergency removal from a privileged group.\"),\n    ],\n)\n\nokta = connector(\n    \"okta.v1\", \"Okta\", \"Okta\", \"identity\",\n    {\"kind\": \"api_key\", \"roles\": [\"api_token\"], \"header\": \"Authorization\",\n     \"prefix\": \"SSWS \"},\n    \"{{ integration.config.base_url }}\",\n    [\"{{ integration.config.host }}\"],\n    min_permissions=[\"Group Administrator\", \"Help Desk Administrator\"],\n    health={\"path\": \"/api/v1/org\"},\n    setup=[\n        field(\"base_url\", \"Okta org URL\", kind=\"url\",\n              placeholder=\"https://client.okta.com\",\n              help=\"Use the admin org URL, not a custom sign-in domain.\"),\n    ],\n    commands=[\n        cmd(\"okta.get_user\", \"Okta: Get User\", \"GET\",\n            \"{{ integration.config.base_url }}/api/v1/users/{{ inputs.user_id | urlencode }}\",\n            user_in, user_out,\n            {\"id\": \"$.id\", \"upn\": \"$.profile.login\",\n             \"display_name\": \"$.profile.displayName\", \"enabled\": \"$.status\"}),\n\n        cmd(\"okta.suspend_user\", \"Okta: Suspend User\", \"POST\",\n            \"{{ integration.config.base_url }}/api/v1/users/{{ inputs.user_id | urlencode }}/lifecycle/suspend\",\n            user_in, {\"suspended\": {\"type\": \"boolean\"}},\n            risk=\"high\", effect=\"mutating\", undo=\"okta.unsuspend_user\",\n            success=[200, 204]),\n\n        cmd(\"okta.unsuspend_user\", \"Okta: Unsuspend User\", \"POST\",\n            \"{{ integration.config.base_url }}/api/v1/users/{{ inputs.user_id | urlencode }}/lifecycle/unsuspend\",\n            user_in, {\"unsuspended\": {\"type\": \"boolean\"}},\n            risk=\"high\", effect=\"mutating\", success=[200, 204]),\n\n        cmd(\"okta.clear_sessions\", \"Okta: Clear User Sessions\", \"DELETE\",\n            \"{{ integration.config.base_url }}/api/v1/users/{{ inputs.user_id | urlencode }}/sessions?oauthTokens=true\",\n            user_in, {\"cleared\": {\"type\": \"boolean\"}},\n            risk=\"high\", effect=\"mutating\", success=[204],\n            doc=\"oauthTokens=true is the part people forget. Without it the OIDC \"\n                \"tokens survive the session clear.\"),\n\n        cmd(\"okta.reset_factors\", \"Okta: Reset MFA Factors\", \"POST\",\n            \"{{ integration.config.base_url }}/api/v1/users/{{ inputs.user_id | urlencode }}/lifecycle/reset_factors\",\n            user_in, {\"reset\": {\"type\": \"boolean\"}},\n            risk=\"high\", effect=\"mutating\", success=[200, 204],\n            doc=\"For the case where the attacker enrolled their own factor.\"),\n\n        cmd(\"okta.get_logs\", \"Okta: Get System Logs\", \"GET\",\n            \"{{ integration.config.base_url }}/api/v1/logs?filter={{ inputs.filter | urlencode }}&since={{ inputs.since | urlencode }}\",\n            {\"filter\": param(\"string\"), \"since\": param(\"string\")},\n            {\"events\": {\"type\": \"array\", \"items\": {\"type\": \"object\"}}},\n            required=[]),\n    ],\n)\n\nactive_directory = connector(\n    \"microsoft.active_directory\", \"Active Directory\", \"Microsoft\", \"identity\",\n    {\"kind\": \"basic\", \"roles\": [\"username\", \"password\"]},\n    \"{{ integration.config.gateway_url }}\",\n    [\"{{ integration.config.gateway_host }}\"],\n    min_permissions=[\"Account Operators\"],\n    health={\"path\": \"/health\"},\n    setup=[\n        field(\"gateway_url\", \"AD gateway URL\", kind=\"url\",\n              placeholder=\"https://ad-gateway.client.example\",\n              help=\"Domain controllers speak LDAP, not HTTP. This is the gateway that fronts them.\"),\n        field(\"domain\", \"Domain\", placeholder=\"client.local\"),\n    ],\n    commands=[\n        cmd(\"ad.get_user\", \"Active Directory: Get User\", \"GET\",\n            \"{{ integration.config.gateway_url }}/ad/user/{{ inputs.sam_account_name | urlencode }}\",\n            {\"sam_account_name\": param(\"string\")}, user_out),\n\n        cmd(\"ad.disable_user\", \"Active Directory: Disable Account\", \"POST\",\n            \"{{ integration.config.gateway_url }}/ad/user/{{ inputs.sam_account_name | urlencode }}/disable\",\n            {\"sam_account_name\": param(\"string\")},\n            {\"disabled\": {\"type\": \"boolean\"}},\n            risk=\"high\", effect=\"mutating\", undo=\"ad.enable_user\"),\n\n        cmd(\"ad.enable_user\", \"Active Directory: Enable Account\", \"POST\",\n            \"{{ integration.config.gateway_url }}/ad/user/{{ inputs.sam_account_name | urlencode }}/enable\",\n            {\"sam_account_name\": param(\"string\")},\n            {\"enabled\": {\"type\": \"boolean\"}},\n            risk=\"high\", effect=\"mutating\"),\n\n        cmd(\"ad.get_group_members\", \"Active Directory: Get Group Members\", \"GET\",\n            \"{{ integration.config.gateway_url }}/ad/group/{{ inputs.group | urlencode }}/members\",\n            {\"group\": param(\"string\")},\n            {\"members\": {\"type\": \"array\", \"items\": {\"type\": \"string\"}}}),\n    ],\n)\n\nreturn [entra, okta, active_directory]",
+        "doc": "Identity providers: where account response lives.\n\nDisabling an account and revoking its sessions are separate commands on\npurpose. Disabling alone leaves existing tokens valid for up to an hour on\nmost platforms, which is the gap an attacker keeps working in - a\ncontainment playbook has to do both, and making them two steps is how a\nreviewer notices when it only does one.",
+        "form": "statements",
+        "language": "python",
+        "name": "identity_connector_pack",
+        "packages": [],
+        "params": [],
+        "returns": "List<Map<string, Any>>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvytxezx6p7y",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 0
+    }
+  ],
+  "style": "data-flow",
+  "variables": []
+}

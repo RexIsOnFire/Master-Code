@@ -1,0 +1,769 @@
+{
+  "breakpoints": [
+    {
+      "maxWidth": 640,
+      "name": "mobile"
+    },
+    {
+      "maxWidth": 1024,
+      "minWidth": 641,
+      "name": "tablet"
+    },
+    {
+      "minWidth": 1025,
+      "name": "desktop"
+    }
+  ],
+  "lang": "en",
+  "meta": {
+    "viewport": "width=device-width, initial-scale=1"
+  },
+  "root": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "classes": [
+                "brand-mark"
+              ],
+              "id": "brand-mark",
+              "kind": "label",
+              "text": "//"
+            },
+            {
+              "classes": [
+                "brand-name"
+              ],
+              "id": "brand-name",
+              "kind": "label",
+              "text": "MASTER SOAR"
+            }
+          ],
+          "classes": [
+            "brand"
+          ],
+          "id": "brand",
+          "kind": "panel"
+        },
+        {
+          "children": [
+            {
+              "attrs": {
+                "data-key": "g l",
+                "data-permission": "clients.read",
+                "data-view": "clients",
+                "hidden": "hidden",
+                "href": "#clients"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-clients",
+              "kind": "link",
+              "text": "Clients"
+            },
+            {
+              "attrs": {
+                "data-key": "g d",
+                "data-permission": "incidents.read",
+                "data-view": "dashboard",
+                "hidden": "hidden",
+                "href": "#dashboard"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-dashboard",
+              "kind": "link",
+              "text": "Dashboard"
+            },
+            {
+              "attrs": {
+                "data-key": "g i",
+                "data-permission": "incidents.read",
+                "data-view": "incidents",
+                "hidden": "hidden",
+                "href": "#incidents"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-incidents",
+              "kind": "link",
+              "text": "Incidents"
+            },
+            {
+              "attrs": {
+                "data-key": "g a",
+                "data-permission": "alerts.read",
+                "data-view": "alerts",
+                "hidden": "hidden",
+                "href": "#alerts"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-alerts",
+              "kind": "link",
+              "text": "Alerts"
+            },
+            {
+              "attrs": {
+                "data-key": "g c",
+                "data-permission": "cases.read",
+                "data-view": "cases",
+                "hidden": "hidden",
+                "href": "#cases"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-cases",
+              "kind": "link",
+              "text": "Cases"
+            },
+            {
+              "attrs": {
+                "data-key": "g p",
+                "data-permission": "playbooks.read",
+                "data-view": "playbooks",
+                "hidden": "hidden",
+                "href": "#playbooks"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-playbooks",
+              "kind": "link",
+              "text": "Playbooks"
+            },
+            {
+              "attrs": {
+                "data-key": "g m",
+                "data-permission": "commands.read",
+                "data-view": "commands",
+                "hidden": "hidden",
+                "href": "#commands"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-commands",
+              "kind": "link",
+              "text": "Commands"
+            },
+            {
+              "attrs": {
+                "data-key": "g n",
+                "data-permission": "integrations.read",
+                "data-view": "integrations",
+                "hidden": "hidden",
+                "href": "#integrations"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-integrations",
+              "kind": "link",
+              "text": "Integrations"
+            },
+            {
+              "attrs": {
+                "data-key": "g t",
+                "data-permission": "intel.read",
+                "data-view": "intel",
+                "hidden": "hidden",
+                "href": "#intel"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-intel",
+              "kind": "link",
+              "text": "Threat Intel"
+            },
+            {
+              "attrs": {
+                "data-key": "g h",
+                "data-permission": "hunts.read",
+                "data-view": "hunts",
+                "hidden": "hidden",
+                "href": "#hunts"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-hunts",
+              "kind": "link",
+              "text": "Threat Hunting"
+            },
+            {
+              "attrs": {
+                "data-key": "g u",
+                "data-permission": "hunts.review",
+                "data-view": "findings",
+                "hidden": "hidden",
+                "href": "#findings"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-findings",
+              "kind": "link",
+              "text": "Hunt Findings"
+            },
+            {
+              "attrs": {
+                "data-key": "g s",
+                "data-permission": "incidents.read",
+                "data-view": "assets",
+                "hidden": "hidden",
+                "href": "#assets"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-assets",
+              "kind": "link",
+              "text": "Assets"
+            },
+            {
+              "attrs": {
+                "data-key": "g e",
+                "data-permission": "executions.read",
+                "data-view": "executions",
+                "hidden": "hidden",
+                "href": "#executions"
+              },
+              "classes": [
+                "nav-item",
+                "is-active"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-executions",
+              "kind": "link",
+              "text": "Executions"
+            },
+            {
+              "attrs": {
+                "data-key": "g v",
+                "data-permission": "approvals.read",
+                "data-view": "approvals",
+                "hidden": "hidden",
+                "href": "#approvals"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-approvals",
+              "kind": "link",
+              "text": "Approvals"
+            },
+            {
+              "attrs": {
+                "data-key": "g r",
+                "data-permission": "reports.read",
+                "data-view": "reports",
+                "hidden": "hidden",
+                "href": "#reports"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-reports",
+              "kind": "link",
+              "text": "Reports"
+            },
+            {
+              "attrs": {
+                "data-key": "g y",
+                "data-permission": "admin.users",
+                "data-view": "admin",
+                "hidden": "hidden",
+                "href": "#admin"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-admin",
+              "kind": "link",
+              "text": "Administration"
+            }
+          ],
+          "classes": [
+            "nav"
+          ],
+          "id": "nav",
+          "kind": "menu"
+        },
+        {
+          "children": [
+            {
+              "attrs": {
+                "title": "Toggle theme (t)",
+                "type": "button"
+              },
+              "classes": [
+                "ghost",
+                "wide"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onToggleTheme"
+                }
+              ],
+              "id": "theme-toggle",
+              "kind": "button",
+              "name": "themeToggle",
+              "text": "Light / Dark"
+            },
+            {
+              "classes": [
+                "muted",
+                "tiny"
+              ],
+              "id": "build-id",
+              "kind": "label",
+              "text": "v0.1.0 · local"
+            }
+          ],
+          "classes": [
+            "rail-foot"
+          ],
+          "id": "rail-foot",
+          "kind": "panel"
+        }
+      ],
+      "classes": [
+        "rail"
+      ],
+      "id": "rail",
+      "kind": "panel"
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "attrs": {
+                "autocomplete": "off",
+                "placeholder": "Search incidents, indicators, hosts, executions…   (/ to focus, ⌘K for actions)",
+                "type": "search"
+              },
+              "classes": [
+                "omnibox"
+              ],
+              "events": [
+                {
+                  "event": "keydown",
+                  "handler": "onOmniboxKey"
+                }
+              ],
+              "id": "omnibox",
+              "kind": "textbox",
+              "name": "omnibox"
+            },
+            {
+              "children": [
+                {
+                  "classes": [
+                    "chip",
+                    "chip-client"
+                  ],
+                  "id": "active-client",
+                  "kind": "label",
+                  "name": "activeClient",
+                  "text": "—"
+                },
+                {
+                  "classes": [
+                    "chip"
+                  ],
+                  "id": "queue-depth",
+                  "kind": "label",
+                  "name": "queueDepth",
+                  "text": "queue —"
+                },
+                {
+                  "classes": [
+                    "chip"
+                  ],
+                  "id": "worker-state",
+                  "kind": "label",
+                  "name": "workerState",
+                  "text": "workers —"
+                },
+                {
+                  "classes": [
+                    "chip",
+                    "chip-attn"
+                  ],
+                  "id": "pending-approvals",
+                  "kind": "label",
+                  "name": "pendingApprovals",
+                  "text": "approvals —"
+                }
+              ],
+              "classes": [
+                "bar-status"
+              ],
+              "id": "bar-status",
+              "kind": "panel"
+            }
+          ],
+          "classes": [
+            "commandbar"
+          ],
+          "id": "commandbar",
+          "kind": "panel"
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "classes": [],
+                  "id": "em-id",
+                  "kind": "label",
+                  "name": "execLabel",
+                  "text": "EXEC —"
+                },
+                {
+                  "classes": [],
+                  "id": "em-playbook",
+                  "kind": "label",
+                  "name": "execPlaybook",
+                  "text": "playbook —"
+                },
+                {
+                  "classes": [],
+                  "id": "em-incident",
+                  "kind": "label",
+                  "name": "execIncident",
+                  "text": "incident —"
+                },
+                {
+                  "classes": [],
+                  "id": "em-started",
+                  "kind": "label",
+                  "name": "execStarted",
+                  "text": "started —"
+                },
+                {
+                  "classes": [],
+                  "id": "em-duration",
+                  "kind": "label",
+                  "name": "execDuration",
+                  "text": "duration —"
+                },
+                {
+                  "classes": [],
+                  "id": "em-status",
+                  "kind": "label",
+                  "name": "execStatus",
+                  "text": "status —"
+                },
+                {
+                  "classes": [],
+                  "id": "em-trigger",
+                  "kind": "label",
+                  "name": "execTrigger",
+                  "text": "trigger —"
+                },
+                {
+                  "classes": [],
+                  "id": "em-mode",
+                  "kind": "label",
+                  "name": "execMode",
+                  "text": "mode —"
+                }
+              ],
+              "classes": [
+                "exec-meta"
+              ],
+              "id": "exec-meta",
+              "kind": "panel"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "classes": [
+                        "card-title"
+                      ],
+                      "id": "steps-title",
+                      "kind": "label",
+                      "text": "Steps"
+                    },
+                    {
+                      "classes": [
+                        "steps"
+                      ],
+                      "id": "steps",
+                      "items": [],
+                      "kind": "list",
+                      "name": "stepList"
+                    },
+                    {
+                      "children": [
+                        {
+                          "classes": [
+                            "danger"
+                          ],
+                          "events": [
+                            {
+                              "event": "click",
+                              "handler": "onCancelExecution"
+                            }
+                          ],
+                          "id": "exec-cancel",
+                          "kind": "button",
+                          "name": "cancelExecution",
+                          "text": "Cancel"
+                        },
+                        {
+                          "events": [
+                            {
+                              "event": "click",
+                              "handler": "onResumeExecution"
+                            }
+                          ],
+                          "id": "exec-resume",
+                          "kind": "button",
+                          "name": "resumeExecution",
+                          "text": "Resume from step"
+                        }
+                      ],
+                      "classes": [],
+                      "id": "exec-actions",
+                      "kind": "panel"
+                    }
+                  ],
+                  "classes": [
+                    "card"
+                  ],
+                  "id": "steps-card",
+                  "kind": "panel"
+                },
+                {
+                  "children": [
+                    {
+                      "classes": [
+                        "card-title"
+                      ],
+                      "id": "detail-title",
+                      "kind": "label",
+                      "text": "Step detail"
+                    },
+                    {
+                      "classes": [
+                        "step-detail"
+                      ],
+                      "id": "step-detail",
+                      "kind": "code",
+                      "name": "stepDetail",
+                      "text": "Select a step to see its input, output, logs, worker, retries and the limits that were applied."
+                    }
+                  ],
+                  "classes": [
+                    "card"
+                  ],
+                  "id": "detail-card",
+                  "kind": "panel"
+                }
+              ],
+              "classes": [
+                "workspace"
+              ],
+              "id": "exec-body",
+              "kind": "panel"
+            }
+          ],
+          "classes": [
+            "view"
+          ],
+          "id": "view",
+          "kind": "panel"
+        },
+        {
+          "children": [
+            {
+              "classes": [
+                "status-message"
+              ],
+              "id": "status-message",
+              "kind": "label",
+              "name": "statusMessage",
+              "text": "ready"
+            },
+            {
+              "classes": [
+                "status-clock"
+              ],
+              "id": "status-clock",
+              "kind": "label",
+              "name": "statusClock",
+              "text": ""
+            }
+          ],
+          "classes": [
+            "statusstrip"
+          ],
+          "id": "statusstrip",
+          "kind": "panel"
+        }
+      ],
+      "classes": [
+        "main"
+      ],
+      "id": "main",
+      "kind": "panel"
+    }
+  ],
+  "rules": [
+    {
+      "declarations": {
+        "display": "grid",
+        "font-family": "var(--mono)",
+        "font-size": "11.5px",
+        "gap": "8px",
+        "grid-template-columns": "repeat(auto-fit, minmax(140px, 1fr))",
+        "margin-bottom": "12px"
+      },
+      "selector": ".exec-meta"
+    },
+    {
+      "declarations": {
+        "color": "var(--muted)",
+        "display": "block"
+      },
+      "selector": ".exec-meta span"
+    },
+    {
+      "declarations": {
+        "color": "var(--ink)",
+        "font-weight": "600"
+      },
+      "selector": ".exec-meta strong"
+    },
+    {
+      "declarations": {
+        "background": "var(--sunken)",
+        "border": "1px solid var(--line)",
+        "font-family": "var(--mono)",
+        "font-size": "11.5px",
+        "max-height": "420px",
+        "overflow-x": "auto",
+        "padding": "10px",
+        "white-space": "pre-wrap"
+      },
+      "selector": ".step-detail"
+    }
+  ],
+  "scripts": [
+    "file_mu4ytvyz21chr7736",
+    "file_mu4ytvyz21eptt7la"
+  ],
+  "stylesheets": [
+    "file_mu4ytvyz21bnia7p5"
+  ],
+  "title": "Master SOAR — Execution Console"
+}

@@ -1,0 +1,746 @@
+{
+  "edges": [
+    {
+      "from": {
+        "node": "n_mu4ytvym5947n0qg",
+        "port": "p:org_id"
+      },
+      "id": "e_mu4ytvym5bqfvizl",
+      "to": {
+        "node": "n_mu4ytvym5an2eyum",
+        "port": "p:org_id"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvym5947n0qg",
+        "port": "p:kind"
+      },
+      "id": "e_mu4ytvym5cfmwpig",
+      "to": {
+        "node": "n_mu4ytvym5an2eyum",
+        "port": "p:kind"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvym5947n0qg",
+        "port": "p:sha256_hex"
+      },
+      "id": "e_mu4ytvym5dqx0cmi",
+      "to": {
+        "node": "n_mu4ytvym5an2eyum",
+        "port": "p:sha256_hex"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvym5an2eyum",
+        "port": "result"
+      },
+      "id": "e_mu4ytvym5f8l7vvd",
+      "to": {
+        "node": "n_mu4ytvym5evlakif",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvym5947n0qg",
+        "port": "out"
+      },
+      "id": "e_mu4ytvym5gbsb9ca",
+      "to": {
+        "node": "n_mu4ytvym5an2eyum",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvym5an2eyum",
+        "port": "out"
+      },
+      "id": "e_mu4ytvym5hjnpngn",
+      "to": {
+        "node": "n_mu4ytvym5evlakif",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvym5kfnta8j",
+        "port": "self"
+      },
+      "id": "e_mu4ytvym5m5qtwgs",
+      "to": {
+        "node": "n_mu4ytvym5lwwhbcq",
+        "port": "p:self"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvym5kfnta8j",
+        "port": "p:key"
+      },
+      "id": "e_mu4ytvym5n61ea5q",
+      "to": {
+        "node": "n_mu4ytvym5lwwhbcq",
+        "port": "p:key"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvym5kfnta8j",
+        "port": "p:data"
+      },
+      "id": "e_mu4ytvym5oljva14",
+      "to": {
+        "node": "n_mu4ytvym5lwwhbcq",
+        "port": "p:data"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvym5lwwhbcq",
+        "port": "result"
+      },
+      "id": "e_mu4ytvym5qc4wb3k",
+      "to": {
+        "node": "n_mu4ytvym5pkgjygw",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvym5kfnta8j",
+        "port": "out"
+      },
+      "id": "e_mu4ytvym5rc0xq5f",
+      "to": {
+        "node": "n_mu4ytvym5lwwhbcq",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvym5lwwhbcq",
+        "port": "out"
+      },
+      "id": "e_mu4ytvym5soj4wn2",
+      "to": {
+        "node": "n_mu4ytvym5pkgjygw",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvym5ttelbeo",
+        "port": "self"
+      },
+      "id": "e_mu4ytvym5va93480",
+      "to": {
+        "node": "n_mu4ytvym5u21s8ca",
+        "port": "p:self"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvym5ttelbeo",
+        "port": "p:key"
+      },
+      "id": "e_mu4ytvym5wfr91eq",
+      "to": {
+        "node": "n_mu4ytvym5u21s8ca",
+        "port": "p:key"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvym5u21s8ca",
+        "port": "result"
+      },
+      "id": "e_mu4ytvym5ytxivw1",
+      "to": {
+        "node": "n_mu4ytvym5xkekcgt",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvym5ttelbeo",
+        "port": "out"
+      },
+      "id": "e_mu4ytvym5zamf507",
+      "to": {
+        "node": "n_mu4ytvym5u21s8ca",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvym5u21s8ca",
+        "port": "out"
+      },
+      "id": "e_mu4ytvym60nacb9v",
+      "to": {
+        "node": "n_mu4ytvym5xkekcgt",
+        "port": "in"
+      }
+    }
+  ],
+  "fileId": "file_mu4ytvym56rwej4h",
+  "id": "g_mu4ytvym57snb680",
+  "name": "object store port",
+  "nodes": [
+    {
+      "id": "n_mu4ytvym58p9998h",
+      "inputs": [],
+      "outputs": [],
+      "props": {
+        "doc": "Evidence, attachments, reports and AI conversation bodies.\n\nNo module anywhere builds a filesystem path. They ask for a key, which is\nderived from a content hash and a validated id. That is simultaneously the\npath-traversal mitigation and the reason S3 or Azure Blob is a\nconfiguration change rather than a refactor.",
+        "extends": "",
+        "methods": [
+          {
+            "name": "put",
+            "params": [
+              {
+                "name": "key",
+                "type": "string"
+              },
+              {
+                "name": "data",
+                "type": "string"
+              }
+            ],
+            "returns": "string"
+          },
+          {
+            "name": "get",
+            "params": [
+              {
+                "name": "key",
+                "type": "string"
+              }
+            ],
+            "returns": "string"
+          },
+          {
+            "name": "exists",
+            "params": [
+              {
+                "name": "key",
+                "type": "string"
+              }
+            ],
+            "returns": "bool"
+          },
+          {
+            "name": "delete",
+            "params": [
+              {
+                "name": "key",
+                "type": "string"
+              }
+            ],
+            "returns": "Void"
+          }
+        ],
+        "name": "ObjectStore"
+      },
+      "type": "oop/interface",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvym5947n0qg",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:org_id",
+          "name": "org_id",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:kind",
+          "name": "kind",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:sha256_hex",
+          "name": "sha256_hex",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "doc": "Content-addressed key. An uploaded filename is metadata; it never reaches a path.",
+        "isAsync": false,
+        "name": "object_key",
+        "params": [
+          {
+            "name": "org_id",
+            "type": "string"
+          },
+          {
+            "name": "kind",
+            "type": "string"
+          },
+          {
+            "name": "sha256_hex",
+            "type": "string"
+          }
+        ],
+        "returns": "string",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvym5an2eyum",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:org_id",
+          "name": "org_id",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:kind",
+          "name": "kind",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:sha256_hex",
+          "name": "sha256_hex",
+          "type": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "import re\n\nif not re.fullmatch(r\"[0-9a-f]{64}\", sha256_hex or \"\"):\n    raise ValueError(\"object key requires a lowercase hex sha256\")\nif not re.fullmatch(r\"[a-z_]{1,32}\", kind or \"\"):\n    raise ValueError(\"object kind must be a short lowercase identifier\")\nif not re.fullmatch(r\"org_[0-9A-Z]{26}\", org_id or \"\"):\n    raise ValueError(\"object key requires a valid organisation id\")\nreturn \"%s/%s/%s/%s/%s\" % (org_id, kind, sha256_hex[0:2], sha256_hex[2:4], sha256_hex)",
+        "doc": "Content-addressed key. An uploaded filename is metadata; it never reaches a path.",
+        "form": "statements",
+        "language": "python",
+        "name": "derive_object_key",
+        "packages": [],
+        "params": [
+          {
+            "name": "org_id",
+            "type": "string"
+          },
+          {
+            "name": "kind",
+            "type": "string"
+          },
+          {
+            "name": "sha256_hex",
+            "type": "string"
+          }
+        ],
+        "returns": "string"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvym5evlakif",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvym5i9edoqo",
+      "inputs": [],
+      "outputs": [],
+      "props": {
+        "doc": "Phase 1 adapter: a bind-mounted directory. Phase 3 swaps in S3 or Blob with object lock; the ObjectStore interface is unchanged.",
+        "extends": "",
+        "fields": [
+          {
+            "name": "root",
+            "type": "string",
+            "visibility": "private"
+          }
+        ],
+        "generics": "",
+        "implements": "ObjectStore",
+        "isAbstract": false,
+        "name": "LocalObjectStore",
+        "shape": "class"
+      },
+      "type": "oop/class",
+      "x": 0,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvym5jbvgkjx",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "self",
+          "name": "self",
+          "type": "LocalObjectStore"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:root",
+          "name": "root",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "assignFields": true,
+        "className": "LocalObjectStore",
+        "params": [
+          {
+            "name": "root",
+            "type": "string"
+          }
+        ]
+      },
+      "type": "oop/constructor",
+      "x": 0,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvym5kfnta8j",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "self",
+          "name": "self",
+          "type": "LocalObjectStore"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:key",
+          "name": "key",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:data",
+          "name": "data",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "className": "LocalObjectStore",
+        "doc": "Write, verifying the key stays inside the root.",
+        "isAsync": false,
+        "isStatic": false,
+        "name": "put",
+        "params": [
+          {
+            "name": "key",
+            "type": "string"
+          },
+          {
+            "name": "data",
+            "type": "string"
+          }
+        ],
+        "returns": "string",
+        "visibility": "public"
+      },
+      "type": "oop/method",
+      "x": 0,
+      "y": 520
+    },
+    {
+      "id": "n_mu4ytvym5lwwhbcq",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:self",
+          "name": "self",
+          "type": "LocalObjectStore"
+        },
+        {
+          "direction": "in",
+          "id": "p:key",
+          "name": "key",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:data",
+          "name": "data",
+          "type": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "capabilities": [
+          "fs.write"
+        ],
+        "code": "import os\n\ntarget = os.path.realpath(os.path.join(self.root, key))\nroot = os.path.realpath(self.root)\nif not target.startswith(root + os.sep):\n    raise ValueError(\"object key escaped the store root\")\nos.makedirs(os.path.dirname(target), exist_ok=True)\nwith open(target, \"wb\") as handle:\n    handle.write(data.encode(\"utf-8\") if isinstance(data, str) else data)\nreturn key",
+        "doc": "Write, verifying the key stays inside the root.",
+        "form": "statements",
+        "language": "python",
+        "name": "local_store_put",
+        "packages": [],
+        "params": [
+          {
+            "name": "self",
+            "type": "LocalObjectStore"
+          },
+          {
+            "name": "key",
+            "type": "string"
+          },
+          {
+            "name": "data",
+            "type": "string"
+          }
+        ],
+        "returns": "string"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvym5pkgjygw",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvym5ttelbeo",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "self",
+          "name": "self",
+          "type": "LocalObjectStore"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:key",
+          "name": "key",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "className": "LocalObjectStore",
+        "doc": "Read, with the same containment check.",
+        "isAsync": false,
+        "isStatic": false,
+        "name": "get",
+        "params": [
+          {
+            "name": "key",
+            "type": "string"
+          }
+        ],
+        "returns": "string",
+        "visibility": "public"
+      },
+      "type": "oop/method",
+      "x": 0,
+      "y": 650
+    },
+    {
+      "id": "n_mu4ytvym5u21s8ca",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:self",
+          "name": "self",
+          "type": "LocalObjectStore"
+        },
+        {
+          "direction": "in",
+          "id": "p:key",
+          "name": "key",
+          "type": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "capabilities": [
+          "fs.read"
+        ],
+        "code": "import os\n\ntarget = os.path.realpath(os.path.join(self.root, key))\nroot = os.path.realpath(self.root)\nif not target.startswith(root + os.sep):\n    raise ValueError(\"object key escaped the store root\")\nwith open(target, \"rb\") as handle:\n    return handle.read().decode(\"utf-8\")",
+        "doc": "Read, with the same containment check.",
+        "form": "statements",
+        "language": "python",
+        "name": "local_store_get",
+        "packages": [],
+        "params": [
+          {
+            "name": "self",
+            "type": "LocalObjectStore"
+          },
+          {
+            "name": "key",
+            "type": "string"
+          }
+        ],
+        "returns": "string"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvym5xkekcgt",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 260
+    }
+  ],
+  "style": "object-oriented",
+  "variables": []
+}

@@ -1,0 +1,57 @@
+{
+  "architecture": "monolithic",
+  "build": {
+    "flags": {},
+    "generatedDir": "src",
+    "incremental": true,
+    "mode": "debug",
+    "outputDir": "build",
+    "sourceDir": "src"
+  },
+  "created": "2026-08-15T06:06:07.199Z",
+  "dependencies": [],
+  "description": "Created from web/dashboard.",
+  "formatVersion": 1,
+  "grants": {
+    "env": false,
+    "fs.read": false,
+    "fs.write": false,
+    "net": false,
+    "process": false,
+    "random": true,
+    "stdio": true,
+    "time": true
+  },
+  "id": "project_mstz34o01gmz9dh",
+  "language": "html",
+  "languages": [
+    "css",
+    "html",
+    "javascript"
+  ],
+  "license": "MIT",
+  "modified": "2026-08-15T06:06:07.200Z",
+  "name": "web-dashboard",
+  "sandbox": {
+    "allowNetwork": false,
+    "allowedPaths": [
+      "build",
+      "assets"
+    ],
+    "enabled": true,
+    "envAllowlist": [
+      "PATH",
+      "HOME",
+      "USERPROFILE",
+      "SYSTEMROOT",
+      "TEMP",
+      "TMP",
+      "LANG"
+    ],
+    "maxOutputBytes": 1000000,
+    "memoryLimitMb": 512,
+    "timeoutMs": 20000
+  },
+  "template": "web/dashboard",
+  "version": "0.1.0"
+}

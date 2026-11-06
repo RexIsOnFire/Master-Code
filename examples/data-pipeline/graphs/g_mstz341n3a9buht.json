@@ -1,0 +1,553 @@
+{
+  "edges": [
+    {
+      "from": {
+        "node": "n_mstz341n6c6fsad",
+        "port": "p:n"
+      },
+      "id": "e_mstz341nhsbethd",
+      "to": {
+        "node": "n_mstz341n7jbe615",
+        "port": "a"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz341n6c6fsad",
+        "port": "p:n"
+      },
+      "id": "e_mstz341niyget0o",
+      "to": {
+        "node": "n_mstz341n7jbe615",
+        "port": "b"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz341n7jbe615",
+        "port": "result"
+      },
+      "id": "e_mstz341njb2do7n",
+      "to": {
+        "node": "n_mstz341n6c6fsad",
+        "port": "result"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz341n9f3uz5h",
+        "port": "p:n"
+      },
+      "id": "e_mstz341nkf88kcd",
+      "to": {
+        "node": "n_mstz341namf24w7",
+        "port": "a"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz341nbw3flji",
+        "port": "value"
+      },
+      "id": "e_mstz341nlpo8dw5",
+      "to": {
+        "node": "n_mstz341namf24w7",
+        "port": "b"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz341namf24w7",
+        "port": "result"
+      },
+      "id": "e_mstz341nm3ubbbu",
+      "to": {
+        "node": "n_mstz341nd6kqxfa",
+        "port": "a"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz341nc3u15u9",
+        "port": "value"
+      },
+      "id": "e_mstz341nnlhcv2v",
+      "to": {
+        "node": "n_mstz341nd6kqxfa",
+        "port": "b"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz341nd6kqxfa",
+        "port": "result"
+      },
+      "id": "e_mstz341nomy3rys",
+      "to": {
+        "node": "n_mstz341n9f3uz5h",
+        "port": "result"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz341n53gfj3l",
+        "port": "items"
+      },
+      "id": "e_mstz341np2w1oxb",
+      "to": {
+        "node": "n_mstz341n80fpbiy",
+        "port": "items"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz341n6c6fsad",
+        "port": "fn"
+      },
+      "id": "e_mstz341nqrus32x",
+      "to": {
+        "node": "n_mstz341n80fpbiy",
+        "port": "fn"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz341n80fpbiy",
+        "port": "items"
+      },
+      "id": "e_mstz341nrohggcj",
+      "to": {
+        "node": "n_mstz341ne5px60u",
+        "port": "items"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz341n9f3uz5h",
+        "port": "fn"
+      },
+      "id": "e_mstz341ns8db2p0",
+      "to": {
+        "node": "n_mstz341ne5px60u",
+        "port": "fn"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz341ne5px60u",
+        "port": "items"
+      },
+      "id": "e_mstz341ntfqhen2",
+      "to": {
+        "node": "n_mstz341nfb473fq",
+        "port": "items"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz341nfb473fq",
+        "port": "value"
+      },
+      "id": "e_mstz341nu2jyd9m",
+      "to": {
+        "node": "n_mstz341nge1vj98",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz341n49dhffj",
+        "port": "out"
+      },
+      "id": "e_mstz341nvwqjyuc",
+      "to": {
+        "node": "n_mstz341nge1vj98",
+        "port": "in"
+      }
+    }
+  ],
+  "fileId": "file_mstz341m2kj25rm",
+  "id": "g_mstz341n3a9buht",
+  "name": "pipeline",
+  "nodes": [
+    {
+      "id": "n_mstz341n49dhffj",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "args",
+          "name": "args",
+          "type": "List<string>"
+        }
+      ],
+      "props": {
+        "guard": true
+      },
+      "type": "entry/main",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "n_mstz341n53gfj3l",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "items",
+          "name": "items",
+          "type": "List<i64>"
+        }
+      ],
+      "props": {
+        "end": 21,
+        "kind": "range",
+        "path": "data.txt",
+        "start": 1
+      },
+      "type": "pipeline/source",
+      "x": 0,
+      "y": 130
+    },
+    {
+      "id": "n_mstz341n6c6fsad",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "result",
+          "name": "result",
+          "type": "i64"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "fn",
+          "name": "function",
+          "type": "(i64) -> i64"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:n",
+          "name": "n",
+          "type": "i64"
+        }
+      ],
+      "props": {
+        "isAsync": false,
+        "mode": "expression",
+        "params": [
+          {
+            "name": "n",
+            "type": "i64"
+          }
+        ],
+        "returns": "i64"
+      },
+      "type": "fn/lambda",
+      "x": 250,
+      "y": 0
+    },
+    {
+      "id": "n_mstz341n7jbe615",
+      "inputs": [
+        {
+          "defaultValue": 0,
+          "direction": "in",
+          "id": "a",
+          "name": "a",
+          "type": "N"
+        },
+        {
+          "defaultValue": 0,
+          "direction": "in",
+          "id": "b",
+          "name": "b",
+          "type": "N"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "N"
+        }
+      ],
+      "props": {
+        "op": "*"
+      },
+      "type": "op/arithmetic",
+      "x": 0,
+      "y": 260
+    },
+    {
+      "id": "n_mstz341n80fpbiy",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "items",
+          "name": "items",
+          "type": "List<T>"
+        },
+        {
+          "direction": "in",
+          "id": "fn",
+          "name": "transform",
+          "type": "(T) -> U"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "items",
+          "name": "items",
+          "type": "List<U>"
+        }
+      ],
+      "props": {},
+      "type": "pipeline/transform",
+      "x": 500,
+      "y": 0
+    },
+    {
+      "id": "n_mstz341n9f3uz5h",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "result",
+          "name": "result",
+          "type": "bool"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "fn",
+          "name": "function",
+          "type": "(i64) -> bool"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:n",
+          "name": "n",
+          "type": "i64"
+        }
+      ],
+      "props": {
+        "isAsync": false,
+        "mode": "expression",
+        "params": [
+          {
+            "name": "n",
+            "type": "i64"
+          }
+        ],
+        "returns": "bool"
+      },
+      "type": "fn/lambda",
+      "x": 750,
+      "y": 0
+    },
+    {
+      "id": "n_mstz341namf24w7",
+      "inputs": [
+        {
+          "defaultValue": 0,
+          "direction": "in",
+          "id": "a",
+          "name": "a",
+          "type": "N"
+        },
+        {
+          "defaultValue": 0,
+          "direction": "in",
+          "id": "b",
+          "name": "b",
+          "type": "N"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "N"
+        }
+      ],
+      "props": {
+        "op": "%"
+      },
+      "type": "op/arithmetic",
+      "x": 250,
+      "y": 130
+    },
+    {
+      "id": "n_mstz341nbw3flji",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "value",
+          "name": "value",
+          "type": "i64"
+        }
+      ],
+      "props": {
+        "type": "i64",
+        "value": 2
+      },
+      "type": "data/literal",
+      "x": 0,
+      "y": 390
+    },
+    {
+      "id": "n_mstz341nc3u15u9",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "value",
+          "name": "value",
+          "type": "i64"
+        }
+      ],
+      "props": {
+        "type": "i64",
+        "value": 0
+      },
+      "type": "data/literal",
+      "x": 0,
+      "y": 520
+    },
+    {
+      "id": "n_mstz341nd6kqxfa",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "a",
+          "name": "a",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "b",
+          "name": "b",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "bool"
+        }
+      ],
+      "props": {
+        "op": "=="
+      },
+      "type": "op/compare",
+      "x": 500,
+      "y": 130
+    },
+    {
+      "id": "n_mstz341ne5px60u",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "items",
+          "name": "items",
+          "type": "List<T>"
+        },
+        {
+          "direction": "in",
+          "id": "fn",
+          "name": "predicate",
+          "type": "(T) -> bool"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "items",
+          "name": "items",
+          "type": "List<T>"
+        }
+      ],
+      "props": {},
+      "type": "pipeline/filter",
+      "x": 1000,
+      "y": 0
+    },
+    {
+      "id": "n_mstz341nfb473fq",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "items",
+          "name": "items",
+          "type": "List<f64>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "value",
+          "name": "value",
+          "type": "f64"
+        }
+      ],
+      "props": {
+        "op": "sum",
+        "separator": ", "
+      },
+      "type": "pipeline/aggregate",
+      "x": 1250,
+      "y": 0
+    },
+    {
+      "id": "n_mstz341nge1vj98",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "label": "sum of even squares:",
+        "path": "out.txt",
+        "target": "console"
+      },
+      "type": "pipeline/sink",
+      "x": 1500,
+      "y": 0
+    }
+  ],
+  "style": "pipeline",
+  "variables": []
+}

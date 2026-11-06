@@ -1,0 +1,311 @@
+{
+  "edges": [
+    {
+      "from": {
+        "node": "n_mu4ytvyu1akr3r8ov",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyu1amscckxy",
+      "to": {
+        "node": "n_mu4ytvyu1albig2dq",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu1ajb43ikj",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyu1anbxcoct",
+      "to": {
+        "node": "n_mu4ytvyu1akr3r8ov",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu1akr3r8ov",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyu1ao90gsus",
+      "to": {
+        "node": "n_mu4ytvyu1albig2dq",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu1ap1b8w32",
+        "port": "p:policies"
+      },
+      "id": "e_mu4ytvyu1arlt4mm8",
+      "to": {
+        "node": "n_mu4ytvyu1aqb604mh",
+        "port": "p:policies"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu1ap1b8w32",
+        "port": "p:request"
+      },
+      "id": "e_mu4ytvyu1asy3ebcn",
+      "to": {
+        "node": "n_mu4ytvyu1aqb604mh",
+        "port": "p:request"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu1aqb604mh",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyu1aux7vre1",
+      "to": {
+        "node": "n_mu4ytvyu1atp6hv7z",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu1ap1b8w32",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyu1avc5zc7u",
+      "to": {
+        "node": "n_mu4ytvyu1aqb604mh",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu1aqb604mh",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyu1aw5sqmfo",
+      "to": {
+        "node": "n_mu4ytvyu1atp6hv7z",
+        "port": "in"
+      }
+    }
+  ],
+  "fileId": "file_mu4ytvyu1ahkin0jv",
+  "id": "g_mu4ytvyu1aifu393j",
+  "name": "approval policy",
+  "nodes": [
+    {
+      "id": "n_mu4ytvyu1ajb43ikj",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "doc": "The policies a fresh installation starts with. Ordered by priority; the first match wins, and the last one is a catch-all so nothing falls through undecided.",
+        "isAsync": false,
+        "name": "default_policies",
+        "params": [],
+        "returns": "List<Map<string, Any>>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyu1akr3r8ov",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "List<Map<string, Any>>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "return [\n    {\"name\": \"High-risk response always needs a human\",\n     \"priority\": 10, \"enabled\": True,\n     \"match\": {\"risk_level\": \"high\"},\n     \"effect\": \"require_approval\", \"required_approvals\": 1,\n     \"required_permission\": \"approvals.decide\",\n     \"separation_of_duty\": True, \"timeout_s\": 1800,\n     \"on_timeout\": \"reject\"},\n    {\"name\": \"Production-critical assets need two\",\n     \"priority\": 20, \"enabled\": True,\n     \"match\": {\"risk_level\": \"high\", \"asset_criticality\": \"critical\",\n               \"environment\": \"prod\"},\n     \"effect\": \"require_approval\", \"required_approvals\": 2,\n     \"required_permission\": \"approvals.decide\",\n     \"separation_of_duty\": True, \"timeout_s\": 3600,\n     \"on_timeout\": \"escalate\"},\n    {\"name\": \"AI-initiated medium actions need review\",\n     \"priority\": 30, \"enabled\": True,\n     \"match\": {\"risk_level\": \"medium\", \"initiator_kind\": \"ai\"},\n     \"effect\": \"require_approval\", \"required_approvals\": 1,\n     \"required_permission\": \"approvals.decide\",\n     \"separation_of_duty\": False, \"timeout_s\": 1800,\n     \"on_timeout\": \"reject\"},\n    {\"name\": \"Out-of-hours containment escalates\",\n     \"priority\": 40, \"enabled\": False,\n     \"match\": {\"risk_level\": \"high\", \"hours\": \"18:00-08:00\"},\n     \"effect\": \"require_approval\", \"required_approvals\": 1,\n     \"required_permission\": \"approvals.decide\",\n     \"separation_of_duty\": True, \"timeout_s\": 900,\n     \"on_timeout\": \"escalate\"},\n    {\"name\": \"Enrichment and lookups proceed\",\n     \"priority\": 100, \"enabled\": True,\n     \"match\": {\"risk_level\": \"low\"},\n     \"effect\": \"allow\"},\n    {\"name\": \"Anything not otherwise decided asks\",\n     \"priority\": 1000, \"enabled\": True,\n     \"match\": {},\n     \"effect\": \"require_approval\", \"required_approvals\": 1,\n     \"required_permission\": \"approvals.decide\",\n     \"separation_of_duty\": False, \"timeout_s\": 1800,\n     \"on_timeout\": \"reject\"},\n]",
+        "doc": "The policies a fresh installation starts with. Ordered by priority; the first match wins, and the last one is a catch-all so nothing falls through undecided.",
+        "form": "statements",
+        "language": "python",
+        "name": "shipped_approval_policies",
+        "packages": [],
+        "params": [],
+        "returns": "List<Map<string, Any>>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyu1albig2dq",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyu1ap1b8w32",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:policies",
+          "name": "policies",
+          "type": "List<Map<string, Any>>"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:request",
+          "name": "request",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "doc": "First match by priority, with one rule that cannot be configured away: a\nHIGH-risk action is never allowed to proceed on a timeout, and never comes\nback \"allow\" from a policy that forgot to say otherwise.",
+        "isAsync": false,
+        "name": "evaluate",
+        "params": [
+          {
+            "name": "policies",
+            "type": "List<Map<string, Any>>"
+          },
+          {
+            "name": "request",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyu1aqb604mh",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:policies",
+          "name": "policies",
+          "type": "List<Map<string, Any>>"
+        },
+        {
+          "direction": "in",
+          "id": "p:request",
+          "name": "request",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "FIELDS = [\"action_key\", \"risk_level\", \"severity\", \"asset_criticality\",\n          \"environment\", \"integration\", \"playbook\", \"initiator_kind\"]\n\nfor policy in sorted(policies, key=lambda p: p.get(\"priority\", 500)):\n    if not policy.get(\"enabled\", True):\n        continue\n    criteria = policy.get(\"match\", {})\n    if all(criteria.get(field) in (None, request.get(field)) for field in FIELDS):\n        decision = dict(policy)\n        if request.get(\"risk_level\") == \"high\":\n            if decision.get(\"effect\") == \"allow\":\n                decision[\"effect\"] = \"require_approval\"\n                decision[\"required_approvals\"] = 1\n                decision[\"separation_of_duty\"] = True\n                decision[\"override_reason\"] = (\n                    \"a high-risk action cannot be auto-approved by policy\"\n                )\n            if decision.get(\"on_timeout\") == \"proceed\":\n                decision[\"on_timeout\"] = \"reject\"\n        return decision\n\nreturn {\"name\": \"implicit deny\", \"effect\": \"deny\",\n        \"reason\": \"no policy matched; the platform does not guess\"}",
+        "doc": "First match by priority, with one rule that cannot be configured away: a\nHIGH-risk action is never allowed to proceed on a timeout, and never comes\nback \"allow\" from a policy that forgot to say otherwise.",
+        "form": "statements",
+        "language": "python",
+        "name": "match_approval_policy",
+        "packages": [],
+        "params": [
+          {
+            "name": "policies",
+            "type": "List<Map<string, Any>>"
+          },
+          {
+            "name": "request",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyu1atp6hv7z",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 130
+    }
+  ],
+  "style": "procedural",
+  "variables": []
+}

@@ -1,0 +1,377 @@
+{
+  "edges": [
+    {
+      "from": {
+        "node": "n_mu4ytvyphxml5e0z",
+        "port": "p:raw"
+      },
+      "id": "e_mu4ytvyphz2mvz16",
+      "to": {
+        "node": "n_mu4ytvyphy3tssw5",
+        "port": "p:raw"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyphy3tssw5",
+        "port": "result"
+      },
+      "id": "e_mu4ytvypi15lczyl",
+      "to": {
+        "node": "n_mu4ytvypi02y2auy",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyphxml5e0z",
+        "port": "out"
+      },
+      "id": "e_mu4ytvypi2kxzink",
+      "to": {
+        "node": "n_mu4ytvyphy3tssw5",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyphy3tssw5",
+        "port": "out"
+      },
+      "id": "e_mu4ytvypi3a2hqnn",
+      "to": {
+        "node": "n_mu4ytvypi02y2auy",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypi4x7fygn",
+        "port": "p:db"
+      },
+      "id": "e_mu4ytvypi63ttidj",
+      "to": {
+        "node": "n_mu4ytvypi5ffu61e",
+        "port": "p:db"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypi4x7fygn",
+        "port": "p:org_id"
+      },
+      "id": "e_mu4ytvypi7p4i9ap",
+      "to": {
+        "node": "n_mu4ytvypi5ffu61e",
+        "port": "p:org_id"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypi4x7fygn",
+        "port": "p:days"
+      },
+      "id": "e_mu4ytvypi8ufzepw",
+      "to": {
+        "node": "n_mu4ytvypi5ffu61e",
+        "port": "p:days"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypi5ffu61e",
+        "port": "result"
+      },
+      "id": "e_mu4ytvypiage6lhx",
+      "to": {
+        "node": "n_mu4ytvypi9moy6pt",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypi4x7fygn",
+        "port": "out"
+      },
+      "id": "e_mu4ytvypibjmm75l",
+      "to": {
+        "node": "n_mu4ytvypi5ffu61e",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvypi5ffu61e",
+        "port": "out"
+      },
+      "id": "e_mu4ytvypic8jcv0x",
+      "to": {
+        "node": "n_mu4ytvypi9moy6pt",
+        "port": "in"
+      }
+    }
+  ],
+  "fileId": "file_mu4ytvyphvbp5rny",
+  "id": "g_mu4ytvyphwxkqk2h",
+  "name": "MITRE ATT&CK",
+  "nodes": [
+    {
+      "id": "n_mu4ytvyphxml5e0z",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:raw",
+          "name": "raw",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "doc": "Split T1566.001 into technique and sub-technique. Vendors report either form, and coverage counted twice is coverage reported wrongly.",
+        "isAsync": false,
+        "name": "parse_technique",
+        "params": [
+          {
+            "name": "raw",
+            "type": "string"
+          }
+        ],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyphy3tssw5",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:raw",
+          "name": "raw",
+          "type": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "import re\n\ntext = (raw or \"\").strip().upper()\nmatch = re.fullmatch(r\"(T\\d{4})(?:\\.(\\d{3}))?\", text)\nif not match:\n    return {\"valid\": False, \"technique\": None, \"sub_technique\": None, \"id\": text}\nreturn {\n    \"valid\": True,\n    \"technique\": match.group(1),\n    \"sub_technique\": (\"%s.%s\" % (match.group(1), match.group(2))) if match.group(2) else None,\n    \"id\": text,\n}",
+        "doc": "Split T1566.001 into technique and sub-technique. Vendors report either form, and coverage counted twice is coverage reported wrongly.",
+        "form": "statements",
+        "language": "python",
+        "name": "split_technique_id",
+        "packages": [],
+        "params": [
+          {
+            "name": "raw",
+            "type": "string"
+          }
+        ],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvypi02y2auy",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvypi4x7fygn",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:org_id",
+          "name": "org_id",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:days",
+          "name": "days",
+          "type": "i64"
+        }
+      ],
+      "props": {
+        "doc": "Which techniques the SOC has actually seen, and which playbooks respond to them. This is the query behind the ATT&CK view.",
+        "isAsync": false,
+        "name": "coverage",
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "org_id",
+            "type": "string"
+          },
+          {
+            "name": "days",
+            "type": "i64"
+          }
+        ],
+        "returns": "List<Map<string, Any>>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvypi5ffu61e",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:org_id",
+          "name": "org_id",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:days",
+          "name": "days",
+          "type": "i64"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "List<Map<string, Any>>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "return db.query(\n    \"SELECT t.id, t.tactic, t.name, \"\n    \"  count(DISTINCT i.id) AS incident_count, \"\n    \"  count(DISTINCT p.id) AS playbook_count \"\n    \"FROM mitre_technique t \"\n    \"LEFT JOIN incident i ON t.id = ANY(i.technique_ids) \"\n    \"  AND i.org_id = %s AND i.created_at > now() - (%s || ' days')::interval \"\n    \"LEFT JOIN playbook p ON t.id = ANY(p.technique_ids) AND p.org_id = %s \"\n    \"WHERE NOT t.revoked \"\n    \"GROUP BY t.id, t.tactic, t.name ORDER BY t.tactic, t.id\",\n    [org_id, str(int(days)), org_id],\n    org_id,\n)",
+        "doc": "Which techniques the SOC has actually seen, and which playbooks respond to them. This is the query behind the ATT&CK view.",
+        "form": "statements",
+        "language": "python",
+        "name": "technique_coverage",
+        "packages": [],
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "org_id",
+            "type": "string"
+          },
+          {
+            "name": "days",
+            "type": "i64"
+          }
+        ],
+        "returns": "List<Map<string, Any>>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvypi9moy6pt",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 130
+    }
+  ],
+  "style": "procedural",
+  "variables": []
+}

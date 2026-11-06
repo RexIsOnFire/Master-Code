@@ -1,0 +1,2219 @@
+{
+  "edges": [
+    {
+      "from": {
+        "node": "n_mu4ytvz22g825937g",
+        "port": "p:host"
+      },
+      "id": "e_mu4ytvz22ga4jfqd7",
+      "to": {
+        "node": "n_mu4ytvz22g9h73pah",
+        "port": "p:host"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22g825937g",
+        "port": "p:callbacks"
+      },
+      "id": "e_mu4ytvz22gbupjtpq",
+      "to": {
+        "node": "n_mu4ytvz22g9h73pah",
+        "port": "p:callbacks"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22g9h73pah",
+        "port": "result"
+      },
+      "id": "e_mu4ytvz22gd9y54iw",
+      "to": {
+        "node": "n_mu4ytvz22gcjmok9l",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22g825937g",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz22gee9t2kt",
+      "to": {
+        "node": "n_mu4ytvz22g9h73pah",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22g9h73pah",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz22gf7e7ur8",
+      "to": {
+        "node": "n_mu4ytvz22gcjmok9l",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22gg6bw10d",
+        "port": "p:state"
+      },
+      "id": "e_mu4ytvz22giyop86e",
+      "to": {
+        "node": "n_mu4ytvz22ghb2hhjn",
+        "port": "p:state"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22gg6bw10d",
+        "port": "p:model"
+      },
+      "id": "e_mu4ytvz22gjdyklsn",
+      "to": {
+        "node": "n_mu4ytvz22ghb2hhjn",
+        "port": "p:model"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22gg6bw10d",
+        "port": "p:palette"
+      },
+      "id": "e_mu4ytvz22gkvj7qo1",
+      "to": {
+        "node": "n_mu4ytvz22ghb2hhjn",
+        "port": "p:palette"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22gg6bw10d",
+        "port": "p:problems"
+      },
+      "id": "e_mu4ytvz22glqnsnly",
+      "to": {
+        "node": "n_mu4ytvz22ghb2hhjn",
+        "port": "p:problems"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22gg6bw10d",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz22gm1dymp3",
+      "to": {
+        "node": "n_mu4ytvz22ghb2hhjn",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22gn2d9i5t",
+        "port": "p:state"
+      },
+      "id": "e_mu4ytvz22gpzp8ypx",
+      "to": {
+        "node": "n_mu4ytvz22gor3ase5",
+        "port": "p:state"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22gn2d9i5t",
+        "port": "p:node"
+      },
+      "id": "e_mu4ytvz22gqpmx8z0",
+      "to": {
+        "node": "n_mu4ytvz22gor3ase5",
+        "port": "p:node"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22gn2d9i5t",
+        "port": "p:entry"
+      },
+      "id": "e_mu4ytvz22grgaxx6z",
+      "to": {
+        "node": "n_mu4ytvz22gor3ase5",
+        "port": "p:entry"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22gn2d9i5t",
+        "port": "p:severity"
+      },
+      "id": "e_mu4ytvz22gsxdkjsv",
+      "to": {
+        "node": "n_mu4ytvz22gor3ase5",
+        "port": "p:severity"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22gor3ase5",
+        "port": "result"
+      },
+      "id": "e_mu4ytvz22guxrtudi",
+      "to": {
+        "node": "n_mu4ytvz22gtstbxre",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22gn2d9i5t",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz22gvkjt14s",
+      "to": {
+        "node": "n_mu4ytvz22gor3ase5",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22gor3ase5",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz22gwxu1ar3",
+      "to": {
+        "node": "n_mu4ytvz22gtstbxre",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22gxdtcjsv",
+        "port": "p:node"
+      },
+      "id": "e_mu4ytvz22gzvwnv0t",
+      "to": {
+        "node": "n_mu4ytvz22gygabch0",
+        "port": "p:node"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22gxdtcjsv",
+        "port": "p:entry"
+      },
+      "id": "e_mu4ytvz22h04y2htt",
+      "to": {
+        "node": "n_mu4ytvz22gygabch0",
+        "port": "p:entry"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22gygabch0",
+        "port": "result"
+      },
+      "id": "e_mu4ytvz22h2z4hz69",
+      "to": {
+        "node": "n_mu4ytvz22h1rdt36p",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22gxdtcjsv",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz22h3l4oin7",
+      "to": {
+        "node": "n_mu4ytvz22gygabch0",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22gygabch0",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz22h4ir2f5c",
+      "to": {
+        "node": "n_mu4ytvz22h1rdt36p",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22h5lxtim3",
+        "port": "p:state"
+      },
+      "id": "e_mu4ytvz22h7h0qhmj",
+      "to": {
+        "node": "n_mu4ytvz22h67wdhpd",
+        "port": "p:state"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22h5lxtim3",
+        "port": "p:edge"
+      },
+      "id": "e_mu4ytvz22h86n12ok",
+      "to": {
+        "node": "n_mu4ytvz22h67wdhpd",
+        "port": "p:edge"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22h5lxtim3",
+        "port": "p:geometry"
+      },
+      "id": "e_mu4ytvz22h994v2bq",
+      "to": {
+        "node": "n_mu4ytvz22h67wdhpd",
+        "port": "p:geometry"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22h67wdhpd",
+        "port": "result"
+      },
+      "id": "e_mu4ytvz22hbcu0h93",
+      "to": {
+        "node": "n_mu4ytvz22hajalmp4",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22h5lxtim3",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz22hcdba0hf",
+      "to": {
+        "node": "n_mu4ytvz22h67wdhpd",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22h67wdhpd",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz22hdw85r7p",
+      "to": {
+        "node": "n_mu4ytvz22hajalmp4",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22he2icisp",
+        "port": "p:state"
+      },
+      "id": "e_mu4ytvz22hgcuzb7d",
+      "to": {
+        "node": "n_mu4ytvz22hf1bgul0",
+        "port": "p:state"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22he2icisp",
+        "port": "p:port"
+      },
+      "id": "e_mu4ytvz22hh6948k5",
+      "to": {
+        "node": "n_mu4ytvz22hf1bgul0",
+        "port": "p:port"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22hf1bgul0",
+        "port": "result"
+      },
+      "id": "e_mu4ytvz22hj6mnyon",
+      "to": {
+        "node": "n_mu4ytvz22hi3rdbcy",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22he2icisp",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz22hkuw1a2v",
+      "to": {
+        "node": "n_mu4ytvz22hf1bgul0",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22hf1bgul0",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz22hlb97qfx",
+      "to": {
+        "node": "n_mu4ytvz22hi3rdbcy",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22hmghfmu6",
+        "port": "p:state"
+      },
+      "id": "e_mu4ytvz22houw1vd1",
+      "to": {
+        "node": "n_mu4ytvz22hnl8axce",
+        "port": "p:state"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22hmghfmu6",
+        "port": "p:element"
+      },
+      "id": "e_mu4ytvz22hpkwee69",
+      "to": {
+        "node": "n_mu4ytvz22hnl8axce",
+        "port": "p:element"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22hnl8axce",
+        "port": "result"
+      },
+      "id": "e_mu4ytvz22hr0e5ce5",
+      "to": {
+        "node": "n_mu4ytvz22hq3iwys7",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22hmghfmu6",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz22hsjc9q2l",
+      "to": {
+        "node": "n_mu4ytvz22hnl8axce",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22hnl8axce",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz22ht1pj5uk",
+      "to": {
+        "node": "n_mu4ytvz22hq3iwys7",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22hu746t7z",
+        "port": "p:model"
+      },
+      "id": "e_mu4ytvz22hwp8n7cw",
+      "to": {
+        "node": "n_mu4ytvz22hvbvs2zc",
+        "port": "p:model"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22hvbvs2zc",
+        "port": "result"
+      },
+      "id": "e_mu4ytvz22hyhun5ob",
+      "to": {
+        "node": "n_mu4ytvz22hxahkt1v",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22hu746t7z",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz22hzmrdat9",
+      "to": {
+        "node": "n_mu4ytvz22hvbvs2zc",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22hvbvs2zc",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz22i0nqer7i",
+      "to": {
+        "node": "n_mu4ytvz22hxahkt1v",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22i1tbsr9e",
+        "port": "p:state"
+      },
+      "id": "e_mu4ytvz22i3n5tcj3",
+      "to": {
+        "node": "n_mu4ytvz22i2x6yqfh",
+        "port": "p:state"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22i1tbsr9e",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz22i4wb1ssq",
+      "to": {
+        "node": "n_mu4ytvz22i2x6yqfh",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22i59l26l7",
+        "port": "p:state"
+      },
+      "id": "e_mu4ytvz22i7yf2sxh",
+      "to": {
+        "node": "n_mu4ytvz22i640wkyj",
+        "port": "p:state"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22i59l26l7",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz22i8pyrnfu",
+      "to": {
+        "node": "n_mu4ytvz22i640wkyj",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22i9b5ici0",
+        "port": "p:state"
+      },
+      "id": "e_mu4ytvz22ib93e5wv",
+      "to": {
+        "node": "n_mu4ytvz22iasod4a7",
+        "port": "p:state"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22i9b5ici0",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz22ic39go7y",
+      "to": {
+        "node": "n_mu4ytvz22iasod4a7",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22idfq7qwa",
+        "port": "p:state"
+      },
+      "id": "e_mu4ytvz22ifb2doyy",
+      "to": {
+        "node": "n_mu4ytvz22ie447nix",
+        "port": "p:state"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22idfq7qwa",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz22igitniwu",
+      "to": {
+        "node": "n_mu4ytvz22ie447nix",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22ihf4aqqp",
+        "port": "p:state"
+      },
+      "id": "e_mu4ytvz22ij2vtjqf",
+      "to": {
+        "node": "n_mu4ytvz22iimca34k",
+        "port": "p:state"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22ihf4aqqp",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz22ikmf2yju",
+      "to": {
+        "node": "n_mu4ytvz22iimca34k",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22ilod9ejp",
+        "port": "p:model"
+      },
+      "id": "e_mu4ytvz22in5du438",
+      "to": {
+        "node": "n_mu4ytvz22imb4uwfz",
+        "port": "p:model"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22ilod9ejp",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz22io5i3kmm",
+      "to": {
+        "node": "n_mu4ytvz22imb4uwfz",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz22iqg1inww",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz22iri9ntgu",
+      "to": {
+        "node": "n_mu4ytvz22ipagpdod",
+        "port": "in"
+      }
+    }
+  ],
+  "fileId": "file_mu4ytvz22g6qtp6jk",
+  "id": "g_mu4ytvz22g7v2u6dc",
+  "name": "editor canvas",
+  "nodes": [
+    {
+      "id": "n_mu4ytvz22g825937g",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:host",
+          "name": "host",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:callbacks",
+          "name": "callbacks",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "doc": "Build the canvas: an SVG layer for wires under a DOM layer for nodes.\n\nWires are SVG because they need to be curves that hit-test cleanly. Nodes are\nDOM because they need to be focusable, readable by a screen reader, and\nstyleable by the same stylesheet as the rest of the workspace. Drawing nodes\ninto the SVG would have been less code and would have made them unreachable\nby keyboard.",
+        "isAsync": false,
+        "name": "createCanvas",
+        "params": [
+          {
+            "name": "host",
+            "type": "Any"
+          },
+          {
+            "name": "callbacks",
+            "type": "Any"
+          }
+        ],
+        "returns": "Any",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvz22g9h73pah",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:host",
+          "name": "host",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:callbacks",
+          "name": "callbacks",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "host.replaceChildren();\nhost.classList.add(\"pb-canvas\");\nhost.tabIndex = 0;\n\nconst svg = document.createElementNS(\"http://www.w3.org/2000/svg\", \"svg\");\nsvg.classList.add(\"pb-wires\");\nsvg.setAttribute(\"aria-hidden\", \"true\");\n\nconst defs = document.createElementNS(\"http://www.w3.org/2000/svg\", \"defs\");\ndefs.innerHTML = \"\";\nconst marker = document.createElementNS(\"http://www.w3.org/2000/svg\", \"marker\");\nmarker.setAttribute(\"id\", \"pb-arrow\");\nmarker.setAttribute(\"viewBox\", \"0 0 10 10\");\nmarker.setAttribute(\"refX\", \"9\");\nmarker.setAttribute(\"refY\", \"5\");\nmarker.setAttribute(\"markerWidth\", \"6\");\nmarker.setAttribute(\"markerHeight\", \"6\");\nmarker.setAttribute(\"orient\", \"auto-start-reverse\");\nconst arrowPath = document.createElementNS(\"http://www.w3.org/2000/svg\", \"path\");\narrowPath.setAttribute(\"d\", \"M 0 0 L 10 5 L 0 10 z\");\narrowPath.setAttribute(\"fill\", \"currentColor\");\nmarker.append(arrowPath);\ndefs.append(marker);\nsvg.append(defs);\n\nconst wireLayer = document.createElementNS(\"http://www.w3.org/2000/svg\", \"g\");\nsvg.append(wireLayer);\n\nconst nodeLayer = document.createElement(\"div\");\nnodeLayer.className = \"pb-nodes\";\n\nconst viewport = document.createElement(\"div\");\nviewport.className = \"pb-viewport\";\nviewport.append(svg, nodeLayer);\nhost.append(viewport);\n\nconst state = {\n  host, viewport, svg, wireLayer, nodeLayer, callbacks,\n  pan: { x: 0, y: 0 }, zoom: 1,\n  selection: new Set(),\n  dragging: null,\n  linking: null,\n  model: null,\n  palette: null,\n  problems: [],\n};\n\nattachPointerHandlers(state);\nattachKeyHandlers(state);\nreturn state;",
+        "doc": "Build the canvas: an SVG layer for wires under a DOM layer for nodes.\n\nWires are SVG because they need to be curves that hit-test cleanly. Nodes are\nDOM because they need to be focusable, readable by a screen reader, and\nstyleable by the same stylesheet as the rest of the workspace. Drawing nodes\ninto the SVG would have been less code and would have made them unreachable\nby keyboard.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "build_canvas_surface",
+        "packages": [],
+        "params": [
+          {
+            "name": "host",
+            "type": "Any"
+          },
+          {
+            "name": "callbacks",
+            "type": "Any"
+          }
+        ],
+        "returns": "Any"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvz22gcjmok9l",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvz22gg6bw10d",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:state",
+          "name": "state",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:model",
+          "name": "model",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:palette",
+          "name": "palette",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:problems",
+          "name": "problems",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "doc": "Redraw. Full redraw rather than diffing: at playbook scale it is imperceptible, and a renderer with no incremental path has no incremental bugs.",
+        "isAsync": false,
+        "name": "renderCanvas",
+        "params": [
+          {
+            "name": "state",
+            "type": "Any"
+          },
+          {
+            "name": "model",
+            "type": "Any"
+          },
+          {
+            "name": "palette",
+            "type": "Any"
+          },
+          {
+            "name": "problems",
+            "type": "Any"
+          }
+        ],
+        "returns": "Void",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvz22ghb2hhjn",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:state",
+          "name": "state",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:model",
+          "name": "model",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:palette",
+          "name": "palette",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:problems",
+          "name": "problems",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "const { paletteEntry } = globalThis.SOAR;\n\nstate.model = model;\nstate.palette = palette;\nstate.problems = problems || [];\n\nconst worst = new Map();\nfor (const problem of state.problems) {\n  if (!problem.node) continue;\n  const rank = { error: 3, warning: 2, info: 1 };\n  if ((rank[problem.severity] || 0) > (rank[worst.get(problem.node)] || 0)) {\n    worst.set(problem.node, problem.severity);\n  }\n}\n\nstate.viewport.style.transform =\n  `translate(${state.pan.x}px, ${state.pan.y}px) scale(${state.zoom})`;\n\nstate.nodeLayer.replaceChildren();\nconst geometry = new Map();\n\nfor (const node of model.nodes) {\n  const entry = paletteEntry(node, palette);\n  const element = renderNode(state, node, entry, worst.get(node.id));\n  state.nodeLayer.append(element);\n  geometry.set(node.id, element);\n}\n\n// Measure after layout so wires attach to the real port positions rather\n// than to an assumed node height - node bodies grow with their config.\nstate.wireLayer.replaceChildren();\nfor (const edge of model.edges) {\n  const path = renderWire(state, edge, geometry);\n  if (path) state.wireLayer.append(path);\n}\n\nconst bounds = contentBounds(model);\nstate.svg.setAttribute(\"width\", String(bounds.width));\nstate.svg.setAttribute(\"height\", String(bounds.height));",
+        "doc": "Redraw. Full redraw rather than diffing: at playbook scale it is imperceptible, and a renderer with no incremental path has no incremental bugs.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "paint_canvas_surface",
+        "packages": [],
+        "params": [
+          {
+            "name": "state",
+            "type": "Any"
+          },
+          {
+            "name": "model",
+            "type": "Any"
+          },
+          {
+            "name": "palette",
+            "type": "Any"
+          },
+          {
+            "name": "problems",
+            "type": "Any"
+          }
+        ],
+        "returns": "Void"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvz22gn2d9i5t",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:state",
+          "name": "state",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:node",
+          "name": "node",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:entry",
+          "name": "entry",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:severity",
+          "name": "severity",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "doc": "One node: header, summary, and a port row.\n\nThe badges are the point of the whole editor. A node that will change the\nestate says so before you run it, a node that needs an approval says so, and\na response node says what fraction of the estate it actually reaches. All\nthree are read off the registry, not typed in by whoever drew the playbook.",
+        "isAsync": false,
+        "name": "renderNode",
+        "params": [
+          {
+            "name": "state",
+            "type": "Any"
+          },
+          {
+            "name": "node",
+            "type": "Any"
+          },
+          {
+            "name": "entry",
+            "type": "Any"
+          },
+          {
+            "name": "severity",
+            "type": "string"
+          }
+        ],
+        "returns": "Any",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvz22gor3ase5",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:state",
+          "name": "state",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:node",
+          "name": "node",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:entry",
+          "name": "entry",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:severity",
+          "name": "severity",
+          "type": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "const element = document.createElement(\"article\");\nelement.className = \"pb-node\";\nelement.dataset.nodeId = node.id;\nelement.dataset.kind = node.kind;\nelement.dataset.accent = entry?.accent || \"neutral\";\nelement.style.left = `${node.x}px`;\nelement.style.top = `${node.y}px`;\nelement.tabIndex = 0;\nif (state.selection.has(node.id)) element.classList.add(\"is-selected\");\nif (severity) element.dataset.problem = severity;\n\nconst header = document.createElement(\"header\");\nconst icon = document.createElement(\"span\");\nicon.className = \"pb-icon\";\nicon.textContent = entry?.icon || \"\\u25cb\";\nconst title = document.createElement(\"span\");\ntitle.className = \"pb-title\";\ntitle.textContent = node.label || entry?.label || node.kind;\nheader.append(icon, title);\n\nif (entry?.effect === \"mutating\") {\n  const badge = document.createElement(\"span\");\n  badge.className = `pb-badge risk-${entry.risk_level}`;\n  badge.textContent = entry.risk_level.toUpperCase();\n  badge.title = \"This step changes the estate\";\n  header.append(badge);\n}\nif (entry?.requires_approval) {\n  const badge = document.createElement(\"span\");\n  badge.className = \"pb-badge approval\";\n  badge.textContent = \"APPROVAL\";\n  badge.title = \"A human must approve this before it runs\";\n  header.append(badge);\n}\n\nconst body = document.createElement(\"div\");\nbody.className = \"pb-body\";\nbody.textContent = summarise(node, entry);\n\nelement.append(header, body);\n\nif (node.kind === \"response\" && entry?.coverage) {\n  const coverage = document.createElement(\"div\");\n  coverage.className = \"pb-coverage\";\n  coverage.dataset.level = entry.coverage.percent >= 99 ? \"full\"\n    : entry.coverage.percent > 0 ? \"partial\" : \"none\";\n  coverage.textContent =\n    `${entry.coverage.percent}% of hosts \\u00b7 ` +\n    `${entry.coverage.capable_connectors.join(\", \") || \"no EDR\"}`;\n  coverage.title = Object.entries(entry.coverage.semantics || {})\n    .map(([name, detail]) => `${name}: ${detail.semantics || detail.command}`)\n    .join(\"\\n\") || \"No configured EDR implements this action\";\n  element.append(coverage);\n}\n\nif (node.retry?.max) {\n  const retry = document.createElement(\"div\");\n  retry.className = \"pb-meta\";\n  retry.textContent = `retry \\u00d7${node.retry.max}`;\n  element.append(retry);\n}\n\nconst ports = document.createElement(\"footer\");\nports.className = \"pb-ports\";\nfor (const port of entry?.ports || [\"next\"]) {\n  const handle = document.createElement(\"button\");\n  handle.type = \"button\";\n  handle.className = \"pb-port\";\n  handle.dataset.port = port;\n  handle.dataset.nodeId = node.id;\n  handle.textContent = port.replace(/^on_/, \"\").replace(/_/g, \" \");\n  handle.title = `Drag from here to connect the ${port} branch`;\n  ports.append(handle);\n}\nelement.append(ports);\n\nconst inlet = document.createElement(\"div\");\ninlet.className = \"pb-inlet\";\ninlet.dataset.nodeId = node.id;\nelement.append(inlet);\n\nreturn element;",
+        "doc": "One node: header, summary, and a port row.\n\nThe badges are the point of the whole editor. A node that will change the\nestate says so before you run it, a node that needs an approval says so, and\na response node says what fraction of the estate it actually reaches. All\nthree are read off the registry, not typed in by whoever drew the playbook.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "render_node_element",
+        "packages": [],
+        "params": [
+          {
+            "name": "state",
+            "type": "Any"
+          },
+          {
+            "name": "node",
+            "type": "Any"
+          },
+          {
+            "name": "entry",
+            "type": "Any"
+          },
+          {
+            "name": "severity",
+            "type": "string"
+          }
+        ],
+        "returns": "Any"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvz22gtstbxre",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvz22gxdtcjsv",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:node",
+          "name": "node",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:entry",
+          "name": "entry",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "doc": "What the node body says at a glance. A reader skimming a playbook should be able to tell what each step does without opening the inspector.",
+        "isAsync": false,
+        "name": "summarise",
+        "params": [
+          {
+            "name": "node",
+            "type": "Any"
+          },
+          {
+            "name": "entry",
+            "type": "Any"
+          }
+        ],
+        "returns": "string",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvz22gygabch0",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:node",
+          "name": "node",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:entry",
+          "name": "entry",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "switch (node.kind) {\n  case \"start\": return \"Execution begins here\";\n  case \"end\": return `Outcome: ${node.settings?.outcome || \"succeeded\"}`;\n  case \"condition\": return node.config?.expression || \"no condition set\";\n  case \"switch\": return `on ${node.config?.subject || \"?\"}`;\n  case \"for_each\":\n    return `each ${node.config?.as || \"item\"} of ${node.config?.items || \"?\"}` +\n           ` (max ${node.config?.max_iterations ?? \"?\"})`;\n  case \"while\": return node.config?.expression || \"no condition set\";\n  case \"parallel\": return `join: ${node.config?.join || \"all\"}`;\n  case \"delay\": return `wait ${node.config?.seconds ?? \"?\"}s`;\n  case \"approval\":\n    return node.config?.summary || node.config?.action_key || \"approval required\";\n  case \"task\": return node.config?.title || \"human task\";\n  case \"ai\": return `${node.config?.action || \"?\"} \\u00b7 ${node.config?.role || \"fast\"}`;\n  case \"script\": return `${node.config?.trust_level || \"untrusted\"} python, sandboxed`;\n  case \"sub_playbook\": return node.playbook || \"no playbook selected\";\n  case \"response\":\n    return `${node.action || \"?\"} \\u2192 ${node.config?.target || \"no target\"}`;\n  case \"command\": return node.command || \"no command selected\";\n  case \"http\": return `${node.config?.method || \"GET\"} ${node.config?.url || \"\"}`;\n  case \"set_var\": return `${node.config?.name || \"?\"} = ${node.config?.value || \"?\"}`;\n  default: return entry?.doc?.split(\".\")[0] || node.kind;\n}",
+        "doc": "What the node body says at a glance. A reader skimming a playbook should be able to tell what each step does without opening the inspector.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "node_summary_text",
+        "packages": [],
+        "params": [
+          {
+            "name": "node",
+            "type": "Any"
+          },
+          {
+            "name": "entry",
+            "type": "Any"
+          }
+        ],
+        "returns": "string"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvz22h1rdt36p",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvz22h5lxtim3",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:state",
+          "name": "state",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:edge",
+          "name": "edge",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:geometry",
+          "name": "geometry",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "doc": "A cubic bezier from a port to a node inlet, coloured by branch. Error and unsupported branches are visually distinct because those are the branches reviewers forget to check.",
+        "isAsync": false,
+        "name": "renderWire",
+        "params": [
+          {
+            "name": "state",
+            "type": "Any"
+          },
+          {
+            "name": "edge",
+            "type": "Any"
+          },
+          {
+            "name": "geometry",
+            "type": "Any"
+          }
+        ],
+        "returns": "Any",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 520
+    },
+    {
+      "id": "n_mu4ytvz22h67wdhpd",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:state",
+          "name": "state",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:edge",
+          "name": "edge",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:geometry",
+          "name": "geometry",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "const fromElement = geometry.get(edge.from);\nconst toElement = geometry.get(edge.to);\nif (!fromElement || !toElement) return null;\n\nconst port = fromElement.querySelector(`.pb-port[data-port=\"${edge.port}\"]`)\n  || fromElement.querySelector(\".pb-port\");\nif (!port) return null;\n\nconst from = portCentre(state, port);\nconst to = inletCentre(state, toElement);\nconst dx = Math.max(60, Math.abs(to.x - from.x) * 0.5);\n\nconst path = document.createElementNS(\"http://www.w3.org/2000/svg\", \"path\");\npath.setAttribute(\"d\",\n  `M ${from.x} ${from.y} C ${from.x + dx} ${from.y}, ${to.x - dx} ${to.y}, ${to.x} ${to.y}`);\npath.setAttribute(\"class\", `pb-wire port-${edge.port}`);\npath.setAttribute(\"marker-end\", \"url(#pb-arrow)\");\npath.dataset.edgeId = edge.id;\npath.addEventListener(\"click\", (event) => {\n  event.stopPropagation();\n  state.callbacks.onSelectEdge?.(edge.id);\n});\n\nif (edge.label) {\n  path.setAttribute(\"aria-label\", edge.label);\n  const title = document.createElementNS(\"http://www.w3.org/2000/svg\", \"title\");\n  title.textContent = `${edge.port}: ${edge.label}`;\n  path.append(title);\n}\nreturn path;",
+        "doc": "A cubic bezier from a port to a node inlet, coloured by branch. Error and unsupported branches are visually distinct because those are the branches reviewers forget to check.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "render_wire_path",
+        "packages": [],
+        "params": [
+          {
+            "name": "state",
+            "type": "Any"
+          },
+          {
+            "name": "edge",
+            "type": "Any"
+          },
+          {
+            "name": "geometry",
+            "type": "Any"
+          }
+        ],
+        "returns": "Any"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 520
+    },
+    {
+      "id": "n_mu4ytvz22hajalmp4",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvz22he2icisp",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:state",
+          "name": "state",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:port",
+          "name": "port",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "doc": "Port position in canvas coordinates, independent of pan and zoom.",
+        "isAsync": false,
+        "name": "portCentre",
+        "params": [
+          {
+            "name": "state",
+            "type": "Any"
+          },
+          {
+            "name": "port",
+            "type": "Any"
+          }
+        ],
+        "returns": "Any",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 650
+    },
+    {
+      "id": "n_mu4ytvz22hf1bgul0",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:state",
+          "name": "state",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:port",
+          "name": "port",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "const node = port.closest(\".pb-node\");\nconst left = parseFloat(node.style.left) || 0;\nconst top = parseFloat(node.style.top) || 0;\n\n// Accumulated up to the node rather than read off the port, because\n// offsetLeft is relative to the offsetParent and the outlet strip is\n// positioned - so it IS the offsetParent, and a single offsetLeft\n// leaves out the strip.\nlet dx = 0;\nlet dy = 0;\nlet walk = port;\nwhile (walk && walk !== node) {\n  dx += walk.offsetLeft;\n  dy += walk.offsetTop;\n  walk = walk.offsetParent;\n}\n\nreturn {\n  // The right-hand edge of the chip: control leaves a node there.\n  x: left + dx + port.offsetWidth,\n  y: top + dy + port.offsetHeight / 2,\n};",
+        "doc": "Port position in canvas coordinates, independent of pan and zoom.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "port_position",
+        "packages": [],
+        "params": [
+          {
+            "name": "state",
+            "type": "Any"
+          },
+          {
+            "name": "port",
+            "type": "Any"
+          }
+        ],
+        "returns": "Any"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 650
+    },
+    {
+      "id": "n_mu4ytvz22hi3rdbcy",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 520
+    },
+    {
+      "id": "n_mu4ytvz22hmghfmu6",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:state",
+          "name": "state",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:element",
+          "name": "element",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "doc": "Where a wire lands: the left edge of the target node.",
+        "isAsync": false,
+        "name": "inletCentre",
+        "params": [
+          {
+            "name": "state",
+            "type": "Any"
+          },
+          {
+            "name": "element",
+            "type": "Any"
+          }
+        ],
+        "returns": "Any",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 780
+    },
+    {
+      "id": "n_mu4ytvz22hnl8axce",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:state",
+          "name": "state",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:element",
+          "name": "element",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "const left = parseFloat(element.style.left) || 0;\nconst top = parseFloat(element.style.top) || 0;\nreturn { x: left, y: top + Math.min(28, element.offsetHeight / 2) };",
+        "doc": "Where a wire lands: the left edge of the target node.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "inlet_position",
+        "packages": [],
+        "params": [
+          {
+            "name": "state",
+            "type": "Any"
+          },
+          {
+            "name": "element",
+            "type": "Any"
+          }
+        ],
+        "returns": "Any"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 780
+    },
+    {
+      "id": "n_mu4ytvz22hq3iwys7",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 650
+    },
+    {
+      "id": "n_mu4ytvz22hu746t7z",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:model",
+          "name": "model",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "doc": "Canvas extent, so the SVG is always at least as large as the drawing.",
+        "isAsync": false,
+        "name": "contentBounds",
+        "params": [
+          {
+            "name": "model",
+            "type": "Any"
+          }
+        ],
+        "returns": "Any",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 910
+    },
+    {
+      "id": "n_mu4ytvz22hvbvs2zc",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:model",
+          "name": "model",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "let width = 1200;\nlet height = 700;\nfor (const node of model.nodes) {\n  width = Math.max(width, node.x + 400);\n  height = Math.max(height, node.y + 300);\n}\nreturn { width, height };",
+        "doc": "Canvas extent, so the SVG is always at least as large as the drawing.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "model_bounds",
+        "packages": [],
+        "params": [
+          {
+            "name": "model",
+            "type": "Any"
+          }
+        ],
+        "returns": "Any"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 910
+    },
+    {
+      "id": "n_mu4ytvz22hxahkt1v",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 780
+    },
+    {
+      "id": "n_mu4ytvz22i1tbsr9e",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:state",
+          "name": "state",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "doc": "Drag a node, drag from a port to connect, drag the background to pan, wheel\nto zoom.\n\nPointer events rather than mouse events, so this works with a trackpad, a\npen and a touchscreen without three code paths. Pointer capture means a drag\nthat leaves the window still ends cleanly.",
+        "isAsync": false,
+        "name": "attachPointerHandlers",
+        "params": [
+          {
+            "name": "state",
+            "type": "Any"
+          }
+        ],
+        "returns": "Void",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 1040
+    },
+    {
+      "id": "n_mu4ytvz22i2x6yqfh",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:state",
+          "name": "state",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "const toCanvas = (event) => {\n  const rect = state.host.getBoundingClientRect();\n  return {\n    x: (event.clientX - rect.left - state.pan.x) / state.zoom,\n    y: (event.clientY - rect.top - state.pan.y) / state.zoom,\n  };\n};\n\nstate.host.addEventListener(\"pointerdown\", (event) => {\n  const port = event.target.closest(\".pb-port\");\n  const node = event.target.closest(\".pb-node\");\n\n  if (port) {\n    event.preventDefault();\n    event.stopPropagation();\n    state.linking = { from: port.dataset.nodeId, port: port.dataset.port,\n                      at: toCanvas(event) };\n    state.host.setPointerCapture(event.pointerId);\n    return;\n  }\n\n  if (node) {\n    const id = node.dataset.nodeId;\n    if (!event.shiftKey && !state.selection.has(id)) state.selection.clear();\n    state.selection.add(id);\n    state.callbacks.onSelect?.([...state.selection]);\n\n    const origin = toCanvas(event);\n    state.dragging = {\n      pointer: origin,\n      moved: false,\n      offsets: [...state.selection].map((selected) => {\n        const target = state.model.nodes.find((n) => n.id === selected);\n        return { id: selected, dx: target.x - origin.x, dy: target.y - origin.y };\n      }),\n    };\n    state.host.setPointerCapture(event.pointerId);\n    return;\n  }\n\n  state.selection.clear();\n  state.callbacks.onSelect?.([]);\n  state.dragging = { panning: true, from: { x: event.clientX, y: event.clientY },\n                     origin: { ...state.pan } };\n  state.host.setPointerCapture(event.pointerId);\n  state.callbacks.onChange?.({ silent: true });\n});\n\nstate.host.addEventListener(\"pointermove\", (event) => {\n  if (state.linking) {\n    state.linking.at = toCanvas(event);\n    drawPendingWire(state);\n    return;\n  }\n  if (!state.dragging) return;\n\n  if (state.dragging.panning) {\n    state.pan.x = state.dragging.origin.x + (event.clientX - state.dragging.from.x);\n    state.pan.y = state.dragging.origin.y + (event.clientY - state.dragging.from.y);\n    state.viewport.style.transform =\n      `translate(${state.pan.x}px, ${state.pan.y}px) scale(${state.zoom})`;\n    return;\n  }\n\n  const at = toCanvas(event);\n  state.dragging.moved = true;\n  for (const offset of state.dragging.offsets) {\n    const node = state.model.nodes.find((n) => n.id === offset.id);\n    if (!node) continue;\n    // Snap to a 20px grid: playbooks that line up are playbooks people read.\n    node.x = Math.round((at.x + offset.dx) / 20) * 20;\n    node.y = Math.round((at.y + offset.dy) / 20) * 20;\n  }\n  state.callbacks.onChange?.({ silent: true });\n});\n\nstate.host.addEventListener(\"pointerup\", (event) => {\n  if (state.linking) {\n    const target = event.target.closest(\".pb-node\");\n    const pending = state.linking;\n    state.linking = null;\n    clearPendingWire(state);\n    if (target && target.dataset.nodeId !== pending.from) {\n      state.callbacks.onConnect?.(pending.from, pending.port, target.dataset.nodeId);\n    } else if (!target) {\n      // Dropping a wire on empty canvas offers to create the node it would\n      // have pointed at - the fastest way to build a chain.\n      state.callbacks.onDropOnEmpty?.(pending.from, pending.port, pending.at);\n    }\n    return;\n  }\n  if (state.dragging && !state.dragging.panning && state.dragging.moved) {\n    state.callbacks.onChange?.({ label: \"move nodes\" });\n  }\n  state.dragging = null;\n});\n\nstate.host.addEventListener(\"wheel\", (event) => {\n  if (!event.ctrlKey && !event.metaKey) return;\n  event.preventDefault();\n  const next = Math.min(2, Math.max(0.35, state.zoom * (event.deltaY < 0 ? 1.1 : 0.9)));\n  state.zoom = next;\n  state.viewport.style.transform =\n    `translate(${state.pan.x}px, ${state.pan.y}px) scale(${state.zoom})`;\n}, { passive: false });\n\nstate.host.addEventListener(\"dblclick\", (event) => {\n  const node = event.target.closest(\".pb-node\");\n  if (node) state.callbacks.onOpen?.(node.dataset.nodeId);\n});\n\nstate.host.addEventListener(\"dragover\", (event) => event.preventDefault());\nstate.host.addEventListener(\"drop\", (event) => {\n  event.preventDefault();\n  const payload = event.dataTransfer.getData(\"application/x-soar-node\");\n  if (!payload) return;\n  state.callbacks.onDropPaletteItem?.(JSON.parse(payload), toCanvas(event));\n});",
+        "doc": "Drag a node, drag from a port to connect, drag the background to pan, wheel\nto zoom.\n\nPointer events rather than mouse events, so this works with a trackpad, a\npen and a touchscreen without three code paths. Pointer capture means a drag\nthat leaves the window still ends cleanly.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "install_pointer_handlers",
+        "packages": [],
+        "params": [
+          {
+            "name": "state",
+            "type": "Any"
+          }
+        ],
+        "returns": "Void"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 1040
+    },
+    {
+      "id": "n_mu4ytvz22i59l26l7",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:state",
+          "name": "state",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "doc": "The wire that follows the pointer while you are connecting.",
+        "isAsync": false,
+        "name": "drawPendingWire",
+        "params": [
+          {
+            "name": "state",
+            "type": "Any"
+          }
+        ],
+        "returns": "Void",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 1170
+    },
+    {
+      "id": "n_mu4ytvz22i640wkyj",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:state",
+          "name": "state",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "clearPendingWire(state);\nconst fromElement = state.nodeLayer.querySelector(\n  `.pb-node[data-node-id=\"${state.linking.from}\"]`);\nif (!fromElement) return;\nconst port = fromElement.querySelector(\n  `.pb-port[data-port=\"${state.linking.port}\"]`);\nif (!port) return;\n\nconst from = portCentre(state, port);\nconst to = state.linking.at;\nconst dx = Math.max(60, Math.abs(to.x - from.x) * 0.5);\nconst path = document.createElementNS(\"http://www.w3.org/2000/svg\", \"path\");\npath.setAttribute(\"d\",\n  `M ${from.x} ${from.y} C ${from.x + dx} ${from.y}, ${to.x - dx} ${to.y}, ${to.x} ${to.y}`);\npath.setAttribute(\"class\", \"pb-wire is-pending\");\npath.id = \"pb-pending-wire\";\nstate.wireLayer.append(path);",
+        "doc": "The wire that follows the pointer while you are connecting.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "paint_pending_wire",
+        "packages": [],
+        "params": [
+          {
+            "name": "state",
+            "type": "Any"
+          }
+        ],
+        "returns": "Void"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 1170
+    },
+    {
+      "id": "n_mu4ytvz22i9b5ici0",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:state",
+          "name": "state",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "doc": "Remove the in-flight wire.",
+        "isAsync": false,
+        "name": "clearPendingWire",
+        "params": [
+          {
+            "name": "state",
+            "type": "Any"
+          }
+        ],
+        "returns": "Void",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 1300
+    },
+    {
+      "id": "n_mu4ytvz22iasod4a7",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:state",
+          "name": "state",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "document.getElementById(\"pb-pending-wire\")?.remove();",
+        "doc": "Remove the in-flight wire.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "erase_pending_wire",
+        "packages": [],
+        "params": [
+          {
+            "name": "state",
+            "type": "Any"
+          }
+        ],
+        "returns": "Void"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 1300
+    },
+    {
+      "id": "n_mu4ytvz22idfq7qwa",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:state",
+          "name": "state",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "doc": "Keyboard on the canvas.\n\nArrow keys nudge, Delete removes, Ctrl+Z/Y undo and redo, Ctrl+S saves the\ndraft, F frames the graph, Escape clears the selection. A SOC engineer\nbuilding a playbook should not have to reach for the mouse for any of these.",
+        "isAsync": false,
+        "name": "attachKeyHandlers",
+        "params": [
+          {
+            "name": "state",
+            "type": "Any"
+          }
+        ],
+        "returns": "Void",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 1430
+    },
+    {
+      "id": "n_mu4ytvz22ie447nix",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:state",
+          "name": "state",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "state.host.addEventListener(\"keydown\", (event) => {\n  const mod = event.ctrlKey || event.metaKey;\n\n  if (mod && event.key.toLowerCase() === \"z\") {\n    event.preventDefault();\n    return event.shiftKey ? state.callbacks.onRedo?.() : state.callbacks.onUndo?.();\n  }\n  if (mod && event.key.toLowerCase() === \"y\") {\n    event.preventDefault();\n    return state.callbacks.onRedo?.();\n  }\n  if (mod && event.key.toLowerCase() === \"s\") {\n    event.preventDefault();\n    return state.callbacks.onSave?.();\n  }\n  if (mod && event.key.toLowerCase() === \"d\") {\n    event.preventDefault();\n    return state.callbacks.onDuplicate?.([...state.selection]);\n  }\n\n  if (event.key === \"Delete\" || event.key === \"Backspace\") {\n    if (!state.selection.size) return;\n    event.preventDefault();\n    return state.callbacks.onDelete?.([...state.selection]);\n  }\n  if (event.key === \"Escape\") {\n    state.selection.clear();\n    state.callbacks.onSelect?.([]);\n    return state.callbacks.onChange?.({ silent: true });\n  }\n  if (event.key === \"f\" && !mod) {\n    return state.callbacks.onFrame?.();\n  }\n\n  const NUDGE = { ArrowLeft: [-20, 0], ArrowRight: [20, 0],\n                  ArrowUp: [0, -20], ArrowDown: [0, 20] };\n  const delta = NUDGE[event.key];\n  if (delta && state.selection.size) {\n    event.preventDefault();\n    for (const id of state.selection) {\n      const node = state.model.nodes.find((n) => n.id === id);\n      if (node) { node.x += delta[0]; node.y += delta[1]; }\n    }\n    state.callbacks.onChange?.({ label: \"nudge\" });\n  }\n});",
+        "doc": "Keyboard on the canvas.\n\nArrow keys nudge, Delete removes, Ctrl+Z/Y undo and redo, Ctrl+S saves the\ndraft, F frames the graph, Escape clears the selection. A SOC engineer\nbuilding a playbook should not have to reach for the mouse for any of these.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "install_key_handlers",
+        "packages": [],
+        "params": [
+          {
+            "name": "state",
+            "type": "Any"
+          }
+        ],
+        "returns": "Void"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 1430
+    },
+    {
+      "id": "n_mu4ytvz22ihf4aqqp",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:state",
+          "name": "state",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "doc": "Fit the whole playbook in view. What the F key does, and what happens on first open.",
+        "isAsync": false,
+        "name": "frame",
+        "params": [
+          {
+            "name": "state",
+            "type": "Any"
+          }
+        ],
+        "returns": "Void",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 1560
+    },
+    {
+      "id": "n_mu4ytvz22iimca34k",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:state",
+          "name": "state",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "const nodes = state.model?.nodes || [];\nif (!nodes.length) return;\n\nconst minX = Math.min(...nodes.map((n) => n.x)) - 60;\nconst minY = Math.min(...nodes.map((n) => n.y)) - 60;\nconst maxX = Math.max(...nodes.map((n) => n.x)) + 300;\nconst maxY = Math.max(...nodes.map((n) => n.y)) + 220;\n\nconst rect = state.host.getBoundingClientRect();\nstate.zoom = Math.min(1, Math.max(0.35,\n  Math.min(rect.width / (maxX - minX), rect.height / (maxY - minY))));\nstate.pan.x = -minX * state.zoom + 20;\nstate.pan.y = -minY * state.zoom + 20;\nstate.viewport.style.transform =\n  `translate(${state.pan.x}px, ${state.pan.y}px) scale(${state.zoom})`;",
+        "doc": "Fit the whole playbook in view. What the F key does, and what happens on first open.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "frame_graph",
+        "packages": [],
+        "params": [
+          {
+            "name": "state",
+            "type": "Any"
+          }
+        ],
+        "returns": "Void"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 1560
+    },
+    {
+      "id": "n_mu4ytvz22ilod9ejp",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:model",
+          "name": "model",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "doc": "Arrange by depth from Start.\n\nUsed when a playbook arrives without editor positions - an AI-generated draft,\nor one imported from another platform. It is a starting point, not an\nopinion: positions are saved, so whatever the engineer does next sticks.",
+        "isAsync": false,
+        "name": "autoLayout",
+        "params": [
+          {
+            "name": "model",
+            "type": "Any"
+          }
+        ],
+        "returns": "Void",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 1690
+    },
+    {
+      "id": "n_mu4ytvz22imb4uwfz",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:model",
+          "name": "model",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "const depth = new Map([[model.start, 0]]);\nconst queue = [model.start];\nwhile (queue.length) {\n  const current = queue.shift();\n  for (const edge of model.edges.filter((e) => e.from === current)) {\n    if (depth.has(edge.to)) continue;\n    depth.set(edge.to, depth.get(current) + 1);\n    queue.push(edge.to);\n  }\n}\n\nconst rows = new Map();\nfor (const node of model.nodes) {\n  const column = depth.get(node.id) ?? 0;\n  const row = rows.get(column) || 0;\n  node.x = 80 + column * 300;\n  node.y = 100 + row * 170;\n  rows.set(column, row + 1);\n}",
+        "doc": "Arrange by depth from Start.\n\nUsed when a playbook arrives without editor positions - an AI-generated draft,\nor one imported from another platform. It is a starting point, not an\nopinion: positions are saved, so whatever the engineer does next sticks.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "layout_by_depth",
+        "packages": [],
+        "params": [
+          {
+            "name": "model",
+            "type": "Any"
+          }
+        ],
+        "returns": "Void"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 1690
+    },
+    {
+      "id": "n_mu4ytvz22ipagpdod",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "globalThis.SOAR = globalThis.SOAR || {};\nObject.assign(globalThis.SOAR, {\n  createCanvas,\n  renderCanvas,\n  frame,\n  autoLayout,\n});",
+        "doc": "Register this module in globalThis.SOAR so Custom Code bodies in sibling modules can reach it.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "publish_module_exports",
+        "packages": [],
+        "params": [],
+        "returns": "Void"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 1820
+    },
+    {
+      "id": "n_mu4ytvz22iqg1inww",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {},
+      "type": "dom/on-ready",
+      "x": 0,
+      "y": 1820
+    }
+  ],
+  "style": "event-driven",
+  "variables": []
+}

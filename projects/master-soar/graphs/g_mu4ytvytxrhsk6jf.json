@@ -1,0 +1,128 @@
+{
+  "edges": [
+    {
+      "from": {
+        "node": "n_mu4ytvytxtkty0gm",
+        "port": "result"
+      },
+      "id": "e_mu4ytvytxvg13uxu",
+      "to": {
+        "node": "n_mu4ytvytxu6ycome",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvytxsfs7o86",
+        "port": "out"
+      },
+      "id": "e_mu4ytvytxwcmu5o3",
+      "to": {
+        "node": "n_mu4ytvytxtkty0gm",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvytxtkty0gm",
+        "port": "out"
+      },
+      "id": "e_mu4ytvytxxh8lgen",
+      "to": {
+        "node": "n_mu4ytvytxu6ycome",
+        "port": "in"
+      }
+    }
+  ],
+  "fileId": "file_mu4ytvytxqanvvke",
+  "id": "g_mu4ytvytxrhsk6jf",
+  "name": "network connector pack",
+  "nodes": [
+    {
+      "id": "n_mu4ytvytxsfs7o86",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "doc": "Firewalls, DNS security and proxies: blocking at the perimeter.\n\nEvery block command here takes an expiry. A blocklist that only grows is an\noutage waiting to happen, and the one thing a SOC never gets round to is\nreviewing entries added during an incident at 03:00.",
+        "isAsync": false,
+        "name": "network_connectors",
+        "params": [],
+        "returns": "List<Map<string, Any>>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvytxtkty0gm",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "List<Map<string, Any>>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "def param(kind, **extra):\n    \"\"\"One input property, in JSON Schema terms.\"\"\"\n    spec = {\"type\": kind} if kind not in (\"ipv4\", \"hostname\") else {\"type\": \"string\"}\n    spec.update(extra)\n    return spec\n\n\ndef cmd(key, name, method, url, inputs, outputs, extract=None, risk=\"low\",\n        effect=\"read\", doc=\"\", techniques=None, undo=None, timeout_ms=30000,\n        required=None, category=\"integration\", body=None, success=None):\n    \"\"\"\n    One command definition.\n\n    Structured JSON in, structured JSON out. The output_schema is what the\n    playbook validator type-checks the next step against, so a command whose\n    schema lies fails at publish rather than at 03:00.\n    \"\"\"\n    definition = {\n        \"key\": key,\n        \"name\": name,\n        \"category\": category,\n        \"kind\": \"http\",\n        \"input_schema\": {\n            \"type\": \"object\",\n            \"required\": list(inputs.keys()) if required is None else required,\n            \"properties\": inputs,\n            \"additionalProperties\": False,\n        },\n        \"output_schema\": {\"type\": \"object\", \"properties\": outputs},\n        \"implementation\": {\n            \"method\": method,\n            \"url\": url,\n            \"extract\": extract or {},\n            \"success_codes\": success or [200, 201, 202, 204],\n        },\n        \"required_permissions\": [\"commands.execute\"],\n        \"required_capabilities\": [\"net\"],\n        \"timeout_ms\": timeout_ms,\n        \"risk_level\": risk,\n        \"effect\": effect,\n        \"trust_level\": \"trusted\",\n        \"technique_ids\": techniques or [],\n        \"doc\": doc,\n    }\n    if body is not None:\n        definition[\"implementation\"][\"body\"] = body\n    if effect == \"mutating\":\n        # A mutating command with no dry-run example would make dry run a lie,\n        # and the registry validator refuses it.\n        definition[\"dry_run_example\"] = {\"dry_run\": True, \"would_call\": key}\n    if undo:\n        # Named, not inferred. The platform never invents a rollback.\n        definition[\"undo_command\"] = undo\n    if risk == \"high\":\n        definition[\"required_permissions\"] = [\"commands.execute\", _permission_for(key)]\n    return definition\n\n\ndef _permission_for(key):\n    \"\"\"High-risk commands need the response permission that matches them.\"\"\"\n    action = key.split(\".\", 1)[1]\n    if \"isolate\" in action or \"contain\" in action or \"quarantine_host\" in action:\n        return \"response.isolate\"\n    if \"block\" in action:\n        return \"response.block\"\n    if \"disable\" in action or \"suspend\" in action:\n        return \"response.disable_account\"\n    if \"revoke\" in action or \"signout\" in action:\n        return \"response.revoke_sessions\"\n    if \"delete\" in action or \"purge\" in action or \"remove_mail\" in action:\n        return \"response.delete_mail\"\n    if \"firewall\" in action or \"policy\" in action:\n        return \"response.firewall\"\n    return \"response.isolate\"\n\n\ndef field(name, label, kind=\"text\", required=True, default=None,\n          options=None, help=\"\", placeholder=\"\"):\n    # One thing an operator must be told before this tool can be reached.\n    return {\n        \"name\": name, \"label\": label, \"kind\": kind, \"required\": required,\n        \"default\": default, \"options\": options or [], \"help\": help,\n        \"placeholder\": placeholder,\n    }\n\n\ndef connector(cid, name, vendor, category, auth, base_url, allowlist, commands,\n              min_permissions=None, rate_limit=None, health=None,\n              version=\"1.0.0\", setup=None, derive=None, ingest=None,\n              hunt=None):\n    # A connector manifest. Installing one publishes its commands; no engine\n    # change.\n    #\n    # setup is what THIS vendor needs before it can be reached, and no two\n    # agree: CrowdStrike wants a cloud region, Sentinel a tenant and a\n    # workspace, Splunk a host and a port. Asking every connector for a\n    # client id and a secret asked the two questions they happen to share\n    # and none of the ones that make a connection work.\n    fields = list(setup or [])\n\n    # Which setting the commands of this connector actually read. Most say\n    # base_url; a few front a protocol that is not HTTP and say gateway_url\n    # instead, and asking those for a base_url nothing reads is how a form\n    # grows a field that does nothing.\n    setting = \"base_url\"\n    if \"{{\" in base_url:\n        inner = base_url.split(\"{{\", 1)[1].split(\"}}\", 1)[0].strip()\n        setting = inner.rsplit(\".\", 1)[-1] if inner else \"base_url\"\n\n    if not any(f[\"name\"] == setting for f in fields):\n        # Every connector can at least be pointed elsewhere: a regional\n        # cloud, a tenant-specific host, an on-premise appliance.\n        # A connector whose base_url is itself a template has no host until\n        # someone supplies one, so there is nothing to prefill and the field\n        # is the only way the connection can exist at all.\n        templated = \"{{\" in base_url\n        fields.insert(0, field(\n            setting, \"API base URL\", kind=\"url\",\n            default=None if templated else base_url,\n            help=\"Change for a regional cloud or an on-premise appliance.\"\n                 if not templated else \"The hostname this tenant answers on.\"))\n\n    return {\n        \"setup\": fields,\n        # Settings a vendor addresses by a composite of the ones a person\n        # can actually be asked for. Nobody knows their workspace ARM id;\n        # everybody knows their subscription, resource group and workspace\n        # name, and the id is those three in a fixed shape.\n        \"derive\": derive or {},\n        # How this product is polled for alerts: which command lists them,\n        # which turns ids into objects, and where the timestamp lives that\n        # the watermark advances to. A connector without it can still\n        # receive a webhook; it just cannot be asked.\n        \"ingest\": ingest or {},\n        # Which command runs an arbitrary hunt query, what the query\n        # parameter is called, and what language an engineer is writing.\n        # A tool without this cannot be hunted in - which is most of them,\n        # because a firewall is not a place you go looking.\n        \"hunt\": hunt or {},\n        \"id\": cid, \"name\": name, \"vendor\": vendor, \"category\": category,\n        \"version\": version, \"auth\": auth, \"base_url\": base_url,\n        \"egress_allowlist\": allowlist,\n        \"min_vendor_permissions\": min_permissions or [],\n        \"rate_limit\": rate_limit or {},\n        \"health_check\": health or {},\n        \"commands\": commands,\n        \"publisher\": \"master-soar\",\n        \"signature\": \"\",\n    }\n\n\nblocked = {\"blocked\": {\"type\": \"boolean\"}, \"entry_id\": {\"type\": \"string\"}}\n\npanos = connector(\n    \"paloalto.panos\", \"Palo Alto NGFW\", \"Palo Alto Networks\", \"network\",\n    {\"kind\": \"api_key\", \"roles\": [\"api_key\"], \"header\": \"X-PAN-KEY\"},\n    \"{{ integration.config.base_url }}\",\n    [\"{{ integration.config.host }}\"],\n    min_permissions=[\"XML API: Configuration, Commit\"],\n    health={\"path\": \"/api/?type=op&cmd=<show><system><info></info></system></show>\"},\n    setup=[\n        field(\"base_url\", \"Firewall or Panorama URL\", kind=\"url\",\n              placeholder=\"https://firewall.client.example\"),\n        field(\"vsys\", \"Virtual system\", required=False,\n              default=\"vsys1\"),\n    ],\n    commands=[\n        cmd(\"panos.block_ip\", \"PAN-OS: Block IP\", \"POST\",\n            \"{{ integration.config.base_url }}/restapi/v10.2/Objects/AddressGroups\",\n            {\"ip\": param(\"string\"),\n             \"group\": param(\"string\", pattern=\"^[A-Za-z0-9_-]{1,63}$\"),\n             \"expires_days\": param(\"integer\", minimum=1, maximum=365),\n             \"comment\": param(\"string\")},\n            blocked, risk=\"high\", effect=\"mutating\", undo=\"panos.unblock_ip\",\n            required=[\"ip\", \"group\", \"comment\"],\n            doc=\"Adds to a dynamic address group the policy already references, so \"\n                \"no rule change and no commit of a new policy is needed.\"),\n\n        cmd(\"panos.unblock_ip\", \"PAN-OS: Unblock IP\", \"DELETE\",\n            \"{{ integration.config.base_url }}/restapi/v10.2/Objects/AddressGroups?name={{ inputs.group | urlencode }}&member={{ inputs.ip | urlencode }}\",\n            {\"ip\": param(\"string\"), \"group\": param(\"string\")},\n            {\"removed\": {\"type\": \"boolean\"}},\n            risk=\"medium\", effect=\"mutating\"),\n\n        cmd(\"panos.block_url\", \"PAN-OS: Block URL\", \"POST\",\n            \"{{ integration.config.base_url }}/restapi/v10.2/Objects/CustomURLCategories\",\n            {\"url\": param(\"string\"), \"category\": param(\"string\"),\n             \"comment\": param(\"string\")},\n            blocked, risk=\"high\", effect=\"mutating\"),\n\n        cmd(\"panos.commit\", \"PAN-OS: Commit Configuration\", \"POST\",\n            \"{{ integration.config.base_url }}/api/?type=commit&cmd=<commit></commit>\",\n            {}, {\"job_id\": {\"type\": \"string\"}},\n            risk=\"high\", effect=\"mutating\", required=[], timeout_ms=300000,\n            doc=\"Separate from the block commands on purpose: a playbook can add \"\n                \"several objects and commit once, and a failed commit is visible \"\n                \"as its own failed step.\"),\n    ],\n)\n\nfortigate = connector(\n    \"fortinet.fortigate\", \"Fortinet FortiGate\", \"Fortinet\", \"network\",\n    {\"kind\": \"api_key\", \"roles\": [\"api_key\"], \"header\": \"Authorization\",\n     \"prefix\": \"Bearer \"},\n    \"{{ integration.config.base_url }}\",\n    [\"{{ integration.config.host }}\"],\n    health={\"path\": \"/api/v2/monitor/system/status\"},\n    setup=[\n        field(\"base_url\", \"FortiGate URL\", kind=\"url\",\n              placeholder=\"https://fortigate.client.example\"),\n        field(\"vdom\", \"VDOM\", required=False, default=\"root\"),\n    ],\n    commands=[\n        cmd(\"fortigate.block_ip\", \"FortiGate: Block IP\", \"POST\",\n            \"{{ integration.config.base_url }}/api/v2/cmdb/firewall/address\",\n            {\"ip\": param(\"string\"), \"group\": param(\"string\"),\n             \"comment\": param(\"string\")},\n            blocked, risk=\"high\", effect=\"mutating\",\n            undo=\"fortigate.unblock_ip\",\n            body={\"name\": \"soar-{{ inputs.ip }}\", \"subnet\": \"{{ inputs.ip }} 255.255.255.255\",\n                  \"comment\": \"{{ inputs.comment }}\"}),\n\n        cmd(\"fortigate.unblock_ip\", \"FortiGate: Unblock IP\", \"DELETE\",\n            \"{{ integration.config.base_url }}/api/v2/cmdb/firewall/address/soar-{{ inputs.ip | urlencode }}\",\n            {\"ip\": param(\"string\")}, {\"removed\": {\"type\": \"boolean\"}},\n            risk=\"medium\", effect=\"mutating\"),\n    ],\n)\n\numbrella = connector(\n    \"cisco.umbrella\", \"Cisco Umbrella\", \"Cisco\", \"network\",\n    {\"kind\": \"oauth2_client\", \"roles\": [\"client_id\", \"client_secret\"],\n     \"token_url\": \"https://api.umbrella.com/auth/v2/token\"},\n    \"https://api.umbrella.com\",\n    [\"api.umbrella.com\"],\n    health={\"path\": \"/admin/v2/organizations\"},\n    setup=[\n        field(\"organization_id\", \"Organization id\",\n              help=\"The number in the Umbrella dashboard URL.\"),\n        field(\"destination_list_id\", \"Blocklist id\", required=False,\n              help=\"The destination list a block command writes to.\"),\n    ],\n    commands=[\n        cmd(\"umbrella.block_domain\", \"Umbrella: Block Domain\", \"POST\",\n            \"https://api.umbrella.com/policies/v2/destinationlists/{{ integration.config.destination_list_id }}/destinations\",\n            {\"domain\": param(\"string\"), \"comment\": param(\"string\")},\n            blocked, {\"entry_id\": \"$.data.id\"},\n            risk=\"high\", effect=\"mutating\", undo=\"umbrella.unblock_domain\",\n            body=[{\"destination\": \"{{ inputs.domain }}\",\n                   \"comment\": \"{{ inputs.comment }}\"}]),\n\n        cmd(\"umbrella.unblock_domain\", \"Umbrella: Unblock Domain\", \"DELETE\",\n            \"https://api.umbrella.com/policies/v2/destinationlists/{{ integration.config.destination_list_id }}/destinations/remove\",\n            {\"entry_id\": param(\"string\")}, {\"removed\": {\"type\": \"boolean\"}},\n            risk=\"medium\", effect=\"mutating\",\n            body=[\"{{ inputs.entry_id }}\"]),\n\n        cmd(\"umbrella.domain_status\", \"Umbrella: Domain Categorisation\", \"GET\",\n            \"https://api.umbrella.com/investigate/v2/domains/categorization/{{ inputs.domain | urlencode }}\",\n            {\"domain\": param(\"string\")},\n            {\"status\": {\"type\": \"integer\"},\n             \"categories\": {\"type\": \"array\", \"items\": {\"type\": \"string\"}}}),\n    ],\n)\n\nzscaler = connector(\n    \"zscaler.zia\", \"Zscaler Internet Access\", \"Zscaler\", \"network\",\n    {\"kind\": \"api_key\", \"roles\": [\"api_key\", \"username\", \"password\"]},\n    \"{{ integration.config.base_url }}\",\n    [\"{{ integration.config.host }}\"],\n    health={\"path\": \"/api/v1/status\"},\n    setup=[\n        field(\"base_url\", \"ZIA cloud\", kind=\"select\",\n              default=\"https://zsapi.zscaler.net\",\n              options=[{\"value\": \"https://zsapi.zscaler.net\",\n                        \"label\": \"zscaler.net\"},\n                       {\"value\": \"https://zsapi.zscalerone.net\",\n                        \"label\": \"zscalerone.net\"},\n                       {\"value\": \"https://zsapi.zscalertwo.net\",\n                        \"label\": \"zscalertwo.net\"},\n                       {\"value\": \"https://zsapi.zscalerthree.net\",\n                        \"label\": \"zscalerthree.net\"},\n                       {\"value\": \"https://zsapi.zscloud.net\",\n                        \"label\": \"zscloud.net\"}],\n              help=\"Shown in the ZIA admin portal under Administration > Company Profile.\"),\n    ],\n    commands=[\n        cmd(\"zscaler.block_url\", \"Zscaler: Add URL to Blocklist\", \"POST\",\n            \"{{ integration.config.base_url }}/api/v1/security/advanced/blacklistUrls?action=ADD_TO_LIST\",\n            {\"urls\": {\"type\": \"array\", \"items\": {\"type\": \"string\"},\n                      \"minItems\": 1, \"maxItems\": 100}},\n            blocked, risk=\"high\", effect=\"mutating\", undo=\"zscaler.unblock_url\",\n            body={\"blacklistUrls\": \"{{ inputs.urls | json }}\"}),\n\n        cmd(\"zscaler.unblock_url\", \"Zscaler: Remove URL from Blocklist\", \"POST\",\n            \"{{ integration.config.base_url }}/api/v1/security/advanced/blacklistUrls?action=REMOVE_FROM_LIST\",\n            {\"urls\": {\"type\": \"array\", \"items\": {\"type\": \"string\"}}},\n            {\"removed\": {\"type\": \"boolean\"}},\n            risk=\"medium\", effect=\"mutating\",\n            body={\"blacklistUrls\": \"{{ inputs.urls | json }}\"}),\n    ],\n)\n\nreturn [panos, fortigate, umbrella, zscaler]",
+        "doc": "Firewalls, DNS security and proxies: blocking at the perimeter.\n\nEvery block command here takes an expiry. A blocklist that only grows is an\noutage waiting to happen, and the one thing a SOC never gets round to is\nreviewing entries added during an incident at 03:00.",
+        "form": "statements",
+        "language": "python",
+        "name": "network_connector_pack",
+        "packages": [],
+        "params": [],
+        "returns": "List<Map<string, Any>>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvytxu6ycome",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 0
+    }
+  ],
+  "style": "data-flow",
+  "variables": []
+}

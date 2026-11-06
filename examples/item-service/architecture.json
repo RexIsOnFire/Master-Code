@@ -1,0 +1,43 @@
+{
+  "architecture": "modular",
+  "modules": [
+    {
+      "config": {},
+      "dependencies": [
+        "mod_mstz34cd3fn02zr"
+      ],
+      "description": "HTTP surface: routing and request handling.",
+      "directory": "src/api",
+      "id": "mod_mstz34cd2p3tjy6",
+      "interface": [
+        {
+          "doc": "GET /items handler.",
+          "kind": "function",
+          "name": "list_items"
+        }
+      ],
+      "name": "api",
+      "packages": [],
+      "testFileIds": [],
+      "version": "0.1.0"
+    },
+    {
+      "config": {},
+      "dependencies": [],
+      "description": "Persistence. The rest of the app talks to this, never to SQL.",
+      "directory": "src/storage",
+      "id": "mod_mstz34cd3fn02zr",
+      "interface": [
+        {
+          "doc": "Item storage.",
+          "kind": "class",
+          "name": "Repository"
+        }
+      ],
+      "name": "storage",
+      "packages": [],
+      "testFileIds": [],
+      "version": "0.1.0"
+    }
+  ]
+}

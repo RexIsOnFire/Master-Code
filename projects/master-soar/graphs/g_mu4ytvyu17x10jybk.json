@@ -1,0 +1,2216 @@
+{
+  "edges": [
+    {
+      "from": {
+        "node": "n_mu4ytvyu17y66tjwb",
+        "port": "p:url"
+      },
+      "id": "e_mu4ytvyu180odwzxw",
+      "to": {
+        "node": "n_mu4ytvyu17ztyneai",
+        "port": "p:url"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu17y66tjwb",
+        "port": "p:timeout_ms"
+      },
+      "id": "e_mu4ytvyu181agjdfo",
+      "to": {
+        "node": "n_mu4ytvyu17ztyneai",
+        "port": "p:timeout_ms"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu17y66tjwb",
+        "port": "p:max_bytes"
+      },
+      "id": "e_mu4ytvyu182bnolls",
+      "to": {
+        "node": "n_mu4ytvyu17ztyneai",
+        "port": "p:max_bytes"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu17y66tjwb",
+        "port": "p:allowlist"
+      },
+      "id": "e_mu4ytvyu1834llcw9",
+      "to": {
+        "node": "n_mu4ytvyu17ztyneai",
+        "port": "p:allowlist"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu17y66tjwb",
+        "port": "p:headers"
+      },
+      "id": "e_mu4ytvyu184wfozrn",
+      "to": {
+        "node": "n_mu4ytvyu17ztyneai",
+        "port": "p:headers"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu17ztyneai",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyu1869vmn87",
+      "to": {
+        "node": "n_mu4ytvyu185cnixkv",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu17y66tjwb",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyu187baoxqi",
+      "to": {
+        "node": "n_mu4ytvyu17ztyneai",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu17ztyneai",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyu188u89731",
+      "to": {
+        "node": "n_mu4ytvyu185cnixkv",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu189ftfhqu",
+        "port": "p:db"
+      },
+      "id": "e_mu4ytvyu18bk35hbx",
+      "to": {
+        "node": "n_mu4ytvyu18alun5wo",
+        "port": "p:db"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu189ftfhqu",
+        "port": "p:provider"
+      },
+      "id": "e_mu4ytvyu18ckw0q5e",
+      "to": {
+        "node": "n_mu4ytvyu18alun5wo",
+        "port": "p:provider"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu189ftfhqu",
+        "port": "p:job"
+      },
+      "id": "e_mu4ytvyu18d5mjjwh",
+      "to": {
+        "node": "n_mu4ytvyu18alun5wo",
+        "port": "p:job"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu18alun5wo",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyu18fnzugv1",
+      "to": {
+        "node": "n_mu4ytvyu18e9uf1np",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu189ftfhqu",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyu18gjcfagn",
+      "to": {
+        "node": "n_mu4ytvyu18alun5wo",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu18alun5wo",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyu18hfjzyxl",
+      "to": {
+        "node": "n_mu4ytvyu18e9uf1np",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu18igyskuc",
+        "port": "p:db"
+      },
+      "id": "e_mu4ytvyu18k3fqs1s",
+      "to": {
+        "node": "n_mu4ytvyu18jq2ahnw",
+        "port": "p:db"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu18igyskuc",
+        "port": "p:provider"
+      },
+      "id": "e_mu4ytvyu18l3xydnb",
+      "to": {
+        "node": "n_mu4ytvyu18jq2ahnw",
+        "port": "p:provider"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu18igyskuc",
+        "port": "p:org_id"
+      },
+      "id": "e_mu4ytvyu18mfb307s",
+      "to": {
+        "node": "n_mu4ytvyu18jq2ahnw",
+        "port": "p:org_id"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu18igyskuc",
+        "port": "p:feed"
+      },
+      "id": "e_mu4ytvyu18n6s6k6f",
+      "to": {
+        "node": "n_mu4ytvyu18jq2ahnw",
+        "port": "p:feed"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu18jq2ahnw",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyu18prvgm07",
+      "to": {
+        "node": "n_mu4ytvyu18ovjq2v9",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu18igyskuc",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyu18qvbo8cg",
+      "to": {
+        "node": "n_mu4ytvyu18jq2ahnw",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu18jq2ahnw",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyu18r7swbmt",
+      "to": {
+        "node": "n_mu4ytvyu18ovjq2v9",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu18sgrrth4",
+        "port": "p:db"
+      },
+      "id": "e_mu4ytvyu18uv1ugjx",
+      "to": {
+        "node": "n_mu4ytvyu18thv74fh",
+        "port": "p:db"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu18sgrrth4",
+        "port": "p:provider"
+      },
+      "id": "e_mu4ytvyu18vfumi9i",
+      "to": {
+        "node": "n_mu4ytvyu18thv74fh",
+        "port": "p:provider"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu18sgrrth4",
+        "port": "p:job"
+      },
+      "id": "e_mu4ytvyu18wvr3bju",
+      "to": {
+        "node": "n_mu4ytvyu18thv74fh",
+        "port": "p:job"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu18thv74fh",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyu18y0srpwe",
+      "to": {
+        "node": "n_mu4ytvyu18xvanmbs",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu18sgrrth4",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyu18z63izvl",
+      "to": {
+        "node": "n_mu4ytvyu18thv74fh",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu18thv74fh",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyu190zxoarj",
+      "to": {
+        "node": "n_mu4ytvyu18xvanmbs",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu1915kxqi7",
+        "port": "p:db"
+      },
+      "id": "e_mu4ytvyu193tf4csg",
+      "to": {
+        "node": "n_mu4ytvyu192r6pltv",
+        "port": "p:db"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu1915kxqi7",
+        "port": "p:provider"
+      },
+      "id": "e_mu4ytvyu194de5iu7",
+      "to": {
+        "node": "n_mu4ytvyu192r6pltv",
+        "port": "p:provider"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu1915kxqi7",
+        "port": "p:job"
+      },
+      "id": "e_mu4ytvyu195yylufm",
+      "to": {
+        "node": "n_mu4ytvyu192r6pltv",
+        "port": "p:job"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu192r6pltv",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyu197fuweiv",
+      "to": {
+        "node": "n_mu4ytvyu196l4h790",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu1915kxqi7",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyu198pqa91e",
+      "to": {
+        "node": "n_mu4ytvyu192r6pltv",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu192r6pltv",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyu199nqfyg8",
+      "to": {
+        "node": "n_mu4ytvyu196l4h790",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu19ao3vc4r",
+        "port": "p:db"
+      },
+      "id": "e_mu4ytvyu19cj01y1i",
+      "to": {
+        "node": "n_mu4ytvyu19bldq4uo",
+        "port": "p:db"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu19ao3vc4r",
+        "port": "p:job"
+      },
+      "id": "e_mu4ytvyu19dc4tu6k",
+      "to": {
+        "node": "n_mu4ytvyu19bldq4uo",
+        "port": "p:job"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu19bldq4uo",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyu19fvcjkz9",
+      "to": {
+        "node": "n_mu4ytvyu19eb04xkh",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu19ao3vc4r",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyu19gyezb4q",
+      "to": {
+        "node": "n_mu4ytvyu19bldq4uo",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu19bldq4uo",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyu19hjfm4rs",
+      "to": {
+        "node": "n_mu4ytvyu19eb04xkh",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu19izohkvi",
+        "port": "p:db"
+      },
+      "id": "e_mu4ytvyu19k8zfzaf",
+      "to": {
+        "node": "n_mu4ytvyu19j991enk",
+        "port": "p:db"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu19izohkvi",
+        "port": "p:job"
+      },
+      "id": "e_mu4ytvyu19lqdssi4",
+      "to": {
+        "node": "n_mu4ytvyu19j991enk",
+        "port": "p:job"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu19j991enk",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyu19ni3w57a",
+      "to": {
+        "node": "n_mu4ytvyu19mpbf5vz",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu19izohkvi",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyu19owkhr14",
+      "to": {
+        "node": "n_mu4ytvyu19j991enk",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu19j991enk",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyu19puclttx",
+      "to": {
+        "node": "n_mu4ytvyu19mpbf5vz",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu19q183ji5",
+        "port": "p:db"
+      },
+      "id": "e_mu4ytvyu19smutacm",
+      "to": {
+        "node": "n_mu4ytvyu19roszke4",
+        "port": "p:db"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu19q183ji5",
+        "port": "p:provider"
+      },
+      "id": "e_mu4ytvyu19tolipqi",
+      "to": {
+        "node": "n_mu4ytvyu19roszke4",
+        "port": "p:provider"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu19q183ji5",
+        "port": "p:job"
+      },
+      "id": "e_mu4ytvyu19uj7s2hx",
+      "to": {
+        "node": "n_mu4ytvyu19roszke4",
+        "port": "p:job"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu19roszke4",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyu19wuytxaq",
+      "to": {
+        "node": "n_mu4ytvyu19vreectq",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu19q183ji5",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyu19xjpyeod",
+      "to": {
+        "node": "n_mu4ytvyu19roszke4",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu19roszke4",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyu19y0njt38",
+      "to": {
+        "node": "n_mu4ytvyu19vreectq",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu19zd7z6im",
+        "port": "p:db"
+      },
+      "id": "e_mu4ytvyu1a1ja991h",
+      "to": {
+        "node": "n_mu4ytvyu1a0ym1vbo",
+        "port": "p:db"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu19zd7z6im",
+        "port": "p:provider"
+      },
+      "id": "e_mu4ytvyu1a28xsumx",
+      "to": {
+        "node": "n_mu4ytvyu1a0ym1vbo",
+        "port": "p:provider"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu19zd7z6im",
+        "port": "p:job"
+      },
+      "id": "e_mu4ytvyu1a3n62x0i",
+      "to": {
+        "node": "n_mu4ytvyu1a0ym1vbo",
+        "port": "p:job"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu1a0ym1vbo",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyu1a5ai2513",
+      "to": {
+        "node": "n_mu4ytvyu1a4vxgpp5",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu19zd7z6im",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyu1a60mmd79",
+      "to": {
+        "node": "n_mu4ytvyu1a0ym1vbo",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu1a0ym1vbo",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyu1a7bv3vja",
+      "to": {
+        "node": "n_mu4ytvyu1a4vxgpp5",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu1a8ilvo5c",
+        "port": "p:db"
+      },
+      "id": "e_mu4ytvyu1aah46a7p",
+      "to": {
+        "node": "n_mu4ytvyu1a9ipluvn",
+        "port": "p:db"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu1a8ilvo5c",
+        "port": "p:provider"
+      },
+      "id": "e_mu4ytvyu1abmqly9a",
+      "to": {
+        "node": "n_mu4ytvyu1a9ipluvn",
+        "port": "p:provider"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu1a8ilvo5c",
+        "port": "p:job"
+      },
+      "id": "e_mu4ytvyu1ac1cgee4",
+      "to": {
+        "node": "n_mu4ytvyu1a9ipluvn",
+        "port": "p:job"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu1a9ipluvn",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyu1aegkm25c",
+      "to": {
+        "node": "n_mu4ytvyu1ad78rv3o",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu1a8ilvo5c",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyu1afuddebr",
+      "to": {
+        "node": "n_mu4ytvyu1a9ipluvn",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu1a9ipluvn",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyu1ag1brajk",
+      "to": {
+        "node": "n_mu4ytvyu1ad78rv3o",
+        "port": "in"
+      }
+    }
+  ],
+  "fileId": "file_mu4ytvyu17wto9ev7",
+  "id": "g_mu4ytvyu17x10jybk",
+  "name": "background jobs",
+  "nodes": [
+    {
+      "id": "n_mu4ytvyu17y66tjwb",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:url",
+          "name": "url",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:timeout_ms",
+          "name": "timeout_ms",
+          "type": "i64"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:max_bytes",
+          "name": "max_bytes",
+          "type": "i64"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:allowlist",
+          "name": "allowlist",
+          "type": "List<string>"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:headers",
+          "name": "headers",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "doc": "Download one third-party document, under a size ceiling.\n\nTwo properties this has and a plain `httpx.get` does not. Every redirect hop\nis screened again, because an allowlisted host that answers 302 to\n169.254.169.254 is the whole SSRF bypass. And the body is read in chunks\nagainst a hard ceiling, because a feed is by definition a stranger and a\nmulti-gigabyte response should be a parse failure rather than an OOM kill.",
+        "isAsync": false,
+        "name": "fetch_document",
+        "params": [
+          {
+            "name": "url",
+            "type": "string"
+          },
+          {
+            "name": "timeout_ms",
+            "type": "i64"
+          },
+          {
+            "name": "max_bytes",
+            "type": "i64"
+          },
+          {
+            "name": "allowlist",
+            "type": "List<string>"
+          },
+          {
+            "name": "headers",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyu17ztyneai",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:url",
+          "name": "url",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:timeout_ms",
+          "name": "timeout_ms",
+          "type": "i64"
+        },
+        {
+          "direction": "in",
+          "id": "p:max_bytes",
+          "name": "max_bytes",
+          "type": "i64"
+        },
+        {
+          "direction": "in",
+          "id": "p:allowlist",
+          "name": "allowlist",
+          "type": "List<string>"
+        },
+        {
+          "direction": "in",
+          "id": "p:headers",
+          "name": "headers",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [
+          "net"
+        ],
+        "code": "from soar.commands.http_command import check_destination\n\nimport httpx\n\ncurrent = url\nfor _hop in range(4):\n    destination = check_destination(current, allowlist or [])\n    with httpx.Client(timeout=timeout_ms / 1000.0,\n                      follow_redirects=False) as client:\n        request_headers = {\n            \"Accept\": \"application/json, text/csv, text/plain\",\n            \"User-Agent\": \"master-soar/0.1\",\n        }\n        request_headers.update(headers or {})\n        with client.stream(\"GET\", current,\n                           headers=request_headers) as response:\n            if response.status_code in (301, 302, 303, 307, 308):\n                location = response.headers.get(\"location\")\n                if not location:\n                    raise ValueError(\"redirect with no location header\")\n                current = str(httpx.URL(current).join(location))\n                continue\n            if response.status_code >= 400:\n                raise RuntimeError(\n                    \"%s answered %d\" % (destination[\"host\"],\n                                        response.status_code))\n\n            chunks = []\n            total = 0\n            for chunk in response.iter_bytes():\n                total += len(chunk)\n                if total > max_bytes:\n                    raise ValueError(\n                        \"%s sent more than the %d byte ceiling\"\n                        % (destination[\"host\"], max_bytes))\n                chunks.append(chunk)\n\n    return {\"body\": b\"\".join(chunks).decode(\"utf-8\", \"replace\"),\n            \"bytes\": total, \"host\": destination[\"host\"], \"url\": current,\n            \"status\": response.status_code,\n            # Lower-cased because HTTP header names are case-insensitive and a\n            # plain dict is not. TAXII servers disagree about the casing of\n            # X-TAXII-Date-Added-Last, and the watermark depends on it.\n            \"headers\": {name.lower(): value\n                        for name, value in response.headers.items()}}\n\nraise ValueError(\"too many redirects fetching %s\" % url)",
+        "doc": "Download one third-party document, under a size ceiling.\n\nTwo properties this has and a plain `httpx.get` does not. Every redirect hop\nis screened again, because an allowlisted host that answers 302 to\n169.254.169.254 is the whole SSRF bypass. And the body is read in chunks\nagainst a hard ceiling, because a feed is by definition a stranger and a\nmulti-gigabyte response should be a parse failure rather than an OOM kill.",
+        "form": "statements",
+        "language": "python",
+        "name": "download_screened_document",
+        "packages": [
+          {
+            "name": "httpx",
+            "version": "0.27.*"
+          }
+        ],
+        "params": [
+          {
+            "name": "url",
+            "type": "string"
+          },
+          {
+            "name": "timeout_ms",
+            "type": "i64"
+          },
+          {
+            "name": "max_bytes",
+            "type": "i64"
+          },
+          {
+            "name": "allowlist",
+            "type": "List<string>"
+          },
+          {
+            "name": "headers",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyu185cnixkv",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyu189ftfhqu",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:provider",
+          "name": "provider",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:job",
+          "name": "job",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "doc": "Fetch one threat-intel feed, parse it, and store what it carried.\n\nThe feed row records what happened either way. A feed that has been failing\nfor a week is the commonest silent failure in a SOAR deployment - the\nindicators simply stop arriving and nothing says so - which is why the error\nis written to the row an analyst can see rather than only to a log.",
+        "isAsync": false,
+        "name": "run_feed_fetch",
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "provider",
+            "type": "Any"
+          },
+          {
+            "name": "job",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyu18alun5wo",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:provider",
+          "name": "provider",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:job",
+          "name": "job",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [
+          "net"
+        ],
+        "code": "from soar.audit.log import record as audit_record\nfrom soar.intel.feeds import ingest_feed_batch, parse_feed\n\nimport urllib.parse\n\norg_id = job[\"org_id\"]\nfeed_id = job[\"feed_id\"]\n\nrows = db.query(\n    \"SELECT id, name, url, format, default_confidence, default_tlp, \"\n    \"default_verdict, tags, trusted_only, auto_expire_days \"\n    \"FROM feed WHERE id = %s AND org_id = %s\", [feed_id, org_id], org_id,\n)\nif not rows:\n    return {\"ok\": False, \"reason\": \"feed %s no longer exists\" % feed_id}\nfeed = rows[0]\n\n# TAXII is a protocol, not a document: it is discovered, paged and resumed\n# from a watermark. The scheduler publishes one feed_fetch per enabled feed\n# regardless, so the hand-off happens here rather than in a second poller\n# that could fall out of step with this one.\nif str(feed.get(\"format\") or \"\").lower().startswith(\"taxii\"):\n    return run_taxii_poll(db, provider, job)\n\ndefaults = {\n    \"confidence\": feed.get(\"default_confidence\"),\n    \"tlp\": feed.get(\"default_tlp\"),\n    \"verdict\": feed.get(\"default_verdict\") or \"suspicious\",\n    \"tags\": list(feed.get(\"tags\") or []) + [\"feed:%s\" % feed[\"name\"]],\n    \"trusted_only\": bool(feed.get(\"trusted_only\", True)),\n    \"expire_days\": feed.get(\"auto_expire_days\"),\n}\n\ntry:\n    document = fetch_document(feed[\"url\"], 60000, 64 * 1024 * 1024, [], {})\n    parsed = parse_feed(document[\"body\"], feed[\"format\"], defaults)\n\n    # A MISP manifest lists its events rather than carrying them. One extra\n    # round of fetches resolves it; more than one would be a crawl, and a\n    # feed configured as a crawl is a mistake worth stopping at.\n    for name in (parsed.get(\"follow\") or [])[:200]:\n        child = fetch_document(urllib.parse.urljoin(feed[\"url\"], name),\n                               30000, 8 * 1024 * 1024, [], {})\n        child_parsed = parse_feed(child[\"body\"], \"misp\", defaults)\n        parsed[\"indicators\"].extend(child_parsed[\"indicators\"])\n        parsed[\"rejected\"] = (parsed.get(\"rejected\", 0)\n                              + child_parsed.get(\"rejected\", 0))\n\n    stored = ingest_feed_batch(db, org_id, parsed[\"indicators\"], defaults)\n    note = \"; \".join(parsed.get(\"errors\") or [])[:500] or None\n\n    db.execute(\n        \"UPDATE feed SET last_fetch_at = now(), last_status = %s, \"\n        \"last_error = %s, indicator_count = %s, last_parsed_count = %s, \"\n        \"last_rejected_count = %s WHERE id = %s AND org_id = %s\",\n        [\"ok\", note, stored[\"stored\"], len(parsed[\"indicators\"]),\n         parsed.get(\"rejected\", 0) + stored[\"dropped\"], feed_id, org_id],\n        org_id,\n    )\n    audit_record(db, {\n        \"org_id\": org_id, \"actor_kind\": \"system\", \"actor_id\": \"ingest\",\n        \"action\": \"feed.ingest\", \"target_kind\": \"feed\", \"target_id\": feed_id,\n        \"target_label\": feed[\"name\"], \"result\": \"success\",\n        \"after\": {\"format\": parsed.get(\"format\"),\n                  \"stored\": stored[\"stored\"],\n                  \"rejected\": parsed.get(\"rejected\", 0)},\n    })\n    return {\"ok\": True, \"format\": parsed.get(\"format\"),\n            \"stored\": stored[\"stored\"], \"dropped\": stored[\"dropped\"],\n            \"rejected\": parsed.get(\"rejected\", 0)}\n\nexcept Exception as error:  # noqa: BLE001 - the reason goes on the feed row\n    reason = str(error)[:500]\n    db.execute(\n        \"UPDATE feed SET last_fetch_at = now(), last_status = 'failed', \"\n        \"last_error = %s WHERE id = %s AND org_id = %s\",\n        [reason, feed_id, org_id], org_id,\n    )\n    audit_record(db, {\n        \"org_id\": org_id, \"actor_kind\": \"system\", \"actor_id\": \"ingest\",\n        \"action\": \"feed.ingest\", \"target_kind\": \"feed\", \"target_id\": feed_id,\n        \"target_label\": feed[\"name\"], \"result\": \"failure\", \"reason\": reason,\n    })\n    return {\"ok\": False, \"reason\": reason}",
+        "doc": "Fetch one threat-intel feed, parse it, and store what it carried.\n\nThe feed row records what happened either way. A feed that has been failing\nfor a week is the commonest silent failure in a SOAR deployment - the\nindicators simply stop arriving and nothing says so - which is why the error\nis written to the row an analyst can see rather than only to a log.",
+        "form": "statements",
+        "language": "python",
+        "name": "execute_feed_fetch",
+        "packages": [],
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "provider",
+            "type": "Any"
+          },
+          {
+            "name": "job",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyu18e9uf1np",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyu18igyskuc",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:provider",
+          "name": "provider",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:org_id",
+          "name": "org_id",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:feed",
+          "name": "feed",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "doc": "The Authorization header for one TAXII feed, or none.\n\nThe plaintext is revealed here and used immediately in a header. It is never\nlogged, never stored on the feed row, and never put in the URL - a token in a\nquery string ends up in the server access log of whoever you are polling.",
+        "isAsync": false,
+        "name": "taxii_credentials",
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "provider",
+            "type": "Any"
+          },
+          {
+            "name": "org_id",
+            "type": "string"
+          },
+          {
+            "name": "feed",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvyu18jq2ahnw",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:provider",
+          "name": "provider",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:org_id",
+          "name": "org_id",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:feed",
+          "name": "feed",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [
+          "env"
+        ],
+        "code": "import base64\n\nkind = str(feed.get(\"auth_kind\") or \"none\").strip().lower()\nif kind == \"none\" or not feed.get(\"credential_id\"):\n    return {}\n\nrows = db.query(\n    \"SELECT name FROM credential WHERE id = %s AND org_id = %s\",\n    [feed[\"credential_id\"], org_id], org_id,\n)\nif not rows:\n    raise KeyError(\"this feed names a credential that no longer exists\")\nsecret = provider.resolve(org_id, rows[0][\"name\"]).reveal()\n\nif kind == \"basic\":\n    # Stored as user:password, which is what Basic wants. Encoded whole\n    # rather than split, because passwords contain colons.\n    encoded = base64.b64encode(secret.encode(\"utf-8\")).decode(\"ascii\")\n    return {\"Authorization\": \"Basic \" + encoded}\nif kind == \"bearer\":\n    return {\"Authorization\": \"Bearer \" + secret}\nif kind == \"header\":\n    # The whole header value, for servers that want an unusual scheme.\n    return {\"Authorization\": secret}\nraise ValueError(\"unsupported TAXII auth kind %r\" % kind)",
+        "doc": "The Authorization header for one TAXII feed, or none.\n\nThe plaintext is revealed here and used immediately in a header. It is never\nlogged, never stored on the feed row, and never put in the URL - a token in a\nquery string ends up in the server access log of whoever you are polling.",
+        "form": "statements",
+        "language": "python",
+        "name": "build_taxii_auth",
+        "packages": [],
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "provider",
+            "type": "Any"
+          },
+          {
+            "name": "org_id",
+            "type": "string"
+          },
+          {
+            "name": "feed",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvyu18ovjq2v9",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvyu18sgrrth4",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:provider",
+          "name": "provider",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:job",
+          "name": "job",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "doc": "Walk a TAXII server: discovery, then the collections under each API root.\n\nA separate step from polling, and cached, because TAXII identifies\ncollections by uuid and nobody can configure a feed against a uuid they have\nnot been shown. When the server offers exactly one readable collection it is\nselected outright - that is the common case, and making someone pick from a\nlist of one is ceremony.",
+        "isAsync": false,
+        "name": "run_taxii_discover",
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "provider",
+            "type": "Any"
+          },
+          {
+            "name": "job",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvyu18thv74fh",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:provider",
+          "name": "provider",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:job",
+          "name": "job",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [
+          "net"
+        ],
+        "code": "from soar.intel.taxii import taxii_accept, taxii_collections, taxii_discovery\nfrom soar.platform.ids import new_id\n\norg_id = job[\"org_id\"]\nfeed_id = job[\"feed_id\"]\n\nrows = db.query(\n    \"SELECT id, name, url, taxii_version, auth_kind, credential_id, \"\n    \"api_root, collection_id FROM feed WHERE id = %s AND org_id = %s\",\n    [feed_id, org_id], org_id,\n)\nif not rows:\n    return {\"ok\": False, \"reason\": \"feed %s no longer exists\" % feed_id}\nfeed = rows[0]\nversion = feed.get(\"taxii_version\") or \"2.1\"\n\ntry:\n    headers = taxii_credentials(db, provider, org_id, feed)\n    headers[\"Accept\"] = taxii_accept(version, \"taxii\")\n\n    errors = []\n    roots = []\n    try:\n        document = fetch_document(feed[\"url\"], 20000, 8 * 1024 * 1024,\n                                  [], headers)\n        discovery = taxii_discovery(document[\"body\"], feed[\"url\"])\n        roots = discovery[\"api_roots\"]\n        errors.extend(discovery[\"errors\"])\n    except Exception as error:  # noqa: BLE001 - reported on the feed row\n        errors.append(\"discovery: %s\" % str(error)[:200])\n\n    if not roots:\n        # The configured url may already BE an api root rather than the\n        # discovery endpoint. Servers hand out both and rarely say which,\n        # so trying it beats making the analyst guess.\n        roots = [str(feed[\"url\"]).rstrip(\"/\") + \"/\"]\n\n    if len(roots) > 50:\n        errors.append(\"this server lists %d api roots; only the first 50 \"\n                      \"were walked\" % len(roots))\n\n    found = []\n    for root in roots[:50]:\n        try:\n            listing = fetch_document(root.rstrip(\"/\") + \"/collections/\",\n                                     20000, 16 * 1024 * 1024, [], headers)\n        except Exception as error:  # noqa: BLE001 - one root of several\n            errors.append(\"%s: %s\" % (root, str(error)[:200]))\n            continue\n        parsed = taxii_collections(listing[\"body\"])\n        errors.extend(parsed[\"errors\"])\n        for collection in parsed[\"collections\"]:\n            db.execute(\n                \"INSERT INTO taxii_collection (id, org_id, feed_id, api_root, \"\n                \"collection_id, title, description, can_read, can_write, \"\n                \"media_types) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s) \"\n                \"ON CONFLICT (feed_id, api_root, collection_id) DO UPDATE SET \"\n                \"  title = EXCLUDED.title, \"\n                \"  description = EXCLUDED.description, \"\n                \"  can_read = EXCLUDED.can_read, \"\n                \"  can_write = EXCLUDED.can_write, \"\n                \"  media_types = EXCLUDED.media_types, \"\n                \"  discovered_at = now()\",\n                [new_id(\"txc\"), org_id, feed_id, root, collection[\"id\"],\n                 collection[\"title\"], collection[\"description\"],\n                 collection[\"can_read\"], collection[\"can_write\"],\n                 collection[\"media_types\"]],\n                org_id,\n            )\n            found.append((root, collection))\n\n    readable = [entry for entry in found if entry[1][\"can_read\"]]\n    selected = None\n    if len(readable) == 1 and not feed.get(\"collection_id\"):\n        root, collection = readable[0]\n        db.execute(\n            \"UPDATE feed SET api_root = %s, collection_id = %s \"\n            \"WHERE id = %s AND org_id = %s\",\n            [root, collection[\"id\"], feed_id, org_id], org_id,\n        )\n        selected = collection[\"id\"]\n\n    note = \"; \".join(errors[:3])[:500] or None\n    if not found and not note:\n        note = \"the server listed no collections\"\n    db.execute(\n        \"UPDATE feed SET last_status = %s, last_error = %s \"\n        \"WHERE id = %s AND org_id = %s\",\n        [\"discovered\" if found else \"failed\", note, feed_id, org_id], org_id,\n    )\n    return {\"ok\": bool(found), \"collections\": len(found),\n            \"readable\": len(readable), \"selected\": selected,\n            \"errors\": errors[:5]}\n\nexcept Exception as error:  # noqa: BLE001 - the reason goes on the feed row\n    reason = str(error)[:500]\n    db.execute(\n        \"UPDATE feed SET last_status = 'failed', last_error = %s \"\n        \"WHERE id = %s AND org_id = %s\", [reason, feed_id, org_id], org_id,\n    )\n    return {\"ok\": False, \"reason\": reason}",
+        "doc": "Walk a TAXII server: discovery, then the collections under each API root.\n\nA separate step from polling, and cached, because TAXII identifies\ncollections by uuid and nobody can configure a feed against a uuid they have\nnot been shown. When the server offers exactly one readable collection it is\nselected outright - that is the common case, and making someone pick from a\nlist of one is ceremony.",
+        "form": "statements",
+        "language": "python",
+        "name": "execute_taxii_discovery",
+        "packages": [],
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "provider",
+            "type": "Any"
+          },
+          {
+            "name": "job",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvyu18xvanmbs",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvyu1915kxqi7",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:provider",
+          "name": "provider",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:job",
+          "name": "job",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "doc": "Poll one TAXII collection, incrementally, page by page.\n\nThe watermark is the whole point. Each poll asks for what the server accepted\nsince the last one, and the watermark advances ONLY after the indicators are\ncommitted - move it first and a failed write skips everything that page\ncarried, with nothing anywhere to say so.\n\nBoth paging schemes are handled: 2.1 follows the envelope cursor, 2.0 walks\nthe Range header and treats 416 as the end of the collection rather than a\nfailure. A cursor that does not advance ends the loop, because a server that\nkeeps answering `more: true` with the same page would otherwise be an\ninfinite poll.",
+        "isAsync": false,
+        "name": "run_taxii_poll",
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "provider",
+            "type": "Any"
+          },
+          {
+            "name": "job",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 520
+    },
+    {
+      "id": "n_mu4ytvyu192r6pltv",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:provider",
+          "name": "provider",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:job",
+          "name": "job",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [
+          "net"
+        ],
+        "code": "from soar.audit.log import record as audit_record\nfrom soar.intel.feeds import ingest_feed_batch, parse_stix_objects\nfrom soar.intel.taxii import taxii_accept, taxii_content_range_total, taxii_envelope, taxii_objects_url, taxii_page_query, taxii_watermark\n\nimport urllib.parse\n\norg_id = job[\"org_id\"]\nfeed_id = job[\"feed_id\"]\n\nrows = db.query(\n    \"SELECT id, name, url, api_root, collection_id, taxii_version, \"\n    \"auth_kind, credential_id, watermark, page_limit, default_confidence, \"\n    \"default_tlp, default_verdict, tags, trusted_only, auto_expire_days \"\n    \"FROM feed WHERE id = %s AND org_id = %s\", [feed_id, org_id], org_id,\n)\nif not rows:\n    return {\"ok\": False, \"reason\": \"feed %s no longer exists\" % feed_id}\nfeed = rows[0]\n\nversion = str(feed.get(\"taxii_version\") or \"2.1\")\nis_two_zero = version.startswith(\"2.0\")\n\nif not feed.get(\"api_root\") or not feed.get(\"collection_id\"):\n    # Configured but not pointed at anything. Said on the row rather than\n    # failing quietly every hour for a month.\n    reason = (\"no collection selected: run discovery on this feed, then set \"\n              \"api_root and collection_id\")\n    db.execute(\n        \"UPDATE feed SET last_fetch_at = now(), last_status = 'failed', \"\n        \"last_error = %s WHERE id = %s AND org_id = %s\",\n        [reason, feed_id, org_id], org_id,\n    )\n    return {\"ok\": False, \"reason\": reason}\n\ndefaults = {\n    \"confidence\": feed.get(\"default_confidence\"),\n    \"tlp\": feed.get(\"default_tlp\"),\n    \"verdict\": feed.get(\"default_verdict\") or \"suspicious\",\n    \"tags\": list(feed.get(\"tags\") or []) + [\"feed:%s\" % feed[\"name\"]],\n    \"trusted_only\": bool(feed.get(\"trusted_only\", True)),\n    \"expire_days\": feed.get(\"auto_expire_days\"),\n}\n\ntry:\n    headers = taxii_credentials(db, provider, org_id, feed)\n    headers[\"Accept\"] = taxii_accept(version, \"objects\")\n\n    url = taxii_objects_url(feed[\"api_root\"], feed[\"collection_id\"])\n    limit = int(feed.get(\"page_limit\") or 500)\n    watermark = feed.get(\"watermark\")\n    resume = watermark\n\n    records = []\n    errors = []\n    rejected = 0\n    cursor = None\n    offset = 0\n    pages = 0\n\n    while pages < 200:\n        params = taxii_page_query(version, watermark, limit, cursor)\n        page_url = url\n        if params:\n            page_url = url + \"?\" + urllib.parse.urlencode(params)\n\n        request_headers = dict(headers)\n        if is_two_zero:\n            request_headers[\"Range\"] = \"items %d-%d\" % (offset,\n                                                        offset + limit - 1)\n\n        try:\n            document = fetch_document(page_url, 60000, 64 * 1024 * 1024,\n                                      [], request_headers)\n        except RuntimeError as answered:\n            # 416 is how a 2.0 server says the range is past the end. That is\n            # the end of the collection, not an error.\n            if \"416\" in str(answered) and pages:\n                break\n            raise\n\n        envelope = taxii_envelope(document[\"body\"])\n        errors.extend(envelope[\"errors\"])\n        objects = envelope[\"objects\"]\n        if not objects:\n            break\n\n        page = parse_stix_objects(objects, defaults)\n        records.extend(page[\"indicators\"])\n        rejected += page[\"rejected\"]\n        errors.extend(page[\"errors\"][:2])\n\n        resume = taxii_watermark(\n            objects, document[\"headers\"].get(\"x-taxii-date-added-last\"), resume)\n        pages += 1\n        offset += len(objects)\n\n        if is_two_zero:\n            total = taxii_content_range_total(\n                document[\"headers\"].get(\"content-range\"))\n            if total < 0 or offset >= total:\n                break\n            continue\n\n        following = envelope[\"next\"]\n        if not envelope[\"more\"] or not following or following == cursor:\n            break\n        cursor = following\n\n    stored = ingest_feed_batch(db, org_id, records, defaults)\n\n    note = \"; \".join(errors[:3])[:500] or None\n    if pages and not records:\n        # A collection that answers successfully and carries no indicators is\n        # the silent no-op this platform refuses everywhere else. The ATT&CK\n        # TAXII collections are like this - attack-patterns and\n        # courses-of-action, not IOCs - so a SOC can point a feed at one and\n        # watch it succeed forever while storing nothing.\n        note = (\"read %d objects, none of them STIX indicators; this \"\n                \"collection may carry ATT&CK or reporting objects rather \"\n                \"than IOCs\" % offset)\n\n    db.execute(\n        \"UPDATE feed SET last_fetch_at = now(), last_status = %s, \"\n        \"last_error = %s, watermark = %s, indicator_count = %s, \"\n        \"last_parsed_count = %s, last_rejected_count = %s \"\n        \"WHERE id = %s AND org_id = %s\",\n        [\"ok\", note, resume,\n         stored[\"stored\"], len(records), rejected + stored[\"dropped\"],\n         feed_id, org_id],\n        org_id,\n    )\n    audit_record(db, {\n        \"org_id\": org_id, \"actor_kind\": \"system\", \"actor_id\": \"ingest\",\n        \"action\": \"feed.taxii.poll\", \"target_kind\": \"feed\",\n        \"target_id\": feed_id, \"target_label\": feed[\"name\"],\n        \"after\": {\"pages\": pages, \"stored\": stored[\"stored\"],\n                  \"collection\": feed[\"collection_id\"], \"watermark\": resume},\n        \"result\": \"success\",\n    })\n    return {\"ok\": True, \"pages\": pages, \"stored\": stored[\"stored\"],\n            \"dropped\": stored[\"dropped\"], \"rejected\": rejected,\n            \"watermark\": resume}\n\nexcept Exception as error:  # noqa: BLE001 - the reason goes on the feed row\n    reason = str(error)[:500]\n    db.execute(\n        \"UPDATE feed SET last_fetch_at = now(), last_status = 'failed', \"\n        \"last_error = %s WHERE id = %s AND org_id = %s\",\n        [reason, feed_id, org_id], org_id,\n    )\n    audit_record(db, {\n        \"org_id\": org_id, \"actor_kind\": \"system\", \"actor_id\": \"ingest\",\n        \"action\": \"feed.taxii.poll\", \"target_kind\": \"feed\",\n        \"target_id\": feed_id, \"target_label\": feed[\"name\"],\n        \"result\": \"failure\", \"reason\": reason,\n    })\n    return {\"ok\": False, \"reason\": reason}",
+        "doc": "Poll one TAXII collection, incrementally, page by page.\n\nThe watermark is the whole point. Each poll asks for what the server accepted\nsince the last one, and the watermark advances ONLY after the indicators are\ncommitted - move it first and a failed write skips everything that page\ncarried, with nothing anywhere to say so.\n\nBoth paging schemes are handled: 2.1 follows the envelope cursor, 2.0 walks\nthe Range header and treats 416 as the end of the collection rather than a\nfailure. A cursor that does not advance ends the loop, because a server that\nkeeps answering `more: true` with the same page would otherwise be an\ninfinite poll.",
+        "form": "statements",
+        "language": "python",
+        "name": "execute_taxii_poll",
+        "packages": [],
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "provider",
+            "type": "Any"
+          },
+          {
+            "name": "job",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 520
+    },
+    {
+      "id": "n_mu4ytvyu196l4h790",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 520
+    },
+    {
+      "id": "n_mu4ytvyu19ao3vc4r",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:job",
+          "name": "job",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "doc": "Fetch the MITRE ATT&CK bundle and load it.\n\nOn a worker rather than in the API process for the same reason every other\noutbound fetch is: the bundle is tens of megabytes from a third party, and\npulling it from the process that serves analyst requests would make an\nauthenticated endpoint into both an SSRF surface and a stall.",
+        "isAsync": false,
+        "name": "run_attack_sync",
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "job",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 650
+    },
+    {
+      "id": "n_mu4ytvyu19bldq4uo",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:job",
+          "name": "job",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [
+          "net"
+        ],
+        "code": "from soar.audit.log import record as audit_record\nfrom soar.intel.attack import attack_bundle_url, load_attack_bundle\n\nurl = job.get(\"url\") or attack_bundle_url(job.get(\"domain\") or \"enterprise\")\ndocument = fetch_document(url, 120000, 192 * 1024 * 1024, [], {})\nresult = load_attack_bundle(db, document[\"body\"], url)\n\naudit_record(db, {\n    \"org_id\": job.get(\"org_id\") or \"\", \"actor_kind\": \"system\",\n    \"actor_id\": \"ingest\", \"action\": \"attack.load\",\n    \"target_kind\": \"mitre_technique\", \"target_id\": result[\"load_id\"],\n    \"after\": {\"source\": url, \"techniques\": result[\"loaded\"]},\n    \"result\": \"success\",\n})\nreturn {\"ok\": True, **result}",
+        "doc": "Fetch the MITRE ATT&CK bundle and load it.\n\nOn a worker rather than in the API process for the same reason every other\noutbound fetch is: the bundle is tens of megabytes from a third party, and\npulling it from the process that serves analyst requests would make an\nauthenticated endpoint into both an SSRF surface and a stall.",
+        "form": "statements",
+        "language": "python",
+        "name": "execute_attack_sync",
+        "packages": [],
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "job",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 650
+    },
+    {
+      "id": "n_mu4ytvyu19eb04xkh",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 650
+    },
+    {
+      "id": "n_mu4ytvyu19izohkvi",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:job",
+          "name": "job",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "doc": "Probe one integration and record the result.\n\nWhat this establishes is reachability: DNS, egress, TLS and that the vendor\nis answering. It is NOT a credential check, because the shipped manifests do\nnot yet declare auth headers - so 401 and 403 are recorded as reachable\nrather than failing. Calling that healthy would be the lie; calling it down\nwould be a different one.",
+        "isAsync": false,
+        "name": "run_health_probe",
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "job",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 780
+    },
+    {
+      "id": "n_mu4ytvyu19j991enk",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:job",
+          "name": "job",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [
+          "net"
+        ],
+        "code": "from soar.integrations.catalog import shipped_connectors\nfrom soar.integrations.connector import health_check\n\nimport time\n\norg_id = job[\"org_id\"]\nintegration_id = job[\"integration_id\"]\n\nrows = db.query(\n    \"SELECT connector_id, name, egress_allowlist FROM integration \"\n    \"WHERE id = %s AND org_id = %s\", [integration_id, org_id], org_id,\n)\nif not rows:\n    return {\"ok\": False, \"reason\": \"integration no longer exists\"}\n\nmanifest = None\nfor candidate in shipped_connectors():\n    if candidate[\"id\"] == rows[0][\"connector_id\"]:\n        manifest = candidate\n        break\nprobe = ((manifest or {}).get(\"health_check\") or {}).get(\"path\")\nif not probe:\n    return {\"ok\": False, \"reason\": \"this connector declares no health check\"}\n\nurl = manifest[\"base_url\"].rstrip(\"/\") + \"/\" + probe.lstrip(\"/\")\nstarted = time.monotonic()\ntry:\n    fetch_document(url, 10000, 1024 * 1024,\n                   rows[0][\"egress_allowlist\"] or [], {})\n    ok, error = True, \"\"\nexcept RuntimeError as answered:\n    # The vendor answered with a status. Anything but an auth refusal is a\n    # real failure; an auth refusal only says this probe carries no token.\n    text = str(answered)\n    ok = \"401\" in text or \"403\" in text\n    error = \"\" if ok else text[:500]\nexcept Exception as unreachable:  # noqa: BLE001 - recorded on the row\n    ok, error = False, str(unreachable)[:500]\n\nlatency_ms = int((time.monotonic() - started) * 1000)\nhealth_check(db, org_id, integration_id, ok, latency_ms, error)\nreturn {\"ok\": ok, \"latency_ms\": latency_ms, \"error\": error or None}",
+        "doc": "Probe one integration and record the result.\n\nWhat this establishes is reachability: DNS, egress, TLS and that the vendor\nis answering. It is NOT a credential check, because the shipped manifests do\nnot yet declare auth headers - so 401 and 403 are recorded as reachable\nrather than failing. Calling that healthy would be the lie; calling it down\nwould be a different one.",
+        "form": "statements",
+        "language": "python",
+        "name": "execute_health_probe",
+        "packages": [],
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "job",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 780
+    },
+    {
+      "id": "n_mu4ytvyu19mpbf5vz",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 780
+    },
+    {
+      "id": "n_mu4ytvyu19q183ji5",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:provider",
+          "name": "provider",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:job",
+          "name": "job",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "doc": "Pull alerts from one integration and ingest them.\n\nThe connector says which command lists alerts, which turns ids into\nobjects, and where the timestamp lives. Nothing here knows a vendor: a\nproduct that returns whole records in the list skips the second call, and\none that returns ids makes it, because that is what its manifest declares.\n\nThe watermark only ever moves forward, and it is written AFTER the alerts\nare stored. A crash re-reads an overlap rather than skipping a window, and\nthe overlap is harmless because the alert upsert is keyed on the vendor id.",
+        "isAsync": false,
+        "name": "run_alert_poll",
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "provider",
+            "type": "Any"
+          },
+          {
+            "name": "job",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 910
+    },
+    {
+      "id": "n_mu4ytvyu19roszke4",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:provider",
+          "name": "provider",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:job",
+          "name": "job",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [
+          "net"
+        ],
+        "code": "from soar.api.ingest import ingest_payload\nfrom soar.commands.http_command import invoke, invoke as http_invoke\nfrom soar.integrations.catalog import shipped_connectors\nfrom soar.normalize.engine import read_path\nfrom soar.secrets.provider import lease_for_job\n\nimport json\n\norg_id = job[\"org_id\"]\nintegration_id = job[\"integration_id\"]\n\nrows = db.query(\n    \"SELECT i.id, i.connector_id, i.name, i.config, i.egress_allowlist, \"\n    \"p.id AS policy_id, p.poll_watermark, p.poll_query, p.field_map \"\n    \"FROM integration i JOIN intake_policy p \"\n    \"  ON p.org_id = i.org_id AND p.source = i.connector_id \"\n    \"WHERE i.id = %s AND i.org_id = %s\",\n    [integration_id, org_id], org_id,\n)\nif not rows:\n    return {\"ok\": False, \"reason\": \"integration or its intake policy is gone\"}\nrow = rows[0]\n\nmanifest = None\nfor candidate in shipped_connectors():\n    if candidate[\"id\"] == row[\"connector_id\"]:\n        manifest = candidate\n        break\nplan = (manifest or {}).get(\"ingest\") or {}\nif not plan.get(\"list\"):\n    return {\"ok\": False,\n            \"reason\": \"%s cannot be polled; it receives webhooks only\"\n                      % row[\"connector_id\"]}\n\nconfig = row[\"config\"] or {}\nallowlist = row[\"egress_allowlist\"] or []\ncommands = {c[\"key\"]: c for c in manifest[\"commands\"]}\n\n# Where the last poll got to. A source that has never run starts one hour\n# back rather than at the beginning of time - a first poll that pulls a\n# year of alerts into an analyst queue is not an onboarding, it is an\n# outage the SOC caused itself.\nsince = row[\"poll_watermark\"] or job.get(\"default_since\")\n\ndef invoke(spec, supplied):\n    definition = commands.get(spec[\"command\"])\n    if definition is None:\n        raise ValueError(\"connector declares %r, which it does not define\"\n                         % spec[\"command\"])\n    implementation = dict(definition[\"implementation\"])\n    implementation[\"config\"] = config\n    implementation[\"auth_scheme\"] = manifest[\"auth\"]\n    # Credentials are stored one per role, named base/role - the same\n    # shape publish_connector_commands writes into a command version.\n    lease = lease_for_job(provider, org_id, [\n        {\"role\": role,\n         \"credential\": \"%s/%s\" % (job[\"credential_name\"], role)}\n        for role in manifest[\"auth\"].get(\"roles\", [])\n    ])\n    return http_invoke(implementation, supplied, lease, allowlist,\n                       int(definition.get(\"timeout_ms\", 30000)))\n\n# 1. Ask what is new. The filter is the connector's, with the watermark\n#    substituted - a SOC can override it per client on the intake policy.\nlisting = dict(plan[\"list\"].get(\"inputs\") or {})\nfor name, value in list(listing.items()):\n    if isinstance(value, str):\n        listing[name] = value.replace(\"{since}\", str(since))\n# A filter the SOC wrote for this client. If it names the watermark it\n# is taken as the whole condition; otherwise it narrows the window the\n# connector already asked for, joined the way this vendor joins.\nclient_filter = (row[\"poll_query\"] or \"\").strip()\nif client_filter:\n    if \"{since}\" in client_filter:\n        listing[\"filter\"] = client_filter.replace(\"{since}\", str(since))\n    elif listing.get(\"filter\") and plan.get(\"combine\"):\n        listing[\"filter\"] = \"%s%s%s\" % (listing[\"filter\"],\n                                       plan[\"combine\"], client_filter)\n    else:\n        listing[\"filter\"] = client_filter\n\n# A tenant with a wrong credential or an unreachable host is a fact\n# about that integration, recorded on it. It is not a reason for this\n# worker to stop polling every other client.\ntry:\n    found = invoke(plan[\"list\"], listing)\nexcept Exception as failure:  # noqa: BLE001 - recorded on the policy\n    db.execute(\n        \"UPDATE intake_policy SET last_poll_at = now(), \"\n        \"last_poll_status = %s, last_poll_error = %s WHERE id = %s\",\n        [\"failed\", str(failure)[:500], row[\"policy_id\"]], org_id)\n    return {\"ok\": False, \"error\": str(failure)[:200]}\n\nitems = found.get(plan[\"list\"].get(\"output\", \"\")) or []\nif not items:\n    db.execute(\n        \"UPDATE intake_policy SET last_poll_at = now(), \"\n        \"last_poll_status = %s WHERE id = %s\",\n        [\"no new alerts\", row[\"policy_id\"]], org_id)\n    return {\"ok\": True, \"alerts\": 0, \"watermark\": since}\n\n# 2. Ids are not alerts. A connector that hands back identifiers declares\n#    the command that turns them into records the mapping can read.\ndetail = plan.get(\"detail\")\nif detail:\n    try:\n        fetched = invoke(detail, {detail.get(\"input\", \"ids\"): items})\n    except Exception as failure:  # noqa: BLE001 - recorded on the policy\n        db.execute(\n            \"UPDATE intake_policy SET last_poll_at = now(), \"\n            \"last_poll_status = %s, last_poll_error = %s WHERE id = %s\",\n            [\"failed\", str(failure)[:500], row[\"policy_id\"]], org_id)\n        return {\"ok\": False, \"error\": str(failure)[:200]}\n    items = fetched.get(detail.get(\"output\", \"\")) or []\n\nsource = {\"id\": row[\"id\"], \"org_id\": org_id,\n          \"connector_id\": row[\"connector_id\"],\n          \"mapping\": row[\"field_map\"] or None,\n          # Fetched over an authenticated, allowlisted connection we\n          # opened, rather than posted to us by an unauthenticated caller.\n          \"signature_verified\": True}\n\nstored = 0\nfailed = 0\nwatermark = since\nfired = []\nfor item in items:\n    if not isinstance(item, dict):\n        continue\n    try:\n        result = ingest_payload(db, source, item, None)\n    except ValueError as bad:\n        # One unmappable record must not stop the poll: the rest of the\n        # window is still worth having, and the reason is recorded.\n        failed += 1\n        db.execute(\n            \"UPDATE intake_policy SET last_poll_error = %s WHERE id = %s\",\n            [str(bad)[:500], row[\"policy_id\"]], org_id)\n        continue\n    stored += 1\n    fired.extend(result.get(\"triggers_evaluated\") or [])\n\n    seen = read_path(item, plan.get(\"watermark\", \"\"))\n    if seen and str(seen) > str(watermark or \"\"):\n        watermark = str(seen)\n\n# 3. Only now, and only forward.\ndb.execute(\n    \"UPDATE intake_policy SET poll_watermark = %s, last_poll_at = now(), \"\n    \"last_poll_status = %s WHERE id = %s\",\n    [watermark, \"%d stored, %d unmappable\" % (stored, failed),\n     row[\"policy_id\"]],\n    org_id)\n\nreturn {\"ok\": True, \"alerts\": stored, \"unmappable\": failed,\n        \"watermark\": watermark, \"triggers\": len(fired)}",
+        "doc": "Pull alerts from one integration and ingest them.\n\nThe connector says which command lists alerts, which turns ids into\nobjects, and where the timestamp lives. Nothing here knows a vendor: a\nproduct that returns whole records in the list skips the second call, and\none that returns ids makes it, because that is what its manifest declares.\n\nThe watermark only ever moves forward, and it is written AFTER the alerts\nare stored. A crash re-reads an overlap rather than skipping a window, and\nthe overlap is harmless because the alert upsert is keyed on the vendor id.",
+        "form": "statements",
+        "language": "python",
+        "name": "execute_alert_poll",
+        "packages": [],
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "provider",
+            "type": "Any"
+          },
+          {
+            "name": "job",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 910
+    },
+    {
+      "id": "n_mu4ytvyu19vreectq",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 910
+    },
+    {
+      "id": "n_mu4ytvyu19zd7z6im",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:provider",
+          "name": "provider",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:job",
+          "name": "job",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "doc": "Run one hunt query against the client tool it was written for.\n\nThe query is sent as a PARAMETER of the tool's own query command, never\nassembled into a URL or a body here. An engineer wrote it; the platform\ncarries it. That is also why a hunt cannot be templated from alert data -\nthere is nothing in this path that would substitute anything into it.\n\nA run is recorded whether or not it found something. \"This hunt has run\nevery week for a year and never hit\" is a finding about the query, and a\nplatform that only stores hits cannot tell you that.",
+        "isAsync": false,
+        "name": "run_hunt",
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "provider",
+            "type": "Any"
+          },
+          {
+            "name": "job",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 1040
+    },
+    {
+      "id": "n_mu4ytvyu1a0ym1vbo",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:provider",
+          "name": "provider",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:job",
+          "name": "job",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [
+          "net"
+        ],
+        "code": "from soar.api.handlers import raise_hunt_alert\nfrom soar.commands.http_command import invoke as http_invoke\nfrom soar.hunting.model import summarise_rows\nfrom soar.integrations.catalog import shipped_connectors\nfrom soar.platform.ids import new_id\nfrom soar.playbooks.engine import finish\nfrom soar.secrets.provider import lease_for_job\n\nimport json\n\norg_id = job[\"org_id\"]\nrows = db.query(\n    \"SELECT h.id, h.org_id, h.connector_id, h.name, h.query, h.on_hit, \"\n    \"h.lookback_hours, h.severity, o.name AS client_name, \"\n    \"i.id AS integration_id, i.config, i.egress_allowlist \"\n    \"FROM hunt_query h \"\n    \"JOIN organisation o ON o.id = h.org_id \"\n    \"LEFT JOIN integration i ON i.org_id = h.org_id \"\n    \"  AND i.connector_id = h.connector_id AND i.status = 'live' \"\n    \"WHERE h.id = %s AND h.enabled\", [job[\"hunt_id\"]], org_id,\n)\nif not rows:\n    return {\"ok\": False, \"reason\": \"hunt is gone or disabled\"}\nhunt = rows[0]\n\nrun_id = new_id(\"hrun\")\ndb.execute(\n    \"INSERT INTO hunt_run (id, org_id, hunt_id, trigger_kind, triggered_by) \"\n    \"VALUES (%s,%s,%s,%s,%s)\",\n    [run_id, org_id, hunt[\"id\"], job.get(\"trigger_kind\", \"schedule\"),\n     job.get(\"triggered_by\")], org_id)\n\ndef finish(status, count, result, error):\n    db.execute(\n        \"UPDATE hunt_run SET finished_at = now(), status = %s, \"\n        \"row_count = %s, result = %s, error = %s WHERE id = %s\",\n        [status, count, json.dumps(result, default=str), error, run_id],\n        org_id)\n    db.execute(\n        \"UPDATE hunt_query SET last_run_at = now(), last_status = %s, \"\n        \"last_row_count = %s WHERE id = %s\",\n        [status if not error else error[:200], count, hunt[\"id\"]], org_id)\n\nif not hunt.get(\"integration_id\"):\n    finish(\"failed\", 0, {}, \"the tool for this hunt is no longer connected\")\n    return {\"ok\": False, \"reason\": \"tool not connected\"}\n\nmanifest = None\nfor candidate in shipped_connectors():\n    if candidate[\"id\"] == hunt[\"connector_id\"]:\n        manifest = candidate\n        break\nplan = (manifest or {}).get(\"hunt\") or {}\nif not plan.get(\"command\"):\n    finish(\"failed\", 0, {}, \"%s cannot run a query\" % hunt[\"connector_id\"])\n    return {\"ok\": False, \"reason\": \"tool cannot be hunted in\"}\n\ndefinition = None\nfor spec in manifest[\"commands\"]:\n    if spec[\"key\"] == plan[\"command\"]:\n        definition = spec\n        break\nif definition is None:\n    finish(\"failed\", 0, {},\n           \"connector declares %r, which it does not define\" % plan[\"command\"])\n    return {\"ok\": False, \"reason\": \"declared command is missing\"}\n\n# The lookback the engineer set, in whatever shape this tool wants it. A\n# tool that carries its own time filter in the query text gets nothing.\ninputs = {plan.get(\"input\", \"query\"): hunt[\"query\"]}\nif plan.get(\"window_input\") and plan.get(\"window_format\"):\n    inputs[plan[\"window_input\"]] = plan[\"window_format\"].format(\n        hours=int(hunt.get(\"lookback_hours\") or 720))\n\nimplementation = dict(definition[\"implementation\"])\nimplementation[\"config\"] = hunt[\"config\"] or {}\nimplementation[\"auth_scheme\"] = manifest[\"auth\"]\ncredential_name = \"%s:%s\" % (hunt[\"connector_id\"], org_id[-8:])\nlease = lease_for_job(provider, org_id, [\n    {\"role\": role, \"credential\": \"%s/%s\" % (credential_name, role)}\n    for role in manifest[\"auth\"].get(\"roles\", [])\n])\n\ntry:\n    output = http_invoke(implementation, inputs, lease,\n                         hunt[\"egress_allowlist\"] or [],\n                         int(definition.get(\"timeout_ms\", 180000)))\nexcept Exception as failure:  # noqa: BLE001 - recorded on the run\n    finish(\"failed\", 0, {}, str(failure)[:1000])\n    return {\"ok\": False, \"error\": str(failure)[:200]}\n\nreturned = output.get(plan.get(\"output\", \"rows\"))\nif plan.get(\"deferred\"):\n    # An asynchronous search hands back a handle, not results. Recording\n    # the handle as a hit would be recording a question as an answer.\n    finish(\"deferred\", 0, {\"handle\": returned}, None)\n    return {\"ok\": True, \"deferred\": True, \"handle\": returned}\n\nif isinstance(returned, dict):\n    returned = [returned]\nresult = summarise_rows(returned or [], 50)\ncount = result[\"count\"]\n\nif count == 0:\n    finish(\"clean\", 0, result, None)\n    return {\"ok\": True, \"rows\": 0}\n\n# Rows came back. That is not yet a detection - it is something for a\n# person to read, unless the engineer marked this query trusted enough to\n# raise on its own.\nfinding_id = new_id(\"hfind\")\ndb.execute(\n    \"INSERT INTO hunt_finding (id, org_id, hunt_id, run_id, row_count) \"\n    \"VALUES (%s,%s,%s,%s,%s)\",\n    [finding_id, org_id, hunt[\"id\"], run_id, count], org_id)\nfinish(\"hit\", count, result, None)\n\nalert_id = None\nif hunt[\"on_hit\"] == \"alert\":\n    finding = dict(hunt)\n    finding[\"id\"] = finding_id\n    finding[\"hunt_id\"] = hunt[\"id\"]\n    finding[\"run_id\"] = run_id\n    finding[\"hunt_name\"] = hunt[\"name\"]\n    finding[\"row_count\"] = count\n    finding[\"result\"] = result\n    alert_id = raise_hunt_alert(db, finding, \"Raised automatically: this \"\n                                \"query is configured to alert on any hit.\")\n    db.execute(\n        \"UPDATE hunt_finding SET verdict = 'true_positive', alert_id = %s, \"\n        \"reviewed_by = 'platform', reviewed_at = now() WHERE id = %s\",\n        [alert_id, finding_id], org_id)\n\nreturn {\"ok\": True, \"rows\": count, \"finding_id\": finding_id,\n        \"alert_id\": alert_id}",
+        "doc": "Run one hunt query against the client tool it was written for.\n\nThe query is sent as a PARAMETER of the tool's own query command, never\nassembled into a URL or a body here. An engineer wrote it; the platform\ncarries it. That is also why a hunt cannot be templated from alert data -\nthere is nothing in this path that would substitute anything into it.\n\nA run is recorded whether or not it found something. \"This hunt has run\nevery week for a year and never hit\" is a finding about the query, and a\nplatform that only stores hits cannot tell you that.",
+        "form": "statements",
+        "language": "python",
+        "name": "execute_hunt",
+        "packages": [],
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "provider",
+            "type": "Any"
+          },
+          {
+            "name": "job",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 1040
+    },
+    {
+      "id": "n_mu4ytvyu1a4vxgpp5",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 1040
+    },
+    {
+      "id": "n_mu4ytvyu1a8ilvo5c",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:provider",
+          "name": "provider",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:job",
+          "name": "job",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "doc": "Dispatch one non-step job by kind.\n\nAn unknown kind is returned as a refusal rather than raised. The queue is\nat-least-once and the worker acknowledges either way, so raising here would\nturn a job published by a newer version of the platform into a crash loop on\nan older worker during a rolling upgrade.",
+        "isAsync": false,
+        "name": "run_background_job",
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "provider",
+            "type": "Any"
+          },
+          {
+            "name": "job",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 1170
+    },
+    {
+      "id": "n_mu4ytvyu1a9ipluvn",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:provider",
+          "name": "provider",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:job",
+          "name": "job",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "kind = job.get(\"kind\")\nif kind == \"feed_fetch\":\n    return run_feed_fetch(db, provider, job)\nif kind == \"taxii_poll\":\n    return run_taxii_poll(db, provider, job)\nif kind == \"taxii_discover\":\n    return run_taxii_discover(db, provider, job)\nif kind in (\"attack_sync\", \"mitre_sync\"):\n    return run_attack_sync(db, job)\nif kind == \"health_check\":\n    return run_health_probe(db, job)\nif kind == \"alert_poll\":\n    return run_alert_poll(db, provider, job)\nif kind == \"hunt_run\":\n    return run_hunt(db, provider, job)\nreturn {\"ok\": False, \"reason\": \"no handler for job kind %r\" % kind}",
+        "doc": "Dispatch one non-step job by kind.\n\nAn unknown kind is returned as a refusal rather than raised. The queue is\nat-least-once and the worker acknowledges either way, so raising here would\nturn a job published by a newer version of the platform into a crash loop on\nan older worker during a rolling upgrade.",
+        "form": "statements",
+        "language": "python",
+        "name": "dispatch_background_job",
+        "packages": [],
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "provider",
+            "type": "Any"
+          },
+          {
+            "name": "job",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 1170
+    },
+    {
+      "id": "n_mu4ytvyu1ad78rv3o",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 1170
+    }
+  ],
+  "style": "event-driven",
+  "variables": []
+}

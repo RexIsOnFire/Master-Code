@@ -1,0 +1,131 @@
+{
+  "edges": [
+    {
+      "from": {
+        "node": "n_mstz33qi4qo832c",
+        "port": "p:who"
+      },
+      "id": "e_mstz33qi7xguzu6",
+      "to": {
+        "node": "n_mstz33qi5p9hwu5",
+        "port": "v"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz33qi5p9hwu5",
+        "port": "text"
+      },
+      "id": "e_mstz33qi873rntm",
+      "to": {
+        "node": "n_mstz33qi62vygs0",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz33qi4qo832c",
+        "port": "out"
+      },
+      "id": "e_mstz33qj9yltha4",
+      "to": {
+        "node": "n_mstz33qi62vygs0",
+        "port": "in"
+      }
+    }
+  ],
+  "fileId": "file_mstz33qi26pfldo",
+  "id": "g_mstz33qi3xy5rjt",
+  "name": "greeting",
+  "nodes": [
+    {
+      "id": "n_mstz33qi4qo832c",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:who",
+          "name": "who",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "doc": "Compose a greeting for the given name.",
+        "isAsync": false,
+        "name": "build_greeting",
+        "params": [
+          {
+            "name": "who",
+            "type": "string"
+          }
+        ],
+        "returns": "string",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "n_mstz33qi5p9hwu5",
+      "inputs": [
+        {
+          "defaultValue": "Hello, {}!",
+          "direction": "in",
+          "id": "a0",
+          "name": "template",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "v",
+          "name": "arg",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "text",
+          "name": "text",
+          "type": "string"
+        }
+      ],
+      "props": {},
+      "type": "string/format",
+      "x": 0,
+      "y": 130
+    },
+    {
+      "id": "n_mstz33qi62vygs0",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 250,
+      "y": 0
+    }
+  ],
+  "style": "functional",
+  "variables": []
+}

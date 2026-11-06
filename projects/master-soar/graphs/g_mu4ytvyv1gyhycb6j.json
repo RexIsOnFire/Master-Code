@@ -1,0 +1,950 @@
+{
+  "edges": [
+    {
+      "from": {
+        "node": "n_mu4ytvyv1h0gvp3c0",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyv1h29rnnrq",
+      "to": {
+        "node": "n_mu4ytvyv1h1jf29eh",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1gz8ocex8",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyv1h3x0jnk6",
+      "to": {
+        "node": "n_mu4ytvyv1h0gvp3c0",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1h0gvp3c0",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyv1h442a9rp",
+      "to": {
+        "node": "n_mu4ytvyv1h1jf29eh",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1h6v265jp",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyv1h8dlhk1k",
+      "to": {
+        "node": "n_mu4ytvyv1h70wejux",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1h5oflfln",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyv1h9vmo0iy",
+      "to": {
+        "node": "n_mu4ytvyv1h6v265jp",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1h6v265jp",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyv1hakg2xd4",
+      "to": {
+        "node": "n_mu4ytvyv1h70wejux",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1hbsbvh4g",
+        "port": "p:hunt"
+      },
+      "id": "e_mu4ytvyv1hdn1cu1w",
+      "to": {
+        "node": "n_mu4ytvyv1hcyi4a6c",
+        "port": "p:hunt"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1hcyi4a6c",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyv1hfyjf0r8",
+      "to": {
+        "node": "n_mu4ytvyv1he959xpv",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1hbsbvh4g",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyv1hgnq3a9r",
+      "to": {
+        "node": "n_mu4ytvyv1hcyi4a6c",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1hcyi4a6c",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyv1hhxpoc7c",
+      "to": {
+        "node": "n_mu4ytvyv1he959xpv",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1hie8z499",
+        "port": "p:hunt"
+      },
+      "id": "e_mu4ytvyv1hk03mwt2",
+      "to": {
+        "node": "n_mu4ytvyv1hj2bs9e3",
+        "port": "p:hunt"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1hie8z499",
+        "port": "p:now"
+      },
+      "id": "e_mu4ytvyv1hlojlucb",
+      "to": {
+        "node": "n_mu4ytvyv1hj2bs9e3",
+        "port": "p:now"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1hj2bs9e3",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyv1hntwy40k",
+      "to": {
+        "node": "n_mu4ytvyv1hmgbwgit",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1hie8z499",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyv1hoopjwan",
+      "to": {
+        "node": "n_mu4ytvyv1hj2bs9e3",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1hj2bs9e3",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyv1hpgsmcln",
+      "to": {
+        "node": "n_mu4ytvyv1hmgbwgit",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1hqqelulu",
+        "port": "p:client_name"
+      },
+      "id": "e_mu4ytvyv1hsq9maz7",
+      "to": {
+        "node": "n_mu4ytvyv1hrp7atq6",
+        "port": "p:client_name"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1hqqelulu",
+        "port": "p:hunt_name"
+      },
+      "id": "e_mu4ytvyv1htca7kv5",
+      "to": {
+        "node": "n_mu4ytvyv1hrp7atq6",
+        "port": "p:hunt_name"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1hrp7atq6",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyv1hvphc9ok",
+      "to": {
+        "node": "n_mu4ytvyv1hu0mnpwj",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1hqqelulu",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyv1hw0s93fs",
+      "to": {
+        "node": "n_mu4ytvyv1hrp7atq6",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1hrp7atq6",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyv1hxkt9f1n",
+      "to": {
+        "node": "n_mu4ytvyv1hu0mnpwj",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1hyamebby",
+        "port": "p:rows"
+      },
+      "id": "e_mu4ytvyv1i07tr0fz",
+      "to": {
+        "node": "n_mu4ytvyv1hzhreb5g",
+        "port": "p:rows"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1hyamebby",
+        "port": "p:limit"
+      },
+      "id": "e_mu4ytvyv1i1n3nnfx",
+      "to": {
+        "node": "n_mu4ytvyv1hzhreb5g",
+        "port": "p:limit"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1hzhreb5g",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyv1i367yq41",
+      "to": {
+        "node": "n_mu4ytvyv1i25huly0",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1hyamebby",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyv1i4wj082s",
+      "to": {
+        "node": "n_mu4ytvyv1hzhreb5g",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyv1hzhreb5g",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyv1i5plftsj",
+      "to": {
+        "node": "n_mu4ytvyv1i25huly0",
+        "port": "in"
+      }
+    }
+  ],
+  "fileId": "file_mu4ytvyv1gxk3kjhc",
+  "id": "g_mu4ytvyv1gyhycb6j",
+  "name": "hunt definitions, ATT&CK requirements and schedule arithmetic",
+  "nodes": [
+    {
+      "id": "n_mu4ytvyv1gz8ocex8",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "doc": "The fourteen enterprise tactics, in kill-chain order.\n\nOrdered rather than alphabetical because the order is the point: a hunt\nlibrary with nothing in Credential Access and eleven queries in Execution\nhas a shape, and sorting the list by name hides it.",
+        "isAsync": false,
+        "name": "attack_tactics",
+        "params": [],
+        "returns": "List<Map<string, string>>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyv1h0gvp3c0",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "List<Map<string, string>>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "return [\n    {\"id\": \"TA0043\", \"name\": \"Reconnaissance\"},\n    {\"id\": \"TA0042\", \"name\": \"Resource Development\"},\n    {\"id\": \"TA0001\", \"name\": \"Initial Access\"},\n    {\"id\": \"TA0002\", \"name\": \"Execution\"},\n    {\"id\": \"TA0003\", \"name\": \"Persistence\"},\n    {\"id\": \"TA0004\", \"name\": \"Privilege Escalation\"},\n    {\"id\": \"TA0005\", \"name\": \"Defense Evasion\"},\n    {\"id\": \"TA0006\", \"name\": \"Credential Access\"},\n    {\"id\": \"TA0007\", \"name\": \"Discovery\"},\n    {\"id\": \"TA0008\", \"name\": \"Lateral Movement\"},\n    {\"id\": \"TA0009\", \"name\": \"Collection\"},\n    {\"id\": \"TA0011\", \"name\": \"Command and Control\"},\n    {\"id\": \"TA0010\", \"name\": \"Exfiltration\"},\n    {\"id\": \"TA0040\", \"name\": \"Impact\"},\n]",
+        "doc": "The fourteen enterprise tactics, in kill-chain order.\n\nOrdered rather than alphabetical because the order is the point: a hunt\nlibrary with nothing in Credential Access and eleven queries in Execution\nhas a shape, and sorting the list by name hides it.",
+        "form": "statements",
+        "language": "python",
+        "name": "enterprise_tactics",
+        "packages": [],
+        "params": [],
+        "returns": "List<Map<string, string>>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyv1h1jf29eh",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyv1h5oflfln",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "doc": "Every cadence a hunt may run on, in days.\n\nA fixed set, because a cron expression in this field would be a hunt that\nruns every minute against a client SIEM, and the first anyone would know\nof it is the vendor bill.",
+        "isAsync": false,
+        "name": "schedule_intervals",
+        "params": [],
+        "returns": "Map<string, i64>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyv1h6v265jp",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, i64>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "return {\n    \"daily\": 1,\n    \"weekly\": 7,\n    \"bi_weekly\": 14,\n    \"monthly\": 30,\n    \"quarterly\": 91,\n    \"semi_annual\": 182,\n    \"yearly\": 365,\n}",
+        "doc": "Every cadence a hunt may run on, in days.\n\nA fixed set, because a cron expression in this field would be a hunt that\nruns every minute against a client SIEM, and the first anyone would know\nof it is the vendor bill.",
+        "form": "statements",
+        "language": "python",
+        "name": "hunt_interval_days",
+        "packages": [],
+        "params": [],
+        "returns": "Map<string, i64>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyv1h70wejux",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyv1hbsbvh4g",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:hunt",
+          "name": "hunt",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "doc": "Everything a hunt is refused for.\n\nThe ATT&CK mapping is checked here rather than trusted from the form,\nbecause this function is also what an import path and an API client go\nthrough, and a required field that only the browser enforces is not a\nrequired field.",
+        "isAsync": false,
+        "name": "validate_hunt",
+        "params": [
+          {
+            "name": "hunt",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "List<string>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvyv1hcyi4a6c",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:hunt",
+          "name": "hunt",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "List<string>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "import re\n\nproblems = []\n\nif not (hunt.get(\"name\") or \"\").strip():\n    problems.append(\"a hunt needs a name; it becomes the alert title\")\nif len(hunt.get(\"name\") or \"\") > 160:\n    problems.append(\"name is longer than 160 characters\")\n\nif not (hunt.get(\"query\") or \"\").strip():\n    problems.append(\"a hunt needs a query\")\nif len(hunt.get(\"query\") or \"\") > 65536:\n    problems.append(\"query is longer than 64KB\")\n\nif not hunt.get(\"org_id\"):\n    problems.append(\"a hunt belongs to exactly one client\")\nif not hunt.get(\"connector_id\"):\n    problems.append(\"a hunt names the tool it runs on; the query language \"\n                    \"is that tool's, so it cannot be left open\")\n\n# --- the ATT&CK mapping, which is not optional -----------------------\ntactics = {t[\"name\"] for t in attack_tactics()}\ntactic = (hunt.get(\"mitre_tactic\") or \"\").strip()\nif not tactic:\n    problems.append(\"a hunt names the tactic it hunts for\")\nelif tactic not in tactics:\n    problems.append(\"%r is not an enterprise tactic\" % tactic)\n\ntechnique = (hunt.get(\"mitre_technique_id\") or \"\").strip().upper()\nif not technique:\n    problems.append(\"a hunt names the technique it hunts for\")\nelif not re.match(r\"^T\\d{4}(\\.\\d{3})?$\", technique):\n    problems.append(\"%r is not a technique id; expected T1059 or T1059.001\"\n                    % technique)\n\n# --- the schedule ----------------------------------------------------\nif hunt.get(\"automatic\"):\n    interval = hunt.get(\"schedule_interval\")\n    if interval not in schedule_intervals():\n        problems.append(\n            \"%r is not a schedule; expected one of %s\"\n            % (interval, \", \".join(sorted(schedule_intervals()))))\n    at = (hunt.get(\"schedule_time\") or \"\").strip()\n    if not re.match(r\"^([01]\\d|2[0-3]):[0-5]\\d$\", at):\n        problems.append(\"schedule_time must be HH:MM in 24-hour UTC\")\n    if interval in (\"weekly\", \"bi_weekly\") and not hunt.get(\"schedule_day\"):\n        problems.append(\n            \"a weekly hunt needs a day, or it runs on whichever day it \"\n            \"was first saved\")\n    if interval in (\"monthly\", \"quarterly\", \"semi_annual\", \"yearly\"):\n        day = hunt.get(\"schedule_day_of_month\")\n        if day is not None and not (1 <= int(day) <= 28):\n            problems.append(\n                \"day of month must be 1-28, so the hunt also runs in \"\n                \"February\")\n\nif hunt.get(\"on_hit\") not in (\"review\", \"alert\"):\n    problems.append(\"on_hit is review or alert\")\n\nlookback = hunt.get(\"lookback_hours\")\nif lookback is not None and not (1 <= int(lookback) <= 8760):\n    problems.append(\"lookback must be between 1 hour and a year\")\n\nreturn problems",
+        "doc": "Everything a hunt is refused for.\n\nThe ATT&CK mapping is checked here rather than trusted from the form,\nbecause this function is also what an import path and an API client go\nthrough, and a required field that only the browser enforces is not a\nrequired field.",
+        "form": "statements",
+        "language": "python",
+        "name": "check_hunt_definition",
+        "packages": [],
+        "params": [
+          {
+            "name": "hunt",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "List<string>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvyv1he959xpv",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvyv1hie8z499",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:hunt",
+          "name": "hunt",
+          "type": "Map<string, Any>"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:now",
+          "name": "now",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "doc": "Whether this hunt should run in the minute that is happening now.\n\nTwo conditions, both required: enough time has passed since the last run,\nAND the clock reads the minute the hunt asked for. The second is what\nstops a platform restart from firing every overdue hunt at once - a\nstampede across every client SIEM at the same second, which is how a SOC\ngets rate-limited out of its own tooling.\n\nA hunt that has never run is seeded from its creation time rather than\ntreated as infinitely overdue, for the same reason.",
+        "isAsync": false,
+        "name": "hunt_is_due",
+        "params": [
+          {
+            "name": "hunt",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "now",
+            "type": "Any"
+          }
+        ],
+        "returns": "bool",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvyv1hj2bs9e3",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:hunt",
+          "name": "hunt",
+          "type": "Map<string, Any>"
+        },
+        {
+          "direction": "in",
+          "id": "p:now",
+          "name": "now",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "bool"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "import datetime\n\nif not hunt.get(\"enabled\") or not hunt.get(\"automatic\"):\n    return False\n\ndays = schedule_intervals().get(hunt.get(\"schedule_interval\") or \"\")\nif not days:\n    return False\n\n# The minute has to match. Anything else is a hunt that runs at whatever\n# time the scheduler happened to notice it.\nwanted = (hunt.get(\"schedule_time\") or \"00:00\").split(\":\")\nif int(wanted[0]) != now.hour or int(wanted[1]) != now.minute:\n    return False\n\ninterval = hunt.get(\"schedule_interval\")\nif interval in (\"weekly\", \"bi_weekly\"):\n    day = (hunt.get(\"schedule_day\") or \"\").strip().lower()[:3]\n    names = [\"mon\", \"tue\", \"wed\", \"thu\", \"fri\", \"sat\", \"sun\"]\n    if day in names and names.index(day) != now.weekday():\n        return False\nelif interval in (\"monthly\", \"quarterly\", \"semi_annual\", \"yearly\"):\n    day_of_month = hunt.get(\"schedule_day_of_month\")\n    if day_of_month and int(day_of_month) != now.day:\n        return False\n\nlast = hunt.get(\"last_run_at\")\nif last is None:\n    return True\n\n# A little under the full interval, because the minute check already\n# pins the time: a weekly hunt compared against exactly 7 days misses\n# its slot whenever the previous run started a second late.\nelapsed = now - last\nreturn elapsed >= datetime.timedelta(days=days, hours=-1)",
+        "doc": "Whether this hunt should run in the minute that is happening now.\n\nTwo conditions, both required: enough time has passed since the last run,\nAND the clock reads the minute the hunt asked for. The second is what\nstops a platform restart from firing every overdue hunt at once - a\nstampede across every client SIEM at the same second, which is how a SOC\ngets rate-limited out of its own tooling.\n\nA hunt that has never run is seeded from its creation time rather than\ntreated as infinitely overdue, for the same reason.",
+        "form": "statements",
+        "language": "python",
+        "name": "hunt_due_now",
+        "packages": [],
+        "params": [
+          {
+            "name": "hunt",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "now",
+            "type": "Any"
+          }
+        ],
+        "returns": "bool"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvyv1hmgbwgit",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvyv1hqqelulu",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:client_name",
+          "name": "client_name",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:hunt_name",
+          "name": "hunt_name",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "doc": "The title every alert raised from a hunt carries.\n\nOne function, because the format is a contract: an analyst opening the\nqueue has to be able to tell at a glance that this came from a hunt and\nnot from a detection, and which client it belongs to, without opening it.",
+        "isAsync": false,
+        "name": "finding_title",
+        "params": [
+          {
+            "name": "client_name",
+            "type": "string"
+          },
+          {
+            "name": "hunt_name",
+            "type": "string"
+          }
+        ],
+        "returns": "string",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 520
+    },
+    {
+      "id": "n_mu4ytvyv1hrp7atq6",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:client_name",
+          "name": "client_name",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:hunt_name",
+          "name": "hunt_name",
+          "type": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "client = (client_name or \"Unknown client\").strip()\nhunt = (hunt_name or \"Untitled hunt\").strip()\nreturn \"%s | Threat Hunt | %s\" % (client, hunt)",
+        "doc": "The title every alert raised from a hunt carries.\n\nOne function, because the format is a contract: an analyst opening the\nqueue has to be able to tell at a glance that this came from a hunt and\nnot from a detection, and which client it belongs to, without opening it.",
+        "form": "statements",
+        "language": "python",
+        "name": "hunt_alert_title",
+        "packages": [],
+        "params": [
+          {
+            "name": "client_name",
+            "type": "string"
+          },
+          {
+            "name": "hunt_name",
+            "type": "string"
+          }
+        ],
+        "returns": "string"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 520
+    },
+    {
+      "id": "n_mu4ytvyv1hu0mnpwj",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 520
+    },
+    {
+      "id": "n_mu4ytvyv1hyamebby",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:rows",
+          "name": "rows",
+          "type": "List<Any>"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:limit",
+          "name": "limit",
+          "type": "i64"
+        }
+      ],
+      "props": {
+        "doc": "What a run keeps out of what a tool returned.\n\nA sample and a count, never the whole result set. A hunt over ninety days\nof sign-in logs can return a million rows, and a platform that stores all\nof them per run per client is a platform that fills its disk in a week.\nThe tool remains the system of record; this is the evidence an engineer\nneeds to decide whether to go and look.",
+        "isAsync": false,
+        "name": "summarise_rows",
+        "params": [
+          {
+            "name": "rows",
+            "type": "List<Any>"
+          },
+          {
+            "name": "limit",
+            "type": "i64"
+          }
+        ],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 650
+    },
+    {
+      "id": "n_mu4ytvyv1hzhreb5g",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:rows",
+          "name": "rows",
+          "type": "List<Any>"
+        },
+        {
+          "direction": "in",
+          "id": "p:limit",
+          "name": "limit",
+          "type": "i64"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "import json\n\nitems = list(rows or [])\nsample = []\nbudget = 65536\n\nfor row in items[:max(limit, 0)]:\n    encoded = json.dumps(row, default=str)\n    if len(encoded) > budget:\n        break\n    budget -= len(encoded)\n    sample.append(row)\n\ncolumns = []\nfor row in sample:\n    if isinstance(row, dict):\n        for key in row:\n            if key not in columns:\n                columns.append(key)\n\nreturn {\"count\": len(items), \"sample\": sample, \"columns\": columns,\n        \"truncated\": len(sample) < len(items)}",
+        "doc": "What a run keeps out of what a tool returned.\n\nA sample and a count, never the whole result set. A hunt over ninety days\nof sign-in logs can return a million rows, and a platform that stores all\nof them per run per client is a platform that fills its disk in a week.\nThe tool remains the system of record; this is the evidence an engineer\nneeds to decide whether to go and look.",
+        "form": "statements",
+        "language": "python",
+        "name": "sample_hunt_rows",
+        "packages": [],
+        "params": [
+          {
+            "name": "rows",
+            "type": "List<Any>"
+          },
+          {
+            "name": "limit",
+            "type": "i64"
+          }
+        ],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 650
+    },
+    {
+      "id": "n_mu4ytvyv1i25huly0",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 650
+    }
+  ],
+  "style": "procedural",
+  "variables": [],
+  "viewport": {
+    "x": 495.8205785341877,
+    "y": 50.45600183204803,
+    "zoom": 1.2772543741588152
+  }
+}

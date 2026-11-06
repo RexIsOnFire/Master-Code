@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    The launcher. Its whole job is to remove the terminal from the first-run
+    experience: find Node, start the IDE server, open a browser, and shut the
+    server down again on exit.
+
+    Published self-contained so the .exe has no prerequisite of its own. Node is
+    still required — it is what actually runs Master Code — and the launcher
+    says so clearly rather than failing with a spawn error.
+  -->
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>MasterCode</AssemblyName>
+    <RootNamespace>MasterCode</RootNamespace>
+    <AssemblyTitle>Master Code</AssemblyTitle>
+    <Product>Master Code</Product>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishTrimmed>true</PublishTrimmed>
+    <TrimMode>partial</TrimMode>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+</Project>

@@ -1,0 +1,1204 @@
+{
+  "breakpoints": [
+    {
+      "maxWidth": 640,
+      "name": "mobile"
+    },
+    {
+      "maxWidth": 1024,
+      "minWidth": 641,
+      "name": "tablet"
+    },
+    {
+      "minWidth": 1025,
+      "name": "desktop"
+    }
+  ],
+  "lang": "en",
+  "meta": {
+    "viewport": "width=device-width, initial-scale=1"
+  },
+  "root": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "classes": [
+                "brand-mark"
+              ],
+              "id": "brand-mark",
+              "kind": "label",
+              "text": "//"
+            },
+            {
+              "classes": [
+                "brand-name"
+              ],
+              "id": "brand-name",
+              "kind": "label",
+              "text": "MASTER SOAR"
+            }
+          ],
+          "classes": [
+            "brand"
+          ],
+          "id": "brand",
+          "kind": "panel"
+        },
+        {
+          "children": [
+            {
+              "attrs": {
+                "data-key": "g l",
+                "data-permission": "clients.read",
+                "data-view": "clients",
+                "hidden": "hidden",
+                "href": "#clients"
+              },
+              "classes": [
+                "nav-item",
+                "is-active"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-clients",
+              "kind": "link",
+              "text": "Clients"
+            },
+            {
+              "attrs": {
+                "data-key": "g d",
+                "data-permission": "incidents.read",
+                "data-view": "dashboard",
+                "hidden": "hidden",
+                "href": "#dashboard"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-dashboard",
+              "kind": "link",
+              "text": "Dashboard"
+            },
+            {
+              "attrs": {
+                "data-key": "g i",
+                "data-permission": "incidents.read",
+                "data-view": "incidents",
+                "hidden": "hidden",
+                "href": "#incidents"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-incidents",
+              "kind": "link",
+              "text": "Incidents"
+            },
+            {
+              "attrs": {
+                "data-key": "g a",
+                "data-permission": "alerts.read",
+                "data-view": "alerts",
+                "hidden": "hidden",
+                "href": "#alerts"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-alerts",
+              "kind": "link",
+              "text": "Alerts"
+            },
+            {
+              "attrs": {
+                "data-key": "g c",
+                "data-permission": "cases.read",
+                "data-view": "cases",
+                "hidden": "hidden",
+                "href": "#cases"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-cases",
+              "kind": "link",
+              "text": "Cases"
+            },
+            {
+              "attrs": {
+                "data-key": "g p",
+                "data-permission": "playbooks.read",
+                "data-view": "playbooks",
+                "hidden": "hidden",
+                "href": "#playbooks"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-playbooks",
+              "kind": "link",
+              "text": "Playbooks"
+            },
+            {
+              "attrs": {
+                "data-key": "g m",
+                "data-permission": "commands.read",
+                "data-view": "commands",
+                "hidden": "hidden",
+                "href": "#commands"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-commands",
+              "kind": "link",
+              "text": "Commands"
+            },
+            {
+              "attrs": {
+                "data-key": "g n",
+                "data-permission": "integrations.read",
+                "data-view": "integrations",
+                "hidden": "hidden",
+                "href": "#integrations"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-integrations",
+              "kind": "link",
+              "text": "Integrations"
+            },
+            {
+              "attrs": {
+                "data-key": "g t",
+                "data-permission": "intel.read",
+                "data-view": "intel",
+                "hidden": "hidden",
+                "href": "#intel"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-intel",
+              "kind": "link",
+              "text": "Threat Intel"
+            },
+            {
+              "attrs": {
+                "data-key": "g h",
+                "data-permission": "hunts.read",
+                "data-view": "hunts",
+                "hidden": "hidden",
+                "href": "#hunts"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-hunts",
+              "kind": "link",
+              "text": "Threat Hunting"
+            },
+            {
+              "attrs": {
+                "data-key": "g u",
+                "data-permission": "hunts.review",
+                "data-view": "findings",
+                "hidden": "hidden",
+                "href": "#findings"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-findings",
+              "kind": "link",
+              "text": "Hunt Findings"
+            },
+            {
+              "attrs": {
+                "data-key": "g s",
+                "data-permission": "incidents.read",
+                "data-view": "assets",
+                "hidden": "hidden",
+                "href": "#assets"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-assets",
+              "kind": "link",
+              "text": "Assets"
+            },
+            {
+              "attrs": {
+                "data-key": "g e",
+                "data-permission": "executions.read",
+                "data-view": "executions",
+                "hidden": "hidden",
+                "href": "#executions"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-executions",
+              "kind": "link",
+              "text": "Executions"
+            },
+            {
+              "attrs": {
+                "data-key": "g v",
+                "data-permission": "approvals.read",
+                "data-view": "approvals",
+                "hidden": "hidden",
+                "href": "#approvals"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-approvals",
+              "kind": "link",
+              "text": "Approvals"
+            },
+            {
+              "attrs": {
+                "data-key": "g r",
+                "data-permission": "reports.read",
+                "data-view": "reports",
+                "hidden": "hidden",
+                "href": "#reports"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-reports",
+              "kind": "link",
+              "text": "Reports"
+            },
+            {
+              "attrs": {
+                "data-key": "g y",
+                "data-permission": "admin.users",
+                "data-view": "admin",
+                "hidden": "hidden",
+                "href": "#admin"
+              },
+              "classes": [
+                "nav-item"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onNavigate"
+                }
+              ],
+              "id": "nav-admin",
+              "kind": "link",
+              "text": "Administration"
+            }
+          ],
+          "classes": [
+            "nav"
+          ],
+          "id": "nav",
+          "kind": "menu"
+        },
+        {
+          "children": [
+            {
+              "attrs": {
+                "title": "Toggle theme (t)",
+                "type": "button"
+              },
+              "classes": [
+                "ghost",
+                "wide"
+              ],
+              "events": [
+                {
+                  "event": "click",
+                  "handler": "onToggleTheme"
+                }
+              ],
+              "id": "theme-toggle",
+              "kind": "button",
+              "name": "themeToggle",
+              "text": "Light / Dark"
+            },
+            {
+              "classes": [
+                "muted",
+                "tiny"
+              ],
+              "id": "build-id",
+              "kind": "label",
+              "text": "v0.1.0 · local"
+            }
+          ],
+          "classes": [
+            "rail-foot"
+          ],
+          "id": "rail-foot",
+          "kind": "panel"
+        }
+      ],
+      "classes": [
+        "rail"
+      ],
+      "id": "rail",
+      "kind": "panel"
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "attrs": {
+                "autocomplete": "off",
+                "placeholder": "Search incidents, indicators, hosts, executions…   (/ to focus, ⌘K for actions)",
+                "type": "search"
+              },
+              "classes": [
+                "omnibox"
+              ],
+              "events": [
+                {
+                  "event": "keydown",
+                  "handler": "onOmniboxKey"
+                }
+              ],
+              "id": "omnibox",
+              "kind": "textbox",
+              "name": "omnibox"
+            },
+            {
+              "children": [
+                {
+                  "classes": [
+                    "chip",
+                    "chip-client"
+                  ],
+                  "id": "active-client",
+                  "kind": "label",
+                  "name": "activeClient",
+                  "text": "—"
+                },
+                {
+                  "classes": [
+                    "chip"
+                  ],
+                  "id": "queue-depth",
+                  "kind": "label",
+                  "name": "queueDepth",
+                  "text": "queue —"
+                },
+                {
+                  "classes": [
+                    "chip"
+                  ],
+                  "id": "worker-state",
+                  "kind": "label",
+                  "name": "workerState",
+                  "text": "workers —"
+                },
+                {
+                  "classes": [
+                    "chip",
+                    "chip-attn"
+                  ],
+                  "id": "pending-approvals",
+                  "kind": "label",
+                  "name": "pendingApprovals",
+                  "text": "approvals —"
+                }
+              ],
+              "classes": [
+                "bar-status"
+              ],
+              "id": "bar-status",
+              "kind": "panel"
+            }
+          ],
+          "classes": [
+            "commandbar"
+          ],
+          "id": "commandbar",
+          "kind": "panel"
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "classes": [
+                    "incident-title"
+                  ],
+                  "id": "client-name",
+                  "kind": "label",
+                  "name": "clientName",
+                  "text": "Loading…"
+                },
+                {
+                  "classes": [
+                    "incident-id"
+                  ],
+                  "id": "client-ref",
+                  "kind": "label",
+                  "name": "clientReference",
+                  "text": ""
+                }
+              ],
+              "classes": [
+                "incident-head"
+              ],
+              "id": "client-head",
+              "kind": "panel"
+            },
+            {
+              "children": [],
+              "classes": [
+                "end-of-life"
+              ],
+              "id": "client-eol",
+              "kind": "panel",
+              "name": "clientEndOfLife"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "classes": [
+                        "step-n"
+                      ],
+                      "id": "s1-n",
+                      "kind": "label",
+                      "text": "1"
+                    },
+                    {
+                      "attrs": {
+                        "level": "2"
+                      },
+                      "classes": [
+                        "step-title"
+                      ],
+                      "id": "s1-t",
+                      "kind": "heading",
+                      "text": "The account"
+                    }
+                  ],
+                  "classes": [
+                    "step-head"
+                  ],
+                  "id": "s1-head",
+                  "kind": "panel"
+                },
+                {
+                  "children": [
+                    {
+                      "id": "l-name",
+                      "kind": "label",
+                      "text": "Name"
+                    },
+                    {
+                      "attrs": {
+                        "type": "text"
+                      },
+                      "id": "i-name",
+                      "kind": "textbox",
+                      "name": "clientNameInput"
+                    }
+                  ],
+                  "classes": [
+                    "field"
+                  ],
+                  "id": "f-name",
+                  "kind": "panel"
+                },
+                {
+                  "children": [
+                    {
+                      "id": "l-reference",
+                      "kind": "label",
+                      "text": "Account reference"
+                    },
+                    {
+                      "attrs": {
+                        "type": "text"
+                      },
+                      "id": "i-reference",
+                      "kind": "textbox",
+                      "name": "clientRefInput"
+                    }
+                  ],
+                  "classes": [
+                    "field"
+                  ],
+                  "id": "f-reference",
+                  "kind": "panel"
+                },
+                {
+                  "children": [
+                    {
+                      "id": "l-contact",
+                      "kind": "label",
+                      "text": "Contact email"
+                    },
+                    {
+                      "attrs": {
+                        "type": "text"
+                      },
+                      "id": "i-contact",
+                      "kind": "textbox",
+                      "name": "clientContactInput"
+                    }
+                  ],
+                  "classes": [
+                    "field"
+                  ],
+                  "id": "f-contact",
+                  "kind": "panel"
+                },
+                {
+                  "children": [
+                    {
+                      "id": "l-tier",
+                      "kind": "label",
+                      "text": "Tier"
+                    },
+                    {
+                      "id": "i-tier",
+                      "items": [
+                        "standard",
+                        "premium",
+                        "onboarding"
+                      ],
+                      "kind": "select",
+                      "name": "clientTierInput"
+                    }
+                  ],
+                  "classes": [
+                    "field"
+                  ],
+                  "id": "f-tier",
+                  "kind": "panel"
+                },
+                {
+                  "children": [
+                    {
+                      "id": "l-tz",
+                      "kind": "label",
+                      "text": "Timezone"
+                    },
+                    {
+                      "attrs": {
+                        "type": "text"
+                      },
+                      "id": "i-tz",
+                      "kind": "textbox",
+                      "name": "clientTzInput"
+                    }
+                  ],
+                  "classes": [
+                    "field"
+                  ],
+                  "id": "f-tz",
+                  "kind": "panel"
+                },
+                {
+                  "attrs": {
+                    "type": "button"
+                  },
+                  "classes": [
+                    "accent"
+                  ],
+                  "events": [
+                    {
+                      "event": "click",
+                      "handler": "onSaveClient"
+                    }
+                  ],
+                  "id": "s1-save",
+                  "kind": "button",
+                  "name": "saveClient",
+                  "text": "Save account"
+                }
+              ],
+              "classes": [
+                "step"
+              ],
+              "id": "step-1",
+              "kind": "panel"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "classes": [
+                        "step-n"
+                      ],
+                      "id": "s2-n",
+                      "kind": "label",
+                      "text": "2"
+                    },
+                    {
+                      "attrs": {
+                        "level": "2"
+                      },
+                      "classes": [
+                        "step-title"
+                      ],
+                      "id": "s2-t",
+                      "kind": "heading",
+                      "text": "Their tools"
+                    }
+                  ],
+                  "classes": [
+                    "step-head"
+                  ],
+                  "id": "s2-head",
+                  "kind": "panel"
+                },
+                {
+                  "classes": [
+                    "hint"
+                  ],
+                  "id": "s2-hint",
+                  "kind": "label",
+                  "text": "Pick what this customer runs. Connecting a tool publishes its commands against this client, so one playbook runs on whichever client it is pointed at. The credentials are sealed against this client and are never readable while working another."
+                },
+                {
+                  "children": [],
+                  "classes": [],
+                  "id": "s2-list",
+                  "kind": "panel",
+                  "name": "toolList"
+                }
+              ],
+              "classes": [
+                "step"
+              ],
+              "id": "step-2",
+              "kind": "panel"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "classes": [
+                        "step-n"
+                      ],
+                      "id": "s3-n",
+                      "kind": "label",
+                      "text": "3"
+                    },
+                    {
+                      "attrs": {
+                        "level": "2"
+                      },
+                      "classes": [
+                        "step-title"
+                      ],
+                      "id": "s3-t",
+                      "kind": "heading",
+                      "text": "What is connected"
+                    }
+                  ],
+                  "classes": [
+                    "step-head"
+                  ],
+                  "id": "s3-head",
+                  "kind": "panel"
+                },
+                {
+                  "children": [],
+                  "classes": [],
+                  "id": "s3-list",
+                  "kind": "panel",
+                  "name": "installedList"
+                }
+              ],
+              "classes": [
+                "step"
+              ],
+              "id": "step-3",
+              "kind": "panel"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "classes": [
+                        "step-n"
+                      ],
+                      "id": "s4-n",
+                      "kind": "label",
+                      "text": "4"
+                    },
+                    {
+                      "attrs": {
+                        "level": "2"
+                      },
+                      "classes": [
+                        "step-title"
+                      ],
+                      "id": "s4-t",
+                      "kind": "heading",
+                      "text": "Their alerts"
+                    }
+                  ],
+                  "classes": [
+                    "step-head"
+                  ],
+                  "id": "s4-head",
+                  "kind": "panel"
+                },
+                {
+                  "classes": [
+                    "hint"
+                  ],
+                  "id": "s4-hint",
+                  "kind": "label",
+                  "text": "How each tool's JSON reaches us, what its fields mean, and what this client wants done about it - set per connector, on the Integrations screen. A connector has to be connected before there is any JSON to describe."
+                },
+                {
+                  "attrs": {
+                    "type": "button"
+                  },
+                  "classes": [
+                    "accent"
+                  ],
+                  "events": [
+                    {
+                      "event": "click",
+                      "handler": "onGoToIntake"
+                    }
+                  ],
+                  "id": "s4-go",
+                  "kind": "button",
+                  "name": "goToIntake",
+                  "text": "Set up alert intake"
+                }
+              ],
+              "classes": [
+                "step"
+              ],
+              "id": "step-4",
+              "kind": "panel"
+            }
+          ],
+          "classes": [
+            "view"
+          ],
+          "id": "view",
+          "kind": "panel"
+        },
+        {
+          "children": [
+            {
+              "classes": [
+                "status-message"
+              ],
+              "id": "status-message",
+              "kind": "label",
+              "name": "statusMessage",
+              "text": "ready"
+            },
+            {
+              "classes": [
+                "status-clock"
+              ],
+              "id": "status-clock",
+              "kind": "label",
+              "name": "statusClock",
+              "text": ""
+            }
+          ],
+          "classes": [
+            "statusstrip"
+          ],
+          "id": "statusstrip",
+          "kind": "panel"
+        }
+      ],
+      "classes": [
+        "main"
+      ],
+      "id": "main",
+      "kind": "panel"
+    }
+  ],
+  "rules": [
+    {
+      "declarations": {
+        "background": "var(--surface)",
+        "border": "1px solid var(--line)",
+        "margin-bottom": "12px",
+        "padding": "14px 16px"
+      },
+      "selector": ".step"
+    },
+    {
+      "declarations": {
+        "align-items": "baseline",
+        "display": "flex",
+        "gap": "10px",
+        "margin-bottom": "10px"
+      },
+      "selector": ".step-head"
+    },
+    {
+      "declarations": {
+        "border": "1px solid var(--accent)",
+        "color": "var(--accent)",
+        "font-family": "var(--mono)",
+        "font-size": "12px",
+        "padding": "1px 7px"
+      },
+      "selector": ".step-n"
+    },
+    {
+      "declarations": {
+        "font-size": "14px",
+        "font-weight": "600",
+        "margin": "0"
+      },
+      "selector": ".step-title"
+    },
+    {
+      "declarations": {
+        "border-top": "1px solid var(--line)",
+        "margin-top": "26px",
+        "padding-top": "18px"
+      },
+      "selector": ".end-of-life"
+    },
+    {
+      "declarations": {
+        "color": "var(--muted)",
+        "font-size": "11px",
+        "letter-spacing": "0.08em",
+        "margin": "0 0 10px",
+        "text-transform": "uppercase"
+      },
+      "selector": ".end-of-life h2"
+    },
+    {
+      "declarations": {
+        "align-items": "center",
+        "display": "flex",
+        "flex-wrap": "wrap",
+        "gap": "10px",
+        "margin-bottom": "8px"
+      },
+      "selector": ".eol-row"
+    },
+    {
+      "declarations": {
+        "color": "var(--muted)",
+        "font-size": "11.5px",
+        "line-height": "1.65",
+        "margin": "0 0 14px",
+        "max-width": "760px"
+      },
+      "selector": ".eol-note"
+    },
+    {
+      "declarations": {
+        "border-color": "var(--crit)",
+        "color": "var(--crit)"
+      },
+      "selector": ".eol-danger"
+    },
+    {
+      "declarations": {
+        "background": "var(--sunken)",
+        "border": "1px solid var(--line)",
+        "color": "var(--ink)",
+        "font-family": "var(--mono)",
+        "font-size": "12px",
+        "min-width": "260px",
+        "padding": "5px 8px"
+      },
+      "selector": ".eol-confirm"
+    },
+    {
+      "declarations": {
+        "align-items": "center",
+        "display": "flex",
+        "flex-wrap": "wrap",
+        "gap": "10px",
+        "margin-bottom": "8px"
+      },
+      "selector": ".field"
+    },
+    {
+      "declarations": {
+        "color": "var(--muted)",
+        "font-size": "12px",
+        "min-width": "170px"
+      },
+      "selector": ".field label"
+    },
+    {
+      "declarations": {
+        "background": "var(--sunken)",
+        "border": "1px solid var(--line)",
+        "color": "var(--ink)",
+        "font-family": "var(--mono)",
+        "font-size": "12px",
+        "min-width": "260px",
+        "padding": "5px 7px"
+      },
+      "selector": ".field input, .field select"
+    },
+    {
+      "declarations": {
+        "align-items": "center",
+        "border-bottom": "1px solid var(--line)",
+        "display": "flex",
+        "gap": "10px",
+        "padding": "6px 0"
+      },
+      "selector": ".tool-row"
+    },
+    {
+      "declarations": {
+        "color": "var(--muted)",
+        "font-family": "var(--mono)",
+        "font-size": "11px",
+        "min-width": "90px"
+      },
+      "selector": ".tool-cat"
+    },
+    {
+      "declarations": {
+        "color": "var(--muted)",
+        "font-size": "11.5px",
+        "line-height": "1.5",
+        "margin-bottom": "10px"
+      },
+      "selector": ".hint"
+    },
+    {
+      "declarations": {
+        "border": "1px solid var(--line)",
+        "margin-bottom": "10px"
+      },
+      "selector": ".src"
+    },
+    {
+      "declarations": {
+        "align-items": "center",
+        "background": "var(--sunken)",
+        "cursor": "pointer",
+        "display": "flex",
+        "gap": "10px",
+        "padding": "9px 12px"
+      },
+      "selector": ".src-head"
+    },
+    {
+      "declarations": {
+        "flex": "1",
+        "font-weight": "600"
+      },
+      "selector": ".src-name"
+    },
+    {
+      "declarations": {
+        "display": "none",
+        "padding": "12px"
+      },
+      "selector": ".src-body"
+    },
+    {
+      "declarations": {
+        "display": "block"
+      },
+      "selector": ".src-body.is-open"
+    },
+    {
+      "declarations": {
+        "margin-bottom": "16px"
+      },
+      "selector": ".sub"
+    },
+    {
+      "declarations": {
+        "color": "var(--accent)",
+        "font-family": "var(--mono)",
+        "font-size": "11px",
+        "letter-spacing": "0.08em",
+        "margin-bottom": "7px"
+      },
+      "selector": ".sub-title"
+    },
+    {
+      "declarations": {
+        "align-items": "center",
+        "display": "flex",
+        "gap": "8px",
+        "margin-bottom": "5px"
+      },
+      "selector": ".map-row"
+    },
+    {
+      "declarations": {
+        "color": "var(--muted)",
+        "font-family": "var(--mono)",
+        "font-size": "11.5px",
+        "min-width": "150px"
+      },
+      "selector": ".map-row .ours"
+    },
+    {
+      "declarations": {
+        "background": "var(--sunken)",
+        "border": "1px solid var(--line)",
+        "color": "var(--ink)",
+        "flex": "1",
+        "font-family": "var(--mono)",
+        "font-size": "12px",
+        "padding": "4px 7px"
+      },
+      "selector": ".map-row input"
+    },
+    {
+      "declarations": {
+        "background": "var(--sunken)",
+        "border": "1px solid var(--line)",
+        "color": "var(--ink)",
+        "font-family": "var(--mono)",
+        "font-size": "11.5px",
+        "min-height": "110px",
+        "padding": "8px",
+        "width": "100%"
+      },
+      "selector": ".sample"
+    },
+    {
+      "declarations": {
+        "background": "var(--sunken)",
+        "border": "1px solid var(--line)",
+        "font-family": "var(--mono)",
+        "font-size": "11.5px",
+        "margin-top": "8px",
+        "max-height": "260px",
+        "overflow": "auto",
+        "padding": "9px",
+        "white-space": "pre-wrap"
+      },
+      "selector": ".preview"
+    },
+    {
+      "declarations": {
+        "color": "var(--amber)",
+        "display": "block",
+        "font-size": "11.5px",
+        "margin-top": "6px"
+      },
+      "selector": ".warn"
+    }
+  ],
+  "scripts": [
+    "file_mu4ytvyz21chr7736",
+    "file_mu4ytvyz21eptt7la"
+  ],
+  "stylesheets": [
+    "file_mu4ytvyz21bnia7p5"
+  ],
+  "title": "Master SOAR — Client"
+}

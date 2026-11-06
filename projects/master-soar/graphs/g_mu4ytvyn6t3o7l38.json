@@ -1,0 +1,579 @@
+{
+  "edges": [
+    {
+      "from": {
+        "node": "n_mu4ytvyn6x2daxc4",
+        "port": "self"
+      },
+      "id": "e_mu4ytvyn6zemvj7r",
+      "to": {
+        "node": "n_mu4ytvyn6y69px88",
+        "port": "p:self"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyn6x2daxc4",
+        "port": "p:org_id"
+      },
+      "id": "e_mu4ytvyn70n0xxo3",
+      "to": {
+        "node": "n_mu4ytvyn6y69px88",
+        "port": "p:org_id"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyn6x2daxc4",
+        "port": "p:name"
+      },
+      "id": "e_mu4ytvyn71fxsmof",
+      "to": {
+        "node": "n_mu4ytvyn6y69px88",
+        "port": "p:name"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyn6y69px88",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyn730xsays",
+      "to": {
+        "node": "n_mu4ytvyn72khnmi7",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyn6x2daxc4",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyn74hudlyq",
+      "to": {
+        "node": "n_mu4ytvyn6y69px88",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyn6y69px88",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyn755g1fmx",
+      "to": {
+        "node": "n_mu4ytvyn72khnmi7",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyn76qvigon",
+        "port": "p:provider"
+      },
+      "id": "e_mu4ytvyn78xtc860",
+      "to": {
+        "node": "n_mu4ytvyn77ye9ohx",
+        "port": "p:provider"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyn76qvigon",
+        "port": "p:org_id"
+      },
+      "id": "e_mu4ytvyn79icuha7",
+      "to": {
+        "node": "n_mu4ytvyn77ye9ohx",
+        "port": "p:org_id"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyn76qvigon",
+        "port": "p:auth_spec"
+      },
+      "id": "e_mu4ytvyn7a3erpjf",
+      "to": {
+        "node": "n_mu4ytvyn77ye9ohx",
+        "port": "p:auth_spec"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyn77ye9ohx",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyn7c0eassk",
+      "to": {
+        "node": "n_mu4ytvyn7bfh3kpv",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyn76qvigon",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyn7dfmj59s",
+      "to": {
+        "node": "n_mu4ytvyn77ye9ohx",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyn77ye9ohx",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyn7e82whop",
+      "to": {
+        "node": "n_mu4ytvyn7bfh3kpv",
+        "port": "in"
+      }
+    }
+  ],
+  "fileId": "file_mu4ytvyn6skz8al0",
+  "id": "g_mu4ytvyn6t3o7l38",
+  "name": "secret provider port",
+  "nodes": [
+    {
+      "id": "n_mu4ytvyn6uknzgxe",
+      "inputs": [],
+      "outputs": [],
+      "props": {
+        "doc": "Phase 1: the sealed local store. Later: Vault, Azure Key Vault, an HSM. Playbooks name a credential (crowdstrike_prod); they never hold one.",
+        "extends": "",
+        "methods": [
+          {
+            "name": "resolve",
+            "params": [
+              {
+                "name": "org_id",
+                "type": "string"
+              },
+              {
+                "name": "name",
+                "type": "string"
+              }
+            ],
+            "returns": "Any"
+          },
+          {
+            "name": "store",
+            "params": [
+              {
+                "name": "org_id",
+                "type": "string"
+              },
+              {
+                "name": "name",
+                "type": "string"
+              },
+              {
+                "name": "plaintext",
+                "type": "string"
+              }
+            ],
+            "returns": "string"
+          },
+          {
+            "name": "rotate",
+            "params": [
+              {
+                "name": "org_id",
+                "type": "string"
+              },
+              {
+                "name": "name",
+                "type": "string"
+              }
+            ],
+            "returns": "Void"
+          }
+        ],
+        "name": "SecretProvider"
+      },
+      "type": "oop/interface",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyn6vgvtso0",
+      "inputs": [],
+      "outputs": [],
+      "props": {
+        "doc": "Sealed rows in Postgres under a root key that is not in Postgres. A database dump is therefore not a credential store.",
+        "extends": "",
+        "fields": [
+          {
+            "name": "db",
+            "type": "Any",
+            "visibility": "private"
+          },
+          {
+            "name": "root_key",
+            "type": "string",
+            "visibility": "private"
+          }
+        ],
+        "generics": "",
+        "implements": "SecretProvider",
+        "isAbstract": false,
+        "name": "LocalSecretProvider",
+        "shape": "class"
+      },
+      "type": "oop/class",
+      "x": 0,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyn6wbsd8us",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "self",
+          "name": "self",
+          "type": "LocalSecretProvider"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:root_key",
+          "name": "root_key",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "assignFields": true,
+        "className": "LocalSecretProvider",
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "root_key",
+            "type": "string"
+          }
+        ]
+      },
+      "type": "oop/constructor",
+      "x": 0,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvyn6x2daxc4",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "self",
+          "name": "self",
+          "type": "LocalSecretProvider"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:org_id",
+          "name": "org_id",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:name",
+          "name": "name",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "className": "LocalSecretProvider",
+        "doc": "Return a SecretValue, never a bare string. The type carries the redaction.",
+        "isAsync": false,
+        "isStatic": false,
+        "name": "resolve",
+        "params": [
+          {
+            "name": "org_id",
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "type": "string"
+          }
+        ],
+        "returns": "Any",
+        "visibility": "public"
+      },
+      "type": "oop/method",
+      "x": 0,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvyn6y69px88",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:self",
+          "name": "self",
+          "type": "LocalSecretProvider"
+        },
+        {
+          "direction": "in",
+          "id": "p:org_id",
+          "name": "org_id",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:name",
+          "name": "name",
+          "type": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "from soar.platform.redact import SecretValue\nfrom soar.secrets.sealed import unseal\n\nrows = self.db.query(\n    \"SELECT id, ciphertext, nonce, wrapped_key, provider, external_ref \"\n    \"FROM credential WHERE org_id = %s AND name = %s\",\n    [org_id, name],\n    org_id,\n)\nif not rows:\n    raise KeyError(\"no credential named %r\" % name)\nrow = rows[0]\nif row[\"provider\"] != \"local\":\n    raise RuntimeError(\n        \"credential %r lives in %s; configure that provider\" % (name, row[\"provider\"])\n    )\nplaintext = unseal(\n    self.root_key,\n    {\n        \"ciphertext\": row[\"ciphertext\"],\n        \"nonce\": row[\"nonce\"],\n        \"wrapped_key\": row[\"wrapped_key\"],\n    },\n    row[\"id\"],\n)\nself.db.execute(\n    \"UPDATE credential SET last_used_at = now() WHERE id = %s\", [row[\"id\"]], org_id\n)\nreturn SecretValue(plaintext, name)",
+        "doc": "Return a SecretValue, never a bare string. The type carries the redaction.",
+        "form": "statements",
+        "language": "python",
+        "name": "local_provider_resolve",
+        "packages": [],
+        "params": [
+          {
+            "name": "self",
+            "type": "LocalSecretProvider"
+          },
+          {
+            "name": "org_id",
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "type": "string"
+          }
+        ],
+        "returns": "Any"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyn72khnmi7",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyn76qvigon",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:provider",
+          "name": "provider",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:org_id",
+          "name": "org_id",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:auth_spec",
+          "name": "auth_spec",
+          "type": "List<Map<string, Any>>"
+        }
+      ],
+      "props": {
+        "doc": "Build the credential lease for one job: exactly the credentials the command\ndeclared, and nothing else.\n\nThe lease travels inside the signed job payload and lives in the worker\nprocess memory for the life of the job. It is never an environment\nvariable - /proc would expose it to a sibling - and never a file.",
+        "isAsync": false,
+        "name": "lease_for_job",
+        "params": [
+          {
+            "name": "provider",
+            "type": "Any"
+          },
+          {
+            "name": "org_id",
+            "type": "string"
+          },
+          {
+            "name": "auth_spec",
+            "type": "List<Map<string, Any>>"
+          }
+        ],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 520
+    },
+    {
+      "id": "n_mu4ytvyn77ye9ohx",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:provider",
+          "name": "provider",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:org_id",
+          "name": "org_id",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:auth_spec",
+          "name": "auth_spec",
+          "type": "List<Map<string, Any>>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "lease = {}\nfor entry in auth_spec or []:\n    role = entry.get(\"role\")\n    name = entry.get(\"credential\")\n    if not role or not name:\n        raise ValueError(\"auth entry needs both a role and a credential name\")\n    lease[role] = provider.resolve(org_id, name)\nreturn lease",
+        "doc": "Build the credential lease for one job: exactly the credentials the command\ndeclared, and nothing else.\n\nThe lease travels inside the signed job payload and lives in the worker\nprocess memory for the life of the job. It is never an environment\nvariable - /proc would expose it to a sibling - and never a file.",
+        "form": "statements",
+        "language": "python",
+        "name": "build_credential_lease",
+        "packages": [],
+        "params": [
+          {
+            "name": "provider",
+            "type": "Any"
+          },
+          {
+            "name": "org_id",
+            "type": "string"
+          },
+          {
+            "name": "auth_spec",
+            "type": "List<Map<string, Any>>"
+          }
+        ],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyn7bfh3kpv",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 130
+    }
+  ],
+  "style": "object-oriented",
+  "variables": []
+}

@@ -1,0 +1,3300 @@
+{
+  "edges": [
+    {
+      "from": {
+        "node": "n_mu4ytvz32kywmjjf1",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32l1agwrek",
+      "to": {
+        "node": "n_mu4ytvz32kzcmrkyp",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32kzcmrkyp",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32l2io0qtm",
+      "to": {
+        "node": "n_mu4ytvz32l093i4ic",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32l3pe6fry",
+        "port": "payload"
+      },
+      "id": "e_mu4ytvz32l54035oa",
+      "to": {
+        "node": "n_mu4ytvz32l4vp63fy",
+        "port": "args"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32l3pe6fry",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32l6xeri4k",
+      "to": {
+        "node": "n_mu4ytvz32l4vp63fy",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32l7m9svwk",
+        "port": "payload"
+      },
+      "id": "e_mu4ytvz32l9dunfey",
+      "to": {
+        "node": "n_mu4ytvz32l8dr2a28",
+        "port": "args"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32l7m9svwk",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32lasr0egt",
+      "to": {
+        "node": "n_mu4ytvz32l8dr2a28",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32lbilmbmv",
+        "port": "payload"
+      },
+      "id": "e_mu4ytvz32ld6ef574",
+      "to": {
+        "node": "n_mu4ytvz32lc9lvtlj",
+        "port": "args"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32lbilmbmv",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32lexwg3hc",
+      "to": {
+        "node": "n_mu4ytvz32lc9lvtlj",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32lfqghrk8",
+        "port": "payload"
+      },
+      "id": "e_mu4ytvz32lhuftzci",
+      "to": {
+        "node": "n_mu4ytvz32lgtv5k3q",
+        "port": "args"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32lfqghrk8",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32liykxpcq",
+      "to": {
+        "node": "n_mu4ytvz32lgtv5k3q",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32ljfukmam",
+        "port": "payload"
+      },
+      "id": "e_mu4ytvz32ll698bvz",
+      "to": {
+        "node": "n_mu4ytvz32lk2kcg3p",
+        "port": "args"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32ljfukmam",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32lmmc6e0i",
+      "to": {
+        "node": "n_mu4ytvz32lk2kcg3p",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32ln40fzvh",
+        "port": "payload"
+      },
+      "id": "e_mu4ytvz32lpehwlne",
+      "to": {
+        "node": "n_mu4ytvz32loom5bxy",
+        "port": "args"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32ln40fzvh",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32lq1o7z6i",
+      "to": {
+        "node": "n_mu4ytvz32loom5bxy",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32lr0o8q47",
+        "port": "payload"
+      },
+      "id": "e_mu4ytvz32lt7li5ev",
+      "to": {
+        "node": "n_mu4ytvz32ls6gi4om",
+        "port": "args"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32lr0o8q47",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32lufx9q1r",
+      "to": {
+        "node": "n_mu4ytvz32ls6gi4om",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32lv0cf70f",
+        "port": "payload"
+      },
+      "id": "e_mu4ytvz32lxarmupi",
+      "to": {
+        "node": "n_mu4ytvz32lw807syc",
+        "port": "args"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32lv0cf70f",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32lyrmcx0q",
+      "to": {
+        "node": "n_mu4ytvz32lw807syc",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32lz176omj",
+        "port": "payload"
+      },
+      "id": "e_mu4ytvz32m1dpditb",
+      "to": {
+        "node": "n_mu4ytvz32m09jhs08",
+        "port": "args"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32lz176omj",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32m29n3gn1",
+      "to": {
+        "node": "n_mu4ytvz32m09jhs08",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32m4ahsde2",
+        "port": "result"
+      },
+      "id": "e_mu4ytvz32m6u8c6bc",
+      "to": {
+        "node": "n_mu4ytvz32m5tecta1",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32m3uw794v",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32m7xab6dz",
+      "to": {
+        "node": "n_mu4ytvz32m4ahsde2",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32m4ahsde2",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32m8je4e06",
+      "to": {
+        "node": "n_mu4ytvz32m5tecta1",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32m9ucy9fd",
+        "port": "p:options"
+      },
+      "id": "e_mu4ytvz32mbwbo14m",
+      "to": {
+        "node": "n_mu4ytvz32mavu3wbt",
+        "port": "p:options"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32m9ucy9fd",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32mcp0c0dv",
+      "to": {
+        "node": "n_mu4ytvz32mavu3wbt",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32md6t9d6k",
+        "port": "p:state"
+      },
+      "id": "e_mu4ytvz32mfe4gra7",
+      "to": {
+        "node": "n_mu4ytvz32mefh9fcp",
+        "port": "p:state"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32md6t9d6k",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32mgs4vvpr",
+      "to": {
+        "node": "n_mu4ytvz32mefh9fcp",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32mhdl1rf0",
+        "port": "p:entry"
+      },
+      "id": "e_mu4ytvz32mjoysnlg",
+      "to": {
+        "node": "n_mu4ytvz32mitit111",
+        "port": "p:entry"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32mitit111",
+        "port": "result"
+      },
+      "id": "e_mu4ytvz32mlytcl8s",
+      "to": {
+        "node": "n_mu4ytvz32mknuqrt2",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32mhdl1rf0",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32mmaa0phi",
+      "to": {
+        "node": "n_mu4ytvz32mitit111",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32mitit111",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32mnq1yu25",
+      "to": {
+        "node": "n_mu4ytvz32mknuqrt2",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32mo0ak30s",
+        "port": "p:event"
+      },
+      "id": "e_mu4ytvz32mqbm92sf",
+      "to": {
+        "node": "n_mu4ytvz32mpa7fma1",
+        "port": "p:event"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32mo0ak30s",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32mrzobobb",
+      "to": {
+        "node": "n_mu4ytvz32mpa7fma1",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32ms37zzaz",
+        "port": "p:entry"
+      },
+      "id": "e_mu4ytvz32mump4r0s",
+      "to": {
+        "node": "n_mu4ytvz32mtao9tmm",
+        "port": "p:entry"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32ms37zzaz",
+        "port": "p:at"
+      },
+      "id": "e_mu4ytvz32mv34a9iz",
+      "to": {
+        "node": "n_mu4ytvz32mtao9tmm",
+        "port": "p:at"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32ms37zzaz",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32mwf7wvve",
+      "to": {
+        "node": "n_mu4ytvz32mtao9tmm",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32mxa9oj7p",
+        "port": "p:from"
+      },
+      "id": "e_mu4ytvz32mz9nyozj",
+      "to": {
+        "node": "n_mu4ytvz32myrv5bi9",
+        "port": "p:from"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32mxa9oj7p",
+        "port": "p:port"
+      },
+      "id": "e_mu4ytvz32n0yonfog",
+      "to": {
+        "node": "n_mu4ytvz32myrv5bi9",
+        "port": "p:port"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32mxa9oj7p",
+        "port": "p:to"
+      },
+      "id": "e_mu4ytvz32n1lxxwx0",
+      "to": {
+        "node": "n_mu4ytvz32myrv5bi9",
+        "port": "p:to"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32mxa9oj7p",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32n2qx74vd",
+      "to": {
+        "node": "n_mu4ytvz32myrv5bi9",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32n3ia903x",
+        "port": "p:ids"
+      },
+      "id": "e_mu4ytvz32n5pw2lek",
+      "to": {
+        "node": "n_mu4ytvz32n4xdqjkq",
+        "port": "p:ids"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32n3ia903x",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32n6jbtxos",
+      "to": {
+        "node": "n_mu4ytvz32n4xdqjkq",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32n75osfrl",
+        "port": "p:ids"
+      },
+      "id": "e_mu4ytvz32n9700vtj",
+      "to": {
+        "node": "n_mu4ytvz32n88iaz9a",
+        "port": "p:ids"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32n75osfrl",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32naydmx2z",
+      "to": {
+        "node": "n_mu4ytvz32n88iaz9a",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32nbp7g4c1",
+        "port": "p:nodeId"
+      },
+      "id": "e_mu4ytvz32nd2pvrmu",
+      "to": {
+        "node": "n_mu4ytvz32nceto9q0",
+        "port": "p:nodeId"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32nbp7g4c1",
+        "port": "p:commandKey"
+      },
+      "id": "e_mu4ytvz32neihz0nz",
+      "to": {
+        "node": "n_mu4ytvz32nceto9q0",
+        "port": "p:commandKey"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32nbp7g4c1",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32nfr7lxdw",
+      "to": {
+        "node": "n_mu4ytvz32nceto9q0",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32ng88occr",
+        "port": "p:state"
+      },
+      "id": "e_mu4ytvz32niztggj7",
+      "to": {
+        "node": "n_mu4ytvz32nhpyf2x3",
+        "port": "p:state"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32ng88occr",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32njj7385a",
+      "to": {
+        "node": "n_mu4ytvz32nhpyf2x3",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32nkeqbxfa",
+        "port": "p:label"
+      },
+      "id": "e_mu4ytvz32nmavzfqw",
+      "to": {
+        "node": "n_mu4ytvz32nlyysefd",
+        "port": "p:label"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32nkeqbxfa",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32nnl0b95d",
+      "to": {
+        "node": "n_mu4ytvz32nlyysefd",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32noh2zthc",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32nqjn81dh",
+      "to": {
+        "node": "n_mu4ytvz32npz8tca3",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32nrvm6etk",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32nt35dv71",
+      "to": {
+        "node": "n_mu4ytvz32nsqv21jg",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32nulit0sl",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32nwlbajlu",
+      "to": {
+        "node": "n_mu4ytvz32nv5432m7",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32nyq00xoc",
+        "port": "result"
+      },
+      "id": "e_mu4ytvz32o0msrkwl",
+      "to": {
+        "node": "n_mu4ytvz32nzsv3q3s",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32nxdwvf3q",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32o19amsi0",
+      "to": {
+        "node": "n_mu4ytvz32nyq00xoc",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32nyq00xoc",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32o26abtbt",
+      "to": {
+        "node": "n_mu4ytvz32nzsv3q3s",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32o4wm6zr9",
+        "port": "result"
+      },
+      "id": "e_mu4ytvz32o6wbke9l",
+      "to": {
+        "node": "n_mu4ytvz32o58ybr66",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32o3t3lf0v",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32o7dxqtcx",
+      "to": {
+        "node": "n_mu4ytvz32o4wm6zr9",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32o4wm6zr9",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32o8xx8ney",
+      "to": {
+        "node": "n_mu4ytvz32o58ybr66",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32o9609a95",
+        "port": "p:message"
+      },
+      "id": "e_mu4ytvz32obeg56bh",
+      "to": {
+        "node": "n_mu4ytvz32oa9635f3",
+        "port": "p:message"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32oa9635f3",
+        "port": "result"
+      },
+      "id": "e_mu4ytvz32od7rdn80",
+      "to": {
+        "node": "n_mu4ytvz32ocex7hwv",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32o9609a95",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32oevgdfq2",
+      "to": {
+        "node": "n_mu4ytvz32oa9635f3",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32oa9635f3",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32ofrus0fb",
+      "to": {
+        "node": "n_mu4ytvz32ocex7hwv",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32ohjt2nc0",
+        "port": "result"
+      },
+      "id": "e_mu4ytvz32ojt6sn95",
+      "to": {
+        "node": "n_mu4ytvz32oi4wn46z",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32ogctlgs3",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32okxmw1le",
+      "to": {
+        "node": "n_mu4ytvz32ohjt2nc0",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32ohjt2nc0",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32olvst15b",
+      "to": {
+        "node": "n_mu4ytvz32oi4wn46z",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32onkxxi8h",
+        "port": "result"
+      },
+      "id": "e_mu4ytvz32opxls8j5",
+      "to": {
+        "node": "n_mu4ytvz32ooqm5khq",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32omk24pnu",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32oqqeez8b",
+      "to": {
+        "node": "n_mu4ytvz32onkxxi8h",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32onkxxi8h",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32orclm2gv",
+      "to": {
+        "node": "n_mu4ytvz32ooqm5khq",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32ot06q5is",
+        "port": "result"
+      },
+      "id": "e_mu4ytvz32ovh448sg",
+      "to": {
+        "node": "n_mu4ytvz32ouk4k58j",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32os5yp5l5",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32ow3txsex",
+      "to": {
+        "node": "n_mu4ytvz32ot06q5is",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32ot06q5is",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32oxu18hte",
+      "to": {
+        "node": "n_mu4ytvz32ouk4k58j",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz32l093i4ic",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz32oz0w6rqr",
+      "to": {
+        "node": "n_mu4ytvz32oyn4wzkw",
+        "port": "in"
+      }
+    }
+  ],
+  "fileId": "file_mu4ytvz32kvqdvb06",
+  "id": "g_mu4ytvz32kwj2jnab",
+  "name": "playbook editor",
+  "nodes": [
+    {
+      "id": "n_mu4ytvz32kywmjjf1",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {},
+      "type": "dom/on-ready",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvz32kzcmrkyp",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "text": "The editor is a client of the same API as every other screen:\n\n  GET  /api/playbooks/palette              what can be dragged, and why not\n  GET  /api/playbooks/{id}/versions        the draft to open\n  POST /api/playbooks/{id}/versions        save the draft\n  POST /api/playbooks/versions/{id}/validate\n  POST /api/playbooks/versions/{id}/simulate\n  POST /api/playbooks/versions/{id}/publish\n\nThere is no editor-only endpoint and no editor-only format: the canvas\nserialises to the definition the engine executes."
+      },
+      "type": "data/comment",
+      "x": 250,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvz32l093i4ic",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "args",
+          "name": "arg",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "await": false,
+        "returns": "Void",
+        "target": "bootEditor"
+      },
+      "type": "control/call",
+      "x": 500,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvz32l3pe6fry",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "payload",
+          "name": "payload",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "event": "onPaletteSearch",
+        "isAsync": true,
+        "payloadType": "Any"
+      },
+      "type": "event/handler",
+      "x": 0,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvz32l4vp63fy",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "args",
+          "name": "arg",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "await": true,
+        "returns": "Void",
+        "target": "filterPalette"
+      },
+      "type": "control/call",
+      "x": 250,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvz32l7m9svwk",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "payload",
+          "name": "payload",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "event": "onEditorUndo",
+        "isAsync": true,
+        "payloadType": "Any"
+      },
+      "type": "event/handler",
+      "x": 0,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvz32l8dr2a28",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "args",
+          "name": "arg",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "await": true,
+        "returns": "Void",
+        "target": "editorUndo"
+      },
+      "type": "control/call",
+      "x": 250,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvz32lbilmbmv",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "payload",
+          "name": "payload",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "event": "onEditorRedo",
+        "isAsync": true,
+        "payloadType": "Any"
+      },
+      "type": "event/handler",
+      "x": 0,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvz32lc9lvtlj",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "args",
+          "name": "arg",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "await": true,
+        "returns": "Void",
+        "target": "editorRedo"
+      },
+      "type": "control/call",
+      "x": 250,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvz32lfqghrk8",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "payload",
+          "name": "payload",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "event": "onEditorLayout",
+        "isAsync": true,
+        "payloadType": "Any"
+      },
+      "type": "event/handler",
+      "x": 0,
+      "y": 520
+    },
+    {
+      "id": "n_mu4ytvz32lgtv5k3q",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "args",
+          "name": "arg",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "await": true,
+        "returns": "Void",
+        "target": "editorAutoLayout"
+      },
+      "type": "control/call",
+      "x": 250,
+      "y": 520
+    },
+    {
+      "id": "n_mu4ytvz32ljfukmam",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "payload",
+          "name": "payload",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "event": "onEditorSave",
+        "isAsync": true,
+        "payloadType": "Any"
+      },
+      "type": "event/handler",
+      "x": 0,
+      "y": 650
+    },
+    {
+      "id": "n_mu4ytvz32lk2kcg3p",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "args",
+          "name": "arg",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "await": true,
+        "returns": "Void",
+        "target": "editorSave"
+      },
+      "type": "control/call",
+      "x": 250,
+      "y": 650
+    },
+    {
+      "id": "n_mu4ytvz32ln40fzvh",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "payload",
+          "name": "payload",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "event": "onEditorValidate",
+        "isAsync": true,
+        "payloadType": "Any"
+      },
+      "type": "event/handler",
+      "x": 0,
+      "y": 780
+    },
+    {
+      "id": "n_mu4ytvz32loom5bxy",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "args",
+          "name": "arg",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "await": true,
+        "returns": "Void",
+        "target": "editorValidate"
+      },
+      "type": "control/call",
+      "x": 250,
+      "y": 780
+    },
+    {
+      "id": "n_mu4ytvz32lr0o8q47",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "payload",
+          "name": "payload",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "event": "onEditorDryRun",
+        "isAsync": true,
+        "payloadType": "Any"
+      },
+      "type": "event/handler",
+      "x": 0,
+      "y": 910
+    },
+    {
+      "id": "n_mu4ytvz32ls6gi4om",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "args",
+          "name": "arg",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "await": true,
+        "returns": "Void",
+        "target": "editorDryRun"
+      },
+      "type": "control/call",
+      "x": 250,
+      "y": 910
+    },
+    {
+      "id": "n_mu4ytvz32lv0cf70f",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "payload",
+          "name": "payload",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "event": "onEditorSimulate",
+        "isAsync": true,
+        "payloadType": "Any"
+      },
+      "type": "event/handler",
+      "x": 0,
+      "y": 1040
+    },
+    {
+      "id": "n_mu4ytvz32lw807syc",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "args",
+          "name": "arg",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "await": true,
+        "returns": "Void",
+        "target": "editorSimulate"
+      },
+      "type": "control/call",
+      "x": 250,
+      "y": 1040
+    },
+    {
+      "id": "n_mu4ytvz32lz176omj",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "payload",
+          "name": "payload",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "event": "onEditorPublish",
+        "isAsync": true,
+        "payloadType": "Any"
+      },
+      "type": "event/handler",
+      "x": 0,
+      "y": 1170
+    },
+    {
+      "id": "n_mu4ytvz32m09jhs08",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "args",
+          "name": "arg",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "await": true,
+        "returns": "Void",
+        "target": "editorPublish"
+      },
+      "type": "control/call",
+      "x": 250,
+      "y": 1170
+    },
+    {
+      "id": "n_mu4ytvz32m3uw794v",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "doc": "Load the palette and the draft, build the canvas, and draw.",
+        "isAsync": true,
+        "name": "bootEditor",
+        "params": [],
+        "returns": "Any",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 1300
+    },
+    {
+      "id": "n_mu4ytvz32m4ahsde2",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "const { byName, request, setText } = globalThis.SOAR;\nconst { autoLayout, createCanvas, frame } = globalThis.SOAR;\nconst { createHistory, emptyModel, fromDefinition } = globalThis.SOAR;\n\nreturn (async () => {\nconst params = new URLSearchParams(location.search);\nconst playbookId = params.get(\"id\");\nconst versionId = params.get(\"version\");\n\nconst palette = await request(\"GET\", \"/api/playbooks/palette\");\n\nlet version = null;\nif (versionId) {\n  version = await request(\"GET\", `/api/playbooks/versions/${versionId}`);\n} else if (playbookId) {\n  const versions = await request(\"GET\", `/api/playbooks/${playbookId}/versions`);\n  version = versions.items?.find((v) => v.state === \"draft\") || versions.items?.[0];\n}\n\nconst model = version ? fromDefinition(version.definition) : emptyModel();\nif (version && !model.nodes.some((n) => n.editorPositioned !== false && n.x)) {\n  autoLayout(model);\n}\n\nconst state = {\n  playbookId, versionId: version?.id, version, palette, model,\n  history: createHistory(),\n  selection: [],\n  problems: [],\n  dirty: false,\n};\neditorState = state;\n\nstate.canvas = createCanvas(byName(\"editorCanvas\"), {\n  onSelect: (ids) => { state.selection = ids; refresh({ silent: true }); },\n  onChange: (options) => {\n    if (!options?.silent) markDirty(options?.label || \"edit\");\n    refresh({ silent: true });\n  },\n  onConnect: (from, port, to) => connectNodes(from, port, to),\n  onDelete: (ids) => deleteNodes(ids),\n  onDuplicate: (ids) => duplicateNodes(ids),\n  onUndo: () => editorUndo(),\n  onRedo: () => editorRedo(),\n  onSave: () => editorSave(),\n  onFrame: () => frame(state.canvas),\n  onDropPaletteItem: (item, at) => addFromPalette(item, at),\n  onDropOnEmpty: (from, port, at) => {\n    setText(\"statusMessage\",\n      \"drop a node from the palette here, then drag the port onto it\");\n  },\n  onOpen: (id) => { state.selection = [id]; refresh({ silent: true }); },\n});\n\nrenderPalette(state);\nsetText(\"playbookName\", version?.playbook_name || \"New playbook\");\nconst stateChip = byName(\"playbookState\");\nif (stateChip) {\n  stateChip.textContent = `${(version?.state || \"draft\").toUpperCase()}` +\n                          `${version?.version ? \" v\" + version.version : \"\"}`;\n  stateChip.dataset.state = version?.state || \"draft\";\n}\n\nrefresh();\nframe(state.canvas);\nreturn state;\n})();",
+        "doc": "Load the palette and the draft, build the canvas, and draw.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "start_editor",
+        "packages": [],
+        "params": [],
+        "returns": "Any"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 1300
+    },
+    {
+      "id": "n_mu4ytvz32m5tecta1",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvz32m9ucy9fd",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:options",
+          "name": "options",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "doc": "Re-validate locally and redraw. Cheap enough to run on every edit, which is what makes problems appear as you draw rather than at publish.",
+        "isAsync": false,
+        "name": "refresh",
+        "params": [
+          {
+            "name": "options",
+            "type": "Any"
+          }
+        ],
+        "returns": "Void",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 1430
+    },
+    {
+      "id": "n_mu4ytvz32mavu3wbt",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:options",
+          "name": "options",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "const { byName, setText } = globalThis.SOAR;\nconst { renderCanvas } = globalThis.SOAR;\nconst { renderInspector } = globalThis.SOAR;\nconst { localValidate } = globalThis.SOAR;\n\nconst state = editorState;\nif (!state) return;\n\nstate.problems = localValidate(state.model, state.palette);\nrenderCanvas(state.canvas, state.model, state.palette, state.problems);\n\nconst selected = state.model.nodes.find((n) => n.id === state.selection[0]);\nrenderInspector(byName(\"inspector\"), selected, state.palette, {\n  model: state.model,\n  variables: state.palette.variables,\n  update: (id, mutate) => {\n    const node = state.model.nodes.find((n) => n.id === id);\n    if (!node) return;\n    state.history.push(state.model, \"edit \" + id);\n    mutate(node);\n    markDirty(\"edit \" + id);\n    refresh({ silent: true });\n  },\n  addCompensation: (id, commandKey) => addCompensation(id, commandKey),\n});\n\nrenderProblems(state);\nsetText(\"dirtyFlag\", state.dirty ? \"unsaved changes\" : \"\");",
+        "doc": "Re-validate locally and redraw. Cheap enough to run on every edit, which is what makes problems appear as you draw rather than at publish.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "refresh_editor",
+        "packages": [],
+        "params": [
+          {
+            "name": "options",
+            "type": "Any"
+          }
+        ],
+        "returns": "Void"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 1430
+    },
+    {
+      "id": "n_mu4ytvz32md6t9d6k",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:state",
+          "name": "state",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "doc": "Draw the palette: control flow, abstract response actions, then every\ncommand grouped by capability.\n\nEndpoint Response comes first among the command groups on purpose. It is the\ngroup an analyst reaches for under pressure.",
+        "isAsync": false,
+        "name": "renderPalette",
+        "params": [
+          {
+            "name": "state",
+            "type": "Any"
+          }
+        ],
+        "returns": "Void",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 1560
+    },
+    {
+      "id": "n_mu4ytvz32mefh9fcp",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:state",
+          "name": "state",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "const { byName } = globalThis.SOAR;\n\nconst host = byName(\"paletteList\");\nif (!host) return;\nhost.replaceChildren();\n\nconst ORDER = [\"Endpoint Response\", \"Identity Response\", \"Email & Phishing\",\n               \"Network Blocking\", \"SIEM & Hunting\", \"Threat Intelligence\",\n               \"Ticketing\", \"Notification\", \"Other\"];\n\nconst sections = [\n  [\"Flow & Logic\", (state.palette.core || []).filter(\n     (n) => [\"Flow\", \"Logic\", \"Control\", \"Data\"].includes(n.group))],\n  [\"Actions\", (state.palette.core || []).filter(\n     (n) => [\"Action\", \"AI\"].includes(n.group))],\n  [\"Response (any EDR)\", state.palette.response_actions || []],\n];\nfor (const group of ORDER) {\n  const entries = state.palette.commands?.[group];\n  if (entries?.length) sections.push([group, entries]);\n}\n\nfor (const [name, entries] of sections) {\n  if (!entries?.length) continue;\n\n  const heading = document.createElement(\"span\");\n  heading.className = \"pb-group-name\";\n  heading.textContent = `${name} (${entries.length})`;\n  host.append(heading);\n\n  for (const entry of entries) {\n    host.append(paletteItem(entry));\n  }\n}",
+        "doc": "Draw the palette: control flow, abstract response actions, then every\ncommand grouped by capability.\n\nEndpoint Response comes first among the command groups on purpose. It is the\ngroup an analyst reaches for under pressure.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "render_palette_list",
+        "packages": [],
+        "params": [
+          {
+            "name": "state",
+            "type": "Any"
+          }
+        ],
+        "returns": "Void"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 1560
+    },
+    {
+      "id": "n_mu4ytvz32mhdl1rf0",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:entry",
+          "name": "entry",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "doc": "One draggable palette row. Unavailable items stay visible with the reason on hover, because a missing item reads as a missing capability.",
+        "isAsync": false,
+        "name": "paletteItem",
+        "params": [
+          {
+            "name": "entry",
+            "type": "Any"
+          }
+        ],
+        "returns": "Any",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 1690
+    },
+    {
+      "id": "n_mu4ytvz32mitit111",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:entry",
+          "name": "entry",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "const item = document.createElement(\"div\");\nitem.className = \"pb-item\";\nitem.draggable = entry.available !== false;\nitem.dataset.available = String(entry.available !== false);\nitem.dataset.search = `${entry.label} ${entry.command || entry.action || entry.kind} ` +\n                      `${entry.vendor || \"\"} ${entry.group || \"\"}`.toLowerCase();\n\nconst icon = document.createElement(\"span\");\nicon.className = \"pb-item-icon\";\nicon.textContent = entry.icon || \"\\u25cb\";\n\nconst label = document.createElement(\"span\");\nlabel.className = \"pb-item-label\";\nlabel.textContent = entry.label;\n\nitem.append(icon, label);\n\nif (entry.risk_level && entry.risk_level !== \"low\") {\n  const risk = document.createElement(\"span\");\n  risk.className = \"pb-item-risk\";\n  risk.dataset.risk = entry.risk_level;\n  risk.textContent = entry.risk_level === \"high\" ? \"HIGH\" : \"MED\";\n  item.append(risk);\n}\n\nconst tooltip = [entry.doc, entry.warn, entry.unavailable_reason]\n  .filter(Boolean).join(\"\\n\\n\");\nif (tooltip) item.title = tooltip;\n\nitem.addEventListener(\"dragstart\", (event) => {\n  event.dataTransfer.setData(\"application/x-soar-node\", JSON.stringify(entry));\n  event.dataTransfer.effectAllowed = \"copy\";\n});\nreturn item;",
+        "doc": "One draggable palette row. Unavailable items stay visible with the reason on hover, because a missing item reads as a missing capability.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "render_palette_item",
+        "packages": [],
+        "params": [
+          {
+            "name": "entry",
+            "type": "Any"
+          }
+        ],
+        "returns": "Any"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 1690
+    },
+    {
+      "id": "n_mu4ytvz32mknuqrt2",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvz32mo0ak30s",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:event",
+          "name": "event",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "doc": "Filter the palette as you type. With well over a hundred commands, search is how anyone finds anything.",
+        "isAsync": false,
+        "name": "filterPalette",
+        "params": [
+          {
+            "name": "event",
+            "type": "Any"
+          }
+        ],
+        "returns": "Void",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 1820
+    },
+    {
+      "id": "n_mu4ytvz32mpa7fma1",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:event",
+          "name": "event",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "const query = (event?.currentTarget?.value || \"\").trim().toLowerCase();\nfor (const item of document.querySelectorAll(\".pb-item[data-search]\")) {\n  item.hidden = Boolean(query) && !item.dataset.search.includes(query);\n}\nfor (const heading of document.querySelectorAll(\".pb-group-name\")) {\n  let sibling = heading.nextElementSibling;\n  let visible = false;\n  while (sibling && !sibling.classList.contains(\"pb-group-name\")) {\n    if (!sibling.hidden) visible = true;\n    sibling = sibling.nextElementSibling;\n  }\n  heading.hidden = Boolean(query) && !visible;\n}",
+        "doc": "Filter the palette as you type. With well over a hundred commands, search is how anyone finds anything.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "apply_palette_filter",
+        "packages": [],
+        "params": [
+          {
+            "name": "event",
+            "type": "Any"
+          }
+        ],
+        "returns": "Void"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 1820
+    },
+    {
+      "id": "n_mu4ytvz32ms37zzaz",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:entry",
+          "name": "entry",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:at",
+          "name": "at",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "doc": "Create a node from a dropped palette item, pre-filled with the schema defaults so a freshly dropped node is as close to valid as the schema allows.",
+        "isAsync": false,
+        "name": "addFromPalette",
+        "params": [
+          {
+            "name": "entry",
+            "type": "Any"
+          },
+          {
+            "name": "at",
+            "type": "Any"
+          }
+        ],
+        "returns": "Void",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 1950
+    },
+    {
+      "id": "n_mu4ytvz32mtao9tmm",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:entry",
+          "name": "entry",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:at",
+          "name": "at",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "const { newNodeId } = globalThis.SOAR;\n\nconst state = editorState;\nstate.history.push(state.model, `add ${entry.label}`);\n\nconst config = {};\nconst schema = entry.config_schema?.properties || entry.config_schema || {};\nfor (const [key, spec] of Object.entries(schema)) {\n  if (spec?.default !== undefined) config[key] = spec.default;\n}\n\nconst node = {\n  id: newNodeId(entry.command || entry.action || entry.kind),\n  kind: entry.kind,\n  x: Math.round(at.x / 20) * 20,\n  y: Math.round(at.y / 20) * 20,\n  label: entry.label,\n  command: entry.command,\n  action: entry.action,\n  config,\n  settings: {},\n};\n\nstate.model.nodes.push(node);\nstate.selection = [node.id];\nstate.canvas.selection = new Set([node.id]);\nmarkDirty(`add ${entry.label}`);\nrefresh();",
+        "doc": "Create a node from a dropped palette item, pre-filled with the schema defaults so a freshly dropped node is as close to valid as the schema allows.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "create_node_from_palette",
+        "packages": [],
+        "params": [
+          {
+            "name": "entry",
+            "type": "Any"
+          },
+          {
+            "name": "at",
+            "type": "Any"
+          }
+        ],
+        "returns": "Void"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 1950
+    },
+    {
+      "id": "n_mu4ytvz32mxa9oj7p",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:from",
+          "name": "from",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:port",
+          "name": "port",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:to",
+          "name": "to",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "doc": "Wire one port to a node.\n\nSingle-target ports replace rather than accumulate - `next` means one next\nstep, and a second wire from it would be a graph the engine cannot run.\nBranch ports (parallel, switch cases) accumulate.",
+        "isAsync": false,
+        "name": "connectNodes",
+        "params": [
+          {
+            "name": "from",
+            "type": "string"
+          },
+          {
+            "name": "port",
+            "type": "string"
+          },
+          {
+            "name": "to",
+            "type": "string"
+          }
+        ],
+        "returns": "Void",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 2080
+    },
+    {
+      "id": "n_mu4ytvz32myrv5bi9",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:from",
+          "name": "from",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:port",
+          "name": "port",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:to",
+          "name": "to",
+          "type": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "const state = editorState;\nconst MULTI = new Set([\"branches\", \"case\", \"then\"]);\n\nstate.history.push(state.model, \"connect\");\nif (!MULTI.has(port)) {\n  state.model.edges = state.model.edges.filter(\n    (edge) => !(edge.from === from && edge.port === port));\n}\nif (state.model.edges.some((e) => e.from === from && e.port === port && e.to === to)) {\n  return;\n}\n\nstate.model.edges.push({ id: `e_${from}_${port}_${to}`, from, port, to });\nmarkDirty(\"connect\");\nrefresh();",
+        "doc": "Wire one port to a node.\n\nSingle-target ports replace rather than accumulate - `next` means one next\nstep, and a second wire from it would be a graph the engine cannot run.\nBranch ports (parallel, switch cases) accumulate.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "create_edge",
+        "packages": [],
+        "params": [
+          {
+            "name": "from",
+            "type": "string"
+          },
+          {
+            "name": "port",
+            "type": "string"
+          },
+          {
+            "name": "to",
+            "type": "string"
+          }
+        ],
+        "returns": "Void"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 2080
+    },
+    {
+      "id": "n_mu4ytvz32n3ia903x",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:ids",
+          "name": "ids",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "doc": "Remove nodes and every wire touching them. Start cannot be deleted - a playbook without one is not a playbook.",
+        "isAsync": false,
+        "name": "deleteNodes",
+        "params": [
+          {
+            "name": "ids",
+            "type": "Any"
+          }
+        ],
+        "returns": "Void",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 2210
+    },
+    {
+      "id": "n_mu4ytvz32n4xdqjkq",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:ids",
+          "name": "ids",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "const { setText } = globalThis.SOAR;\n\nconst state = editorState;\nconst removable = ids.filter((id) => {\n  const node = state.model.nodes.find((n) => n.id === id);\n  return node && node.kind !== \"start\";\n});\nif (!removable.length) {\n  setText(\"statusMessage\", \"the Start node cannot be deleted\");\n  return;\n}\n\nstate.history.push(state.model, `delete ${removable.length} node(s)`);\nconst gone = new Set(removable);\nstate.model.nodes = state.model.nodes.filter((n) => !gone.has(n.id));\nstate.model.edges = state.model.edges.filter(\n  (e) => !gone.has(e.from) && !gone.has(e.to));\nstate.selection = [];\nstate.canvas.selection.clear();\nmarkDirty(\"delete\");\nrefresh();",
+        "doc": "Remove nodes and every wire touching them. Start cannot be deleted - a playbook without one is not a playbook.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "remove_nodes",
+        "packages": [],
+        "params": [
+          {
+            "name": "ids",
+            "type": "Any"
+          }
+        ],
+        "returns": "Void"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 2210
+    },
+    {
+      "id": "n_mu4ytvz32n75osfrl",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:ids",
+          "name": "ids",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "doc": "Copy nodes with their configuration, offset so the copy is visible. Wires are not copied: a duplicated step almost always goes somewhere new.",
+        "isAsync": false,
+        "name": "duplicateNodes",
+        "params": [
+          {
+            "name": "ids",
+            "type": "Any"
+          }
+        ],
+        "returns": "Void",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 2340
+    },
+    {
+      "id": "n_mu4ytvz32n88iaz9a",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:ids",
+          "name": "ids",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "const { newNodeId } = globalThis.SOAR;\n\nconst state = editorState;\nstate.history.push(state.model, \"duplicate\");\nconst copies = [];\nfor (const id of ids) {\n  const node = state.model.nodes.find((n) => n.id === id);\n  if (!node || node.kind === \"start\") continue;\n  const copy = structuredClone(node);\n  copy.id = newNodeId(node.command || node.action || node.kind);\n  copy.x += 40;\n  copy.y += 40;\n  copies.push(copy);\n}\nstate.model.nodes.push(...copies);\nstate.selection = copies.map((c) => c.id);\nstate.canvas.selection = new Set(state.selection);\nmarkDirty(\"duplicate\");\nrefresh();",
+        "doc": "Copy nodes with their configuration, offset so the copy is visible. Wires are not copied: a duplicated step almost always goes somewhere new.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "copy_nodes",
+        "packages": [],
+        "params": [
+          {
+            "name": "ids",
+            "type": "Any"
+          }
+        ],
+        "returns": "Void"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 2340
+    },
+    {
+      "id": "n_mu4ytvz32nbp7g4c1",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:nodeId",
+          "name": "nodeId",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:commandKey",
+          "name": "commandKey",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "doc": "Create the undo step the registry declared and wire it as the compensation.\n\nOne click, because the alternative is that nobody writes compensations and\na failed containment leaves the estate half-changed with no way back.",
+        "isAsync": false,
+        "name": "addCompensation",
+        "params": [
+          {
+            "name": "nodeId",
+            "type": "string"
+          },
+          {
+            "name": "commandKey",
+            "type": "string"
+          }
+        ],
+        "returns": "Void",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 2470
+    },
+    {
+      "id": "n_mu4ytvz32nceto9q0",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:nodeId",
+          "name": "nodeId",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:commandKey",
+          "name": "commandKey",
+          "type": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "const { setText } = globalThis.SOAR;\nconst { newNodeId } = globalThis.SOAR;\n\nconst state = editorState;\nlet entry = null;\nfor (const entries of Object.values(state.palette.commands || {})) {\n  entry = entries.find((e) => e.command === commandKey) || entry;\n}\nif (!entry) {\n  setText(\"statusMessage\", `${commandKey} is not available in this organisation`);\n  return;\n}\n\nconst source = state.model.nodes.find((n) => n.id === nodeId);\nstate.history.push(state.model, \"add compensation\");\n\nconst node = {\n  id: newNodeId(commandKey),\n  kind: \"command\",\n  command: commandKey,\n  label: entry.label,\n  x: (source?.x ?? 0),\n  y: (source?.y ?? 0) + 200,\n  // The undo takes the same target as the action it reverses.\n  config: structuredClone(source?.config || {}),\n  settings: {},\n};\nstate.model.nodes.push(node);\nif (source) source.compensation = node.id;\nmarkDirty(\"add compensation\");\nrefresh();",
+        "doc": "Create the undo step the registry declared and wire it as the compensation.\n\nOne click, because the alternative is that nobody writes compensations and\na failed containment leaves the estate half-changed with no way back.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "create_compensation_node",
+        "packages": [],
+        "params": [
+          {
+            "name": "nodeId",
+            "type": "string"
+          },
+          {
+            "name": "commandKey",
+            "type": "string"
+          }
+        ],
+        "returns": "Void"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 2470
+    },
+    {
+      "id": "n_mu4ytvz32ng88occr",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:state",
+          "name": "state",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "doc": "List the validation findings, clickable to select the node they came from.",
+        "isAsync": false,
+        "name": "renderProblems",
+        "params": [
+          {
+            "name": "state",
+            "type": "Any"
+          }
+        ],
+        "returns": "Void",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 2600
+    },
+    {
+      "id": "n_mu4ytvz32nhpyf2x3",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:state",
+          "name": "state",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "const { byName } = globalThis.SOAR;\n\nconst host = byName(\"problemList\");\nif (!host) return;\nhost.replaceChildren();\n\nif (!state.problems.length) {\n  const ok = document.createElement(\"div\");\n  ok.className = \"pb-hint\";\n  ok.textContent = \"No problems found in the browser. Publish re-runs the \" +\n    \"full server-side validation, which also checks command schemas and \" +\n    \"sub-playbook cycles.\";\n  host.append(ok);\n  return;\n}\n\nconst RANK = { error: 0, warning: 1, info: 2 };\nfor (const problem of [...state.problems].sort(\n       (a, b) => RANK[a.severity] - RANK[b.severity])) {\n  const row = document.createElement(\"div\");\n  row.className = \"pb-problem\";\n  row.dataset.severity = problem.severity;\n  row.textContent = problem.node ? `${problem.node}: ${problem.message}`\n                                 : problem.message;\n  if (problem.node) {\n    row.addEventListener(\"click\", () => {\n      state.selection = [problem.node];\n      state.canvas.selection = new Set([problem.node]);\n      refresh({ silent: true });\n    });\n  }\n  host.append(row);\n}",
+        "doc": "List the validation findings, clickable to select the node they came from.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "render_problem_list",
+        "packages": [],
+        "params": [
+          {
+            "name": "state",
+            "type": "Any"
+          }
+        ],
+        "returns": "Void"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 2600
+    },
+    {
+      "id": "n_mu4ytvz32nkeqbxfa",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:label",
+          "name": "label",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "doc": "Record an unsaved change. The beforeunload guard reads this, because losing a half-drawn containment playbook is a genuinely bad afternoon.",
+        "isAsync": false,
+        "name": "markDirty",
+        "params": [
+          {
+            "name": "label",
+            "type": "string"
+          }
+        ],
+        "returns": "Void",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 2730
+    },
+    {
+      "id": "n_mu4ytvz32nlyysefd",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:label",
+          "name": "label",
+          "type": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "const state = editorState;\nif (!state) return;\nstate.dirty = true;\nstate.lastChange = label;\nif (!state.unloadGuard) {\n  state.unloadGuard = (event) => {\n    if (!editorState?.dirty) return;\n    event.preventDefault();\n    event.returnValue = \"\";\n  };\n  window.addEventListener(\"beforeunload\", state.unloadGuard);\n}",
+        "doc": "Record an unsaved change. The beforeunload guard reads this, because losing a half-drawn containment playbook is a genuinely bad afternoon.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "set_dirty_flag",
+        "packages": [],
+        "params": [
+          {
+            "name": "label",
+            "type": "string"
+          }
+        ],
+        "returns": "Void"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 2730
+    },
+    {
+      "id": "n_mu4ytvz32noh2zthc",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "doc": "Undo, naming what it undid on the status strip.",
+        "isAsync": false,
+        "name": "editorUndo",
+        "params": [],
+        "returns": "Void",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 2860
+    },
+    {
+      "id": "n_mu4ytvz32npz8tca3",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "const { setText } = globalThis.SOAR;\n\nconst state = editorState;\nconst entry = state.history.undo(state.model);\nif (!entry) { setText(\"statusMessage\", \"nothing to undo\"); return; }\nstate.model = entry.model;\nstate.canvas.selection.clear();\nstate.selection = [];\nsetText(\"statusMessage\", `undid ${entry.label}`);\nrefresh({ silent: true });",
+        "doc": "Undo, naming what it undid on the status strip.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "do_undo",
+        "packages": [],
+        "params": [],
+        "returns": "Void"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 2860
+    },
+    {
+      "id": "n_mu4ytvz32nrvm6etk",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "doc": "Redo.",
+        "isAsync": false,
+        "name": "editorRedo",
+        "params": [],
+        "returns": "Void",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 2990
+    },
+    {
+      "id": "n_mu4ytvz32nsqv21jg",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "const { setText } = globalThis.SOAR;\n\nconst state = editorState;\nconst entry = state.history.redo(state.model);\nif (!entry) { setText(\"statusMessage\", \"nothing to redo\"); return; }\nstate.model = entry.model;\nsetText(\"statusMessage\", `redid ${entry.label}`);\nrefresh({ silent: true });",
+        "doc": "Redo.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "do_redo",
+        "packages": [],
+        "params": [],
+        "returns": "Void"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 2990
+    },
+    {
+      "id": "n_mu4ytvz32nulit0sl",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "doc": "Re-arrange by depth from Start, then frame.",
+        "isAsync": false,
+        "name": "editorAutoLayout",
+        "params": [],
+        "returns": "Void",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 3120
+    },
+    {
+      "id": "n_mu4ytvz32nv5432m7",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "const { autoLayout, frame } = globalThis.SOAR;\n\nconst state = editorState;\nstate.history.push(state.model, \"auto-layout\");\nautoLayout(state.model);\nmarkDirty(\"auto-layout\");\nrefresh();\nframe(state.canvas);",
+        "doc": "Re-arrange by depth from Start, then frame.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "do_auto_layout",
+        "packages": [],
+        "params": [],
+        "returns": "Void"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 3120
+    },
+    {
+      "id": "n_mu4ytvz32nxdwvf3q",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "doc": "Save as a draft version.\n\nAlways a draft. There is no path from the canvas to a published version -\npublish is a separate, separately-permissioned action that re-validates\nserver-side and requires a passing simulation.",
+        "isAsync": true,
+        "name": "editorSave",
+        "params": [],
+        "returns": "Any",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 3250
+    },
+    {
+      "id": "n_mu4ytvz32nyq00xoc",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "const { request, setText } = globalThis.SOAR;\nconst { toDefinition } = globalThis.SOAR;\n\nreturn (async () => {\nconst state = editorState;\nconst blocking = state.problems.filter((p) => p.severity === \"error\");\nif (blocking.length) {\n  // Saving a draft with errors is allowed - work in progress is normal.\n  setText(\"statusMessage\",\n    `saving draft with ${blocking.length} unresolved error(s)`);\n}\n\ntry {\n  const saved = await request(\"POST\", `/api/playbooks/${state.playbookId}/versions`, {\n    definition: toDefinition(state.model),\n    base_version_id: state.versionId,\n  });\n  state.versionId = saved.id;\n  state.dirty = false;\n  setText(\"dirtyFlag\", \"\");\n  setText(\"statusMessage\", `saved draft v${saved.version}`);\n  return saved;\n} catch (error) {\n  setText(\"statusMessage\", `save failed: ${error.message}`);\n  return null;\n}\n})();",
+        "doc": "Save as a draft version.\n\nAlways a draft. There is no path from the canvas to a published version -\npublish is a separate, separately-permissioned action that re-validates\nserver-side and requires a passing simulation.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "do_save",
+        "packages": [],
+        "params": [],
+        "returns": "Any"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 3250
+    },
+    {
+      "id": "n_mu4ytvz32nzsv3q3s",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvz32o3t3lf0v",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "doc": "Run the full server-side validator and show what it found on the nodes.",
+        "isAsync": true,
+        "name": "editorValidate",
+        "params": [],
+        "returns": "Any",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 3380
+    },
+    {
+      "id": "n_mu4ytvz32o4wm6zr9",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "const { request, setText } = globalThis.SOAR;\nconst { renderCanvas } = globalThis.SOAR;\n\nreturn (async () => {\nconst state = editorState;\nif (state.dirty) await editorSave();\nif (!state.versionId) { setText(\"statusMessage\", \"save a draft first\"); return; }\n\ntry {\n  const result = await request(\"POST\",\n    `/api/playbooks/versions/${state.versionId}/validate`);\n  state.problems = [\n    ...localValidate(state.model, state.palette),\n    ...(result.problems || []).map((message) => ({\n      severity: \"error\", message, node: nodeFromMessage(message),\n    })),\n  ];\n  renderCanvas(state.canvas, state.model, state.palette, state.problems);\n  renderProblems(state);\n  setText(\"statusMessage\", result.problems?.length\n    ? `${result.problems.length} problem(s) - see the inspector`\n    : \"validation clean\");\n} catch (error) {\n  setText(\"statusMessage\", `validate failed: ${error.message}`);\n}\n})();",
+        "doc": "Run the full server-side validator and show what it found on the nodes.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "do_validate",
+        "packages": [],
+        "params": [],
+        "returns": "Any"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 3380
+    },
+    {
+      "id": "n_mu4ytvz32o58ybr66",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 520
+    },
+    {
+      "id": "n_mu4ytvz32o9609a95",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:message",
+          "name": "message",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "doc": "Server validation messages lead with the node id; pull it out so the finding can be clicked back to the node it is about.",
+        "isAsync": false,
+        "name": "nodeFromMessage",
+        "params": [
+          {
+            "name": "message",
+            "type": "string"
+          }
+        ],
+        "returns": "Any",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 3510
+    },
+    {
+      "id": "n_mu4ytvz32oa9635f3",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:message",
+          "name": "message",
+          "type": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "const match = /^(n_[a-z0-9_]+)/i.exec(String(message));\nreturn match ? match[1] : null;",
+        "doc": "Server validation messages lead with the node id; pull it out so the finding can be clicked back to the node it is about.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "extract_node_id",
+        "packages": [],
+        "params": [
+          {
+            "name": "message",
+            "type": "string"
+          }
+        ],
+        "returns": "Any"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 3510
+    },
+    {
+      "id": "n_mu4ytvz32ocex7hwv",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 650
+    },
+    {
+      "id": "n_mu4ytvz32ogctlgs3",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "doc": "Run against real input with mutating commands stubbed. No credential is leased for a mutating command in this mode, so the guarantee is structural.",
+        "isAsync": true,
+        "name": "editorDryRun",
+        "params": [],
+        "returns": "Any",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 3640
+    },
+    {
+      "id": "n_mu4ytvz32ohjt2nc0",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "const { request, setText } = globalThis.SOAR;\n\nreturn (async () => {\nconst state = editorState;\nif (state.dirty) await editorSave();\ntry {\n  const run = await request(\"POST\", `/api/playbooks/${state.playbookId}/dry-run`, {\n    version_id: state.versionId,\n  });\n  window.open(`/execution.html?id=${encodeURIComponent(run.execution_id)}`, \"_blank\");\n} catch (error) {\n  setText(\"statusMessage\", `dry run failed: ${error.message}`);\n}\n})();",
+        "doc": "Run against real input with mutating commands stubbed. No credential is leased for a mutating command in this mode, so the guarantee is structural.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "do_dry_run",
+        "packages": [],
+        "params": [],
+        "returns": "Any"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 3640
+    },
+    {
+      "id": "n_mu4ytvz32oi4wn46z",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 780
+    },
+    {
+      "id": "n_mu4ytvz32omk24pnu",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "doc": "Run against a synthetic incident with every command served from a fixture. This is what state=testing means, and publish can be configured to require it.",
+        "isAsync": true,
+        "name": "editorSimulate",
+        "params": [],
+        "returns": "Any",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 3770
+    },
+    {
+      "id": "n_mu4ytvz32onkxxi8h",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "const { request, setText } = globalThis.SOAR;\n\nreturn (async () => {\nconst state = editorState;\nif (state.dirty) await editorSave();\nif (!state.versionId) { setText(\"statusMessage\", \"save a draft first\"); return; }\n\ntry {\n  const result = await request(\"POST\",\n    `/api/playbooks/versions/${state.versionId}/simulate`);\n  setText(\"statusMessage\", result.passed\n    ? `simulation passed (${result.assertions} assertions)`\n    : `simulation FAILED: ${result.failures?.join(\"; \")}`);\n  if (result.execution_id) {\n    window.open(`/execution.html?id=${encodeURIComponent(result.execution_id)}`,\n                \"_blank\");\n  }\n} catch (error) {\n  setText(\"statusMessage\", `simulate failed: ${error.message}`);\n}\n})();",
+        "doc": "Run against a synthetic incident with every command served from a fixture. This is what state=testing means, and publish can be configured to require it.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "do_simulate",
+        "packages": [],
+        "params": [],
+        "returns": "Any"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 3770
+    },
+    {
+      "id": "n_mu4ytvz32ooqm5khq",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 910
+    },
+    {
+      "id": "n_mu4ytvz32os5yp5l5",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "doc": "Publish, after confirming what is about to become reachable by a trigger.\n\nThe confirmation lists the mutating steps and their risk, because \"publish\"\nis the moment a drawing becomes something that can isolate a host at 03:00\nwithout anyone watching.",
+        "isAsync": true,
+        "name": "editorPublish",
+        "params": [],
+        "returns": "Any",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 3900
+    },
+    {
+      "id": "n_mu4ytvz32ot06q5is",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "const { byName, request, setText } = globalThis.SOAR;\nconst { paletteEntry } = globalThis.SOAR;\n\nreturn (async () => {\nconst state = editorState;\nif (state.dirty) await editorSave();\nif (!state.versionId) { setText(\"statusMessage\", \"save a draft first\"); return; }\n\nconst mutating = state.model.nodes\n  .map((node) => [node, paletteEntry(node, state.palette)])\n  .filter(([, entry]) => entry?.effect === \"mutating\");\n\nconst summary = mutating.length\n  ? \"This playbook can change the estate:\\n\\n\" + mutating\n      .map(([node, entry]) => `  \\u2022 ${entry.label} (${entry.risk_level})`)\n      .join(\"\\n\") +\n    \"\\n\\nOnce published it can be started by a trigger. Continue?\"\n  : \"Publish this playbook?\";\n\nif (!window.confirm(summary)) return;\n\ntry {\n  await request(\"POST\", `/api/playbooks/versions/${state.versionId}/publish`);\n  setText(\"statusMessage\", \"published\");\n  const chip = byName(\"playbookState\");\n  if (chip) { chip.textContent = \"PUBLISHED\"; chip.dataset.state = \"published\"; }\n} catch (error) {\n  // Refusals here are the four publish gates: permission, legal transition,\n  // clean validation, passing simulation. The message says which one.\n  setText(\"statusMessage\", `publish refused: ${error.message}`);\n}\n})();",
+        "doc": "Publish, after confirming what is about to become reachable by a trigger.\n\nThe confirmation lists the mutating steps and their risk, because \"publish\"\nis the moment a drawing becomes something that can isolate a host at 03:00\nwithout anyone watching.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "do_publish",
+        "packages": [],
+        "params": [],
+        "returns": "Any"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 3900
+    },
+    {
+      "id": "n_mu4ytvz32ouk4k58j",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 1040
+    },
+    {
+      "id": "n_mu4ytvz32oyn4wzkw",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "const { bindDeclaredHandlers } = globalThis.SOAR;\nbindDeclaredHandlers({\n  onEditorDryRun,\n  onEditorLayout,\n  onEditorPublish,\n  onEditorRedo,\n  onEditorSave,\n  onEditorSimulate,\n  onEditorUndo,\n  onEditorValidate,\n  onPaletteSearch,\n});",
+        "doc": "Bind this module's handlers to the elements that name them.",
+        "form": "statements",
+        "language": "javascript",
+        "name": "bind_markup_handlers",
+        "packages": [],
+        "params": [],
+        "returns": "Void"
+      },
+      "type": "custom/code",
+      "x": 750,
+      "y": 0
+    }
+  ],
+  "style": "event-driven",
+  "variables": [
+    {
+      "id": "v_mu4ytvz32kxns3631",
+      "initial": null,
+      "name": "editorState",
+      "scope": "module",
+      "type": "Any"
+    }
+  ]
+}

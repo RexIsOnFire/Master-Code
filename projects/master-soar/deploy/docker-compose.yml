@@ -1,0 +1,228 @@
+# Master SOAR - Phase 1, one workstation.
+#
+#   docker compose up -d                        the platform
+#   docker compose --profile ai-local up -d     ... and a local model runner
+#
+# Seven containers, two of them optional. The only port published to the host is
+# 8443. Everything else lives on internal networks, and the sandbox network has
+# no gateway at all - that is the isolation boundary, not a setting.
+#
+# Generated source is expected at ../build/generated (run Generate in Master
+# Code first). Nothing in this file requires Azure, Kubernetes or a cloud
+# account.
+
+name: master-soar
+
+# Built from the passwords, never repeated alongside them.
+x-db: &db
+  SOAR_DATABASE_URL: postgresql://soar_app:${SOAR_APP_PG_PASSWORD}@postgres:5432/soar?sslmode=require
+  SOAR_REDIS_URL: redis://:${SOAR_REDIS_PASSWORD}@redis:6379/0
+
+x-app: &app
+  build:
+    context: ..
+    dockerfile: deploy/Dockerfile
+  env_file: [.env]
+  restart: unless-stopped
+  read_only: true
+  security_opt: ["no-new-privileges:true"]
+  tmpfs: ["/tmp:rw,noexec,nosuid,size=64m"]
+  depends_on:
+    postgres: {condition: service_healthy}
+    redis: {condition: service_healthy}
+
+networks:
+  # Inbound. Only the api sits here, and only 8443 is published.
+  edge:
+  # Outbound. The worker and the ingest role reach vendor APIs and threat feeds
+  # from here - that is the entire job of a connector. They were previously on
+  # core alone, which is internal: true, so every outbound fetch failed to
+  # resolve DNS and every feed reported itself broken.
+  egress:
+  core:
+    internal: true
+  # No gateway, deliberately. This is the isolation boundary, not a setting.
+  sandbox:
+    internal: true
+
+volumes:
+  pgdata:
+  redisdata:
+  objects:
+  keys:
+  ollama:
+
+services:
+  migrate:
+    <<: *app
+    command: ["python", "-m", "soar.storage.migrate"]
+    environment:
+      # The one service that connects as soar_migrate: it owns the DDL, and the
+      # runtime roles deliberately cannot execute any.
+      #
+      # Both names are set because migrate.py prefers SOAR_MIGRATE_DATABASE_URL
+      # and falls back to SOAR_DATABASE_URL. Setting only the second lets a stale
+      # value left in .env win silently, which surfaces as an authentication
+      # failure against a password that looks correct everywhere you check.
+      SOAR_MIGRATE_DATABASE_URL: postgresql://soar_migrate:${SOAR_PG_PASSWORD}@postgres:5432/soar?sslmode=require
+      SOAR_DATABASE_URL: postgresql://soar_migrate:${SOAR_PG_PASSWORD}@postgres:5432/soar?sslmode=require
+    networks: [core]
+    restart: "no"
+
+  api:
+    <<: *app
+    command: ["python", "-m", "soar.main"]
+    environment:
+      <<: *db
+      SOAR_ROLE: serve
+      SOAR_BIND_HOST: 0.0.0.0
+      SOAR_BIND_PORT: "8443"
+    ports: ["127.0.0.1:8443:8443"]
+    networks: [edge, core]
+    volumes:
+      - objects:/data/objects
+      - keys:/data/keys:ro
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+      postgres: {condition: service_healthy}
+      redis: {condition: service_healthy}
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request;urllib.request.urlopen('http://127.0.0.1:8443/healthz')"]
+      interval: 15s
+      timeout: 3s
+      retries: 5
+
+  worker:
+    <<: *app
+    command: ["python", "-m", "soar.main"]
+    environment:
+      <<: *db
+      SOAR_ROLE: worker
+      SOAR_WORKER_POOL: default
+      SOAR_WORKER_CONCURRENCY: "2"
+    networks: [core, egress]
+    volumes:
+      - objects:/data/objects
+    deploy:
+      resources:
+        limits: {cpus: "2.0", memory: 1g}
+
+  sandbox:
+    # Off by default, and honestly so.
+    #
+    # handle_job reads the command definition from Postgres, and this pool has no
+    # route to Postgres - which is the isolation property, not an oversight. The
+    # two cannot both be true, so until the sandbox receives its work entirely
+    # over Redis and returns the result the same way, starting it only produces a
+    # container that restarts for ever.
+    #
+    # Nothing routes here yet: choose_executor sends only untrusted commands to
+    # this pool, and no untrusted command is installed by default.
+    #
+    #   docker compose --profile sandbox up -d   once that path exists
+    profiles: ["sandbox"]
+    # Deliberately NOT built from the shared anchor, because the anchor carries
+    # env_file: [.env] - and .env holds the root key, the migrate DSN and every
+    # password. Handing all of that to the pool that runs untrusted code would
+    # make the isolation boundary a comment rather than a fact. This service is
+    # given exactly what it needs, by name.
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    command: ["python", "-m", "soar.main"]
+    restart: unless-stopped
+    read_only: true
+    security_opt: ["no-new-privileges:true"]
+    tmpfs: ["/tmp:rw,noexec,nosuid,size=64m"]
+    depends_on:
+      redis: {condition: service_healthy}
+    environment:
+      SOAR_ROLE: worker
+      SOAR_WORKER_POOL: sandbox
+      SOAR_WORKER_CONCURRENCY: "1"
+      <<: *db
+      SOAR_JOB_SIGNING_KEY: ${SOAR_JOB_SIGNING_KEY}
+      SOAR_LOG_LEVEL: ${SOAR_LOG_LEVEL:-info}
+      # No SOAR_ROOT_KEY. The sandbox pool opens no secrets provider and is
+      # issued no credential lease, so there is nothing for it to decrypt.
+    networks: [sandbox]
+    cap_drop: ["ALL"]
+    user: "65534:65534"
+    deploy:
+      resources:
+        # pids goes here rather than in pids_limit: Compose treats the two as
+        # one setting and refuses the project if both are set and differ.
+        limits: {cpus: "1.0", memory: 512m, pids: 64}
+
+  ingest:
+    <<: *app
+    command: ["python", "-m", "soar.main"]
+    environment:
+      <<: *db
+      SOAR_ROLE: ingest
+    networks: [core, egress]
+
+  postgres:
+    # Debian rather than alpine: the alpine image carries no openssl, and the
+    # role script below needs it to generate the server certificate. Without TLS
+    # the platform cannot connect at all - every DSN requires it.
+    image: postgres:16
+    environment:
+      POSTGRES_DB: soar
+      POSTGRES_USER: soar_migrate
+      POSTGRES_PASSWORD: ${SOAR_PG_PASSWORD}
+      # Read by the role script at first boot, and by nothing afterwards.
+      SOAR_APP_PG_PASSWORD: ${SOAR_APP_PG_PASSWORD}
+      SOAR_WORKER_PG_PASSWORD: ${SOAR_WORKER_PG_PASSWORD}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      # The wrapper is what runs; the .sql sits outside initdb.d so it is not
+      # also run bare, without the variables it needs.
+      - ./postgres-init.sh:/docker-entrypoint-initdb.d/10-roles.sh:ro
+      - ./postgres-init.sql:/opt/soar/roles.sql:ro
+    networks: [core]
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U soar_migrate -d soar"]
+      interval: 10s
+      timeout: 3s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    command:
+      - redis-server
+      - --requirepass
+      - ${SOAR_REDIS_PASSWORD}
+      - --appendonly
+      - "yes"
+      - --appendfsync
+      - everysec
+    volumes: [redisdata:/data]
+    networks: [core, sandbox]
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "--no-auth-warning", "-a", "${SOAR_REDIS_PASSWORD}", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 10
+
+  ollama:
+    image: ollama/ollama:latest
+    profiles: ["ai-local"]
+    volumes: ["ollama:/root/.ollama"]
+    networks: [core]
+    restart: unless-stopped
+
+  backup:
+    image: postgres:16
+    profiles: ["ops"]
+    entrypoint: ["/bin/sh", "/backup.sh"]
+    env_file: [.env]
+    volumes:
+      - ./backup.sh:/backup.sh:ro
+      - objects:/data/objects:ro
+      - keys:/data/keys:ro
+      - ./backups:/backups
+    networks: [core]
+    restart: "no"

@@ -1,0 +1,286 @@
+{
+  "edges": [
+    {
+      "from": {
+        "node": "n_mu4ytvym4uc0847p",
+        "port": "result"
+      },
+      "id": "e_mu4ytvym4wn1243m",
+      "to": {
+        "node": "n_mu4ytvym4vrj4qy6",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvym4thp8i9b",
+        "port": "out"
+      },
+      "id": "e_mu4ytvym4x1n7z1s",
+      "to": {
+        "node": "n_mu4ytvym4uc0847p",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvym4uc0847p",
+        "port": "out"
+      },
+      "id": "e_mu4ytvym4yikl7j3",
+      "to": {
+        "node": "n_mu4ytvym4vrj4qy6",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvym4zg4c9aq",
+        "port": "p:dsn"
+      },
+      "id": "e_mu4ytvym51eiji6g",
+      "to": {
+        "node": "n_mu4ytvym50rz74vy",
+        "port": "p:dsn"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvym50rz74vy",
+        "port": "result"
+      },
+      "id": "e_mu4ytvym532nu521",
+      "to": {
+        "node": "n_mu4ytvym52mtypw3",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvym4zg4c9aq",
+        "port": "out"
+      },
+      "id": "e_mu4ytvym54n8x9de",
+      "to": {
+        "node": "n_mu4ytvym50rz74vy",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvym50rz74vy",
+        "port": "out"
+      },
+      "id": "e_mu4ytvym55ompq5l",
+      "to": {
+        "node": "n_mu4ytvym52mtypw3",
+        "port": "in"
+      }
+    }
+  ],
+  "fileId": "file_mu4ytvym4rpie6qy",
+  "id": "g_mu4ytvym4s8q9ekh",
+  "name": "schema and migrations",
+  "nodes": [
+    {
+      "id": "n_mu4ytvym4thp8i9b",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "doc": "Ordered, immutable migrations. See docs/data-model.md for why each table looks the way it does.",
+        "isAsync": false,
+        "name": "migrations",
+        "params": [],
+        "returns": "List<Map<string, Any>>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvym4uc0847p",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "List<Map<string, Any>>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "from soar.storage.schema_ops import extra_migrations\n\nreturn [\n    {\n        \"version\": 1,\n        \"name\": \"foundation\",\n        \"sql\": [\n            \"CREATE EXTENSION IF NOT EXISTS citext\",\n            \"\"\"CREATE TABLE organisation (\n                 id text PRIMARY KEY,\n                 name text NOT NULL,\n                 slug text NOT NULL UNIQUE,\n                 settings jsonb NOT NULL DEFAULT '{}',\n                 status text NOT NULL DEFAULT 'active',\n                 created_at timestamptz NOT NULL DEFAULT now())\"\"\",\n            \"\"\"CREATE TABLE app_user (\n                 id text PRIMARY KEY,\n                 org_id text NOT NULL REFERENCES organisation(id),\n                 email citext NOT NULL,\n                 display_name text NOT NULL,\n                 password_hash text NOT NULL,\n                 mfa_secret bytea,\n                 mfa_enrolled_at timestamptz,\n                 status text NOT NULL DEFAULT 'active',\n                 failed_attempts int NOT NULL DEFAULT 0,\n                 last_login_at timestamptz,\n                 created_at timestamptz NOT NULL DEFAULT now(),\n                 UNIQUE (org_id, email))\"\"\",\n            \"\"\"CREATE TABLE role (\n                 id text PRIMARY KEY,\n                 org_id text NOT NULL REFERENCES organisation(id),\n                 name text NOT NULL,\n                 description text,\n                 builtin boolean NOT NULL DEFAULT false,\n                 UNIQUE (org_id, name))\"\"\",\n            \"\"\"CREATE TABLE role_permission (\n                 role_id text NOT NULL REFERENCES role(id) ON DELETE CASCADE,\n                 permission text NOT NULL,\n                 PRIMARY KEY (role_id, permission))\"\"\",\n            \"\"\"CREATE TABLE user_role (\n                 user_id text NOT NULL REFERENCES app_user(id) ON DELETE CASCADE,\n                 role_id text NOT NULL REFERENCES role(id) ON DELETE CASCADE,\n                 granted_by text, granted_at timestamptz NOT NULL DEFAULT now(),\n                 PRIMARY KEY (user_id, role_id))\"\"\",\n        ],\n    },\n    {\n        \"version\": 2,\n        \"name\": \"incidents\",\n        \"sql\": [\n            \"\"\"CREATE TABLE event (\n                 id text PRIMARY KEY,\n                 org_id text NOT NULL,\n                 source_id text NOT NULL,\n                 received_at timestamptz NOT NULL DEFAULT now(),\n                 raw jsonb NOT NULL,\n                 raw_sha256 bytea NOT NULL,\n                 signature_verified boolean NOT NULL DEFAULT false,\n                 dedupe_key text)\"\"\",\n            \"\"\"CREATE TABLE incident (\n                 id text PRIMARY KEY,\n                 org_id text NOT NULL,\n                 number bigint NOT NULL,\n                 title text NOT NULL,\n                 description text,\n                 severity text NOT NULL,\n                 priority text,\n                 status text NOT NULL DEFAULT 'new',\n                 resolution text,\n                 assignee_id text,\n                 team_id text,\n                 created_at timestamptz NOT NULL DEFAULT now(),\n                 acknowledged_at timestamptz,\n                 contained_at timestamptz,\n                 closed_at timestamptz,\n                 sla_ack_due timestamptz,\n                 sla_resolve_due timestamptz,\n                 technique_ids text[] NOT NULL DEFAULT '{}',\n                 tags text[] NOT NULL DEFAULT '{}',\n                 ai_risk_score smallint,\n                 UNIQUE (org_id, number))\"\"\",\n            \"\"\"CREATE TABLE alert (\n                 id text PRIMARY KEY,\n                 org_id text NOT NULL,\n                 event_id text REFERENCES event(id),\n                 source text NOT NULL,\n                 vendor_alert_id text NOT NULL,\n                 title text NOT NULL,\n                 description text,\n                 severity text NOT NULL,\n                 confidence smallint,\n                 category text,\n                 technique_ids text[] NOT NULL DEFAULT '{}',\n                 observed_at timestamptz NOT NULL,\n                 ingested_at timestamptz NOT NULL DEFAULT now(),\n                 status text NOT NULL DEFAULT 'new',\n                 incident_id text REFERENCES incident(id),\n                 entities jsonb NOT NULL DEFAULT '[]',\n                 indicators jsonb NOT NULL DEFAULT '[]',\n                 normalisation_version int NOT NULL DEFAULT 1,\n                 UNIQUE (org_id, source, vendor_alert_id))\"\"\",\n            \"\"\"CREATE TABLE timeline_entry (\n                 id text PRIMARY KEY,\n                 org_id text NOT NULL,\n                 incident_id text NOT NULL REFERENCES incident(id) ON DELETE CASCADE,\n                 at timestamptz NOT NULL DEFAULT now(),\n                 seq bigint NOT NULL,\n                 kind text NOT NULL,\n                 actor_kind text NOT NULL,\n                 actor_id text,\n                 summary text NOT NULL,\n                 detail jsonb NOT NULL DEFAULT '{}',\n                 execution_id text, step_id text, ai_session_id text,\n                 UNIQUE (incident_id, seq))\"\"\",\n            \"CREATE INDEX incident_board ON incident (org_id, status, severity, created_at DESC)\",\n            \"CREATE INDEX alert_queue ON alert (org_id, status, observed_at DESC)\",\n        ],\n    },\n    {\n        \"version\": 3,\n        \"name\": \"automation\",\n        \"sql\": [\n            \"\"\"CREATE TABLE credential (\n                 id text PRIMARY KEY,\n                 org_id text NOT NULL,\n                 name text NOT NULL,\n                 kind text NOT NULL,\n                 ciphertext bytea, nonce bytea, wrapped_key bytea,\n                 key_version int NOT NULL DEFAULT 1,\n                 provider text NOT NULL DEFAULT 'local',\n                 external_ref text,\n                 owner_user_id text, purpose text,\n                 rotation_due_at timestamptz, last_used_at timestamptz,\n                 created_at timestamptz NOT NULL DEFAULT now(),\n                 UNIQUE (org_id, name))\"\"\",\n            \"\"\"CREATE TABLE integration (\n                 id text PRIMARY KEY,\n                 org_id text NOT NULL,\n                 connector_id text NOT NULL,\n                 connector_version text NOT NULL,\n                 name text NOT NULL,\n                 config jsonb NOT NULL DEFAULT '{}',\n                 credential_id text REFERENCES credential(id),\n                 enabled boolean NOT NULL DEFAULT true,\n                 health text NOT NULL DEFAULT 'unknown',\n                 last_check_at timestamptz, last_error text,\n                 worker_pool text NOT NULL DEFAULT 'default',\n                 egress_allowlist text[] NOT NULL DEFAULT '{}',\n                 UNIQUE (org_id, name))\"\"\",\n            \"\"\"CREATE TABLE command (\n                 id text PRIMARY KEY, org_id text,\n                 key text NOT NULL, name text NOT NULL, category text,\n                 integration_id text REFERENCES integration(id),\n                 trust_level text NOT NULL DEFAULT 'untrusted',\n                 current_version_id text,\n                 created_by text, deprecated boolean NOT NULL DEFAULT false,\n                 UNIQUE (org_id, key))\"\"\",\n            \"\"\"CREATE TABLE command_version (\n                 id text PRIMARY KEY,\n                 command_id text NOT NULL REFERENCES command(id) ON DELETE CASCADE,\n                 version int NOT NULL, state text NOT NULL DEFAULT 'draft',\n                 kind text NOT NULL,\n                 input_schema jsonb NOT NULL, output_schema jsonb NOT NULL,\n                 implementation jsonb NOT NULL,\n                 required_permissions text[] NOT NULL DEFAULT '{}',\n                 required_capabilities text[] NOT NULL DEFAULT '{}',\n                 auth jsonb NOT NULL DEFAULT '[]',\n                 timeout_ms int NOT NULL DEFAULT 30000,\n                 risk_level text NOT NULL DEFAULT 'low',\n                 effect text NOT NULL DEFAULT 'read',\n                 content_sha256 bytea NOT NULL,\n                 signature bytea, publisher text,\n                 created_by text, published_at timestamptz, published_by text,\n                 UNIQUE (command_id, version))\"\"\",\n            \"\"\"CREATE TABLE playbook (\n                 id text PRIMARY KEY, org_id text NOT NULL,\n                 key text NOT NULL, name text NOT NULL, description text,\n                 category text, current_version_id text, owner_id text,\n                 technique_ids text[] NOT NULL DEFAULT '{}',\n                 UNIQUE (org_id, key))\"\"\",\n            \"\"\"CREATE TABLE playbook_version (\n                 id text PRIMARY KEY,\n                 playbook_id text NOT NULL REFERENCES playbook(id) ON DELETE CASCADE,\n                 version int NOT NULL, state text NOT NULL DEFAULT 'draft',\n                 definition jsonb NOT NULL, input_schema jsonb NOT NULL DEFAULT '{}',\n                 content_sha256 bytea NOT NULL,\n                 created_by text, created_at timestamptz NOT NULL DEFAULT now(),\n                 published_by text, published_at timestamptz,\n                 test_results jsonb, notes text,\n                 UNIQUE (playbook_id, version))\"\"\",\n            \"\"\"CREATE TABLE trigger (\n                 id text PRIMARY KEY, org_id text NOT NULL,\n                 kind text NOT NULL,\n                 playbook_id text NOT NULL REFERENCES playbook(id),\n                 condition jsonb NOT NULL DEFAULT '{}',\n                 enabled boolean NOT NULL DEFAULT true,\n                 dedupe_window_s int NOT NULL DEFAULT 0,\n                 created_by text)\"\"\",\n            \"\"\"CREATE TABLE execution (\n                 id text PRIMARY KEY, org_id text NOT NULL,\n                 label text NOT NULL,\n                 playbook_id text NOT NULL, playbook_version_id text NOT NULL,\n                 content_sha256 bytea NOT NULL,\n                 incident_id text, case_id text,\n                 trigger_kind text NOT NULL, trigger_id text,\n                 initiator_kind text NOT NULL, initiator_id text,\n                 parent_execution_id text, depth smallint NOT NULL DEFAULT 0,\n                 mode text NOT NULL DEFAULT 'live',\n                 status text NOT NULL DEFAULT 'queued',\n                 inputs jsonb NOT NULL DEFAULT '{}',\n                 outputs jsonb NOT NULL DEFAULT '{}',\n                 variables jsonb NOT NULL DEFAULT '{}',\n                 started_at timestamptz, finished_at timestamptz,\n                 duration_ms int, step_budget_used int NOT NULL DEFAULT 0,\n                 error jsonb, worker_pool text,\n                 UNIQUE (org_id, label))\"\"\",\n            \"\"\"CREATE TABLE execution_step (\n                 id text PRIMARY KEY, org_id text NOT NULL,\n                 execution_id text NOT NULL REFERENCES execution(id) ON DELETE CASCADE,\n                 node_id text NOT NULL, sequence int NOT NULL,\n                 attempt smallint NOT NULL DEFAULT 1,\n                 node_kind text NOT NULL, command_version_id text,\n                 integration_id text,\n                 status text NOT NULL DEFAULT 'pending',\n                 input jsonb, output jsonb, logs jsonb, error jsonb,\n                 started_at timestamptz, finished_at timestamptz, duration_ms int,\n                 worker_id text, job_id text, approval_id text, ai_turn_id text,\n                 retry_of_step_id text, is_compensation boolean NOT NULL DEFAULT false,\n                 limits_applied jsonb NOT NULL DEFAULT '{}',\n                 UNIQUE (execution_id, node_id, attempt))\"\"\",\n            \"\"\"CREATE TABLE approval (\n                 id text PRIMARY KEY, org_id text NOT NULL,\n                 execution_id text, step_id text, incident_id text,\n                 requested_by_kind text NOT NULL, requested_by_id text,\n                 action_key text NOT NULL, action_summary text NOT NULL,\n                 risk_level text NOT NULL,\n                 payload jsonb NOT NULL DEFAULT '{}',\n                 policy_id text, required_permission text,\n                 required_approvals smallint NOT NULL DEFAULT 1,\n                 separation_of_duty boolean NOT NULL DEFAULT true,\n                 status text NOT NULL DEFAULT 'pending',\n                 nonce text NOT NULL,\n                 expires_at timestamptz NOT NULL, decided_at timestamptz)\"\"\",\n            \"\"\"CREATE TABLE approval_decision (\n                 approval_id text NOT NULL REFERENCES approval(id) ON DELETE CASCADE,\n                 decider_id text NOT NULL, decision text NOT NULL, reason text,\n                 step_up_satisfied boolean NOT NULL DEFAULT false,\n                 decided_at timestamptz NOT NULL DEFAULT now(),\n                 PRIMARY KEY (approval_id, decider_id))\"\"\",\n        ],\n    },\n    {\n        \"version\": 4,\n        \"name\": \"intel-and-audit\",\n        \"sql\": [\n            \"\"\"CREATE TABLE indicator (\n                 id text PRIMARY KEY, org_id text NOT NULL,\n                 type text NOT NULL, value text NOT NULL,\n                 value_normalised text NOT NULL,\n                 first_seen timestamptz NOT NULL DEFAULT now(),\n                 last_seen timestamptz NOT NULL DEFAULT now(),\n                 sighting_count bigint NOT NULL DEFAULT 0,\n                 verdict text NOT NULL DEFAULT 'unknown',\n                 confidence smallint, score smallint, tlp text,\n                 expires_at timestamptz, tags text[] NOT NULL DEFAULT '{}',\n                 is_whitelisted boolean NOT NULL DEFAULT false,\n                 UNIQUE (org_id, type, value_normalised))\"\"\",\n            \"\"\"CREATE TABLE sighting (\n                 id text PRIMARY KEY, org_id text NOT NULL,\n                 indicator_id text NOT NULL REFERENCES indicator(id) ON DELETE CASCADE,\n                 at timestamptz NOT NULL DEFAULT now(),\n                 context_kind text NOT NULL, context_id text,\n                 source text, verdict_at_time text, raw jsonb)\"\"\",\n            \"\"\"CREATE TABLE enrichment (\n                 id text PRIMARY KEY, org_id text NOT NULL,\n                 indicator_id text NOT NULL REFERENCES indicator(id) ON DELETE CASCADE,\n                 provider text NOT NULL,\n                 requested_at timestamptz NOT NULL DEFAULT now(),\n                 expires_at timestamptz NOT NULL,\n                 verdict text, score smallint,\n                 raw jsonb, normalised jsonb, execution_id text,\n                 UNIQUE (org_id, indicator_id, provider))\"\"\",\n            \"\"\"CREATE TABLE host (\n                 id text PRIMARY KEY, org_id text NOT NULL,\n                 hostname text NOT NULL, fqdn text, os text, os_version text,\n                 ip_addresses inet[] NOT NULL DEFAULT '{}',\n                 criticality text NOT NULL DEFAULT 'normal',\n                 owner_user_id text, site text,\n                 agent_ids jsonb NOT NULL DEFAULT '{}',\n                 isolated boolean NOT NULL DEFAULT false, isolated_at timestamptz,\n                 last_seen_at timestamptz,\n                 UNIQUE (org_id, hostname))\"\"\",\n            \"\"\"CREATE TABLE identity_entity (\n                 id text PRIMARY KEY, org_id text NOT NULL,\n                 upn text NOT NULL, display_name text, email text, department text,\n                 privileged boolean NOT NULL DEFAULT false,\n                 mfa_enrolled boolean, status text, risk_score smallint,\n                 external_ids jsonb NOT NULL DEFAULT '{}',\n                 UNIQUE (org_id, upn))\"\"\",\n            \"\"\"CREATE TABLE incident_entity (\n                 incident_id text NOT NULL REFERENCES incident(id) ON DELETE CASCADE,\n                 entity_kind text NOT NULL, entity_id text NOT NULL,\n                 role text NOT NULL DEFAULT 'related',\n                 added_by text, added_at timestamptz NOT NULL DEFAULT now(),\n                 PRIMARY KEY (incident_id, entity_kind, entity_id))\"\"\",\n            \"\"\"CREATE TABLE incident_indicator (\n                 incident_id text NOT NULL REFERENCES incident(id) ON DELETE CASCADE,\n                 indicator_id text NOT NULL REFERENCES indicator(id) ON DELETE CASCADE,\n                 role text NOT NULL DEFAULT 'related',\n                 added_by text, added_at timestamptz NOT NULL DEFAULT now(),\n                 PRIMARY KEY (incident_id, indicator_id))\"\"\",\n            \"\"\"CREATE TABLE mitre_technique (\n                 id text PRIMARY KEY, tactic text NOT NULL, name text NOT NULL,\n                 description text, platforms text[], revoked boolean NOT NULL DEFAULT false,\n                 version text)\"\"\",\n            \"\"\"CREATE TABLE audit_event (\n                 id text PRIMARY KEY, org_id text NOT NULL,\n                 at timestamptz NOT NULL DEFAULT now(),\n                 seq bigint NOT NULL, stream text NOT NULL,\n                 actor_kind text NOT NULL, actor_id text, actor_label text,\n                 on_behalf_of_id text,\n                 action text NOT NULL,\n                 target_kind text, target_id text, target_label text,\n                 source_ip inet, user_agent text, session_id text,\n                 correlation_id text, execution_id text, approval_id text,\n                 ai_session_id text,\n                 before jsonb, after jsonb,\n                 result text NOT NULL, reason text,\n                 prev_hash bytea, hash bytea NOT NULL,\n                 UNIQUE (stream, seq))\"\"\",\n            \"CREATE INDEX audit_by_target ON audit_event (org_id, target_kind, target_id, at DESC)\",\n        ],\n    },\n    {\n        \"version\": 5,\n        \"name\": \"least-privilege-roles\",\n        \"sql\": [\n            \"REVOKE UPDATE, DELETE, TRUNCATE ON audit_event FROM PUBLIC\",\n            \"ALTER TABLE incident ENABLE ROW LEVEL SECURITY\",\n            \"ALTER TABLE alert ENABLE ROW LEVEL SECURITY\",\n            \"ALTER TABLE execution ENABLE ROW LEVEL SECURITY\",\n            \"ALTER TABLE credential ENABLE ROW LEVEL SECURITY\",\n            \"\"\"CREATE POLICY org_isolation ON incident USING\n                 (org_id = current_setting('soar.org_id', true))\"\"\",\n            \"\"\"CREATE POLICY org_isolation ON alert USING\n                 (org_id = current_setting('soar.org_id', true))\"\"\",\n            \"\"\"CREATE POLICY org_isolation ON execution USING\n                 (org_id = current_setting('soar.org_id', true))\"\"\",\n            \"\"\"CREATE POLICY org_isolation ON credential USING\n                 (org_id = current_setting('soar.org_id', true))\"\"\",\n        ],\n    },\n] + extra_migrations()",
+        "doc": "Ordered, immutable migrations. See docs/data-model.md for why each table looks the way it does.",
+        "form": "statements",
+        "language": "python",
+        "name": "migration_list",
+        "packages": [],
+        "params": [],
+        "returns": "List<Map<string, Any>>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvym4vrj4qy6",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvym4zg4c9aq",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:dsn",
+          "name": "dsn",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "doc": "Run pending migrations under the migrate role. The application roles have no DDL grant, which is why this is a separate entry point and not something the api does at boot.",
+        "isAsync": false,
+        "name": "apply_migrations",
+        "params": [
+          {
+            "name": "dsn",
+            "type": "string"
+          }
+        ],
+        "returns": "i64",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvym50rz74vy",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:dsn",
+          "name": "dsn",
+          "type": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "i64"
+        }
+      ],
+      "props": {
+        "capabilities": [
+          "net"
+        ],
+        "code": "import psycopg\n\napplied = 0\nwith psycopg.connect(dsn, autocommit=False) as conn:\n    with conn.cursor() as cur:\n        cur.execute(\n            \"CREATE TABLE IF NOT EXISTS migration (\"\n            \" version int PRIMARY KEY, name text NOT NULL,\"\n            \" applied_at timestamptz NOT NULL DEFAULT now())\"\n        )\n        cur.execute(\"SELECT version FROM migration\")\n        done = {row[0] for row in cur.fetchall()}\n        for migration in migrations():\n            if migration[\"version\"] in done:\n                continue\n            for statement in migration[\"sql\"]:\n                cur.execute(statement)\n            cur.execute(\n                \"INSERT INTO migration (version, name) VALUES (%s, %s)\",\n                (migration[\"version\"], migration[\"name\"]),\n            )\n            applied += 1\n    conn.commit()\nreturn applied",
+        "doc": "Run pending migrations under the migrate role. The application roles have no DDL grant, which is why this is a separate entry point and not something the api does at boot.",
+        "form": "statements",
+        "language": "python",
+        "name": "run_pending_migrations",
+        "packages": [
+          {
+            "name": "psycopg[binary]",
+            "version": "3.2.*"
+          }
+        ],
+        "params": [
+          {
+            "name": "dsn",
+            "type": "string"
+          }
+        ],
+        "returns": "i64"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvym52mtypw3",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 130
+    }
+  ],
+  "style": "procedural",
+  "variables": []
+}

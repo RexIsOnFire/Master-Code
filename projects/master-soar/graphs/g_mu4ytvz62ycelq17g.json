@@ -1,0 +1,959 @@
+{
+  "edges": [
+    {
+      "from": {
+        "node": "n_mu4ytvz62yea5wwn3",
+        "port": "result"
+      },
+      "id": "e_mu4ytvz62ygc21loh",
+      "to": {
+        "node": "n_mu4ytvz62yf8ppp9o",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz62ydxvpjg8",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz62yhn10sd3",
+      "to": {
+        "node": "n_mu4ytvz62yea5wwn3",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz62yea5wwn3",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz62yiirsf3z",
+      "to": {
+        "node": "n_mu4ytvz62yf8ppp9o",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz62yk6dgity",
+        "port": "result"
+      },
+      "id": "e_mu4ytvz62ym89r7sq",
+      "to": {
+        "node": "n_mu4ytvz62yluv1s5g",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz62yjj91rl3",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz62ynunm715",
+      "to": {
+        "node": "n_mu4ytvz62yk6dgity",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz62yk6dgity",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz62yo2c07dt",
+      "to": {
+        "node": "n_mu4ytvz62yluv1s5g",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz62yrxxxr7o",
+        "port": "result"
+      },
+      "id": "e_mu4ytvz62yug6dbqo",
+      "to": {
+        "node": "n_mu4ytvz62ytr7wepy",
+        "port": "actual"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz62ysxf5lxu",
+        "port": "value"
+      },
+      "id": "e_mu4ytvz62yv1i4y2t",
+      "to": {
+        "node": "n_mu4ytvz62ytr7wepy",
+        "port": "expected"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz62ypyh9opl",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz62ywhuhnya",
+      "to": {
+        "node": "n_mu4ytvz62yqchuh2e",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz62yqchuh2e",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz62yxwzx7y0",
+      "to": {
+        "node": "n_mu4ytvz62yrxxxr7o",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz62yrxxxr7o",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz62yy9zkrkh",
+      "to": {
+        "node": "n_mu4ytvz62ytr7wepy",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz62z18a5x4a",
+        "port": "result"
+      },
+      "id": "e_mu4ytvz62z4931tbc",
+      "to": {
+        "node": "n_mu4ytvz62z3i9h3ot",
+        "port": "actual"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz62z2j9ozrw",
+        "port": "value"
+      },
+      "id": "e_mu4ytvz62z5sv67zx",
+      "to": {
+        "node": "n_mu4ytvz62z3i9h3ot",
+        "port": "expected"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz62yz1hsmkb",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz62z61f5dvf",
+      "to": {
+        "node": "n_mu4ytvz62z0cqldcv",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz62z0cqldcv",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz62z7631qz2",
+      "to": {
+        "node": "n_mu4ytvz62z18a5x4a",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz62z18a5x4a",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz62z8fuq5wt",
+      "to": {
+        "node": "n_mu4ytvz62z3i9h3ot",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz62zd622aw2",
+        "port": "value"
+      },
+      "id": "e_mu4ytvz62zetldn5m",
+      "to": {
+        "node": "n_mu4ytvz62zcpntnv8",
+        "port": "args"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz62zawq1vvn",
+        "port": "value"
+      },
+      "id": "e_mu4ytvz62zfdpirb9",
+      "to": {
+        "node": "n_mu4ytvz62zcpntnv8",
+        "port": "args#1"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz62zhr8sat7",
+        "port": "value"
+      },
+      "id": "e_mu4ytvz62zimo5g7k",
+      "to": {
+        "node": "n_mu4ytvz62zggzldcc",
+        "port": "args"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz62zb6le08i",
+        "port": "value"
+      },
+      "id": "e_mu4ytvz62zjmfsw6q",
+      "to": {
+        "node": "n_mu4ytvz62zggzldcc",
+        "port": "args#1"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz62zcpntnv8",
+        "port": "result"
+      },
+      "id": "e_mu4ytvz62zl05dzny",
+      "to": {
+        "node": "n_mu4ytvz62zkfnenm1",
+        "port": "actual"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz62zggzldcc",
+        "port": "result"
+      },
+      "id": "e_mu4ytvz62zmb37lka",
+      "to": {
+        "node": "n_mu4ytvz62zkfnenm1",
+        "port": "expected"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz62z9yolhuf",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz62znrv97e8",
+      "to": {
+        "node": "n_mu4ytvz62zcpntnv8",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz62zcpntnv8",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz62zo6tiu15",
+      "to": {
+        "node": "n_mu4ytvz62zggzldcc",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvz62zggzldcc",
+        "port": "out"
+      },
+      "id": "e_mu4ytvz62zpcwncq4",
+      "to": {
+        "node": "n_mu4ytvz62zkfnenm1",
+        "port": "in"
+      }
+    }
+  ],
+  "fileId": "file_mu4ytvz62yb97ji4v",
+  "id": "g_mu4ytvz62ycelq17g",
+  "name": "ingest and egress invariants",
+  "nodes": [
+    {
+      "id": "n_mu4ytvz62ydxvpjg8",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "doc": "Drive check_destination over every destination that must be refused, and return true only if all of them were.",
+        "isAsync": false,
+        "name": "assert_ssrf_refusals",
+        "params": [],
+        "returns": "bool",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvz62yea5wwn3",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "bool"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "from soar.commands.http_command import check_destination\n\nHOSTILE = [\n    \"http://169.254.169.254/latest/meta-data/\",\n    \"http://[fd00:ec2::254]/\",\n    \"http://127.0.0.1:5432/\",\n    \"http://localhost/admin\",\n    \"http://10.0.0.5/\",\n    \"http://192.168.1.1/\",\n    \"http://172.16.0.1/\",\n    \"file:///etc/passwd\",\n    \"gopher://internal/\",\n]\nfor url in HOSTILE:\n    try:\n        check_destination(url, [])\n    except (PermissionError, ValueError):\n        continue\n    return False  # a hostile destination was accepted\nreturn True",
+        "doc": "Drive check_destination over every destination that must be refused, and return true only if all of them were.",
+        "form": "statements",
+        "language": "python",
+        "name": "exercise_ssrf_guard",
+        "packages": [],
+        "params": [],
+        "returns": "bool"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvz62yf8ppp9o",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvz62yjj91rl3",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "doc": "A payload that tries to name a playbook and grant itself permissions must normalise into an ordinary alert with those fields inert.",
+        "isAsync": false,
+        "name": "assert_hostile_payload_inert",
+        "params": [],
+        "returns": "bool",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvz62yk6dgity",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "bool"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "from soar.api.ingest import matches\nfrom soar.normalize.engine import normalise_event\nfrom soar.normalize.mappings import builtin_mappings\n\npayload = {\n    \"id\": \"attacker-1\",\n    \"title\": \"benign looking alert\",\n    \"severity\": \"low\",\n    \"timestamp\": \"2026-09-14T10:00:00Z\",\n    \"playbook\": \"malware.containment\",\n    \"command\": \"crowdstrike.isolate_host\",\n    \"permissions\": [\"admin.platform\"],\n    \"user_id\": \"usr_admin\",\n}\nalert = normalise_event(\"generic.webhook\", payload,\n                        builtin_mappings()[\"generic.webhook\"])\n\n# The hostile fields survive only inside the preserved vendor payload.\n# Nothing in the normalised alert names an action, and no field outside\n# alert[\"vendor\"] mentions them at all.\nfor key in (\"playbook\", \"command\", \"permissions\", \"user_id\"):\n    if key in alert:\n        return False\nif alert[\"vendor\"].get(\"playbook\") != \"malware.containment\":\n    return False  # the raw payload must still be preserved verbatim\n\n# And a trigger only fires on what the SOC configured, over normalised\n# fields - never on a field the payload supplied.\ncondition = {\"type\": \"compare\", \"field\": \"severity\", \"op\": \"gte\", \"value\": \"high\"}\nreturn matches(condition, alert) is False",
+        "doc": "A payload that tries to name a playbook and grant itself permissions must normalise into an ordinary alert with those fields inert.",
+        "form": "statements",
+        "language": "python",
+        "name": "exercise_hostile_ingest",
+        "packages": [],
+        "params": [],
+        "returns": "bool"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvz62yluv1s5g",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvz62ypyh9opl",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "doc": "Invariant 9: every outbound URL is screened after DNS resolution, on the resolved address.",
+        "kind": "unit",
+        "name": "test_ssrf_guard_refuses_metadata_and_private_space"
+      },
+      "type": "test/case",
+      "x": 0,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvz62yqchuh2e",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "text": "The cases this covers, each of which has been a real CVE in some\nautomation platform:\n  http://169.254.169.254/latest/meta-data/   cloud metadata, by address\n  http://metadata.internal/                  metadata, by name\n  http://127.0.0.1:5432/                     loopback to a local service\n  http://10.0.0.5/                           RFC1918\n  file:///etc/passwd                         non-http scheme\n  https://ok.example -> 302 -> 169.254...    redirect after an allowed hop"
+      },
+      "type": "data/comment",
+      "x": 250,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvz62yrxxxr7o",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "args",
+          "name": "arg",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "await": false,
+        "returns": "bool",
+        "target": "assert_ssrf_refusals"
+      },
+      "type": "control/call",
+      "x": 500,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvz62ysxf5lxu",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "value",
+          "name": "value",
+          "type": "bool"
+        }
+      ],
+      "props": {
+        "type": "bool",
+        "value": "true"
+      },
+      "type": "data/literal",
+      "x": 0,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvz62ytr7wepy",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "actual",
+          "name": "actual",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "expected",
+          "name": "expected",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "message": "every non-routable destination must be refused, including after a redirect"
+      },
+      "type": "test/assert-equal",
+      "x": 750,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvz62yz1hsmkb",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "doc": "Invariant 5: an inbound webhook may create an alert and nothing else. It cannot name a playbook, a command, a user or a permission.",
+        "kind": "unit",
+        "name": "test_webhook_cannot_name_a_playbook"
+      },
+      "type": "test/case",
+      "x": 0,
+      "y": 520
+    },
+    {
+      "id": "n_mu4ytvz62z0cqldcv",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "text": "The payload under test contains \"playbook\": \"malware.containment\" and\n\"permissions\": [\"admin.platform\"]. Both are ordinary vendor fields as far\nas normalisation is concerned: they end up in alert[\"vendor\"] and reach no\ndecision anywhere. Automation only happens if a trigger the SOC configured\nmatches the normalised alert."
+      },
+      "type": "data/comment",
+      "x": 250,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvz62z18a5x4a",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "args",
+          "name": "arg",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "await": false,
+        "returns": "bool",
+        "target": "assert_hostile_payload_inert"
+      },
+      "type": "control/call",
+      "x": 500,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvz62z2j9ozrw",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "value",
+          "name": "value",
+          "type": "bool"
+        }
+      ],
+      "props": {
+        "type": "bool",
+        "value": "true"
+      },
+      "type": "data/literal",
+      "x": 0,
+      "y": 650
+    },
+    {
+      "id": "n_mu4ytvz62z3i9h3ot",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "actual",
+          "name": "actual",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "expected",
+          "name": "expected",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "message": "a hostile payload must produce an alert row and no automation of its choosing"
+      },
+      "type": "test/assert-equal",
+      "x": 750,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvz62z9yolhuf",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "doc": "The same observable arriving four ways must produce one indicator row.",
+        "kind": "unit",
+        "name": "test_indicator_normalisation_deduplicates"
+      },
+      "type": "test/case",
+      "x": 0,
+      "y": 780
+    },
+    {
+      "id": "n_mu4ytvz62zawq1vvn",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "value",
+          "name": "value",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "type": "string",
+        "value": "hxxps://Evil[.]Example[.]COM:443/a"
+      },
+      "type": "data/literal",
+      "x": 0,
+      "y": 910
+    },
+    {
+      "id": "n_mu4ytvz62zb6le08i",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "value",
+          "name": "value",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "type": "string",
+        "value": "https://evil.example.com/a"
+      },
+      "type": "data/literal",
+      "x": 0,
+      "y": 1040
+    },
+    {
+      "id": "n_mu4ytvz62zcpntnv8",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "args",
+          "name": "arg",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "dynamic": true,
+          "id": "args#1",
+          "name": "arg",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "await": false,
+        "returns": "string",
+        "target": "normalise_value"
+      },
+      "type": "control/call",
+      "x": 250,
+      "y": 520
+    },
+    {
+      "id": "n_mu4ytvz62zd622aw2",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "value",
+          "name": "value",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "type": "string",
+        "value": "url"
+      },
+      "type": "data/literal",
+      "x": 0,
+      "y": 1170
+    },
+    {
+      "id": "n_mu4ytvz62zggzldcc",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "args",
+          "name": "arg",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "dynamic": true,
+          "id": "args#1",
+          "name": "arg",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "await": false,
+        "returns": "string",
+        "target": "normalise_value"
+      },
+      "type": "control/call",
+      "x": 500,
+      "y": 520
+    },
+    {
+      "id": "n_mu4ytvz62zhr8sat7",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "value",
+          "name": "value",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "type": "string",
+        "value": "url"
+      },
+      "type": "data/literal",
+      "x": 0,
+      "y": 1300
+    },
+    {
+      "id": "n_mu4ytvz62zkfnenm1",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "actual",
+          "name": "actual",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "expected",
+          "name": "expected",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "message": "defanged, uppercased and default-port forms must canonicalise to one value"
+      },
+      "type": "test/assert-equal",
+      "x": 750,
+      "y": 260
+    }
+  ],
+  "style": "procedural",
+  "variables": []
+}

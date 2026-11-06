@@ -1,0 +1,14 @@
+{
+  "files": [
+    {
+      "exports": [],
+      "graphId": "g_mstz34xl3f84n96",
+      "id": "file_mstz34xl204fm7m",
+      "imports": [],
+      "kind": "hybrid",
+      "language": "javascript",
+      "path": "src/main.js",
+      "role": "entry"
+    }
+  ]
+}

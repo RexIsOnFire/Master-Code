@@ -1,0 +1,901 @@
+{
+  "edges": [
+    {
+      "from": {
+        "node": "n_mu4ytvyx1u3hqrbgj",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyx1u5xblryg",
+      "to": {
+        "node": "n_mu4ytvyx1u4vgnomx",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1u2de05j5",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyx1u6xea9dy",
+      "to": {
+        "node": "n_mu4ytvyx1u3hqrbgj",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1u3hqrbgj",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyx1u73jlkqg",
+      "to": {
+        "node": "n_mu4ytvyx1u4vgnomx",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1u8f8n9hn",
+        "port": "p:db"
+      },
+      "id": "e_mu4ytvyx1uau6d48x",
+      "to": {
+        "node": "n_mu4ytvyx1u9ujp5zu",
+        "port": "p:db"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1u8f8n9hn",
+        "port": "p:principal"
+      },
+      "id": "e_mu4ytvyx1ubaiei6c",
+      "to": {
+        "node": "n_mu4ytvyx1u9ujp5zu",
+        "port": "p:principal"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1u8f8n9hn",
+        "port": "p:version_id"
+      },
+      "id": "e_mu4ytvyx1uc2x1sv0",
+      "to": {
+        "node": "n_mu4ytvyx1u9ujp5zu",
+        "port": "p:version_id"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1u8f8n9hn",
+        "port": "p:fixture"
+      },
+      "id": "e_mu4ytvyx1udds1t51",
+      "to": {
+        "node": "n_mu4ytvyx1u9ujp5zu",
+        "port": "p:fixture"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1u9ujp5zu",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyx1ufksu580",
+      "to": {
+        "node": "n_mu4ytvyx1uetqhm3e",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1u8f8n9hn",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyx1ug5hwz6h",
+      "to": {
+        "node": "n_mu4ytvyx1u9ujp5zu",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1u9ujp5zu",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyx1uhiwi15a",
+      "to": {
+        "node": "n_mu4ytvyx1uetqhm3e",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1uifg2ulh",
+        "port": "p:node"
+      },
+      "id": "e_mu4ytvyx1ukke37yz",
+      "to": {
+        "node": "n_mu4ytvyx1ujc1m9dp",
+        "port": "p:node"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1uifg2ulh",
+        "port": "p:kind"
+      },
+      "id": "e_mu4ytvyx1uldpbhmm",
+      "to": {
+        "node": "n_mu4ytvyx1ujc1m9dp",
+        "port": "p:kind"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1uifg2ulh",
+        "port": "p:rendered"
+      },
+      "id": "e_mu4ytvyx1umff7l39",
+      "to": {
+        "node": "n_mu4ytvyx1ujc1m9dp",
+        "port": "p:rendered"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1uifg2ulh",
+        "port": "p:data"
+      },
+      "id": "e_mu4ytvyx1unix3fon",
+      "to": {
+        "node": "n_mu4ytvyx1ujc1m9dp",
+        "port": "p:data"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1uifg2ulh",
+        "port": "p:context"
+      },
+      "id": "e_mu4ytvyx1uos8zu76",
+      "to": {
+        "node": "n_mu4ytvyx1ujc1m9dp",
+        "port": "p:context"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1ujc1m9dp",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyx1uq5lkm9x",
+      "to": {
+        "node": "n_mu4ytvyx1ups8s8kf",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1uifg2ulh",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyx1uri8l4fr",
+      "to": {
+        "node": "n_mu4ytvyx1ujc1m9dp",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1ujc1m9dp",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyx1usyx6wcg",
+      "to": {
+        "node": "n_mu4ytvyx1ups8s8kf",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1utjl3pgi",
+        "port": "p:assertions"
+      },
+      "id": "e_mu4ytvyx1uvfx93gy",
+      "to": {
+        "node": "n_mu4ytvyx1uubny2h2",
+        "port": "p:assertions"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1utjl3pgi",
+        "port": "p:trace"
+      },
+      "id": "e_mu4ytvyx1uwsjfumc",
+      "to": {
+        "node": "n_mu4ytvyx1uubny2h2",
+        "port": "p:trace"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1utjl3pgi",
+        "port": "p:context"
+      },
+      "id": "e_mu4ytvyx1uxng5ejh",
+      "to": {
+        "node": "n_mu4ytvyx1uubny2h2",
+        "port": "p:context"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1utjl3pgi",
+        "port": "p:definition"
+      },
+      "id": "e_mu4ytvyx1uy64m8qm",
+      "to": {
+        "node": "n_mu4ytvyx1uubny2h2",
+        "port": "p:definition"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1uubny2h2",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyx1v08nx96y",
+      "to": {
+        "node": "n_mu4ytvyx1uz69aygk",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1utjl3pgi",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyx1v1rw2kg4",
+      "to": {
+        "node": "n_mu4ytvyx1uubny2h2",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1uubny2h2",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyx1v2crle4l",
+      "to": {
+        "node": "n_mu4ytvyx1uz69aygk",
+        "port": "in"
+      }
+    }
+  ],
+  "fileId": "file_mu4ytvyx1u0gfgdln",
+  "id": "g_mu4ytvyx1u1ys4aji",
+  "name": "simulation",
+  "nodes": [
+    {
+      "id": "n_mu4ytvyx1u2de05j5",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "doc": "The synthetic incident a playbook is tested against when no fixture is given.\n\nDeliberately awkward: a host with two EDR agents, an indicator that one\nprovider calls malicious and another calls clean, and a user who is\nprivileged. A fixture where everything agrees tests nothing.",
+        "isAsync": false,
+        "name": "default_fixture",
+        "params": [],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyx1u3hqrbgj",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "return {\n    \"name\": \"default\",\n    \"incident\": {\n        \"id\": \"inc_FIXTURE\", \"number\": 1,\n        \"title\": \"Suspicious PowerShell on WS-4417\",\n        \"severity\": \"high\", \"status\": \"investigating\",\n        \"technique_ids\": [\"T1059.001\"],\n    },\n    \"alert\": {\n        \"source\": \"crowdstrike.falcon\", \"severity\": \"high\",\n        \"title\": \"Suspicious PowerShell\", \"category\": \"execution\",\n        \"description\": \"powershell -enc <base64> reaching 203.0.113.10\",\n        \"observed_at\": \"2026-09-14T03:11:00Z\",\n    },\n    \"host\": {\n        \"id\": \"host_FIXTURE\", \"hostname\": \"WS-4417\", \"os\": \"Windows 11\",\n        \"criticality\": \"high\", \"isolated\": False,\n        # Two agents on one host: the case that breaks a playbook which\n        # assumes a single EDR.\n        \"agent_ids\": {\"crowdstrike\": \"aid-fixture\", \"defender\": \"mid-fixture\"},\n    },\n    \"user\": {\"id\": \"idn_FIXTURE\", \"upn\": \"j.rivera@example.com\",\n             \"privileged\": True},\n    \"indicator\": {\"type\": \"ipv4\", \"value\": \"203.0.113.10\",\n                  \"verdict\": \"unknown\", \"score\": 0},\n    \"responses\": {\n        \"virustotal.ip_report\": {\"malicious\": 7, \"suspicious\": 2,\n                                 \"harmless\": 51, \"reputation\": -14},\n        \"abuseipdb.check\": {\"abuse_confidence\": 0, \"total_reports\": 0,\n                            \"country\": \"NL\", \"isp\": \"Example BV\"},\n        \"otx.indicator\": {\"pulse_count\": 3, \"pulses\": []},\n        \"misp.search_attribute\": {\"hits\": 0, \"attributes\": []},\n        \"crowdstrike.find_host\": {\"device_ids\": [\"aid-fixture\"]},\n        \"crowdstrike.get_host\": {\"hostname\": \"WS-4417\", \"os\": \"Windows\",\n                                 \"status\": \"normal\",\n                                 \"external_ip\": \"198.51.100.7\"},\n        \"crowdstrike.recent_detections\": {\"detection_ids\": [\"det-1\", \"det-2\"],\n                                          \"count\": 2},\n        \"crowdstrike.isolate_host\": {\"accepted\": True, \"action_id\": \"act-1\"},\n        \"crowdstrike.release_host\": {\"accepted\": True, \"action_id\": \"act-2\"},\n        \"crowdstrike.block_hash\": {\"id\": \"ioc-1\"},\n        \"defender.restrict_app_execution\": {\"action_id\": \"mde-1\",\n                                            \"status\": \"Succeeded\"},\n        \"defender.collect_investigation_package\": {\"action_id\": \"mde-2\"},\n        \"defender.run_antivirus_scan\": {\"action_id\": \"mde-3\"},\n        \"entra.disable_user\": {\"disabled\": True},\n        \"entra.revoke_sessions\": {\"revoked\": True},\n        \"entra.get_signin_logs\": {\"signins\": []},\n        \"m365mail.find_recipients\": {\"recipients\": [], \"delivered_count\": 0},\n        \"m365mail.purge_from_all_mailboxes\": {\"remediation_id\": \"rem-1\",\n                                              \"affected\": 0},\n        \"m365mail.block_sender\": {\"indicator_id\": \"ti-1\"},\n        \"email.send\": {\"message_id\": \"msg-1\", \"accepted\": []},\n        \"servicenow.create_incident\": {\"sys_id\": \"sn-1\", \"number\": \"INC0010001\"},\n        \"slack.post_message\": {\"ts\": \"1.0\", \"ok\": True},\n        \"crowdstrike.quarantine_file\": {\"accepted\": True},\n        \"crowdstrike.run_rtr_command\": {\"cloud_request_id\": \"rtr-1\"},\n        \"sentinel.run_query\": {\"rows\": [], \"row_count\": 0},\n        \"intel.score\": {\"score\": 62, \"verdict\": \"suspicious\"},\n        \"ioc.extract\": {\"indicators\": [{\"type\": \"ipv4\",\n                                        \"value\": \"203.0.113.10\"}],\n                        \"count\": 1},\n    },\n    \"ai\": {\n        \"analyze\": {\"headline\": \"Likely malicious PowerShell\",\n                    \"summary\": \"Encoded command reaching a low-reputation host.\",\n                    \"assessment\": \"malicious\", \"risk_score\": 78,\n                    \"confidence\": 0.74, \"citations\": []},\n        \"classify\": {\"classification\": \"true_positive\", \"confidence\": 0.8,\n                     \"rationale\": \"fixture\"},\n        \"recommend\": {\"actions\": []},\n        \"summarize\": {\"summary\": \"fixture summary\"},\n        \"investigate\": {\"findings\": [], \"risk_score\": 78, \"confidence\": 0.7,\n                        \"tool_calls\": []},\n    },\n    \"approvals\": {\"default\": \"approve\"},\n    \"assertions\": [\n        {\"kind\": \"reached\", \"node_kind\": \"end\"},\n        {\"kind\": \"no_unhandled_error\"},\n    ],\n}",
+        "doc": "The synthetic incident a playbook is tested against when no fixture is given.\n\nDeliberately awkward: a host with two EDR agents, an indicator that one\nprovider calls malicious and another calls clean, and a user who is\nprivileged. A fixture where everything agrees tests nothing.",
+        "form": "statements",
+        "language": "python",
+        "name": "built_in_fixture",
+        "packages": [],
+        "params": [],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyx1u4vgnomx",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyx1u8f8n9hn",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:principal",
+          "name": "principal",
+          "type": "Map<string, Any>"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:version_id",
+          "name": "version_id",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:fixture",
+          "name": "fixture",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "doc": "Run a playbook against a synthetic incident with every command served from a\nfixture, and check its assertions.\n\nThis is the same walk the engine does - the same frontier function, the same\nbranch semantics - with the command layer replaced. Writing a second\ninterpreter would have been easier and would have tested the second\ninterpreter.\n\nNothing here touches the estate: no queue, no credential lease, no vendor. A\nsimulation that could reach a real EDR would be a containment action wearing\na test costume.",
+        "isAsync": false,
+        "name": "run_simulation",
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "principal",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "version_id",
+            "type": "string"
+          },
+          {
+            "name": "fixture",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyx1u9ujp5zu",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:principal",
+          "name": "principal",
+          "type": "Map<string, Any>"
+        },
+        {
+          "direction": "in",
+          "id": "p:version_id",
+          "name": "version_id",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:fixture",
+          "name": "fixture",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "from soar.identity.rbac import require_permission\nfrom soar.playbooks.frontier import next_node, render_inputs\nfrom soar.playbooks.validate import validate_playbook\n\nimport json\nimport time\n\nrequire_permission(principal, \"playbooks.create\")\norg_id = principal[\"org_id\"]\ndata = fixture or default_fixture()\n\nrows = db.query(\n    \"SELECT pv.id, pv.definition, pv.playbook_id FROM playbook_version pv \"\n    \"JOIN playbook p ON p.id = pv.playbook_id \"\n    \"WHERE pv.id = %s AND p.org_id = %s\", [version_id, org_id], org_id,\n)\nif not rows:\n    raise KeyError(\"no such playbook version\")\ndefinition = rows[0][\"definition\"]\n\nproblems = validate_playbook(definition)\nif problems:\n    return {\"passed\": False, \"assertions\": 0,\n            \"failures\": [\"validation: \" + p for p in problems], \"trace\": []}\n\ncontext = {\n    \"incident\": data[\"incident\"], \"alert\": data[\"alert\"],\n    \"host\": data[\"host\"], \"user\": data[\"user\"],\n    \"indicator\": data[\"indicator\"],\n    \"inputs\": data.get(\"inputs\", {}), \"vars\": {}, \"globals\": {},\n    \"steps\": {}, \"execution\": {\"id\": \"exec_SIM\", \"mode\": \"simulation\"},\n}\n\ndone, trace, failures = {}, [], []\nstarted = time.time()\n\nfor _ in range(2000):\n    path = next_node(definition, done, context)\n    if path is None:\n        break\n\n    node_id = path.split(\"/\")[-1]\n    node = definition[\"nodes\"][node_id]\n    kind = node[\"kind\"]\n    rendered = render_inputs(node.get(\"inputs\", {}), context)\n\n    output, error = simulate_node(node, kind, rendered, data, context)\n    if error:\n        failures.append(\"%s: %s\" % (node_id, error))\n        if not node.get(\"on_error\"):\n            trace.append({\"node\": path, \"kind\": kind, \"status\": \"failed\",\n                          \"error\": error})\n            break\n        output = {\"branch\": \"on_error\", \"error\": error}\n\n    done[path] = {\"output\": output}\n    context[\"steps\"][node_id] = {\"output\": output}\n    if node.get(\"output_var\"):\n        context[\"vars\"][node[\"output_var\"]] = output\n        context[node[\"output_var\"]] = output\n    trace.append({\"node\": path, \"kind\": kind, \"status\": \"succeeded\",\n                  \"branch\": output.get(\"branch\"), \"output\": output})\nelse:\n    failures.append(\"simulation did not terminate within 2000 steps\")\n\nchecks = check_assertions(data.get(\"assertions\", []), trace, context, definition)\nfailures.extend(checks[\"failures\"])\n\nresult = {\n    \"passed\": not failures,\n    \"assertions\": checks[\"checked\"],\n    \"failures\": failures,\n    \"steps\": len(trace),\n    \"duration_ms\": int((time.time() - started) * 1000),\n    \"trace\": trace,\n    \"fixture\": data.get(\"name\", \"custom\"),\n}\n\n# The result is stored on the version, because publish() reads it. A\n# simulation whose outcome is not durable would let a passing run from a\n# different definition unlock a publish.\ndb.execute(\n    \"UPDATE playbook_version SET test_results = %s, \"\n    \"state = CASE WHEN state = 'draft' THEN 'testing' ELSE state END \"\n    \"WHERE id = %s\",\n    [json.dumps({k: v for k, v in result.items() if k != \"trace\"}, default=str),\n     version_id], org_id,\n)\nreturn result",
+        "doc": "Run a playbook against a synthetic incident with every command served from a\nfixture, and check its assertions.\n\nThis is the same walk the engine does - the same frontier function, the same\nbranch semantics - with the command layer replaced. Writing a second\ninterpreter would have been easier and would have tested the second\ninterpreter.\n\nNothing here touches the estate: no queue, no credential lease, no vendor. A\nsimulation that could reach a real EDR would be a containment action wearing\na test costume.",
+        "form": "statements",
+        "language": "python",
+        "name": "simulate_playbook",
+        "packages": [],
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "principal",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "version_id",
+            "type": "string"
+          },
+          {
+            "name": "fixture",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyx1uetqhm3e",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyx1uifg2ulh",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:node",
+          "name": "node",
+          "type": "Map<string, Any>"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:kind",
+          "name": "kind",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:rendered",
+          "name": "rendered",
+          "type": "Map<string, Any>"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:data",
+          "name": "data",
+          "type": "Map<string, Any>"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:context",
+          "name": "context",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "doc": "Produce one node's output from the fixture.\n\nA command with no recorded response is a FAILURE, not an empty dict. Silently\nreturning nothing is how a simulation passes for a playbook that would have\nfailed the moment a real command was missing.",
+        "isAsync": false,
+        "name": "simulate_node",
+        "params": [
+          {
+            "name": "node",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "kind",
+            "type": "string"
+          },
+          {
+            "name": "rendered",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "data",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "context",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Any",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvyx1ujc1m9dp",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:node",
+          "name": "node",
+          "type": "Map<string, Any>"
+        },
+        {
+          "direction": "in",
+          "id": "p:kind",
+          "name": "kind",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:rendered",
+          "name": "rendered",
+          "type": "Map<string, Any>"
+        },
+        {
+          "direction": "in",
+          "id": "p:data",
+          "name": "data",
+          "type": "Map<string, Any>"
+        },
+        {
+          "direction": "in",
+          "id": "p:context",
+          "name": "context",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "from soar.integrations.catalog_edr import edr_capability_matrix\nfrom soar.playbooks.frontier import evaluate_expression\nfrom soar.playbooks.template import lookup, render\n\nresponses = data.get(\"responses\", {})\n\nif kind in (\"start\", \"end\", \"set_var\", \"transform\", \"delay\", \"task\",\n            \"incident_update\", \"notification\"):\n    return ({\"branch\": \"next\" if kind != \"end\" else \"__end__\"}, None)\n\nif kind == \"condition\":\n    for clause in node.get(\"when\", []):\n        if evaluate_expression(clause.get(\"if\", \"\"), context):\n            return ({\"branch\": \"then\", \"matched\": clause.get(\"if\")}, None)\n    return ({\"branch\": \"else\"}, None)\n\nif kind == \"switch\":\n    subject = render(node.get(\"subject\", \"\"), context, \"text\")\n    known = subject in node.get(\"cases\", {})\n    return ({\"branch\": \"case\" if known else \"default\", \"subject\": subject}, None)\n\nif kind == \"for_each\":\n    items = lookup(str(node.get(\"items\", \"\")).strip(\"{} \"), context) or []\n    limit = int(node.get(\"max_iterations\", 100))\n    return ({\"count\": min(len(items), limit), \"total\": len(items),\n             \"branch\": \"body\"}, None)\n\nif kind == \"while\":\n    return ({\"iterations\": 0, \"branch\": \"next\"}, None)\n\nif kind == \"parallel\":\n    return ({\"branches\": len(node.get(\"branches\", [])),\n             \"branch\": \"branches\"}, None)\n\nif kind == \"approval\":\n    decision = data.get(\"approvals\", {}).get(\n        node.get(\"action_key\"), data.get(\"approvals\", {}).get(\"default\", \"approve\"))\n    branch = {\"approve\": \"on_approve\", \"reject\": \"on_reject\",\n              \"timeout\": \"on_timeout\"}.get(decision, \"on_approve\")\n    return ({\"branch\": branch, \"simulated_decision\": decision}, None)\n\nif kind == \"ai\":\n    action = node.get(\"action\", \"analyze\")\n    reply = data.get(\"ai\", {}).get(action)\n    if reply is None:\n        return (None, \"the fixture has no AI response for %r\" % action)\n    output = dict(reply)\n    output[\"branch\"] = \"next\"\n    return (output, None)\n\nif kind == \"response\":\n    action = node.get(\"action\")\n    agents = (data.get(\"host\") or {}).get(\"agent_ids\", {})\n    matrix = edr_capability_matrix()\n    capable = [cid for cid, cap in matrix.items()\n               if cap[\"agent_key\"] in agents and action in cap[\"supported\"]]\n    if not capable:\n        # The blind spot the fixture is there to find: an action no EDR on\n        # this host can perform takes the on_unsupported branch, and if the\n        # playbook has not wired one it fails here rather than in production.\n        if node.get(\"on_unsupported\"):\n            return ({\"branch\": \"on_unsupported\", \"reason\": \"no capable EDR\"}, None)\n        return (None,\n                \"no EDR on %s supports %s and on_unsupported is not wired\"\n                % ((data.get(\"host\") or {}).get(\"hostname\"), action))\n    command = matrix[capable[0]][\"supported\"][action][\"command\"]\n    reply = responses.get(command)\n    if reply is None:\n        return (None, \"the fixture has no response for %r\" % command)\n    output = dict(reply)\n    output[\"branch\"] = \"next\"\n    output[\"resolved_command\"] = command\n    return (output, None)\n\nif kind in (\"command\", \"http\", \"script\", \"sub_playbook\"):\n    key = node.get(\"command\") or node.get(\"playbook\") or kind\n    reply = responses.get(key)\n    if reply is None:\n        return (None, \"the fixture has no response for %r\" % key)\n    output = dict(reply) if isinstance(reply, dict) else {\"result\": reply}\n    output[\"branch\"] = \"next\"\n    return (output, None)\n\nreturn ({\"branch\": \"next\"}, None)",
+        "doc": "Produce one node's output from the fixture.\n\nA command with no recorded response is a FAILURE, not an empty dict. Silently\nreturning nothing is how a simulation passes for a playbook that would have\nfailed the moment a real command was missing.",
+        "form": "statements",
+        "language": "python",
+        "name": "simulate_one_node",
+        "packages": [],
+        "params": [
+          {
+            "name": "node",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "kind",
+            "type": "string"
+          },
+          {
+            "name": "rendered",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "data",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "context",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Any"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvyx1ups8s8kf",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvyx1utjl3pgi",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:assertions",
+          "name": "assertions",
+          "type": "List<Map<string, Any>>"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:trace",
+          "name": "trace",
+          "type": "List<Map<string, Any>>"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:context",
+          "name": "context",
+          "type": "Map<string, Any>"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:definition",
+          "name": "definition",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "doc": "Check what the fixture asserts about the run.\n\nThe assertion vocabulary is small on purpose: which node was reached, which\nbranch was taken, what a variable ended up as, and whether anything went\nunhandled. A fixture language rich enough to express anything becomes a\nsecond playbook language nobody maintains.",
+        "isAsync": false,
+        "name": "check_assertions",
+        "params": [
+          {
+            "name": "assertions",
+            "type": "List<Map<string, Any>>"
+          },
+          {
+            "name": "trace",
+            "type": "List<Map<string, Any>>"
+          },
+          {
+            "name": "context",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "definition",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvyx1uubny2h2",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:assertions",
+          "name": "assertions",
+          "type": "List<Map<string, Any>>"
+        },
+        {
+          "direction": "in",
+          "id": "p:trace",
+          "name": "trace",
+          "type": "List<Map<string, Any>>"
+        },
+        {
+          "direction": "in",
+          "id": "p:context",
+          "name": "context",
+          "type": "Map<string, Any>"
+        },
+        {
+          "direction": "in",
+          "id": "p:definition",
+          "name": "definition",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "from soar.playbooks.template import lookup\n\nvisited = {entry[\"node\"].split(\"/\")[-1] for entry in trace}\nkinds = {entry[\"kind\"] for entry in trace}\nfailures = []\nchecked = 0\n\nfor assertion in assertions or []:\n    checked += 1\n    kind = assertion.get(\"kind\")\n\n    if kind == \"reached\":\n        if assertion.get(\"node\") and assertion[\"node\"] not in visited:\n            failures.append(\"expected to reach %s\" % assertion[\"node\"])\n        if assertion.get(\"node_kind\") and assertion[\"node_kind\"] not in kinds:\n            failures.append(\"expected to reach a %s node\"\n                            % assertion[\"node_kind\"])\n\n    elif kind == \"not_reached\":\n        if assertion.get(\"node\") in visited:\n            failures.append(\"did not expect to reach %s\" % assertion[\"node\"])\n\n    elif kind == \"branch\":\n        taken = [e[\"branch\"] for e in trace\n                 if e[\"node\"].split(\"/\")[-1] == assertion.get(\"node\")]\n        if assertion.get(\"expect\") not in taken:\n            failures.append(\"%s took %s, expected %s\"\n                            % (assertion.get(\"node\"), taken or \"nothing\",\n                               assertion.get(\"expect\")))\n\n    elif kind == \"variable\":\n        actual = lookup(assertion.get(\"path\", \"\"), context)\n        if actual != assertion.get(\"equals\"):\n            failures.append(\"%s was %r, expected %r\"\n                            % (assertion.get(\"path\"), actual,\n                               assertion.get(\"equals\")))\n\n    elif kind == \"no_unhandled_error\":\n        broken = [e for e in trace if e.get(\"status\") == \"failed\"]\n        if broken:\n            failures.append(\"unhandled failure at %s\" % broken[0][\"node\"])\n\n    else:\n        failures.append(\"unknown assertion kind %r\" % kind)\n\nreturn {\"checked\": checked, \"failures\": failures}",
+        "doc": "Check what the fixture asserts about the run.\n\nThe assertion vocabulary is small on purpose: which node was reached, which\nbranch was taken, what a variable ended up as, and whether anything went\nunhandled. A fixture language rich enough to express anything becomes a\nsecond playbook language nobody maintains.",
+        "form": "statements",
+        "language": "python",
+        "name": "evaluate_assertions",
+        "packages": [],
+        "params": [
+          {
+            "name": "assertions",
+            "type": "List<Map<string, Any>>"
+          },
+          {
+            "name": "trace",
+            "type": "List<Map<string, Any>>"
+          },
+          {
+            "name": "context",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "definition",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvyx1uz69aygk",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 390
+    }
+  ],
+  "style": "procedural",
+  "variables": []
+}

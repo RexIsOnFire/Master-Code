@@ -1,0 +1,1206 @@
+{
+  "edges": [
+    {
+      "from": {
+        "node": "n_mu4ytvyw1i9o6y4x2",
+        "port": "p:nonce"
+      },
+      "id": "e_mu4ytvyw1ib96pfg0",
+      "to": {
+        "node": "n_mu4ytvyw1iaudv1t6",
+        "port": "p:nonce"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1iaudv1t6",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyw1idyfjl1v",
+      "to": {
+        "node": "n_mu4ytvyw1icc235vm",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1i9o6y4x2",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyw1ieyj6zvn",
+      "to": {
+        "node": "n_mu4ytvyw1iaudv1t6",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1iaudv1t6",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyw1ifbet6ct",
+      "to": {
+        "node": "n_mu4ytvyw1icc235vm",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1igu42xq0",
+        "port": "p:origin"
+      },
+      "id": "e_mu4ytvyw1iiu4zmtb",
+      "to": {
+        "node": "n_mu4ytvyw1ih9oy781",
+        "port": "p:origin"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1igu42xq0",
+        "port": "p:allowed_origins"
+      },
+      "id": "e_mu4ytvyw1ijyqihe2",
+      "to": {
+        "node": "n_mu4ytvyw1ih9oy781",
+        "port": "p:allowed_origins"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1ih9oy781",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyw1iltxgjpm",
+      "to": {
+        "node": "n_mu4ytvyw1ikwuzzdp",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1igu42xq0",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyw1imejo3j6",
+      "to": {
+        "node": "n_mu4ytvyw1ih9oy781",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1ih9oy781",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyw1inmu07yp",
+      "to": {
+        "node": "n_mu4ytvyw1ikwuzzdp",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1ioqk2t0r",
+        "port": "p:redis"
+      },
+      "id": "e_mu4ytvyw1iq9dcyk0",
+      "to": {
+        "node": "n_mu4ytvyw1ipv0hryn",
+        "port": "p:redis"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1ioqk2t0r",
+        "port": "p:bucket"
+      },
+      "id": "e_mu4ytvyw1irokn2cb",
+      "to": {
+        "node": "n_mu4ytvyw1ipv0hryn",
+        "port": "p:bucket"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1ioqk2t0r",
+        "port": "p:limit"
+      },
+      "id": "e_mu4ytvyw1isuoosea",
+      "to": {
+        "node": "n_mu4ytvyw1ipv0hryn",
+        "port": "p:limit"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1ioqk2t0r",
+        "port": "p:window_s"
+      },
+      "id": "e_mu4ytvyw1itfijzh6",
+      "to": {
+        "node": "n_mu4ytvyw1ipv0hryn",
+        "port": "p:window_s"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1ipv0hryn",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyw1ivwl5m9r",
+      "to": {
+        "node": "n_mu4ytvyw1iun3ro15",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1ioqk2t0r",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyw1iwyli9qh",
+      "to": {
+        "node": "n_mu4ytvyw1ipv0hryn",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1ipv0hryn",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyw1ix47gllr",
+      "to": {
+        "node": "n_mu4ytvyw1iun3ro15",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1iycyxn9w",
+        "port": "p:db"
+      },
+      "id": "e_mu4ytvyw1j0eay52x",
+      "to": {
+        "node": "n_mu4ytvyw1izxa4ggt",
+        "port": "p:db"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1iycyxn9w",
+        "port": "p:redis"
+      },
+      "id": "e_mu4ytvyw1j1gkq91x",
+      "to": {
+        "node": "n_mu4ytvyw1izxa4ggt",
+        "port": "p:redis"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1iycyxn9w",
+        "port": "p:request"
+      },
+      "id": "e_mu4ytvyw1j27c10rk",
+      "to": {
+        "node": "n_mu4ytvyw1izxa4ggt",
+        "port": "p:request"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1izxa4ggt",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyw1j437zbwa",
+      "to": {
+        "node": "n_mu4ytvyw1j3ya4bhj",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1iycyxn9w",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyw1j5unbg2e",
+      "to": {
+        "node": "n_mu4ytvyw1izxa4ggt",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1izxa4ggt",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyw1j6wrbg1q",
+      "to": {
+        "node": "n_mu4ytvyw1j3ya4bhj",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1j7aqqztk",
+        "port": "p:redis"
+      },
+      "id": "e_mu4ytvyw1j922z4u1",
+      "to": {
+        "node": "n_mu4ytvyw1j8fzb5ih",
+        "port": "p:redis"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1j7aqqztk",
+        "port": "p:secret"
+      },
+      "id": "e_mu4ytvyw1jafgpbyp",
+      "to": {
+        "node": "n_mu4ytvyw1j8fzb5ih",
+        "port": "p:secret"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1j7aqqztk",
+        "port": "p:raw_body"
+      },
+      "id": "e_mu4ytvyw1jbmv6605",
+      "to": {
+        "node": "n_mu4ytvyw1j8fzb5ih",
+        "port": "p:raw_body"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1j7aqqztk",
+        "port": "p:signature"
+      },
+      "id": "e_mu4ytvyw1jcfpam16",
+      "to": {
+        "node": "n_mu4ytvyw1j8fzb5ih",
+        "port": "p:signature"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1j7aqqztk",
+        "port": "p:timestamp"
+      },
+      "id": "e_mu4ytvyw1jd7x0feg",
+      "to": {
+        "node": "n_mu4ytvyw1j8fzb5ih",
+        "port": "p:timestamp"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1j7aqqztk",
+        "port": "p:source_id"
+      },
+      "id": "e_mu4ytvyw1jed7whg4",
+      "to": {
+        "node": "n_mu4ytvyw1j8fzb5ih",
+        "port": "p:source_id"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1j7aqqztk",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyw1jfbcpjv5",
+      "to": {
+        "node": "n_mu4ytvyw1j8fzb5ih",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1jg1wqzhu",
+        "port": "p:principal"
+      },
+      "id": "e_mu4ytvyw1jin4xlvn",
+      "to": {
+        "node": "n_mu4ytvyw1jhdn6ltn",
+        "port": "p:principal"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1jg1wqzhu",
+        "port": "p:now_epoch"
+      },
+      "id": "e_mu4ytvyw1jjub6wu9",
+      "to": {
+        "node": "n_mu4ytvyw1jhdn6ltn",
+        "port": "p:now_epoch"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1jg1wqzhu",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyw1jkeoh5b6",
+      "to": {
+        "node": "n_mu4ytvyw1jhdn6ltn",
+        "port": "in"
+      }
+    }
+  ],
+  "fileId": "file_mu4ytvyw1i7lwyz2w",
+  "id": "g_mu4ytvyw1i82q4b5w",
+  "name": "request security",
+  "nodes": [
+    {
+      "id": "n_mu4ytvyw1i9o6y4x2",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:nonce",
+          "name": "nonce",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "doc": "The response headers, on every response including errors.\n\nA nonce-based CSP with no unsafe-inline is what makes the XSS mitigation\nstructural: even a successful injection into the analyst workspace has no\nway to execute.",
+        "isAsync": false,
+        "name": "security_headers",
+        "params": [
+          {
+            "name": "nonce",
+            "type": "string"
+          }
+        ],
+        "returns": "Map<string, string>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyw1iaudv1t6",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:nonce",
+          "name": "nonce",
+          "type": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, string>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "return {\n    \"Content-Security-Policy\": (\n        \"default-src 'self'; \"\n        \"script-src 'self' 'nonce-%s'; \" % nonce +\n        \"style-src 'self' 'nonce-%s'; \" % nonce +\n        \"img-src 'self' data:; \"\n        \"connect-src 'self'; \"\n        \"frame-src 'self'; \"\n        \"frame-ancestors 'none'; \"\n        \"object-src 'none'; \"\n        \"base-uri 'none'; \"\n        \"form-action 'self'\"\n    ),\n    \"Strict-Transport-Security\": \"max-age=63072000; includeSubDomains\",\n    \"X-Content-Type-Options\": \"nosniff\",\n    \"Referrer-Policy\": \"no-referrer\",\n    \"Permissions-Policy\": \"geolocation=(), camera=(), microphone=()\",\n    \"Cache-Control\": \"no-store\",\n    \"Cross-Origin-Opener-Policy\": \"same-origin\",\n    \"Cross-Origin-Resource-Policy\": \"same-origin\",\n}",
+        "doc": "The response headers, on every response including errors.\n\nA nonce-based CSP with no unsafe-inline is what makes the XSS mitigation\nstructural: even a successful injection into the analyst workspace has no\nway to execute.",
+        "form": "statements",
+        "language": "python",
+        "name": "build_security_headers",
+        "packages": [],
+        "params": [
+          {
+            "name": "nonce",
+            "type": "string"
+          }
+        ],
+        "returns": "Map<string, string>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyw1icc235vm",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyw1igu42xq0",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:origin",
+          "name": "origin",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:allowed_origins",
+          "name": "allowed_origins",
+          "type": "List<string>"
+        }
+      ],
+      "props": {
+        "doc": "Exact-match origins only. No wildcard, no regular expression, and never a reflected origin with credentials - the combination that turns CORS into a same-origin bypass.",
+        "isAsync": false,
+        "name": "cors_headers",
+        "params": [
+          {
+            "name": "origin",
+            "type": "string"
+          },
+          {
+            "name": "allowed_origins",
+            "type": "List<string>"
+          }
+        ],
+        "returns": "Map<string, string>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyw1ih9oy781",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:origin",
+          "name": "origin",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:allowed_origins",
+          "name": "allowed_origins",
+          "type": "List<string>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, string>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "if not origin or origin not in allowed_origins:\n    return {}\nreturn {\n    \"Access-Control-Allow-Origin\": origin,\n    \"Access-Control-Allow-Credentials\": \"true\",\n    \"Access-Control-Allow-Methods\": \"GET, POST, PATCH, DELETE, OPTIONS\",\n    \"Access-Control-Allow-Headers\": \"content-type, x-csrf-token\",\n    \"Vary\": \"Origin\",\n    \"Access-Control-Max-Age\": \"600\",\n}",
+        "doc": "Exact-match origins only. No wildcard, no regular expression, and never a reflected origin with credentials - the combination that turns CORS into a same-origin bypass.",
+        "form": "statements",
+        "language": "python",
+        "name": "build_cors_headers",
+        "packages": [],
+        "params": [
+          {
+            "name": "origin",
+            "type": "string"
+          },
+          {
+            "name": "allowed_origins",
+            "type": "List<string>"
+          }
+        ],
+        "returns": "Map<string, string>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyw1ikwuzzdp",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyw1ioqk2t0r",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:redis",
+          "name": "redis",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:bucket",
+          "name": "bucket",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:limit",
+          "name": "limit",
+          "type": "i64"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:window_s",
+          "name": "window_s",
+          "type": "i64"
+        }
+      ],
+      "props": {
+        "doc": "Token bucket in Redis, keyed per principal or per source. Shared across API replicas because the state is in Redis rather than in a process.",
+        "isAsync": false,
+        "name": "rate_limit",
+        "params": [
+          {
+            "name": "redis",
+            "type": "Any"
+          },
+          {
+            "name": "bucket",
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "type": "i64"
+          },
+          {
+            "name": "window_s",
+            "type": "i64"
+          }
+        ],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvyw1ipv0hryn",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:redis",
+          "name": "redis",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:bucket",
+          "name": "bucket",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:limit",
+          "name": "limit",
+          "type": "i64"
+        },
+        {
+          "direction": "in",
+          "id": "p:window_s",
+          "name": "window_s",
+          "type": "i64"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [
+          "net"
+        ],
+        "code": "key = \"rl:\" + bucket\npipe = redis.pipeline()\npipe.incr(key)\npipe.ttl(key)\ncount, ttl = pipe.execute()\nif ttl < 0:\n    redis.expire(key, int(window_s))\n    ttl = int(window_s)\nreturn {\"allowed\": count <= int(limit), \"remaining\": max(0, int(limit) - count),\n        \"reset_in_s\": ttl}",
+        "doc": "Token bucket in Redis, keyed per principal or per source. Shared across API replicas because the state is in Redis rather than in a process.",
+        "form": "statements",
+        "language": "python",
+        "name": "consume_rate_limit",
+        "packages": [],
+        "params": [
+          {
+            "name": "redis",
+            "type": "Any"
+          },
+          {
+            "name": "bucket",
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "type": "i64"
+          },
+          {
+            "name": "window_s",
+            "type": "i64"
+          }
+        ],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvyw1iun3ro15",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvyw1iycyxn9w",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:redis",
+          "name": "redis",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:request",
+          "name": "request",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "doc": "Turn a request into a principal, or refuse it.\n\nTwo shapes of caller, deliberately separate: a browser session (cookie plus\nCSRF, subject to ambient authority and therefore needing the double-submit\ncheck) and an API token (a bearer credential with its own scopes and expiry,\nnever a user password, and not subject to CSRF because it was never\nambient).",
+        "isAsync": false,
+        "name": "resolve_principal",
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "redis",
+            "type": "Any"
+          },
+          {
+            "name": "request",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvyw1izxa4ggt",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:redis",
+          "name": "redis",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:request",
+          "name": "request",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "from soar.identity.rbac import live_permissions\nfrom soar.identity.sessions import check_csrf, load_session\n\nimport hashlib\n\nheaders = request.get(\"headers\") or {}\nauthorization = headers.get(\"authorization\", \"\")\n\nif authorization.lower().startswith(\"bearer \"):\n    token = authorization.split(\" \", 1)[1].strip()\n    digest = hashlib.sha256(token.encode(\"utf-8\")).hexdigest()\n    rows = db.query(\n        \"SELECT id, org_id, name, scopes FROM api_token \"\n        \"WHERE token_hash = %s AND revoked_at IS NULL \"\n        \"AND (expires_at IS NULL OR expires_at > now())\",\n        [digest], \"\",\n    )\n    if not rows:\n        raise PermissionError(\"invalid or expired API token\")\n    db.execute(\"UPDATE api_token SET last_used_at = now() WHERE id = %s\",\n               [rows[0][\"id\"]], rows[0][\"org_id\"])\n    return {\"kind\": \"api_token\", \"id\": rows[0][\"id\"], \"org_id\": rows[0][\"org_id\"],\n            \"label\": rows[0][\"name\"], \"permissions\": rows[0][\"scopes\"],\n            \"mfa_satisfied\": True}\n\nsession_id = (request.get(\"cookies\") or {}).get(\"soar_session\")\nif not session_id:\n    raise PermissionError(\"no credentials presented\")\n\nfingerprint = hashlib.sha256(\n    (headers.get(\"user-agent\", \"\") + \"|\" +\n     request.get(\"address_family\", \"\")).encode(\"utf-8\")\n).hexdigest()\nrecord = load_session(redis, session_id, fingerprint)\n\nif request.get(\"method\") not in (\"GET\", \"HEAD\", \"OPTIONS\"):\n    check_csrf(record, headers.get(\"x-csrf-token\", \"\"))\n\n# NOT record[\"permissions\"]. That list was computed when the session\n# opened, so a role granted or revoked since then did not apply, and a\n# permission the platform gained since then reached nobody already\n# signed in. The session establishes WHO; the roles decide what.\n#\n# Resolved against the HOME organisation, not the client currently being\n# viewed. Roles live where the person works - the provider - so asking\n# the customer tenant what roles they hold there returns nothing, and\n# switching client would silently strip every permission they have.\nhome = record.get(\"home_org_id\") or record[\"org_id\"]\nreturn {\"kind\": \"user\", \"id\": record[\"user_id\"], \"org_id\": record[\"org_id\"],\n        \"home_org_id\": home,\n        \"permissions\": live_permissions(db, record[\"user_id\"], home),\n        \"mfa_satisfied\": record.get(\"mfa_satisfied\", False),\n        \"session_id\": session_id,\n        # Readable by same-origin script on purpose: that is what makes\n        # double-submit work. A cross-origin caller cannot read this\n        # response, and without the cookie it never gets one.\n        \"csrf\": record.get(\"csrf\", \"\"),\n        \"step_up_until\": record.get(\"step_up_until\", 0)}",
+        "doc": "Turn a request into a principal, or refuse it.\n\nTwo shapes of caller, deliberately separate: a browser session (cookie plus\nCSRF, subject to ambient authority and therefore needing the double-submit\ncheck) and an API token (a bearer credential with its own scopes and expiry,\nnever a user password, and not subject to CSRF because it was never\nambient).",
+        "form": "statements",
+        "language": "python",
+        "name": "authenticate_request",
+        "packages": [],
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "redis",
+            "type": "Any"
+          },
+          {
+            "name": "request",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvyw1j3ya4bhj",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvyw1j7aqqztk",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:redis",
+          "name": "redis",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:secret",
+          "name": "secret",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:raw_body",
+          "name": "raw_body",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:signature",
+          "name": "signature",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:timestamp",
+          "name": "timestamp",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:source_id",
+          "name": "source_id",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "doc": "Verify an inbound webhook: signature, freshness, and replay.\n\nThe signature covers the timestamp, so a captured body cannot be replayed\noutside its window, and the (source, signature) pair is cached for the\nwindow duration so it cannot be replayed inside one either.",
+        "isAsync": false,
+        "name": "verify_webhook",
+        "params": [
+          {
+            "name": "redis",
+            "type": "Any"
+          },
+          {
+            "name": "secret",
+            "type": "string"
+          },
+          {
+            "name": "raw_body",
+            "type": "string"
+          },
+          {
+            "name": "signature",
+            "type": "string"
+          },
+          {
+            "name": "timestamp",
+            "type": "string"
+          },
+          {
+            "name": "source_id",
+            "type": "string"
+          }
+        ],
+        "returns": "Void",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 520
+    },
+    {
+      "id": "n_mu4ytvyw1j8fzb5ih",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:redis",
+          "name": "redis",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:secret",
+          "name": "secret",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:raw_body",
+          "name": "raw_body",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:signature",
+          "name": "signature",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:timestamp",
+          "name": "timestamp",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:source_id",
+          "name": "source_id",
+          "type": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "capabilities": [
+          "net",
+          "time"
+        ],
+        "code": "import hashlib\nimport hmac\nimport time\n\nWINDOW_S = 300\n\ntry:\n    sent_at = int(timestamp)\nexcept (TypeError, ValueError):\n    raise PermissionError(\"webhook timestamp missing or malformed\")\n\nif abs(time.time() - sent_at) > WINDOW_S:\n    raise PermissionError(\"webhook timestamp outside the %ds window\" % WINDOW_S)\n\nexpected = hmac.new(\n    secret.encode(\"utf-8\"),\n    (str(sent_at) + \".\" + raw_body).encode(\"utf-8\"),\n    hashlib.sha256,\n).hexdigest()\nif not hmac.compare_digest(expected, (signature or \"\").strip()):\n    raise PermissionError(\"webhook signature invalid\")\n\n# Replay cache. SET NX is the whole check: a second delivery of the same\n# signed body loses the race and is rejected.\nkey = \"wh:%s:%s\" % (source_id, expected)\nif not redis.set(key, \"1\", nx=True, ex=WINDOW_S):\n    raise PermissionError(\"webhook replay detected\")",
+        "doc": "Verify an inbound webhook: signature, freshness, and replay.\n\nThe signature covers the timestamp, so a captured body cannot be replayed\noutside its window, and the (source, signature) pair is cached for the\nwindow duration so it cannot be replayed inside one either.",
+        "form": "statements",
+        "language": "python",
+        "name": "check_webhook_signature",
+        "packages": [],
+        "params": [
+          {
+            "name": "redis",
+            "type": "Any"
+          },
+          {
+            "name": "secret",
+            "type": "string"
+          },
+          {
+            "name": "raw_body",
+            "type": "string"
+          },
+          {
+            "name": "signature",
+            "type": "string"
+          },
+          {
+            "name": "timestamp",
+            "type": "string"
+          },
+          {
+            "name": "source_id",
+            "type": "string"
+          }
+        ],
+        "returns": "Void"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 520
+    },
+    {
+      "id": "n_mu4ytvyw1jg1wqzhu",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:principal",
+          "name": "principal",
+          "type": "Map<string, Any>"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:now_epoch",
+          "name": "now_epoch",
+          "type": "i64"
+        }
+      ],
+      "props": {
+        "doc": "Re-authentication for approving a HIGH action and for managing secrets. A session that has been open all day is not evidence that the person is still at the keyboard.",
+        "isAsync": false,
+        "name": "require_step_up",
+        "params": [
+          {
+            "name": "principal",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "now_epoch",
+            "type": "i64"
+          }
+        ],
+        "returns": "Void",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 650
+    },
+    {
+      "id": "n_mu4ytvyw1jhdn6ltn",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:principal",
+          "name": "principal",
+          "type": "Map<string, Any>"
+        },
+        {
+          "direction": "in",
+          "id": "p:now_epoch",
+          "name": "now_epoch",
+          "type": "i64"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "if principal.get(\"kind\") == \"api_token\":\n    raise PermissionError(\n        \"this action requires an interactive, re-authenticated human; \"\n        \"an API token cannot satisfy step-up\"\n    )\nif int(principal.get(\"step_up_until\", 0)) < int(now_epoch):\n    raise PermissionError(\"re-authentication required\")",
+        "doc": "Re-authentication for approving a HIGH action and for managing secrets. A session that has been open all day is not evidence that the person is still at the keyboard.",
+        "form": "statements",
+        "language": "python",
+        "name": "enforce_step_up",
+        "packages": [],
+        "params": [
+          {
+            "name": "principal",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "now_epoch",
+            "type": "i64"
+          }
+        ],
+        "returns": "Void"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 650
+    }
+  ],
+  "style": "procedural",
+  "variables": []
+}

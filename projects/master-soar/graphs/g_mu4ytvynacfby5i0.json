@@ -1,0 +1,570 @@
+{
+  "edges": [
+    {
+      "from": {
+        "node": "n_mu4ytvynadx2x4y0",
+        "port": "p:password"
+      },
+      "id": "e_mu4ytvynaf0hnjxb",
+      "to": {
+        "node": "n_mu4ytvynaefyai92",
+        "port": "p:password"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvynaefyai92",
+        "port": "result"
+      },
+      "id": "e_mu4ytvynah4x4iyi",
+      "to": {
+        "node": "n_mu4ytvynag4erach",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvynadx2x4y0",
+        "port": "out"
+      },
+      "id": "e_mu4ytvynaiqwu02n",
+      "to": {
+        "node": "n_mu4ytvynaefyai92",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvynaefyai92",
+        "port": "out"
+      },
+      "id": "e_mu4ytvynaj3c2t89",
+      "to": {
+        "node": "n_mu4ytvynag4erach",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvynak0ivx52",
+        "port": "p:stored_hash"
+      },
+      "id": "e_mu4ytvynamqqdqwk",
+      "to": {
+        "node": "n_mu4ytvynalfb2stj",
+        "port": "p:stored_hash"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvynak0ivx52",
+        "port": "p:password"
+      },
+      "id": "e_mu4ytvynanvrbf24",
+      "to": {
+        "node": "n_mu4ytvynalfb2stj",
+        "port": "p:password"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvynalfb2stj",
+        "port": "result"
+      },
+      "id": "e_mu4ytvynaptqnf85",
+      "to": {
+        "node": "n_mu4ytvynaomrcwoe",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvynak0ivx52",
+        "port": "out"
+      },
+      "id": "e_mu4ytvynaqnru9wh",
+      "to": {
+        "node": "n_mu4ytvynalfb2stj",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvynalfb2stj",
+        "port": "out"
+      },
+      "id": "e_mu4ytvynarpn55qs",
+      "to": {
+        "node": "n_mu4ytvynaomrcwoe",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvynasfcueeb",
+        "port": "p:secret_b32"
+      },
+      "id": "e_mu4ytvynaufr4ph8",
+      "to": {
+        "node": "n_mu4ytvynatfd24rj",
+        "port": "p:secret_b32"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvynasfcueeb",
+        "port": "p:code"
+      },
+      "id": "e_mu4ytvynavqugjfg",
+      "to": {
+        "node": "n_mu4ytvynatfd24rj",
+        "port": "p:code"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvynasfcueeb",
+        "port": "p:timestamp"
+      },
+      "id": "e_mu4ytvynaw1ac3oq",
+      "to": {
+        "node": "n_mu4ytvynatfd24rj",
+        "port": "p:timestamp"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvynatfd24rj",
+        "port": "result"
+      },
+      "id": "e_mu4ytvynayz55pwp",
+      "to": {
+        "node": "n_mu4ytvynax0ag2t8",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvynasfcueeb",
+        "port": "out"
+      },
+      "id": "e_mu4ytvynazekkcw7",
+      "to": {
+        "node": "n_mu4ytvynatfd24rj",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvynatfd24rj",
+        "port": "out"
+      },
+      "id": "e_mu4ytvynb07sp9fw",
+      "to": {
+        "node": "n_mu4ytvynax0ag2t8",
+        "port": "in"
+      }
+    }
+  ],
+  "fileId": "file_mu4ytvynab6vnaku",
+  "id": "g_mu4ytvynacfby5i0",
+  "name": "passwords and MFA",
+  "nodes": [
+    {
+      "id": "n_mu4ytvynadx2x4y0",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:password",
+          "name": "password",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "doc": "Argon2id with parameters chosen for an interactive login on modest hardware.",
+        "isAsync": false,
+        "name": "hash_password",
+        "params": [
+          {
+            "name": "password",
+            "type": "string"
+          }
+        ],
+        "returns": "string",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvynaefyai92",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:password",
+          "name": "password",
+          "type": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "from argon2 import PasswordHasher\n\nhasher = PasswordHasher(time_cost=3, memory_cost=65536, parallelism=4)\nreturn hasher.hash(password)",
+        "doc": "Argon2id with parameters chosen for an interactive login on modest hardware.",
+        "form": "statements",
+        "language": "python",
+        "name": "argon2_hash",
+        "packages": [
+          {
+            "name": "argon2-cffi",
+            "version": "23.*"
+          }
+        ],
+        "params": [
+          {
+            "name": "password",
+            "type": "string"
+          }
+        ],
+        "returns": "string"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvynag4erach",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvynak0ivx52",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:stored_hash",
+          "name": "stored_hash",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:password",
+          "name": "password",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "doc": "Constant-time verification that never leaks which half of the pair was wrong.",
+        "isAsync": false,
+        "name": "verify_password",
+        "params": [
+          {
+            "name": "stored_hash",
+            "type": "string"
+          },
+          {
+            "name": "password",
+            "type": "string"
+          }
+        ],
+        "returns": "bool",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvynalfb2stj",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:stored_hash",
+          "name": "stored_hash",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:password",
+          "name": "password",
+          "type": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "bool"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "from argon2 import PasswordHasher\nfrom argon2.exceptions import VerifyMismatchError, VerificationError, InvalidHashError\n\ntry:\n    PasswordHasher().verify(stored_hash, password)\n    return True\nexcept (VerifyMismatchError, VerificationError, InvalidHashError):\n    return False",
+        "doc": "Constant-time verification that never leaks which half of the pair was wrong.",
+        "form": "statements",
+        "language": "python",
+        "name": "argon2_verify",
+        "packages": [
+          {
+            "name": "argon2-cffi",
+            "version": "23.*"
+          }
+        ],
+        "params": [
+          {
+            "name": "stored_hash",
+            "type": "string"
+          },
+          {
+            "name": "password",
+            "type": "string"
+          }
+        ],
+        "returns": "bool"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvynaomrcwoe",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvynasfcueeb",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:secret_b32",
+          "name": "secret_b32",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:code",
+          "name": "code",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:timestamp",
+          "name": "timestamp",
+          "type": "i64"
+        }
+      ],
+      "props": {
+        "doc": "RFC 6238, one step of drift each way, constant-time compare.",
+        "isAsync": false,
+        "name": "verify_totp",
+        "params": [
+          {
+            "name": "secret_b32",
+            "type": "string"
+          },
+          {
+            "name": "code",
+            "type": "string"
+          },
+          {
+            "name": "timestamp",
+            "type": "i64"
+          }
+        ],
+        "returns": "bool",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvynatfd24rj",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:secret_b32",
+          "name": "secret_b32",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:code",
+          "name": "code",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:timestamp",
+          "name": "timestamp",
+          "type": "i64"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "bool"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "import base64\nimport hashlib\nimport hmac\nimport struct\n\nkey = base64.b32decode(secret_b32, casefold=True)\ncounter = int(timestamp) // 30\nfor drift in (-1, 0, 1):\n    payload = struct.pack(\">Q\", counter + drift)\n    digest = hmac.new(key, payload, hashlib.sha1).digest()\n    offset = digest[-1] & 0x0F\n    value = struct.unpack(\">I\", digest[offset:offset + 4])[0] & 0x7FFFFFFF\n    candidate = \"%06d\" % (value % 1000000)\n    if hmac.compare_digest(candidate, str(code).strip()):\n        return True\nreturn False",
+        "doc": "RFC 6238, one step of drift each way, constant-time compare.",
+        "form": "statements",
+        "language": "python",
+        "name": "totp_check",
+        "packages": [],
+        "params": [
+          {
+            "name": "secret_b32",
+            "type": "string"
+          },
+          {
+            "name": "code",
+            "type": "string"
+          },
+          {
+            "name": "timestamp",
+            "type": "i64"
+          }
+        ],
+        "returns": "bool"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvynax0ag2t8",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 260
+    }
+  ],
+  "style": "procedural",
+  "variables": []
+}

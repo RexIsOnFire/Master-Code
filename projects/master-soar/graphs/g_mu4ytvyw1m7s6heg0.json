@@ -1,0 +1,1472 @@
+{
+  "edges": [
+    {
+      "from": {
+        "node": "n_mu4ytvyw1m8im7t8z",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyw1mapi68h4",
+      "to": {
+        "node": "n_mu4ytvyw1m9yluwnh",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1mck6zbtg",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyw1mfm2yro3",
+      "to": {
+        "node": "n_mu4ytvyw1mec0ubq9",
+        "port": "a"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1mdy2apfc",
+        "port": "value"
+      },
+      "id": "e_mu4ytvyw1mgcwowd9",
+      "to": {
+        "node": "n_mu4ytvyw1mec0ubq9",
+        "port": "b"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1mec0ubq9",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyw1mirhuhk0",
+      "to": {
+        "node": "n_mu4ytvyw1mht7wx0q",
+        "port": "cond"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1mbxcotm9",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyw1mkqwzo7i",
+      "to": {
+        "node": "n_mu4ytvyw1mjghwfez",
+        "port": "args"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1mck6zbtg",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyw1mlde0pwc",
+      "to": {
+        "node": "n_mu4ytvyw1mjghwfez",
+        "port": "args#1"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1mbxcotm9",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyw1mnhi5v2g",
+      "to": {
+        "node": "n_mu4ytvyw1mml5u3ou",
+        "port": "a0"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1mml5u3ou",
+        "port": "value"
+      },
+      "id": "e_mu4ytvyw1mqotk9jt",
+      "to": {
+        "node": "n_mu4ytvyw1mpg68grl",
+        "port": "a"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1mo7nvb0o",
+        "port": "value"
+      },
+      "id": "e_mu4ytvyw1mr7vowvk",
+      "to": {
+        "node": "n_mu4ytvyw1mpg68grl",
+        "port": "b"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1mpg68grl",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyw1mtd88vof",
+      "to": {
+        "node": "n_mu4ytvyw1mssii3x4",
+        "port": "cond"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1mbxcotm9",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyw1mvfweogj",
+      "to": {
+        "node": "n_mu4ytvyw1mux1jlw1",
+        "port": "args"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1mml5u3ou",
+        "port": "value"
+      },
+      "id": "e_mu4ytvyw1myua2pvy",
+      "to": {
+        "node": "n_mu4ytvyw1mxbd4o77",
+        "port": "a"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1mwxvyjbz",
+        "port": "value"
+      },
+      "id": "e_mu4ytvyw1mzayjrvr",
+      "to": {
+        "node": "n_mu4ytvyw1mxbd4o77",
+        "port": "b"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1mxbd4o77",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyw1n1hvfvma",
+      "to": {
+        "node": "n_mu4ytvyw1n0cfalrw",
+        "port": "cond"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1mbxcotm9",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyw1n3plmys7",
+      "to": {
+        "node": "n_mu4ytvyw1n27u6lhl",
+        "port": "args"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1mbxcotm9",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyw1n5iemrvl",
+      "to": {
+        "node": "n_mu4ytvyw1n49t50ch",
+        "port": "args"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1m9yluwnh",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyw1n659zvi0",
+      "to": {
+        "node": "n_mu4ytvyw1mbxcotm9",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1mbxcotm9",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyw1n7rr9nc2",
+      "to": {
+        "node": "n_mu4ytvyw1mck6zbtg",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1mck6zbtg",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyw1n8mfr60m",
+      "to": {
+        "node": "n_mu4ytvyw1mht7wx0q",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1mht7wx0q",
+        "port": "then"
+      },
+      "id": "e_mu4ytvyw1n98q3j7d",
+      "to": {
+        "node": "n_mu4ytvyw1mjghwfez",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1mht7wx0q",
+        "port": "else"
+      },
+      "id": "e_mu4ytvyw1na3rmjsm",
+      "to": {
+        "node": "n_mu4ytvyw1mssii3x4",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1mssii3x4",
+        "port": "then"
+      },
+      "id": "e_mu4ytvyw1nbinn937",
+      "to": {
+        "node": "n_mu4ytvyw1mux1jlw1",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1mssii3x4",
+        "port": "else"
+      },
+      "id": "e_mu4ytvyw1ncw7tg8h",
+      "to": {
+        "node": "n_mu4ytvyw1n0cfalrw",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1n0cfalrw",
+        "port": "then"
+      },
+      "id": "e_mu4ytvyw1ndo8uzg2",
+      "to": {
+        "node": "n_mu4ytvyw1n27u6lhl",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1n0cfalrw",
+        "port": "else"
+      },
+      "id": "e_mu4ytvyw1neha73iu",
+      "to": {
+        "node": "n_mu4ytvyw1n49t50ch",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1ngf11pn3",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyw1niddxms8",
+      "to": {
+        "node": "n_mu4ytvyw1nhl71odl",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1nfy2uecb",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyw1njr29lpy",
+      "to": {
+        "node": "n_mu4ytvyw1ngf11pn3",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1ngf11pn3",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyw1nku0j4p9",
+      "to": {
+        "node": "n_mu4ytvyw1nhl71odl",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1nltcdtwf",
+        "port": "p:settings"
+      },
+      "id": "e_mu4ytvyw1nn386i1q",
+      "to": {
+        "node": "n_mu4ytvyw1nmugjtfj",
+        "port": "p:settings"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1nltcdtwf",
+        "port": "p:command"
+      },
+      "id": "e_mu4ytvyw1nod1wqzt",
+      "to": {
+        "node": "n_mu4ytvyw1nmugjtfj",
+        "port": "p:command"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1nltcdtwf",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyw1npviytjo",
+      "to": {
+        "node": "n_mu4ytvyw1nmugjtfj",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1nqczvlhh",
+        "port": "p:settings"
+      },
+      "id": "e_mu4ytvyw1nsknzj3l",
+      "to": {
+        "node": "n_mu4ytvyw1nr84jept",
+        "port": "p:settings"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1nqczvlhh",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyw1nth8i0yt",
+      "to": {
+        "node": "n_mu4ytvyw1nr84jept",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1nus1jopx",
+        "port": "p:settings"
+      },
+      "id": "e_mu4ytvyw1nwv0cnkd",
+      "to": {
+        "node": "n_mu4ytvyw1nvsm0h3b",
+        "port": "p:settings"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1nus1jopx",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyw1nxygdph6",
+      "to": {
+        "node": "n_mu4ytvyw1nvsm0h3b",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1nybc9m9q",
+        "port": "p:settings"
+      },
+      "id": "e_mu4ytvyw1o0n110o3",
+      "to": {
+        "node": "n_mu4ytvyw1nzpjgsmf",
+        "port": "p:settings"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyw1nybc9m9q",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyw1o1oimppk",
+      "to": {
+        "node": "n_mu4ytvyw1nzpjgsmf",
+        "port": "in"
+      }
+    }
+  ],
+  "fileId": "file_mu4ytvyw1m6kqzfqg",
+  "id": "g_mu4ytvyw1m7s6heg0",
+  "name": "entry point",
+  "nodes": [
+    {
+      "id": "n_mu4ytvyw1m8im7t8z",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "args",
+          "name": "args",
+          "type": "List<string>"
+        }
+      ],
+      "props": {
+        "guard": true
+      },
+      "type": "entry/main",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyw1m9yluwnh",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "text": "One artifact, four roles. Which modules start is configuration, not a\nbuild:\n\n  soar serve                  api + scheduler      (HTTP in)\n  soar worker --pool default  execution worker     (no HTTP in)\n  soar worker --pool sandbox  untrusted code       (no creds, no egress)\n  soar ingest                 listeners            (webhook, syslog, poll)\n\nThis is what lets the Phase 1 compose file become the Phase 2 VM split\nwithout a rewrite: the role flag that chose a container's job now chooses\na machine's job."
+      },
+      "type": "data/comment",
+      "x": 250,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyw1mbxcotm9",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "args",
+          "name": "arg",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "await": false,
+        "returns": "Map<string, Any>",
+        "target": "load_settings"
+      },
+      "type": "control/call",
+      "x": 500,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyw1mck6zbtg",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "args",
+          "name": "arg",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "await": false,
+        "returns": "string",
+        "target": "cli_command"
+      },
+      "type": "control/call",
+      "x": 750,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyw1mdy2apfc",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "value",
+          "name": "value",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "type": "string",
+        "value": ""
+      },
+      "type": "data/literal",
+      "x": 0,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyw1mec0ubq9",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "a",
+          "name": "a",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "b",
+          "name": "b",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "bool"
+        }
+      ],
+      "props": {
+        "op": "!="
+      },
+      "type": "op/compare",
+      "x": 1000,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyw1mht7wx0q",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "defaultValue": true,
+          "direction": "in",
+          "id": "cond",
+          "name": "condition",
+          "type": "bool"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "then",
+          "name": "then",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "else",
+          "name": "else",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "after",
+          "type": "Exec"
+        }
+      ],
+      "props": {},
+      "type": "control/if",
+      "x": 1250,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyw1mjghwfez",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "args",
+          "name": "arg",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "dynamic": true,
+          "id": "args#1",
+          "name": "arg",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "await": false,
+        "returns": "Void",
+        "target": "run_cli_command"
+      },
+      "type": "control/call",
+      "x": 1500,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyw1mml5u3ou",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "a0",
+          "name": "map",
+          "type": "Map<K, V>"
+        },
+        {
+          "defaultValue": "role",
+          "direction": "in",
+          "id": "a1",
+          "name": "key",
+          "type": "K"
+        },
+        {
+          "defaultValue": "serve",
+          "direction": "in",
+          "id": "a2",
+          "name": "fallback",
+          "type": "V"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "value",
+          "name": "value",
+          "type": "V"
+        }
+      ],
+      "props": {},
+      "type": "map/get-or",
+      "x": 750,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyw1mo7nvb0o",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "value",
+          "name": "value",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "type": "string",
+        "value": "serve"
+      },
+      "type": "data/literal",
+      "x": 0,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvyw1mpg68grl",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "a",
+          "name": "a",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "b",
+          "name": "b",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "bool"
+        }
+      ],
+      "props": {
+        "op": "=="
+      },
+      "type": "op/compare",
+      "x": 1000,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyw1mssii3x4",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "defaultValue": true,
+          "direction": "in",
+          "id": "cond",
+          "name": "condition",
+          "type": "bool"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "then",
+          "name": "then",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "else",
+          "name": "else",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "after",
+          "type": "Exec"
+        }
+      ],
+      "props": {},
+      "type": "control/if",
+      "x": 1500,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyw1mux1jlw1",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "args",
+          "name": "arg",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "await": false,
+        "returns": "Void",
+        "target": "run_api_role"
+      },
+      "type": "control/call",
+      "x": 1750,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyw1mwxvyjbz",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "value",
+          "name": "value",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "type": "string",
+        "value": "worker"
+      },
+      "type": "data/literal",
+      "x": 0,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvyw1mxbd4o77",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "a",
+          "name": "a",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "b",
+          "name": "b",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "bool"
+        }
+      ],
+      "props": {
+        "op": "=="
+      },
+      "type": "op/compare",
+      "x": 1000,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvyw1n0cfalrw",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "defaultValue": true,
+          "direction": "in",
+          "id": "cond",
+          "name": "condition",
+          "type": "bool"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "then",
+          "name": "then",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "else",
+          "name": "else",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "after",
+          "type": "Exec"
+        }
+      ],
+      "props": {},
+      "type": "control/if",
+      "x": 1750,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyw1n27u6lhl",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "args",
+          "name": "arg",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "await": false,
+        "returns": "Void",
+        "target": "run_worker_role"
+      },
+      "type": "control/call",
+      "x": 2000,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyw1n49t50ch",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "args",
+          "name": "arg",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "await": false,
+        "returns": "Void",
+        "target": "run_ingest_role"
+      },
+      "type": "control/call",
+      "x": 2000,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyw1nfy2uecb",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "doc": "The subcommand, if the process was started with one. Everything else is a role, chosen by SOAR_ROLE.",
+        "isAsync": false,
+        "name": "cli_command",
+        "params": [],
+        "returns": "string",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 520
+    },
+    {
+      "id": "n_mu4ytvyw1ngf11pn3",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "capabilities": [
+          "stdio"
+        ],
+        "code": "import sys\n\nif len(sys.argv) < 2:\n    return \"\"\ncandidate = sys.argv[1].strip()\nreturn candidate if candidate and not candidate.startswith(\"-\") else \"\"",
+        "doc": "The subcommand, if the process was started with one. Everything else is a role, chosen by SOAR_ROLE.",
+        "form": "statements",
+        "language": "python",
+        "name": "read_cli_command",
+        "packages": [],
+        "params": [],
+        "returns": "string"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyw1nhl71odl",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyw1nltcdtwf",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:settings",
+          "name": "settings",
+          "type": "Map<string, Any>"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:command",
+          "name": "command",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "doc": "One-shot operations that are not a role.\n\nBoth of these exist because the installation deliberately ships with no\naccount and no key. Running them takes a shell on the deployment, which is\nthe intended bar: there is no endpoint anywhere that creates the first\nadministrator, because an endpoint that did would be the way in.",
+        "isAsync": false,
+        "name": "run_cli_command",
+        "params": [
+          {
+            "name": "settings",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "command",
+            "type": "string"
+          }
+        ],
+        "returns": "Void",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 650
+    },
+    {
+      "id": "n_mu4ytvyw1nmugjtfj",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:settings",
+          "name": "settings",
+          "type": "Map<string, Any>"
+        },
+        {
+          "direction": "in",
+          "id": "p:command",
+          "name": "command",
+          "type": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "capabilities": [
+          "stdio",
+          "fs.write",
+          "env"
+        ],
+        "code": "from soar.api.context import build_service_context\nfrom soar.identity.bootstrap import create_admin_account\n\nimport base64\nimport getpass\nimport os\nimport sys\n\nif command == \"init-key\":\n    # Printed, not written, when a path is not usable: the api container\n    # mounts /data/keys read-only, so the normal path is to put this in\n    # .env as SOAR_ROOT_KEY rather than to have a process create it.\n    key = base64.b64encode(os.urandom(32)).decode(\"ascii\")\n    path = settings.get(\"root_key_path\") or \"\"\n    if path and settings.get(\"allow_key_creation\") == \"true\":\n        os.makedirs(os.path.dirname(path), exist_ok=True)\n        handle = os.open(path, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o600)\n        with os.fdopen(handle, \"wb\") as out:\n            out.write(base64.b64decode(key))\n        print(\"wrote %s (mode 0600)\" % path)\n    else:\n        print(\"SOAR_ROOT_KEY=\" + key)\n        print(\"\")\n        print(\"Put that line in deploy/.env. Keep a copy somewhere safe:\")\n        print(\"every stored credential is encrypted under it, and losing\")\n        print(\"it loses all of them.\")\n    return\n\nif command != \"create-admin\":\n    raise SystemExit(\n        \"unknown command %r; expected create-admin or init-key\" % command)\n\n# --- create-admin --------------------------------------------------\ncontext = build_service_context(settings)\n\nemail = (os.environ.get(\"SOAR_ADMIN_EMAIL\") or \"\").strip()\nif not email:\n    email = input(\"Email: \").strip()\ndisplay_name = (os.environ.get(\"SOAR_ADMIN_NAME\") or \"\").strip()\nif not display_name:\n    display_name = input(\"Display name: \").strip() or email\n\npassword = os.environ.get(\"SOAR_ADMIN_PASSWORD\") or \"\"\nif not password:\n    if not sys.stdin.isatty():\n        raise SystemExit(\n            \"no terminal to prompt on; set SOAR_ADMIN_PASSWORD, or run \"\n            \"with -it\")\n    password = getpass.getpass(\"Password (12+ characters): \")\n    if password != getpass.getpass(\"Repeat password: \"):\n        raise SystemExit(\"the passwords did not match\")\n\ncreated = create_admin_account(context[\"db\"], settings, email,\n                               display_name, password)\n\nprint(\"\")\nprint(\"Administrator created: %s\" % created[\"email\"])\nprint(\"Roles granted: %s\" % \", \".join(created[\"roles\"]))\nprint(\"\")\nprint(\"This account holds every built-in role so the platform is usable\")\nprint(\"on first sign-in. Create scoped accounts for day-to-day work and\")\nprint(\"take the ones it does not need back off it.\")\nprint(\"\")\nprint(\"Enrol this in an authenticator app NOW. It is shown once, and\")\nprint(\"sign-in needs a code from it - the password alone opens a session\")\nprint(\"with no permissions at all.\")\nprint(\"\")\nprint(\"  secret: %s\" % created[\"totp_secret\"])\nprint(\"  uri:    %s\" % created[\"totp_uri\"])\nprint(\"\")",
+        "doc": "One-shot operations that are not a role.\n\nBoth of these exist because the installation deliberately ships with no\naccount and no key. Running them takes a shell on the deployment, which is\nthe intended bar: there is no endpoint anywhere that creates the first\nadministrator, because an endpoint that did would be the way in.",
+        "form": "statements",
+        "language": "python",
+        "name": "dispatch_cli_command",
+        "packages": [],
+        "params": [
+          {
+            "name": "settings",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "command",
+            "type": "string"
+          }
+        ],
+        "returns": "Void"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvyw1nqczvlhh",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:settings",
+          "name": "settings",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "doc": "Serve the API and the UI, and run the scheduler under a Redis lease so exactly one node holds it.",
+        "isAsync": false,
+        "name": "run_api_role",
+        "params": [
+          {
+            "name": "settings",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Void",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 780
+    },
+    {
+      "id": "n_mu4ytvyw1nr84jept",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:settings",
+          "name": "settings",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "capabilities": [
+          "net",
+          "stdio"
+        ],
+        "code": "from soar.api.context import build_asgi_app, build_service_context, start_scheduler_if_leader\n\nimport uvicorn\n\ncontext = build_service_context(settings)\nstart_scheduler_if_leader(context)\nuvicorn.run(\n    build_asgi_app(context),\n    host=settings[\"bind_host\"],\n    port=int(settings[\"bind_port\"]),\n    # Empty means plain HTTP on the bind port, which is what the compose\n    # file expects: 8443 is published to the loopback only and TLS belongs\n    # on a proxy in front. Set both to serve it here instead.\n    ssl_keyfile=settings.get(\"tls_key\") or None,\n    ssl_certfile=settings.get(\"tls_cert\") or None,\n    log_config=None,  # structured JSON logging is configured in build_context\n)",
+        "doc": "Serve the API and the UI, and run the scheduler under a Redis lease so exactly one node holds it.",
+        "form": "statements",
+        "language": "python",
+        "name": "start_api_process",
+        "packages": [
+          {
+            "name": "uvicorn",
+            "version": "0.30.*"
+          },
+          {
+            "name": "starlette",
+            "version": "0.38.*"
+          }
+        ],
+        "params": [
+          {
+            "name": "settings",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Void"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvyw1nus1jopx",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:settings",
+          "name": "settings",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "doc": "The worker loop.\n\nA worker holds no long-lived secret: the root key is not on it, only\nper-job leases are. The sandbox pool additionally has no Postgres route and\nno credential lease at all, which is enforced by its Redis ACL and its\nnetwork, not by this code being careful.",
+        "isAsync": false,
+        "name": "run_worker_role",
+        "params": [
+          {
+            "name": "settings",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Void",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 910
+    },
+    {
+      "id": "n_mu4ytvyw1nvsm0h3b",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:settings",
+          "name": "settings",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "capabilities": [
+          "net",
+          "process",
+          "stdio"
+        ],
+        "code": "from soar.api.context import build_service_context\nfrom soar.execution.worker import handle_job, heartbeat\nfrom soar.platform.ids import new_id\nfrom soar.platform.runtime import log_event\n\ncontext = build_service_context(settings)\npool = settings.get(\"worker_pool\", \"default\")\nworker_id = new_id(\"wrk\")\nstream = \"jobs:\" + pool\n\nwhile True:\n    heartbeat(context[\"db\"], worker_id, pool)\n    claimed = context[\"queue\"].claim(stream, worker_id)\n    if not claimed:\n        continue\n    try:\n        handle_job(context[\"db\"], context[\"queue\"], context[\"secrets\"],\n                   claimed[\"job\"], worker_id)\n    except Exception as failure:  # noqa: BLE001 - the loop outlives the job\n        # A job that raises is one client having a bad day. Killing the\n        # worker over it stops every other client too, and the restart\n        # picks up the same job and dies again.\n        log_event(\"error\", \"job_failed\", {\n            \"worker\": worker_id, \"kind\": claimed[\"job\"].get(\"kind\"),\n            \"org_id\": claimed[\"job\"].get(\"org_id\"),\n            \"error\": str(failure)[:500],\n        })\n    finally:\n        # Acknowledged either way: a job that failed has a recorded failure,\n        # and leaving it pending would only make it run again unrecorded.\n        context[\"queue\"].acknowledge(stream, claimed[\"job_id\"])",
+        "doc": "The worker loop.\n\nA worker holds no long-lived secret: the root key is not on it, only\nper-job leases are. The sandbox pool additionally has no Postgres route and\nno credential lease at all, which is enforced by its Redis ACL and its\nnetwork, not by this code being careful.",
+        "form": "statements",
+        "language": "python",
+        "name": "start_worker_process",
+        "packages": [],
+        "params": [
+          {
+            "name": "settings",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Void"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 520
+    },
+    {
+      "id": "n_mu4ytvyw1nybc9m9q",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:settings",
+          "name": "settings",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "doc": "Listeners: scheduled SIEM queries, feed polling, syslog. Separate from the API so an ingest flood cannot starve analyst requests.",
+        "isAsync": false,
+        "name": "run_ingest_role",
+        "params": [
+          {
+            "name": "settings",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Void",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 1040
+    },
+    {
+      "id": "n_mu4ytvyw1nzpjgsmf",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:settings",
+          "name": "settings",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "capabilities": [
+          "net",
+          "stdio"
+        ],
+        "code": "from soar.api.context import build_service_context, poll_alert_sources, poll_enabled_feeds, queue_due_hunts, run_due_schedules\n\nimport time\n\ncontext = build_service_context(settings)\nwhile True:\n    run_due_schedules(context)\n    poll_enabled_feeds(context)\n    # The other half of ingest: the estate that cannot push to us.\n    poll_alert_sources(context)\n    # Scheduled hunts, on the same tick. Exact-minute matching means\n    # this is a cheap query that almost always returns nothing.\n    queue_due_hunts(context)\n    time.sleep(10)",
+        "doc": "Listeners: scheduled SIEM queries, feed polling, syslog. Separate from the API so an ingest flood cannot starve analyst requests.",
+        "form": "statements",
+        "language": "python",
+        "name": "start_ingest_process",
+        "packages": [],
+        "params": [
+          {
+            "name": "settings",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Void"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 650
+    }
+  ],
+  "style": "procedural",
+  "variables": [],
+  "viewport": {
+    "x": -29.824294690487363,
+    "y": 150.42727729044947,
+    "zoom": 0.8518850987432672
+  }
+}

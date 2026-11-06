@@ -1,0 +1,644 @@
+{
+  "edges": [
+    {
+      "from": {
+        "node": "n_mstz34o0s1beijr",
+        "port": "out"
+      },
+      "id": "e_mstz34o010q04qcu",
+      "to": {
+        "node": "n_mstz34o0tgrmfy0",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz34o0tgrmfy0",
+        "port": "out"
+      },
+      "id": "e_mstz34o011bsqt8p",
+      "to": {
+        "node": "n_mstz34o0u5s8rgo",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz34o0u5s8rgo",
+        "port": "out"
+      },
+      "id": "e_mstz34o012kxaht2",
+      "to": {
+        "node": "n_mstz34o0vino15z",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz34o07973ogi",
+        "port": "out"
+      },
+      "id": "e_mstz34o09bkjd31",
+      "to": {
+        "node": "n_mstz34o081fho1b",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz34o0bus26mn",
+        "port": "value"
+      },
+      "id": "e_mstz34o0iczbsp9",
+      "to": {
+        "node": "n_mstz34o0dansk86",
+        "port": "a"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz34o0cos5mrf",
+        "port": "value"
+      },
+      "id": "e_mstz34o0jkstt0j",
+      "to": {
+        "node": "n_mstz34o0dansk86",
+        "port": "b"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz34o0dansk86",
+        "port": "result"
+      },
+      "id": "e_mstz34o0ky5c202",
+      "to": {
+        "node": "n_mstz34o0esvew6l",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz34o0esvew6l",
+        "port": "out_value"
+      },
+      "id": "e_mstz34o0lqagvnh",
+      "to": {
+        "node": "n_mstz34o0g90vjdx",
+        "port": "a0"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz34o0f0ql45y",
+        "port": "element"
+      },
+      "id": "e_mstz34o0mcss3jt",
+      "to": {
+        "node": "n_mstz34o0hwgy2t6",
+        "port": "a0"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz34o0g90vjdx",
+        "port": "text"
+      },
+      "id": "e_mstz34o0nj4yccg",
+      "to": {
+        "node": "n_mstz34o0hwgy2t6",
+        "port": "a1"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz34o0a6xn26s",
+        "port": "out"
+      },
+      "id": "e_mstz34o0ovfgfow",
+      "to": {
+        "node": "n_mstz34o0esvew6l",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz34o0esvew6l",
+        "port": "out"
+      },
+      "id": "e_mstz34o0pn97z6g",
+      "to": {
+        "node": "n_mstz34o0f0ql45y",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz34o0f0ql45y",
+        "port": "out"
+      },
+      "id": "e_mstz34o0q775bgl",
+      "to": {
+        "node": "n_mstz34o0hwgy2t6",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz34o0s1beijr",
+        "port": "element"
+      },
+      "id": "e_mstz34o0whdzpli",
+      "to": {
+        "node": "n_mstz34o0tgrmfy0",
+        "port": "a0"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz34o0u5s8rgo",
+        "port": "element"
+      },
+      "id": "e_mstz34o0xsvxjqj",
+      "to": {
+        "node": "n_mstz34o0vino15z",
+        "port": "a0"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz34o0tgrmfy0",
+        "port": "value"
+      },
+      "id": "e_mstz34o0ycnrolf",
+      "to": {
+        "node": "n_mstz34o0vino15z",
+        "port": "a1"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz34o0rfvo47f",
+        "port": "out"
+      },
+      "id": "e_mstz34o0z1wogwu",
+      "to": {
+        "node": "n_mstz34o0s1beijr",
+        "port": "in"
+      }
+    }
+  ],
+  "fileId": "file_mstz34o03vfuosh",
+  "id": "g_mstz34o04x3ocjx",
+  "name": "page behaviour",
+  "nodes": [
+    {
+      "id": "n_mstz34o07973ogi",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {},
+      "type": "dom/on-ready",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "n_mstz34o081fho1b",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "text": "Handlers are attached from the markup by data-mcode-events."
+      },
+      "type": "data/comment",
+      "x": 250,
+      "y": 0
+    },
+    {
+      "id": "n_mstz34o0a6xn26s",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "payload",
+          "name": "payload",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "event": "onIncrement",
+        "isAsync": false,
+        "payloadType": "Any"
+      },
+      "type": "event/handler",
+      "x": 0,
+      "y": 130
+    },
+    {
+      "id": "n_mstz34o0bus26mn",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "name": "count"
+      },
+      "type": "data/variable-get",
+      "x": 0,
+      "y": 260
+    },
+    {
+      "id": "n_mstz34o0cos5mrf",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "value",
+          "name": "value",
+          "type": "i64"
+        }
+      ],
+      "props": {
+        "type": "i64",
+        "value": 1
+      },
+      "type": "data/literal",
+      "x": 0,
+      "y": 390
+    },
+    {
+      "id": "n_mstz34o0dansk86",
+      "inputs": [
+        {
+          "defaultValue": 0,
+          "direction": "in",
+          "id": "a",
+          "name": "a",
+          "type": "N"
+        },
+        {
+          "defaultValue": 0,
+          "direction": "in",
+          "id": "b",
+          "name": "b",
+          "type": "N"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "N"
+        }
+      ],
+      "props": {
+        "op": "+"
+      },
+      "type": "op/arithmetic",
+      "x": 250,
+      "y": 130
+    },
+    {
+      "id": "n_mstz34o0esvew6l",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "out_value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "name": "count"
+      },
+      "type": "data/variable-set",
+      "x": 500,
+      "y": 0
+    },
+    {
+      "id": "n_mstz34o0f0ql45y",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "defaultValue": "#counter-label",
+          "direction": "in",
+          "id": "a0",
+          "name": "selector",
+          "type": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "element",
+          "name": "element",
+          "type": "Element"
+        }
+      ],
+      "props": {},
+      "type": "dom/query",
+      "x": 750,
+      "y": 0
+    },
+    {
+      "id": "n_mstz34o0g90vjdx",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "a0",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "text",
+          "name": "text",
+          "type": "string"
+        }
+      ],
+      "props": {},
+      "type": "convert/to-string",
+      "x": 750,
+      "y": 130
+    },
+    {
+      "id": "n_mstz34o0hwgy2t6",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "a0",
+          "name": "element",
+          "type": "Element"
+        },
+        {
+          "direction": "in",
+          "id": "a1",
+          "name": "text",
+          "type": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {},
+      "type": "dom/set-text",
+      "x": 1000,
+      "y": 0
+    },
+    {
+      "id": "n_mstz34o0rfvo47f",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "payload",
+          "name": "payload",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "event": "onEcho",
+        "isAsync": false,
+        "payloadType": "Any"
+      },
+      "type": "event/handler",
+      "x": 0,
+      "y": 520
+    },
+    {
+      "id": "n_mstz34o0s1beijr",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "defaultValue": "#echo-input",
+          "direction": "in",
+          "id": "a0",
+          "name": "selector",
+          "type": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "element",
+          "name": "element",
+          "type": "Element"
+        }
+      ],
+      "props": {},
+      "type": "dom/query",
+      "x": 250,
+      "y": 260
+    },
+    {
+      "id": "n_mstz34o0tgrmfy0",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "a0",
+          "name": "element",
+          "type": "Element"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "value",
+          "name": "value",
+          "type": "string"
+        }
+      ],
+      "props": {},
+      "type": "dom/get-value",
+      "x": 500,
+      "y": 130
+    },
+    {
+      "id": "n_mstz34o0u5s8rgo",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "defaultValue": "#echo-output",
+          "direction": "in",
+          "id": "a0",
+          "name": "selector",
+          "type": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "element",
+          "name": "element",
+          "type": "Element"
+        }
+      ],
+      "props": {},
+      "type": "dom/query",
+      "x": 750,
+      "y": 260
+    },
+    {
+      "id": "n_mstz34o0vino15z",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "a0",
+          "name": "element",
+          "type": "Element"
+        },
+        {
+          "direction": "in",
+          "id": "a1",
+          "name": "text",
+          "type": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {},
+      "type": "dom/set-text",
+      "x": 1000,
+      "y": 130
+    }
+  ],
+  "style": "event-driven",
+  "variables": [
+    {
+      "id": "v_mstz34o06kh9680",
+      "initial": 0,
+      "name": "count",
+      "scope": "module",
+      "type": "i64"
+    }
+  ]
+}

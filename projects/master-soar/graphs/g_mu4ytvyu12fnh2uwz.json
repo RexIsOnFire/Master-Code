@@ -1,0 +1,1393 @@
+{
+  "edges": [
+    {
+      "from": {
+        "node": "n_mu4ytvyu12gfcq56e",
+        "port": "p:db"
+      },
+      "id": "e_mu4ytvyu12idhtt5q",
+      "to": {
+        "node": "n_mu4ytvyu12h8vkiik",
+        "port": "p:db"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu12gfcq56e",
+        "port": "p:principal"
+      },
+      "id": "e_mu4ytvyu12j6v53bd",
+      "to": {
+        "node": "n_mu4ytvyu12h8vkiik",
+        "port": "p:principal"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu12gfcq56e",
+        "port": "p:trigger"
+      },
+      "id": "e_mu4ytvyu12kg7mbik",
+      "to": {
+        "node": "n_mu4ytvyu12h8vkiik",
+        "port": "p:trigger"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu12gfcq56e",
+        "port": "p:inputs"
+      },
+      "id": "e_mu4ytvyu12lxldrq2",
+      "to": {
+        "node": "n_mu4ytvyu12h8vkiik",
+        "port": "p:inputs"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu12gfcq56e",
+        "port": "p:mode"
+      },
+      "id": "e_mu4ytvyu12mncu148",
+      "to": {
+        "node": "n_mu4ytvyu12h8vkiik",
+        "port": "p:mode"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu12h8vkiik",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyu12ovpr4qs",
+      "to": {
+        "node": "n_mu4ytvyu12naflc7s",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu12gfcq56e",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyu12pvzbqkz",
+      "to": {
+        "node": "n_mu4ytvyu12h8vkiik",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu12h8vkiik",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyu12q6a46k1",
+      "to": {
+        "node": "n_mu4ytvyu12naflc7s",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu12r10bjnb",
+        "port": "p:db"
+      },
+      "id": "e_mu4ytvyu12tinke49",
+      "to": {
+        "node": "n_mu4ytvyu12sujzd2c",
+        "port": "p:db"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu12r10bjnb",
+        "port": "p:org_id"
+      },
+      "id": "e_mu4ytvyu12uvocnty",
+      "to": {
+        "node": "n_mu4ytvyu12sujzd2c",
+        "port": "p:org_id"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu12r10bjnb",
+        "port": "p:execution_id"
+      },
+      "id": "e_mu4ytvyu12vl6yqmy",
+      "to": {
+        "node": "n_mu4ytvyu12sujzd2c",
+        "port": "p:execution_id"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu12sujzd2c",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyu12xwh3xre",
+      "to": {
+        "node": "n_mu4ytvyu12w9kalaz",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu12r10bjnb",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyu12yah70jd",
+      "to": {
+        "node": "n_mu4ytvyu12sujzd2c",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu12sujzd2c",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyu12zy9hchn",
+      "to": {
+        "node": "n_mu4ytvyu12w9kalaz",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu130x6t3ya",
+        "port": "p:db"
+      },
+      "id": "e_mu4ytvyu132jvdb53",
+      "to": {
+        "node": "n_mu4ytvyu13175jbvu",
+        "port": "p:db"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu130x6t3ya",
+        "port": "p:org_id"
+      },
+      "id": "e_mu4ytvyu133cia0rk",
+      "to": {
+        "node": "n_mu4ytvyu13175jbvu",
+        "port": "p:org_id"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu130x6t3ya",
+        "port": "p:execution"
+      },
+      "id": "e_mu4ytvyu134w12bpj",
+      "to": {
+        "node": "n_mu4ytvyu13175jbvu",
+        "port": "p:execution"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu13175jbvu",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyu1361k5thz",
+      "to": {
+        "node": "n_mu4ytvyu135n1lq46",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu130x6t3ya",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyu137kglwrl",
+      "to": {
+        "node": "n_mu4ytvyu13175jbvu",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu13175jbvu",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyu1381rw8ij",
+      "to": {
+        "node": "n_mu4ytvyu135n1lq46",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu139l5dm4x",
+        "port": "p:db"
+      },
+      "id": "e_mu4ytvyu13byt2l6y",
+      "to": {
+        "node": "n_mu4ytvyu13aua9mqh",
+        "port": "p:db"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu139l5dm4x",
+        "port": "p:org_id"
+      },
+      "id": "e_mu4ytvyu13cqncvud",
+      "to": {
+        "node": "n_mu4ytvyu13aua9mqh",
+        "port": "p:org_id"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu139l5dm4x",
+        "port": "p:step_id"
+      },
+      "id": "e_mu4ytvyu13d4q33pc",
+      "to": {
+        "node": "n_mu4ytvyu13aua9mqh",
+        "port": "p:step_id"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu139l5dm4x",
+        "port": "p:result"
+      },
+      "id": "e_mu4ytvyu13emr4mzp",
+      "to": {
+        "node": "n_mu4ytvyu13aua9mqh",
+        "port": "p:result"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu139l5dm4x",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyu13f0h5idi",
+      "to": {
+        "node": "n_mu4ytvyu13aua9mqh",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu13got7one",
+        "port": "p:db"
+      },
+      "id": "e_mu4ytvyu13i3yfjo0",
+      "to": {
+        "node": "n_mu4ytvyu13hykv842",
+        "port": "p:db"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu13got7one",
+        "port": "p:org_id"
+      },
+      "id": "e_mu4ytvyu13j5q7oku",
+      "to": {
+        "node": "n_mu4ytvyu13hykv842",
+        "port": "p:org_id"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu13got7one",
+        "port": "p:step_id"
+      },
+      "id": "e_mu4ytvyu13kr1u7a1",
+      "to": {
+        "node": "n_mu4ytvyu13hykv842",
+        "port": "p:step_id"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu13got7one",
+        "port": "p:result"
+      },
+      "id": "e_mu4ytvyu13luknsi7",
+      "to": {
+        "node": "n_mu4ytvyu13hykv842",
+        "port": "p:result"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu13hykv842",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyu13nnwfwnp",
+      "to": {
+        "node": "n_mu4ytvyu13mtidegf",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu13got7one",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyu13o8mexzv",
+      "to": {
+        "node": "n_mu4ytvyu13hykv842",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu13hykv842",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyu13p6wxtes",
+      "to": {
+        "node": "n_mu4ytvyu13mtidegf",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu13qqlriqa",
+        "port": "p:db"
+      },
+      "id": "e_mu4ytvyu13sl2pjcy",
+      "to": {
+        "node": "n_mu4ytvyu13ric2wo4",
+        "port": "p:db"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu13qqlriqa",
+        "port": "p:org_id"
+      },
+      "id": "e_mu4ytvyu13tq0xfo6",
+      "to": {
+        "node": "n_mu4ytvyu13ric2wo4",
+        "port": "p:org_id"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu13qqlriqa",
+        "port": "p:execution_id"
+      },
+      "id": "e_mu4ytvyu13ugah14z",
+      "to": {
+        "node": "n_mu4ytvyu13ric2wo4",
+        "port": "p:execution_id"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu13qqlriqa",
+        "port": "p:status"
+      },
+      "id": "e_mu4ytvyu13v6zjhoj",
+      "to": {
+        "node": "n_mu4ytvyu13ric2wo4",
+        "port": "p:status"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu13qqlriqa",
+        "port": "p:error"
+      },
+      "id": "e_mu4ytvyu13wxdp3w4",
+      "to": {
+        "node": "n_mu4ytvyu13ric2wo4",
+        "port": "p:error"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyu13qqlriqa",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyu13xxjtgca",
+      "to": {
+        "node": "n_mu4ytvyu13ric2wo4",
+        "port": "in"
+      }
+    }
+  ],
+  "fileId": "file_mu4ytvyu12ezolrey",
+  "id": "g_mu4ytvyu12fnh2uwz",
+  "name": "playbook scheduler",
+  "nodes": [
+    {
+      "id": "n_mu4ytvyu12gfcq56e",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:principal",
+          "name": "principal",
+          "type": "Map<string, Any>"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:trigger",
+          "name": "trigger",
+          "type": "Map<string, Any>"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:inputs",
+          "name": "inputs",
+          "type": "Map<string, Any>"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:mode",
+          "name": "mode",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "doc": "Admission, then an execution row, then the first frontier.\n\nThe row is written before anything runs, so a crash between \"decided to\nrun\" and \"started running\" leaves a record rather than a silence. Only a\npublished version is reachable here; that check is the reason an inbound\nwebhook cannot name a playbook.",
+        "isAsync": false,
+        "name": "start_execution",
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "principal",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "trigger",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "inputs",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "mode",
+            "type": "string"
+          }
+        ],
+        "returns": "string",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyu12h8vkiik",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:principal",
+          "name": "principal",
+          "type": "Map<string, Any>"
+        },
+        {
+          "direction": "in",
+          "id": "p:trigger",
+          "name": "trigger",
+          "type": "Map<string, Any>"
+        },
+        {
+          "direction": "in",
+          "id": "p:inputs",
+          "name": "inputs",
+          "type": "Map<string, Any>"
+        },
+        {
+          "direction": "in",
+          "id": "p:mode",
+          "name": "mode",
+          "type": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "from soar.identity.rbac import require_permission\nfrom soar.platform.ids import execution_label, new_id\n\nimport json\n\nrequire_permission(principal, \"playbooks.run\")\norg_id = principal[\"org_id\"]\n\nrows = db.query(\n    \"SELECT pv.id, pv.definition, pv.content_sha256, pv.state, p.id AS playbook_id \"\n    \"FROM playbook p JOIN playbook_version pv ON pv.id = p.current_version_id \"\n    \"WHERE p.id = %s AND p.org_id = %s\",\n    [trigger[\"playbook_id\"], org_id], org_id,\n)\nif not rows:\n    raise KeyError(\"no such playbook\")\nversion = rows[0]\nif version[\"state\"] != \"published\":\n    raise PermissionError(\n        \"only a published version can be triggered; this one is %s\" % version[\"state\"]\n    )\n\n# Dedupe: the same trigger for the same subject inside the window produces\n# one execution. Without this, a noisy alert rule is a thousand executions.\nwindow = int(trigger.get(\"dedupe_window_s\") or 0)\nif window and trigger.get(\"dedupe_key\"):\n    existing = db.query(\n        \"SELECT id FROM execution WHERE org_id = %s AND playbook_id = %s \"\n        \"AND inputs->>'dedupe_key' = %s \"\n        \"AND started_at > now() - (%s || ' seconds')::interval LIMIT 1\",\n        [org_id, version[\"playbook_id\"], trigger[\"dedupe_key\"], str(window)],\n        org_id,\n    )\n    if existing:\n        return existing[0][\"id\"]\n\ndepth = int(trigger.get(\"depth\") or 0)\nif depth > 5:\n    raise ValueError(\"sub-playbook depth limit reached\")\n\nexecution_id = new_id(\"exec\")\ndb.execute(\n    \"INSERT INTO execution (id, org_id, label, playbook_id, playbook_version_id, \"\n    \"content_sha256, incident_id, trigger_kind, trigger_id, initiator_kind, \"\n    \"initiator_id, parent_execution_id, depth, mode, status, inputs, variables, \"\n    \"started_at, worker_pool) \"\n    \"SELECT %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, 'queued', \"\n    \"%s, %s, now(), %s FROM execution WHERE org_id = %s\",\n    [\n        execution_id, org_id,\n        execution_label(2026, 1), version[\"playbook_id\"], version[\"id\"],\n        version[\"content_sha256\"], trigger.get(\"incident_id\"),\n        trigger.get(\"kind\", \"manual\"), trigger.get(\"id\"),\n        trigger.get(\"initiator_kind\", \"analyst\"), principal.get(\"id\"),\n        trigger.get(\"parent_execution_id\"), depth, mode,\n        json.dumps(inputs), json.dumps({}),\n        trigger.get(\"worker_pool\", \"default\"), org_id,\n    ],\n    org_id,\n)\nadvance(db, org_id, execution_id)\nreturn execution_id",
+        "doc": "Admission, then an execution row, then the first frontier.\n\nThe row is written before anything runs, so a crash between \"decided to\nrun\" and \"started running\" leaves a record rather than a silence. Only a\npublished version is reachable here; that check is the reason an inbound\nwebhook cannot name a playbook.",
+        "form": "statements",
+        "language": "python",
+        "name": "admit_and_start",
+        "packages": [],
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "principal",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "trigger",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "inputs",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "mode",
+            "type": "string"
+          }
+        ],
+        "returns": "string"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyu12naflc7s",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyu12r10bjnb",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:org_id",
+          "name": "org_id",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:execution_id",
+          "name": "execution_id",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "doc": "Compute the next frontier and enqueue it.\n\nThe scheduler is a loop over durable state, not a long-lived object holding\na playbook in memory. That is what lets the API restart mid-execution\nwithout losing it, and what lets a second API node exist in Phase 2 without\na leader for every running playbook.",
+        "isAsync": false,
+        "name": "advance",
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "org_id",
+            "type": "string"
+          },
+          {
+            "name": "execution_id",
+            "type": "string"
+          }
+        ],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyu12sujzd2c",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:org_id",
+          "name": "org_id",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:execution_id",
+          "name": "execution_id",
+          "type": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "from soar.execution.dispatch import enqueue_step\nfrom soar.platform.ids import new_id\nfrom soar.playbooks.frontier import next_node, render_inputs, run_scheduler_node\nfrom soar.playbooks.validate import node_kinds\n\nimport json\n\nrows = db.query(\n    \"SELECT e.id, e.status, e.variables, e.inputs, e.mode, e.step_budget_used, \"\n    \"e.incident_id, e.worker_pool, pv.definition \"\n    \"FROM execution e JOIN playbook_version pv ON pv.id = e.playbook_version_id \"\n    \"WHERE e.id = %s AND e.org_id = %s\",\n    [execution_id, org_id], org_id,\n)\nif not rows:\n    raise KeyError(\"no such execution\")\nexecution = rows[0]\nif execution[\"status\"] in (\"succeeded\", \"failed\", \"cancelled\", \"timed_out\"):\n    return {\"status\": execution[\"status\"], \"enqueued\": 0}\n\nif execution[\"step_budget_used\"] > 500:\n    finish(db, org_id, execution_id, \"failed\",\n           {\"error_class\": \"POLICY\", \"message\": \"step budget exhausted\"})\n    return {\"status\": \"failed\", \"enqueued\": 0}\n\ndefinition = execution[\"definition\"]\nnodes = definition[\"nodes\"]\ncontext = build_context(db, org_id, execution)\n\ncompleted = db.query(\n    \"SELECT node_id, status, output FROM execution_step \"\n    \"WHERE execution_id = %s ORDER BY sequence ASC\", [execution_id], org_id,\n)\ndone = {row[\"node_id\"]: row for row in completed\n        if row[\"status\"] in (\"succeeded\", \"skipped\")}\npending = [row for row in completed\n           if row[\"status\"] in (\"queued\", \"running\", \"waiting_approval\")]\nif pending:\n    return {\"status\": \"running\", \"enqueued\": 0}\n\ncurrent = next_node(definition, done, context)\nif current is None:\n    finish(db, org_id, execution_id, \"succeeded\", None)\n    return {\"status\": \"succeeded\", \"enqueued\": 0}\n\nnode = nodes[current]\nkind = node[\"kind\"]\nruns = node_kinds()[kind][\"runs\"]\n\nstep_id = new_id(\"step\")\ndb.execute(\n    \"INSERT INTO execution_step (id, org_id, execution_id, node_id, sequence, \"\n    \"node_kind, status, input) \"\n    \"SELECT %s, %s, %s, %s, coalesce(max(sequence), 0) + 1, %s, %s, %s \"\n    \"FROM execution_step WHERE execution_id = %s\",\n    [step_id, org_id, execution_id, current, kind,\n     \"pending\" if runs == \"scheduler\" else \"queued\",\n     json.dumps(render_inputs(node.get(\"inputs\", {}), context), default=str),\n     execution_id],\n    org_id,\n)\ndb.execute(\n    \"UPDATE execution SET status = 'running', \"\n    \"step_budget_used = step_budget_used + 1 WHERE id = %s\",\n    [execution_id], org_id,\n)\n\nif runs == \"scheduler\":\n    outcome = run_scheduler_node(db, org_id, execution, node, step_id, context)\n\n    # A sub-playbook node describes the child; the engine starts it, because\n    # admission - the published-version check, the depth cap, the dedupe\n    # window - lives here and must not have a second implementation.\n    spawn = outcome.get(\"spawn\")\n    if spawn:\n        start_execution(\n            db,\n            {\"org_id\": org_id, \"id\": execution.get(\"initiator_id\"),\n             \"permissions\": [\"playbooks.run\"]},\n            {\"playbook_id\": spawn[\"playbook\"], \"kind\": \"sub_playbook\",\n             \"initiator_kind\": \"sub_playbook\",\n             \"parent_execution_id\": execution[\"id\"],\n             \"depth\": int(execution.get(\"depth\", 0)) + 1,\n             \"incident_id\": execution.get(\"incident_id\")},\n            spawn[\"inputs\"], execution[\"mode\"],\n        )\n\n    # Scheduler nodes do no I/O, so walking straight on to the next one is\n    # bounded by the step budget rather than by anything blocking.\n    if outcome.get(\"status\") == \"advanced\":\n        return advance(db, org_id, execution_id)\n    return outcome\n\npool = \"sandbox\" if runs == \"sandbox\" else (\"ai\" if runs == \"ai\" else execution[\"worker_pool\"])\nenqueue_step(db, org_id, execution_id, step_id, pool, execution[\"mode\"])\nreturn {\"status\": \"running\", \"enqueued\": 1, \"step_id\": step_id, \"pool\": pool}",
+        "doc": "Compute the next frontier and enqueue it.\n\nThe scheduler is a loop over durable state, not a long-lived object holding\na playbook in memory. That is what lets the API restart mid-execution\nwithout losing it, and what lets a second API node exist in Phase 2 without\na leader for every running playbook.",
+        "form": "statements",
+        "language": "python",
+        "name": "advance_execution",
+        "packages": [],
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "org_id",
+            "type": "string"
+          },
+          {
+            "name": "execution_id",
+            "type": "string"
+          }
+        ],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyu12w9kalaz",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyu130x6t3ya",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:org_id",
+          "name": "org_id",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:execution",
+          "name": "execution",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "doc": "Assemble the variable scopes for one tick. Innermost first, no implicit promotion, and plain data throughout - which is what makes the renderer safe.",
+        "isAsync": false,
+        "name": "build_context",
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "org_id",
+            "type": "string"
+          },
+          {
+            "name": "execution",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvyu13175jbvu",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:org_id",
+          "name": "org_id",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:execution",
+          "name": "execution",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "variables = execution.get(\"variables\") or {}\ncontext = {\n    \"inputs\": execution.get(\"inputs\") or {},\n    \"vars\": variables,\n    \"execution\": {\"id\": execution[\"id\"], \"mode\": execution[\"mode\"]},\n    \"steps\": {},\n}\n\n# A declared variable and a node output_var are addressable by their own\n# name, which is how every playbook in this codebase is written and what\n# the validator checks against. They are promoted rather than aliased so\n# that {{ vars.x }} keeps working too.\nfor name, value in variables.items():\n    # Never over a built-in scope: a variable called \"alert\" that hid the\n    # alert would be a very quiet way to break a playbook.\n    if name not in context:\n        context[name] = value\n\nfor row in db.query(\n    \"SELECT node_id, output FROM execution_step \"\n    \"WHERE execution_id = %s AND status = 'succeeded'\",\n    [execution[\"id\"]], org_id,\n):\n    context[\"steps\"][row[\"node_id\"]] = {\"output\": row[\"output\"]}\n\nif execution.get(\"incident_id\"):\n    rows = db.query(\n        \"SELECT id, number, title, severity, status, technique_ids \"\n        \"FROM incident WHERE id = %s\", [execution[\"incident_id\"]], org_id,\n    )\n    if rows:\n        context[\"incident\"] = rows[0]\nreturn context",
+        "doc": "Assemble the variable scopes for one tick. Innermost first, no implicit promotion, and plain data throughout - which is what makes the renderer safe.",
+        "form": "statements",
+        "language": "python",
+        "name": "assemble_execution_context",
+        "packages": [],
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "org_id",
+            "type": "string"
+          },
+          {
+            "name": "execution",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvyu135n1lq46",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvyu139l5dm4x",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:org_id",
+          "name": "org_id",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:step_id",
+          "name": "step_id",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "doc": "Write a step result and decide what happens next: retry, error branch,\ncompensation, or advance.\n\nRetry classification comes from the declared error class, never from the\nmessage text. Retrying a 401 is how an automation platform locks out the\nservice account it depends on.",
+        "isAsync": false,
+        "name": "record_result",
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "org_id",
+            "type": "string"
+          },
+          {
+            "name": "step_id",
+            "type": "string"
+          },
+          {
+            "name": "result",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Void",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvyu13aua9mqh",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:org_id",
+          "name": "org_id",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:step_id",
+          "name": "step_id",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "from soar.platform.errors import is_retryable\nfrom soar.platform.ids import new_id\nfrom soar.playbooks.frontier import run_compensations\n\nimport json\n\nrows = db.query(\n    \"SELECT s.id, s.execution_id, s.node_id, s.attempt, s.node_kind, \"\n    \"e.playbook_version_id, pv.definition \"\n    \"FROM execution_step s JOIN execution e ON e.id = s.execution_id \"\n    \"JOIN playbook_version pv ON pv.id = e.playbook_version_id \"\n    \"WHERE s.id = %s AND s.org_id = %s\", [step_id, org_id], org_id,\n)\nif not rows:\n    raise KeyError(\"no such step\")\nstep = rows[0]\nnode = step[\"definition\"][\"nodes\"][step[\"node_id\"]]\n\nif result.get(\"ok\"):\n    db.execute(\n        \"UPDATE execution_step SET status = 'succeeded', output = %s, logs = %s, \"\n        \"finished_at = now(), duration_ms = %s, limits_applied = %s WHERE id = %s\",\n        [json.dumps(result.get(\"output\"), default=str),\n         json.dumps(result.get(\"logs\", []), default=str),\n         result.get(\"duration_ms\"),\n         json.dumps(result.get(\"limits_applied\", {})), step_id],\n        org_id,\n    )\n    if node.get(\"output_var\"):\n        db.execute(\n            \"UPDATE execution SET variables = variables || %s WHERE id = %s\",\n            [json.dumps({node[\"output_var\"]: result.get(\"output\")}, default=str),\n             step[\"execution_id\"]],\n            org_id,\n        )\n    advance(db, org_id, step[\"execution_id\"])\n    return\n\nerror = result.get(\"error\") or {\"error_class\": \"PERMANENT\", \"message\": \"unknown\"}\ndb.execute(\n    \"UPDATE execution_step SET status = 'failed', error = %s, logs = %s, \"\n    \"finished_at = now() WHERE id = %s\",\n    [json.dumps(error, default=str),\n     json.dumps(result.get(\"logs\", []), default=str), step_id],\n    org_id,\n)\n\nretry = node.get(\"retry\") or {}\nmax_attempts = int(retry.get(\"max\", 0))\nif is_retryable(error.get(\"error_class\", \"\")) and step[\"attempt\"] <= max_attempts:\n    db.execute(\n        \"INSERT INTO execution_step (id, org_id, execution_id, node_id, sequence, \"\n        \"attempt, node_kind, status, retry_of_step_id, input) \"\n        \"SELECT %s, %s, %s, %s, coalesce(max(sequence), 0) + 1, %s, %s, 'queued', \"\n        \"%s, (SELECT input FROM execution_step WHERE id = %s) \"\n        \"FROM execution_step WHERE execution_id = %s\",\n        [new_id(\"step\"), org_id, step[\"execution_id\"], step[\"node_id\"],\n         step[\"attempt\"] + 1, step[\"node_kind\"], step_id, step_id,\n         step[\"execution_id\"]],\n        org_id,\n    )\n    return\n\nif node.get(\"on_error\"):\n    advance(db, org_id, step[\"execution_id\"])\n    return\n\n# No handler. Run declared compensations in reverse order, then fail loudly.\nrun_compensations(db, org_id, step[\"execution_id\"], step[\"node_id\"])\nfinish(db, org_id, step[\"execution_id\"], \"failed\", error)",
+        "doc": "Write a step result and decide what happens next: retry, error branch,\ncompensation, or advance.\n\nRetry classification comes from the declared error class, never from the\nmessage text. Retrying a 401 is how an automation platform locks out the\nservice account it depends on.",
+        "form": "statements",
+        "language": "python",
+        "name": "handle_step_result",
+        "packages": [],
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "org_id",
+            "type": "string"
+          },
+          {
+            "name": "step_id",
+            "type": "string"
+          },
+          {
+            "name": "result",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Void"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvyu13got7one",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:org_id",
+          "name": "org_id",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:step_id",
+          "name": "step_id",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "doc": "The worker hands a result back here, and the engine decides what it means.\n\nA worker reports; it does not decide. That is why a worker that dies\nimmediately after this call loses nothing - retry, error branch and\ncompensation are all derived from the row, not held in the worker.",
+        "isAsync": false,
+        "name": "finish_step",
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "org_id",
+            "type": "string"
+          },
+          {
+            "name": "step_id",
+            "type": "string"
+          },
+          {
+            "name": "result",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 520
+    },
+    {
+      "id": "n_mu4ytvyu13hykv842",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:org_id",
+          "name": "org_id",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:step_id",
+          "name": "step_id",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "from soar.execution.dispatch import publish_step_event\n\nrecord_result(db, org_id, step_id, result)\npublish_step_event(db, org_id, step_id)\nreturn {\"step_id\": step_id, \"ok\": bool(result.get(\"ok\"))}",
+        "doc": "The worker hands a result back here, and the engine decides what it means.\n\nA worker reports; it does not decide. That is why a worker that dies\nimmediately after this call loses nothing - retry, error branch and\ncompensation are all derived from the row, not held in the worker.",
+        "form": "statements",
+        "language": "python",
+        "name": "accept_worker_result",
+        "packages": [],
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "org_id",
+            "type": "string"
+          },
+          {
+            "name": "step_id",
+            "type": "string"
+          },
+          {
+            "name": "result",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 520
+    },
+    {
+      "id": "n_mu4ytvyu13mtidegf",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvyu13qqlriqa",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:org_id",
+          "name": "org_id",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:execution_id",
+          "name": "execution_id",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:status",
+          "name": "status",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:error",
+          "name": "error",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "doc": "Terminal transition. A failed execution raises a platform alert; automation failure is never a silent outcome.",
+        "isAsync": false,
+        "name": "finish",
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "org_id",
+            "type": "string"
+          },
+          {
+            "name": "execution_id",
+            "type": "string"
+          },
+          {
+            "name": "status",
+            "type": "string"
+          },
+          {
+            "name": "error",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Void",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 650
+    },
+    {
+      "id": "n_mu4ytvyu13ric2wo4",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:org_id",
+          "name": "org_id",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:execution_id",
+          "name": "execution_id",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:status",
+          "name": "status",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:error",
+          "name": "error",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "from soar.platform.ids import new_id\n\nimport json\n\ndb.execute(\n    \"UPDATE execution SET status = %s, error = %s, finished_at = now(), \"\n    \"duration_ms = extract(milliseconds FROM now() - started_at)::int \"\n    \"WHERE id = %s AND org_id = %s\",\n    [status, json.dumps(error, default=str) if error else None,\n     execution_id, org_id],\n    org_id,\n)\nif status in (\"failed\", \"timed_out\"):\n    db.execute(\n        \"INSERT INTO platform_alert (id, org_id, kind, severity, detail) \"\n        \"VALUES (%s, %s, 'execution_failed', 'high', %s)\",\n        [new_id(\"palert\"), org_id,\n         json.dumps({\"execution_id\": execution_id, \"error\": error}, default=str)],\n        org_id,\n    )",
+        "doc": "Terminal transition. A failed execution raises a platform alert; automation failure is never a silent outcome.",
+        "form": "statements",
+        "language": "python",
+        "name": "finish_execution",
+        "packages": [],
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "org_id",
+            "type": "string"
+          },
+          {
+            "name": "execution_id",
+            "type": "string"
+          },
+          {
+            "name": "status",
+            "type": "string"
+          },
+          {
+            "name": "error",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Void"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 650
+    }
+  ],
+  "style": "state-machine",
+  "variables": []
+}

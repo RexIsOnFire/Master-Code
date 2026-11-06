@@ -1,0 +1,930 @@
+{
+  "edges": [
+    {
+      "from": {
+        "node": "n_mu4ytvyrr07z6xy4",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyrr2g3j3ld",
+      "to": {
+        "node": "n_mu4ytvyrr15n4pvq",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyrqzuxnvus",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyrr3ssewo9",
+      "to": {
+        "node": "n_mu4ytvyrr07z6xy4",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyrr07z6xy4",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyrr4y4cacz",
+      "to": {
+        "node": "n_mu4ytvyrr15n4pvq",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyrr51cquhv",
+        "port": "p:definition"
+      },
+      "id": "e_mu4ytvysr7lnx5kb",
+      "to": {
+        "node": "n_mu4ytvysr68963xk",
+        "port": "p:definition"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvysr68963xk",
+        "port": "result"
+      },
+      "id": "e_mu4ytvysr9buao1d",
+      "to": {
+        "node": "n_mu4ytvysr89mxjhx",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyrr51cquhv",
+        "port": "out"
+      },
+      "id": "e_mu4ytvysra4y7vy4",
+      "to": {
+        "node": "n_mu4ytvysr68963xk",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvysr68963xk",
+        "port": "out"
+      },
+      "id": "e_mu4ytvysrbvuns81",
+      "to": {
+        "node": "n_mu4ytvysr89mxjhx",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvysrcrq56th",
+        "port": "p:schema"
+      },
+      "id": "e_mu4ytvysrewhns7q",
+      "to": {
+        "node": "n_mu4ytvysrdbr1790",
+        "port": "p:schema"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvysrcrq56th",
+        "port": "p:payload"
+      },
+      "id": "e_mu4ytvysrfmw4euz",
+      "to": {
+        "node": "n_mu4ytvysrdbr1790",
+        "port": "p:payload"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvysrcrq56th",
+        "port": "p:direction"
+      },
+      "id": "e_mu4ytvysrgbl6o8a",
+      "to": {
+        "node": "n_mu4ytvysrdbr1790",
+        "port": "p:direction"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvysrcrq56th",
+        "port": "out"
+      },
+      "id": "e_mu4ytvysrh5jpc2x",
+      "to": {
+        "node": "n_mu4ytvysrdbr1790",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvysri08ok6k",
+        "port": "p:db"
+      },
+      "id": "e_mu4ytvysrkmy28ez",
+      "to": {
+        "node": "n_mu4ytvysrj2nnq2g",
+        "port": "p:db"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvysri08ok6k",
+        "port": "p:principal"
+      },
+      "id": "e_mu4ytvysrlcjkbna",
+      "to": {
+        "node": "n_mu4ytvysrj2nnq2g",
+        "port": "p:principal"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvysri08ok6k",
+        "port": "p:command_id"
+      },
+      "id": "e_mu4ytvysrmq4b8xm",
+      "to": {
+        "node": "n_mu4ytvysrj2nnq2g",
+        "port": "p:command_id"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvysri08ok6k",
+        "port": "p:definition"
+      },
+      "id": "e_mu4ytvysrn0utpfr",
+      "to": {
+        "node": "n_mu4ytvysrj2nnq2g",
+        "port": "p:definition"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvysrj2nnq2g",
+        "port": "result"
+      },
+      "id": "e_mu4ytvysrpcc4vr5",
+      "to": {
+        "node": "n_mu4ytvysroxmj94w",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvysri08ok6k",
+        "port": "out"
+      },
+      "id": "e_mu4ytvysrq94jhmr",
+      "to": {
+        "node": "n_mu4ytvysrj2nnq2g",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvysrj2nnq2g",
+        "port": "out"
+      },
+      "id": "e_mu4ytvysrrvvgcnp",
+      "to": {
+        "node": "n_mu4ytvysroxmj94w",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvysrs9qjtsg",
+        "port": "p:db"
+      },
+      "id": "e_mu4ytvysruqx19zf",
+      "to": {
+        "node": "n_mu4ytvysrtf899yo",
+        "port": "p:db"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvysrs9qjtsg",
+        "port": "p:principal"
+      },
+      "id": "e_mu4ytvysrv2lcm7c",
+      "to": {
+        "node": "n_mu4ytvysrtf899yo",
+        "port": "p:principal"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvysrs9qjtsg",
+        "port": "p:command_id"
+      },
+      "id": "e_mu4ytvysrwdz57me",
+      "to": {
+        "node": "n_mu4ytvysrtf899yo",
+        "port": "p:command_id"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvysrs9qjtsg",
+        "port": "p:new_level"
+      },
+      "id": "e_mu4ytvysrxrkjpz5",
+      "to": {
+        "node": "n_mu4ytvysrtf899yo",
+        "port": "p:new_level"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvysrs9qjtsg",
+        "port": "p:review_notes"
+      },
+      "id": "e_mu4ytvysryw8e6fk",
+      "to": {
+        "node": "n_mu4ytvysrtf899yo",
+        "port": "p:review_notes"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvysrs9qjtsg",
+        "port": "out"
+      },
+      "id": "e_mu4ytvysrz13pi9u",
+      "to": {
+        "node": "n_mu4ytvysrtf899yo",
+        "port": "in"
+      }
+    }
+  ],
+  "fileId": "file_mu4ytvyrqx2ciqzj",
+  "id": "g_mu4ytvyrqy4xdniu",
+  "name": "command registry",
+  "nodes": [
+    {
+      "id": "n_mu4ytvyrqzuxnvus",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "doc": "The SDK contract, as a schema.\n\nEvery command - platform, HTTP-built or hand-written Python - declares the\nsame fields. That is what lets the AI reason about the catalogue, the\nvalidator type-check a playbook before publish, and the UI build a form for\na command it has never seen.",
+        "isAsync": false,
+        "name": "command_contract",
+        "params": [],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyrr07z6xy4",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "return {\n    \"type\": \"object\",\n    \"required\": [\"key\", \"name\", \"kind\", \"input_schema\", \"output_schema\",\n                 \"risk_level\", \"effect\", \"trust_level\"],\n    \"additionalProperties\": False,\n    \"properties\": {\n        \"key\": {\"type\": \"string\", \"pattern\": \"^[a-z0-9_]+\\\\.[a-z0-9_]+$\"},\n        \"name\": {\"type\": \"string\", \"minLength\": 1},\n        \"category\": {\"type\": \"string\"},\n        \"kind\": {\"enum\": [\"builtin\", \"http\", \"python\", \"transform\", \"shell\"]},\n        \"input_schema\": {\"type\": \"object\"},\n        \"output_schema\": {\"type\": \"object\"},\n        \"implementation\": {\"type\": \"object\"},\n        \"auth\": {\"type\": \"array\", \"items\": {\n            \"type\": \"object\", \"required\": [\"role\", \"credential\"],\n            \"properties\": {\"role\": {\"type\": \"string\"},\n                           \"credential\": {\"type\": \"string\"}}}},\n        \"required_permissions\": {\"type\": \"array\", \"items\": {\"type\": \"string\"}},\n        \"required_capabilities\": {\"type\": \"array\", \"items\": {\n            \"enum\": [\"net\", \"fs.read\", \"fs.write\", \"process\", \"env\"]}},\n        \"timeout_ms\": {\"type\": \"integer\", \"minimum\": 100, \"maximum\": 900000},\n        \"risk_level\": {\"enum\": [\"low\", \"medium\", \"high\"]},\n        \"effect\": {\"enum\": [\"read\", \"mutating\"]},\n        \"trust_level\": {\"enum\": [\"trusted\", \"verified\", \"untrusted\"]},\n        \"dry_run_example\": {\"type\": \"object\"},\n        \"retryable_errors\": {\"type\": \"array\", \"items\": {\"type\": \"string\"}},\n        \"technique_ids\": {\"type\": \"array\", \"items\": {\"type\": \"string\"}},\n        # The command that undoes this one. Named, never inferred - and\n        # declared here because cmd() sets it, the catalogue test asserts it\n        # resolves, and the contract refused it, so no connector that named\n        # an undo could be installed at all.\n        \"undo_command\": {\"type\": \"string\"},\n        \"doc\": {\"type\": \"string\"},\n    },\n}",
+        "doc": "The SDK contract, as a schema.\n\nEvery command - platform, HTTP-built or hand-written Python - declares the\nsame fields. That is what lets the AI reason about the catalogue, the\nvalidator type-check a playbook before publish, and the UI build a form for\na command it has never seen.",
+        "form": "statements",
+        "language": "python",
+        "name": "command_definition_schema",
+        "packages": [],
+        "params": [],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyrr15n4pvq",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyrr51cquhv",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:definition",
+          "name": "definition",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "doc": "Reject a command definition that the platform cannot govern: a mutating command with no dry-run example, an untrusted command asking for network, a command with no output schema.",
+        "isAsync": false,
+        "name": "validate_definition",
+        "params": [
+          {
+            "name": "definition",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "List<string>",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvysr68963xk",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:definition",
+          "name": "definition",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "List<string>"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "import jsonschema\n\nproblems = []\ntry:\n    jsonschema.validate(definition, command_contract())\nexcept jsonschema.ValidationError as error:\n    problems.append(\"contract: \" + error.message)\n    return problems\n\ntrust = definition[\"trust_level\"]\ncaps = definition.get(\"required_capabilities\", [])\n\n# An untrusted command runs in a container with no egress and no credential\n# lease. Declaring a capability it can never be given is a definition bug,\n# and saying so here is better than a confusing failure at 03:00.\nif trust == \"untrusted\" and caps:\n    problems.append(\n        \"untrusted commands run without %s; promote to verified after review\"\n        % \", \".join(caps)\n    )\nif trust == \"untrusted\" and definition.get(\"auth\"):\n    problems.append(\"untrusted commands never receive a credential lease\")\n\nif definition[\"effect\"] == \"mutating\" and not definition.get(\"dry_run_example\"):\n    problems.append(\n        \"a mutating command needs a dry_run_example, or dry run cannot be honest\"\n    )\nif definition[\"risk_level\"] == \"high\" and definition[\"effect\"] != \"mutating\":\n    problems.append(\"a high-risk command that changes nothing is mis-classified\")\nif definition[\"kind\"] == \"shell\" and trust != \"trusted\":\n    problems.append(\"shell commands are platform-provided only\")\nif not definition[\"output_schema\"].get(\"properties\"):\n    problems.append(\"output_schema must describe real fields; playbooks type-check against it\")\nreturn problems",
+        "doc": "Reject a command definition that the platform cannot govern: a mutating command with no dry-run example, an untrusted command asking for network, a command with no output schema.",
+        "form": "statements",
+        "language": "python",
+        "name": "check_command_definition",
+        "packages": [
+          {
+            "name": "jsonschema",
+            "version": "4.*"
+          }
+        ],
+        "params": [
+          {
+            "name": "definition",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "List<string>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvysr89mxjhx",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvysrcrq56th",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:schema",
+          "name": "schema",
+          "type": "Map<string, Any>"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:payload",
+          "name": "payload",
+          "type": "Map<string, Any>"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:direction",
+          "name": "direction",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "doc": "Input is checked before the job is enqueued; output before it reaches a variable. A command whose output does not match its schema fails the step rather than poisoning the rest of the playbook.",
+        "isAsync": false,
+        "name": "validate_io",
+        "params": [
+          {
+            "name": "schema",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "payload",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "direction",
+            "type": "string"
+          }
+        ],
+        "returns": "Void",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvysrdbr1790",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:schema",
+          "name": "schema",
+          "type": "Map<string, Any>"
+        },
+        {
+          "direction": "in",
+          "id": "p:payload",
+          "name": "payload",
+          "type": "Map<string, Any>"
+        },
+        {
+          "direction": "in",
+          "id": "p:direction",
+          "name": "direction",
+          "type": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "import jsonschema\n\ntry:\n    jsonschema.validate(payload, schema)\nexcept jsonschema.ValidationError as error:\n    raise ValueError(\n        \"command %s failed validation at %s: %s\"\n        % (direction, \"/\".join(str(p) for p in error.absolute_path), error.message)\n    )",
+        "doc": "Input is checked before the job is enqueued; output before it reaches a variable. A command whose output does not match its schema fails the step rather than poisoning the rest of the playbook.",
+        "form": "statements",
+        "language": "python",
+        "name": "enforce_schema",
+        "packages": [
+          {
+            "name": "jsonschema",
+            "version": "4.*"
+          }
+        ],
+        "params": [
+          {
+            "name": "schema",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "payload",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "direction",
+            "type": "string"
+          }
+        ],
+        "returns": "Void"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvysri08ok6k",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:principal",
+          "name": "principal",
+          "type": "Map<string, Any>"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:command_id",
+          "name": "command_id",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:definition",
+          "name": "definition",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "doc": "Publish an immutable, content-hashed command version. Trust promotion is a separate, separately-permissioned action; publishing never raises a trust level.",
+        "isAsync": false,
+        "name": "publish_version",
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "principal",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "command_id",
+            "type": "string"
+          },
+          {
+            "name": "definition",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "string",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvysrj2nnq2g",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:principal",
+          "name": "principal",
+          "type": "Map<string, Any>"
+        },
+        {
+          "direction": "in",
+          "id": "p:command_id",
+          "name": "command_id",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:definition",
+          "name": "definition",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "from soar.audit.log import record as audit_record\nfrom soar.identity.rbac import require_permission\nfrom soar.platform.ids import new_id\n\nimport hashlib\nimport json\n\nrequire_permission(principal, \"commands.create\")\norg_id = principal[\"org_id\"]\n\nproblems = validate_definition(definition)\nif problems:\n    raise ValueError(\"; \".join(problems))\n\ncanonical = json.dumps(definition, sort_keys=True, separators=(\",\", \":\"))\ndigest = hashlib.sha256(canonical.encode(\"utf-8\")).digest()\nversion_id = new_id(\"cmdv\")\n\ndb.execute(\n    \"INSERT INTO command_version (id, command_id, version, state, kind, \"\n    \"input_schema, output_schema, implementation, required_permissions, \"\n    \"required_capabilities, auth, timeout_ms, risk_level, effect, \"\n    \"content_sha256, created_by, published_at, published_by) \"\n    \"SELECT %s, %s, coalesce(max(version), 0) + 1, 'published', %s, %s, %s, %s, \"\n    \"%s, %s, %s, %s, %s, %s, %s, %s, now(), %s \"\n    \"FROM command_version WHERE command_id = %s\",\n    [\n        version_id, command_id, definition[\"kind\"],\n        json.dumps(definition[\"input_schema\"]),\n        json.dumps(definition[\"output_schema\"]),\n        json.dumps(definition.get(\"implementation\", {})),\n        definition.get(\"required_permissions\", []),\n        definition.get(\"required_capabilities\", []),\n        json.dumps(definition.get(\"auth\", [])),\n        definition.get(\"timeout_ms\", 30000),\n        definition[\"risk_level\"], definition[\"effect\"], digest,\n        principal.get(\"id\"), principal.get(\"id\"), command_id,\n    ],\n    org_id,\n)\ndb.execute(\n    \"UPDATE command SET current_version_id = %s WHERE id = %s\",\n    [version_id, command_id], org_id,\n)\naudit_record(db, {\n    \"org_id\": org_id, \"actor_kind\": \"user\", \"actor_id\": principal.get(\"id\"),\n    \"action\": \"command.publish\", \"target_kind\": \"command\", \"target_id\": command_id,\n    \"after\": {\"version_id\": version_id, \"sha256\": digest.hex()}, \"result\": \"success\",\n})\nreturn version_id",
+        "doc": "Publish an immutable, content-hashed command version. Trust promotion is a separate, separately-permissioned action; publishing never raises a trust level.",
+        "form": "statements",
+        "language": "python",
+        "name": "publish_command_version",
+        "packages": [],
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "principal",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "command_id",
+            "type": "string"
+          },
+          {
+            "name": "definition",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "string"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 390
+    },
+    {
+      "id": "n_mu4ytvysroxmj94w",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvysrs9qjtsg",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:principal",
+          "name": "principal",
+          "type": "Map<string, Any>"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:command_id",
+          "name": "command_id",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:new_level",
+          "name": "new_level",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:review_notes",
+          "name": "review_notes",
+          "type": "string"
+        }
+      ],
+      "props": {
+        "doc": "Raise a command from untrusted to verified, or to trusted.\n\nExplicit, permissioned, reviewed and audited. Never automatic, and never\ninferred from the command having run successfully - \"it worked before\" is\nexactly what a malicious command is designed to look like.",
+        "isAsync": false,
+        "name": "promote_trust",
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "principal",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "command_id",
+            "type": "string"
+          },
+          {
+            "name": "new_level",
+            "type": "string"
+          },
+          {
+            "name": "review_notes",
+            "type": "string"
+          }
+        ],
+        "returns": "Void",
+        "visibility": "public"
+      },
+      "type": "entry/function",
+      "x": 0,
+      "y": 520
+    },
+    {
+      "id": "n_mu4ytvysrtf899yo",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:db",
+          "name": "db",
+          "type": "Any"
+        },
+        {
+          "direction": "in",
+          "id": "p:principal",
+          "name": "principal",
+          "type": "Map<string, Any>"
+        },
+        {
+          "direction": "in",
+          "id": "p:command_id",
+          "name": "command_id",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:new_level",
+          "name": "new_level",
+          "type": "string"
+        },
+        {
+          "direction": "in",
+          "id": "p:review_notes",
+          "name": "review_notes",
+          "type": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {
+        "capabilities": [],
+        "code": "from soar.audit.log import record as audit_record\nfrom soar.identity.rbac import require_permission\n\nORDER = [\"untrusted\", \"verified\", \"trusted\"]\nrequire_permission(principal, \"commands.promote\")\norg_id = principal[\"org_id\"]\n\nif new_level not in ORDER:\n    raise ValueError(\"unknown trust level\")\nif new_level == \"trusted\":\n    raise PermissionError(\n        \"the trusted level is for platform-provided commands only; \"\n        \"use verified for reviewed custom commands\"\n    )\nif not (review_notes or \"\").strip():\n    raise ValueError(\"a promotion needs review notes; the reviewer is on the record\")\n\nrows = db.query(\n    \"SELECT trust_level, created_by FROM command WHERE id = %s AND org_id = %s\",\n    [command_id, org_id], org_id,\n)\nif not rows:\n    raise KeyError(\"no such command\")\ncurrent = rows[0][\"trust_level\"]\n\n# Separation of duty: the author does not review their own command.\nif rows[0][\"created_by\"] == principal.get(\"id\"):\n    raise PermissionError(\"a command cannot be promoted by its own author\")\n\ndb.execute(\"UPDATE command SET trust_level = %s WHERE id = %s\",\n           [new_level, command_id], org_id)\naudit_record(db, {\n    \"org_id\": org_id, \"actor_kind\": \"user\", \"actor_id\": principal.get(\"id\"),\n    \"action\": \"command.trust.promote\", \"target_kind\": \"command\",\n    \"target_id\": command_id, \"before\": {\"trust_level\": current},\n    \"after\": {\"trust_level\": new_level}, \"reason\": review_notes, \"result\": \"success\",\n})",
+        "doc": "Raise a command from untrusted to verified, or to trusted.\n\nExplicit, permissioned, reviewed and audited. Never automatic, and never\ninferred from the command having run successfully - \"it worked before\" is\nexactly what a malicious command is designed to look like.",
+        "form": "statements",
+        "language": "python",
+        "name": "change_trust_level",
+        "packages": [],
+        "params": [
+          {
+            "name": "db",
+            "type": "Any"
+          },
+          {
+            "name": "principal",
+            "type": "Map<string, Any>"
+          },
+          {
+            "name": "command_id",
+            "type": "string"
+          },
+          {
+            "name": "new_level",
+            "type": "string"
+          },
+          {
+            "name": "review_notes",
+            "type": "string"
+          }
+        ],
+        "returns": "Void"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 520
+    }
+  ],
+  "style": "service",
+  "variables": []
+}

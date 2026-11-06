@@ -1,0 +1,358 @@
+{
+  "edges": [
+    {
+      "from": {
+        "node": "n_mu4ytvyx1tq9nhewj",
+        "port": "self"
+      },
+      "id": "e_mu4ytvyx1tsqd15a4",
+      "to": {
+        "node": "n_mu4ytvyx1trq750tq",
+        "port": "p:self"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1tq9nhewj",
+        "port": "p:messages"
+      },
+      "id": "e_mu4ytvyx1ttd77hwm",
+      "to": {
+        "node": "n_mu4ytvyx1trq750tq",
+        "port": "p:messages"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1tq9nhewj",
+        "port": "p:tools"
+      },
+      "id": "e_mu4ytvyx1tugsghco",
+      "to": {
+        "node": "n_mu4ytvyx1trq750tq",
+        "port": "p:tools"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1tq9nhewj",
+        "port": "p:options"
+      },
+      "id": "e_mu4ytvyx1tvv16llz",
+      "to": {
+        "node": "n_mu4ytvyx1trq750tq",
+        "port": "p:options"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1trq750tq",
+        "port": "result"
+      },
+      "id": "e_mu4ytvyx1txhn7bex",
+      "to": {
+        "node": "n_mu4ytvyx1tw7xnuvk",
+        "port": "value"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1tq9nhewj",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyx1tyuxnnl6",
+      "to": {
+        "node": "n_mu4ytvyx1trq750tq",
+        "port": "in"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mu4ytvyx1trq750tq",
+        "port": "out"
+      },
+      "id": "e_mu4ytvyx1tzwtaedw",
+      "to": {
+        "node": "n_mu4ytvyx1tw7xnuvk",
+        "port": "in"
+      }
+    }
+  ],
+  "fileId": "file_mu4ytvyx1tm3ls8g0",
+  "id": "g_mu4ytvyx1tnodn9ww",
+  "name": "Anthropic provider",
+  "nodes": [
+    {
+      "id": "n_mu4ytvyx1tocapu3z",
+      "inputs": [],
+      "outputs": [],
+      "props": {
+        "doc": "Claude. A separate message shape: the system prompt is its own field rather than a message, which is convenient here - the instruction channel and the evidence channel stay structurally apart.",
+        "extends": "",
+        "fields": [
+          {
+            "name": "base_url",
+            "type": "string",
+            "visibility": "public"
+          },
+          {
+            "name": "model",
+            "type": "string",
+            "visibility": "public"
+          },
+          {
+            "name": "credential",
+            "type": "Any",
+            "visibility": "private"
+          }
+        ],
+        "generics": "",
+        "implements": "AiProvider",
+        "isAbstract": false,
+        "name": "AnthropicProvider",
+        "shape": "class"
+      },
+      "type": "oop/class",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyx1tpxyf926",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "self",
+          "name": "self",
+          "type": "AnthropicProvider"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:base_url",
+          "name": "base_url",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:model",
+          "name": "model",
+          "type": "string"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:credential",
+          "name": "credential",
+          "type": "Any"
+        }
+      ],
+      "props": {
+        "assignFields": true,
+        "className": "AnthropicProvider",
+        "params": [
+          {
+            "name": "base_url",
+            "type": "string"
+          },
+          {
+            "name": "model",
+            "type": "string"
+          },
+          {
+            "name": "credential",
+            "type": "Any"
+          }
+        ]
+      },
+      "type": "oop/constructor",
+      "x": 0,
+      "y": 130
+    },
+    {
+      "id": "n_mu4ytvyx1tq9nhewj",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "self",
+          "name": "self",
+          "type": "AnthropicProvider"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:messages",
+          "name": "messages",
+          "type": "List<Map<string, Any>>"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:tools",
+          "name": "tools",
+          "type": "List<Map<string, Any>>"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:options",
+          "name": "options",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "className": "AnthropicProvider",
+        "doc": "One turn. System messages are hoisted into the system field, which keeps the instruction channel separate from the evidence by construction.",
+        "isAsync": false,
+        "isStatic": false,
+        "name": "complete",
+        "params": [
+          {
+            "name": "messages",
+            "type": "List<Map<string, Any>>"
+          },
+          {
+            "name": "tools",
+            "type": "List<Map<string, Any>>"
+          },
+          {
+            "name": "options",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>",
+        "visibility": "public"
+      },
+      "type": "oop/method",
+      "x": 0,
+      "y": 260
+    },
+    {
+      "id": "n_mu4ytvyx1trq750tq",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "p:self",
+          "name": "self",
+          "type": "AnthropicProvider"
+        },
+        {
+          "direction": "in",
+          "id": "p:messages",
+          "name": "messages",
+          "type": "List<Map<string, Any>>"
+        },
+        {
+          "direction": "in",
+          "id": "p:tools",
+          "name": "tools",
+          "type": "List<Map<string, Any>>"
+        },
+        {
+          "direction": "in",
+          "id": "p:options",
+          "name": "options",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "out",
+          "id": "result",
+          "name": "result",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "capabilities": [
+          "net"
+        ],
+        "code": "import httpx\n\nsystem = \"\\n\\n\".join(m[\"content\"] for m in messages if m[\"role\"] == \"system\")\nturns = [m for m in messages if m[\"role\"] != \"system\"]\n\nbody = {\n    \"model\": self.model,\n    \"system\": system,\n    \"messages\": turns,\n    \"max_tokens\": options.get(\"max_tokens\", 2048),\n    \"temperature\": options.get(\"temperature\", 0.1),\n}\nif tools:\n    body[\"tools\"] = [\n        {\"name\": t[\"name\"], \"description\": t[\"description\"],\n         \"input_schema\": t[\"input_schema\"]}\n        for t in tools\n    ]\n\nwith httpx.Client(timeout=options.get(\"timeout_s\", 120)) as client:\n    response = client.post(\n        self.base_url.rstrip(\"/\") + \"/v1/messages\",\n        headers={\"x-api-key\": self.credential.reveal(),\n                 \"anthropic-version\": \"2023-06-01\",\n                 \"content-type\": \"application/json\"},\n        json=body,\n    )\n    if response.status_code >= 400:\n        raise RuntimeError(\"anthropic returned %d: %s\"\n                           % (response.status_code, response.text[:500]))\n    payload = response.json()\n\ntext = \"\".join(block.get(\"text\", \"\") for block in payload.get(\"content\", [])\n               if block.get(\"type\") == \"text\")\ncalls = [{\"name\": block[\"name\"], \"arguments\": block.get(\"input\", {})}\n         for block in payload.get(\"content\", [])\n         if block.get(\"type\") == \"tool_use\"]\nusage = payload.get(\"usage\", {})\nreturn {\n    \"text\": text,\n    \"tool_calls\": calls,\n    \"tokens_in\": usage.get(\"input_tokens\", 0),\n    \"tokens_out\": usage.get(\"output_tokens\", 0),\n    \"finish_reason\": payload.get(\"stop_reason\", \"stop\"),\n    \"model\": payload.get(\"model\", self.model),\n}",
+        "doc": "One turn. System messages are hoisted into the system field, which keeps the instruction channel separate from the evidence by construction.",
+        "form": "statements",
+        "language": "python",
+        "name": "anthropic_complete",
+        "packages": [
+          {
+            "name": "httpx",
+            "version": "0.27.*"
+          }
+        ],
+        "params": [
+          {
+            "name": "self",
+            "type": "AnthropicProvider"
+          },
+          {
+            "name": "messages",
+            "type": "List<Map<string, Any>>"
+          },
+          {
+            "name": "tools",
+            "type": "List<Map<string, Any>>"
+          },
+          {
+            "name": "options",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Map<string, Any>"
+      },
+      "type": "custom/code",
+      "x": 250,
+      "y": 0
+    },
+    {
+      "id": "n_mu4ytvyx1tw7xnuvk",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "value",
+          "name": "value",
+          "type": "Any"
+        }
+      ],
+      "outputs": [],
+      "props": {},
+      "type": "control/return",
+      "x": 500,
+      "y": 0
+    }
+  ],
+  "style": "object-oriented",
+  "variables": []
+}

@@ -1,0 +1,211 @@
+{
+  "edges": [
+    {
+      "from": {
+        "node": "n_mstz34cd8x5hf0v",
+        "port": "self"
+      },
+      "id": "e_mstz34cdbe9ksq9",
+      "to": {
+        "node": "n_mstz34cdax6ghoy",
+        "port": "target"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz34cdax6ghoy",
+        "port": "value"
+      },
+      "id": "e_mstz34cdcmz3a0n",
+      "to": {
+        "node": "n_mstz34cd9ll27ay",
+        "port": "a0"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz34cd8x5hf0v",
+        "port": "p:item"
+      },
+      "id": "e_mstz34cddie9j3r",
+      "to": {
+        "node": "n_mstz34cd9ll27ay",
+        "port": "a1"
+      }
+    },
+    {
+      "from": {
+        "node": "n_mstz34cd8x5hf0v",
+        "port": "out"
+      },
+      "id": "e_mstz34cdey9mqsr",
+      "to": {
+        "node": "n_mstz34cd9ll27ay",
+        "port": "in"
+      }
+    }
+  ],
+  "fileId": "file_mstz34cd4ikref0",
+  "id": "g_mstz34cd5pfvqg0",
+  "name": "repository",
+  "nodes": [
+    {
+      "id": "n_mstz34cd6qefdz4",
+      "inputs": [],
+      "outputs": [],
+      "props": {
+        "doc": "In-memory store. Swap the body for a database when you need one.",
+        "extends": "",
+        "fields": [
+          {
+            "name": "items",
+            "type": "List<Map<string, Any>>",
+            "visibility": "public"
+          }
+        ],
+        "generics": "",
+        "implements": "",
+        "isAbstract": false,
+        "name": "Repository",
+        "shape": "class"
+      },
+      "type": "oop/class",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "n_mstz34cd76ryh8z",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "self",
+          "name": "self",
+          "type": "Repository"
+        }
+      ],
+      "props": {
+        "assignFields": true,
+        "className": "Repository",
+        "params": []
+      },
+      "type": "oop/constructor",
+      "x": 0,
+      "y": 130
+    },
+    {
+      "id": "n_mstz34cd8x5hf0v",
+      "inputs": [],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "body",
+          "type": "Exec"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "self",
+          "name": "self",
+          "type": "Repository"
+        },
+        {
+          "bound": true,
+          "direction": "out",
+          "id": "p:item",
+          "name": "item",
+          "type": "Map<string, Any>"
+        }
+      ],
+      "props": {
+        "className": "Repository",
+        "doc": "Store one item.",
+        "isAsync": false,
+        "isStatic": false,
+        "name": "add",
+        "params": [
+          {
+            "name": "item",
+            "type": "Map<string, Any>"
+          }
+        ],
+        "returns": "Void",
+        "visibility": "public"
+      },
+      "type": "oop/method",
+      "x": 0,
+      "y": 260
+    },
+    {
+      "id": "n_mstz34cd9ll27ay",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "in",
+          "name": "",
+          "type": "Exec"
+        },
+        {
+          "direction": "in",
+          "id": "a0",
+          "name": "list",
+          "type": "List<T>"
+        },
+        {
+          "direction": "in",
+          "id": "a1",
+          "name": "value",
+          "type": "T"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "out",
+          "name": "",
+          "type": "Exec"
+        }
+      ],
+      "props": {},
+      "type": "list/push",
+      "x": 250,
+      "y": 0
+    },
+    {
+      "id": "n_mstz34cdax6ghoy",
+      "inputs": [
+        {
+          "direction": "in",
+          "id": "target",
+          "name": "target",
+          "type": "Any"
+        }
+      ],
+      "outputs": [
+        {
+          "direction": "out",
+          "id": "value",
+          "name": "value",
+          "type": "List<Map<string, Any>>"
+        }
+      ],
+      "props": {
+        "field": "items",
+        "type": "List<Map<string, Any>>"
+      },
+      "type": "oop/get-field",
+      "x": 0,
+      "y": 390
+    }
+  ],
+  "style": "object-oriented",
+  "variables": []
+}
